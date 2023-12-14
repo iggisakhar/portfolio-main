@@ -569,6 +569,113 @@
 //   }
 // }
 
+// function dogResponse(array){
+//   let repeat = array[0].length - array[1];
+//   if(repeat <= 0){
+//     return `${array[0]}: hello!`;
+//   } else {
+//     let str = 'bark! '.repeat(repeat)
+//     return `${array[0]}: ${str.trim()}`
+//   }
+// }
+//
+// function mainTasks(tasks, toDoFirst, toDoList){
+//   let indexFirst = tasks.indexOf(toDoFirst);
+//   let indexLast = tasks.indexOf(toDoList);
+//   return {
+//     [toDoFirst]: `Before ${tasks[indexFirst + 1]}`,
+//     [toDoList]: `After ${tasks[indexLast -1]}`
+//   }
+// }
+//
+// function consecutiveNumbers(n){
+//   let arr = [];
+//   if(n < 0){
+//     return arr;
+//   }
+//   for(let i = 0; i <= n; i ++){
+//     arr.push(i);
+//   }
+//   return arr;
+// }
+
+// function fillArray(n, m){
+//   let arr= [];
+//   for(let i = n; i <= m; i++){
+//     arr.push(i);
+//   }
+//   return arr;
+// }
+
+// function oddFromRange(m, n){
+//   let arr = [];
+//   for(let i = m; i <= n; i++){
+//     if(i % 2 !== 0){
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
+// }
+
+// function squaresOfEven(n) {
+//   let arr = [];
+//   if(n <= 0){
+//     return 'Error: n must be a positive number'
+//   }
+//   for(let i = n; i <= n*3; i++){
+//     if(i % 2 == 0){
+//       arr.push(Math.pow(i, 2))
+//     }
+//   }
+//   return arr;
+// }
+//
+// function multiplesOf5(n){
+//   let arr = [];
+//   for(let i = 0; i <= n; i++){
+//     if(i % 5 === 0){
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
+// }
+
+// function fillArray(n, m) {
+//   const result = [];
+//   for (let i = 0; i <= n; i++) {
+//     if (i % 3 == 0) {
+//       result.push(Math.pow(i, m))
+//     }
+//   }
+//   return result;
+// }
+
+// function negativeArray(n){
+//   let arr = [];
+//   for(let i = n; i > 0; i--){
+//     arr.push(-i);
+//   }
+//   return arr;
+// }
+
+// function fillArray(n, m){
+//   let result = [];
+//   let start = n;
+//   let end = m;
+//   if(n > m){
+//     start = m;
+//     end = n;
+//   }
+//   for(let i = start; i <= end; i++){
+//     result.push(i);
+//   }
+//   return result;
+// }
+
+
+
+
+
 
 
 
