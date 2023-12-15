@@ -671,6 +671,49 @@
 //   }
 //   return result;
 // }
+//
+// function fillProgression(a1, d, n) {
+//   let progression =[];
+//   let currentTerm = a1;
+//   for(let i=0; i<n; i++){
+//     progression.push(currentTerm);
+//     currentTerm +=d;
+//   }
+//   return progression;
+// }
+
+// function progressionMembers(firstMember, denominator, n){
+//   let list = [];
+//   let current = firstMember;
+//   for(let i = 1; i <= n; i++){
+//     list.push(current);
+//     current *= denominator;
+//   }
+//   return list;
+// }
+
+// function isNegative(arr){
+//   let flag = false;
+//   for(let i of arr){
+//     if(i < 0){
+//       flag = true;
+//       break;
+//     }
+//   }
+//   return flag;
+// }
+
+// function isString(arr){
+//   let flag = false;
+//   for(let i of arr){
+//     if(typeof i === 'string'){
+//       flag = true;
+//     }
+//   }
+//   return flag;
+// }
+
+
 
 
 
