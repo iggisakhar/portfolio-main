@@ -713,6 +713,142 @@
 //   return flag;
 // }
 
+// function numbersAndStrings(arr){
+//   let number = [];
+//   let string = [];
+//   for(let i of arr){
+//     if(typeof i === 'number'){
+//       number.push(i);
+//     } else if(typeof i === 'string'){
+//       string.push(i)
+//     }
+//   }
+//   return [number, string];
+// }
+
+// function positiveAndNegative(arr){
+//   let pos = [];
+//   let neg = [];
+//   for(let i of arr){
+//     if(i > 0){
+//       pos.push(i)
+//     }else if(i < 0){
+//       neg.push(i)
+//     }
+//   }
+//   return [pos, neg];
+// }
+
+// function findEvenAndPositive(arr){
+//   for(let i = arr.length -1; i >= 0; i--){
+//     if(arr[i] > 0 && arr[i] % 2 === 0){
+//       return arr[i];
+//     }
+//   }
+//   return 'No even and positive numbers found'
+// }
+
+// function findStringOrBoolean(arr){
+//   for(let i = arr.length -1; i >= 0; i--){
+//     if(typeof arr[i] === 'string' || typeof arr[i] === 'boolean'){
+//       return i;
+//     }
+//   }
+//   return 'No string or boolean found';
+// }
+
+// function getAllStr(arr){
+//   let str = ''
+//   for(let i of arr){
+//     if(typeof i === 'string'){
+//       str += ' ' + i;
+//     }
+//   }
+//   return str.trim();
+// }
+
+// function sum(arr){
+//   let sum = 0;
+//   for(let i of arr){
+//     if(i % 2 !== 0 && i > 0){
+//       sum += i;
+//     }
+//   }
+//   return sum;
+// }
+
+// function findNull(arr){
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] === null){
+//       return i;
+//     }
+//   }
+//   return 'null not found';
+// }
+//
+// function quantityOfNumbers(array) {
+//   let result = 0;
+//   for(let i = 0; i < array.length; i++) {
+//     if(typeof array[i] === 'number') {
+//       result++;
+//     }
+//   }
+//   return result;
+// }
+//
+// function noSpaces(str){
+//   let newStr = str.split(' ').join('');
+//   return newStr;
+// }
+
+// function lettersDivider(str){
+//   let lower = '';
+//   let upper = '';
+//   for(let i = 0; i < str.length; i++){
+//     if(str[i] == str[i].toUpperCase()){
+//       upper += (str[i]);
+//     } else if(str[i] == str[i].toLowerCase()){
+//       lower += (str[i]);
+//     }
+//   }
+//   return [lower, upper]
+// }
+
+// function reversedString(string, reversedString){
+//   return string.split('').reverse().join('') === reversedString ? true : false;
+// }
+
+// function numOfSpaces(str1, str2){
+//   let total = str1 + str2
+//   let space = 0;
+//   for(let i = 0; i < total.length; i++){
+//     if(total[i] == ' '){
+//       space++
+//     }
+//   }
+//   return space;
+// }
+
+// function stringAndArray(str, arr){
+//   if(str.length !== arr.length){
+//     return 'Elements are not equal'
+//   }
+//   for(let i = 0; i < str.length; i++){
+//     if(str[i] !== arr[i]){
+//       return 'Elements are not equal'
+//     }
+//   }
+//   return 'Elements are equal'
+// }
+
+
+
+
+
+
+
+
+
 
 
 
