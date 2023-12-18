@@ -906,6 +906,236 @@
 //   return arr;
 // }
 
+// function stopAt7(arr){
+//   let arr2 = [];
+//   for(let i = arr[0]; i <= arr[arr.length - 1]; i++) {
+//     arr2.push(i)
+//     if(i == 7) {
+//       break
+//     }
+//   }
+//   return arr2;
+// }
+
+// function stopAt8Element(arr, first, last){
+//   let index = 1;
+//   for(let i = first; i <= last; i++){
+//     arr.push(i)
+//     if(index == 8){
+//       break
+//     }
+//     index ++
+//   }
+//   return arr;
+// }
+
+// function stopAt10Element(arr, num1, num2) {
+//   let index = 1;
+//   for(let i = num1; i <= num2; i++) {
+//     arr.push(i)
+//     if(index == 10) {
+//       break
+//     }
+//     index++
+//   }
+//   return arr;
+// }
+
+// function noMoreThan3Char(arr, str){
+//   let count = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] === str){
+//       break
+//     }
+//     if(arr[i].length === 3){
+//       count++
+//     }
+//   }
+//   return count;
+// }
+
+// function stopAtR(str){
+//   let count = 0;
+//   for(let i = 0; i < str.length; i++){
+//     if(str[i] == 'R'){
+//       break;
+//     }
+//     count++
+//   }
+//   return count;
+// }
+
+// function stopCountAtEl(str, el) {
+// //   let count = 0;
+// //   for(let i = 0; i < str.length; i++) {
+// //     if(str[i] == el.toUpperCase() || str[i] == el.toLowerCase()) {
+// //       break;
+// //     }
+// //     count++
+// //   }
+// //   return count;
+// // }
+
+// function stopAt3DigitNum(arr){
+//   let sum = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i].toString().length === 3){
+//       break
+//     }
+//     sum += arr[i];
+//   }
+//   return sum;
+// }
+//
+// function stopAt2DigitNum(arr){
+//   let sum = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] >= 9 && arr[i] <= 100 || arr[i] <= -9 && arr[i] >= -100) {
+//       break;
+//     }
+//     sum += arr[i]
+//   }
+//   return sum;
+// }
+
+// function stopAtStringOrBoolean(arr){
+//   let div = 1;
+//   for(let i = 0; i < arr.length; i++){
+//     if(typeof arr[i] == 'boolean' || typeof arr[i] == 'string'){
+//       break
+//     }
+//     div *= arr[i]
+//   }
+//   return div;
+// }
+
+// function oddSum(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//       continue
+//     }
+//     sum += arr[i]
+//   }
+//   return sum
+// }
+
+// function evenSum(arr){
+//   let sum = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] % 2 !== 0){
+//       continue
+//     }
+//     sum += arr[i]
+//   }
+//   return sum;
+// }
+
+// function evenAvr(arr){
+//   let sum = 0;
+//   let count = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] % 2 !== 0){
+//       continue
+//     }
+//     count++
+//     sum += arr[i]
+//   }
+//   if(count == 0){
+//     return 0;
+//   }
+//   return sum / count;
+// }
+
+// function onlyNegative(arr) {
+//   let onlyNegative = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if(arr[i] > 0) {
+//       continue;
+//     }
+//     onlyNegative.push(arr[i]);
+//   }
+//   return onlyNegative;
+// }
+//
+// function cleanFromBoolean(arr){
+//   let newArr = [];
+//   for(let i = 0; i < arr.length; i++){
+//     if(typeof arr[i] == 'boolean'){
+//       continue
+//     }
+//     newArr.push(arr[i]);
+//   }
+//   return newArr;
+// }
+
+// function deleteString(arr){
+//   for(let i = 0; i < arr.length; i++){
+//     if(typeof arr[i] !== 'number'){
+//       arr.splice(i, 1);
+//       i--
+//       continue;
+//     }
+//   }
+//   return arr;
+// }
+
+// function onlyPhoneNumbers(arr){
+//   let newArr = [];
+//   for(let i = 0; i < arr.length; i++){
+//     let str = arr[i];
+//     if(/^\d{10}$/.test(str) && str.indexOf('.') === -1 && str.split(' ').length === 1){
+//       newArr.push(str);
+//     }}
+//   return newArr;
+// }
+
+// function twiceExceptOne(arr){
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] == 1){
+//       continue;
+//     }
+//     arr[i] *= 2;
+//   }
+//   return arr;
+// }
+
+// function divideOn10(arr){
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] < 10){
+//       continue;
+//     }
+//     arr[i] = arr[i] / 10;
+//   }
+//   return arr;
+// }
+
+// function powerOfTwo(arr){
+//   let newArr = [];
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] % Math.sqrt(arr[i]) == 0){
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   return newArr;
+// }
+
+// function fromZeroToN(n){
+//   let str = '';
+//   for(let i = 0; i <= n; i++){
+//     str += i;
+//   }
+//   return str;
+// }
+
+// function sumFromN1ToN2(num1, num2){
+//   let sum = 0;
+//   for(let i = num1; i <= num2; i++){
+//     sum += i
+//   }
+//   return sum;
+// }
+
 
 
 
