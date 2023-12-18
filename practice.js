@@ -841,6 +841,72 @@
 //   return 'Elements are equal'
 // }
 
+// function oddAndEven(str){
+//   let even = '';
+//   let odd = '';
+//   for(let i = 0; i < str.length; i++){
+//     if(i % 2 === 0){
+//       even += str[i];
+//     } else{
+//       odd += str[i];
+//     }
+//   }
+//   return [odd, even]
+// }
+
+// function limitedLength(string, num){
+//   let newStr= '';
+//   for(let i = 0; i < num; i++){
+//     newStr += string[i]
+//   }
+//   return newStr;
+// }
+
+// function everySecond(str){
+//   let newStr = '';
+//   for(let i = 0; i < str.length; i++){
+//     if(i % 2 === 0) {
+//       newStr += str[i].toUpperCase();
+//     } else {
+//       newStr += str[i].toLowerCase();
+//     }
+//   }
+//   return newStr;
+// }
+
+// function stringOfNumbers(min, max) {
+//   let result = '';
+//   for (let i = min; i <= max; i++) {
+//     result += i + ' ';
+//   }
+//   return result.trim();
+// }
+
+// function palindrome(str){
+//   for(let i = 0; i < str.length / 2; i++){
+//     if(str[i] !== str[str.length -1 - i]){
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// function palindrome(str){
+//   let reversed = str.split('').reverse().join('');
+//   return str == reversed;
+// }
+
+// function stopAtTwenty(arr, first, last){
+//   for(let i = first; i <= last; i++){
+//     arr.push(i);
+//     if(i == 20){
+//       break;
+//     }
+//   }
+//   return arr;
+// }
+
+
 
 
 
