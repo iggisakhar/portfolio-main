@@ -1136,6 +1136,123 @@
 //   return sum;
 // }
 
+// function multiplication(n){
+//   let mul = 1;
+//   for(let i = 1; i <= n; i += 2){
+//     mul *= i;
+//   }
+//   return mul;
+// }
+
+// function subtraction(amount, num1, num2, step){
+//   for(let i = num1; i <= num2; i += step){
+//     amount -= i;
+//   }
+//   return amount;
+// }
+
+// function sumOfEvenNumbers(n1, n2){
+//   let sum = 0;
+//   for(let i = n1; i <= n2; i++){
+//     if(i % 2 === 0){
+//       sum += i;
+//     }
+//   }
+//   return sum;
+// }
+
+// function evenVsOdd(num1, num2){
+//   let sumOfOdd = 0;
+//   let sumOfEven = 0;
+//   for(let i = num1; i <= num2; i++){
+//     if(i % 2 === 0){
+//       sumOfEven += i;
+//     } else {
+//       sumOfOdd += i;
+//     }
+//   }
+//   if(sumOfOdd > sumOfEven){
+//     return 'Sum of odd win'
+//   } else if(sumOfOdd < sumOfEven){
+//     return 'Sum of even win'
+//   } else {
+//     return 'Draw'
+//   }
+// }
+
+// function addToArray(n1, n2){
+//   let arr = [];
+//   if(n1 < n2){
+//     for(let i = n1; i <= n2; i++){
+//       arr.push(i)
+//     }
+//   }
+//   else if(n1 > n2){
+//     for(let i = n2; i <= n1; i++){
+//       arr.push(i)
+//     }
+//   } else{
+//     arr = [];
+//   }
+//   return arr;
+// }
+
+// function powerOfTwo(n){
+//   let temp = 1;
+//   for(let i = 1; i <= n; i++){
+//     temp *= 2
+//   }
+//   return temp;
+// }
+
+// function positiveAndNegative(n1, n2){
+//   let positive = 0;
+//   let negative = 0;
+//   for (let i = n1; i <= n2; i++){
+//     if (i == 0) {
+//       continue
+//     } else if(i > 0){
+//       positive++;
+//     } else{
+//       negative++;
+//     }
+//   }
+//   return [positive, negative];
+// }
+//
+// function stringOfNumbers(str) {
+//   sum = 0;
+//   for(let i = 0; i < str.length; i++) {
+//     sum += Number(str[i]);
+//   }
+//   return sum;
+// }
+
+// function fromNumberToZero(num){
+//   let arr = [];
+//   if(num < 0){
+//     return [];
+//   }
+//   for(let i = num; i >= 0; i--){
+//     arr.push(i)
+//   }
+//   return arr;
+// }
+
+// function decreaseArray(num1, num2){
+//   let arr = [];
+//   if(num1 >= num2){
+//     for(let i = num1; i >= num2; i--){
+//       arr.push(i)
+//     }
+//   }
+//   if(num1 < num2){
+//     for(let i = num2; i >= num1; i--){
+//       arr.push(i)
+//     }
+//   }
+//   return arr;
+// }
 
 
 
