@@ -1253,6 +1253,187 @@
 //   }
 //   return arr;
 // }
+//
+// function decreaseEven(num1, num2){
+//   let arr = [];
+//   for(let i = num1; i >= num2; i--){
+//     if(i % 2 == 0){
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
+// }
+
+// function arrayOdd(num1, num2){
+//   let arr = [];
+//   if(num1 > num2){
+//     for(let i=num1; i >= num2; i--){
+//       if(i % 2 !== 0){
+//         arr.push(i)
+//       }
+//     }
+//   } else {
+//     for(let i=num2; i>=num1; i--){
+//       if(i%2 !== 0){
+//         arr.push(i)
+//       }
+//     }
+//   }
+//   return arr;
+// }
+
+// function makeOrder(n1, n2){
+//   let arr = [];
+//   if(n1 < n2){
+//     for(let i = n1; i <= n2; i++){
+//       arr.push(i)
+//     }
+//   }
+//   if(n1 >= n2){
+//     for(let i = n1; i >= n2; i--){
+//       arr.push(i)
+//     }
+//   }
+//   return arr;
+// }
+
+// function fractionSum(n){
+//   let sum = 0;
+//   for(let i = 1; i <= n; i++){
+//     sum += 1 / i;
+//   }
+//   return Number(sum.toFixed(2));
+// }
+
+// function arrayOfSquares(n1){
+//   if(n1 < 1){
+//     return []
+//   }
+//   let arr = [];
+//   for(let i = n1; i > 0; i--){
+//     arr.push(i ** 2);
+//   }
+//   return arr;
+// }
+
+// function powerOfTwo(num){
+//   if(num < 0){
+//     return [];
+//   }
+//   let arr = [];
+//   for(let i = num; i >= 0; i--){
+//     arr.push(2 ** i);
+//   }
+//   return arr;
+// }
+
+// function powerOfNum(num, power){
+//   if (power < num) return `Sum is ${num}`;
+//   let sum = 0;
+//   for (let i = num; i <= power; i++){
+//     sum += num ** i;
+//   }
+//   return `Sum is ${sum}`;
+// }
+
+// function strToArray(str){
+//   let arr = [];
+//   for(let i = str.length -1; i >= 0; i--){
+//     arr.push(Number(str[i]));
+//   }
+//   return arr;
+// }
+
+// function sumFromN1ToN2(n1, n2){
+//   let sum = 0;
+//   for(let i = n1 + 1; i < n2; i++){
+//     sum += i;
+//   }
+//   return sum;
+// }
+
+// function divisibleByFive(n1, n2){
+//   let sum = 0;
+//   for(let i = n1 + 1; i < n2; i++){
+//     if(i % 5 === 0){
+//       sum += i
+//     }
+//   }
+//   return sum;
+// }
+
+// function sumOfPositive(n1, n2){
+//   let sum = 0;
+//   for(let i = n1; i <= n2; i++){
+//     if(i > 0){
+//       sum += i;
+//     }
+//   }
+//   return sum;
+// }
+
+// function negativeAndDivisibleBy3(n1, n2){
+//   let sum = 0;
+//   for(let i = n1; i < n2; i++){
+//     if(i < 0 && i % 3 == 0){
+//       sum += i;
+//     }
+//   }
+//   return sum;
+// }
+
+// function allButZero(n1, n2){
+//   let sum = 0;
+//   for(let i = n1; i <= n2; i++){
+//     if(i == 0){
+//       return 'Invalid input'
+//     }
+//     sum += i
+//   }
+//   return sum;
+// }
+
+// function stringResult(n1, n2){
+//   let sum = 0;
+//   for(let i = n1; i <= n2; i++){
+//     sum += i
+//   }
+//   return `Sum of numbers from ${n1} to ${n2} is ${sum}`;
+// }
+
+// function sumOfArray(arr){
+//   let sum = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     sum += arr[i]
+//   }
+//   return `Sum of array is ${sum}`
+// }
+
+// function totalLength(array) {
+//   let str = '';
+//   for(let i = 0; i < array.length; i++) {
+//     for(let j = 0; j < array[i].length; j++){
+//       str += array[i][j]
+//     }
+//   }
+//   return str.length;
+// }
+
+// function oneAndTwoDigits(n1, n2){
+//   sumOfOne = 0;
+//   sumOfTwo = 0;
+//   for(let i = n1 + 1; i < n2; i++){
+//     if(Math.abs(i) < 10){
+//       sumOfOne += i
+//     }
+//     else if(Math.abs(i) > 9 && Math.abs(i) < 100){
+//       sumOfTwo += i
+//     }
+//   }
+//   return `Sum of one digit: ${sumOfOne}, sum of two digits: ${sumOfTwo}`
+// }
+
+
 
 
 
