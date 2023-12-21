@@ -1433,6 +1433,175 @@
 //   return `Sum of one digit: ${sumOfOne}, sum of two digits: ${sumOfTwo}`
 // }
 
+// function addSumToObj(obj, n1, n2) {
+//   sum = 0;
+//   start = n1;
+//   end = n2;
+//   if(n2 < n1){
+//     start = n2;
+//     end = n1;
+//   }
+//   for(let i = start; i <= end; i++) {
+//     sum += i;
+//   }
+//   obj.sum = sum;
+//   return obj;
+// }
+
+// function sumOdd(arr){
+//   sum = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] % 2 !== 0){
+//       sum += arr[i]
+//     }
+//   }
+//   return sum;
+// }
+
+// function sumOddNegative(arr){
+//   let sum = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] % 2 !== 0 && arr[i] < 0){
+//       sum += arr[i];
+//     }
+//   }
+//   return sum;
+// }
+
+// function sumEven(arr){
+//   let sum = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] % 2 === 0){
+//       sum += arr[i];
+//     }
+//   }
+//   return sum;
+// }
+
+// function sumEvenNegative(arr){
+//   let sum = 0;
+//   for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] % 2 == 0 && arr[i] < 0) {
+//       sum += arr[i]
+//     }
+//   }
+//   return sum;
+// }
+
+// function sumEvenPositiveOddNegative(arr){
+//   let sumEven = 0;
+//   let sumOdd = 0;
+//   for(let i = 0; i <= arr.length; i++){
+//     if(arr[i] % 2 == 0 && arr[i] > 0){
+//       sumEven += arr[i];
+//     } else if(arr[i] % 2 !== 0 && arr[i] < 0){
+//       sumOdd += arr[i];
+//     }
+//   }
+//   let sum = sumEven + sumOdd;
+//   return sum;
+// }
+
+// function sumEvenPositive3digitNum(arr){
+//   let sum = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i].toString().length === 3 && arr[i] > 0 && arr[i] % 2 == 0){
+//       sum += arr[i];
+//     }
+//   }
+//   return sum;
+// }
+
+// function from5ElTo10El(arr){
+//   let sum = 0;
+//   if(arr.length < 9){
+//     for(let i = 4; i <= arr.length; i++){
+//       if(arr[i] % 2 == 0){
+//         sum += arr[i];
+//       }
+//     }
+//   } else if (arr.length > 9){
+//     for(let j = 4; j <= 9; j++){
+//       if(arr[j] % 2 == 0){
+//         sum += arr[j];
+//       }
+//     }
+//   }
+//   return sum;
+// }
+
+// function from2IndTo6Ind(arr){
+//   let sum = 0;
+//   for (let i = 2; i <= 6; i++) {
+//     if(arr[i] % 2 !== 0 && arr[i] > 9 && arr[i] < 100)
+//       sum += arr[i];
+//   }
+//   return sum
+// }
+
+// function sumEven2DigPositiveAnd3DigNegative(arr){
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if ((arr[i] % 2 === 0 && arr[i] > 9 && arr[i] < 100) || (arr[i] % 2 === 0 && arr[i] < -99 && arr[i] > -1000)) {
+//       sum += arr[i]
+//     }
+//   }
+//   return sum;
+// }
+
+// function sumOddFromMiddleToEnd(arr){
+//   let sum = 0;
+//   let half = Math.floor(arr.length / 2);
+//   for(let i = half; i < arr.length; i++){
+//     if(arr[i] % 2 !== 0){
+//       sum += arr[i];
+//     }
+//   }
+//   return sum;
+// }
+
+// function stringToArray(str){
+//   if(str.length == 0){
+//     return [];
+//   }
+//   return str.split('');
+// }
+
+// function twoIntoOne(s1, s2){
+//   if(s1.length !== 0 && s2.length !== 0){
+//     let arr1 = s1.split('');
+//     let arr2 = s2.split('');
+//     arr1.push(' ');
+//     return arr1.concat(arr2);
+//   } else if(s1.length == 0 || s2.length ==0){
+//     return s1.split('').concat(s2.split(''));
+//   } else {
+//     return [];
+//   }
+// }
+
+// function replaceSpaces(str){
+//   let arr = [];
+//   let count = 0;
+//   if(str.length === 0){
+//     return arr;
+//   }
+//   for(let i = 0; i < str.length; i++){
+//     if(str[i] == ' '){
+//       count++;
+//       continue;
+//     } else {
+//       arr.push(str[i]);
+//     }
+//   }
+//   arr.reverse();
+//   for(let i = 1; i <= count; i++){
+//     arr.push(null)
+//   }
+//   return arr;
+// }
+
+
 
 
 
