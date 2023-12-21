@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 // let obj = {1: 'a', 2: 'b', 3: 'c'};
 // console.log(obj[3]);
 
@@ -124,9 +124,3 @@
 // let obj = {x: 1, y: 2, z: 3};
 // let prop = 'x';
 // console.log(obj[prop]);
-
-
-
-
-
-

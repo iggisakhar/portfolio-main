@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 // let arr = [12, 13, 4, 5, 6, 7];
 // alert(arr); 
 
@@ -175,7 +175,3 @@
 
 // let arr = [1, 2, 3, 4, 5, 6]; 
 // console.log(arr.length);
-
-
-
-

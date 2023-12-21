@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 // alert(0.1 * 0.2);
 
 // alert(0.3 - 0.1);
@@ -48,6 +48,6 @@
 // let str = 'Just another text witch has to be on console';
 // document.write('</br> <i>' + str + '</i>')
 
-document.write('</br> 1 </br> 2 </br> 3 </br> 4 </br> 5')
+// document.write('</br> 1 </br> 2 </br> 3 </br> 4 </br> 5')
 
 

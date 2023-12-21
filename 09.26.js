@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 
 // let arr = [
 // ['a', 'b', 'c'],
@@ -905,4 +905,3 @@
 // students.group4.subgroup41 = [];
 // students.group4.subgroup41.push('student411', 'student412');
 // console.log(students);
-

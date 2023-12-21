@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 
 // console.log(Math.pow(2, 10));
 
@@ -1222,5 +1222,3 @@
 // 	} return result;
 // }
 // console.log(translate('Сделайте функцию, которая будет принимать строку на русском языке, а возвращать ее транслит'));
-
-

@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
  // let arr = ['a', 'b', 'c', 'a', 'a', 'b'];
  // let counter = 0;
  // for (let elem of arr) {
@@ -487,24 +487,3 @@
 // 	obj[i + 1] = arr[i];
 // }
 // console.log(obj);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 
 // let str = 'abcde'; 
 // alert(str[0]); // выведет 'a' 
@@ -64,4 +64,3 @@
 // let NewOne = String(num);
 // let reverse = NewOne[4] + NewOne[3] + NewOne[2] + NewOne[1] + NewOne[0];
 // alert(Number(reverse));
-

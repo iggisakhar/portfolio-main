@@ -62,11 +62,11 @@
 // num--;
 // alert(num);
 
-let str = 'abcde';
-alert(str[0]);
-alert(str[2]);
-alert(str.length[-1]);
-
-let num = '12345' 
-alert(Number(num[0]) * Number(num[1]) * Number(num[2]) * Number(num[3]) * Number(num[4]));
+// let str = 'abcde';
+// alert(str[0]);
+// alert(str[2]);
+// alert(str.length[-1]);
+//
+// let num = '12345'
+// alert(Number(num[0]) * Number(num[1]) * Number(num[2]) * Number(num[3]) * Number(num[4]));
 

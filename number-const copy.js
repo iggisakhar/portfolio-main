@@ -1,4 +1,5 @@
-"use strict"
+// "use strict"
+
 // let a = '2'; 
 // let b = '3'; 
 // alert(Number(a) + Number(b)); // выведет '23'
@@ -38,6 +39,3 @@
 // alert(a.length);
 // alert(b.length);
 // alert(a + b);
-
-
-

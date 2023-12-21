@@ -1,4 +1,5 @@
-"use strict"
+// "use strict"
+
 // let key = 'x';
 // let obj = {
 //  	[key]: 1, 

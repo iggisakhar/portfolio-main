@@ -1750,159 +1750,23 @@
 // 	res.textContent = fac;
 // })
 
-	let btn = document.getElementById("btn");
-	let res = document.getElementById("res");
-
-
-	btn.addEventListener('click', function(){
-		let a = Number(document.querySelector('#inp1').value);
-		let b = Number(document.querySelector('#inp2').value);
-		let c = Number(document.querySelector('#inp3').value);
-		console.log(a)
-		let disc= b*b - 4*a*c;
-
-		if(disc<0){
-			res.textContent= "No real root"
-		} else if(disc ==0){
-			let root = -b/2*a;
-			res.textContent="One root"+root;
-		}else{
-			let x1=(-b+Math.sqrt(disc))/(2*a);
-			let x2=(-b-Math.sqrt(disc))/(2*a);
-			res.textContent="two root"+x1+"and"+x2;	
-		}
-	})		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	// let btn = document.getElementById("btn");
+	// let res = document.getElementById("res");
+	// btn.addEventListener('click', function(){
+	// 	let a = Number(document.querySelector('#inp1').value);
+	// 	let b = Number(document.querySelector('#inp2').value);
+	// 	let c = Number(document.querySelector('#inp3').value);
+	// 	console.log(a)
+	// 	let disc= b*b - 4*a*c;
+	//
+	// 	if(disc<0){
+	// 		res.textContent= "No real root"
+	// 	} else if(disc ==0){
+	// 		let root = -b/2*a;
+	// 		res.textContent="One root"+root;
+	// 	}else{
+	// 		let x1=(-b+Math.sqrt(disc))/(2*a);
+	// 		let x2=(-b-Math.sqrt(disc))/(2*a);
+	// 		res.textContent="two root"+x1+"and"+x2;
+	// 	}
+	// })

@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 // let ok = confirm('question');
 // console.log(ok);
 
@@ -256,24 +256,3 @@
 // } else {
 // 	console.log('N');
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	

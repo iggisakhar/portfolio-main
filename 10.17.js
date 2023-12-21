@@ -1,6 +1,5 @@
 // "use strict"
 
-
 // function func() {
 // 	console.log(num);
 // }
@@ -2362,31 +2361,3 @@ console.log(str2);
 // let now = new Date();
 // let date = new Date(now.getFullYear(), now.getMonth() -1, 1);
 // console.log(date.getDay());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
