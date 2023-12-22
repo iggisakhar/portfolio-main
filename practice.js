@@ -1600,3 +1600,252 @@
 //   }
 //   return arr;
 // }
+
+// function twoStrings(s1, s2){
+//   let arr = [];
+//   for(let i = 0; i < s1.length; i++){
+//     arr.push(s1[i] + s2[i])
+//   }
+//   return arr;
+// }
+
+// function reverseLettersCase(str){
+//   let arr = str.split('');
+//   let arr1 = [];
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] == ' '){
+//       continue;
+//     } else if(arr[i] !== arr[i].toUpperCase()){
+//       arr1.push(arr[i].toUpperCase())
+//     } else {
+//       arr1.push(arr[i].toLowerCase())
+//     }
+//   }
+//   return arr1;
+// }
+
+// function strOfNum(str){
+//   let arr = [];
+//   for(let i = 0; i < str.length; i++){
+//     if(+str[i] == i){
+//       arr.push(str[i])
+//     }
+//   }
+//   return arr;
+// }
+
+// function vowelsAndConsonants(str){
+//   let arr = [];
+//   let arr2 = [];
+//   for(let i = 0; i < str.length; i++){
+//     if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
+//       arr.push(str[i]);
+//     } else {
+//       arr2.push(str[i])
+//     }
+//   }
+//   return [arr, arr2];
+// }
+
+// function vowelsAndConsonants(str){
+//   let arr1 = str.match(/[aeiou]/g) || [];
+//   let arr2 = str.match(/[bcdfghjklmnpqrstvwyz]/g) || [];
+//   return [arr1, arr2];
+// }
+
+// function vowelsAndConsonants(str){
+//   let arr = [];
+//   let arr2 = [];
+//   for(let i = 0; i < str.length; i++){
+//     if('aeiou'.includes(str[i])){
+//       arr.push(str[i]);
+//     } else {
+//       arr2.push(str[i])
+//     }
+//   }
+//   return [arr, arr2];
+// }
+
+// function reverseString(str, b){
+//   let arr = [];
+//   for(let i = str.length -1; i >= 0; i--){
+//     if(str[i] === b){
+//       break;
+//     }
+//     arr.push(str[i]);
+//   }
+//   return arr;
+// }
+
+// function wordsDivider(str) {
+//   if (str.length == 0) return [];
+//   let array = [];
+//   let chunk = '';
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] !== ' ') {
+//       chunk += str[i];
+//     } else {
+//       array.push(chunk);
+//       chunk = '';
+//     }
+//   }
+//   array.push(chunk)
+//   return array;
+// }
+
+// function biggerString(str1, str2){
+//   let arr = [];
+//   let result = '';
+//   if(str1.length === str2.length) {
+//     result = str2;
+//   } else if(str1.length > str2.length){
+//     result = str1;
+//   } else {
+//     result = str2;
+//   }
+//   for(let i = 0; i < result.length; i++){
+//     arr.unshift(result[i])
+//   }
+//   return arr;
+// }
+
+// function wordFromLetters(letters){
+//   return letters.join('');
+// }
+
+// function getNumber(digits){
+//   let number = '';
+//   for(let i = 0; i < digits.length; i++){
+//     number += digits[i];
+//   }
+//   return +number;
+// }
+
+// function numbersToString(numbers){
+//   let result = '';
+//   for(let i = 0; i < numbers.length; i++) {
+//     result += numbers[i];
+//     if( i !== numbers.length - 1) {
+//       result += ',';
+//     }
+//   }
+//   return result;
+// }
+
+// function shoppingList(items){
+//   let res = 'Shopping list:';
+//   for(let i = 0; i < items.length; i++){
+//     res += '\n-' + items[i];
+//   }
+//   return res;
+// }
+
+// function wordsToSentence(words){
+//   if(words.length == 0){
+//     return '';
+//   }
+//   let sentence = '';
+//   sentence = words[0][0].toUpperCase() + words[0].substring(1).toLowerCase();
+//   for(let i = 1; i < words.length; i++){
+//     sentence += ' ' + words[i].toLowerCase();
+//   }
+//   return sentence + '.'
+// }
+
+// function stringOfPositiveIntegers(arr){
+//   let str = ' ';
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] > 0 && arr[i] % 1 == 0){
+//       str += arr[i] + '; '
+//     }
+//   }
+//   return '(' + str.trimEnd() + ')';
+// }
+
+// function getWordsStartingWith(words, letter){
+//   let str = '';
+//   for(let i = 0; i < words.length; i++){
+//     if(words[i][0].toLowerCase() == letter.toLowerCase()){
+//       str += ' ' + words[i];
+//     }
+//   }
+//   return str.trimStart();
+// }
+
+// function filterByLength(words, length){
+//   let result = '';
+//   for (let i = 0; i < words.length; i++) {
+//     if (length === 0 || words[i].length === length) {
+//       if ( result !== '') {
+//         result = result + ',';
+//       }
+//       result += words[i] ;
+//     }
+//   }
+//   return result;
+// }
+
+// function filterByLetter(words, letter){
+//   if(letter == ''){
+//     return words.join(';');
+//   }
+//   let str = '';
+//   for(let i = 0; i < words.length; i++){
+//     for(let j = 0; j < words[i].length; j++){
+//       if(words[i][j].toLowerCase() == letter.toLowerCase()){
+//         str += words[i] + ';'
+//         break;
+//       }
+//     }
+//   }
+//   return str.slice(0, -1);
+// }
+
+// function booksToRead(books){
+//   let booksToRead = [];
+//   for (let i = 0; i < books.length; i++) {
+//     if (books[i].alreadyRead === false) {
+//       booksToRead.push(books[i]);
+//     }
+//   }
+//   if (booksToRead.length === 0) {
+//     return `Congrats! You've read all books.`;
+//   } else {
+//     let result = `You still need to read: `;
+//     for (let i = 0; i < booksToRead.length; i++) {
+//       result += `"${booksToRead[i].title}" by ${booksToRead[i].author}`;
+//       if (i == booksToRead.length - 1) {
+//         result += '.';
+//       } else {
+//         result += ', ';
+//       }
+//     }
+//     return result;
+//   }
+// }
+
+// function reverseString(str){
+//   let newStr = str.split('').reverse().join('');
+//   return newStr;
+// }
+
+// function reverseWithoutSpaces(str){
+//   let newStr = str.split(' ').join('').split('').reverse().join('');
+//   return newStr;
+// }
+
+// function reverseStrAndCase(str){
+//   return str.split('').reverse().map(el => el == el.toUpperCase() ? el.toLowerCase() : el.toUpperCase()).join('')
+// }
+
+// function reverseStrInArray(arr){
+//   let str = '';
+//   for(let i = arr.length -1; i >= 0; i--){
+//     str += arr[i];
+//   }
+//   return [arr[0], str.split('').reverse().join('')]
+// }
+
+// function reverseStrInArray(arr){
+//   return [arr[0], arr[0].split('').reverse().join('')]
+// }
