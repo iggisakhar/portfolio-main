@@ -1849,3 +1849,140 @@
 // function reverseStrInArray(arr){
 //   return [arr[0], arr[0].split('').reverse().join('')]
 // }
+
+// function reverse(str, index, index2){
+//   if(str == ''){
+//     return 'nothing to reverse'
+//   }
+//   let res = '';
+//   for(let i = 0; i < str.length; i++){
+//     if(i == index || i == index2){
+//       continue;
+//     }
+//     res += str[i];
+//   }
+//   res = res.split('').reverse().join('');
+//   return str + ' ' + res;
+// }
+
+// function reverseAndSpaceIt(str){
+//   return str.split('').reverse().join(' ').trim();
+// }
+
+// function reverseAndCompare(str1, str2){
+//   let newStr1 = str1.split('').reverse().join('');
+//   if(str2 == newStr1.toLowerCase()){
+//     return 'Strings are equal with lowercase';
+//   } else if(newStr1.toUpperCase() == str2){
+//     return 'Strings are equal with uppercase';
+//   } else {
+//     return 'Strings are not equal'
+//   }
+// }
+
+// function reverseBigger(arr){
+//   if(arr[0].length > arr[1].length){
+//     arr.push(arr[0].split('').reverse().join(''));
+//   } else {
+//     arr.push(arr[1].split('').reverse().join(''));
+//   }
+//   return arr
+// }
+
+// function deepReverse(str) {
+//   let newStr = '';
+//   for (let i = 0; i < str.length; i++) {
+//     if(str[i].toUpperCase() === str[i]){
+//       newStr += str[str.length - 1 - i].toUpperCase();
+//     } else {
+//       newStr += str[str.length - 1 - i].toLowerCase();
+//     }
+//   }
+//   return newStr;
+// }
+
+// function reverseStringInArray(arr){
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let chunk = '';
+//     for (let j = arr[i].length - 1; j >= 0; j--) {
+//       chunk += arr[i][j];
+//     }
+//     newArr.push(chunk);
+//   }
+//   return newArr;
+// }
+
+// function checkTheString(str){
+//   return str.split('').reverse().join('') === str;
+// }
+
+// function isPalindrome(str){
+//   return str.toLowerCase().split('').reverse().join('') == str.toLowerCase();
+// }
+
+// function isAnyPalindrome(str1, str2){
+//   if(str2.split('').reverse().join('') == str2 && str1.split('').reverse().join('') == str1){
+//     return 'both are palindrome'
+//   }
+//   if(str1.split('').reverse().join('') == str1){
+//     return `${str1} is palindrome`
+//   }
+//   if(str2.split('').reverse().join('') == str2){
+//     return `${str2} is palindrome`
+//   } else {
+//     return 'none of them is palindrome'
+//   }
+// }
+
+// function checkArray(arr){
+//   return arr[0].split('').reverse().join('') == arr[0];
+// }
+
+// function makePalindrome(str){
+//   let newStr = str.split('').reverse().join('');
+//   return str + newStr
+// }
+
+// function isArrayPalindrome(arr){
+//   return arr.toString().split('').reverse().join('') == arr ? true : false;
+// }
+
+// function checkStr(str){
+//   if(str.split('').reverse().join('') == str){
+//     return `${str} is palindrome`;
+//   }
+//   if(str.split('').reverse().join('') != str){
+//     return `${str} is not palindrome`;
+//   }
+// }
+
+// function fixStr(str){
+//   let middleStr = str.length / 2;
+//   for (let i = 0; i < middleStr; i++) {
+//     if (str[i] != str[str.length - 1 - i])
+//       return false;
+//   }
+//   return true;
+// }
+
+// function checkPalindrome(str){
+//   if(str.toLowerCase().split('').reverse().join('') == str.toLowerCase()){
+//     return `${str.trim().toLowerCase()} is a palindrome`
+//   }
+//   return `${str.trim().toLowerCase()} is not a palindrome`
+// }
+
+// function findWrongLetter(str){
+//   let str1 = str.split('').reverse().join('');
+//   for(let i = 0; i < str.length; i++){
+//     if(str[i] != str1[i]){
+//       return `${str} is not palindrome because of wrong letter at position ${i}`
+//     }
+//   }
+// }
+
+// function spread(func, args) {
+//   return func.apply(this, args);
+// }
+
