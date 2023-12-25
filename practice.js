@@ -1986,3 +1986,198 @@
 //   return func.apply(this, args);
 // }
 
+// let beeramid = function(bonus, price) {
+//   if(bonus <= 0 || price <= 0){
+//     return 0;
+//   }
+//   let res = Math.floor(bonus / price);
+//   let levels = 0;
+//   let need = 0;
+//   while(res >= need){
+//     levels ++
+//     need += levels ** 2;
+//   }
+//   return levels -1;
+// }
+
+// function scoreTest(str, right, omit, wrong){
+//   let answer = 0;
+//   for(let i = 0; i < str.length; i++){
+//     if(str[i] == 0){
+//       answer += right
+//     } else if(str[i] == 1){
+//       answer += omit
+//     } else if(str[i] == 2){
+//       answer -= wrong;
+//     }
+//   }
+//   return answer;
+// }
+
+// function doors(n){
+//   return Math.floor(Math.sqrt(n));
+// }
+
+// function findUniq(arr) {
+//   let unique = {};
+//   for(let i = 0; i < arr.length; i++){
+//     let num = arr[i];
+//     if(unique[num]){
+//       unique[num] =  unique[num] + 1
+//     } else {
+//       unique[num] = 1
+//     }
+//   }
+//   for(let i in unique){
+//     if(unique[i] == 1){
+//       return parseFloat(i)
+//     }
+//   }
+// }
+
+// function zeros (n) {
+//   let sum = 0;
+//   for(let i = 5; n / i >= 1; i *= 5){
+//     sum += Math.floor(n / i)
+//   }
+//   return sum;
+// }
+
+// function nbYear(p0, percent, aug, p) {
+//   let i = 0;
+//   for(i = 0; p0 < p; i++){
+//     p0 = Math.floor(p0 + p0 * percent / 100 + aug)
+//   }
+//
+//   return i;
+// }
+
+// function nbYear(p0, percent, aug, p) {
+//   let years = 0;
+//   percent = percent / 100;
+//   while(p0 < p){
+//     p0 = Math.floor(p0 + p0 * percent + aug);
+//     years++
+//   }
+//   return years;
+// }
+
+// const quarterOf = (month) => {
+//   if(month <= 3 && month >= 1){
+//     return 1;
+//   }
+//   else if (month >= 4 && month <= 6) {
+//     return 2;
+//   }
+//   else if (month >= 7 && month <= 9) {
+//     return 3;
+//   }
+//   else if(month >= 10 && month <= 12){
+//     return 4;
+//   }
+// }
+
+// function swapValues(args) {
+//   let temp = args[0];
+//   args[0] = args[1];
+//   args[1] = temp;
+//   return args;
+// }
+
+// function reverseByCenter(s){
+//   let length = s.length;
+//   let half = Math.floor(length / 2);
+//   if(length % 2 == 0){
+//     return s.slice(half) + s.slice(0, half);
+//   } else {
+//     return s.slice(half + 1) + s.charAt(half) + s.slice(0, half)
+//   }
+// }
+
+// function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+//   let blue = blueStart - bluePulled;
+//   let red = redStart - redPulled;
+//   return blue / (blue + red)
+// }
+
+// function rgb(r, g, b) {
+//   r = Math.max(0, Math.min(255, r))
+//   g = Math.max(0, Math.min(255, g))
+//   b = Math.max(0, Math.min(255, b))
+//   let color = (r << 16) + (g << 8) + b;
+//   return ('00000' + color.toString(16).toUpperCase()).slice(-6)
+// }
+
+// function isValidIP(str) {
+//   return /^(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))\.(\d|[1-9]\d|1\d\d|2([0-4]\d|5[0-5]))$/.test(str);
+// }
+
+// function solution(string) {
+//   return(string.replace(/([A-Z])/g, ' $1'));
+// }
+
+// function generateHashtag (str) {
+//   if(str.trim() === '') return false
+//
+//   let strWithCamel = str
+//     .split(' ')
+//     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//     .join('')
+//
+//   let strWithHash = `#${strWithCamel.trim()}`;
+//   return strWithHash.length > 140 ? false : strWithHash;
+// }
+
+// function deleteNth(arr,n){
+//   let res = {};
+//   return arr.filter(v => (res[v] = ~~ res[v] + 1) <= n)
+// }
+
+// function peopleWithAgeDrink(old) {
+//   if(old < 14){
+//     return 'drink toddy'
+//   } else if(old < 18){
+//     return 'drink coke'
+//   } else if(old < 21){
+//     return 'drink beer'
+//   } else if(old >= 21){
+//     return 'drink whisky'
+//   }
+// };
+
+// function twoSort(s) {
+//   return s.sort()[0].split('').join('***');
+// }
+
+// function expandedForm(num) {
+//   return num.toString()
+//     .split("")
+//     .reverse()
+//     .map((a, i) => a * Math.pow(10, i))
+//     .filter(a => a > 0)
+//     .reverse()
+//     .join(" + ");
+//
+// }
+
+// function wave(str){
+//   return Array(str.length).fill(str).map((v, i, arr) =>
+//     v.slice(0, i).toLowerCase() +
+//     v.slice(i, i + 1).toUpperCase()
+//     + v.slice(i + 1).toLowerCase())
+//     .filter(v => v != v.toLowerCase())
+// }
+
+// function solution(input, markers) {
+//   let arr = input.split('\n');
+//   for(i = 0; i < markers.length; i++){
+//     arr = arr.map(function(el) {
+//       let ind = el.indexOf(markers[i]);
+//       if(ind !== -1) return el.substr(0, ind);
+//       else return el.replace(/\s*$/,'');
+//     });
+//   }
+//   return arr.join('\n').trim();
+// };
+
+
