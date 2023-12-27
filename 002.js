@@ -740,3 +740,192 @@
 // 		this.classList.toggle('colored');
 // 	})
 // }
+
+// let capital = 'roma';
+// let result = capital.slice(0, 3) + capital.slice(3).toUpperCase();
+// console.log(result);
+
+// let capital = 'Brazil';
+// let result = capital.slice(0, 2).toUpperCase() + capital.slice(2);
+// console.log(result);
+
+// let capital = 'London';
+// let result = capital.slice(0, 2).toLowerCase() + capital.slice(2);
+// console.log(result);
+
+// let str = 'word1 word2 word3';
+// let words = str.split(' ');
+// for (let i = 0; i < words.length; i++) {
+// 	words[i] = words[i].slice(0,1).toUpperCase() + words[i].slice(1);
+// }
+// let result = words.join(' ');
+// console.log(result);
+
+// let str = 'var_test_text';
+// let word=str.split('_');
+// for(let i=0;i<word.length;i++){
+// 	word[i] = word[i].slice(0,1).toUpperCase() + word[i].slice(1);
+// }
+// let result = word.join('');
+// console.log(result);
+
+// let str = 'VarTestText';
+// let newStr = str.split('');
+// for(let i = 0; i < newStr.length; i++) {
+// 	newStr[i] = newStr[i].slice(0,1).toLowerCase() + newStr[i].slice(1);
+// }
+// let result = newStr.join('');
+// console.log(result);
+
+// let str = '12345';
+// let result = str.split('').reverse().join('');
+// console.log(result);
+
+// let name = 'Adele';
+// let result = name.split('').reverse().join('');
+// console.log(result);
+
+// let num = 12345;
+// let arr = String(num).split('');
+// let sum = 0;
+// for(let digit of arr) {
+// 	sum += +digit;
+// }
+// console.log(sum);
+
+// let num = 12345;
+// let arr = String(num).split('');
+// let sum = 0;
+// for (let digit of arr) {
+// 	sum += +digit;
+// }
+// console.log(sum);
+
+// let num = 12345;
+// let arr = String(num).split('');
+// let sum = 0;
+// for (let digit of arr) {
+// 	sum += Number(digit);
+// }
+// console.log(sum);
+
+// let num = 12345;
+// let arr = String(num).split('');
+// let prod = 1;
+// for (let digit of arr) {
+// 	prod *= Number(digit);
+// }
+// console.log(prod);
+
+// function name() {
+// 	console.log('Igor');
+// }
+// name();
+
+// function number () {
+// 	for (let i = 1; i <= 100; i++) {
+// 		console.log(i);
+// 	}
+// }
+// number();
+
+// function func(num) {
+// 	console.log(num ** 2);
+// }
+// func(2);
+// func(3);
+
+// function func(num) {
+// 	console.log(num ** 3)
+// }
+// func(5);
+
+// function func(num) {
+// 	if (num >= 0) {
+// 		console.log('+');
+// 	} else {
+// 		console.log('-');
+// 	}
+// }
+// func(0);
+
+// function func(num1, num2) {
+// 	console.log(num1 + num2);
+// }
+// func(1, 2);
+
+// function sum(num1, num2, num3) {
+// 	console.log(num1 + num2 + num3);
+// }
+// sum(1, 3, 6);
+
+// function func(num) {
+// 	console.log(num ** 2);
+// }
+// let param = 2;
+// func(param);
+
+// function func(num1, num2, num3) {
+// 	console.log(num1 + num2 + num3)
+// }
+// let param1 = 1;
+// let param2 = 2;
+// let param3 = 3;
+// func(param1, param2, param3);
+
+// function func (num = 0) {
+// console.log(num * 2);
+// }
+// func(2);
+
+// function func(num = 5) {
+// 	console.log(num * num);
+// }
+// func(2);
+// func(3);
+// func();
+
+// function func(num1 = 0, num2 = 0) {
+// 	console.log(num1 + num2);
+// }
+// func(2, 3);
+// func(3);
+// func();
+
+// function func(num) {
+// 	console.log(num ** 2);
+// }
+// let res = func(3);
+
+// function func(num) {
+// 	return num ** 2;
+// }
+// let res = func(3);
+// res = res + 1;
+// console.log(res);
+
+// function func(num) {
+// 	return num ** 3;
+// }
+// let res = func(3)
+// console.log(res);
+
+// function func(num) {
+// 	return Math.sqrt(num);
+// }
+// console.log(func(3) + func(4));
+
+// function func(num) {
+// 	return num ** 2;
+// }
+// let res = func(func(2));
+// console.log(res);
+
+// function square(num) {
+// 	return num ** 2;
+// }
+// function cube(num) {
+// 	return num ** 3;
+// }
+// let res = cube(square(2));
+// console.log(res);

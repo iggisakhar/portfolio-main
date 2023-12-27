@@ -744,3 +744,264 @@
 // 		res.textContent="two root"+x1+"and"+x2;
 // 	}
 // })
+
+
+// func (['Jhon', 'Smit', 'development', 'programmer', 2000]);
+// function func ([name, surname, info]){
+// 	console.log(name);
+// 	console.log(surname);
+// 	console.log(info);
+// }
+
+// func(['Jhon', 'Smit', 'development'])
+// function func([name, surname, department, position = 'junior']) {
+// 	console.log(name);
+// 	console.log(position);
+// }
+
+// func (['Jhon', 'Smit', 'development', 12, 31, 2022]);
+// function func([name, surname, department, ...hired]) {
+// 	console.log(name);
+// 	console.log(surname);
+// 	console.log(department);
+// 	console.log(hired);
+// }
+
+// function func({year, month, day}) {
+// 	console.log(year);
+// 	console.log(month);
+// 	console.log(day);
+// }
+// func({year: 2025, month: 12, day: 31});
+
+// func({color: 'Red', width: 400, heigth: 500})
+// function func({color, width, heigth}) {
+// 	console.log(color);
+// 	console.log(width);
+// }
+
+// func({width: 400, heigth: 500})
+// function func({color = 'black', width, hiegth}) {
+// 	console.log(color);
+// 	console.log(width);
+// }
+
+// let date = new Date();
+// console.log(date);
+
+// let date = new Date();
+// console.log(date.getFullYear());
+// console.log(date.getMonth());
+// console.log(date.getDate());
+// console.log(date.getHours());
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
+
+
+// let date = new Date();
+// console.log(date.getMonth());
+
+// let date = new Date();
+// console.log(date.getFullYear());
+
+// let date = new Date();
+// console.log(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate());
+
+// let date = new Date();
+// console.log(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate());
+
+// function addZero (num) {
+// 	if (num >= 0 && num <= 9) {
+// 		return '0' + num;
+// 	} else {
+// 		return num;
+// 	}
+// }
+// console.log(addZero());
+
+// let date = new Date();
+// console.log(
+// 	addZero(date.getFullYear()) + '-' +
+// 	addZero(date.getMonth() + 1) + '-' +
+// 	addZero(date.getDate())
+// 	);
+
+
+// function addZero (num) {
+// 	if (num >= 0 && num <= 9) {
+// 		return '0' + num;
+// 	} else {
+// 		return num;
+// 	}
+// }
+
+// let date = new Date();
+// console.log(
+
+// 	addZero(date.getHours()) + ':' +
+// 	addZero(date.getMinutes()) + ':' +
+// 	addZero(date.getSeconds()) + ' ' +
+
+// 	addZero(date.getDate()) + '.' +
+// 	addZero(date.getMonth() + 1) + '.' +
+// 	addZero(date.getFullYear())
+// );
+
+// let str = '2025-12-31';
+// let arr = str.split('-');
+// let res = arr[2] + '/' + arr[1] + '/' + arr[0];
+// console.log(res);
+
+// let str = '2025-12-31';
+// let res = str.split('-').reverse().join('/');
+// console.log(res);
+
+// let str = '2022-11-29';
+// let res = str.split('-').reverse().join('/');
+// console.log(res);
+
+// let date = new Date();
+// let d=date.getDay();
+
+// if(d >= 1 || d < 6) {
+// 	console.log('work days');
+// } else {
+// 	console.log('weekend');
+// }
+// console.log(date.getDay());
+
+// let today = 7 - date.getDay();
+// console.log(today);
+
+// let date = new Date();
+// let day = date.getDay();
+// let days = ['vs', 'pn', 'vt', 'sr', 'ch', 'pt', 'su'];
+// console.log(days[day]);
+// console.log(day);
+
+// let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+// let date = new Date();
+// let month = date.getMonth();
+// console.log(months[month]);
+
+// let date = new Date(2025, 10, 5);
+// let day = date.getDay();
+// let days = ['vs', 'pn', 'vt', 'sr', 'chet', 'pya', 'sub'];
+// console.log(days[day]);
+
+// let date = new Date(1987, 0, 21);
+// let bday = date.getDay();
+// let days = ['vs', 'pn', 'vt', 'sr', 'chet', 'pya', 'sub'];
+// console.log(days[bday]);
+
+// let date = new Date();
+// console.log(date.getTime());
+
+// let date1 = new Date(2015, 11, 4, 23, 59, 59);
+// console.log(date1.getTime());
+
+// let now = new Date();
+// let date = new Date(2015, 11, 4, 23, 59, 59);
+// let diff = now.getTime() - date.getTime();
+// console.log(diff / 1000 * 60 * 60);
+
+// let date = new Date(2000, 1, 10, 23, 59, 59);
+// let date1 = new Date(1988, 3, 1, 23, 59, 59);
+// let newDate = date - date1;
+// console.log(newDate);
+
+// let date = new Date();
+// let me = new Date(1987, 1, 21, 23, 59, 59);
+// let diff = date - me;
+// console.log(diff);
+
+// let n2 = new Date(2000, 9, 1);
+// let n1 = new Date(2010, 2, 15);
+// let diff = n1 - n2;
+// console.log(diff / (1000 * 60 * 60 * 24 * 30 * 12));
+
+// let date = new Date(2018, 0, 35);
+// console.log(date);
+
+// let date = new Date(2018, 1, -1);
+// console.log(date);
+
+// let date = new Date(2018, -1, 1);
+// console.log(date);
+
+// let date = new Date(2018, 0, 1, 25, 0, 0)
+// console.log(date);
+
+// let date = new Date(2018, 1, 35);
+// console.log(date);
+
+// let date = new Date(2018, 15, 1);
+// console.log(date);
+
+// let date = new Date (2018, 3, 31);
+// console.log(date);
+
+// let date = new Date(2018, 1, 31);
+// console.log(date);
+
+// let date = new Date(2018, 12, 33);
+// console.log(date);
+
+// let date = new Date (2018, 33, 33);
+// console.log(date);
+
+// let date = new Date(2018, 5, 0);
+// console.log(date);
+
+// let date = new Date(2018, 0, 0);
+// console.log(date);
+
+// let date = new Date(2018, -12, -33);
+// console.log(date);
+
+// let date = new Date(2018, 0, 1, 23, 0, 60);
+// console.log(date);
+
+// let date = new Date(2018, 0, 1, 23, 60, 0);
+// console.log(date);
+
+// let date = new Date(2018, 0, 1, 100, 100, 100);
+// console.log(date);
+
+// let date = new Date(2020, 3, 0);
+// console.log(date.getDate());
+
+// let date = new Date(2022, 11, 1);
+// console.log(date);
+
+// let date = new Date(2025, 4, 0);
+// console.log(date);
+
+// let date = new Date(2020, 2, 0);
+// console.log(date.getDate());
+
+// let date = new Date(2020, 2, 0);
+// if (date.getDate() == 29) {
+// 	console.log('vis');
+// } else {
+// 	console.log('obi');
+// }
+
+// let isLeap = new Date(2020, 2, 0);
+// if (isLeap.getDate() == 29) {
+// 	console.log(true)
+// } else {
+// 	console.log(false);
+// }
+
+// let year = 2025;
+// let month = 0;
+// let day = 32;
+
+// let date = new Date(year, month, day);
+
+// if (date.getFullYear() == year && date.getMonth() == month && date.getDate() == day) {
+// 	console.log('corr')
+// } else {
+// 	console.log('not corr');
+// }

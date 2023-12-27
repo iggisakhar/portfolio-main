@@ -876,3 +876,48 @@
 
 // let elem = document.querySelector('#elem');
 // elem.classList.toggle('zzz');
+
+// let year = 2025;
+// let month = 0;
+// let day = 31;
+// let date = new Date(year, month, day);
+
+// function checkDate(year, month, day) {
+// if (date.getFullYear() == year && date.getMonth() == month && date.getDate() == day) {
+// 	return true;
+// } else {
+// 	return false;
+// }
+// } console.log(checkDate(year, month, day));
+
+// let now = new Date();
+// let date = new Date(now.getFullYear(), 2, 8);
+// console.log(date.getDay());
+
+// let today = new Date();
+// let date = new Date(today.getFullYear(), 11, 31);
+// console.log(date.getDay());
+
+// let now = new Date();
+// let date = new Date(now.getFullYear(), now.getMonth(), 25);
+// console.log(date.getDay());
+
+// let now = new Date();
+// let date = new Date(now.getFullYear(), now.getMonth(), 1);
+// console.log(date.getDay());
+
+// let now = new Date();
+// let date = new Date(now.getFullYear() + 1, 0, 21);
+// console.log(date);
+
+// let now = new Date();
+// let date = new Date(now.getFullYear() + 1, 11, 31);
+// console.log(date);
+
+// let now = new Date();
+// let date = new Date(now.getFullYear() + 1, 11, 5);
+// console.log(date);
+
+// let now = new Date();
+// let date = new Date(now.getFullYear(), now.getMonth() -1, 1);
+// console.log(date.getDay());

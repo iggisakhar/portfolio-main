@@ -426,3 +426,355 @@
 // 		console.log(arr[i] + " prostoe")
 // 	}
 // }
+
+// "use strict"
+
+// console.log(Math.pow(2, 10));
+
+// console.log(Math.sqrt(245));
+
+// let sum = 0;
+// let arr = [4, 2, 5, 19, 13, 0, 10];
+// for(let i = 0; i < arr.length; i++) {
+// 	sum += Math.pow(arr[i],2)
+// }
+// console.log(Math.sqrt(sum));
+
+// let sum = 379;
+// sum = Math.sqrt(sum);
+// let doSot = sum.toFixed(2);
+// let doDes = sum.toFixed(1);
+// let doSel = sum.toFixed();
+// console.log(sum);
+// console.log(doSot);
+// console.log(doDes);
+// console.log(doSel);
+
+// let sum = 587;
+// sum = Math.sqrt(sum);
+// let obj = {
+// 	ceil: Math.ceil(sum),
+// 	floor: Math.floor(sum)
+
+// }
+// console.log(obj);
+
+// console.log(Math.max(1, 5, 10, 34, 100));
+// console.log(Math.max(-1, 0, -20, -56, -100));
+// console.log(Math.max());
+// let arr = [1, 5, 10, 34, 100];
+// let max = Math.max.apply(null, arr);
+// console.log(max);
+
+// console.log(Math.min(40, 20, 42, 100, 76));
+// console.log(Math.min(-1, -100, -30, -25, 40));
+// console.log(Math.min());
+
+// let arr = [40, 20, 42, 100, 67];
+// let min = Math.min.apply(null, arr);
+// console.log(min);
+
+// console.log(Math.max(4, -2, 5, 19, -130, 0, 10));
+// console.log(Math.min(4, -2, 5, 19, -130, 0, 10));
+
+// function getRandomArbitary(min, max) {
+// 	return Math.random() * (max - min) + min;
+// }
+
+// function getRandomInt(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// console.log(Math.random());
+
+// function getRandomInt(min, max) {
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// console.log(getRandomInt(10, 100));
+
+// console.log(Math.floor(Math.random()*100+1));
+
+// let arr = [];
+// for (let i = 1; i <= 10; i++) {
+// 	arr.push(Math.floor(Math.random()*10+1));
+// }
+// console.log(arr);
+
+// console.log(Math.abs(-3));
+// console.log(Math.abs(3));
+
+// let a = 9;
+// let b = 8;
+// console.log(Math.abs(b - a));
+
+// let str = 'js';
+// console.log(str.toUpperCase());
+
+// let str = 'JS';
+// console.log(str.toLowerCase());
+
+// let str = 'Yazyk JavaScript';
+// console.log(str.toUpperCase());
+
+// let str = "YAZYK JAVASCRIPT";
+// console.log(str.toLowerCase());
+
+// let str = 'abcde';
+// let sub = str.substr(0,3);
+// console.log(sub);
+
+// let str = 'abcde';
+// let sub = str.substr(2);
+// console.log(sub);
+
+// let str = 'abcde';
+// let sub = str.substr(-3, 2);
+// console.log(sub);
+
+// let str = 'abcde';
+// let sub = str.substr(-3);
+// console.log(sub);
+
+// let str = 'abcde';
+// let sub = str.substr(-1);
+// console.log(sub);
+
+// let str = 'abcde';
+// let sub = str.substring(1, 3);
+// console.log(sub);
+
+// let str = 'abcde';
+// let sub = str.substring(1);
+// console.log(sub);
+
+// let str = 'abcbe';
+// let sub = str.slice(1,3);
+// console.log(sub);
+
+// let str = 'abcde';
+// let sub = str.slice(1);
+// console.log(sub);
+
+// let str = 'abcde';
+// let sub = str.slice(1, -2);
+// console.log(sub);
+
+// let str = 'Y uchu uchu JavaScript';
+// console.log(str.indexOf('uchu'));
+
+// let str = 'Y uchu uchu JavaScript';
+// console.log(str.indexOf('uchu', 5));
+
+// let str = 'Ya uchu uchu JavaScript';
+// console.log(str.indexOf('uchu', 5));
+
+// let str = 'Ya uchu JavaScript';
+// console.log(str.indexOf('PHP', 5));
+
+// let str = 'abcde';
+// console.log(str.indexOf('c', 2));
+
+// let str = 'apple';
+// console.log(str.indexOf('l', 3));
+
+// let name = 'Akiljan';
+// console.log(name.indexOf('a', 0));
+
+// let str = 'Camel';
+// console.log(str.indexOf('http://', 0));
+
+// let str = 'Hazelnut';
+// console.log(str.indexOf('html', 0));
+
+// let str = 'b..b..b';
+// console.log(str.lastIndexOf('b', 1))
+
+// let str = 'b..b..b';
+// console.log(str.lastIndexOf('b', 5));
+
+// let str = 'b..b..b';
+// console.log(str.lastIndexOf('B'));
+
+// let poem = 'be or not to be';
+// console.log(poem.startsWith('b', 0))
+
+// let poem = 'be or not to be';
+// console.log(poem.endsWith('e'));
+
+// let str = 'html-css-javascript';
+// let arr = str.split('-');
+// console.log(arr);
+
+// let str = 'html-css-javascript';
+// let arr = str.split('-', 2);
+// console.log(arr);
+
+// let str = 'abcde';
+// let arr = str.split('');
+// console.log(arr);
+
+// let str = 'abcde';
+// let arr = str.split('', 3);
+// console.log(arr);
+
+// let str = '12345';
+// let arr = str.split('');
+// console.log(arr);
+
+// let str = '123456789';
+// let arr1 = str.split('');
+// let arr2 = arr1.reverse();
+// let result = arr2.join('');
+// console.log(result);
+
+// let str = '123456789';
+// let result = str.split('').reverse().join('');
+// console.log(result);
+
+// let str = '12345';
+// let arr = str.split('');
+// let sum = 0;
+// for(let i = 0; i < arr.length; i++) {
+// 	sum += Number(arr[i]);
+// };
+// console.log(sum);
+
+// let num = 12345;
+// let str = String(num);
+// let arr = str.split('');
+// console.log(arr);
+
+// let num = '1-2-3-4-5';
+// let arr = num.split('-');
+// console.log(arr);
+
+// let num = '12345';
+// let arr = num.split('');
+// console.log(arr);
+
+// let arr = [1, 2, 3];
+// let str = arr.join('-');
+// console.log(str);
+
+// let arr = [1, 2, 3];
+// let str = arr.join();
+// console.log(str);
+
+// let arr = [1, 2, 3];
+// let str = arr.join('');
+// console.log(str);
+
+// let str = '123456789';
+// let arr1 = str.split('');
+// let arr2 = arr1.reverse();
+// let result = arr2.join('');
+// console.log(result);
+
+// let str = '123456789';
+// let result = str.split('').reverse().join('');
+// console.log(result);
+
+// let date = '2025-12-31';
+// let result = date.split('-').reverse().join('.');
+// console.log(result);
+
+// let arr = [1, 2, 3, 4, 5];
+// let result = arr.join('-');
+// console.log(result);
+
+// let arr = [1, 2, 3];
+// arr.push(4, 5, 6);
+// console.log(arr);
+
+// let arr = [];
+// for(let i = 1; i <= 9; i++) {
+// 	arr.push(i)
+// }
+// console.log(arr);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let elem = arr.shift();
+// console.log(elem);
+
+// let arr = ['1', '2', '3', '4', '5', '6'];
+// let result = [];
+// while (arr.length > 0) {
+// 	let first = arr.shift();
+// 	let last = arr.pop();
+// 	let str = first + last;
+// 	result.push(str);
+// }
+// result = result.join('-');
+// console.log(result);
+
+// let arr = [1, 2, 3];
+// let elem = arr.shift();
+// console.log(elem);
+
+// let arr = [1, 2, 3];
+// let elem = arr.pop();
+// console.log(elem);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let sub = arr.slice(0, 2);
+// console.log(sub);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let sub = arr.slice(1);
+// console.log(sub);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let sub = arr.slice(1, -1);
+// console.log(sub);
+
+// let arr = [1, 2, 3, 4, 5];
+// let sub = arr.slice(0, 3);
+// console.log(sub);
+
+// let arr = [1, 2, 3, 4, 5];
+// let sub = arr.slice(3);
+// console.log(sub);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// arr.splice(1, 3);
+// console.log(arr);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// arr.splice(2, 1, '1', '2', '3');
+// console.log(arr);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// arr.splice(-2, 1);
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(1, 2);
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(3, 0, 'a', 'b', 'c');
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+// arr.splice(1, 0, 'a', 'b');
+// arr.splice(6, 0, 'c');
+// arr.splice(8, 0, 'e');
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr.indexOf(3));
+
+// let arr = [1, 2, 3, 4, 5];
+// let result = arr.includes(1);
+// console.log(result);
+
+// let arr = [1, 2, 3, 4, 5];
+// let result = arr.includes(6);
+// console.log(result);
+
+// let arr = [1, 2, 3, 4, 5];
+// let result = arr.includes(3);
+// console.log(result);
+
+// let str = 'london';
+// let result = str.slice(0,1).toUpperCase() + str.slice(1);
+// console.log(result);
