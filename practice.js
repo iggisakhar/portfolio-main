@@ -2180,4 +2180,84 @@
 //   return arr.join('\n').trim();
 // };
 
+// let number = function(array){
+//   return array.map((el, ind) => `${ind + 1}: ${el}`);
+// }
+
+// function stray(numbers) {
+//   return numbers.find(
+//     number => numbers.indexOf(number) === numbers.lastIndexOf(number)
+//   )
+// }
+
+// function toCamelCase(str){
+//   return str.replace(/[-_](.)/g, (_, c) => c.toUpperCase());
+// }
+
+// let determinant = m => m.length === 1 ? m[0][0] : m[0].reduce((s, n, i) => s + (i % 2 === 0 ? 1 : -1) * n * determinant(m.slice(1)
+//   .map(r => r.filter((_, j) => j !== i))), 0);
+
+// function firstNonRepeatingLetter(s) {
+//   return s[s.toLowerCase().split('').findIndex(letter => s.toLowerCase().split('').filter(l => l === letter).length === 1)] || ''
+// }
+
+// function isPangram(string){
+//   let str = string.split('').join('').replace(/[\W\d]/g, '').toLowerCase().split('');
+//   return [...new Set(str)].length == 26;
+// }
+
+// function updateLight(current) {
+//
+//   return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green'
+//
+// }
+
+// const sequenceSum = (begin, end, step) =>
+//   begin > end ? 0 : begin + sequenceSum(begin + step, end, step)
+
+// function getPINs(observed) {
+//   let obj = {
+//     "0": ["0", '8'],
+//     '1': ['1', '2', '4'],
+//     '2': ['2', '3', '5', '1'],
+//     '3': ['3', '6', '2'],
+//     '4': ['4', '1', '5', '7'],
+//     '5': ['5', '2', '6', '8', '4'],
+//     '6': ['6', '3', '9', '5'],
+//     '7': ['7', '4', '8'],
+//     '8': ['8', '5', '9', '0', '7'],
+//     '9': ['9', '6', '8']
+//   }
+//   return observed.split('').map(o => obj[o]).reduce((start, tail) => {
+//     if(!start) return tail;
+//
+//     return start.reduce((list, combination) =>
+//         list.concat(tail.map(key => combination + key))
+//       , []);
+//   }, null);
+// }
+
+// function reverseList(list) {
+//   return list.reverse();
+// }
+
+// function baseCost(days, rate){
+//   return days * rate;
+// }
+//
+// function discountRate(days){
+//   if(days >= 7){
+//     return 50;
+//   }
+//   else if(days >= 3){
+//     return 20;
+//   }
+//   else{
+//     return 0;
+//   }
+// }
+//
+// function rentalCarCost(days){
+//   return baseCost(days, 40) - discountRate(days);
+// }
 
