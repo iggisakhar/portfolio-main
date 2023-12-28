@@ -2261,3 +2261,489 @@
 //   return baseCost(days, 40) - discountRate(days);
 // }
 
+// function spinWords(string){
+//   return string.split(' ').map(value => { if (value.length > 4) return value.split('').reverse().join('');
+//     return value})
+//     .join(' ')
+// }
+
+// decodeMorse = function(morseCode){
+//   return morseCode.split(' ').map((v, i) => MORSE_CODE[v] != undefined ? MORSE_CODE [v] : 1).join('').replace(/11/g, ' ').replace(/1/g, ' ').trim();
+// }
+
+// function testEven(n) {
+//   if(n % 2 == 0){
+//     return true;
+//   }
+//   return false;
+// }
+
+// function orderWeight(strng) {
+//   let sum = (str) => str.split('').reduce((sum, el) => (sum + (+el)), 0);
+//   function comp(a, b){
+//     let sumA = sum(a);
+//     let sumB = sum(b);
+//     return sumA === sumB ? a.localeCompare(b) : sumA - sumB;
+//   };
+//   return strng.split(' ').sort(comp).join(' ');
+// }
+
+// function rowSumOddNumbers(n) {
+//   return Math.pow(n, 3);
+// }
+
+// function combat(health, damage) {
+//   return health < damage ? 0 : health - damage;
+// }
+
+// function nthEven(n){
+//   return n * 2 - 2;
+// }
+
+// function differenceInAges(ages){
+//   return [Math.min(...ages), Math.max(...ages), Math.max(...ages) - Math.min(...ages)];
+// }
+
+// function pigIt(str){
+//   return str.split(' ').map(v => v.match(/[A-Za-z]/) ? v.slice(1) + v.slice(0, 1) + 'ay' : v).join(' ')
+// }
+
+// const cakes = (needs, has) => Math.min(
+//   ...Object.keys(needs).map(key => Math.floor(has[key] / needs[key] || 0))
+// )
+
+// function listSquared(m, n) {
+//   let arr = [];
+//   for(let i = m; i <= n; i++){
+//     let temp = 0;
+//     for(let j = 1; j <= i; j++){
+//       if(i % j == 0){
+//         temp += j * j;
+//       }
+//     }
+//     if(Math.sqrt(temp) % 1 == 0){
+//       arr.push([i, temp]);
+//     }
+//   }
+//   return arr;
+// }
+
+// function xor(a, b) {
+//   return a != b;
+// }
+
+// function findShort(s){
+//   return Math.min(...s.split(' ').map(s => s.length));
+// }
+
+// function groupByCommas(n) {
+//   return n.toLocaleString()
+// }
+
+// function between(a, b) {
+//   let arr = [];
+//   for(let i = a; i <= b; i++){
+//     arr.push(i)
+//   }
+//   return arr;
+// }
+
+// function sumDigits(number) {
+//   return Math.abs(number).toString().split('').reduce((total, next ) => total + Number(next), 0)
+// }
+
+// class SmallestIntegerFinder {
+//   findSmallestInt(args) {
+//     return Math.min(...args)
+//   }
+// }
+
+// function goals () {
+//   return [...arguments].reduce((a, b) => a + b, 0);
+// }
+
+// function paperwork(n, m) {
+//   return n > 0 && m > 0 ? n * m : 0;
+// }
+
+// function helloWorld(){
+//   let str;
+//   console.log('Hello World!');
+//   'Hello World!'
+// }
+
+// function remove (string) {
+//   return string.replace(/!$/, '');
+// }
+
+// let Kata = {
+//   getVolumeOfCuboid : (length, width, height) => length * width * height
+// }
+
+// function checkForFactor (base, factor) {
+//   return base % factor === 0
+// }
+
+// function revrot(str, sz) {
+//   if(sz < 1 || sz > str.length)
+//     return '';
+//
+//   let reverse = s => s.split('').reverse().join('');
+//   let rotate = s => s.slice(1) + s.slice(0, 1);
+//   let sumCubes = c => c.split('').reduce((a, b) => a + Number(b) ** 3, 0);
+//
+//   return str
+//     .match(new RegExp('.{' + sz + '}', 'g'))
+//     .map(c => sumCubes(c) % 2 ? rotate(c) : reverse(c))
+//     .join('');
+// }
+
+// function main (verb, noun){
+//   return `${verb}${noun}`
+// }
+
+// function animal(obj){
+//   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+// }
+
+// function tribonacci(signature,n){
+//   let arr = [...signature];
+//   for(let i = 0; i < n; i++){
+//     arr.push(arr.slice(i, i + 3).reduce((acc, next) => acc + next, 0))
+//   }
+//   return arr.slice(0, -3)
+// }
+
+// function encrypt(text, n) {
+//   if(!text || n <= 0) return text;
+//   while(n--) {
+//     let ans = '';
+//     for(let i = 1; i < text.length; i += 2){
+//       ans += text[i];
+//     }
+//     for(let i = 0; i < text.length; i += 2){
+//       ans += text[i];
+//     }
+//     text = ans;
+//   }
+//   return text;
+// }
+//
+// function decrypt(encryptedText, n) {
+//   if(!encryptedText || n <= 0) return encryptedText;
+//   let ans = new Array(encryptedText.length);
+//   while(n--){
+//     let j = 0;
+//     for(let i = 1; i < ans.length; i += 2){
+//       ans[i] = encryptedText[j++];
+//     }
+//     for(let i = 0; i < ans.length; i += 2){
+//       ans[i] = encryptedText[j++];
+//     }
+//     encryptedText = ans.join('');
+//   }
+//   return encryptedText;
+// }
+
+// function replace(s){
+//   return s.replace(/[aeoiu]/ig, '!')
+// }
+
+// function insurance(age, size, numofdays){
+//   let insur = 0;
+//   if(age < 25) insur += 10;
+//   if(size === 'economy') insur += 0;
+//   else if(size === 'medium') insur += 10
+//   else if(size === 'full-size') insur += 15
+//   else insur += 15
+//   insur = (numofdays * (50 + insur))
+//   return insur >= 0 ? insur : 0
+// }
+
+// function solve(str){
+//   let arr = [...str.split(' ').join('')];
+//   return str.replace(/\S/g, a => arr.pop());
+// }
+
+// function titleCase(title, minorWords) {
+//   var minorWords = typeof minorWords !== 'undefined' ? minorWords.toLowerCase().split(' ') : [];
+//   return title.toLowerCase().split(' ').map(function(v, i) {
+//     if(v != '' && ((minorWords.indexOf(v) === -1) || i == 0)){
+//       v = v.split('');
+//       v[0] = v[0].toUpperCase();
+//       v = v.join('');
+//     }
+//     return v;
+//   }).join(' ');
+// }
+
+// function whatday(num) {
+//   switch(num){
+//     case 1:
+//       return 'Sunday';
+//     case 2:
+//       return 'Monday';
+//     case 3:
+//       return 'Tuesday';
+//     case 4:
+//       return 'Wednesday';
+//     case 5:
+//       return 'Thursday';
+//     case 6:
+//       return 'Friday';
+//     case 7:
+//       return 'Saturday';
+//     default:
+//       return 'Wrong, please enter a number between 1 and 7';
+//   }
+// }
+
+// function stockList(listOfArt, listOfCat){
+//   if(listOfArt.length === 0 || listOfCat.length === 0) return ''
+//   let arr = [];
+//   let list = '';
+//   let not = 0;
+//   for(let i = 0; i < listOfCat.length; i++){
+//     list = listOfCat[i];
+//     not = 0;
+//     for(let j = 0; j < listOfArt.length; j++){
+//       if(listOfArt[j][0] === listOfCat[i]){
+//         not += listOfArt[j].match(/[\d]+/g) * 1 }}
+//     let str = `(${list} : ${not})`
+//     arr.push(str)
+//   }
+//   return arr.join(' - ')
+// }
+
+// function axisAlignedBoundingBox(x, y) {
+//   let a = Math.max(...x) - Math.min(...x)
+//   let b = Math.max(...y) - Math.min(...y)
+//   return a * b;
+// }
+
+// function generateLink(user) {
+//   return `http://www.codewars.com/users/${encodeURIComponent(user)}`
+// }
+
+// const store = {
+//   name: 'Walmart',
+// };
+// const customer = {
+//   name: 'Joe',
+// };
+// function say(){
+//   console.log('Hi, ' + this.name);
+// }
+// say.apply(store);
+// say.apply(customer);
+
+// const user = {
+//   name: 'Ben',
+// };
+// const user2 = {
+//   name: 'Anna',
+// };
+// function mul(n1, n2){
+//   console.log('Bye, ' + this.name + ' ' + (n1 * n2));
+// }
+// say.apply(user, [10, 5])
+// say.apply(user2, [-7, -6])
+
+// const client = {
+//   id: 111,
+//   fullName: null,
+//   setName: function(first, last){
+//     this.fullName = first + ' ' + last;
+//   }
+// }
+// function getName([first, last], func, obj){
+//   func.apply(obj, [first, last]);
+// }
+// getName(['Jenna', 'Rodrigez'], client.setName, client);
+// console.log(client.fullName);
+
+// let guests = ['Alan', 'Zoi', 'Mally', 'Zick'];
+// function welcome(){
+//   const args = Array.prototype.slice.call(arguments), (1)
+//   let lastElem = args.pop();
+//   console.log('Welcome ' + args.join(', ') + ', and ' + lastElem + '.');
+// }
+// welcome.apply(null, guests);
+
+// const nums = [2, 4, -1, 43, 56, 9];
+// let max = Math.max.apply(null, nums);
+// let min = Math.min.apply(null, nums)
+// let res = max - min;
+// console.log(res);
+
+// const user = {
+//   name: 'Zelanda'
+// };
+// function sayHi(){
+//   console.log('Good morning, ' + this.name);
+// }
+// let funcUser = sayHi.bind(user);
+// funcUser();
+
+// const user = {
+//   name: 'Nick',
+// };
+// function sayHi(word){
+//   console.log(word + 'Hello, ' + this.name);
+// }
+// let funcUser = sayHi.bind(user);
+// funcUser('I meant Hi!');
+//
+// let user = {
+//   name: 'Ivanna',
+//   say: function (){
+//     console.log(this.name + ' Hi!');
+//   },
+// };
+// let sayHi = user.say.bind(user);
+// sayHi();
+//
+// let user = {
+//   name: 'Ivanna',
+//   say: function (text){
+//     console.log(this.name + ' Hi!' + text);
+//   },
+// };
+// let sayHi = user.say.bind(user);
+// sayHi('How are you?');
+
+// const user = {
+//   name: 'Jampiya',
+//   age: 67,
+//   introduction: function (job){
+//     console.log('Name is ' + this.name);
+//     console.log('Age is ' + this.age);
+//     console.log('Job is ' + job);
+//   },
+// };
+// let say = user.introduction.bind(user);
+// say('QA');
+// const person = {
+//   name: 'Tanya',
+//   age: 34,
+// };
+// user.introduction.bind(person, 'QA')();
+
+// const obj = {
+//   num: 2, name
+//   mult: function (b, c){
+//     return this.num * b * c;
+//   } ,
+// };
+// let mult3 = obj.mult.bind(obj, 3);
+// console.log(mult3(5));
+// console.log(mult3(70));
+
+// const obj = {
+//   mult: function (b, c){
+//     return b * c;
+//   }
+// }
+// let mult3 = obj.mult.bind(null, 3);
+// console.log(mult3(79));
+// console.log(mult3(90));
+
+// String.prototype.trimAndUp = function (){
+//   return this.trim().toUpperCase();
+// }
+// console.log(' c a t  '.trimAndUp());
+// console.log('    Dog'.trimAndUp());
+
+// String.prototype.trimSpaces = function (){
+//   return this.split(/\s/).join('')
+// }
+// let str = 'a b      c d e   '
+// let str2 = 'Hi, James Greed !  ';
+// console.log(str.trimSpaces());
+// console.log(str2.trimSpaces());
+
+// Number.prototype.add = function (value){
+//   return this + value;
+// }
+//
+// Number.prototype.subtr = function (value){
+//   return this - value;
+// }
+//
+// Number.prototype.mult = function (value){
+//   return this * value;
+// }
+//
+// Number.prototype.div = function (value){
+//   return this / value;
+// }
+// let num = 100;
+// console.log(num.add(5));
+// console.log(num.subtr(7));
+// console.log(num.mult(5));
+// console.log(num.div(30));
+// console.log(num.add(50).div(6).mult(8).subtr(8));
+
+// Number.prototype.addAdd = function (){
+//   const args = Array.prototype.slice.call(arguments);
+//   let res = args.map(el => el + this).reduce((acc, curr) => acc + curr, 0);
+//   return res;
+// }
+// let num2 = 5;
+// console.log(num2.addAdd(1, 1, 2, 7))
+
+// Number.prototype.truncate = function (n){
+//   return Math.trunc(Math.round(this * Math.pow(10, n))) / Math.pow(10, n);
+// }
+// let number = 12.12345678;
+// console.log(number.truncate(5));
+// console.log(number.truncate(6));
+
+// Number.prototype.substrNum = function (){
+//   let str = this.toString();
+//   let ind = str.indexOf('.')
+//   return ind = -1 ? +str : str.substring(ind);
+//  }
+//  let number = 125.67564;
+// let number2 = 7;
+// console.log(number.substrNum());
+// console.log(number2.substrNum());
+
+// const str = 'obbo';
+// const isPalindrome = str.split('').reverse().join('') === str;
+// console.log(isPalindrome)
+//
+// const str = 'obgo';
+// const isPalindrome = str.split('').reverse().join('') === str;
+// console.log(isPalindrome)
+//
+// const str = 'Obbo';
+// const isPalindrome = str.split('').reverse().join('') === str;
+// console.log(isPalindrome)
+
+// const str = 'Obbo';
+// const isPalindrome = str.toLowerCase().split('').reverse().join('') = str.toLowerCase();
+// console.log(isPalindrome);
+
+// function isPalindrome(str){
+//   for(let i = 0; i , str.length; i++){
+//     if(str[i] !== str[str.length -1 -i]){
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+//
+// console.log(isPalindrome('obqiiwbo'));
+//
+// function isPalindrome(str){
+//   for(let i = 0; i < str.length; i++){
+//     if(str[i] !== str[str.length -1 -i]){
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+//
+// console.log(isPalindrome('obiyyibo'));
+
