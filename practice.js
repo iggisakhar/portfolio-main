@@ -2747,3 +2747,140 @@
 //
 // console.log(isPalindrome('obiyyibo'));
 
+// function incrementer(nums) {
+//   return nums.map((v, i) => (v + i + 1) % 10);
+// }
+
+// function solve(s) {
+//   s = s.toLowerCase();
+//   let arr = s.slice().replace(/[aeiuo]/g, ' ').replace(/\s+/g, ' ');
+//   arr = arr.split(' ').map(v => v.split('').map(v => v.charCodeAt()-96).reduce((a, b) => a + b, 0))
+//   return Math.max(...arr);
+// };
+
+// function solution(number){
+//   let res = '',
+//     decimals = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1],
+//     roman = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+//
+//   decimals.map(function (value, index) {
+//     while(number >= value) {
+//       res += roman[index];
+//       number -= value;
+//     }
+//   });
+//   return res;
+// }
+
+// function isLeapYear(year) {
+//   return (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
+// }
+
+// function include(arr, item){
+//   return arr.includes(item);
+// }
+
+// function formatMoney(amount){
+//   return `$${amount.toFixed(2)}`
+// }
+
+// function scramble(str1, str2) {
+//   let char = str1.split('').reduce((a, b) => { a[b] ? a[b]++ : a[b] = 1; return a }, {});
+//   return str2.split('').every((char2) => --char[char2] >= 0);
+// }
+
+// function meeting(s) {
+//   return s.replace(/;/gi, ' ').split(' ').map(a => a.split(':').reverse().join(', ').toUpperCase()).sort()
+//     .map(c => '(' + c + ')').join('');
+// }
+
+// function solution(number){
+//   let arr = [];
+//   for(let i = number -1; i >= 0; i--){
+//     if(i % 3 === 0) arr.push(i);
+//     if(i % 5 === 0) arr.push(i);
+//   }
+//   return [...new Set(arr)].reduce((a ,b) => a + b, 0);
+// }
+
+// var SequenceSum = (function() {
+//   function SequenceSum() {}
+//
+//   SequenceSum.showSequence = function(count) {
+//     let arr = [];
+//     for(let i = 0; i <= count; i++){
+//       arr.push(i);
+//     }
+//     let a = arr.reduce((a, b) => a + b, 0)
+//     let b = arr.join('+')
+//     if(count < 0) return `${count}<0`;
+//     if(count == 0) return `${count}=0`;
+//     return `${b} = ${a}`
+//   };
+//
+//   return SequenceSum;
+//
+// })();
+
+// function flattenAndSort(array) {
+//   return [].concat(...array).sort((a, b) => a - b);
+// }
+
+// function isAnagram(str1, str2){
+//   const s1 = str1.trim().toLowerCase();
+//   const s2 = str2.trim().toLowerCase();
+//
+//   if (s1.length !== s2.length) return false;
+//
+//   for (let i = 0; i < s1.length; i++){
+//     for(let j = 0; j < s2.length; j++){
+//       if(s1[i] === s2[j]) break;
+//       if(s2.length -1 === j) return false;
+//       }
+//     }
+//   return true;
+//   }
+// console.log(isAnagram('elbow', 'below'))
+
+// function isAnagarm(str1, str2){
+//   let s1 = str1.trim().toLowerCase();
+//   let s2 = str2.trim().toLowerCase();
+//
+//   if(s1.length !== s2.length) return false;
+//
+//   const s2obj = {};
+//
+//   for(let i = 0; i < s2.length; i++){
+//     const el = s2[i];
+//     s2obj[el] = true;
+//   }
+//
+//   for(let i = 0; i < s1.length; i++){
+//     const el = s1[i];
+//     if(!s2obj[el]) return false;
+//   }
+//   return true;
+// }
+//
+// console.log(isAnagarm('123', '923'));
+// console.log(isAnagarm('elbow', 'below'));
+// console.log(isAnagarm('laptop 123', 'toplap 125'));
+// console.log(isAnagarm('laptop 123', 'toplap 123'));
+// console.log(isAnagarm('laptop machines', 'Apple Macintosh'))
+
+// function isAnagram(str1, str2){
+//   let s1 = str1.trim().toLowerCase();
+//   let s2 = str2.trim().toLowerCase();
+//
+//   if(s1.length !== s2.length) return false;
+//
+//   let s1mod = s1.split('').sort().join('');
+//   let s2mod = s2.split('');
+//   let s2mod2 = s2mod.sort()
+//   let s2mod3 = s2mod2.join('')
+//
+//   return s1mod === s2mod3;
+// }
+//
+// console.log(isAnagram('below', 'elbow'));
+
