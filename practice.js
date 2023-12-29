@@ -2884,3 +2884,47 @@
 //
 // console.log(isAnagram('below', 'elbow'));
 
+// function isAnagram(str1, str2){
+//   let s1 = str1.split('').sort().join('');
+//   let s2 = str2.split('').sort().join('');
+//   return s1 === s2;
+// }
+
+// function isAnagram(str1, str2){
+//
+//   if(str1.length === 0 || str2.length === 0 ){
+//     return 'One or both strings are empty'
+//   }
+//
+//   let s1 = str1.trim().toLowerCase().replace(/\s/g, '').split('').sort().join('');
+//   let s2 = str2.trim().toLowerCase().replace(/\s/g, '').split('').sort().join('');
+//   return s1 === s2;
+// }
+
+// function isAnagram(str1, str2){
+//   if(str1.length !== str2.length){
+//     return false;
+//   }
+//   let s1obj = {};
+//   let s2obj = {};
+//   for(let i of str1){
+//     i = i.toLowerCase();
+//     if(i !== ' '){
+//       s1obj[i] = (s1obj[i] || 0) + 1
+//     }
+//   }
+//   for(let i of str2){
+//     i = i.toLowerCase();
+//     if(i !== ' '){
+//       s2obj[i] = (s2obj[i] || 0) + 1
+//     }
+//   }
+//   for(let i in s1obj){
+//     if(s1obj[i]!== s2obj[i]){
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+
