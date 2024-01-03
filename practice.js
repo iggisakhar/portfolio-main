@@ -2931,3 +2931,84 @@
 //     return values.filter(x => x % 2 === 0);
 // }
 
+// function isAnagram(str1, str2){
+//     let s1 = str1.toLowerCase();
+//     let s2 = str2.toLowerCase();
+//     s1 = s1.replace(/\s/g, '');
+//     s2 = s2.replace(/\s/g, '');
+//
+//     if(s1.length !== s2.length){
+//         return false;
+//     }
+//     let char1 = {};
+//     let char2 = {};
+//     for(let i of s1){
+//         char1[i] = (char1[i] || 0) + 1;
+//     }
+//     for(let i of s2){
+//         char2[i] = (char2[i] || 0) + 1;
+//     }
+//     for(let i in char1){
+//         if(char1[i] !== char2[i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function isAnagram(arr){
+//     if(arr.length <= 1){
+//         return true;
+//     }
+//     let s1 = arr[0];
+//     for(let i = 1; i < arr.length; i++){
+//         let str = arr[i];
+//         if(s1.length !== str.length){
+//             return false;
+//         }
+//         let obj = {};
+//         for(let i of str){
+//             obj[i] = (obj[i] || 0) + 1;
+//         }
+//         for(let i of s1){
+//             if(!obj[i]){
+//                 return false;
+//             }
+//             obj[i]--
+//         }
+//     }
+//     return true;
+// }
+
+// function isAnagram(arr1, arr2){
+//     let str1 = arr1.join('').replace(/\s/g, '').toLowerCase();
+//     let str2 = arr2.join('').replace(/\s/g, '').toLowerCase();
+//     let s1 = str1.split('').sort().join('');
+//     let s2 = str2.split('').sort().join('');
+//     return s1 === s2;
+// }
+
+// function isAnagram(arr1, arr2){
+//
+//     let s1 = arr1.join('').replace(/\s/g, '').toLowerCase();
+//     let s2 = arr2.join('').replace(/\s/g, '').toLowerCase();
+//
+//     if(s1.length !== s2.length){
+//         return false;
+//     }
+//     let char1 = {};
+//     let char2 = {};
+//     for(let i of s1){
+//         char1[i] = (char1[i] || 0) + 1;
+//     }
+//     for(let i of s2){
+//         char2[i] = (char2[i] || 0) + 1;
+//     }
+//     for(let i in char1){
+//         if(char1[i] !== char2[i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
