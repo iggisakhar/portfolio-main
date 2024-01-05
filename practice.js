@@ -3012,3 +3012,106 @@
 //     return true;
 // }
 
+// function isAnagram(str1, str2){
+//     function createCharMap(str){
+//         let charMap = {};
+//         for(let i of str){
+//             i = i.toLowerCase();
+//             if(i !== ' '){
+//                 charMap[i] = true;
+//             }
+//         }
+//         return charMap;
+//     }
+//     str1 = str1.trim();
+//     str2 = str2.trim();
+//
+//     if(str1.length !== str2.length){
+//         return false;
+//     }
+//
+//     let charMap1 = createCharMap(str1);
+//     let charMap2 = createCharMap(str2);
+//
+//     for(let i in charMap1){
+//         if(!charMap2[i]){
+//             return false;
+//         }
+//     }
+//     return [true, charMap1];
+// }
+
+// function isAnagram(obj){
+//     let str1 = obj.str1.toLowerCase().replace(/\s/g, '');
+//     let str2 = obj.str2.toLowerCase().replace(/\s/g, '');
+//
+//     let obj1 = {};
+//     let obj2 = {};
+//
+//     for(let i of str1){
+//         obj1[i] = (obj1[i] || 0) + 1;
+//     }
+//     for(let i of str2){
+//         obj2[i] = (obj2[i] || 0) + 1;
+//     }
+//     let keys1 = Object.keys(obj1);
+//     let keys2 = Object.keys(obj2);
+//     if(keys1.length !== keys2.length){
+//         return {
+//             str1: obj.str1, str2: obj.str2, result: false
+//         };
+//     }
+//     for(let i of keys1){
+//         if(obj1[i] !== obj2[i]){
+//             return {
+//                 str1: obj.str1, str2: obj.str2, result: false
+//             };
+//         }
+//     }
+//     return {
+//         str1: obj.str1, str2: obj.str2, result: true
+//     };
+// }
+
+// function numberOfOccurrences(str, symbol){
+//     let sum = 0;
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] == symbol){
+//             sum++
+//         }
+//     }
+//     return sum;
+// }
+
+// function firstAndLastElement(str){
+//     if(str.length == 0){
+//         return 'String is empty';
+//     }
+//     let countOfFirst = 0;
+//     let countOfLast = 0;
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] == str[0]){
+//             countOfFirst++
+//         }
+//         if(str[i] == str[str.length -1]){
+//             countOfLast++
+//         }
+//     }
+//     return `Count of first element: ${countOfFirst}, count of last element: ${countOfLast}`
+// }
+
+// function lowerAndUpperCase(str, symbol){
+//     let countLowerCase = 0;
+//     let countUpperCase = 0;
+//
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] == symbol.toLowerCase()){
+//             countLowerCase++
+//         }
+//         if(str[i] == symbol.toUpperCase()){
+//             countUpperCase++
+//         }
+//     }
+//     return `Number of lowercase is ${countLowerCase} and uppercase is ${countUpperCase}`
+// }
+
