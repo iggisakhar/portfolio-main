@@ -3133,3 +3133,49 @@
 //     });
 // }
 
+// function numberOfOccurrencesBothEl(str, el1, el2){
+//     str = str.toLowerCase();
+//     el1 = el1.toLowerCase();
+//     el2 = el2.toLowerCase();
+//     let first = 0;
+//     let second = 0;
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] === el1){
+//             first++
+//         }
+//         if(str[i] === el2){
+//             second++
+//         }
+//     }
+//     return `First element: ${first}, second element: ${second}`
+// }
+
+// function indexOfOccurrences(str, symbol){
+//     if(str.length == 0 || symbol.length == 0){
+//         return '';
+//     }
+//     let arr = [];
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] == symbol){
+//             arr.push(i);
+//         }
+//     }
+//     return arr.join(' ');
+// }
+
+// function stringOfOccurrences(str, el){
+//     if(str.length == el.length){
+//         return 'There is no such element in the string'
+//     }
+//     let sum = 0;
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] == el){
+//             sum++
+//         }
+//     }
+//     if(sum > 0){
+//         return `The element "${el}" occurs in the string ${sum} time${sum > 1 ? 's' : ''}`
+//     }else{
+//         return 'There is no such element in the string'
+//     }
+// }
