@@ -3179,3 +3179,276 @@
 //         return 'There is no such element in the string'
 //     }
 // }
+
+// function occurrencesInObject(str){
+//     let obj = {
+//         one: 0,
+//         two: 0,
+//         three: 0
+//     }
+//     for(let i of str){
+//         if(i == '1'){
+//             obj.one++
+//         }
+//         else if(i == '2'){
+//             obj.two++
+//         }
+//         else if(i == '3'){
+//             obj.three++
+//         }
+//     }
+//     return obj;
+// }
+
+// function stairsIn20(s){
+//     return s
+//         .reduce((arr, day) => arr.concat(...day), [])
+//         .reduce((total, stairs) => total + stairs, 0) * 20
+// }
+
+// function partsSums(ls) {
+//     let array = [0];
+//     ls.reverse().forEach(v => array.push(array[array.length -1] + v));
+//     return array.reverse();
+// }
+
+// function replaceElWithIndex(str, symbol){
+//     if(str.length == 0){
+//         return '';
+//     }
+//     let newStr = '';
+//     for(let i = 0; i < str.length; i++){
+//         let a = str[i].toLowerCase();
+//         let b = symbol.toLowerCase();
+//         if(a !== b){
+//             newStr += str[i]
+//         } else{
+//             newStr += i
+//         }
+//     }
+//     return newStr;
+// }
+
+// function wordValue(a) {
+//     return a.map(v => v.replace(/\ /gi, '').split('').map(v => v.charCodeAt(0) - 96)
+//         .reduce((a, b) => a + b, 0)).map((v, i) => v * (i + 1));
+// }
+
+// Math.round = function(number) {
+//     return (number - parseInt(number) >= 0.5) ? parseInt(number) + 1 : parseInt(number);
+// };
+// Math.ceil = function(number) {
+//     return (parseInt(number) === number) ? number : parseInt(number) + 1;
+// };
+// Math.floor = function(number) {
+//     return parseInt(number)
+// };
+
+// function divideByEl(string, el){
+//     let arr = [];
+//     let chunk = '';
+//     for(let i = 0; i < string.length; i++){
+//         if(string[i] === el){
+//             chunk += el;
+//             arr.push(chunk);
+//             chunk = '';
+//         } else {
+//             chunk += string[i];
+//         }
+//     }
+//     if(chunk.length !== 0) {
+//         arr.push(chunk);
+//     }
+//     return arr;
+// }
+
+// function duplicateCount(text){
+//     return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
+// }
+
+// function seaSick(x) {
+//     let count = 0;
+//     for (let i = 0; i < x.length - 1; i++) {
+//         if (x[i] !== x[i + 1]) {
+//             count++;
+//         }
+//     }
+//     if (count / x.length > 0.2) {
+//         return "Throw Up";
+//     }
+//     return "No Problem";
+// }
+
+// function stringAndElIndexes(str, el){
+//     let arr = [], newString = '';
+//     for (let i = 0; i < str.length; i++){
+//         if(str[i] === el){
+//             arr.push(i);
+//         } else {
+//             newString += str[i];
+//         }
+//     }
+//     if(newString.length !==0) {
+//         arr.unshift(newString);
+//     }
+//     return arr;
+// }
+
+// function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+//     return enteredCode === correctCode && Date.parse(expirationDate) >= Date.parse(currentDate)
+// }
+
+// function gap(g, m, n) {
+//     let last = 0;
+//     let prime = function(x){
+//         for(let i = 2; i * i <= x; i++){
+//             if(x % i == 0)
+//                 return false; }
+//         return true;
+//     }
+//     for(let i = m; i <= n; i++)
+//         if(prime(i)){
+//             if(i - last == g) return [last, i];
+//             else last = i;
+//         }
+//     return null
+// }
+
+// function sqInRect(lng, wdth){
+//     let arr = [];
+//     if(lng === wdth) return null
+//     while(lng > 0 && wdth > 0){
+//         arr.push(lng > wdth ? wdth : lng)
+//         lng > wdth ? lng -= wdth : wdth -= lng
+//     }
+//     return arr;
+// }
+
+// Array.prototype.square = function(){
+//     return this.map(v => v * v)
+// }
+// Array.prototype.cube = function(){
+//     return this.map(v => v * v * v)
+// }
+// Array.prototype.average = function(){
+//     return this.reduce((a, b) => a + b, 0) / this.length;
+// }
+// Array.prototype.sum = function(){
+//     return this.reduce((a, b) => a + b, 0)
+// }
+// Array.prototype.even = function(){
+//     return this.filter(v => v % 2 == 0)
+// }
+// Array.prototype.odd = function(){
+//     return this.filter(v => v % 2 !== 0)
+// }
+
+// function Sleigh() {
+// }
+//
+// Sleigh.prototype.authenticate = function(name, password) {
+//     return name === 'Santa Claus' && password === 'Ho Ho Ho!'
+// };
+
+// String.prototype.reverse = function (){
+//     return this.split('').reverse().join('');
+// }
+
+// Array.prototype.even = function(){
+//     return this.filter(a => Number.isInteger(a) && a % 2 == 0);
+// }
+// Array.prototype.odd = function(){
+//     return this.filter(a => Number.isInteger(a) && a % 2 !== 0);
+// }
+// Array.prototype.under = function(x){
+//     return this.filter(a => Number.isInteger(a) && a < x);
+// }
+// Array.prototype.over = function(x){
+//     return this.filter(a => Number.isInteger(a) && a > x)
+// }
+// Array.prototype.inRange = function(min,max){
+//     return this.filter(a => Number.isInteger(a) && a >= min && a <= max)
+// }
+
+// String.prototype.capitalize = function(){
+//     if(this.length == 0){
+//         return '';
+//     }
+//     let first = this.charCodeAt(0)
+//     if(97 <= first && first <= 122){
+//         first -= 32;
+//     }
+//     return String.fromCharCode(first) + this.slice(1)
+// }
+
+// Boolean.prototype.toString = Number.prototype.toString = Array.prototype.toString =
+//     function() {
+//         return JSON.stringify(this)
+//     }
+
+// function getSize(width, height, depth){
+//     return [(depth * width + depth * height + width * height) * 2,
+//         width * height * depth]
+// }
+
+// function countEachEl(str){
+//     let obj = {};
+//     for(let i of str){
+//         obj[i] = (obj[i] || 0) + 1;
+//     }
+//     return obj;
+// }
+
+// function countElFromStartToMiddle(str){
+//     let obj = {};
+//     let mid = Math.ceil(str.length / 2)
+//     for(let i = 0; i < mid; i++){
+//         let first = str[i];
+//         obj[first] = (obj[first] || 0) + 1
+//     }
+//     return obj;
+// }
+
+// function countElFrom4Ind(str){
+//     if(str.length < 5) return 'The string is not long enough';
+//     const obj = {};
+//     for (let i = 4; i < str.length; i++) {
+//         if (obj[str[i]]) obj[str[i]]++
+//         else obj[str[i]] = 1;
+//     }
+//     return obj;
+// }
+
+// function countElFromEndToMiddle(str){
+//     let middle = Math.floor(str.length / 2);
+//     const obj = {};
+//     for (let i = str.length -1; i > middle; i--) {
+//         if (obj[str[i]]) obj[str[i]]++
+//         else obj[str[i]] = 1;
+//     }
+//     return obj;
+// }
+
+// function objectKeys(str){
+//     let obj = {};
+//     [...str].forEach((el) => {
+//         obj[el] = true;
+//     });
+//     return Object.keys(obj);
+// }
+
+// function countFirstAndSecondEl(str){
+//     str = str.toLowerCase();
+//     if(str.length == 0){
+//         return 'Empty string'
+//     }
+//     let first = str[0];
+//     let second = str[1];
+//     if(first == second){
+//         return 'The first and second symbols are the same'
+//     }
+//     let countF = str.split(first).length - 1
+//     let countS = str.split(second).length - 1
+//     return `${first} - ${countF}, ${second} - ${countS}`
+// }
+
