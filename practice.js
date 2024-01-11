@@ -3452,3 +3452,145 @@
 //     return `${first} - ${countF}, ${second} - ${countS}`
 // }
 
+// function objectValues(str){
+//     const normalizedStr = str.toLowerCase();
+//     const charCount = {};
+//     for(let char of normalizedStr){
+//         if(char !== ' '){
+//             charCount[char] = (charCount[char] ||  0) + 1
+//         }
+//     }
+//     const valuesArray = Object.values(charCount);
+//     return valuesArray;
+// }
+
+// function zero(func)   { return func ? func(0) : 0 };
+// function one(func)    { return func ? func(1) : 1 };
+// function two(func)    { return func ? func(2) : 2 };
+// function three(func)  { return func ? func(3) : 3 };
+// function four(func)   { return func ? func(4) : 4 };
+// function five(func)   { return func ? func(5) : 5 };
+// function six(func)    { return func ? func(6) : 6 };
+// function seven(func)  { return func ? func(7) : 7 };
+// function eight(func)  { return func ? func(8) : 8 };
+// function nine(func)   { return func ? func(9) : 9 };
+//
+// function plus( b )      { return function( a ) { return a + b } };
+// function minus( b )     { return function( a ) { return a - b } };
+// function times( b )     { return function( a ) { return a * b } };
+// function dividedBy( b ) { return function( a ) { return Math.floor(a / b) } };
+
+// function objectEntries(str) {
+//     str = str.toLowerCase();
+//     const obj = {};
+//     for (let i = 0; i < str.length; i++) {
+//         if (obj[str[i]]) {
+//             obj[str[i]]++
+//         } else {
+//             obj[str[i]] = 1;
+//         }
+//     }
+//     return Object.entries(obj);
+// }
+
+// function objectEntriesJoin(str){
+//     let s1 = str.toLowerCase();
+//     let obj = {};
+//     for(let i of s1){
+//         if(/^[a-z]$/.test(i)){
+//             obj[i] = (obj[i] || 0) + 1
+//         }
+//     }
+//     let res = Object.entries(obj)
+//     return res.map(el => el.join(',')).join(' ')
+// }
+
+// const chooseBestSum = (t, k, ls) => ls.reduce((r, e) => r.concat(r.filter(c => c.length < k).map(c => c.concat([e]))), [[]]).filter(c => c.length === k).map(c => c.reduce((a, b) => a + b)).filter(s => s <= t).sort((a, b) => b - a)[0] || null;
+//
+// function objectEntries(arr){
+//     let obj = {};
+//     for(let i = 0; i < arr.length; i++){
+//         for(let j = 0; j < arr[i].length; j++) {
+//             arr[i] = arr[i].toLowerCase();
+//             if (obj[arr[i][j]]){
+//                 obj[arr[i][j]]++
+//             }
+//             else {
+//                 obj[arr[i][j]] = 1;
+//             }
+//         }
+//     }
+//     return Object.entries(obj);
+// }
+
+// function squareDigits(num){
+//     let res = num.toString();
+//     let fin = res.split('').map(el => parseInt(el) ** 2).join('');
+//     return +fin;
+// }
+
+// function removeK(k){
+//     k *= 3;
+//     return k * (k + 1) / 6;
+// }
+
+// function usdcny(usd) {
+//     return `${(usd * 6.75).toFixed(2)} Chinese Yuan`;
+// }
+
+// function PaginationHelper(collection, itemsPerPage){
+//     this.collection = collection, this.itemsPerPage = itemsPerPage;
+// }
+// PaginationHelper.prototype.itemCount = function() {
+//     return this.collection.length;
+// }
+// PaginationHelper.prototype.pageCount = function() {
+//     return Math.ceil(this.collection.length / this.itemsPerPage);
+// }
+// PaginationHelper.prototype.pageItemCount = function(pageIndex) {
+//     let pageCount = this.pageCount()
+//     if(pageIndex < 0 || pageIndex >= pageCount){
+//         return -1
+//     }
+//     let lastPageItemCount = this.itemCount() % this.itemsPerPage;
+//     return pageIndex < pageCount - 1 || !lastPageItemCount ? this.itemsPerPage : lastPageItemCount;
+// }
+// PaginationHelper.prototype.pageIndex = function(itemIndex) {
+//     return itemIndex < this.collection.length && itemIndex >= 0
+//         ? Math.floor(itemIndex / this.itemsPerPage)
+//         : -1;
+// }
+
+// function goodVsEvil(good, evil){
+//     let g = {0: 1,1: 2,2: 3,3: 3,4: 4,5: 10};
+//     let e = {0: 1,1: 2,2: 2,3: 2,4: 3,5: 5,6: 10};
+//     let a = good.split(' ').map((v, i, arr) => v * g[i]).reduce((a, b) => a + b, 0);
+//     let b = evil.split(' ').map((v, i, arr) => v * e[i]).reduce((a, b) => a + b, 0);
+//     return a > b ? 'Battle Result: Good triumphs over Evil' : a === b ? 'Battle Result: No victor on this battle field' : 'Battle Result: Evil eradicates all trace of Good'
+// }
+
+// let REGEXP = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{6,}$/;
+
+// function evenNumbers(array, number) {
+//     let newArr = []
+//     for(let i = 0; i < array.length; i++){
+//         if(array[i] % 2 == 0){
+//             newArr.push(array[i])
+//         }
+//     }
+//     return newArr.slice(-number);
+// }
+
+// function sumIntervals(intervals) {
+//     intervals.sort((a, b) => a[0] - b[0]);
+//     let res = 0;
+//     let min = intervals[0][0];
+//     let max = intervals[0][1];
+//     for(let i of intervals){
+//         res += max - min;
+//         min = Math.max(max, i[0]);
+//         max = Math.max(max, i[1]);
+//     }
+//     return res + max - min;
+// }
+
