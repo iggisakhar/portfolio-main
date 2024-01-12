@@ -3571,3 +3571,10 @@
 
 // let REGEXP = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{6,}$/;
 
+// const str = 'abc codeing ace';
+// const obj = {};
+// for(let i = 0; i < str.length; i++){
+//     obj[str[i]] = true;
+// }
+// console.log(obj);
+
