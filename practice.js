@@ -3452,3 +3452,150 @@
 //     return `${first} - ${countF}, ${second} - ${countS}`
 // }
 
+// function validateBattlefield(field) {
+//     var hit = (row, col) => (row < 0 || col < 0 || row > 9 || col > 9) ? 0 : field[row][col];
+//     for(var ships = [10, 0, 0, 0, 0], row = 0; row < 10; row++){
+//         for(let col = 0; col < 10; col++){
+//             if(hit(row, col)){
+//                 if(hit(row -1, col -1) || hit(row - 1, col + 1)){
+//                     return false;
+//                 }
+//                 if(hit(row -1, col) && hit(row, col - 1)){
+//                     return false;
+//                 }
+//                 if((field[row][col] += hit(row -1, col) + hit(row, col -1)) > 4){
+//                     return false;
+//                 }
+//                 ships[field[row][col]]++
+//                 ships[field[row][col] -1]--
+//             }
+//         }
+//     }
+//     return [0, 4, 3, 2, 1].every((s, i) => s == ships[i])
+// }
+
+// function add(a, b){
+//     return a + b;
+// }
+// function divide(a, b){
+//     return a / b
+// }
+// function multiply(a, b){
+//     return a * b
+// }
+// function mod(a, b){
+//     return a % b;
+// }
+// function exponent(a, b){
+//     return a ** b;
+// }
+// function subt(a, b){
+//     return a - b
+// }
+
+// function capitalize(s){
+//     let str1 = '';
+//     let str2 = '';
+//     for(let i = 0; i < s.length; i ++){
+//         if((i + 2) % 2 == 0){
+//             str1 += s[i].toUpperCase();
+//             str2 += s[i].toLowerCase()
+//         }else {
+//             str1 += s[i].toLowerCase();
+//             str2 += s[i].toUpperCase();
+//         }
+//     }
+//     return [str1, str2]
+// };
+
+// function reverseWords(str) {
+//     let res = str.split(' ');
+//     let str1 = '';
+//     for(let i of res){
+//         str1 += i.split('').reverse().join('') + ' ';
+//     }
+//     return str1.trim();
+// }
+
+// function ipsBetween(start, end){
+//     let ip1 = start.split('.');
+//     let ip2 = end.split('.');
+//     let res = 0;
+//     for(let i = 0; i < 4; i++){
+//         res += (ip2[i] - ip1[i]) * 256 ** (3 - i);
+//     }
+//     return res;
+// }
+
+// var findMissing = function (list) {
+//     let length = list.length;
+//     let one = list[0];
+//     let last = list[list.length -1];
+//     let d = Math.floor((one - last) / (0 - length));
+//     for(let i = 1; i < list.length; i++){
+//         if(list[i] != d + list[i -1]){
+//             return d + list[i -1]
+//         }
+//     }
+// }
+
+// function nextId(ids){
+//     for(let i = 0; i < ids.length; i++){
+//         if(ids.indexOf(i) == -1){
+//             return i;
+//         }
+//     }
+//     return ids.length;
+// }
+
+// function mxdiflg(a1, a2) {
+//     let x = a1.length;
+//     let y = a2.length;
+//     let res = 0;
+//     if(x == 0 || y == 0){
+//         return -1
+//     }
+//     for(let i = 0; i < x; i++){
+//         for(let j = 0; j < y; j++){
+//             let a = a1[i].length;
+//             let b = a2[j].length;
+//             if(res < a - b){
+//                 res = a - b;
+//             } else if(res < b - a){
+//                 res = b - a
+//             }
+//         }
+//     }
+//     return res;
+// }
+
+// function vowelIndices(word){
+//     if(word.length === 0){
+//         return [];
+//     }
+//     let arr = [];
+//     for(let i = 0; i < word.length; i++){
+//         if(/[aeoiuy]/i.test(word[i])){
+//             arr.push(i + 1)
+//         }
+//     }
+//     return arr;
+// }
+
+// function reverseLetter(str) {
+//     return str.split('').reverse().filter(el => /[a-zA-Z]/.test(el)).join('')
+// }
+
+// function multiTable(number) {
+//     let res = '';
+//     for(let i = 1; i<10; i++){
+//         res +=`${i} * ${number} = ${i*number}\n`;
+//     }
+//     res += `${10} * ${number} = ${10*number}`
+//     return res;
+// }
+
+// function minValue(values){
+//     return +(values.filter((el, i) => values.indexOf(el) == i).sort().join(''));
+// }
+
