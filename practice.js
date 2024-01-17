@@ -3578,3 +3578,31 @@
 // }
 // console.log(obj);
 
+// const str = 'abc co ding ace';
+// const obj = {};
+// for(let i = 0; i < str.length; i++){
+//     if(obj[str[i]]) obj[str[i]]++
+//         else obj[str[i]] = 1;
+// }
+// console.log(obj);
+
+// let str = 'abc coding ace';
+// let obj = {};
+// for(let i = 0; i < str.length; i++){
+//     if(obj[str[i]]) obj[str[i]]
+//     else obj[str[i]] = 1;
+// }
+// console.log(Object.keys(obj));
+
+// let str = 'abc coding ace';
+// let obj = {};
+// for(let i = 0; i < str.length; i++){
+//     if(obj[str[i]]) obj[str[i]]++
+//     else obj[str[i]] = 1;
+// }
+// const arr = Object.entries(obj);
+// let acc = '';
+// for(let i = 0; i < arr.length; i++){
+//     acc += arr[i][0] + ' = ' + arr[i][1] + ', '
+// }
+// console.log(acc);
