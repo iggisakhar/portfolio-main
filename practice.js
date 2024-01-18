@@ -3688,3 +3688,112 @@
 // console.log(arrOfConsonants);
 // console.log(arrOfVowels);
 // console.log(arrElse);
+
+// function checkStr(str) {
+//     let vowel = 0;
+//     let consonant = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === 'e' || str[i] === 'u' || str[i] === 'i' || str[i] === 'o' || str[i] === 'a') {
+//             vowel ++;
+//         } else consonant ++;
+//     }
+//     return {
+//         vowel: vowel, consonant: consonant
+//     }
+// }
+
+// function countOnlyVowel(str) {
+//     let vowel = 0
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === 'e' || str[i] === 'u' || str[i] === 'i' || str[i] === 'o' || str[i] === 'a') {
+//             vowel++
+//         }
+//     }
+//     return  `${str} includes ${vowel} vowels and ${str.length - vowel} consonants`;
+// }
+
+// function countVowels(str){
+//     let vowels = /[aeiou]/gi;
+//     let match = str.match(vowels);
+//     return match ? match.length : 0;
+// }
+
+// function countLetters(str){
+//     let vowels = /[aeuoi]/gi
+//     let consonant = /[bcdfghjklmnpqrstvwxyz]/gi
+//     let matchV = str.match(vowels);
+//     let matchC = str.match(consonant);
+//     let countV = matchV ? matchV.length : 0;
+//     let countC = matchC ? matchC.length : 0;
+//     return {
+//         vowel: countV,
+//         consonant: countC
+//     }
+// }
+
+// function countOnlyConsonant(str){
+//     let consonant = /[bcdfghjklmnpqrstvwxyz]/gi
+//     let match = str.match(consonant);
+//     return match ? match.length : 0;
+// }
+
+// function countLetters(str){
+//     let vowelL = /[aeiou]/g;
+//     let vowelU = /[AEIOU]/g;
+//     let matchU = str.match(vowelU);
+//     let matchL = str.match(vowelL);
+//     let countVowelLowerCase = matchL ? matchL.length : 0;
+//     let countVowelUpperCase = matchU ? matchU.length : 0;
+//     let others = str.length - countVowelLowerCase - countVowelUpperCase;
+//     return {
+//         vowelLowerCase: countVowelLowerCase,
+//         vowelUpperCase: countVowelUpperCase,
+//         others: others
+//     }
+// }
+
+// function whatWin(str1, str2){
+//     let lowels = /[aeiou]/g;
+//     let match1 = str1.match(lowels) || [];
+//     let match2 = str2.match(lowels) || [];
+//     if(match1.length > match2.length){
+//         return 'First word wins!';
+//     } else if(match1.length < match2.length) {
+//         return 'Second word wins!'
+//     } else {
+//         return 'It\'s a draw!'
+//     }
+// }
+
+// function whatWin(str1, str2){
+//     let consonant = /[bcdfghjklmnpqrstvwxyz]/gi;
+//     let match1 = (str1.match(consonant) || []).length;
+//     let match2 = (str2.match(consonant) || []).length;
+//     if(match1 > match2){
+//         return 'First word wins!';
+//     } else if(match1 < match2) {
+//         return 'Second word wins!'
+//     } else {
+//         return 'It\'s a draw!'
+//     }
+// }
+
+// function wordSpec(str) {
+//     const vowels = 'aeiou';
+//     const length = str.length;
+//     let vowel = "";
+//     let consonant = "";
+//     for (let i = 0; i < length; i++) {
+//         if (vowels.includes(str[i])) {
+//             vowel += str[i];
+//         } else {
+//             consonant += str[i];
+//         }
+//     }
+//     return {
+//         vowel,
+//         consonant,
+//         length
+//     }
+// }
+
