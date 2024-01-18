@@ -3627,3 +3627,64 @@
 //     acc += arr[i][0] + ' = ' + arr[i][1] + ', '
 // }
 // console.log(acc);
+
+// const str = 'HELLO programming WORLD!';
+// const vowels = 'aeiouAEIOU';
+// let count = 0;
+// for(let i = 0; i < str.length; i++){
+//     if(vowels.includes(str[i])){
+//         count++
+//     }
+// }
+// console.log(count);
+
+// const str = 'Let`s try to count the number of vowels in this sentence';
+// const vowels = 'aeiouAEIOU';
+// let count = 0;
+// for(let i = 0; i < str.length; i++){
+//     for(let j = 0; j < vowels.length; j++){
+//         if(str[i] === vowels[j]){
+//             count++
+//         }
+//     }
+// }
+// console.log(count);
+
+// const str = 'Let`s try to count the number of consonants in this sentence';
+// const consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
+// let count = 0;
+// for(let i = 0; i < str.length; i++){
+//     for(let j = 0; j < consonants.length; j++){
+//         if(str[i] === consonants[j]){
+//             count++
+//         }
+//     }
+// }
+// console.log(count);
+
+// const str = '0Le1t`s f2ind 34 all5 6numbers 789';
+// const numbers = '0123456789';
+// const array = [];
+// for(let i = 0; i < str.length; i++){
+//     for(let j = 0; j < numbers.length; j++){
+//         if(str[i] === numbers[j]) array.push(str[i]);
+//     }
+// }
+// console.log(array);
+
+// const str = '789 Let`s 456 sort 0123';
+// const consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
+// const vowels = 'aeiouAEIOU';
+
+// const arrOfConsonants = [];
+// const arrOfVowels = [];
+// const arrElse = [];
+//
+// for(let i = 0; i < str.length; i++){
+//     if(consonants.includes(str[i])) arrOfConsonants.push(str[i]);
+//     else if (vowels.includes(str[i])) arrOfVowels.push(str[i]);
+//     else arrElse.push(str[i]);
+// }
+// console.log(arrOfConsonants);
+// console.log(arrOfVowels);
+// console.log(arrElse);
