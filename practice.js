@@ -3797,3 +3797,59 @@
 //     }
 // }
 
+// function specTheWord(str){
+//     let vowel = /[aeiou]/gi;
+//     let consonant = /[bcdfghjklmnpqrstvwxyz]/gi;
+//     let vMatch = str.match(vowel) || [];
+//     let cMatch = str.match(consonant) || [];
+//     return {
+//         vowel: vMatch.join(''),
+//         vowelCount: vMatch.length,
+//         consonant: cMatch.join(''),
+//         consonantCount: cMatch.length
+//     }
+// }
+
+// function numOfLowerCase(str){
+//     let res = 0;
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] === str[i].toLowerCase()){
+//             res++;
+//         }
+//     }
+//     return res;
+// }
+
+// function numOfUpperCase(str){
+//     let res = 0;
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] === str[i].toUpperCase()){
+//             res++
+//         }
+//     }
+//     return res;
+// }
+
+// function strOfLowerAndUpperCase(str){
+//     if(str.length === 0){
+//         return 'string is empty';
+//     }
+//     let first = '';
+//     let rest = '';
+//     for(let i of str){
+//         if(i === i.toUpperCase()){
+//             first += i;
+//         } else {
+//             rest += i
+//         }
+//     }
+//     if(first === ''){
+//         return rest;
+//     }else if(rest === ''){
+//         return first;
+//     }else{
+//         return `${rest} ${first}`
+//     }
+// }
+
+
