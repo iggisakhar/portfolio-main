@@ -3852,4 +3852,100 @@
 //     }
 // }
 
+// function numOfLowerCase(str){
+//     if(str.length === 0) return 'String is empty';
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++){
+//         if(str[i] === str[i].toLowerCase() && str[i] === str[i].toUpperCase()) {
+//             continue;
+//         }
+//         if(str[i] === str[i].toLowerCase()){
+//             count++;
+//         }
+//     }
+//     return `Lowercase: ${count} and other symbols: ${str.length - count}`;
+// }
+
+// function numOfLettersAndOther(str){
+//     if(str.length === 0) return 'String is empty'
+//     let count = 0;
+//     let symbols = 0;
+//     for(let i = 0; i < str.length; i++){
+//         if(/[a-zA-Z]/.test(str[i])){
+//             count++
+//         } else{
+//             symbols++
+//         }
+//     }
+//     return `Letters: ${count}, other symbols: ${symbols}`
+// }
+
+// function caseSeparation(str){
+//     let lowerCase = '';
+//     let upperCase = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] === str[i].toLowerCase() && lowerCase.indexOf(str[i]) === -1) {
+//             lowerCase += str[i];
+//         }
+//         if(str[i] === str[i].toUpperCase() && upperCase.indexOf(str[i]) === -1) {
+//             upperCase += str[i];
+//         }
+//     }
+//     return [lowerCase, upperCase];
+// }
+
+// function twoStringsBattle(str1, str2){
+//     let countStr1 = 0;
+//     let countStr2 = 0;
+//     for(let i = 0 ; i < str1.length; i++){
+//         if(str1[i] === str1[i].toUpperCase()){
+//             countStr1++
+//         }
+//     }
+//     for(let j = 0; j < str2.length; j++){
+//         if(str2[j] === str2[j].toUpperCase()){
+//             countStr2++
+//         }
+//     }
+//     if(countStr1 > countStr2){
+//         return `${str1} has won with number of ${countStr1}`
+//     } else if(countStr1 < countStr2){
+//         return `${str2} has won with number of ${countStr2}`
+//     } else {
+//         return 'Draw'
+//     }
+// }
+
+// function stringAndCommand(str, command){
+//     if(str.length === 0) return 'String is empty';
+//     let count = 0;
+//     if(command === 'countUpperCase'){
+//         for(let i = 0; i < str.length; i++){
+//             if(str[i] === str[i].toUpperCase()){
+//                 count++
+//             }
+//         }
+//     }
+//     else if(command === 'countLowerCase'){
+//         for(let i = 0; i < str.length; i++){
+//             if(str[i] === str[i].toLowerCase()){
+//                 count++
+//             }
+//         }
+//     }
+//     return `Command: ${command}, result: ${count}`
+// }
+
+// function lettersAndSymbols(str){
+//     let string = '';
+//     let symbols = '';
+//     for(let i = 0 ; i < str.length; i++){
+//         if(/[a-zA-Z]/.test(str[i])){
+//             string += str[i];
+//         } else {
+//             symbols += str[i];
+//         }
+//     }
+//     return [string, symbols]
+// }
 
