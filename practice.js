@@ -3949,3 +3949,35 @@
 //     return [string, symbols]
 // }
 
+// const str = 'Hello Coding JS!'
+// let upper = 0, lower = 0
+// for(let i = 0; i < str.length; i++){
+//     if(str[i].toUpperCase() === str[i]) upper++
+//     else lower++
+// }
+// console.log(upper, lower)
+
+// const str = 'Hello !';
+// let upper = 0, lower = 0
+// for(let i = 0; i < str.length; i++){
+//     if(str[i].toUpperCase() === str[i] && str[i].toLowerCase() !== str[i]) upper++
+//     else lower++
+// }
+// console.log(upper, lower);
+
+// const str = 'Hello JS !';
+// let upper = 0, lower = 0
+// for(let i = 0; i < str.length; i++){
+//     if(str[i].toUpperCase() === str[i] && str[i].toLowerCase() !== str[i]) upper++
+//         if(str[i].toUpperCase() !== str[i]) lower++
+// }
+// console.log(upper, lower);
+
+// const str = 'Hello JS !';
+// let upper = 0, lower = 0
+// for(let i = 0; i < str.length; i++){
+//     if(str[i].toLowerCase() !== str[i]) upper++
+//     if(str[i].toUpperCase() !== str[i]) lower++
+// }
+// console.log(upper, lower);
+
