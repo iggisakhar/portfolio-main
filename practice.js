@@ -3981,3 +3981,185 @@
 // }
 // console.log(upper, lower);
 
+// function numOfLowerAndUpperCase(str){
+//     let upper = 0, lower = 0;
+//     for(let i of str){
+//         if(i >= 'a' && i <= 'z') lower++
+//         else if(i >= 'A' && i <= 'Z') upper++
+//     }
+//     return [lower, upper];
+// }
+
+// function countDigit(str, str2){
+//     let count = 0;
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] === str2)
+//             count++
+//     }
+//     return count;
+// }
+
+// function countDigits(str){
+//     let count = 0;
+//     for(let i of str){
+//         if(i !== ' ' && !isNaN(i)) count++
+//     }
+//     return count;
+// }
+
+// function countDigitInNumber(number, digit) {
+//     let newNum = number.toString();
+//     let newDig = String(digit);
+//     let count = 0;
+//     for(let i = 0; i < newNum.length; i++){
+//         if(newNum[i] === newDig) count++
+//     }
+//     return `In number ${number} digit ${digit} occurs ${count} times`
+// }
+
+// function digitsToArray(str){
+//     let digits = '0123456789';
+//     let arr = [];
+//     for(let i = 0; i < str.length; i++){
+//         if(digits.indexOf(str[i]) !== -1){
+//             arr.push(Number(str[i]));
+//         }
+//     }
+//     return arr;
+// }
+
+// function numbersToArray(str) {
+//     const digits = '0123456789';
+//     let numbers = [];
+//     let number = '';
+//
+//     for (let i = 0; i < str.length; i++) {
+//         if (digits.includes(str[i])) {  // если символ является цифрой
+//             number += str[i];             // добавляем его в текущее число-аккумулятор
+//         } else if (number.length > 0) { // если символ не является цифрой и текущее число-аккумулятор не пустое
+//             numbers.push(+number);        // добавляем текущее число-аккумулятор в массив чисел
+//             number = '';                   // сбрасываем значение текущего числа-аккумулятора
+//         }
+//     }
+//
+//     if (number.length > 0) {    // если строка закончилась числом, то нужно добавить в массив последнее число-аккумулятор
+//         numbers.push(+number);    // добавляем его в массив чисел
+//     }
+//
+//     return numbers;
+// }
+
+// function countEven(str){
+//     let count = 0;
+//     let acc = '';
+//     for(let i = 0; i < str.length; i++){
+//         let char = str[i];
+//         if(char >= '0' && char <= '9'){
+//             acc += char;
+//         } else if(acc.trim() !== ''){
+//             if(Number(acc) % 2 === 0){
+//                 count++
+//             }
+//             acc = '';
+//         }
+//     }
+//     if(acc.trim() !== ''){
+//         if(+acc % 2 === 0){
+//             count++
+//         }
+//     }
+//     return count;
+// }
+
+// function calculator(op, num1, num2) {
+//     switch(op){
+//         case '+':
+//             return num1 + num2;
+//         case '-':
+//             return num1 - num2;
+//         case '/':
+//             return num1 / num2;
+//         case '*':
+//             return num1 * num2;
+//         default:
+//             return NaN;
+//     }
+// }
+// function calculateExpression(str) {
+//     let num1 = '';
+//     let num2 = '';
+//     let op;
+//     let opIndex;
+//     for(let i = 0; i < str.length; i++){
+//         if(isOperator(str[i])){
+//             op = str[i];
+//             opIndex = i;
+//             break;
+//         }
+//         num1 += str[i];
+//     }
+//     for(let i = opIndex + 1; i < str.length; i++){
+//         num2 += str[i];
+//     }
+//     num1 = parseFloat(num1);
+//     num2 = parseFloat(num2);
+//     return calculator(op, num1, num2)
+// }
+// function isOperator(char){
+//     let operators = '+-*/';
+//     return operators.includes(char);
+// }
+
+// function firstDigitCount(str) {
+//     let count = 0;
+//     let firstDigit = '';
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] >= '0' && str[i] <= '9' && firstDigit === '') {
+//             firstDigit = str[i];
+//         }
+//         if (str[i] === firstDigit) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// function digitsCount(str){
+//     let result = [0,0,0,0,0,0,0,0,0,0];
+//     for(let i = 0; i < str.length; i++){
+//         if(/\d/.test(str[i])){
+//             result[Number(str[i])]++
+//         }
+//     }
+//     return result;
+// }
+
+// function getNumbersInfo(str){
+//     str = str.trim();
+//     if(str === ''){
+//         return 'String is empty';
+//     }
+//     let negatives = 0,
+//         positives = 0,
+//         zeros = 0,
+//         odds = 0,
+//         evens = 0
+//     let newStr = str.split(' ').map(Number);
+//     for(let i of newStr){
+//         if(i < 0){
+//             negatives++
+//         }
+//         else if(i > 0) positives++
+//         else if(i === 0) zeros++
+//         if(i % 2 === 0) evens++
+//         else odds++
+//     }
+//     return {
+//         negatives,
+//         positives,
+//         zeros,
+//         odds,
+//         evens
+//     }
+// }
+
