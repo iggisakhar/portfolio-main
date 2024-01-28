@@ -4163,3 +4163,52 @@
 //     }
 // }
 
+// const str = 'Find numbers 123 in string 456';
+// const numbers = '0123456789';
+// const arrOfNumbers = [];
+// for(let i = 0; i < str.length; i++){
+//     for(let j = 0; j < numbers.length; j++){
+//         if(str[i] === numbers[j]) arrOfNumbers.push(str[i]);
+//     }
+// }
+// console.log(arrOfNumbers);
+
+// const str = 'a0 b9 c8 d7 e6 f5';
+// const numbers = '0123456789';
+// const arrOfNumbers = [];
+// for(let i = 0; i < str.length; i++){
+//     if(numbers.includes(str[i])) arrOfNumbers.push(str[i]);
+// }
+// console.log(arrOfNumbers);
+
+// const str = '5He88llo 009-87-65 world3!4';
+// const numbers = '0123456789';
+// const arr = [];
+// let acc = '';
+// for(let i = 0; i < str.length; i++){
+// if(numbers.includes(str[i])) acc += str[i];
+// else if(acc !== ''){
+//     arr.push(+acc);
+//     acc = '';
+// }
+// if(i === str.length -1 && acc !== '') arr.push(+acc);
+// }
+// console.log(arr);
+
+// const str = '5Hi 1-2-3 world7?10';
+// const numbers = '0123456789';
+// const arr = [];
+// let acc = '';
+// for(let i = 0; i < str.length; i++){
+//     if(numbers.includes(str[i]) && i === str.length -1) {
+//         acc += str[i];
+//         arr.push(acc);
+//     } else if(numbers.includes(str[i])){
+//         acc += str[i];
+//     } else if (acc !== ''){
+//         arr.push(acc);
+//         acc = '';
+//     }
+// }
+// console.log(arr);
+
