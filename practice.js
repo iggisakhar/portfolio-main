@@ -4212,3 +4212,130 @@
 // }
 // console.log(arr);
 
+// function countWords(str){
+//     let count = 1;
+//     let str1 = str.trim();
+//     if(str1 === '') return 0;
+//     for (let i = 0; i < str1.length; i++){
+//         if(str1[i] === ' ' && str1[i+1] !== ' ')count++;
+//     }
+//     return count;
+// }
+
+// function countSigns(str, sign){
+//     let count = 0;
+//     for(let i of str){
+//         if(i === sign) count++
+//     }
+//     return count;
+// }
+
+// function numberOfSpaces(str){
+//     let count = 0;
+//     for(let i of str){
+//         if(i === ' ') count++
+//     }
+//     return count;
+// }
+
+// function insideBrackets(str){
+//     let firstBracket = str.indexOf('(');
+//     let secondBracket = str.indexOf(')', firstBracket);
+//     if(firstBracket === -1 || secondBracket === -1){
+//         return -1;
+//     }
+//     let count = 0;
+//     for(let i = firstBracket +1; i < secondBracket; i++){
+//         if(/[a-zA-Z0-9]/.test(str[i])){
+//             while(/[a-zA-Z0-9]/.test(str[i]) && i < secondBracket){
+//                 i++
+//             }
+//             count++
+//         }
+//     }
+//     return count;
+// }
+
+// function outsideBrackets(str){
+//     let firstBracket = str.indexOf('(');
+//     let secondBracket = str.indexOf(')', firstBracket);
+//     let count = 0;
+//     for(let i = 0; i < firstBracket; i++){
+//         if(str[i] === ' ') count ++
+//     }
+//     for(let j = secondBracket + 1; j < str.length; j++){
+//         if(str[j] === ' ') count++
+//     }
+//     return count;
+// }
+
+// function countWords (str){
+//     let newStr = str.trim();
+//     let count = 0;
+//     let flag = false;
+//     if(newStr === ' '){
+//         return 0;
+//     }
+//     for(let i = 0; i < newStr.length; i++){
+//         if(str[i] === ' '){
+//             if(flag) {
+//                 count++
+//                 flag = false;
+//             }
+//         }
+//         else {
+//             flag = true;
+//         }
+//     }
+//     if(flag) count++
+//     return count;
+// }
+
+// function findBugs(str){
+//     let str1 = str.toLowerCase();
+//     let bug = 'bug';
+//     let count = 0;
+//     let index = 0;
+//     while(index < str1.length){
+//         let bugIndex = str1.indexOf(bug, index);
+//         if(bugIndex === -1){
+//             break
+//         }
+//         count++
+//         index = bugIndex + bug.length;
+//     }
+//     return count;
+// }
+
+// function countWordsNotNumbers(str){
+//     let str1 = str.split(' ');
+//     let str2 = str1.filter((el) => isNaN(el));
+//     return str2.length;
+// }
+
+// function theLongestWord(arr){
+//     if(arr.length === 0) return 'No words found'
+//     let longestWord = arr[0];
+//     for(let i = 1; i < arr.length; i++){
+//         let curr = arr[i];
+//         if(longestWord.length < curr.length){
+//             longestWord = curr;
+//         }
+//     }
+//     return `The longest word has ${longestWord.length} length`
+// }
+
+// function objectCount(arr){
+//     let obj = {};
+//     if(arr.length === 0) return 'No words - no object'
+//     for(let i = 0; i < arr.length; i++){
+//         if(obj.hasOwnProperty(arr[i])) obj[arr[i]]++
+//         else obj[arr[i]] = 1;
+//     }
+//     return obj;
+// }
+
+// function sayHello( name, city, state ) {
+//     return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+// }
+
