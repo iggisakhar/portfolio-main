@@ -4339,3 +4339,75 @@
 //     return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
 // }
 
+// function deleteSpace(str){
+//     let newStr = str.split(' ').join('').trim()
+//     return newStr;
+// }
+
+// function doubleElement(arr){
+//     if(arr.length === 0) return 'No array - no work';
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr.indexOf(arr[i], i + 1) !== -1)
+//             return true;
+//     }
+//     return false;
+// }
+
+// function secondWord(str){
+//     let arr = str.split(' ');
+//     if(arr.length < 2){
+//         return 'Second word was not found';
+//     }
+//     return arr[1];
+// }
+
+// function firstDuplicate(str){
+//     let arr = str.split(' ');
+//     if(arr.length < 2) return false;
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[0] === arr[i]) return true;
+//     }
+//     return false;
+// }
+
+// function findDuplicate(str){
+//     let arr = str.split(' ');
+//     let obj = {};
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] !== ' ') {
+//             if(obj[arr[i]]){
+//                 return true;
+//             }
+//             obj[arr[i]] = 1;
+//         }
+//     }
+//     return false;
+// }
+
+// function lastDuplicate(str){
+//     let str1 = str.split(' ');
+//     if(str1.length < 2) return false;
+//     let lastWord = str1[str1.length - 1];
+//     for(let i = 0; i < str1.length -1; i++){
+//         if(str1[i] === lastWord) return true;
+//     }
+//     return false;
+// }
+
+// function removeDuplicates(str){
+//     let result = '';
+//     let many = new Set();
+//     for(let i = 0; i < str.length; i++){
+//         let char = str[i];
+//         if(!many.has(char) || char === ' '){
+//             result += char;
+//             many.add(char);
+//         }
+//     }
+//     while(result.endsWith(' ')) {
+//         result = result.slice(0, -1)
+//     }
+//     return result;
+// }
+
+
