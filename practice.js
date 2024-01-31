@@ -4410,4 +4410,109 @@
 //     return result;
 // }
 
+// function copyDuplicate(str) {
+//     let arr = [];
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] !== ' ' && str.indexOf(str[i]) < i) {
+//             if(arr.indexOf(str[i]) === -1){
+//                 arr.push(str[i]);
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+
+// function copyDuplicate(str){
+//     let obj = {};
+//     let str1 = str.split(' ');
+//     str1.forEach(el => {
+//         for(let i = 0; i < el.length; i++){
+//             let letter = el[i];
+//             if(obj.hasOwnProperty(letter)) obj[letter]++
+//             else obj[letter] = 1;
+//         }
+//     })
+//     let objRes = {};
+//     for(let i in obj){
+//         if(obj[i] > 1) objRes[i] = obj[i] -1;
+//     }
+//     return objRes;
+// }
+
+// function moveDuplicates(str){
+//     let str1 = str.toLowerCase().trim();
+//     if(str1 === '') return 'string is empty'
+//     let unique = '';
+//     let duplicate = '';
+//     for(let i = 0; i < str1.length; i++){
+//         if(unique.includes(str1[i])) duplicate += str1[i];
+//         else unique += str1[i];
+//     }
+//     return [unique, duplicate]
+// }
+
+// const arr = ['102', '120', '201'];
+// let res = '';
+// const symbols = {};
+// for(let i = 0; i < arr.length; i++){
+//     for(let j = 0; j < arr[i].length; j++){
+//         if (!symbols[arr[i][j]]) {
+//             symbols[arr[i][j]] = 1;
+//             res += arr[i][j];
+//         }
+//     }
+// }
+// console.log(res)
+
+// const arr = ['-75', '-59', '-975'];
+// let res = '';
+// const symbols = {};
+// for(let i = 0; i < arr.length; i++){
+//     for(let j = 0; j < arr[i].length; j++){
+//         if (!symbols[arr[i][j]]) {
+//             symbols[arr[i][j]] = 1;
+//             res += arr[i][j];
+//         }
+//     }
+// }
+// console.log(res)
+
+// const arr = ['1', '31', '173'];
+// let res = '';
+// const symbols = {};
+// for(let i = 0; i < arr.length; i++){
+//     for(let j = 0; j < arr[i].length; j++){
+//         if (!symbols[arr[i][j]]) {
+//             symbols[arr[i][j]] = 1;
+//             console.log(res += arr[i][j]);
+//         }
+//     }
+// }
+
+// function deleteDuplicate(str){
+//     let arr = str.split(' ');
+//     let many = new Set(arr);
+//     let result = Array.from(many).join(' ');
+//     return result;
+// }
+//
+// console.log(deleteDuplicate('Many and Many'));
+
+// function findTheSameWord(str) {
+//     let obj = {};
+//     let result = '';
+//     let word = '';
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] !== ' ') word += str[i]
+//         if (str[i] === ' ' || i === str.length - 1) {
+//             if (word && !obj.hasOwnProperty(word)) {
+//                 obj[word] = 1;
+//                 result += (result ? '-' : '') + word;
+//             }
+//             word = '';
+//         }
+//     }
+//     return result
+//}
 
