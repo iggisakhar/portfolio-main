@@ -4516,3 +4516,55 @@
 //     return result
 //}
 
+// function returnDuplicates(str){
+//     let arr = str.split(' ');
+//     let unique = new Set(arr);
+//     let duplicates = [];
+//     unique.forEach(el => {
+//         let count = arr.filter(e => e === el).length;
+//         if(count > 1) duplicates.push(el)
+//     })
+//     return duplicates.join(' ');
+// }
+
+// function findAndDelete(str){
+//     let arr = str.toLowerCase().split(' ');
+//     let unique = [];
+//     let words = new Set();
+//     for(let i of arr){
+//         if(!words.has(i)) {
+//             words.add(i)
+//             unique.push(i);
+//         }
+//     }
+//     return unique.join(' ');
+// }
+
+// function checkDuplicates(str){
+//     let arr = str.split(' ');
+//     let unique = new Set();
+//     for(let i of arr){
+//         unique.add(i);
+//     }
+//     return [...unique].join(' ');
+// }
+
+// function howManyDuplicates(str) {
+//     let count = 0;
+//     let word = '';
+//     let obj = {};
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] !== ' ') word += str[i];
+//
+//         if (str[i] === ' ' || i === str.length - 1) {
+//             if (word && !obj[word]) {
+//                 obj[word] = 1;
+//             } else if (word && obj[word] === 1) {
+//                 count++;
+//             }
+//             word = '';
+//         }
+//     }
+//     return count
+// }
+
