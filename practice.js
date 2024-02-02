@@ -4568,3 +4568,57 @@
 //     return count
 // }
 
+// function countDuplicates(str){
+//     let arr = str.toLowerCase().split(' ');
+//     let obj = {};
+//     let duplicate = 0;
+//     for(let i of arr){
+//         if(obj[i]){
+//             obj[i]++
+//         } else{
+//             obj[i] = 1;
+//         }if(obj[i] > 1){
+//             duplicate++
+//         }
+//     }
+//     return duplicate;
+// }
+
+// function deleteDuplicates(str){
+//     let arr = [];
+//     str.split(' ').forEach(el => {
+//         let clean = el.replace(/[!?.,;:]/g, '').toLowerCase();
+//         if(!arr.includes(clean)){
+//             arr.push(clean);
+//         }
+//     })
+//     return arr.join(' ');
+// }
+
+// function noDuplicate(str){
+//     let arr = str.trim().split(' ');
+//     let unique = {};
+//     let result = [];
+//     for(let i of arr){
+//         if(!unique[i]){
+//             unique[i] = true;
+//             result.push(i);
+//         }
+//     }
+//     if(result.length > 1) return result.join('***');
+//     else return result.join(' ');
+// }
+
+// function findDuplicates(str){
+//     let arr = str.split(/[\s-]+/);
+//     let many = new Set();
+//     let words = arr.filter(el => {
+//         if(!many.has(el)){
+//             many.add(el)
+//             return true;
+//         }
+//         return false;
+//     })
+//     return words.join(' ');
+// }
+
