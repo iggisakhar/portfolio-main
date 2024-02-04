@@ -4622,3 +4622,32 @@
 //     return words.join(' ');
 // }
 
+// const str = 'JavaScript is the best programming language';
+// const arr = str.split(' ');
+// console.log(arr);
+
+// const str = "     Let's practice JavaScript!   ";
+// const arr = [];
+// let acc = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] !== ' ') acc += str[i];
+//     if((str[i] === ' ' || i === str.length -1) && acc !== ''){
+//     arr.push(acc);
+//     acc = '';
+//     }
+// }
+// console.log(arr);
+
+// const str = '   Hey, Alice! How was your vacation?   ';
+// const arr = [];
+// let acc = '';
+// const symbols = '.,!?;:'
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] !== ' ' && !symbols.includes(str[i])) acc += str[i]
+//     if((str[i] === ' ' || i === str.length -1) && acc !== ''){
+//         arr.push(acc);
+//         acc = ''
+//     }
+// }
+// console.log(arr);
+
