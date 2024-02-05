@@ -4651,3 +4651,25 @@
 // }
 // console.log(arr);
 
+// const str = 'abc alert beep';
+// let res = '';
+// const symbols = {};
+// for(let i = 0; i < str.length; i++){
+//     if(!symbols[str[i]]){
+//         symbols[str[i]] = 1
+//         res += str[i];
+//     }
+// }
+// console.log(res);
+
+// const str = 'abc alert beep';
+// let res = '';
+// const symbols = {};
+// for(let i = 0; i < str.length; i++){
+//     if(!symbols[str[i]]) {
+//         symbols[str[i]] = 1;
+//         res += str[i];
+//     }
+// }
+// console.log(symbols);
+
