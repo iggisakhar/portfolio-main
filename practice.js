@@ -4673,3 +4673,125 @@
 // }
 // console.log(symbols);
 
+// const str = 'Hello ! World Hello !';
+//
+// const words = {}
+// let res = '';
+// let acc = '';
+//
+// for (let i = 0; i < str.length; i++){
+//     if(str[i] !== ' ') acc += str[i]
+//
+//     if(str[i] === ' ' || i === str.length-1){
+//         if(acc && !words[acc]) {
+//             words[acc] = 1;
+//             res += acc + ' ';
+//         }
+//         acc = '';
+//     }
+// }
+//
+// console.log(res)
+
+// const str = '!! JS World JS !!';
+// const words = {}
+// let res = '';
+// let acc = '';
+// for (let i = 0; i < str.length; i++){
+//     if(str[i] !== ' ') acc += str[i]
+//
+//     if(str[i] === ' ' || i === str.length-1){
+//         if(acc && !words[acc]) {
+//             words[acc] = 1;
+//             res += acc + ' ';
+//         }
+//         acc = '';
+//     }
+// }
+// console.log(res === '!! JS World')
+
+// const str = 'programming is easy is as 123 123';
+// const words = {}
+// let res = '';
+// let acc = '';
+// for (let i = 0; i < str.length; i++){
+//     if(str[i] !== ' ') acc += str[i]
+//     if(str[i] === ' ' || i === str.length-1){
+//         if(acc && !words[acc]) {
+//             words[acc] = 1;
+//             if(res) res += ' ' + acc;
+//             else res += acc;
+//         }
+//         acc = '';
+//     }
+// }
+// console.log(res);
+
+// function findDuplicates(str){
+//     let str1 = str.replace(/-/g, ' ').split(/\s+/);
+//     let many = new Set(str1);
+//     return Array.from(many).join(' ');
+// }
+
+// function replaceCommas(str){
+//     let str1 = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] === ',') str1 += ' '
+//         else str1 += str[i];
+//     }
+//     return str1;
+// }
+
+// function fixNames(arr){
+//     return arr.map(el => {
+//         if(el === '') return ''
+//         return el[0].toUpperCase() + el.substring(1).toLowerCase();
+//     })
+// }
+
+// function replaceDigits(str, symbol){
+//     return str.replace(/\d/g, symbol);
+// }
+
+// function replacePunctuation(str){
+//     let str1 = ''
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] === '!' || str[i] === '?') str1 += '.'
+//         else str1 += str[i]
+//     }
+//     return str1;
+// }
+
+// function formatSentence(sentence) {
+//     if (sentence === '') return '';
+//     let firstLetter = sentence[0].toUpperCase();
+//     let lastLetter = sentence[sentence.length - 1];
+//     let newSentence = sentence;
+//     if (firstLetter !== sentence[0]) {
+//         newSentence = firstLetter;
+//         for (let i = 1; i < sentence.length; i++) {
+//             newSentence += sentence[i];
+//         }
+//     }
+//     if (lastLetter !== '.' && lastLetter !== '!' && lastLetter !== '?' ) {
+//         newSentence = newSentence + '.';
+//     }
+//     return newSentence;
+// }
+
+// function wordsCapitalize(str){
+//     if(str.length === '') return '';
+//     let res = '';
+//     let cap = true;
+//     for(let i = 0; i < str.length; i++){
+//         let char = str.charAt(i);
+//         if(cap && char !== ' '){
+//             res += char.toUpperCase();
+//             cap = false;
+//         } else {
+//             res += char.toLowerCase();
+//             if(char === ' ') cap = true;
+//         }
+//     }
+//     return res;
+// }
