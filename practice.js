@@ -4795,3 +4795,198 @@
 //     }
 //     return res;
 // }
+
+// function wordsCapitalize(str){
+//     if(str.length === '') return '';
+//     let flag = true;
+//     let res = ''
+//     for(let i of str){
+//         if(flag && i !== ' ') {
+//             res += i.toUpperCase();
+//             flag = false;
+//         } else {
+//             res += i
+//         } if(i === ' '){
+//             flag = true;
+//         }
+//     }
+//     return res;
+// }
+
+// function replaceEverySecondSpace(str){
+//     let str1 = str.trim();
+//     let count = 0;
+//     let res = '';
+//     for(let i = 0; i < str1.length; i++){
+//         if(str1[i] === ' ') {
+//             count++
+//             if(count % 2 === 0) {
+//                 res += '_'
+//                 continue;
+//             }
+//         }
+//         res += str1[i];
+//     }
+//     return res;
+// }
+
+// const str = 'This is a sensational result.';
+// let result = '';
+// for (let i = 0; i < str.length; i++) {
+//     if (str[i] === '.') {
+//         result += '!!!';
+//     } else {
+//         result += str[i];
+//     }
+// }
+// console.log(result);
+
+// const str = 'I am 2 old 4 it.';
+// let result = '';
+// const map = {
+//     2: 'too',
+//     4: 'for',
+//     '.': '!'
+//  }
+//  for (let i = 0; i < str.length; i++) {
+//      if (map[str[i]]) {
+//         result += map[str[i]];
+//     } else {
+//         result += str[i];
+//     }
+// }
+// console.log(result);
+
+// const str = 'u r34lly c4n r34d th1s.';
+// let result = '';
+// const map = {
+//     1: 'i',
+//     'u': 'you',
+//     3: 'e',
+//     4: 'a',
+//     '.': '!'
+// }
+// for (let i = 0; i < str.length; i++) {
+//     if (map[str[i]]) {
+//         result += map[str[i]];
+//     } else {
+//         result += str[i];
+//     }
+// }
+// console.log(result);
+
+// const str = 'YOU BECOME WHAT YOU BELIEVE.';
+// let result = '';
+// const map = {
+//     'I': 1,
+//     'E': 3,
+//     'A': 4,
+//     'T': 7,
+//     'B': 8,
+//     '.': '!'
+// }
+// for (let i = 0; i < str.length; i++) {
+//     if (map[str[i]]) {
+//         result += map[str[i]];
+//     } else {
+//         result += str[i];
+//     }
+// }
+// console.log(result);
+
+// function colorDecoder(str) {
+//     if(str === '') return ''
+//     const rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+//     let result = '';
+//     let current = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(!isNaN(parseInt(str[i]))){
+//             current += str[i];
+//         } else {
+//             if(current !== ''){
+//                 let index = parseInt(current) -1;
+//                 if(index >= 0 && index < rainbow.length){
+//                     result += rainbow[index];
+//                 } else {
+//                     result += current;
+//                 }
+//                 current = '';
+//             }
+//             result += str[i];
+//         }
+//     }
+//     if(current !== ''){
+//         let index = parseInt(current) -1;
+//         if(index >= 0 && index < rainbow.length){
+//             result += rainbow[index];
+//         } else {
+//             result += current;
+//         }
+//     }
+//     return result;
+// }
+//
+// function removeExtraSpaces(str) {
+//     let result = '';
+//     let prevChar = '';
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i];
+//         if (char === ' ' && prevChar === ' ') {
+//             continue;
+//         }
+//         result += char;
+//         prevChar = char;
+//     }
+//     return result;
+// }
+//
+// function decodeAddress(address) {
+//     let decodeTable = {
+//         'St.': 'Street',
+//         'Rd.': 'Road',
+//         'Ln.': 'Lane',
+//         'Dr.': 'Drive',
+//         'Cir.': 'Circle',
+//         'Ave.': 'Avenue',
+//         'Pl.': 'Place',
+//         'Sq.': 'Square',
+//         'Pkwy.': 'Parkway',
+//         'Ct.': 'Court',
+//         'Hwy.': 'Highway',
+//         'Plz.': 'Plaza',
+//         'Blvd.': 'Boulevard',
+//         'Bch.': 'Beach',
+//         'Aly.': 'Alley'
+//     }
+//     let res = '';
+//     let word = '';
+//     for(let i of address){
+//         if(i !== ' '){
+//             word += i;
+//         } else {
+//             if(decodeTable[word + '']){
+//                 res += decodeTable[word] + ' ';
+//             } else {
+//                 res += word + ' ';
+//             }
+//             word = '';
+//         }
+//     }
+//     if(decodeTable[word + '']){
+//         res += decodeTable[word];
+//     } else {
+//         res += word;
+//     }
+//     return res;
+// }
+//
+
+// function switchWords(str){
+//     let index = str.indexOf(' ');
+//     let firstWord = str.substring(0, index);
+//     let lastIndex = str.lastIndexOf(' ');
+//     let lastWord = str.substring(lastIndex + 1);
+//     let restOfWord = str.substring(index +1, lastIndex);
+//     return lastWord + ' ' + restOfWord + ' ' + firstWord;
+// }
+
