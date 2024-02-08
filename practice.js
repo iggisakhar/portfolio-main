@@ -4990,3 +4990,36 @@
 //     return lastWord + ' ' + restOfWord + ' ' + firstWord;
 // }
 
+// function switchWords(str) {
+//     let index = str.indexOf(' ');
+//     let firstWord = str.substring(0, index);
+//     let lastIndex = str.lastIndexOf(' ');
+//     let lastWord = str.substring(lastIndex + 1);
+//     return lastWord  + str.substring(index, lastIndex + 1)  + firstWord;
+// }
+
+// function funnyPhrase(str) {
+//     let firstWord = '';
+//     let lastWord = '';
+//     let restPart = '';
+//     for (let i = 0; i < str.length; i++) {
+//         if (",!?.".includes(str[i]) === false) firstWord += str[i]
+//         else break;
+//     }
+//     let lastSpaceIndex = str.lastIndexOf(' ');
+//     for (let i = lastSpaceIndex + 1; i < str.length - 1; i++)
+//         lastWord += str[i]
+//     restPart = str.substring(firstWord.length, lastSpaceIndex) + ' ';
+//     return lastWord + restPart + firstWord + str[str.length - 1];
+// }
+
+// function switchAndCapital(str){
+//     let divide = str.search(/[ ,?!]/);
+//     let first = str.substring(0, divide).toUpperCase();
+//     let last = str.lastIndexOf(' ');
+//     let lastWord = str.substring(last + 1).toUpperCase();
+//     let middle = str.substring(divide + 1, last);
+//     let symbol = str.charAt(divide);
+//     return lastWord + symbol + middle + ' ' + first;
+// }
+
