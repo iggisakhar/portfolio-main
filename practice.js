@@ -5023,3 +5023,21 @@
 //     return lastWord + symbol + middle + ' ' + first;
 // }
 
+// function addNewWord(str, newFirstWord){
+//     let exceptFirstWord = '';
+//     let firstWord = '';
+//     let i = 0;
+//     while(i < str.length && !divide(str[i])){
+//         firstWord += str[i];
+//         i++
+//     }
+//     while(i < str.length){
+//         exceptFirstWord += str[i];
+//         i++
+//     }
+//     return newFirstWord + exceptFirstWord + ' ' + firstWord;
+// }
+// function divide(element){
+//     return element === ' ' || element === ',' || element === '?' || element === '!'
+// }
+
