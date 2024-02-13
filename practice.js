@@ -5041,3 +5041,36 @@
 //     return element === ' ' || element === ',' || element === '?' || element === '!'
 // }
 
+// const str = 'car js pasv car jsp coding     js car';
+// const words = {};
+// let res = '';
+// let acc = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] !== ' ') acc += str[i]
+//     if(str[i] === ' ' || i === str.length -1){
+//         if(acc && !words[acc]){
+//             words[acc] = 1;
+//             res += acc + ' ';
+//         }
+//         acc = '';
+//     }
+// }
+// console.log(res);
+
+// const str = 'car js pasv car jsp coding    js car';
+// const words = {};
+// let res = '';
+// let acc = '';
+// for(let i = 0; i < str.length; i++){
+//     if (str[i] !== ' ') acc += str[i]
+//     if (str[i] === ' ' || i === str.length -1){
+//         if (acc && !words[acc]){
+//             words[acc] = 1;
+//             if (res) res += ' ' + acc;
+//             else res += acc;
+//         }
+//         acc = '';
+//     }
+// }
+// console.log(res);
+
