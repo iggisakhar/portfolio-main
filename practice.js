@@ -5096,3 +5096,112 @@
 // }
 // console.log(symbols);
 
+// function updateString(str){
+//     let obj = {
+//         firstWord: '',
+//         lastWord: '',
+//         updatedString: ''
+//     }
+//     let words = str.split(' ');
+//     obj.firstWord = words[0];
+//     obj.lastWord = words[words.length -1];
+//     words[0] = obj.lastWord;
+//     words[words.length -1] = obj.firstWord;
+//     obj.updatedString = words.join(' ');
+//     return obj;
+// }
+
+// function changeIf3Space(str){
+//     let words = str.split(' ');
+//     if(words.length == 4){
+//         return words[0] + ' ' + words[words.length -1]
+//     }else {
+//         return str;
+//     }
+// }
+
+// function switchWords(str){
+//     let words = str.split(' ');
+//     return words[1] + ' ' + words[0];
+// }
+
+// function firstIsLast(str){
+//     let words = str.toLowerCase().split(' ');
+//     if(words.length <= 1){
+//         return 'nothing to switch';
+//     }
+//     let first = words[0];
+//     let last = words[words.length -1];
+//     words[0] = last;
+//     words[words.length -1] = first;
+//     return words.join(' ');
+// }
+
+// function switchWordAddToArray(str){
+//     let res = ['', '', ''];
+//     let start = 0;
+//     let end = 0;
+//     if(str.length == 5){
+//         res[0]=str;
+//         return [str, '', ''];
+//     }
+//
+//     for(let i = 0; i <= str.length; i++){
+//         if(str[i] === ' ' ||  i === str.length){
+//             end = i;
+//             let word = str.slice(start,end);
+//
+//             if(res[2] === ''){
+//                 res[2] = word;
+//             }else  if(i === str.length){
+//                 res[0] = word;
+//             }else {
+//                 res[1] += word + ' ';
+//             }
+//             start =  i + 1;
+//         }
+//     }
+//     res[1] = res[1].trim();
+//     return res;
+// }
+
+// function validPhoneNumber(phoneNumber){
+//     if(phoneNumber.length !== 14){
+//         return false;
+//     }
+//     if(phoneNumber[0] !=='(' && phoneNumber[4] !== ')'){
+//         return false;
+//     }
+//     if(phoneNumber[5] !== ' '){
+//         return false;
+//     }
+//     if(phoneNumber[9] !== '-'){
+//         return false;
+//     } else{
+//         return true;
+//     }
+// }
+
+// function _if(bool, func1, func2) {
+//     if(bool){
+//         return func1();
+//     }
+//     else{
+//         return func2();
+//     }
+// }
+
+// function switcheroo(x){
+//     let str = '';
+//     for(let i = 0; i < x.length; i++){
+//         if(x[i] == 'a'){
+//             str += 'b';
+//         } else if(x[i] == 'b'){
+//             str += 'a'
+//         } else {
+//             str += x[i];
+//         }
+//     }
+//     return str;
+// }
+
