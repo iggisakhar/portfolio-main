@@ -5205,3 +5205,76 @@
 //     return str;
 // }
 
+// function remove(s,n){
+//     for(let i = 1; i <= n; i++){
+//         s = s.replace('!', '');
+//     }
+//     return s;
+// }
+
+// var encryptThis = function(text) {
+//     let words = text.split(' ');
+//     let res = [];
+//     for(let i of words){
+//         let newStr = '';
+//         let temp = '';
+//         for(let j = 0; j < i.length; j++){
+//             if(j === 0){
+//                 newStr += i.charCodeAt(0)
+//             }else if(j === 1){
+//                 temp += i[j];
+//                 newStr += i.slice(-1)
+//             }else if(j == i.length -1){
+//                 newStr += temp;
+//             }else {
+//                 newStr += i[j]
+//             }
+//         }
+//         res.push(newStr);
+//     }
+//     return res.join(' ');
+// }
+
+// function loop_size(node){
+//     if(!node) return 0;
+//     let a = node;
+//     let b = a.next;
+//     while(a !== b && a !== b.next){
+//         a = a.next;
+//         b = b.next.next;
+//     }
+//     a = b.next;
+//     b = a.next;
+//     let res = 1;
+//     while(a !== b){
+//         res++
+//         b = b.next;
+//     }
+//     return res;
+// }
+
+// function encode(string) {
+//     let res = (el) => {
+//         switch(el){
+//             case 'a': return 1;
+//             case 'e': return 2;
+//             case 'i': return 3;
+//             case 'o': return 4;
+//             case 'u': return 5;
+//         }
+//     }
+//     return string.replace(/a|e|i|o|u/g, res);
+// }
+//
+// function decode(string) {
+//     let res = (el) => {
+//         switch(el){
+//             case '1': return 'a';
+//             case '2': return 'e';
+//             case '3': return 'i';
+//             case '4': return 'o';
+//             case '5': return 'u';
+//         }
+//     }
+//     return string.replace(/[1-5]/g, res);
+// }
