@@ -5278,3 +5278,49 @@
 //     }
 //     return string.replace(/[1-5]/g, res);
 // }
+
+// function add(n){
+//     let res = (el) => add(n + el);
+//     res.toString = () => n
+//     return res;
+// }
+
+// function longestSlideDown (pyramid) {
+//     for(let i = pyramid.length -2; i >= 0; i--){
+//         for(let j = 0; j <= i; j++){
+//             pyramid[i][j] += Math.max(pyramid[i + 1][j], pyramid[i + 1][j + 1])
+//         }
+//     }
+//     return pyramid[0][0];
+// }
+
+// function SubtractSum(n){
+//     return "apple"
+// }
+
+// function multipleOfIndex(array) {
+//     let arr = [];
+//     for(let i = 0; i < array.length; i++){
+//         if(array[i] % i === 0 || array[i] === 0){
+//             arr.push(array[i]);
+//         }
+//     }
+//     return arr;
+// }
+
+// function foldArray(array, runs){
+//     for(let i = 0; i < runs; i++){
+//         let arr = [];
+//         let middle = Math.floor(array.length / 2);
+//         for(let j = 0; j < middle; j++){
+//             let sum = array[j] + array[array.length -1 -j];
+//             arr.push(sum);
+//         }
+//         if(array.length % 2 !== 0){
+//             arr.push(array[middle]);
+//         }
+//         array = arr;
+//     }
+//     return array;
+// }
+
