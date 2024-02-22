@@ -5324,3 +5324,41 @@
 //     return array;
 // }
 
+// function meanMaxQM(dice, n) {
+//     return 0.5 * (dice - 1) * (n - 1) / (n + 1);
+// }
+
+// function sumDigPow(a, b) {
+//     let arr = [];
+//     for(let i = a; i <= b; i++){
+//         let sum = 0;
+//         for(let j = 0; j <= String(i).length; j++){
+//             sum += Math.pow(+String(i)[j], j + 1)
+//             if(sum == i){
+//                 arr.push(i);
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+// function isSortedAndHow(array) {
+//     let ascending = true;
+//     let descending = true;
+//     for(let i = 0; i < array.length -1; i++){
+//         if(array[i] < array[i + 1]){
+//             descending = false;
+//         }
+//         if(array[i] > array[i + 1]){
+//             ascending = false;
+//         }
+//     }
+//     if(ascending){
+//         return 'yes, ascending';
+//     }else if(descending){
+//         return 'yes, descending'
+//     } else{
+//         return 'no'
+//     }
+// }
+
