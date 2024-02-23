@@ -5362,3 +5362,124 @@
 //     }
 // }
 
+// function sumOfDivided(lst) {
+//     let arr = [];
+//     let maxNum = Math.max.apply(0, lst.map(Math.abs));
+//     let cantDivide = a => b => a % b !== 0;
+//     for(let i = 2, primes = []; i <= maxNum; i++){
+//         if(primes.every(cantDivide(i))) {
+//             primes.push(i);
+//             let sum = lst.reduce((sum, n) => cantDivide(n)(i) ? sum : sum + n, null)
+//             if(sum !== null){
+//                 arr.push([i, sum])
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+// function getMiddle(s){
+//     if(s.length % 2){
+//         return s[(s.length - 1) / 2]
+//     }else {
+//         return s[s.length / 2 - 1] + s[s.length / 2]
+//     }
+// }
+
+// function isRubyComing(list) {
+//     return list.some(el => el.language === 'Ruby');
+// }
+
+// function mergeArrays(arr1, arr2) {
+//     let arr = arr1.concat(arr2).sort((a, b) => a - b);
+//     let newArr = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] !== arr[i + 1]){
+//             newArr.push(arr[i])
+//         }
+//     }
+//     return newArr;
+// }
+
+// function progress(puzzle) {
+//
+//     const getSq = (x, y) => {
+//         const [xs, ys] = [x - x % 3, y - y % 3]
+//         return puzzle.slice(xs, xs + 3).reduce((c, v) => c.concat(v.slice(ys, ys + 3)), [])
+//     }
+//
+//     for (let x = 0; x < 9; x++) {
+//         for (let y = 0; y < 9; y++) {
+//             if(puzzle[x][y] == 0) {
+//                 const numbers = new Set(puzzle[x].concat(puzzle.map(x => x[y]), getSq(x, y)).filter(Boolean))
+//                 if (numbers.size === 8) return [x, y, [1, 2, 3, 4, 5, 6, 7, 8, 9].findIndex(n => !numbers.has(n)) + 1]
+//             }
+//         }
+//     }
+//     return
+// }
+
+// function validateUsr(username) {
+//     const res = /^[0-9a-z_]{4,16}$/.test(username)
+//     return res;
+// }
+
+// function whoIsPaying(name){
+//     return (name.length > 2) ? ([name, name.substr(0, 2)]) : ([name]);
+// }
+
+// function isAllPossibilities(x){
+//     if(x.length === 0){
+//         return false;
+//     }
+//     for(let i = 0; i < x.length; i++){
+//         if(!x.includes(i)){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function sortByArea(array) {
+//     let arr = [].concat(array);
+//     let area = x => Array.isArray(x) ? x[0] * x[1] : Math.PI * Math.pow(x, 2);
+//     return arr.sort((a, b) => area(a) - area(b))
+// }
+
+// function pillars(numPill, dist, width) {
+//     return numPill > 1 ? (numPill - 1) * dist * 100 + (numPill - 2) * width : 0
+// }
+
+// const solve = (x, y) => x / y
+
+// function getAverage(marks){
+//     let res = 0;
+//     for(let i = 0; i < marks.length; i++){
+//         res += marks[i];
+//     }
+//     return Math.floor(res / marks.length)
+// }
+
+// function calculateTip(amount, rating) {
+//     switch(rating.toLowerCase()){
+//         case 'terrible': return 0;
+//         case 'poor': return Math.ceil(amount * 0.05);
+//         case 'good': return Math.ceil(amount * 0.1);
+//         case 'great': return Math.ceil(amount * 0.15);
+//         case 'excellent': return Math.ceil(amount * 0.20);
+//         default: return 'Rating not recognised'
+//     }
+// }
+
+// function isVow(a){
+//     let arr = ['a', 'e', 'i', 'o', 'u'];
+//     for(let i = 0; i < a.length; i++){
+//         for(let j = 0; j < arr.length; j++){
+//             if(a[i] === arr[j].charCodeAt()){
+//                 a[i] = arr[j]
+//             }
+//         }
+//     }
+//     return a;
+// }
+
