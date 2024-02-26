@@ -5483,3 +5483,59 @@
 //     return a;
 // }
 
+// function alphabetWar(fight){
+//     let left = 0;
+//     let right = 0;
+//     let leftSide = {
+//         'w': 4,
+//         'p': 3,
+//         'b': 2,
+//         's': 1
+//     };
+//     let rightSide = {
+//         'm': 4,
+//         'q': 3,
+//         'd': 2,
+//         'z': 1
+//     }
+//     for(let i = 0; i < fight.length; i++){
+//         if(fight[i] in leftSide){
+//             left += leftSide[fight[i]];
+//         }
+//         if(fight[i] in rightSide){
+//             right += rightSide[fight[i]];
+//         }
+//     }
+//     if(left > right){
+//         return 'Left side wins!';
+//     }
+//     if(left < right){
+//         return 'Right side wins!';
+//     }
+//     return "Let's fight again!"
+// }
+
+// function mirrorImage(arr){
+//     for(let i =0; i < arr.length -1; i++){
+//         if(`${arr[i]}` === [...`${arr[i + 1]}`].reverse().join('')){
+//             return [arr[i], arr[i + 1]]
+//         }
+//     }
+//     return [-1, -1];
+// }
+
+// function processData(data){
+//     let res = 1;
+//     for(let i = 0; i < data.length; i++){
+//         res *= data[i][0] - data[i][1];
+//     }
+//     return res;
+// }
+
+// function cubeChecker(volume, side){
+//     if(side ** 3 === volume && volume > 0 && side > 0){
+//         return true;
+//     }
+//     return false;
+// };
+
