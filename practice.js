@@ -5539,3 +5539,71 @@
 //     return false;
 // };
 
+// function toIndustrial(time){
+//     if(typeof time === 'number'){
+//         let indHour = (time * 60 / 3600).toFixed(2);
+//         return Number(indHour);
+//     }
+//     if(typeof time === 'string'){
+//         let normHour = time.split(':');
+//         let indHour = ((Number(normHour[0]) * 60 + Number(normHour[1])) * 60 / 3600).toFixed(2)
+//         return Number(indHour)
+//     }
+// }
+//
+// function toNormal(time){
+//     let totalMin = time * 3600 / 60;
+//     let min = (totalMin.toFixed() % 60) < 10 ? `0${totalMin.toFixed() % 60}` : (totalMin.toFixed() % 60);
+//     let hours = Math.floor((totalMin.toFixed()) / 60);
+//     return `${hours}:${min}`;
+// }
+
+// function removeUrlAnchor(url){
+//     if(url.includes('#')){
+//         return url.slice(0, url.indexOf('#'))
+//     } else{
+//         return url;
+//     }
+// }
+
+// function remainder(n, m){
+//     if(n > m){
+//         return n % m;
+//     }else{
+//         return m % n;
+//     }
+// }
+
+// var websites = [];
+// let text = 'codewars';
+// for(let i = 0; i < 1000; i++){
+//     websites.push(text);
+// }
+
+// function gps(s, x) {
+//     if(x.length <= 1){
+//         return 0;
+//     }
+//     let arr = [];
+//     for(let i = 0; i < x.length - 1; i++){
+//         arr.push((x[i + 1] - x[i]) * 3600 / s)
+//     }
+//     return Math.max(...arr);
+// }
+
+// function defineSuit(card) {
+//     if(card.includes('♣')){
+//         return 'clubs'
+//     }
+//     if(card.includes('♦')){
+//         return 'diamonds'
+//     }
+//     if(card.includes('♥')){
+//         return 'hearts'
+//     }
+//     if(card.includes('♠')){
+//         return 'spades'
+//     }
+// }
+
+
