@@ -5606,4 +5606,102 @@
 //     }
 // }
 
+// function datingRange(age){
+//     let min = 0;
+//     let max = 0;
+//     if(age <= 14){
+//         min = Math.floor(age - 0.10 * age)
+//         max = Math.floor(age + 0.10 * age)
+//     }else {
+//         min = Math.floor(age/2 + 7)
+//         max = Math.floor((age - 7) * 2 )
+//     }
+//     return `${min}-${max}`
+// }
+
+// reverse=a=>a.map(a.pop,[...a])
+
+// function sameCase(a, b){
+//     if(a.toUpperCase() === a.toLowerCase() || b.toUpperCase() === b.toLowerCase()){
+//         return -1;
+//     } else if(a === a.toLowerCase() && b === b.toLowerCase() || a === a.toUpperCase() && b === b.toUpperCase()){
+//         return 1;
+//     }else{
+//         return 0;
+//     }
+// }
+
+// function isDigit(s) {
+//     return parseFloat(s) === Number(s) ? true : false;
+// }
+
+// function remove(string){
+//     return string.replace(/!/g, '') + '!';
+// }
+
+// function lovefunc(flower1, flower2){
+//     if(flower1 % 2 === 0 && flower2 % 2 !== 0 || flower1 % 2 !== 0 && flower2 % 2 === 0){
+//         return true;
+//     }
+//     return false;
+// }
+
+// function vertMirror(strng) {
+//     return strng.map(el => [...el].reverse().join(''));
+// }
+// function horMirror(strng) {
+//     return strng.reverse();
+// }
+// function oper(fct, s) {
+//     return fct(s.split('\n')).join('\n');
+// }
+
+// function distinct(a) {
+//     return a.filter((item,index)=>a.indexOf(item)===index)
+// }
+
+// function bump(x){
+//     let sum = 0;
+//     for(let i = 0; i < x.length; i++){
+//         if(x[i] === 'n'){
+//             sum ++
+//         }
+//     }
+//     if(sum > 15){
+//         return 'Car Dead'
+//     } else{
+//         return 'Woohoo!'
+//     }
+// }
+
+// function overTheRoad(address, n){
+//     return (n * 2 + 1) - address;
+// }
+
+// function pyramid(n) {
+//     let arr = [];
+//     for(let i = 1; i <= n; i++){
+//         arr.push(new Array(i).fill(1));
+//     }
+//     return arr;
+// }
+
+// class Ship {
+//     constructor(draft, crew) {
+//         this.draft = draft
+//         this.crew = crew
+//     }
+//
+//     isWorthIt(){
+//         return this.draft - 1.5 * this.crew > 20
+//     }
+//
+// }
+
+// function factorial(n){
+//     if(n < 0 || n > 12){
+//         throw new RangeError('Argument must be beetween 0 and 12')
+//     }
+//     return n === 0 ? 1 : factorial(n - 1) * n;
+// }
 
