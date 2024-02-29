@@ -5705,3 +5705,107 @@
 //     return n === 0 ? 1 : factorial(n - 1) * n;
 // }
 
+// function reverseNumber(n) {
+//     let x = Math.abs(n).toString().split('').reverse().join('');
+//     return n < 0 ? -x: +x
+// }
+
+// function odds(values){
+//     return values.filter(a => a % 2 !== 0);
+// }
+
+// function declareWinner(fighter1, fighter2, firstAttacker) {
+//     let f1 = Math.ceil(fighter1.health / fighter2.damagePerAttack);
+//     let f2 =  Math.ceil(fighter2.health / fighter1.damagePerAttack);
+//     return f1 < f2 ? fighter2.name : f2 < f1 ? fighter1.name : firstAttacker
+// }
+
+// function totalLicks(env) {
+//     let lick = 252;
+//     let count = 0;
+//     let name = '';
+//     for(let i in env){
+//         lick += env[i];
+//         if(env[i] > count){
+//             count = env[i];
+//             name = i;
+//         }
+//     }
+//     if(name == ''){
+//         return `It took ${lick} licks to get to the tootsie roll center of a tootsie pop.`
+//     } else{
+//         return `It took ${lick} licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was ${name}.`
+//     }
+// }
+
+// function getSocks(name, socks) {
+//     socks.sort();
+//     if(name == 'Punky'){
+//         for(var i = 1; i < socks.length; i++){
+//             if(socks[i] !== socks[i - 1]){
+//                 return [socks[i - 1], socks[i]]
+//             }
+//         }
+//     }else{
+//         for(var i = 1; i < socks.length; i++){
+//             if(socks[i] == socks[i - 1]){
+//                 return [socks[i - 1], socks[i]]
+//             }
+//         }
+//     }
+//     return [];
+// }
+
+// function partlist(arr) {
+//     let res = [];
+//     for(let i = 1; i < arr.length; i++){
+//         let res1 = [];
+//         res1.push(arr.slice(0, i).join(' '));
+//         res1.push(arr.slice(i).join(' '));
+//         res.push(res1);
+//     }
+//     return res;
+// }
+
+// function evil(n) {
+//     let binary = n.toString(2);
+//     let sum = 0;
+//     for(let i = 0; i < binary.length; i++){
+//         sum += Number(binary[i])
+//     }
+//     return sum % 2 === 0 ? "It's Evil!" : "It's Odious!";
+// }
+
+// function averages(numbers) {
+//     let arr = [];
+//     if(!numbers){
+//         return arr;
+//     }
+//     for(let i = 1; i < numbers.length; i++){
+//         arr.push((numbers[i - 1] + numbers[i]) / 2)
+//     }
+//     return arr;
+// }
+
+// function eqSumPowdig(hMax, exp) {
+//     let res = [];
+//     if(hMax < 153){
+//         return res;
+//     }
+//     for(let i = 153; i <= hMax; i++){
+//         let hMaxi = i.toString();
+//         let sum = 0;
+//         for(let j = 0; j < hMaxi.length; j++){
+//             sum += Math.pow(parseInt(hMaxi[j]), exp)
+//         }
+//         if(sum == i){
+//             res.push(sum);
+//         }
+//     }
+//     return res;
+// }
+
+// function isLockNessMonster(s) {
+//     return s.includes("tree fiddy") || s.includes('3.50')
+// }
+
