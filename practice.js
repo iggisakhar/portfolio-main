@@ -5809,3 +5809,50 @@
 //     return s.includes("tree fiddy") || s.includes('3.50')
 // }
 
+// function wallpaper(l, w, h) {
+//     if(l === 0 || w === 0) return 'zero'
+//     let roomArea = 2 * (l + w)* h
+//     let roolArea = 0.52 * 10
+//     let rollsRequired = Math.ceil(roomArea / roolArea * 1.15)
+//     return numbers[rollsRequired]
+// }
+
+// function sortMyString(S) {
+//     let odd = '';
+//     let even = '';
+//     for(let i = 0; i < S.length; i++){
+//         if(i % 2 === 0){
+//             even += S[i];
+//         } else{
+//             odd += S[i];
+//         }
+//     }
+//     return even + ' ' + odd;
+// }
+
+// function arrayManip(array){
+//     for(let i = 0; i < array.length; i++){
+//         let number = array[i];
+//         let replacement = -1;
+//         for(let j = i; j < array.length; j++){
+//             let newReplacement = array[j];
+//             if(newReplacement > number && (replacement === -1 || replacement > newReplacement)){
+//                 replacement = newReplacement;
+//             }
+//         }
+//         array[i] = replacement;
+//     }
+//     return array;
+// }
+
+// function solve(arr) {
+//     let arr1 = [];
+//     let arr2 = arr.reverse();
+//     for(let i = 0; i < arr2.length; i++){
+//         if(arr1.indexOf(arr2[i]) === -1){
+//             arr1.push(arr2[i]);
+//         }
+//     }
+//     return arr1.reverse();
+// }
+
