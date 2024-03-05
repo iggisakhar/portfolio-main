@@ -5856,3 +5856,75 @@
 //     return arr1.reverse();
 // }
 
+// function splitAndMerge(string, separator) {
+//     let words = string.split(' ');
+//     let arr = [];
+//     let res = [];
+//     for(let i = 0; i < words.length; i++){
+//         arr.push(words[i].split('').join(separator))
+//     }
+//     res = arr.join(' ');
+//     return res;
+// }
+
+// function makeClass(...properties) {
+//     return function (...params){
+//         for(let i = 0; i < properties.length; i++){
+//             this[properties[i]] = params[i];
+//         }
+//     }
+// }
+
+// function oddOne(arr) {
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 !== 0){
+//             return i
+//         }
+//     }
+//     return -1
+//
+// }
+
+// function friends(n){
+//     if(n <= 2){
+//         return 0;
+//     } else{
+//         let counter = 0;
+//         while(n > 1){
+//             n = n / 2
+//             counter++
+//         }
+//         return counter - 1;
+//     }
+// }
+
+// var hotpo = function(n){
+//     if(n == 0){
+//         return 0;
+//     } for(let i = 0; i <= 100; i++){
+//         if(n == 1){
+//             return i;
+//         } else if(n % 2 == 0){
+//             n /= 2;
+//         } else{
+//             n = 3 * n + 1;
+//         }
+//     }
+//     return - 1;
+// }
+
+// function getRectangleRatio(n) {
+//     return (n + (n ** 2 + 4) ** .5) / 2;
+// }
+
+// function mystery() {
+//     let results = {
+//         sanity: 'Hello'
+//     };
+//     return results;
+// }
+
+// function stringClean(s){
+//     return s.replace(/[0-9]/g, '')
+// }
+
