@@ -5928,3 +5928,75 @@
 //     return s.replace(/[0-9]/g, '')
 // }
 
+// function howManyLightsabersDoYouOwn(name) {
+//     return name === 'Zach' ? 18 : 0;
+// }
+
+// var quote = function(fighter) {
+//     return fighter.toLowerCase() === 'conor mcgregor' ? "I'd like to take this chance to apologize.. To absolutely NOBODY!":"I am not impressed by your performance."
+// };
+// function generateShape(integer){
+//     return ("+".repeat(integer) + "\n").repeat(integer).trim()
+// }
+
+// const orderedCount = function (text) {
+//     return Array.from(new Set(text)).map(c=>[c, text.match(new RegExp(c, 'g')).length])
+// }
+
+// function solve(arr){
+//     let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+//     let final = []
+//     for(let i = 0; i<arr.length; i++){
+//         let count = 0;
+//         for(let j =0;j<arr[i].length; j++){
+//             if(arr[i][j].toLowerCase() == alphabet[j]){
+//                 count++
+//             }
+//         }
+//         final.push(count)
+//
+//     }
+//     return final
+// };
+
+// function cheapestQuote(newspapers) {
+//     let result = 0;
+//     let quantity = [40,20, 10, 5, 1]
+//     let price = [3.85, 1.93, 0.97,0.49, 0.10]
+//     while(newspapers>0){
+//         for(let i =0;i<quantity.length; i++){
+//             if(newspapers >= quantity[i]){
+//                 result += price[i]
+//                 newspapers -= quantity[i]
+//                 break;
+//             }
+//         }
+//     }
+//     return parseFloat(result.toFixed(2))
+// }
+//
+
+// function nearestSq(n){
+//     return Math.pow(Math.round(Math.sqrt(n)),2)
+// }
+
+
+// class God{
+//     /**
+//      * @returns Human[]
+//      */
+//     static create(){
+//         return [new Man, new Woman]
+//     }
+// }
+//
+// class Human{}
+//
+// class Man extends Human{}
+//
+// class Woman extends Human{}
+
+// function closeCompare(a, b, margin){
+//     return Math.abs(a-b) <=margin? 0: Math.sign(a-b)
+// }
+
