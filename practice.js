@@ -6000,3 +6000,68 @@
 //     return Math.abs(a-b) <=margin? 0: Math.sign(a-b)
 // }
 
+// function sumCubes(n){
+//     if(n == 1){
+//         return n**3
+//     }else{
+//         return n**3 + sumCubes(n-1)
+//     }
+// }
+
+// function maxRot(n){
+//     let max = n;
+//     let arr = String(n).split('');
+//     for(let i = 0; i < arr.length; i++){
+//         arr.push(arr.splice(i, 1));
+//         let num = Number(arr.join(''))
+//         if(num > max){
+//             max = num;
+//         }
+//     }
+//     return max;
+// }
+
+// function getFirstPython(list) {
+//     for(let i = 0; i < list.length; i++){
+//         if(list[i].language === 'Python'){
+//             return list[i].firstName + ', ' + list[i].country;
+//         }
+//     }
+//     return 'There will be no Python developers'
+// }
+
+// function nthSmallest(arr, pos){
+//     for(let i = 0; i < arr.length; i++){
+//         for(let j = i + 1; j < arr.length; j++){
+//             let current = arr[i];
+//             if(arr[j] < arr[i]){
+//                 arr[i] = arr[j];
+//                 arr[j] = current;
+//             }
+//         }
+//     }
+//     return arr[pos -1]
+// }
+
+// function getStatus(isBusy) {
+//     var msg = (isBusy ? "busy" : "available");
+//     return {
+//         status: msg
+//     }
+// }
+
+// function distancesFromAverage(arr){
+//     let average = arr.reduce((s, v) => s + v, 0) / arr.length;
+//     return arr.map(v => average - v).map(x => Math.round(x * 100) / 100)
+// }
+
+// function aliasGen(first, last){
+//     let firstStr = first[0].toUpperCase();
+//     let secStr = last[0].toUpperCase();
+//     if(firstName[firstStr] && surname[secStr]){
+//         return firstName[firstStr] + ' ' + surname[secStr];
+//     } else {
+//         return 'Your name must start with a letter from A - Z.'
+//     }
+// }
+
