@@ -6065,3 +6065,76 @@
 //     }
 // }
 
+// const str = 'Hello! JavaScript!';
+// let result = '';
+//
+// for (let i = 0; i < str.length; i++) {
+//     if (str[i] === '!') {
+//         result += '.';
+//     } else {
+//         result += str[i];
+//     }
+// }
+// console.log(result);
+
+// const str = '1 + 2 + 3 Hello. JavaScript...';
+// let result = '';
+//
+// const map = {
+//     '.': '!',
+//     1: 'one',
+//     2: 'two',
+//     3: 'three',
+//     ' ': '_',
+//     '+': '*'
+// }
+//
+// for (let i = 0; i < str.length; i++) {
+//     if (map[str[i]]) {
+//         result += map[str[i]];
+//     } else {
+//         result += str[i];
+//     }
+// }
+// console.log(result);
+
+// const str = '5 + 4 - 7 = 2; 2 * 3 / 6 = 1';
+//
+// let result = '';
+//
+// const map = {
+//     0: 'zero',
+//     1: 'one',
+//     2: 'two',
+//     3: 'three',
+//     4: 'four',
+//     5: 'five',
+//     6: 'six',
+//     7:'seven',
+//     8: 'eight',
+//     9: 'nine',
+//     '-': 'minus',
+//     '+': 'plus',
+//     '*': 'multiply',
+//     '/': 'divide',
+//     '=': 'equals',
+//     ';': ' and',
+// }
+//
+// for (let i = 0; i < str.length; i++) {
+//     if (map[str[i]]) {
+//         result += map[str[i]];
+//     } else {
+//         result += str[i];
+//     }
+// }
+// console.log(result);
+
+// const str = 'Hello, world!';
+// let result = str.replace('world', 'JavaScript');
+// console.log(result);
+
+// const str = 'Hello! World!';
+// let result = str.replace('!', ';');
+// console.log(result);
+
