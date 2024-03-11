@@ -6138,3 +6138,76 @@
 // let result = str.replace('!', ';');
 // console.log(result);
 
+// function tapCodeTranslation(text) {
+//     let arr = [
+//         ['A', 'B', 'C\K', 'D', 'E'],
+//         ['F', 'G', 'H', 'I', 'J'],
+//         ['L', 'M', 'N', 'O', 'P'],
+//         ['Q', 'R', 'S', 'T', 'U'],
+//         ['V', 'W', 'X', 'Y', 'Z']
+//     ];
+//     let res = '';
+//     for(let i = 0; i < text.length; i++){
+//         let test = text[i].toUpperCase();
+//         if(test == 'K' || test == 'C'){
+//             test = 'C\K'
+//         }
+//         for(let j = 0; j < arr.length; j++){
+//             for(let c = 0; c < arr[j].length; c++){
+//                 if(arr[j][c] == test){
+//                     let dot = '.'.repeat(j + 1);
+//                     let pause = ' ';
+//                     let cDots = '.'.repeat(c + 1);
+//                     res += `${dot}${pause}${cDots} `
+//                 }
+//             }
+//         }
+//     }
+//     return res.trim();
+// }
+
+// function Hero (name) {
+//     this.name = name || 'Hero';
+//     this.position = '00';
+//     this.health = 100;
+//     this.damage = 5;
+//     this.experience = 0;
+// }
+
+// function multiplyAll(arr){
+//     return function(n){
+//         let res = [];
+//         if(arr.length == 0){
+//             return res;
+//         }
+//         for(let i = 0; i < arr.length; i++){
+//             res.push(arr[i] * n)
+//         }
+//         return res;
+//     }
+// }
+
+// const flip=(d, a)=>{
+//     if(d === 'R'){
+//         return a.sort((a, b) => a - b);
+//     }
+//     if(d === 'L'){
+//         return a.sort((a, b) => b - a);
+//     }
+// }
+
+// function solve(a){
+//     let even = 0
+//     let odd = 0;
+//     for(let i = 0; i < a.length; i++){
+//         if(typeof(a[i]) === 'number'){
+//             if(a[i] % 2 === 0){
+//                 even += 1;
+//             } if(a[i] % 2 !== 0) {
+//                 odd += 1;
+//             }
+//         }
+//     }
+//     return even - odd;
+// };
+
