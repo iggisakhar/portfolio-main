@@ -6211,3 +6211,53 @@
 //     return even - odd;
 // };
 
+// function evaporator(content, evap_per_day, threshold){
+//     let day = 0;
+//     let total = 100;
+//     while(total > threshold){
+//         day += 1;
+//         total -= total * evap_per_day / 100;
+//     }
+//     return day;
+// }
+
+// function capitalize(s,arr){
+//     let newS = s.split('');
+//     for(let i = 0; i < arr.length; i++){
+//         if(newS[arr[i]]){
+//             newS[arr[i]] = newS[arr[i]].toUpperCase();
+//         }
+//     }
+//     newS = newS.join('');
+//     return newS;
+// };
+
+// function sakuraFall(v) {
+//     let distance = 5 * 80;
+//     let time = 0;
+//     if(v > 0){
+//         time = distance / v;
+//     }
+//     return time;
+// }
+
+// function mygcd(x,y){
+//     while(x !== y){
+//         if(x > y){
+//             x = x - y;
+//         }else{
+//             y = y - x;
+//         }
+//     }
+//     return x;
+// }
+
+// function seven(m) {
+//     let counter = 0;
+//     while(m > 99){
+//         m = Math.floor(m / 10) - (2 * (m % 10));
+//         counter++
+//     }
+//     return [m, counter]
+// }
+
