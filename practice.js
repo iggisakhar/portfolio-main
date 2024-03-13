@@ -6261,3 +6261,56 @@
 //     return [m, counter]
 // }
 
+// function foldTo(distance) {
+//     let paper = 0.0001;
+//     let res = 0;
+//     while(distance > paper){
+//         paper *= 2;
+//         res++
+//     }
+//     return distance >= 0 ? res : null
+// }
+
+// function maxProduct(numbers, size){
+//     return numbers.sort((a, b) => b - a).slice(0, size).reduce((el, index) => el * index);
+// }
+
+// String.prototype.vowel = function() {
+//     return /^[aeiou]$/i.test(this);
+// };
+
+// const neutralise = (s1, s2) => {
+//     let res = '';
+//     for(let i = 0; i < s1.length; i++){
+//         if(s1[i] == s2[i]){
+//             res += s1[i];
+//         }else{
+//             res += '0';
+//         }
+//     }
+//     return res;
+// }
+
+// function hasUniqueChars(str){
+//     for(let i = 0; i < str.length; i++){
+//         if(str.lastIndexOf(str.charAt(i)) !== i){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function getASCII(c){
+//     return c.charCodeAt(0);
+// }
+
+// async function promiseHelloWorld() {
+//     return 'Hello World!';
+// }
+
+// function add(n) {
+//     return function (m){
+//         return n + m;
+//     }
+// }
+
