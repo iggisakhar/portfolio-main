@@ -6314,3 +6314,34 @@
 //     }
 // }
 
+// function strong(n){
+//     if (n === 1) return 'STRONG!!!!'
+//     let arr = n.toString().split('').map(Number).reduce((a, b) => {
+//         let factorial = 1;
+//         for (let i = 1; i <= b; i++){
+//             factorial *= i;
+//         }
+//         return a + factorial;
+//     }, 0)
+//     return arr == n ? 'STRONG!!!!' : "Not Strong !!";
+// }
+
+// function evalObject(value){
+//     var result = 0;
+//     switch(value.operation){
+//         case'+': result = value.a + value.b
+//             break;
+//         case'-': result = value.a - value.b
+//             break;
+//         case'/': result = value.a / value.b
+//             break;
+//         case'*': result = value.a * value.b
+//             break;
+//         case'%': result = value.a % value.b
+//             break;
+//         case'^': result = Math.pow(value.a, value.b)
+//             break;
+//     }
+//     return result;
+// }
+
