@@ -6345,3 +6345,57 @@
 //     return result;
 // }
 
+// function menFromBoys(arr){
+//     let even = [];
+//     let odd = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0 && arr[i] !== arr[i + 1]){
+//             even.push(arr[i]);
+//         }else{
+//             odd.push(arr[i]);
+//         }
+//     }
+//     return [...new Set([...even.sort((a, b) => a - b), ...odd.sort((a, b) => b - a)])]
+// }
+
+// function sortGiftCode(code){
+//     return code.split('').sort().join('')
+// }
+
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     get info(){
+//         return `${this.name}s age is ${this.age}`
+//     }
+// }
+
+// const cannonsReady = (gunners) => {
+//     for(let i in gunners){
+//         if(gunners[i] == 'nay'){
+//             return 'Shiver me timbers!'
+//         }
+//     }
+//     return 'Fire!'
+// }
+
+// let obj = {
+//     hello: 'english',
+//     ciao: 'italian',
+//     salut: 'french',
+//     hallo: 'german',
+//     hola: 'spanish',
+//     ahoj: 'czech republic',
+//     czesc: 'polish'
+// }
+// function validateHello(greetings) {
+//     for(let i in obj){
+//         if(greetings.toLowerCase().includes(i)){
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
