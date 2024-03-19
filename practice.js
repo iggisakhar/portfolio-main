@@ -6399,3 +6399,44 @@
 //     return false;
 // }
 
+// function explode(s) {
+//     let str = '';
+//     for(let i = 0; i < s.length; i++){
+//         for(let j = s[i]; j > 0; j--){
+//             str += s[i];
+//         }
+//     }
+//     return str;
+// }
+
+// function vaporcode(string) {
+//     return string.toUpperCase().split(' ').join('').split('').join('  ')
+// }
+
+// function adjacentElementsProduct(array) {
+//     let arr = [];
+//     for(let i = 0; i < array.length -1; i++){
+//         arr.push(array[i] * array[i + 1])
+//     }
+//     return Math.max(...arr);
+// }
+
+// function maxTriSum(numbers){
+//     let arr1 = [];
+//     let arr2 = [];
+//     let a = Math.max(...numbers);
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] !== a){
+//             arr1.push(numbers[i]);
+//         }
+//     }
+//     let b = Math.max(...arr1);
+//     for(let i = 0; i < arr1.length; i++){
+//         if(arr1[i] !== b){
+//             arr2.push(arr1[i]);
+//         }
+//     }
+//     let c = Math.max(...arr2);
+//     return a + b + c;
+// }
+
