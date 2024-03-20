@@ -6440,3 +6440,161 @@
 //     return a + b + c;
 // }
 
+// const str = 'seven plus zero equal 7';
+// const arr = str.split(' ');
+// const first = arr[0];
+// const last = arr[arr.length - 1];
+// arr[0] = arr[arr.length - 1];
+// arr[arr.length - 1] = first;
+// const res = arr.join(' ');
+// console.log(res);
+
+// const str = 'Alex met Mary';
+// const arr = str.split(' ');
+// const first = arr[0];
+// const last = arr[arr.length - 1];
+// arr[0] = last;
+// arr[arr.length - 1] = first;
+// const res = arr.join(' ');
+// console.log(res);
+
+// const str = 'first could be last';
+// let start = '';
+// for(let i = 0; i < str.length; i++) {
+//     if(str[i] === ' ') break;
+//     else start += str[i];
+// }
+// console.log(start);
+
+// const str = 'first could be last';
+// let start = '';
+// let end = '';
+// let startSpaceIndex, endSpaceIndex;
+// let res = '';
+// for(let i = 0; i < str.length; i++) {
+//     if (str[i] === ' ') {
+//         startSpaceIndex = i;
+//         break;
+//     } else start += str[i];
+// }
+// for(let i = str.length-1; i >= 0; i--) {
+//     if(str[i] === ' ') {
+//         endSpaceIndex = i;
+//         break;
+//     } else end = str[i]  + end;
+// }
+// res = end;
+// for(let i = startSpaceIndex; i <= endSpaceIndex; i++) {
+//     res += str[i];
+// }
+// res += start;
+// console.log(res);
+
+// const str = 'sunset precedes the sunrise';
+// let first = '';
+// let last = '';
+// let firstSpaceIndex, lastSpaceIndex;
+// let res = '';
+// for(let i = 0; i < str.length; i++) {
+//     if (str[i] === ' ') {
+//         firstSpaceIndex = i;
+//         break;
+//     } else first += str[i];
+// }
+// for(let i = str.length-1; i >= 0; i--) {
+//     if(str[i] === ' ') {
+//         lastSpaceIndex = i;
+//         break;
+//     } else last = str[i]  + last;
+// }
+// res = last;
+// for(let i = firstSpaceIndex; i <= lastSpaceIndex; i++) {
+//     res += str[i];
+// }
+// res += first;
+// console.log(res);
+
+// const str = 'hello js pasv coding com';
+// //olleh sj vsap gnidoc moc
+// let res = '';
+// let word = '';
+//
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word)
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     return str.toUpperCase()
+// }
+// console.log(res);
+
+// const str = 'hello js pasv coding com';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word)
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++) {
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// function reverseAWord(str){
+//     return str.split('').reverse().join('')
+// }
+
+// function reverseExceptLast(str){
+//     if(str.length == 0){
+//         return '';
+//     }
+//     return str.slice(0, -1).split('').reverse().join('') + str.slice(-1);
+// }
+
+// function twoWords(words){
+//     let newStr = '';
+//     let chunk = [];
+//     for (let i = 0; i < words.length; i++) {
+//         if (words[i] === ' ') {
+//             newStr += chunk + ' ';
+//             chunk = '';
+//         } else {
+//             chunk = words[i] + chunk;
+//         }
+//     }
+//     newStr += chunk;
+//     return newStr;
+// }
+
+// function reverseStrExceptLast(str) {
+//     if (str.length === 0) {
+//         return '';
+//     }
+//     let words = str.slice(0, -1).split(' ');
+//     for (let i = 0; i < words.length; i++) {
+//         words[i] = words[i].split('').reverse().join('')
+//     }
+//     return words.join(' ') + str.slice(-1);
+// }
