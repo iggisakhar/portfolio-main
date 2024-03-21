@@ -6598,3 +6598,180 @@
 //     }
 //     return words.join(' ') + str.slice(-1);
 // }
+
+// function reverseWithCases(str){
+//     let reversedStr = '';
+//     let length = str.length;
+//     for (let i = 0; i < length; i++) {
+//         if( str[i].toLowerCase() === str[i] ) {
+//             reversedStr += str[length-1-i].toLowerCase();
+//         } else {
+//             reversedStr += str[length-1-i].toUpperCase();
+//         }
+//     }
+//     return reversedStr;
+// }
+
+// function reverseAndPush(str){
+//     let newStr = str.split(' ');
+//     for(let i = 0; i < newStr.length; i++){
+//         newStr[i] = newStr[i].split('').reverse().join('');
+//     }
+//     return newStr
+// }
+
+// function reverseLocationOfWords(str){
+//     let newStr = str.split(' ');
+//     let newStr2 = str.split(' ');
+//     for(let i = 0; i < newStr.length; i++){
+//         newStr[i] = newStr2[newStr2.length -1 -i];
+//     }
+//     return newStr.join(' ');
+// }
+
+// function reverseOnlyLastWord(str){
+//     let newStr = str.split(' ');
+//     newStr[newStr.length -1] = newStr[newStr.length -1].split('').reverse().join('')
+//     return newStr.join(' ');
+// }
+
+// function decryptTheCode(str){
+//     let newStr = '';
+//     for(let i = str.length - 1; i >= 0; i--){
+//         if(str[i] >= 'a' && str[i] <= 'z' || str[i] >= 'A' && str[i] <= 'Z'){
+//             newStr += str[i];
+//         }
+//     }
+//     return newStr;
+// }
+
+// function reverseOnlyFirstWord(str){
+//     let newS = str.split(' ');
+//     newS[0] = newS[0].split('').reverse().join('');
+//     return newS.join(' ');
+// }
+
+// const str = '123 + 234 = 357';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word);
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// const str = 'bus star reward';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word);
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// const str = 'NadiA saw a doG';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word);
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// const str = 'LIVE stressed';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word);
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// const str = '12 pans 23 nuts';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word);
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
