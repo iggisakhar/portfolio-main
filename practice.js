@@ -6775,3 +6775,39 @@
 //     return res;
 // }
 // console.log(res);
+
+// const str = 'Hello 100 3 6 10 11 9 world';
+// const numbers = {
+//     0: 'zero',
+//     1: 'one',
+//     2: 'two',
+//     3: 'three',
+//     4: 'four',
+//     5: 'five',
+//     6: 'six',
+//     10: 'ten',
+//     11: 'eleven'
+// }
+//
+// let result = '';
+// let word = '';
+//
+// for(let i = 0; i < str.length; i ++){
+//     if(str[i] !== ' ') word += str[i];
+//
+//     if(str[i] === ' ' && word) {
+//         if(numbers[word]) result += numbers[word];
+//         else if(!Number.isNaN(+word)) result += 'unknown';
+//         else result += word;
+//         word = '';
+//     }
+//
+//     if(str[i] === ' ') result += ' ';
+//
+//     if(i === str.length - 1 && word) {
+//         if(numbers[word]) result += numbers[word];
+//         else if(!Number.isNaN(+word)) result += 'unknown';
+//         else result += word;
+//     }
+// }
+// console.log(result)
