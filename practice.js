@@ -6811,3 +6811,76 @@
 //     }
 // }
 // console.log(result)
+
+// function numFromOneToFive(str){
+//     let obj = {
+//         '1': 'one',
+//         '2': 'two',
+//         '3': 'three',
+//         '4': 'four',
+//         '5': 'five'
+//     }
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] >= '1' && str[i] <= '5'){
+//             res += obj[str[i]] + ' '
+//         }
+//     }
+//     return res.trim();
+// }
+
+// function countOfNumbers(str){
+//     let obj = {
+//         'zero': 0,
+//         'one': 0,
+//         'two': 0
+//     }
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] == '0'){
+//             obj.zero++
+//         }
+//         else if(str[i] == '1'){
+//             obj.one++
+//         }
+//         else if(str[i] == '2'){
+//             obj.two++
+//         }
+//     }
+//     return obj;
+// }
+
+// function numToWordWithArray(str){
+//     let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+//     let newStr = '';
+//     for (let i = 0; i < str.length; i++) {
+//         newStr += arr[+str[i]];
+//         if(i !== str.length - 1) {
+//             newStr += ', ';
+//         }
+//     }
+//     return newStr;
+// }
+
+// function numbersAndWords(str){
+//     let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+//     let newStr = '';
+//     let res = ''
+//     for(let i of str){
+//         if(/[0-9]/.test(i)){
+//             newStr += i;
+//             res += arr[+newStr];
+//             newStr = '';
+//         } else{
+//             if(newStr !== ''){
+//                 res += arr[+newStr];
+//                 newStr = '';
+//             }
+//             res += i;
+//         }
+//     }
+//     if(newStr !== ''){
+//         res += arr[+newStr];
+//     }
+//     return res;
+// }
+
