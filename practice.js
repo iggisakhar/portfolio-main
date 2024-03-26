@@ -6884,3 +6884,95 @@
 //     return res;
 // }
 
+// function phoneNumber(str){
+//     let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+//     let newStr = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] !== ' ' && str[i] !== '(' && str[i] !== ')' && str[i] !== '-'){
+//             if(i !== str.length - 1) {
+//                 newStr += arr[str[i]] + '-';
+//             } else {
+//                 newStr += arr[str[i]];
+//             }
+//         }
+//     }
+//     return newStr;
+// }
+
+// function numToWord(arr){
+//     let objFrom10to19 = { 10: 'ten', 11: 'eleven', 12: 'twelve', 13: 'thirteen', 14: 'fourteen', 15: 'fifteen', 16: 'sixteen', 17: 'seventeen', 18: 'eighteen', 19: 'nineteen' }
+//     let res = arr.map(num => objFrom10to19[num])
+//     return res;
+// }
+
+// function numToWord(arr){
+//     const objFrom0to9 = { 0: 'zero', 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine' }
+//     const objFrom10to90 = { 1: 'ten', 2: 'twenty', 3: 'thirty', 4: 'forty', 5: 'fifty', 6: 'sixty', 7: 'seventy', 8:'eighty', 9: 'ninety' }
+//     let newArr = [];
+//
+//     for(let i = 0; i < arr.length; i++){
+//         const str = arr[i].toString();
+//         let word = '';
+//
+//         if(str.length === 1) word = objFrom0to9[str];
+//         else {
+//             if(str[1] === '0') word = objFrom10to90[str[0]];
+//             else {
+//                 const part1 = objFrom10to90[str[0]];
+//                 const part2 = objFrom0to9[str[1]];
+//                 word = part1 + '-' + part2;
+//             }
+//         }
+//         newArr.push(word);
+//     }
+//     return newArr;
+// }
+
+// function numToWord(arr){
+//     const objFrom1to9 = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine'}
+//     const objFrom20to90 = {2: 'twenty', 3: 'thirty', 4: 'forty', 5: 'fifty', 6: 'sixty', 7: 'seventy', 8:'eighty', 9: 'ninety'}
+//
+//     return arr.map(num => {
+//         if(num < 20){
+//             return objFrom1to9[num]
+//         } else{
+//             let ten = Math.floor(num / 10);
+//             let ones = num % 10;
+//             if(ones == 0){
+//                 return objFrom20to90[ten]
+//             } else{
+//                 return objFrom20to90[ten] + '-' + objFrom1to9[ones]
+//             }
+//         }
+//     })
+//
+// }
+
+// function numToWord(str){
+//     const objFrom0to9 = {0: 'zero', 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine'}
+//     const objFrom11to19 = {11: 'eleven', 12: 'twelve', 13: 'thirteen', 14: 'fourteen', 15: 'fifteen', 16: 'sixteen', 17: 'seventeen', 18: 'eighteen', 19: 'nineteen'}
+//     const objFrom10to90 = {1: 'ten', 2: 'twenty', 3: 'thirty', 4: 'forty', 5: 'fifty', 6: 'sixty', 7: 'seventy', 8: 'eighty', 9: 'ninety'}
+//
+//     let newArr = [];
+//     const arrayOfNums = str.split(', ');
+//
+//     for(let i = 0; i < arrayOfNums.length; i++){
+//
+//         const num = arrayOfNums[i]
+//         let word = '';
+//
+//         if(num.length === 1) word = objFrom0to9[num];
+//
+//         else if(num[1] === '0') word = objFrom10to90[num[0]];
+//         else if(num[0] === '1') word = objFrom11to19[num];
+//
+//         else {
+//             const part1 = objFrom10to90[num[0]];
+//             const part2 = objFrom0to9[num[1]];
+//             word = part1 + '-' + part2;
+//         }
+//         newArr.push(word)
+//     }
+//     return newArr.join(', ')
+// }
+
