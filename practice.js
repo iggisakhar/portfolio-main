@@ -5096,3 +5096,10 @@
 // }
 // console.log(symbols);
 
+// function multBy5(value){
+//     if(Number.isNaN(value)){
+//         return 'Value is NaN'
+//     } else {
+//         return value * 5;
+//     }
+// }
