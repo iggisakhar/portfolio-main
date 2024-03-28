@@ -5096,3 +5096,19 @@
 // }
 // console.log(symbols);
 
+// function isValid(value){
+//     if(Number.isNaN(value)){
+//         return 'Value is not a number'
+//     } else {
+//         return 'Value is valid'
+//     }
+// }
+
+// function isArgNaN(value){
+//     if(isNaN(value)){
+//         return NaN;
+//     } else{
+//         return value;
+//     }
+// }
+
