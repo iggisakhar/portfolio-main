@@ -5103,3 +5103,25 @@
 //         return value * 5;
 //     }
 // }
+
+// function findStrangeValue() {
+//     return 0 / 0;
+// }
+
+// function changeNumber(num){
+//     if(num > 0){
+//         return num + 8;
+//     } else {
+//         return num
+//     }
+// }
+
+// function numberSign(num){
+//     if(num > 0){
+//         return "plus"
+//     } else if (num === 0){
+//         return null
+//     } else {
+//         return "minus"
+//     }
+// }
