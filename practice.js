@@ -5125,3 +5125,12 @@
 //         return "minus"
 //     }
 // }
+
+// function numToStr(num){
+//     return num.toString();
+// }
+
+// function numToBinary(num){
+//     return +num.toString(2);
+// }
+
