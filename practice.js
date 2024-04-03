@@ -5125,31 +5125,3 @@
 //         return "minus"
 //     }
 // }
-
-// function numToStr(num){
-//     return num.toString();
-// }
-
-// function numToBinary(num){
-//     return +num.toString(2);
-// }
-
-// function numToOctal(num){
-//     return +num.toString(8);
-// }
-
-// function convertNumber(num){
-//     let ten = +num.toString(10);
-//     let two = +num.toString(2);
-//     let eight = +num.toString(8);
-//     let sixtheen = num.toString(16);
-//     return [ten, two, eight, sixtheen];
-// }
-
-// function convertNumber(num, n){
-//     if(n < 2 || n > 36){
-//         return undefined;
-//     }
-//     return num.toString(n);
-// }
-
