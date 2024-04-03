@@ -5125,3 +5125,11 @@
 //         return "minus"
 //     }
 // }
+
+// function isNameStartsWithUpper(name){
+//     if(name[0] == name[0].toUpperCase()){
+//         return 'Welcome, sir';
+//     } else if(name[0] == name[0].toLowerCase()){
+//         return 'Howdy'
+//     }
+// }
