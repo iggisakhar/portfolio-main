@@ -242,3 +242,21 @@
 //     return sum;
 // }
 
+// const str = 'w10r * (2) 2n3, wer30';
+// const digits = '0123456789';
+//
+// let acc = 0;
+// let n = '';
+//
+// for(let i = 0; i < str.length; i++) {
+//     if(digits.includes(str[i])) {
+//         n += str[i];
+//     } else {
+//         acc += +n;
+//         n = '';
+//     }
+//     if(i === str.length - 1) {
+//         acc += +n;
+//     }
+// }
+// console.log(acc)
