@@ -260,3 +260,159 @@
 //     }
 // }
 // console.log(acc)
+
+// function sumOfFractionalNumbers(str){
+//     if(str === 0){
+//         return 0;
+//     }
+//     let sum = 0;
+//     let curr = '';
+//     for(let i = 0; i <= str.length; i++){
+//         if(i < str.length && (str[i] >= '0' && str[i] <= '9' || str[i] == '.')){
+//             curr += str[i];
+//         } else if(curr.length > 0){
+//             sum += parseFloat(curr);
+//             curr = '';
+//         } if(i == str.length && curr.length > 0){
+//             sum += parseFloat(curr);
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumAllNums(str){
+//     let sum = 0;
+//     let curr = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(i < str.length && (str[i] >= '0' && str[i] <= '9' || str[i] == '.' || str[i] == '-')){
+//             curr += str[i];
+//         }else {
+//             if(curr !== ''){
+//                 sum += parseFloat(curr);
+//                 curr = '';
+//             }
+//         }
+//     }
+//     if(curr !== ''){
+//         sum += parseFloat(curr);
+//     }
+//     return sum;
+// }
+
+// const str = '-1, 9'
+// const digits = '0123456789';
+// let acc = 0;
+// let number = '';
+// for(let i = 0; i < str.length; i++){
+//     if(digits.includes(str[i])) number += str[i];
+//     else{
+//         acc += +number;
+//         number = '';
+//     }
+//     if(i === str.length - 1) acc += +number;
+// }
+// console.log(acc);
+
+// function sumNumbers(str){
+//     const digits = '0123456789';
+//     let acc = 0;
+//     let num = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(digits.includes(str[i])) num += str[i];
+//         else{
+//             acc += +num;
+//             num = '';
+//         }
+//         if(i === str.length - 1) acc += +num;
+//     }
+//     return acc;
+// }
+// console.log(sumNumbers('herbivores - 7 cows, carnivores - 3 bears'));
+
+// function sumNumbers(str){
+//     const digits = '0123456789';
+//     let acc = 0;
+//     let number = '';
+//     for(let i = 0; i < str.length; i+=2){
+//         if(digits.includes(str[i])) number += str[i];
+//         else{
+//             acc += +number;
+//             number = '';
+//         }
+//         if(i === str.length - 1) acc += +number;
+//     }
+//     return acc;
+// }
+// console.log(sumNumbers('1st, 2nd, 3rd, 4th, 5th'));
+
+// function sumNumbers(str){
+//     const digits = '0123456789';
+//     let acc = 0;
+//     let number = '';
+//     for(let i = str.length - 1; i >=0; i--){
+//         if(digits.includes(str[i])) number += str[i];
+//         else{
+//             acc += +number;
+//             number = '';
+//         }
+//         if(str[i] === str[0]) acc += +number;
+//     }
+//     return acc;
+// }
+// console.log(sumNumbers('3 cats, 5 dogs, 12 mice'));
+
+// function sumNumbers(str){
+//     const digits = '0123456789';
+//     let acc = 0;
+//     let number = '';
+//     for(let i = str.length - 1; i >= 0; i = i - 2){
+//         if(digits.includes(str[i])) number += str[i];
+//         else{
+//             acc += +number;
+//             number = '';
+//         }
+//         if(str[i] === str[0]) acc += +number;
+//     }
+//     return acc;
+// }
+// console.log(sumNumbers('1st, 2nd, 3rd, 4th, 5th, 7th, 8th, 3th'));
+
+// function sumNumbers(str){
+//     const digits = '0123456789';
+//     let acc = 0;
+//     let number = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(digits.includes(str[i])) number += str[i];
+//         else{
+//             acc += +number;
+//             number = '';
+//         }
+//         if(i === str.length - 1) acc += +number;
+//     }
+//     return acc;
+// }
+// console.log(sumNumbers('YOU 83COM3 WH47 YOU 83L1V3!'));
+
+// function reverseBiggerString(arr){
+//     let first = arr[0].length >= arr[1].length ? arr[0] : arr[1];
+//     let reverse = first.split('').reverse().join('');
+//     return [arr[0], arr[1], reverse]
+// }
+
+// function checkStr(str){
+//     let newStr = str.toLowerCase();
+//     for(let i = 0; i < newStr.length / 2; i++){
+//         if(newStr[i] !== newStr[newStr.length -1 -i]){
+//             return `${newStr} is not palindrome`
+//         }
+//     }
+//     return `${newStr} is palindrome`
+// }
+
+// function wordsDivider(str){
+//     if(str.length === 0){
+//         return []
+//     }
+//     return str.split(' ');
+// }
+
