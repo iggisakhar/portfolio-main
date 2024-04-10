@@ -416,3 +416,19 @@
 //     return str.split(' ');
 // }
 
+// function sumNumbers(str){
+//     const digits = '0123456789';
+//     let acc = 0;
+//     let n = '';
+//
+//     for(let i = 0; i < str.length; i++) {
+//         if(digits.indexOf(str[i]) !== -1) n += str[i];
+//         else {
+//             acc += +n;
+//             n = '';
+//         }
+//         if(i === str.length - 1) acc += +n;
+//     }
+//     return acc;
+// }
+// console.log(sumNumbers(' ...1,?1 205^@6 99%/*-+ :0 9daw80'));
