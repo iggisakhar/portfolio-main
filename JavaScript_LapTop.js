@@ -432,3 +432,162 @@
 //     return acc;
 // }
 // console.log(sumNumbers(' ...1,?1 205^@6 99%/*-+ :0 9daw80'));
+
+// function numberOfOccurrencesBothEl(str, el1, el2){
+//     let firstEl = 0;
+//     let secondEl = 0;
+//     let newStr = str.toLowerCase();
+//     let newEl1 = el1.toLowerCase();
+//     let newEl2 = el2.toLowerCase();
+//     for(let i of newStr){
+//         if(i === newEl1){
+//             firstEl++
+//         } if(i === newEl2){
+//             secondEl++
+//         }
+//     }
+//     return `First element: ${firstEl}, second element: ${secondEl}`
+// }
+
+// function whatWin(str1, str2){
+//     let newStr1 = str1.toLowerCase();
+//     let newStr2 = str2.toLowerCase();
+//     let firstWord = 0;
+//     let secondWord = 0;
+//     let vowels = 'aeiou';
+//     for(let i of newStr1){
+//         if(vowels.includes(i)){
+//             firstWord++
+//         }
+//     }
+//     for(let i of newStr2){
+//         if(vowels.includes(i)){
+//             secondWord++
+//         }
+//     }if(firstWord > secondWord){
+//         return 'First word wins!';
+//     }else if(firstWord < secondWord){
+//         return 'Second word wins!'
+//     } else {
+//         return `It's a draw!`
+//     }
+// }
+
+// function digitsToArray(str){
+//     let numbers = '0987654321';
+//     let arr = [];
+//     for(let i of str){
+//         if(numbers.includes(i)){
+//             arr.push(parseInt(i))
+//         }
+//     }
+//     return arr;
+// }
+
+// function findDuplicates(str){
+//     let str1 = str.replace(/-/g, ' ');
+//     let arr = str1.split(' ');
+//     let unique = new Set();
+//     arr.forEach(el => {
+//         if(el){
+//             unique.add(el);
+//         }
+//     })
+//     return Array.from(unique).join(' ');
+// }
+
+// function isAnagram(str1, str2){
+//     str1 = str1.toLowerCase();
+//     str2 = str2.toLowerCase();
+//     if(str1.length !== str2.length){
+//         return false;
+//     }
+//     let count1 = {};
+//     let count2 = {};
+//     for(let i = 0; i < str1.length; i++){
+//         let char = str1[i];
+//         if(count1[char]){
+//             count[char]++
+//         }else{
+//             count1[char] = 1;
+//         }
+//     }
+//     for(let i = 0; i < str2.length; i++){
+//         let char = str2[i];
+//         if(count2[char]){
+//             count2[char]++
+//         }else{
+//             count2[char] = 1;
+//         }
+//     }
+//     for(let i in count1){
+//         if(count1[i] !== count2[i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function reverseOnlyLastWord(str){
+//     if(str.trim() === ''){
+//         return '';
+//     }
+//     let words = str.match(/\S+|s+|[.,?!.;]/g);
+//     let index = words.reduce((lastIndex, word, ind) => /\S/.test(word) ? ind : lastIndex, -1);
+//     if(index !== -1){
+//         words[index] = words[index].split('').reverse().join('');
+//     }
+//     return words.join(' ');
+// }
+
+// function digitsToWords(str){
+//     let digitWords = {
+//         '0': 'zero',
+//         '1': 'one',
+//         '2': 'two',
+//         '3': 'three',
+//         '4': 'four',
+//         '5': 'five',
+//         '6': 'six',
+//         '7': 'seven',
+//         '8': 'eight',
+//         '9': 'nine'
+//     }
+//     let res = [];
+//     for(let i = 0; i < str.length; i++){
+//         let char = str[i];
+//         if(digitWords[char]){
+//             res.push(digitWords[char]);
+//         }else{
+//             res.push(char)}
+//     }
+//     return res.join('');
+// }
+
+// function arrayToString(arr){
+//     if(arr.length == 0){
+//         return 'Array is empty';
+//     }
+//     let str = '';
+//     for(let i = 0; i < arr.length; i++){
+//         str += arr[i];
+//     }
+//     return str;
+// }
+
+// function squareRoot(arr){
+//     let res= [];
+//     for(let i of arr){
+//         let number = Number(i);
+//
+//         if(number >= 0){
+//             let sqrt =
+//                 Math.round(Math.sqrt(number));
+//             res.push(sqrt);
+//         }else {
+//             res.push(false);
+//         }
+//     }
+//     return res;
+// }
+
