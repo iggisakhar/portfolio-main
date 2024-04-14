@@ -591,3 +591,13 @@
 //     return res;
 // }
 
+// const arr = [123, 'abc', true, null, undefined, {name: 'Jack'}];
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// const arr = ['one', 2, 3, 'two', 2, 3, 'three', 2, 3];
+// for(let i = 0; i < arr.length; i += 3) {
+//     console.log(arr[i]);
+// }
+
