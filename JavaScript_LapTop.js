@@ -601,3 +601,149 @@
 //     console.log(arr[i]);
 // }
 
+// function squareRoot(arr){
+//     let newArr = [];
+//     for(let i = 0; i < arr.length; i++){
+//         let number = Number(arr[i]);
+//         if(!isNaN(number) && number >= 0){
+//             let sqrt = Math.round(Math.sqrt(number));
+//             newArr.push(sqrt);
+//         } else{
+//             newArr.push(false)
+//         }
+//     }
+//     return newArr;
+// }
+
+// function sumAllNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let newArr = [];
+//     let sum = 0;
+//     for(let i of arr){
+//         if(typeof i == 'number'){
+//             newArr.push(i);
+//             sum += i;
+//         }
+//     }
+//     newArr.push(`Sum of all numbers is ${sum}`);
+//     return newArr;
+// }
+
+// function sumAndCount(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     let count = 0;
+//     for(let i of arr){
+//         let number = parseFloat(i);
+//         if(!isNaN(number)){
+//             sum += number;
+//             count++;
+//         }
+//     }
+//     if(count === 0){
+//         return 'No numbers were found in array';
+//     } else {
+//         return `Count of numbers: ${count}, sum of numbers: ${sum}`
+//     }
+// }
+
+// function sortLettersByCase(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arrLower = [];
+//     let arrUpper = [];
+//     for(let i of arr){
+//         if(i === i.toLowerCase() && i !== i.toUpperCase()){
+//             arrLower.push(i);
+//         } else {
+//             arrUpper.push(i);
+//         }
+//     }
+//     return [...arrLower, ...arrUpper]
+// }
+
+// function typesOfElements(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     for(let i of arr){
+//         arr1.push(typeof i);
+//     }
+//     return arr1;
+// }
+
+// function countElementTypes(arr){
+//     if(arr.length === 0){
+//         return 'Array has no elements';
+//     }
+//     let obj = {};
+//     for(let i of arr){
+//         let type = typeof i;
+//         if(obj[type]){
+//             obj[type]++
+//         } else {
+//             obj[type] = 1;
+//         }
+//     }
+//     return obj;
+// }
+
+// function checkTypes(arr){
+//     if (arr.length === 0) return 'There is nothing to do here :(';
+//
+//     let power = 1;
+//     let string = '';
+//     let booleanCount = 0;
+//
+//     for (let i = 0; i < arr.length; i++){
+//
+//         if (typeof arr[i] === 'number' && string === '' && booleanCount === 0) power *= arr[i];
+//         else if (typeof arr[i] === 'string' && power === 1 && booleanCount === 0) string += arr[i];
+//         else if (typeof arr[i] === 'boolean' && power === 1 && string === '') booleanCount++;
+//         else return 'There are different types in array';
+//     }
+//
+//     if (power !== 1) return power;
+//     else if (string !== '') return string;
+//     else return booleanCount;
+// }
+
+// function getAllSmallOnes(arr){
+//     if(arr.length === 0){
+//         return 'Array has no elements';
+//     }
+//     let arr1 = [];
+//     let str = '';
+//     for(let i of arr){
+//         if(i.length <= 3){
+//             str += i;
+//         } else {
+//             arr1.push(i);
+//         }
+//     }
+//     arr1.unshift(str);
+//     return arr1;
+// }
+
+// function fillThemUp(arr){
+//     if(arr.length === 0){
+//         return false;
+//     }
+//     let arr1 = [];
+//     for(let i of arr){
+//         if(i.length < 5){
+//             while(i.length < 5){
+//                 i += '#';
+//             }
+//         }
+//         arr1.push(i);
+//     }
+//     return arr1;
+// }
+
