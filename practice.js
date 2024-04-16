@@ -6976,3 +6976,63 @@
 //     return newArr.join(', ')
 // }
 
+// function arraySum(arr){
+//     if(arr.length === 0){
+//         return [];
+//     }
+//
+//     let resulLenght= Math.ceil(arr.length/2)
+//     let result = new Array(resulLenght)
+//     let resultIndex = 0
+//
+//
+//     for(let i = arr.length -1; i > 0; i -= 2){
+//         result[resultIndex] = arr[i] + arr[i - 1];
+//         resultIndex++
+//     }
+//     if(arr.length % 2 !== 0){
+//         result[resultIndex] = arr[0];
+//
+//     }
+//     return result.reverse();
+// }
+
+// function reverseArray(arr){
+//     return arr.reverse()
+// }
+
+// function getAPhrase(arr){
+//     let string = arr.filter(el => typeof el === 'string');
+//     return string.reverse().join(' ');
+// }
+
+// function reversedArray(arr){
+//     return arr.reverse();
+// }
+
+// function findNumbers(arr){
+//     let odd = [];
+//     let even = [];
+//     for(let i of arr){
+//         if(typeof i === 'number'){
+//             if(i % 2 === 0){
+//                 even.unshift(i)
+//             } else {
+//                 odd.unshift(i)
+//             }
+//         }
+//     }
+//     return [even, odd]
+// }
+
+// function getDifference(arr){
+//     if(arr.length == 0){
+//         return 0;
+//     }
+//     let lsNum = arr[arr.length -1]
+//     for(let i = 0; i < arr.length -1; i++){
+//         lsNum -= arr[i];
+//     }
+//     return lsNum;
+// }
+
