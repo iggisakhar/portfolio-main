@@ -7037,3 +7037,61 @@
 // }
 
 // test
+
+// function findNumbersAndDifference(arr){
+//     let lsNum = null;
+//     let diff = 0;
+//     for(let i = arr.length -1; i >= 0; i--){
+//         if(typeof arr[i] === 'number'){
+//             if(lsNum == null){
+//                 lsNum = arr[i]
+//             }else{
+//                 diff -= arr[i]
+//             }
+//         }
+//     }
+//     return diff + (lsNum || 0);
+// }
+
+// function stringLengthsDif(arr) {
+//     let difference = 0;
+//     let lastStr = 0;
+//
+//     for (let i = arr.length -1; i >= 0; i--) {
+//         if (typeof arr[i] === 'string') {
+//             if(lastStr === 0){
+//                 lastStr = arr[i].length;
+//             } else {
+//                 difference -= arr[i].length;
+//             }
+//         }
+//     }
+//     return difference += lastStr;
+// }
+
+// function getAPhrase(arr){
+//     let arr1 = [];
+//     for(let i = arr.length -1; i >= 0; i--){
+//         if(typeof arr[i] === 'string'){
+//             arr1.push(arr[i]);
+//         } else if (typeof arr[i] === 'boolean'){
+//             arr1.push('oops');
+//         }
+//     }
+//     return arr1.join(' ');
+// }
+
+// function countFees(arr){
+//     let overallApartments = 0;
+//     let sumOfPayments = 0;
+//     for(let i of arr){
+//         if(i.hasOwnProperty('apartment') && i.hasOwnProperty('condoFee')){
+//             overallApartments++;
+//             sumOfPayments += i.condoFee;
+//         }
+//     }
+//     return {overallApartments: overallApartments,
+//         sumOfPayments: sumOfPayments
+//     }
+// }
+
