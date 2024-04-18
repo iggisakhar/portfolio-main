@@ -7095,3 +7095,133 @@
 //     }
 // }
 
+// function sumOfNumbers(arr){
+//     let sum = 0;
+//     for(let i of arr){
+//         sum += i
+//     }
+//     return sum;
+// }
+
+// function sumOfPosAndNeg(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sumPos = 0;
+//     let sumNeg = 0;
+//     for(let i of arr){
+//         if(i < 0){
+//             sumNeg += i;
+//         } else if(i > 0){
+//             sumPos += i;
+//         }
+//     }
+//     return [sumPos, sumNeg]
+// }
+
+// function sumOfEvenAndOdd(arr){
+//     if(arr.length === 0){
+//         return 'Array has no numbers';
+//     }
+//     let sumOdd = 0;
+//     let sumEven = 0;
+//     for(let i of arr){
+//         if(i % 2 !== 0){
+//             sumOdd += i;
+//         } else {
+//             sumEven += i;
+//         }
+//     }
+//     return `Sum of even numbers is ${sumEven}, sum of odd numbers is ${sumOdd}`
+// }
+
+// function sumOfNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Empty array';
+//     }
+//     let sum = 0;
+//     for(let i of arr){
+//         if(typeof i === 'number'){
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr1, arr2, arr3){
+//     let sum = 0;
+//     let arr = arr1.concat(arr2, arr3);
+//     if(arr1.length === 0 && arr2.length === 0 && arr3.length === 0){
+//         return 'All arrays are empty';
+//     }
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number'){
+//             sum += arr[i];
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     for(let i of arr){
+//         if(typeof i !== 'boolean' && !isNaN(i)){
+//             sum += Number(i)
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     for(let i of arr){
+//         for(let j of i){
+//             sum += j;
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr){
+//     if(arr.length == 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     for(let i of arr){
+//         if(Array.isArray(i)){
+//             for(let j of i){
+//                 sum += j;
+//             }
+//         }else{
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr){
+//     let sum = 0;
+//     for(let i of arr){
+//         if((i > 99 && i < 999) || (i < -99 && i > -999)){
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr){
+//     let sum = 0;
+//     for(let i of arr){
+//         if(String(i)[0] === '5'){
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+
