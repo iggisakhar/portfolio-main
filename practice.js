@@ -7225,3 +7225,93 @@
 //     return sum;
 // }
 
+// const arr = [1, 2, 3, 4, 5];
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+// for(let i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i]);
+// }
+
+// function average(arr){
+//     if(arr.length === 0){
+//         return 'Empty array';
+//     }
+//     let sum = 0;
+//     for(let i of arr){
+//         sum += Math.round(i);
+//     }
+//     return Math.round(sum / arr.length);
+// }
+
+// function averageEven(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     let even = 0;
+//     for(let i of arr){
+//         if(i % 2 === 0){
+//             even++;
+//             sum += i;
+//         }
+//     }
+//     if(even === 0){
+//         return 0;
+//     } else {
+//         return Math.floor(sum / even);
+//     }
+// }
+
+// function averageOdd(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     let odd = 0;
+//     for(let i of arr){
+//         if(i % 2 !== 0){
+//             odd++;
+//             sum += i;
+//         }
+//     }
+//     if(odd === 0){
+//         return 0;
+//     }
+//     return Math.ceil(sum / arr.length);
+// }
+
+// function averageDes(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     let count = 0;
+//     for(let i of arr){
+//         if(!Number.isInteger(i)){
+//             sum += i;
+//             count++
+//         }
+//     }
+//     if(count === 0){
+//         return 0;
+//     }
+//     return +(sum / count).toFixed(2)
+// }
+
+// function average3Digit(arr) {
+//     if (arr.length === 0) return 'Array is empty';
+//     let sum = 0;
+//     let count = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] >= 100 && arr[i] <= 999 || arr[i] <= -100 && arr[i] >= -999) {
+//             sum += arr[i];
+//             count++;
+//         }
+//     }
+//     if(count === 0){
+//         return 0;
+//     }
+//     return Math.floor(sum / count);
+// }
+
