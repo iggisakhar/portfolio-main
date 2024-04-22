@@ -7315,3 +7315,294 @@
 //     return Math.floor(sum / count);
 // }
 
+// function averageNegative(arr){
+//     let sum = 0;
+//     let count = 0;
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     for(let i of arr){
+//         if(i < 0){
+//             sum += i;
+//             count++
+//         }
+//     }
+//     if(count === 0){
+//         return 0;
+//     }
+//     return Math.round(sum / count);
+// }
+
+// function averageNegativeEven(arr){
+//     let sum = 0;
+//     let count = 0;
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     for(let i of arr){
+//         if(i % 2 === 0 && i < 0){
+//             sum += i;
+//             count++
+//         }
+//     }
+//     if(count === 0){
+//         return 0;
+//     }
+//     return Math.floor(sum / count);
+// }
+
+// function averageFromStartToMiddle(arr){
+//     if(arr.length === 0) return 'Array is empty';
+//     if (arr.length < 2) return 'Array is not long enough';
+//     let middle = Math.floor(arr.length / 2);
+//     let sum = 0;
+//     for (let i = 0; i < middle; i++) {
+//         sum += arr[i];
+//     }
+//     return Math.round(sum / middle);
+// }
+
+// function averageInSubArr(arr){
+//     let sum = 0;
+//     let count = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         for(let j = 0; j < arr[i].length; j++) {
+//             sum += arr[i][j];
+//             count++;
+//         }
+//     }
+//     if (count === 0) return 'Arrays are empty';
+//     return Math.round(sum / count);
+// }
+
+// function averageStringNum(arr){
+//     let sum = 0;
+//     let count = 0;
+//     let symbols = '0123456789';
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < symbols.length; j++) {
+//             if (arr[i] === symbols[j]) {
+//                 sum += +arr[i];
+//                 count++;
+//                 break;
+//             }
+//         }
+//     }
+//     if (count === 0) return 'There are no numbers';
+//     return Math.round(sum / count);
+// }
+
+// const arr = [1, '2', 3, NaN, 'four', 5, true];
+// let acc = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (!Number.isNaN(+arr[i])) acc += +arr[i];
+// }
+// console.log(acc);
+
+// const arr = [1, '2', 3, NaN, 'four', 5, true];
+// let acc = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === 'number' && !Number.isNaN(arr[i])) {
+//         acc += arr[i];
+//     }
+// }
+// console.log(acc);
+
+// const arr = [NaN, 3, false, -7, true, 'five', -5, '11'];
+// let acc = 0;
+// let count = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === 'number' && !Number.isNaN(arr[i])) {
+//         acc += arr[i];
+//         count++;
+//     }
+// }
+// console.log(acc / count);
+
+// function average(arr){
+//     let acc = 0;
+//     let count = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i] = +arr[i];
+//         if (typeof arr[i] === 'number' && !Number.isNaN(arr[i])) {
+//             acc += arr[i];
+//             count++;
+//         }
+//     }
+//     return acc / count;
+// }
+// console.log(average(['1', '2', '6']));
+
+// function findMinNumber(arr){
+//     if(arr.length == 0){
+//         return undefined;
+//     }
+//     let min = arr[0];
+//     for(let i of arr){
+//         if(i < min){
+//             min = i;
+//         }
+//     }
+//     return min;
+// }
+
+// function findMaxNumber(arr){
+//     if(arr.length === 0){
+//         return undefined;
+//     }
+//     let max = arr[0];
+//     for(let i of arr){
+//         if(i > max){
+//             max = i;
+//         }
+//     }
+//     return max;
+// }
+
+// function minAndMaxOfNegatives(arr){
+//     if(arr.length === 0){
+//         return [undefined, undefined];
+//     }
+//     let arr1 = [];
+//     for(let i of arr){
+//         if(i < 0){
+//             arr1.push(i);
+//         }
+//     }
+//     let min = arr1[0];
+//     let max = arr1[0];
+//     for(let i of arr1){
+//         if(i < min){
+//             min = i;
+//         } if(i > max){
+//             max = i;
+//         }
+//     }
+//     return [min, max];
+// }
+
+// function minAndMaxOfPositive(arr){
+//     if(arr.length === 0){
+//         return [undefined, undefined];
+//     }
+//     let arr1 = [];
+//     for(let i of arr){
+//         if(i > 0){
+//             arr1.push(+i);
+//         }
+//     }
+//     let min = arr1[0];
+//     let max = arr1[0];
+//     for(let i of arr1){
+//         if(i < min){
+//             min = i;
+//         } if(i > max){
+//             max = i;
+//         }
+//     }
+//     return [min, max];
+// }
+
+// function minAndMax(arr1, arr2){
+//     let arr = arr1.concat(arr2);
+//     if(arr.length === 0){
+//         return [undefined, undefined];
+//     }
+//     let min = arr[0];
+//     let max = arr[0];
+//     for(let i of arr){
+//         if(i < min){
+//             min = i;
+//         }
+//         if(i > max){
+//             max = i;
+//         }
+//     }
+//     return [min, max];
+// }
+
+// function minAndMax(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     if(arr.length === 1){
+//         return 'Array has only one element';
+//     }
+//     let middle = Math.floor(arr.length / 2);
+//     let min = arr[0];
+//     for(let i = 0; i < middle; i++){
+//         if(arr[i] < min){
+//             min = arr[i];
+//         }
+//     }
+//     let max = arr[middle];
+//     for(let i = middle; i < arr.length; i++){
+//         if(arr[i] > max){
+//             max = arr[i];
+//         }
+//     }
+//     return [min, max]
+// }
+
+// function minAndMax(arr1, arr2){
+//     let min = arr1[0];
+//     for(let i of arr1){
+//         if(i < min){
+//             min = i;
+//         }
+//     }
+//     let max = arr2[0];
+//     for(let i of arr2){
+//         if(i > max){
+//             max = i;
+//         }
+//     }
+//     return [min, max]
+// }
+
+// function minAndMax(arr1, arr2){
+//     let min1 = arr1[0];
+//     let max1 = arr1[0];
+//     for(let i of arr1){
+//         if(min1 > i){
+//             min1 = i;
+//         } if(max1 < i){
+//             max1 = i;
+//         }
+//     }
+//     let min2 = arr2[0];
+//     let max2 = arr2[0];
+//     for(let i of arr2){
+//         if(min2 > i){
+//             min2 = i;
+//         } if(max2 < i){
+//             max2 = i;
+//         }
+//     }
+//     if((max1 - min1) > (max2 - min2)){
+//         return [min1, max1];
+//     }
+//     else if((max1 - min1) < (max2 - min2)){
+//         return [min2, max2];
+//     } else {
+//         return [min1, max1, min2, max2];
+//     }
+// }
+
+// function minAndMax(arr1, arr2){
+//     let arr = arr1.concat(arr2);
+//     if(arr.length === 0){
+//         return null;
+//     }
+//     let max = arr[0];
+//     let min = arr[0];
+//     for(let i of arr){
+//         if(i < min){
+//             min = i;
+//         } if (i > max){
+//             max = i;
+//         }
+//     }
+//     return [min, max];
+// }
+
