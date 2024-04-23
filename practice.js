@@ -7606,3 +7606,166 @@
 //     return [min, max];
 // }
 
+// function minAndMax(arr1, arr2){
+//     let newArr = [...arr1, ...arr2];
+//     if(!newArr.length) return 'Both arrays are empty';
+//     let min = undefined;
+//     let max = undefined;
+//
+//     for(let i = 0; i < newArr.length; i++){
+//         if ( newArr[i] !== '' && !isNaN(newArr[i]) ) {
+//             if(min === undefined) {
+//                 min = +newArr[i];
+//                 max = +newArr[i];
+//             } else {
+//                 if(newArr[i] < min) min = +newArr[i];
+//                 if(newArr[i] > max) max = +newArr[i];
+//             }
+//         }
+//     }
+//     return [min, max];
+// }
+
+// const arr = [-1, -3, -5, 0];
+// let min = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//         min = arr[i];
+//     }
+// }
+// console.log(min);
+
+// const arr = [7.3, 7.5, 7.7, 7.4, 7];
+// let max = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
+
+// function minAndMax(arr){
+//     let min = arr[arr.length - 1];
+//     let max = arr[arr.length - 1];
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         if (arr[i] < min) min = arr[i];
+//         if (arr[i] > max) max = arr[i];
+//     }
+//     return [min, max];
+// }
+// console.log(minAndMax([-5, -13, 77, 91, 11]));
+
+// function secondMinNumber(arr){
+//     if(arr.length === 0) return false;
+//     let min = arr[0];
+//     let secondMin = arr[0];
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] < min){
+//             secondMin = min;
+//             min = arr[i];
+//         } else if((secondMin === min || arr[i] < secondMin) && arr[i] !== min){
+//             secondMin = arr[i];
+//         }
+//     }
+//
+//     if(secondMin === min) return 'There is no second min number';
+//     else return secondMin;
+// }
+
+// function secondMaxNumber(arr){
+//     if(arr.length === 0) return false;
+//     let max = arr[0];
+//     let secondMax = arr[0];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > max){
+//             secondMax = max;
+//             max = arr[i];
+//         } else if((secondMax === max || arr[i] > secondMax) && arr[i] !== max){
+//             secondMax = arr[i];
+//         }
+//     }
+//
+//     if(secondMax === max) return 'There is no second max number';
+//     else return secondMax;
+// }
+
+// function secondMinNumber(arr){
+//     if( arr.length === 0 ) return 'Array is empty';
+//     let min = arr[0];
+//     let secondMin = arr[0];
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] < min) min = arr[i];
+//     }
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if((secondMin === min || arr[i] < secondMin) && arr[i] !== min) secondMin = arr[i];
+//     }
+//
+//     if( secondMin === min ) return 'There is no second min number';
+//     else return secondMin;
+// }
+
+// function secondMaxNumber(arr){
+//     if( arr.length === 0 ) return 'Array is empty';
+//     let max = arr[0];
+//     let secondMax = arr[0];
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] > max) max = arr[i];
+//     }
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if((secondMax === max || arr[i] > secondMax) && arr[i] !== max) secondMax = arr[i];
+//     }
+//
+//     if( secondMax === max ) return 'There is no second max number';
+//     else return secondMax;
+// }
+
+// function secondMinPositive(arr){
+//     if(arr.length == 0) return 'Array is empty';
+//     let min = Infinity
+//     let secondMin = Infinity;
+//
+//     for(let i = 0; i < arr.length; i++){
+//
+//         if(arr[i] > 0){
+//             if(arr[i] < min) {
+//                 secondMin = min;
+//                 min = arr[i]
+//             } else if(arr[i] < secondMin && arr[i] !== min){
+//                 secondMin = arr[i]
+//             }
+//         }
+//
+//     }
+//
+//     if(min === Infinity) return 'There is no positive numbers';
+//     if(secondMin === Infinity) return 'There is no second min positive number';
+//     return secondMin;
+// }
+
+// function secondMaxNegative(arr){
+//     if(arr.length == 0) return 'Array is empty';
+//     let max = -Infinity
+//     let secondMax = -Infinity;
+//
+//     for(let i = 0; i < arr.length; i++){
+//
+//         if(arr[i] < 0){
+//             if(arr[i] > max) {
+//                 secondMax = max;
+//                 max = arr[i]
+//             } else if(arr[i] > secondMax && arr[i] !== max){
+//                 secondMax = arr[i]
+//             }
+//         }
+//     }
+//
+//     if(max === -Infinity) return 'There is no negative numbers';
+//     if(secondMax === -Infinity) return 'There is no second max negative number';
+//     return secondMax;
+// }
+
