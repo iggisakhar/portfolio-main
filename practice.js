@@ -5096,40 +5096,2676 @@
 // }
 // console.log(symbols);
 
-// function multBy5(value){
-//     if(Number.isNaN(value)){
-//         return 'Value is NaN'
+// function updateString(str){
+//     let obj = {
+//         firstWord: '',
+//         lastWord: '',
+//         updatedString: ''
+//     }
+//     let words = str.split(' ');
+//     obj.firstWord = words[0];
+//     obj.lastWord = words[words.length -1];
+//     words[0] = obj.lastWord;
+//     words[words.length -1] = obj.firstWord;
+//     obj.updatedString = words.join(' ');
+//     return obj;
+// }
+
+// function changeIf3Space(str){
+//     let words = str.split(' ');
+//     if(words.length == 4){
+//         return words[0] + ' ' + words[words.length -1]
+//     }else {
+//         return str;
+//     }
+// }
+
+// function switchWords(str){
+//     let words = str.split(' ');
+//     return words[1] + ' ' + words[0];
+// }
+
+// function firstIsLast(str){
+//     let words = str.toLowerCase().split(' ');
+//     if(words.length <= 1){
+//         return 'nothing to switch';
+//     }
+//     let first = words[0];
+//     let last = words[words.length -1];
+//     words[0] = last;
+//     words[words.length -1] = first;
+//     return words.join(' ');
+// }
+
+// function switchWordAddToArray(str){
+//     let res = ['', '', ''];
+//     let start = 0;
+//     let end = 0;
+//     if(str.length == 5){
+//         res[0]=str;
+//         return [str, '', ''];
+//     }
+//
+//     for(let i = 0; i <= str.length; i++){
+//         if(str[i] === ' ' ||  i === str.length){
+//             end = i;
+//             let word = str.slice(start,end);
+//
+//             if(res[2] === ''){
+//                 res[2] = word;
+//             }else  if(i === str.length){
+//                 res[0] = word;
+//             }else {
+//                 res[1] += word + ' ';
+//             }
+//             start =  i + 1;
+//         }
+//     }
+//     res[1] = res[1].trim();
+//     return res;
+// }
+
+// function validPhoneNumber(phoneNumber){
+//     if(phoneNumber.length !== 14){
+//         return false;
+//     }
+//     if(phoneNumber[0] !=='(' && phoneNumber[4] !== ')'){
+//         return false;
+//     }
+//     if(phoneNumber[5] !== ' '){
+//         return false;
+//     }
+//     if(phoneNumber[9] !== '-'){
+//         return false;
+//     } else{
+//         return true;
+//     }
+// }
+
+// function _if(bool, func1, func2) {
+//     if(bool){
+//         return func1();
+//     }
+//     else{
+//         return func2();
+//     }
+// }
+
+// function switcheroo(x){
+//     let str = '';
+//     for(let i = 0; i < x.length; i++){
+//         if(x[i] == 'a'){
+//             str += 'b';
+//         } else if(x[i] == 'b'){
+//             str += 'a'
+//         } else {
+//             str += x[i];
+//         }
+//     }
+//     return str;
+// }
+
+// function remove(s,n){
+//     for(let i = 1; i <= n; i++){
+//         s = s.replace('!', '');
+//     }
+//     return s;
+// }
+
+// var encryptThis = function(text) {
+//     let words = text.split(' ');
+//     let res = [];
+//     for(let i of words){
+//         let newStr = '';
+//         let temp = '';
+//         for(let j = 0; j < i.length; j++){
+//             if(j === 0){
+//                 newStr += i.charCodeAt(0)
+//             }else if(j === 1){
+//                 temp += i[j];
+//                 newStr += i.slice(-1)
+//             }else if(j == i.length -1){
+//                 newStr += temp;
+//             }else {
+//                 newStr += i[j]
+//             }
+//         }
+//         res.push(newStr);
+//     }
+//     return res.join(' ');
+// }
+
+// function loop_size(node){
+//     if(!node) return 0;
+//     let a = node;
+//     let b = a.next;
+//     while(a !== b && a !== b.next){
+//         a = a.next;
+//         b = b.next.next;
+//     }
+//     a = b.next;
+//     b = a.next;
+//     let res = 1;
+//     while(a !== b){
+//         res++
+//         b = b.next;
+//     }
+//     return res;
+// }
+
+// function encode(string) {
+//     let res = (el) => {
+//         switch(el){
+//             case 'a': return 1;
+//             case 'e': return 2;
+//             case 'i': return 3;
+//             case 'o': return 4;
+//             case 'u': return 5;
+//         }
+//     }
+//     return string.replace(/a|e|i|o|u/g, res);
+// }
+//
+// function decode(string) {
+//     let res = (el) => {
+//         switch(el){
+//             case '1': return 'a';
+//             case '2': return 'e';
+//             case '3': return 'i';
+//             case '4': return 'o';
+//             case '5': return 'u';
+//         }
+//     }
+//     return string.replace(/[1-5]/g, res);
+// }
+
+// function add(n){
+//     let res = (el) => add(n + el);
+//     res.toString = () => n
+//     return res;
+// }
+
+// function longestSlideDown (pyramid) {
+//     for(let i = pyramid.length -2; i >= 0; i--){
+//         for(let j = 0; j <= i; j++){
+//             pyramid[i][j] += Math.max(pyramid[i + 1][j], pyramid[i + 1][j + 1])
+//         }
+//     }
+//     return pyramid[0][0];
+// }
+
+// function SubtractSum(n){
+//     return "apple"
+// }
+
+// function multipleOfIndex(array) {
+//     let arr = [];
+//     for(let i = 0; i < array.length; i++){
+//         if(array[i] % i === 0 || array[i] === 0){
+//             arr.push(array[i]);
+//         }
+//     }
+//     return arr;
+// }
+
+// function foldArray(array, runs){
+//     for(let i = 0; i < runs; i++){
+//         let arr = [];
+//         let middle = Math.floor(array.length / 2);
+//         for(let j = 0; j < middle; j++){
+//             let sum = array[j] + array[array.length -1 -j];
+//             arr.push(sum);
+//         }
+//         if(array.length % 2 !== 0){
+//             arr.push(array[middle]);
+//         }
+//         array = arr;
+//     }
+//     return array;
+// }
+
+// function meanMaxQM(dice, n) {
+//     return 0.5 * (dice - 1) * (n - 1) / (n + 1);
+// }
+
+// function sumDigPow(a, b) {
+//     let arr = [];
+//     for(let i = a; i <= b; i++){
+//         let sum = 0;
+//         for(let j = 0; j <= String(i).length; j++){
+//             sum += Math.pow(+String(i)[j], j + 1)
+//             if(sum == i){
+//                 arr.push(i);
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+// function isSortedAndHow(array) {
+//     let ascending = true;
+//     let descending = true;
+//     for(let i = 0; i < array.length -1; i++){
+//         if(array[i] < array[i + 1]){
+//             descending = false;
+//         }
+//         if(array[i] > array[i + 1]){
+//             ascending = false;
+//         }
+//     }
+//     if(ascending){
+//         return 'yes, ascending';
+//     }else if(descending){
+//         return 'yes, descending'
+//     } else{
+//         return 'no'
+//     }
+// }
+
+// function sumOfDivided(lst) {
+//     let arr = [];
+//     let maxNum = Math.max.apply(0, lst.map(Math.abs));
+//     let cantDivide = a => b => a % b !== 0;
+//     for(let i = 2, primes = []; i <= maxNum; i++){
+//         if(primes.every(cantDivide(i))) {
+//             primes.push(i);
+//             let sum = lst.reduce((sum, n) => cantDivide(n)(i) ? sum : sum + n, null)
+//             if(sum !== null){
+//                 arr.push([i, sum])
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+// function getMiddle(s){
+//     if(s.length % 2){
+//         return s[(s.length - 1) / 2]
+//     }else {
+//         return s[s.length / 2 - 1] + s[s.length / 2]
+//     }
+// }
+
+// function isRubyComing(list) {
+//     return list.some(el => el.language === 'Ruby');
+// }
+
+// function mergeArrays(arr1, arr2) {
+//     let arr = arr1.concat(arr2).sort((a, b) => a - b);
+//     let newArr = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] !== arr[i + 1]){
+//             newArr.push(arr[i])
+//         }
+//     }
+//     return newArr;
+// }
+
+// function progress(puzzle) {
+//
+//     const getSq = (x, y) => {
+//         const [xs, ys] = [x - x % 3, y - y % 3]
+//         return puzzle.slice(xs, xs + 3).reduce((c, v) => c.concat(v.slice(ys, ys + 3)), [])
+//     }
+//
+//     for (let x = 0; x < 9; x++) {
+//         for (let y = 0; y < 9; y++) {
+//             if(puzzle[x][y] == 0) {
+//                 const numbers = new Set(puzzle[x].concat(puzzle.map(x => x[y]), getSq(x, y)).filter(Boolean))
+//                 if (numbers.size === 8) return [x, y, [1, 2, 3, 4, 5, 6, 7, 8, 9].findIndex(n => !numbers.has(n)) + 1]
+//             }
+//         }
+//     }
+//     return
+// }
+
+// function validateUsr(username) {
+//     const res = /^[0-9a-z_]{4,16}$/.test(username)
+//     return res;
+// }
+
+// function whoIsPaying(name){
+//     return (name.length > 2) ? ([name, name.substr(0, 2)]) : ([name]);
+// }
+
+// function isAllPossibilities(x){
+//     if(x.length === 0){
+//         return false;
+//     }
+//     for(let i = 0; i < x.length; i++){
+//         if(!x.includes(i)){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function sortByArea(array) {
+//     let arr = [].concat(array);
+//     let area = x => Array.isArray(x) ? x[0] * x[1] : Math.PI * Math.pow(x, 2);
+//     return arr.sort((a, b) => area(a) - area(b))
+// }
+
+// function pillars(numPill, dist, width) {
+//     return numPill > 1 ? (numPill - 1) * dist * 100 + (numPill - 2) * width : 0
+// }
+
+// const solve = (x, y) => x / y
+
+// function getAverage(marks){
+//     let res = 0;
+//     for(let i = 0; i < marks.length; i++){
+//         res += marks[i];
+//     }
+//     return Math.floor(res / marks.length)
+// }
+
+// function calculateTip(amount, rating) {
+//     switch(rating.toLowerCase()){
+//         case 'terrible': return 0;
+//         case 'poor': return Math.ceil(amount * 0.05);
+//         case 'good': return Math.ceil(amount * 0.1);
+//         case 'great': return Math.ceil(amount * 0.15);
+//         case 'excellent': return Math.ceil(amount * 0.20);
+//         default: return 'Rating not recognised'
+//     }
+// }
+
+// function isVow(a){
+//     let arr = ['a', 'e', 'i', 'o', 'u'];
+//     for(let i = 0; i < a.length; i++){
+//         for(let j = 0; j < arr.length; j++){
+//             if(a[i] === arr[j].charCodeAt()){
+//                 a[i] = arr[j]
+//             }
+//         }
+//     }
+//     return a;
+// }
+
+// function alphabetWar(fight){
+//     let left = 0;
+//     let right = 0;
+//     let leftSide = {
+//         'w': 4,
+//         'p': 3,
+//         'b': 2,
+//         's': 1
+//     };
+//     let rightSide = {
+//         'm': 4,
+//         'q': 3,
+//         'd': 2,
+//         'z': 1
+//     }
+//     for(let i = 0; i < fight.length; i++){
+//         if(fight[i] in leftSide){
+//             left += leftSide[fight[i]];
+//         }
+//         if(fight[i] in rightSide){
+//             right += rightSide[fight[i]];
+//         }
+//     }
+//     if(left > right){
+//         return 'Left side wins!';
+//     }
+//     if(left < right){
+//         return 'Right side wins!';
+//     }
+//     return "Let's fight again!"
+// }
+
+// function mirrorImage(arr){
+//     for(let i =0; i < arr.length -1; i++){
+//         if(`${arr[i]}` === [...`${arr[i + 1]}`].reverse().join('')){
+//             return [arr[i], arr[i + 1]]
+//         }
+//     }
+//     return [-1, -1];
+// }
+
+// function processData(data){
+//     let res = 1;
+//     for(let i = 0; i < data.length; i++){
+//         res *= data[i][0] - data[i][1];
+//     }
+//     return res;
+// }
+
+// function cubeChecker(volume, side){
+//     if(side ** 3 === volume && volume > 0 && side > 0){
+//         return true;
+//     }
+//     return false;
+// };
+
+// function toIndustrial(time){
+//     if(typeof time === 'number'){
+//         let indHour = (time * 60 / 3600).toFixed(2);
+//         return Number(indHour);
+//     }
+//     if(typeof time === 'string'){
+//         let normHour = time.split(':');
+//         let indHour = ((Number(normHour[0]) * 60 + Number(normHour[1])) * 60 / 3600).toFixed(2)
+//         return Number(indHour)
+//     }
+// }
+//
+// function toNormal(time){
+//     let totalMin = time * 3600 / 60;
+//     let min = (totalMin.toFixed() % 60) < 10 ? `0${totalMin.toFixed() % 60}` : (totalMin.toFixed() % 60);
+//     let hours = Math.floor((totalMin.toFixed()) / 60);
+//     return `${hours}:${min}`;
+// }
+
+// function removeUrlAnchor(url){
+//     if(url.includes('#')){
+//         return url.slice(0, url.indexOf('#'))
+//     } else{
+//         return url;
+//     }
+// }
+
+// function remainder(n, m){
+//     if(n > m){
+//         return n % m;
+//     }else{
+//         return m % n;
+//     }
+// }
+
+// var websites = [];
+// let text = 'codewars';
+// for(let i = 0; i < 1000; i++){
+//     websites.push(text);
+// }
+
+// function gps(s, x) {
+//     if(x.length <= 1){
+//         return 0;
+//     }
+//     let arr = [];
+//     for(let i = 0; i < x.length - 1; i++){
+//         arr.push((x[i + 1] - x[i]) * 3600 / s)
+//     }
+//     return Math.max(...arr);
+// }
+
+// function defineSuit(card) {
+//     if(card.includes('♣')){
+//         return 'clubs'
+//     }
+//     if(card.includes('♦')){
+//         return 'diamonds'
+//     }
+//     if(card.includes('♥')){
+//         return 'hearts'
+//     }
+//     if(card.includes('♠')){
+//         return 'spades'
+//     }
+// }
+
+// function datingRange(age){
+//     let min = 0;
+//     let max = 0;
+//     if(age <= 14){
+//         min = Math.floor(age - 0.10 * age)
+//         max = Math.floor(age + 0.10 * age)
+//     }else {
+//         min = Math.floor(age/2 + 7)
+//         max = Math.floor((age - 7) * 2 )
+//     }
+//     return `${min}-${max}`
+// }
+
+// reverse=a=>a.map(a.pop,[...a])
+
+// function sameCase(a, b){
+//     if(a.toUpperCase() === a.toLowerCase() || b.toUpperCase() === b.toLowerCase()){
+//         return -1;
+//     } else if(a === a.toLowerCase() && b === b.toLowerCase() || a === a.toUpperCase() && b === b.toUpperCase()){
+//         return 1;
+//     }else{
+//         return 0;
+//     }
+// }
+
+// function isDigit(s) {
+//     return parseFloat(s) === Number(s) ? true : false;
+// }
+
+// function remove(string){
+//     return string.replace(/!/g, '') + '!';
+// }
+
+// function lovefunc(flower1, flower2){
+//     if(flower1 % 2 === 0 && flower2 % 2 !== 0 || flower1 % 2 !== 0 && flower2 % 2 === 0){
+//         return true;
+//     }
+//     return false;
+// }
+
+// function vertMirror(strng) {
+//     return strng.map(el => [...el].reverse().join(''));
+// }
+// function horMirror(strng) {
+//     return strng.reverse();
+// }
+// function oper(fct, s) {
+//     return fct(s.split('\n')).join('\n');
+// }
+
+// function distinct(a) {
+//     return a.filter((item,index)=>a.indexOf(item)===index)
+// }
+
+// function bump(x){
+//     let sum = 0;
+//     for(let i = 0; i < x.length; i++){
+//         if(x[i] === 'n'){
+//             sum ++
+//         }
+//     }
+//     if(sum > 15){
+//         return 'Car Dead'
+//     } else{
+//         return 'Woohoo!'
+//     }
+// }
+
+// function overTheRoad(address, n){
+//     return (n * 2 + 1) - address;
+// }
+
+// function pyramid(n) {
+//     let arr = [];
+//     for(let i = 1; i <= n; i++){
+//         arr.push(new Array(i).fill(1));
+//     }
+//     return arr;
+// }
+
+// class Ship {
+//     constructor(draft, crew) {
+//         this.draft = draft
+//         this.crew = crew
+//     }
+//
+//     isWorthIt(){
+//         return this.draft - 1.5 * this.crew > 20
+//     }
+//
+// }
+
+// function factorial(n){
+//     if(n < 0 || n > 12){
+//         throw new RangeError('Argument must be beetween 0 and 12')
+//     }
+//     return n === 0 ? 1 : factorial(n - 1) * n;
+// }
+
+// function reverseNumber(n) {
+//     let x = Math.abs(n).toString().split('').reverse().join('');
+//     return n < 0 ? -x: +x
+// }
+
+// function odds(values){
+//     return values.filter(a => a % 2 !== 0);
+// }
+
+// function declareWinner(fighter1, fighter2, firstAttacker) {
+//     let f1 = Math.ceil(fighter1.health / fighter2.damagePerAttack);
+//     let f2 =  Math.ceil(fighter2.health / fighter1.damagePerAttack);
+//     return f1 < f2 ? fighter2.name : f2 < f1 ? fighter1.name : firstAttacker
+// }
+
+// function totalLicks(env) {
+//     let lick = 252;
+//     let count = 0;
+//     let name = '';
+//     for(let i in env){
+//         lick += env[i];
+//         if(env[i] > count){
+//             count = env[i];
+//             name = i;
+//         }
+//     }
+//     if(name == ''){
+//         return `It took ${lick} licks to get to the tootsie roll center of a tootsie pop.`
+//     } else{
+//         return `It took ${lick} licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was ${name}.`
+//     }
+// }
+
+// function getSocks(name, socks) {
+//     socks.sort();
+//     if(name == 'Punky'){
+//         for(var i = 1; i < socks.length; i++){
+//             if(socks[i] !== socks[i - 1]){
+//                 return [socks[i - 1], socks[i]]
+//             }
+//         }
+//     }else{
+//         for(var i = 1; i < socks.length; i++){
+//             if(socks[i] == socks[i - 1]){
+//                 return [socks[i - 1], socks[i]]
+//             }
+//         }
+//     }
+//     return [];
+// }
+
+// function partlist(arr) {
+//     let res = [];
+//     for(let i = 1; i < arr.length; i++){
+//         let res1 = [];
+//         res1.push(arr.slice(0, i).join(' '));
+//         res1.push(arr.slice(i).join(' '));
+//         res.push(res1);
+//     }
+//     return res;
+// }
+
+// function evil(n) {
+//     let binary = n.toString(2);
+//     let sum = 0;
+//     for(let i = 0; i < binary.length; i++){
+//         sum += Number(binary[i])
+//     }
+//     return sum % 2 === 0 ? "It's Evil!" : "It's Odious!";
+// }
+
+// function averages(numbers) {
+//     let arr = [];
+//     if(!numbers){
+//         return arr;
+//     }
+//     for(let i = 1; i < numbers.length; i++){
+//         arr.push((numbers[i - 1] + numbers[i]) / 2)
+//     }
+//     return arr;
+// }
+
+// function eqSumPowdig(hMax, exp) {
+//     let res = [];
+//     if(hMax < 153){
+//         return res;
+//     }
+//     for(let i = 153; i <= hMax; i++){
+//         let hMaxi = i.toString();
+//         let sum = 0;
+//         for(let j = 0; j < hMaxi.length; j++){
+//             sum += Math.pow(parseInt(hMaxi[j]), exp)
+//         }
+//         if(sum == i){
+//             res.push(sum);
+//         }
+//     }
+//     return res;
+// }
+
+// function isLockNessMonster(s) {
+//     return s.includes("tree fiddy") || s.includes('3.50')
+// }
+
+// function wallpaper(l, w, h) {
+//     if(l === 0 || w === 0) return 'zero'
+//     let roomArea = 2 * (l + w)* h
+//     let roolArea = 0.52 * 10
+//     let rollsRequired = Math.ceil(roomArea / roolArea * 1.15)
+//     return numbers[rollsRequired]
+// }
+
+// function sortMyString(S) {
+//     let odd = '';
+//     let even = '';
+//     for(let i = 0; i < S.length; i++){
+//         if(i % 2 === 0){
+//             even += S[i];
+//         } else{
+//             odd += S[i];
+//         }
+//     }
+//     return even + ' ' + odd;
+// }
+
+// function arrayManip(array){
+//     for(let i = 0; i < array.length; i++){
+//         let number = array[i];
+//         let replacement = -1;
+//         for(let j = i; j < array.length; j++){
+//             let newReplacement = array[j];
+//             if(newReplacement > number && (replacement === -1 || replacement > newReplacement)){
+//                 replacement = newReplacement;
+//             }
+//         }
+//         array[i] = replacement;
+//     }
+//     return array;
+// }
+
+// function solve(arr) {
+//     let arr1 = [];
+//     let arr2 = arr.reverse();
+//     for(let i = 0; i < arr2.length; i++){
+//         if(arr1.indexOf(arr2[i]) === -1){
+//             arr1.push(arr2[i]);
+//         }
+//     }
+//     return arr1.reverse();
+// }
+
+// function splitAndMerge(string, separator) {
+//     let words = string.split(' ');
+//     let arr = [];
+//     let res = [];
+//     for(let i = 0; i < words.length; i++){
+//         arr.push(words[i].split('').join(separator))
+//     }
+//     res = arr.join(' ');
+//     return res;
+// }
+
+// function makeClass(...properties) {
+//     return function (...params){
+//         for(let i = 0; i < properties.length; i++){
+//             this[properties[i]] = params[i];
+//         }
+//     }
+// }
+
+// function oddOne(arr) {
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 !== 0){
+//             return i
+//         }
+//     }
+//     return -1
+//
+// }
+
+// function friends(n){
+//     if(n <= 2){
+//         return 0;
+//     } else{
+//         let counter = 0;
+//         while(n > 1){
+//             n = n / 2
+//             counter++
+//         }
+//         return counter - 1;
+//     }
+// }
+
+// var hotpo = function(n){
+//     if(n == 0){
+//         return 0;
+//     } for(let i = 0; i <= 100; i++){
+//         if(n == 1){
+//             return i;
+//         } else if(n % 2 == 0){
+//             n /= 2;
+//         } else{
+//             n = 3 * n + 1;
+//         }
+//     }
+//     return - 1;
+// }
+
+// function getRectangleRatio(n) {
+//     return (n + (n ** 2 + 4) ** .5) / 2;
+// }
+
+// function mystery() {
+//     let results = {
+//         sanity: 'Hello'
+//     };
+//     return results;
+// }
+
+// function stringClean(s){
+//     return s.replace(/[0-9]/g, '')
+// }
+
+// function howManyLightsabersDoYouOwn(name) {
+//     return name === 'Zach' ? 18 : 0;
+// }
+
+// var quote = function(fighter) {
+//     return fighter.toLowerCase() === 'conor mcgregor' ? "I'd like to take this chance to apologize.. To absolutely NOBODY!":"I am not impressed by your performance."
+// };
+// function generateShape(integer){
+//     return ("+".repeat(integer) + "\n").repeat(integer).trim()
+// }
+
+// const orderedCount = function (text) {
+//     return Array.from(new Set(text)).map(c=>[c, text.match(new RegExp(c, 'g')).length])
+// }
+
+// function solve(arr){
+//     let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+//     let final = []
+//     for(let i = 0; i<arr.length; i++){
+//         let count = 0;
+//         for(let j =0;j<arr[i].length; j++){
+//             if(arr[i][j].toLowerCase() == alphabet[j]){
+//                 count++
+//             }
+//         }
+//         final.push(count)
+//
+//     }
+//     return final
+// };
+
+// function cheapestQuote(newspapers) {
+//     let result = 0;
+//     let quantity = [40,20, 10, 5, 1]
+//     let price = [3.85, 1.93, 0.97,0.49, 0.10]
+//     while(newspapers>0){
+//         for(let i =0;i<quantity.length; i++){
+//             if(newspapers >= quantity[i]){
+//                 result += price[i]
+//                 newspapers -= quantity[i]
+//                 break;
+//             }
+//         }
+//     }
+//     return parseFloat(result.toFixed(2))
+// }
+//
+
+// function nearestSq(n){
+//     return Math.pow(Math.round(Math.sqrt(n)),2)
+// }
+
+
+// class God{
+//     /**
+//      * @returns Human[]
+//      */
+//     static create(){
+//         return [new Man, new Woman]
+//     }
+// }
+//
+// class Human{}
+//
+// class Man extends Human{}
+//
+// class Woman extends Human{}
+
+// function closeCompare(a, b, margin){
+//     return Math.abs(a-b) <=margin? 0: Math.sign(a-b)
+// }
+
+// function sumCubes(n){
+//     if(n == 1){
+//         return n**3
+//     }else{
+//         return n**3 + sumCubes(n-1)
+//     }
+// }
+
+// function maxRot(n){
+//     let max = n;
+//     let arr = String(n).split('');
+//     for(let i = 0; i < arr.length; i++){
+//         arr.push(arr.splice(i, 1));
+//         let num = Number(arr.join(''))
+//         if(num > max){
+//             max = num;
+//         }
+//     }
+//     return max;
+// }
+
+// function getFirstPython(list) {
+//     for(let i = 0; i < list.length; i++){
+//         if(list[i].language === 'Python'){
+//             return list[i].firstName + ', ' + list[i].country;
+//         }
+//     }
+//     return 'There will be no Python developers'
+// }
+
+// function nthSmallest(arr, pos){
+//     for(let i = 0; i < arr.length; i++){
+//         for(let j = i + 1; j < arr.length; j++){
+//             let current = arr[i];
+//             if(arr[j] < arr[i]){
+//                 arr[i] = arr[j];
+//                 arr[j] = current;
+//             }
+//         }
+//     }
+//     return arr[pos -1]
+// }
+
+// function getStatus(isBusy) {
+//     var msg = (isBusy ? "busy" : "available");
+//     return {
+//         status: msg
+//     }
+// }
+
+// function distancesFromAverage(arr){
+//     let average = arr.reduce((s, v) => s + v, 0) / arr.length;
+//     return arr.map(v => average - v).map(x => Math.round(x * 100) / 100)
+// }
+
+// function aliasGen(first, last){
+//     let firstStr = first[0].toUpperCase();
+//     let secStr = last[0].toUpperCase();
+//     if(firstName[firstStr] && surname[secStr]){
+//         return firstName[firstStr] + ' ' + surname[secStr];
 //     } else {
-//         return value * 5;
+//         return 'Your name must start with a letter from A - Z.'
 //     }
 // }
 
-// function findStrangeValue() {
-//     return 0 / 0;
-// }
-
-// function changeNumber(num){
-//     if(num > 0){
-//         return num + 8;
+// const str = 'Hello! JavaScript!';
+// let result = '';
+//
+// for (let i = 0; i < str.length; i++) {
+//     if (str[i] === '!') {
+//         result += '.';
 //     } else {
-//         return num
+//         result += str[i];
 //     }
 // }
+// console.log(result);
 
-// function numberSign(num){
-//     if(num > 0){
-//         return "plus"
-//     } else if (num === 0){
-//         return null
+// const str = '1 + 2 + 3 Hello. JavaScript...';
+// let result = '';
+//
+// const map = {
+//     '.': '!',
+//     1: 'one',
+//     2: 'two',
+//     3: 'three',
+//     ' ': '_',
+//     '+': '*'
+// }
+//
+// for (let i = 0; i < str.length; i++) {
+//     if (map[str[i]]) {
+//         result += map[str[i]];
 //     } else {
-//         return "minus"
+//         result += str[i];
+//     }
+// }
+// console.log(result);
+
+// const str = '5 + 4 - 7 = 2; 2 * 3 / 6 = 1';
+//
+// let result = '';
+//
+// const map = {
+//     0: 'zero',
+//     1: 'one',
+//     2: 'two',
+//     3: 'three',
+//     4: 'four',
+//     5: 'five',
+//     6: 'six',
+//     7:'seven',
+//     8: 'eight',
+//     9: 'nine',
+//     '-': 'minus',
+//     '+': 'plus',
+//     '*': 'multiply',
+//     '/': 'divide',
+//     '=': 'equals',
+//     ';': ' and',
+// }
+//
+// for (let i = 0; i < str.length; i++) {
+//     if (map[str[i]]) {
+//         result += map[str[i]];
+//     } else {
+//         result += str[i];
+//     }
+// }
+// console.log(result);
+
+// const str = 'Hello, world!';
+// let result = str.replace('world', 'JavaScript');
+// console.log(result);
+
+// const str = 'Hello! World!';
+// let result = str.replace('!', ';');
+// console.log(result);
+
+// function tapCodeTranslation(text) {
+//     let arr = [
+//         ['A', 'B', 'C\K', 'D', 'E'],
+//         ['F', 'G', 'H', 'I', 'J'],
+//         ['L', 'M', 'N', 'O', 'P'],
+//         ['Q', 'R', 'S', 'T', 'U'],
+//         ['V', 'W', 'X', 'Y', 'Z']
+//     ];
+//     let res = '';
+//     for(let i = 0; i < text.length; i++){
+//         let test = text[i].toUpperCase();
+//         if(test == 'K' || test == 'C'){
+//             test = 'C\K'
+//         }
+//         for(let j = 0; j < arr.length; j++){
+//             for(let c = 0; c < arr[j].length; c++){
+//                 if(arr[j][c] == test){
+//                     let dot = '.'.repeat(j + 1);
+//                     let pause = ' ';
+//                     let cDots = '.'.repeat(c + 1);
+//                     res += `${dot}${pause}${cDots} `
+//                 }
+//             }
+//         }
+//     }
+//     return res.trim();
+// }
+
+// function Hero (name) {
+//     this.name = name || 'Hero';
+//     this.position = '00';
+//     this.health = 100;
+//     this.damage = 5;
+//     this.experience = 0;
+// }
+
+// function multiplyAll(arr){
+//     return function(n){
+//         let res = [];
+//         if(arr.length == 0){
+//             return res;
+//         }
+//         for(let i = 0; i < arr.length; i++){
+//             res.push(arr[i] * n)
+//         }
+//         return res;
 //     }
 // }
 
-// function isNameStartsWithUpper(name){
-//     if(name[0] == name[0].toUpperCase()){
-//         return 'Welcome, sir';
-//     } else if(name[0] == name[0].toLowerCase()){
-//         return 'Howdy'
+// const flip=(d, a)=>{
+//     if(d === 'R'){
+//         return a.sort((a, b) => a - b);
+//     }
+//     if(d === 'L'){
+//         return a.sort((a, b) => b - a);
 //     }
 // }
+
+// function solve(a){
+//     let even = 0
+//     let odd = 0;
+//     for(let i = 0; i < a.length; i++){
+//         if(typeof(a[i]) === 'number'){
+//             if(a[i] % 2 === 0){
+//                 even += 1;
+//             } if(a[i] % 2 !== 0) {
+//                 odd += 1;
+//             }
+//         }
+//     }
+//     return even - odd;
+// };
+
+// function evaporator(content, evap_per_day, threshold){
+//     let day = 0;
+//     let total = 100;
+//     while(total > threshold){
+//         day += 1;
+//         total -= total * evap_per_day / 100;
+//     }
+//     return day;
+// }
+
+// function capitalize(s,arr){
+//     let newS = s.split('');
+//     for(let i = 0; i < arr.length; i++){
+//         if(newS[arr[i]]){
+//             newS[arr[i]] = newS[arr[i]].toUpperCase();
+//         }
+//     }
+//     newS = newS.join('');
+//     return newS;
+// };
+
+// function sakuraFall(v) {
+//     let distance = 5 * 80;
+//     let time = 0;
+//     if(v > 0){
+//         time = distance / v;
+//     }
+//     return time;
+// }
+
+// function mygcd(x,y){
+//     while(x !== y){
+//         if(x > y){
+//             x = x - y;
+//         }else{
+//             y = y - x;
+//         }
+//     }
+//     return x;
+// }
+
+// function seven(m) {
+//     let counter = 0;
+//     while(m > 99){
+//         m = Math.floor(m / 10) - (2 * (m % 10));
+//         counter++
+//     }
+//     return [m, counter]
+// }
+
+// function foldTo(distance) {
+//     let paper = 0.0001;
+//     let res = 0;
+//     while(distance > paper){
+//         paper *= 2;
+//         res++
+//     }
+//     return distance >= 0 ? res : null
+// }
+
+// function maxProduct(numbers, size){
+//     return numbers.sort((a, b) => b - a).slice(0, size).reduce((el, index) => el * index);
+// }
+
+// String.prototype.vowel = function() {
+//     return /^[aeiou]$/i.test(this);
+// };
+
+// const neutralise = (s1, s2) => {
+//     let res = '';
+//     for(let i = 0; i < s1.length; i++){
+//         if(s1[i] == s2[i]){
+//             res += s1[i];
+//         }else{
+//             res += '0';
+//         }
+//     }
+//     return res;
+// }
+
+// function hasUniqueChars(str){
+//     for(let i = 0; i < str.length; i++){
+//         if(str.lastIndexOf(str.charAt(i)) !== i){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function getASCII(c){
+//     return c.charCodeAt(0);
+// }
+
+// async function promiseHelloWorld() {
+//     return 'Hello World!';
+// }
+
+// function add(n) {
+//     return function (m){
+//         return n + m;
+//     }
+// }
+
+// function strong(n){
+//     if (n === 1) return 'STRONG!!!!'
+//     let arr = n.toString().split('').map(Number).reduce((a, b) => {
+//         let factorial = 1;
+//         for (let i = 1; i <= b; i++){
+//             factorial *= i;
+//         }
+//         return a + factorial;
+//     }, 0)
+//     return arr == n ? 'STRONG!!!!' : "Not Strong !!";
+// }
+
+// function evalObject(value){
+//     var result = 0;
+//     switch(value.operation){
+//         case'+': result = value.a + value.b
+//             break;
+//         case'-': result = value.a - value.b
+//             break;
+//         case'/': result = value.a / value.b
+//             break;
+//         case'*': result = value.a * value.b
+//             break;
+//         case'%': result = value.a % value.b
+//             break;
+//         case'^': result = Math.pow(value.a, value.b)
+//             break;
+//     }
+//     return result;
+// }
+
+// function menFromBoys(arr){
+//     let even = [];
+//     let odd = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0 && arr[i] !== arr[i + 1]){
+//             even.push(arr[i]);
+//         }else{
+//             odd.push(arr[i]);
+//         }
+//     }
+//     return [...new Set([...even.sort((a, b) => a - b), ...odd.sort((a, b) => b - a)])]
+// }
+
+// function sortGiftCode(code){
+//     return code.split('').sort().join('')
+// }
+
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     get info(){
+//         return `${this.name}s age is ${this.age}`
+//     }
+// }
+
+// const cannonsReady = (gunners) => {
+//     for(let i in gunners){
+//         if(gunners[i] == 'nay'){
+//             return 'Shiver me timbers!'
+//         }
+//     }
+//     return 'Fire!'
+// }
+
+// let obj = {
+//     hello: 'english',
+//     ciao: 'italian',
+//     salut: 'french',
+//     hallo: 'german',
+//     hola: 'spanish',
+//     ahoj: 'czech republic',
+//     czesc: 'polish'
+// }
+// function validateHello(greetings) {
+//     for(let i in obj){
+//         if(greetings.toLowerCase().includes(i)){
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+// function explode(s) {
+//     let str = '';
+//     for(let i = 0; i < s.length; i++){
+//         for(let j = s[i]; j > 0; j--){
+//             str += s[i];
+//         }
+//     }
+//     return str;
+// }
+
+// function vaporcode(string) {
+//     return string.toUpperCase().split(' ').join('').split('').join('  ')
+// }
+
+// function adjacentElementsProduct(array) {
+//     let arr = [];
+//     for(let i = 0; i < array.length -1; i++){
+//         arr.push(array[i] * array[i + 1])
+//     }
+//     return Math.max(...arr);
+// }
+
+// function maxTriSum(numbers){
+//     let arr1 = [];
+//     let arr2 = [];
+//     let a = Math.max(...numbers);
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] !== a){
+//             arr1.push(numbers[i]);
+//         }
+//     }
+//     let b = Math.max(...arr1);
+//     for(let i = 0; i < arr1.length; i++){
+//         if(arr1[i] !== b){
+//             arr2.push(arr1[i]);
+//         }
+//     }
+//     let c = Math.max(...arr2);
+//     return a + b + c;
+// }
+
+// const str = 'seven plus zero equal 7';
+// const arr = str.split(' ');
+// const first = arr[0];
+// const last = arr[arr.length - 1];
+// arr[0] = arr[arr.length - 1];
+// arr[arr.length - 1] = first;
+// const res = arr.join(' ');
+// console.log(res);
+
+// const str = 'Alex met Mary';
+// const arr = str.split(' ');
+// const first = arr[0];
+// const last = arr[arr.length - 1];
+// arr[0] = last;
+// arr[arr.length - 1] = first;
+// const res = arr.join(' ');
+// console.log(res);
+
+// const str = 'first could be last';
+// let start = '';
+// for(let i = 0; i < str.length; i++) {
+//     if(str[i] === ' ') break;
+//     else start += str[i];
+// }
+// console.log(start);
+
+// const str = 'first could be last';
+// let start = '';
+// let end = '';
+// let startSpaceIndex, endSpaceIndex;
+// let res = '';
+// for(let i = 0; i < str.length; i++) {
+//     if (str[i] === ' ') {
+//         startSpaceIndex = i;
+//         break;
+//     } else start += str[i];
+// }
+// for(let i = str.length-1; i >= 0; i--) {
+//     if(str[i] === ' ') {
+//         endSpaceIndex = i;
+//         break;
+//     } else end = str[i]  + end;
+// }
+// res = end;
+// for(let i = startSpaceIndex; i <= endSpaceIndex; i++) {
+//     res += str[i];
+// }
+// res += start;
+// console.log(res);
+
+// const str = 'sunset precedes the sunrise';
+// let first = '';
+// let last = '';
+// let firstSpaceIndex, lastSpaceIndex;
+// let res = '';
+// for(let i = 0; i < str.length; i++) {
+//     if (str[i] === ' ') {
+//         firstSpaceIndex = i;
+//         break;
+//     } else first += str[i];
+// }
+// for(let i = str.length-1; i >= 0; i--) {
+//     if(str[i] === ' ') {
+//         lastSpaceIndex = i;
+//         break;
+//     } else last = str[i]  + last;
+// }
+// res = last;
+// for(let i = firstSpaceIndex; i <= lastSpaceIndex; i++) {
+//     res += str[i];
+// }
+// res += first;
+// console.log(res);
+
+// const str = 'hello js pasv coding com';
+// //olleh sj vsap gnidoc moc
+// let res = '';
+// let word = '';
+//
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word)
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     return str.toUpperCase()
+// }
+// console.log(res);
+
+// const str = 'hello js pasv coding com';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word)
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++) {
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// function reverseAWord(str){
+//     return str.split('').reverse().join('')
+// }
+
+// function reverseExceptLast(str){
+//     if(str.length == 0){
+//         return '';
+//     }
+//     return str.slice(0, -1).split('').reverse().join('') + str.slice(-1);
+// }
+
+// function twoWords(words){
+//     let newStr = '';
+//     let chunk = [];
+//     for (let i = 0; i < words.length; i++) {
+//         if (words[i] === ' ') {
+//             newStr += chunk + ' ';
+//             chunk = '';
+//         } else {
+//             chunk = words[i] + chunk;
+//         }
+//     }
+//     newStr += chunk;
+//     return newStr;
+// }
+
+// function reverseStrExceptLast(str) {
+//     if (str.length === 0) {
+//         return '';
+//     }
+//     let words = str.slice(0, -1).split(' ');
+//     for (let i = 0; i < words.length; i++) {
+//         words[i] = words[i].split('').reverse().join('')
+//     }
+//     return words.join(' ') + str.slice(-1);
+// }
+
+// function reverseWithCases(str){
+//     let reversedStr = '';
+//     let length = str.length;
+//     for (let i = 0; i < length; i++) {
+//         if( str[i].toLowerCase() === str[i] ) {
+//             reversedStr += str[length-1-i].toLowerCase();
+//         } else {
+//             reversedStr += str[length-1-i].toUpperCase();
+//         }
+//     }
+//     return reversedStr;
+// }
+
+// function reverseAndPush(str){
+//     let newStr = str.split(' ');
+//     for(let i = 0; i < newStr.length; i++){
+//         newStr[i] = newStr[i].split('').reverse().join('');
+//     }
+//     return newStr
+// }
+
+// function reverseLocationOfWords(str){
+//     let newStr = str.split(' ');
+//     let newStr2 = str.split(' ');
+//     for(let i = 0; i < newStr.length; i++){
+//         newStr[i] = newStr2[newStr2.length -1 -i];
+//     }
+//     return newStr.join(' ');
+// }
+
+// function reverseOnlyLastWord(str){
+//     let newStr = str.split(' ');
+//     newStr[newStr.length -1] = newStr[newStr.length -1].split('').reverse().join('')
+//     return newStr.join(' ');
+// }
+
+// function decryptTheCode(str){
+//     let newStr = '';
+//     for(let i = str.length - 1; i >= 0; i--){
+//         if(str[i] >= 'a' && str[i] <= 'z' || str[i] >= 'A' && str[i] <= 'Z'){
+//             newStr += str[i];
+//         }
+//     }
+//     return newStr;
+// }
+
+// function reverseOnlyFirstWord(str){
+//     let newS = str.split(' ');
+//     newS[0] = newS[0].split('').reverse().join('');
+//     return newS.join(' ');
+// }
+
+// const str = '123 + 234 = 357';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word);
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// const str = 'bus star reward';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word);
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// const str = 'NadiA saw a doG';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word);
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// const str = 'LIVE stressed';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word);
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// const str = '12 pans 23 nuts';
+// let res = '';
+// let word = '';
+// for(let i = 0; i < str.length; i++){
+//     if(str[i] === ' '){
+//         res +=reverse(word);
+//         word = '';
+//         res += ' ';
+//     } else if(i === str.length - 1) {
+//         word += str[i];
+//         res +=reverse(word);
+//         word = '';
+//     } else {
+//         word += str[i];
+//     }
+// }
+// function reverse(str){
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         res = str[i] + res;
+//     }
+//     return res;
+// }
+// console.log(res);
+
+// const str = 'Hello 100 3 6 10 11 9 world';
+// const numbers = {
+//     0: 'zero',
+//     1: 'one',
+//     2: 'two',
+//     3: 'three',
+//     4: 'four',
+//     5: 'five',
+//     6: 'six',
+//     10: 'ten',
+//     11: 'eleven'
+// }
+//
+// let result = '';
+// let word = '';
+//
+// for(let i = 0; i < str.length; i ++){
+//     if(str[i] !== ' ') word += str[i];
+//
+//     if(str[i] === ' ' && word) {
+//         if(numbers[word]) result += numbers[word];
+//         else if(!Number.isNaN(+word)) result += 'unknown';
+//         else result += word;
+//         word = '';
+//     }
+//
+//     if(str[i] === ' ') result += ' ';
+//
+//     if(i === str.length - 1 && word) {
+//         if(numbers[word]) result += numbers[word];
+//         else if(!Number.isNaN(+word)) result += 'unknown';
+//         else result += word;
+//     }
+// }
+// console.log(result)
+
+// function numFromOneToFive(str){
+//     let obj = {
+//         '1': 'one',
+//         '2': 'two',
+//         '3': 'three',
+//         '4': 'four',
+//         '5': 'five'
+//     }
+//     let res = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] >= '1' && str[i] <= '5'){
+//             res += obj[str[i]] + ' '
+//         }
+//     }
+//     return res.trim();
+// }
+
+// function countOfNumbers(str){
+//     let obj = {
+//         'zero': 0,
+//         'one': 0,
+//         'two': 0
+//     }
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] == '0'){
+//             obj.zero++
+//         }
+//         else if(str[i] == '1'){
+//             obj.one++
+//         }
+//         else if(str[i] == '2'){
+//             obj.two++
+//         }
+//     }
+//     return obj;
+// }
+
+// function numToWordWithArray(str){
+//     let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+//     let newStr = '';
+//     for (let i = 0; i < str.length; i++) {
+//         newStr += arr[+str[i]];
+//         if(i !== str.length - 1) {
+//             newStr += ', ';
+//         }
+//     }
+//     return newStr;
+// }
+
+// function numbersAndWords(str){
+//     let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+//     let newStr = '';
+//     let res = ''
+//     for(let i of str){
+//         if(/[0-9]/.test(i)){
+//             newStr += i;
+//             res += arr[+newStr];
+//             newStr = '';
+//         } else{
+//             if(newStr !== ''){
+//                 res += arr[+newStr];
+//                 newStr = '';
+//             }
+//             res += i;
+//         }
+//     }
+//     if(newStr !== ''){
+//         res += arr[+newStr];
+//     }
+//     return res;
+// }
+
+// function phoneNumber(str){
+//     let arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+//     let newStr = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] !== ' ' && str[i] !== '(' && str[i] !== ')' && str[i] !== '-'){
+//             if(i !== str.length - 1) {
+//                 newStr += arr[str[i]] + '-';
+//             } else {
+//                 newStr += arr[str[i]];
+//             }
+//         }
+//     }
+//     return newStr;
+// }
+
+// function numToWord(arr){
+//     let objFrom10to19 = { 10: 'ten', 11: 'eleven', 12: 'twelve', 13: 'thirteen', 14: 'fourteen', 15: 'fifteen', 16: 'sixteen', 17: 'seventeen', 18: 'eighteen', 19: 'nineteen' }
+//     let res = arr.map(num => objFrom10to19[num])
+//     return res;
+// }
+
+// function numToWord(arr){
+//     const objFrom0to9 = { 0: 'zero', 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine' }
+//     const objFrom10to90 = { 1: 'ten', 2: 'twenty', 3: 'thirty', 4: 'forty', 5: 'fifty', 6: 'sixty', 7: 'seventy', 8:'eighty', 9: 'ninety' }
+//     let newArr = [];
+//
+//     for(let i = 0; i < arr.length; i++){
+//         const str = arr[i].toString();
+//         let word = '';
+//
+//         if(str.length === 1) word = objFrom0to9[str];
+//         else {
+//             if(str[1] === '0') word = objFrom10to90[str[0]];
+//             else {
+//                 const part1 = objFrom10to90[str[0]];
+//                 const part2 = objFrom0to9[str[1]];
+//                 word = part1 + '-' + part2;
+//             }
+//         }
+//         newArr.push(word);
+//     }
+//     return newArr;
+// }
+
+// function numToWord(arr){
+//     const objFrom1to9 = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine'}
+//     const objFrom20to90 = {2: 'twenty', 3: 'thirty', 4: 'forty', 5: 'fifty', 6: 'sixty', 7: 'seventy', 8:'eighty', 9: 'ninety'}
+//
+//     return arr.map(num => {
+//         if(num < 20){
+//             return objFrom1to9[num]
+//         } else{
+//             let ten = Math.floor(num / 10);
+//             let ones = num % 10;
+//             if(ones == 0){
+//                 return objFrom20to90[ten]
+//             } else{
+//                 return objFrom20to90[ten] + '-' + objFrom1to9[ones]
+//             }
+//         }
+//     })
+//
+// }
+
+// function numToWord(str){
+//     const objFrom0to9 = {0: 'zero', 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine'}
+//     const objFrom11to19 = {11: 'eleven', 12: 'twelve', 13: 'thirteen', 14: 'fourteen', 15: 'fifteen', 16: 'sixteen', 17: 'seventeen', 18: 'eighteen', 19: 'nineteen'}
+//     const objFrom10to90 = {1: 'ten', 2: 'twenty', 3: 'thirty', 4: 'forty', 5: 'fifty', 6: 'sixty', 7: 'seventy', 8: 'eighty', 9: 'ninety'}
+//
+//     let newArr = [];
+//     const arrayOfNums = str.split(', ');
+//
+//     for(let i = 0; i < arrayOfNums.length; i++){
+//
+//         const num = arrayOfNums[i]
+//         let word = '';
+//
+//         if(num.length === 1) word = objFrom0to9[num];
+//
+//         else if(num[1] === '0') word = objFrom10to90[num[0]];
+//         else if(num[0] === '1') word = objFrom11to19[num];
+//
+//         else {
+//             const part1 = objFrom10to90[num[0]];
+//             const part2 = objFrom0to9[num[1]];
+//             word = part1 + '-' + part2;
+//         }
+//         newArr.push(word)
+//     }
+//     return newArr.join(', ')
+// }
+
+// function arraySum(arr){
+//     if(arr.length === 0){
+//         return [];
+//     }
+//
+//     let resulLenght= Math.ceil(arr.length/2)
+//     let result = new Array(resulLenght)
+//     let resultIndex = 0
+//
+//
+//     for(let i = arr.length -1; i > 0; i -= 2){
+//         result[resultIndex] = arr[i] + arr[i - 1];
+//         resultIndex++
+//     }
+//     if(arr.length % 2 !== 0){
+//         result[resultIndex] = arr[0];
+//
+//     }
+//     return result.reverse();
+// }
+
+// function reverseArray(arr){
+//     return arr.reverse()
+// }
+
+// function getAPhrase(arr){
+//     let string = arr.filter(el => typeof el === 'string');
+//     return string.reverse().join(' ');
+// }
+
+// function reversedArray(arr){
+//     return arr.reverse();
+// }
+
+// function findNumbers(arr){
+//     let odd = [];
+//     let even = [];
+//     for(let i of arr){
+//         if(typeof i === 'number'){
+//             if(i % 2 === 0){
+//                 even.unshift(i)
+//             } else {
+//                 odd.unshift(i)
+//             }
+//         }
+//     }
+//     return [even, odd]
+// }
+
+// function getDifference(arr){
+//     if(arr.length == 0){
+//         return 0;
+//     }
+//     let lsNum = arr[arr.length -1]
+//     for(let i = 0; i < arr.length -1; i++){
+//         lsNum -= arr[i];
+//     }
+//     return lsNum;
+// }
+
+// test
+
+// function findNumbersAndDifference(arr){
+//     let lsNum = null;
+//     let diff = 0;
+//     for(let i = arr.length -1; i >= 0; i--){
+//         if(typeof arr[i] === 'number'){
+//             if(lsNum == null){
+//                 lsNum = arr[i]
+//             }else{
+//                 diff -= arr[i]
+//             }
+//         }
+//     }
+//     return diff + (lsNum || 0);
+// }
+
+// function stringLengthsDif(arr) {
+//     let difference = 0;
+//     let lastStr = 0;
+//
+//     for (let i = arr.length -1; i >= 0; i--) {
+//         if (typeof arr[i] === 'string') {
+//             if(lastStr === 0){
+//                 lastStr = arr[i].length;
+//             } else {
+//                 difference -= arr[i].length;
+//             }
+//         }
+//     }
+//     return difference += lastStr;
+// }
+
+// function getAPhrase(arr){
+//     let arr1 = [];
+//     for(let i = arr.length -1; i >= 0; i--){
+//         if(typeof arr[i] === 'string'){
+//             arr1.push(arr[i]);
+//         } else if (typeof arr[i] === 'boolean'){
+//             arr1.push('oops');
+//         }
+//     }
+//     return arr1.join(' ');
+// }
+
+// function countFees(arr){
+//     let overallApartments = 0;
+//     let sumOfPayments = 0;
+//     for(let i of arr){
+//         if(i.hasOwnProperty('apartment') && i.hasOwnProperty('condoFee')){
+//             overallApartments++;
+//             sumOfPayments += i.condoFee;
+//         }
+//     }
+//     return {overallApartments: overallApartments,
+//         sumOfPayments: sumOfPayments
+//     }
+// }
+
+// function sumOfNumbers(arr){
+//     let sum = 0;
+//     for(let i of arr){
+//         sum += i
+//     }
+//     return sum;
+// }
+
+// function sumOfPosAndNeg(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sumPos = 0;
+//     let sumNeg = 0;
+//     for(let i of arr){
+//         if(i < 0){
+//             sumNeg += i;
+//         } else if(i > 0){
+//             sumPos += i;
+//         }
+//     }
+//     return [sumPos, sumNeg]
+// }
+
+// function sumOfEvenAndOdd(arr){
+//     if(arr.length === 0){
+//         return 'Array has no numbers';
+//     }
+//     let sumOdd = 0;
+//     let sumEven = 0;
+//     for(let i of arr){
+//         if(i % 2 !== 0){
+//             sumOdd += i;
+//         } else {
+//             sumEven += i;
+//         }
+//     }
+//     return `Sum of even numbers is ${sumEven}, sum of odd numbers is ${sumOdd}`
+// }
+
+// function sumOfNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Empty array';
+//     }
+//     let sum = 0;
+//     for(let i of arr){
+//         if(typeof i === 'number'){
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr1, arr2, arr3){
+//     let sum = 0;
+//     let arr = arr1.concat(arr2, arr3);
+//     if(arr1.length === 0 && arr2.length === 0 && arr3.length === 0){
+//         return 'All arrays are empty';
+//     }
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number'){
+//             sum += arr[i];
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     for(let i of arr){
+//         if(typeof i !== 'boolean' && !isNaN(i)){
+//             sum += Number(i)
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     for(let i of arr){
+//         for(let j of i){
+//             sum += j;
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr){
+//     if(arr.length == 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     for(let i of arr){
+//         if(Array.isArray(i)){
+//             for(let j of i){
+//                 sum += j;
+//             }
+//         }else{
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr){
+//     let sum = 0;
+//     for(let i of arr){
+//         if((i > 99 && i < 999) || (i < -99 && i > -999)){
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+
+// function sumOfNumbers(arr){
+//     let sum = 0;
+//     for(let i of arr){
+//         if(String(i)[0] === '5'){
+//             sum += i;
+//         }
+//     }
+//     return sum;
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+// for(let i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i]);
+// }
+
+// function average(arr){
+//     if(arr.length === 0){
+//         return 'Empty array';
+//     }
+//     let sum = 0;
+//     for(let i of arr){
+//         sum += Math.round(i);
+//     }
+//     return Math.round(sum / arr.length);
+// }
+
+// function averageEven(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     let even = 0;
+//     for(let i of arr){
+//         if(i % 2 === 0){
+//             even++;
+//             sum += i;
+//         }
+//     }
+//     if(even === 0){
+//         return 0;
+//     } else {
+//         return Math.floor(sum / even);
+//     }
+// }
+
+// function averageOdd(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     let odd = 0;
+//     for(let i of arr){
+//         if(i % 2 !== 0){
+//             odd++;
+//             sum += i;
+//         }
+//     }
+//     if(odd === 0){
+//         return 0;
+//     }
+//     return Math.ceil(sum / arr.length);
+// }
+
+// function averageDes(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let sum = 0;
+//     let count = 0;
+//     for(let i of arr){
+//         if(!Number.isInteger(i)){
+//             sum += i;
+//             count++
+//         }
+//     }
+//     if(count === 0){
+//         return 0;
+//     }
+//     return +(sum / count).toFixed(2)
+// }
+
+// function average3Digit(arr) {
+//     if (arr.length === 0) return 'Array is empty';
+//     let sum = 0;
+//     let count = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] >= 100 && arr[i] <= 999 || arr[i] <= -100 && arr[i] >= -999) {
+//             sum += arr[i];
+//             count++;
+//         }
+//     }
+//     if(count === 0){
+//         return 0;
+//     }
+//     return Math.floor(sum / count);
+// }
+
+// function averageNegative(arr){
+//     let sum = 0;
+//     let count = 0;
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     for(let i of arr){
+//         if(i < 0){
+//             sum += i;
+//             count++
+//         }
+//     }
+//     if(count === 0){
+//         return 0;
+//     }
+//     return Math.round(sum / count);
+// }
+
+// function averageNegativeEven(arr){
+//     let sum = 0;
+//     let count = 0;
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     for(let i of arr){
+//         if(i % 2 === 0 && i < 0){
+//             sum += i;
+//             count++
+//         }
+//     }
+//     if(count === 0){
+//         return 0;
+//     }
+//     return Math.floor(sum / count);
+// }
+
+// function averageFromStartToMiddle(arr){
+//     if(arr.length === 0) return 'Array is empty';
+//     if (arr.length < 2) return 'Array is not long enough';
+//     let middle = Math.floor(arr.length / 2);
+//     let sum = 0;
+//     for (let i = 0; i < middle; i++) {
+//         sum += arr[i];
+//     }
+//     return Math.round(sum / middle);
+// }
+
+// function averageInSubArr(arr){
+//     let sum = 0;
+//     let count = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         for(let j = 0; j < arr[i].length; j++) {
+//             sum += arr[i][j];
+//             count++;
+//         }
+//     }
+//     if (count === 0) return 'Arrays are empty';
+//     return Math.round(sum / count);
+// }
+
+// function averageStringNum(arr){
+//     let sum = 0;
+//     let count = 0;
+//     let symbols = '0123456789';
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < symbols.length; j++) {
+//             if (arr[i] === symbols[j]) {
+//                 sum += +arr[i];
+//                 count++;
+//                 break;
+//             }
+//         }
+//     }
+//     if (count === 0) return 'There are no numbers';
+//     return Math.round(sum / count);
+// }
+
+// const arr = [1, '2', 3, NaN, 'four', 5, true];
+// let acc = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (!Number.isNaN(+arr[i])) acc += +arr[i];
+// }
+// console.log(acc);
+
+// const arr = [1, '2', 3, NaN, 'four', 5, true];
+// let acc = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === 'number' && !Number.isNaN(arr[i])) {
+//         acc += arr[i];
+//     }
+// }
+// console.log(acc);
+
+// const arr = [NaN, 3, false, -7, true, 'five', -5, '11'];
+// let acc = 0;
+// let count = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === 'number' && !Number.isNaN(arr[i])) {
+//         acc += arr[i];
+//         count++;
+//     }
+// }
+// console.log(acc / count);
+
+// function average(arr){
+//     let acc = 0;
+//     let count = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i] = +arr[i];
+//         if (typeof arr[i] === 'number' && !Number.isNaN(arr[i])) {
+//             acc += arr[i];
+//             count++;
+//         }
+//     }
+//     return acc / count;
+// }
+// console.log(average(['1', '2', '6']));
+
+// function findMinNumber(arr){
+//     if(arr.length == 0){
+//         return undefined;
+//     }
+//     let min = arr[0];
+//     for(let i of arr){
+//         if(i < min){
+//             min = i;
+//         }
+//     }
+//     return min;
+// }
+
+// function findMaxNumber(arr){
+//     if(arr.length === 0){
+//         return undefined;
+//     }
+//     let max = arr[0];
+//     for(let i of arr){
+//         if(i > max){
+//             max = i;
+//         }
+//     }
+//     return max;
+// }
+
+// function minAndMaxOfNegatives(arr){
+//     if(arr.length === 0){
+//         return [undefined, undefined];
+//     }
+//     let arr1 = [];
+//     for(let i of arr){
+//         if(i < 0){
+//             arr1.push(i);
+//         }
+//     }
+//     let min = arr1[0];
+//     let max = arr1[0];
+//     for(let i of arr1){
+//         if(i < min){
+//             min = i;
+//         } if(i > max){
+//             max = i;
+//         }
+//     }
+//     return [min, max];
+// }
+
+// function minAndMaxOfPositive(arr){
+//     if(arr.length === 0){
+//         return [undefined, undefined];
+//     }
+//     let arr1 = [];
+//     for(let i of arr){
+//         if(i > 0){
+//             arr1.push(+i);
+//         }
+//     }
+//     let min = arr1[0];
+//     let max = arr1[0];
+//     for(let i of arr1){
+//         if(i < min){
+//             min = i;
+//         } if(i > max){
+//             max = i;
+//         }
+//     }
+//     return [min, max];
+// }
+
+// function minAndMax(arr1, arr2){
+//     let arr = arr1.concat(arr2);
+//     if(arr.length === 0){
+//         return [undefined, undefined];
+//     }
+//     let min = arr[0];
+//     let max = arr[0];
+//     for(let i of arr){
+//         if(i < min){
+//             min = i;
+//         }
+//         if(i > max){
+//             max = i;
+//         }
+//     }
+//     return [min, max];
+// }
+
+// function minAndMax(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     if(arr.length === 1){
+//         return 'Array has only one element';
+//     }
+//     let middle = Math.floor(arr.length / 2);
+//     let min = arr[0];
+//     for(let i = 0; i < middle; i++){
+//         if(arr[i] < min){
+//             min = arr[i];
+//         }
+//     }
+//     let max = arr[middle];
+//     for(let i = middle; i < arr.length; i++){
+//         if(arr[i] > max){
+//             max = arr[i];
+//         }
+//     }
+//     return [min, max]
+// }
+
+// function minAndMax(arr1, arr2){
+//     let min = arr1[0];
+//     for(let i of arr1){
+//         if(i < min){
+//             min = i;
+//         }
+//     }
+//     let max = arr2[0];
+//     for(let i of arr2){
+//         if(i > max){
+//             max = i;
+//         }
+//     }
+//     return [min, max]
+// }
+
+// function minAndMax(arr1, arr2){
+//     let min1 = arr1[0];
+//     let max1 = arr1[0];
+//     for(let i of arr1){
+//         if(min1 > i){
+//             min1 = i;
+//         } if(max1 < i){
+//             max1 = i;
+//         }
+//     }
+//     let min2 = arr2[0];
+//     let max2 = arr2[0];
+//     for(let i of arr2){
+//         if(min2 > i){
+//             min2 = i;
+//         } if(max2 < i){
+//             max2 = i;
+//         }
+//     }
+//     if((max1 - min1) > (max2 - min2)){
+//         return [min1, max1];
+//     }
+//     else if((max1 - min1) < (max2 - min2)){
+//         return [min2, max2];
+//     } else {
+//         return [min1, max1, min2, max2];
+//     }
+// }
+
+// function minAndMax(arr1, arr2){
+//     let arr = arr1.concat(arr2);
+//     if(arr.length === 0){
+//         return null;
+//     }
+//     let max = arr[0];
+//     let min = arr[0];
+//     for(let i of arr){
+//         if(i < min){
+//             min = i;
+//         } if (i > max){
+//             max = i;
+//         }
+//     }
+//     return [min, max];
+// }
+
+// function minAndMax(arr1, arr2){
+//     let newArr = [...arr1, ...arr2];
+//     if(!newArr.length) return 'Both arrays are empty';
+//     let min = undefined;
+//     let max = undefined;
+//
+//     for(let i = 0; i < newArr.length; i++){
+//         if ( newArr[i] !== '' && !isNaN(newArr[i]) ) {
+//             if(min === undefined) {
+//                 min = +newArr[i];
+//                 max = +newArr[i];
+//             } else {
+//                 if(newArr[i] < min) min = +newArr[i];
+//                 if(newArr[i] > max) max = +newArr[i];
+//             }
+//         }
+//     }
+//     return [min, max];
+// }
+
+// const arr = [-1, -3, -5, 0];
+// let min = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//         min = arr[i];
+//     }
+// }
+// console.log(min);
+
+// const arr = [7.3, 7.5, 7.7, 7.4, 7];
+// let max = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
+
+// function minAndMax(arr){
+//     let min = arr[arr.length - 1];
+//     let max = arr[arr.length - 1];
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         if (arr[i] < min) min = arr[i];
+//         if (arr[i] > max) max = arr[i];
+//     }
+//     return [min, max];
+// }
+// console.log(minAndMax([-5, -13, 77, 91, 11]));
+
+// function secondMinNumber(arr){
+//     if(arr.length === 0) return false;
+//     let min = arr[0];
+//     let secondMin = arr[0];
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] < min){
+//             secondMin = min;
+//             min = arr[i];
+//         } else if((secondMin === min || arr[i] < secondMin) && arr[i] !== min){
+//             secondMin = arr[i];
+//         }
+//     }
+//
+//     if(secondMin === min) return 'There is no second min number';
+//     else return secondMin;
+// }
+
+// function secondMaxNumber(arr){
+//     if(arr.length === 0) return false;
+//     let max = arr[0];
+//     let secondMax = arr[0];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] > max){
+//             secondMax = max;
+//             max = arr[i];
+//         } else if((secondMax === max || arr[i] > secondMax) && arr[i] !== max){
+//             secondMax = arr[i];
+//         }
+//     }
+//
+//     if(secondMax === max) return 'There is no second max number';
+//     else return secondMax;
+// }
+
+// function secondMinNumber(arr){
+//     if( arr.length === 0 ) return 'Array is empty';
+//     let min = arr[0];
+//     let secondMin = arr[0];
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] < min) min = arr[i];
+//     }
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if((secondMin === min || arr[i] < secondMin) && arr[i] !== min) secondMin = arr[i];
+//     }
+//
+//     if( secondMin === min ) return 'There is no second min number';
+//     else return secondMin;
+// }
+
+// function secondMaxNumber(arr){
+//     if( arr.length === 0 ) return 'Array is empty';
+//     let max = arr[0];
+//     let secondMax = arr[0];
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] > max) max = arr[i];
+//     }
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if((secondMax === max || arr[i] > secondMax) && arr[i] !== max) secondMax = arr[i];
+//     }
+//
+//     if( secondMax === max ) return 'There is no second max number';
+//     else return secondMax;
+// }
+
+// function secondMinPositive(arr){
+//     if(arr.length == 0) return 'Array is empty';
+//     let min = Infinity
+//     let secondMin = Infinity;
+//
+//     for(let i = 0; i < arr.length; i++){
+//
+//         if(arr[i] > 0){
+//             if(arr[i] < min) {
+//                 secondMin = min;
+//                 min = arr[i]
+//             } else if(arr[i] < secondMin && arr[i] !== min){
+//                 secondMin = arr[i]
+//             }
+//         }
+//
+//     }
+//
+//     if(min === Infinity) return 'There is no positive numbers';
+//     if(secondMin === Infinity) return 'There is no second min positive number';
+//     return secondMin;
+// }
+
+// function secondMaxNegative(arr){
+//     if(arr.length == 0) return 'Array is empty';
+//     let max = -Infinity
+//     let secondMax = -Infinity;
+//
+//     for(let i = 0; i < arr.length; i++){
+//
+//         if(arr[i] < 0){
+//             if(arr[i] > max) {
+//                 secondMax = max;
+//                 max = arr[i]
+//             } else if(arr[i] > secondMax && arr[i] !== max){
+//                 secondMax = arr[i]
+//             }
+//         }
+//     }
+//
+//     if(max === -Infinity) return 'There is no negative numbers';
+//     if(secondMax === -Infinity) return 'There is no second max negative number';
+//     return secondMax;
+// }
+
