@@ -747,3 +747,20 @@
 //     return arr1;
 // }
 
+// const arr = [1, 2, 3, NaN];
+//
+// let acc = 0;
+//
+// for(let i = 0; i < arr.length; i++) {
+//     if(typeof arr[i] === 'number') acc += arr[i];
+// }
+// console.log(acc)
+
+// const arr = [1, 2, '4', NaN, 'hello', undefined, null, -3];
+//
+// let acc = 0;
+//
+// for(let i = 0; i < arr.length; i++) {
+//     if(!Number.isNaN(+arr[i])) acc += +arr[i];
+// }
+// console.log(acc)
