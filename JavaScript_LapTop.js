@@ -764,3 +764,100 @@
 //     if(!Number.isNaN(+arr[i])) acc += +arr[i];
 // }
 // console.log(acc)
+
+// function secondMinEvenNumber(arr){
+//     let minEven = Infinity;
+//     let secondMinEven = Infinity;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0){
+//             if(arr[i] < minEven){
+//                 secondMinEven = minEven;
+//                 minEven = arr[i];
+//             } else if(arr[i] < secondMinEven && arr[i] !== minEven){
+//                 secondMinEven = arr[i];
+//             }
+//         }
+//     }
+//     if(secondMinEven === Infinity){
+//         return false
+//     } else {
+//         return secondMinEven;
+//     }
+// }
+
+// function secondMaxOddNumber(arr){
+//     let maxOdd = -Infinity;
+//     let secondMaxOdd = -Infinity;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 !== 0){
+//             if(arr[i] > maxOdd){
+//                 secondMaxOdd = maxOdd;
+//                 maxOdd = arr[i];
+//             } else if(arr[i] > secondMaxOdd && arr[i] !== maxOdd){
+//                 secondMaxOdd = arr[i];
+//             }
+//         }
+//     }
+//     if(secondMaxOdd === -Infinity){
+//         return false
+//     } else {
+//         return secondMaxOdd;
+//     }
+// }
+
+// function secondMinNumber(arr){
+//     if(arr.length === 0 || arr[0].length === 0) return 'There are no numbers';
+//     let min = Infinity;
+//     let secondMin = Infinity;
+//
+//     for(let i = 0; i < arr[0].length; i++){
+//         if(+arr[0][i] < min) min = +arr[0][i];
+//     }
+//     for(let i = 0; i < arr[0].length; i++){
+//         if((secondMin === min || +arr[0][i] < secondMin) && +arr[0][i] !== min) secondMin = +arr[0][i];
+//     }
+//
+//     if(secondMin === Infinity) return 'There is no second min number';
+//     else return secondMin
+// }
+
+// function secondMinNumber(arr){
+//     if(arr.length === 0 || arr[0].length === 0) return 'There are no numbers';
+//     let min = +arr[0][0];
+//     let secondMin = +arr[0][0];
+//
+//     for(let i = 0; i < arr[0].length; i++){
+//         if(+arr[0][i] < min) min = +arr[0][i];
+//     }
+//     for(let i = 0; i < arr[0].length; i++){
+//         if((secondMin === min || +arr[0][i] < secondMin) && +arr[0][i] !== min) secondMin = +arr[0][i];
+//     }
+//
+//     if(secondMin === min) return 'There is no second min number';
+//     else return secondMin
+// }
+
+// function firstAndSecondMax(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let max = 0;
+//     let maxSecond = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].length > max){
+//             max = arr[i].length;
+//         }
+//     }
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].length > maxSecond && arr[i].length < max){
+//             maxSecond = arr[i].length;
+//         }
+//     }
+//     if(maxSecond === 0){
+//         if(max === 0 || arr.every(el => el.length === max)){
+//             return 'Strings are equal';
+//         }
+//     }
+//     return [max, maxSecond];
+// }
+
