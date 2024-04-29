@@ -879,3 +879,261 @@
 //     console.log(arr[i]);
 // }
 
+// const arr = [-2, -1, 0, 1, 2]
+// let firstMin = arr[0];
+// let secondMin = arr[0];
+// for(let i = 1; i < arr.length; i++){
+//     if(arr[i] < firstMin){
+//         secondMin = firstMin;
+//         firstMin = arr[i];
+//     }else if(arr[i] < secondMin && arr[i] > firstMin){
+//         secondMin = arr[i];
+//     }else if(firstMin === secondMin){
+//         secondMin = arr[i];
+//     }
+// }
+// console.log([firstMin, secondMin])
+
+// const arr = [-2, -1, 0, 1, 2];
+// let firstMax = arr[0];
+// let secondMax = arr[0];
+// for(let i = 1; i < arr.length; i++){
+//     if(arr[i] > firstMax) {
+//         secondMax = firstMax;
+//         firstMax = arr[i];
+//     } else if(arr[i] > secondMax && arr[i] < firstMax){
+//         secondMax = arr[i];
+//     } else if(firstMax === secondMax){
+//         secondMax = arr[i];
+//     }
+// }
+// console.log([firstMax, secondMax]);
+
+// function secondMinAndMax(arr){
+//     let result = '';
+//     let firstMin = arr[0];
+//     let secondMin = arr[0];
+//     let firstMax = arr[0];
+//     let secondMax = arr[0];
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] < firstMin) {
+//             secondMin = firstMin;
+//             firstMin = arr[i];
+//         } else if(arr[i] < secondMin && arr[i] > firstMin){
+//             secondMin = arr[i];
+//         } else if(firstMin === secondMin){
+//             secondMin = arr[i];
+//         }
+//         if(arr[i] > firstMax) {
+//             secondMax = firstMax;
+//             firstMax = arr[i];
+//         } else if(arr[i] > secondMax && arr[i] < firstMax){
+//             secondMax = arr[i];
+//         } else if(firstMax === secondMax){
+//             secondMax = arr[i];
+//         }
+//     }
+//
+//     result = `Second Min: ${secondMin}, Second Max: ${secondMax}`
+//
+//     return result;
+// }
+//
+// console.log(secondMinAndMax([-2, -1, 0, 1, 2, 3, 4]));
+
+// const arr = [-2, -1, 0, 1, 2]
+// let firstMin = arr[0];
+// let secondMin = arr[0];
+// let firstMin2 = arr[arr.length - 1];
+// let secondMin2 = arr[arr.length - 1];
+//
+// for(let i = 1; i < arr.length; i++){
+//     if(arr[i] < firstMin){
+//         secondMin = firstMin;
+//         firstMin = arr[i];
+//     }else if(arr[i] < secondMin && arr[i] > firstMin){
+//         secondMin = arr[i];
+//     }else if(firstMin === secondMin){
+//         secondMin = arr[i];
+//     }
+// }
+//
+// for(let i = arr.length - 2; i >= 0; i--){
+//     if(arr[i] < firstMin2){
+//         secondMin2 = firstMin2;
+//         firstMin2 = arr[i];
+//     }else if(arr[i] < secondMin2 && arr[i] > firstMin2){
+//         secondMin2 = arr[i];
+//     }else if(firstMin2 === secondMin2){
+//         secondMin2 = arr[i];
+//     }
+// }
+// console.log(secondMin === secondMin2)
+
+// function secondMinAndMax(arr){
+//     let result = '';
+//     let firstMin = arr[0];
+//     let secondMin = arr[0];
+//     let firstMax = arr[0];
+//     let secondMax = arr[0];
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] < firstMin) {
+//             secondMin = firstMin;
+//             firstMin = arr[i];
+//         } else if(arr[i] < secondMin && arr[i] > firstMin){
+//             secondMin = arr[i];
+//         } else if(firstMin === secondMin){
+//             secondMin = arr[i];
+//         }
+//         if(arr[i] > firstMax) {
+//             secondMax = firstMax;
+//             firstMax = arr[i];
+//         } else if(arr[i] > secondMax && arr[i] < firstMax){
+//             secondMax = arr[i];
+//         } else if(firstMax === secondMax){
+//             secondMax = arr[i];
+//         }
+//     }
+//
+//     result = `Second Min: ${secondMin}, Second Max: ${secondMax}`
+//
+//     return result;
+// }
+//
+// console.log(secondMinAndMax([17, -18, 17.1, -18.1, 17.4, -18.3]));
+
+// function secondMinAndMax(arr){
+//     let result = '';
+//     let firstMin = arr[0];
+//     let secondMin = arr[0];
+//     let firstMax = arr[0];
+//     let secondMax = arr[0];
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] < firstMin) {
+//             secondMin = firstMin;
+//             firstMin = arr[i];
+//         } else if(arr[i] < secondMin && arr[i] > firstMin){
+//             secondMin = arr[i];
+//         } else if(firstMin === secondMin){
+//             secondMin = arr[i];
+//         }
+//         if(arr[i] > firstMax) {
+//             secondMax = firstMax;
+//             firstMax = arr[i];
+//         } else if(arr[i] > secondMax && arr[i] < firstMax){
+//             secondMax = arr[i];
+//         } else if(firstMax === secondMax){
+//             secondMax = arr[i];
+//         }
+//     }
+//
+//     result = `Second Min: ${secondMin}, Second Max: ${secondMax}`
+//
+//     return result;
+// }
+//
+// console.log(secondMinAndMax([237]));
+
+// function doubleNumber(arr){
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number'){
+//             arr[i] *= 2;
+//         }
+//     }
+//     return arr;
+// }
+
+// function doubleAndReturnNumbers(arr){
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number'){
+//             arr1.push(arr[i] * 2);
+//         }
+//     }
+//     return arr1;
+// }
+
+// function doubleAndReturnNumbers(arr){
+//     let arr1 = [];
+//     for(let i of arr){
+//         if(typeof i === 'number'){
+//             arr1.push(i * 2);
+//         }
+//     }
+//     return arr1;
+// }
+
+// function doubleAllNumbers(arr){
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number' || !isNaN(arr[i])){
+//             arr[i] *= 2;
+//         }
+//     }
+//     return arr;
+// }
+
+// function allNumbers(arr){
+//     for(let i = 0; i < arr.length; i++){
+//         if(Array.isArray(arr[i])){
+//             for(let j = 0; j < arr[i].length; j++){
+//                 if(typeof arr[i][j] === 'number' || !isNaN(arr[i][j])){
+//                     arr[i][j] *= 2;
+//                 }
+//             }
+//         } else{
+//             if(typeof arr[i] === 'number' || !isNaN(arr[i])){
+//                 arr[i] *= 2;
+//             }}
+//     }
+//     return arr;
+// }
+
+// function doubleNumbers(arr){
+//     let str = '';
+//     for(let i of arr){
+//         if(i === 'number' || !isNaN(i)){
+//             str += i * 2 + ' ';
+//         }
+//     }
+//     return str.trim();
+// }
+
+// function doubleNumbers(arr){
+//     let obj = {};
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number' && !obj.hasOwnProperty(arr[i])){
+//             obj[arr[i]] = arr[i] * 2;
+//         }
+//     }
+//     return obj;
+// }
+
+// function doubleNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let even = [];
+//     let odd = [];
+//     let flag = false;
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] === ''){
+//             continue;
+//         }
+//         let number = Number(arr[i]);
+//         if(!isNaN(number)){
+//             flag = true;
+//             if(number % 2 === 0){
+//                 even.push(number * 2)
+//             } else {
+//                 odd.push(number * 2)
+//             }
+//         }
+//     }
+//     if(!flag){
+//         return `Array doesn't contain numbers`;
+//     }
+//     return [even.join(' '), odd.join(' ')];
+// }
