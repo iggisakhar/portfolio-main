@@ -1137,3 +1137,186 @@
 //     }
 //     return [even.join(' '), odd.join(' ')];
 // }
+
+// function doubleNumbers(arr) {
+//     const newArr = [];
+//     const numbers = '0123456789';
+//     for (let i = 0; i < arr.length; i++) {
+//         let str = '';
+//         for(let j = 0; j < arr[i].length; j++) {
+//             if (numbers.includes(arr[i][j])) str += +arr[i][j] * 2;
+//             else str +=arr[i][j]
+//         }
+//         newArr.push(str)
+//     }
+//     return newArr;
+// }
+
+// function doubleNumbers(arr){
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         let str = '';
+//         for(let j = 0; j < arr[i].length; j++){
+//             if(!isNaN(parseInt(arr[i][j]))){
+//                 str += parseInt(arr[i][j]) * 2
+//             }
+//         }
+//         if(str !== ''){
+//             arr1.push(str);
+//         }
+//     }
+//     return arr1;
+// }
+
+// function doubleOddNumbers(arr){
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number' && arr[i] % 2 !== 0){
+//             arr[i] *= 2;
+//         }
+//     }
+//     return arr;
+// }
+
+// const arr = ['2 + 3', 5, NaN, -2, true, 1.3];
+// for(let i = 0; i < arr.length; i++) {
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i]))
+//         console.log(arr[i]);
+// }
+
+// const arr = [NaN, 15, 'one', 201, 7, -13];
+// for(let i = 0; i < arr.length; i++) {
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i]))
+//         console.log(i);
+// }
+
+// const arr = [2, -4, 8];
+// for(let i = arr.length - 1; i >= 0; i--) {
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i]))
+//         arr[i] = arr[i] * 2;
+// }
+// console.log(arr);
+
+// const arr = [10, 'two', 25, -5, NaN, 11, 0];
+// for(let i = 0; i < arr.length; i += 2) {
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i]))
+//         arr[i] *= 2;
+// }
+// console.log(arr);
+
+// const arr = [20, 50, 3, 100];
+// for(let i = 0; i < arr.length; i++) {
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i]))
+//         arr[i] *= -2;
+// }
+// console.log(arr);
+
+// const arr = [-2, 0, -3, 100, Infinity];
+// for(let i = 0; i < arr.length; i++) {
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i]))
+//         arr[i] *= -2;
+// }
+// console.log(arr);
+
+// const arr = [NaN, -2, 0, -3, Infinity];
+// for(let i = 0; i < arr.length; i++) {
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i]) && arr[i] !== Infinity)
+//         arr[i] *= -2;
+// }
+// console.log(arr);
+
+// function onlyNumbers(arr){
+//     if(arr.length === 0){
+//         return [];
+//     }
+//     let arr1 = [];
+//     for(let i of arr){
+//         if(typeof i === 'number'){
+//             arr1.push(i);
+//         }
+//     }
+//     return arr1;
+// }
+
+// function onlyNumbers(arr){
+//     let arr1 = [];
+//     for(let i of arr){
+//         if(typeof i === 'number' && !isNaN(i)){
+//             arr1.push(i)
+//         } else if(typeof i === 'string' && !isNaN(i) && i.trim() !== ''){
+//             arr1.push(Number(i));
+//         }
+//     }
+//     return arr1;
+// }
+
+// function onlyNumbers(arr){
+//     let arr1 = [];
+//     if(arr.length === 0){
+//         return [];
+//     }
+//     for(let i of arr){
+//         if(typeof i === 'number' && i >= 0 && i <= 9){
+//             arr1.push(i);
+//         }
+//     }
+//     return arr1;
+// }
+
+// function onlyNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let str = '';
+//     for(let i of arr){
+//         if(typeof i === 'number' && !isNaN(i)){
+//             str += i;
+//         }
+//     }
+//     if(str.length === 0){
+//         return 'No numbers in array';
+//     }
+//     return [str];
+// }
+
+// function onlyNumbers(arr){
+//     let str = '';
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number'){
+//             str += arr[i];
+//         }
+//     }
+//     for(let j = 0; j < str.length; j++){
+//         if(Number(str[j]) >= 0 && Number(str[j]) <= 9){
+//             arr1.push(Number(str[j]))
+//         }
+//     }
+//     if(arr1.length === 0){
+//         return false;
+//     }
+//     return arr1;
+// }
+
+// function only1And3LengthDigits(arr){
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] >= 0 && arr[i] <= 9){
+//             arr1.unshift(arr[i]);
+//         } else if(String(arr[i]).length === 3){
+//             arr1.push(arr[i])
+//         }
+//     }
+//     if(arr1.length === 0){
+//         return false;
+//     }
+//     return arr1;
+// }
+
+// function fixTheNumbers(arr){
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] % 1 !== 0){
+//             arr1.push(Math.round(arr[i]))
+//         }}
+//     return arr1.length > 0 ? arr1 : false;
+// }
