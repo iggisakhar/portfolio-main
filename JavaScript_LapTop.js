@@ -1320,3 +1320,16 @@
 //         }}
 //     return arr1.length > 0 ? arr1 : false;
 // }
+
+// const arr = [4, 1, 2, 6, 8, 3];
+//
+// for (let i = arr.length -1; i >= 0; i--){
+//     console.log(arr[i])
+// }
+
+// const arr = [4, 1, 2, 6, 8];
+//
+// for (let i = 0; i < arr.length; i++){
+//     console.log(arr[arr.length - i - 1])
+// }
+
