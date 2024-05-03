@@ -1333,3 +1333,18 @@
 //     console.log(arr[arr.length - i - 1])
 // }
 
+// const arr = [1, 2, 3, 4, 5];
+//
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);    // 1, 2, 3, 4, 5
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+//
+// let acc = 0;
+//
+// for(let i = 0; i < arr.length; i++) {
+//     acc += arr[i];
+// }
+// console.log(acc)
+
