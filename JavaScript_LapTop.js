@@ -1384,3 +1384,26 @@
 // }
 // console.log(acc)
 
+// const arr = [1, 2, 3, 4, 5];
+//
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+//
+// let acc = 0;
+//
+// for(let i = 0; i < arr.length; i++) {
+//     acc += arr[i];
+// }
+// console.log(acc)
+
+// const arr = [1, 2, 3, 4, 5, 'string', '10'];
+//
+// let acc = 0;
+//
+// for(let i = 0; i < arr.length; i++) {
+//     acc += arr[i];
+// }
+// console.log(acc)
