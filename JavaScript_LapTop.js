@@ -1434,3 +1434,4 @@
 //     if(!Number.isNaN(+arr[i])) acc += +arr[i];
 // }
 // console.log(acc)
+
