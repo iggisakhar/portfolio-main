@@ -1477,3 +1477,137 @@
 //     }
 // }
 // console.log(min);
+
+// function onlyPositiveAndEven(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     for(let i of arr){
+//         if(i > 0 && i % 2 === 0){
+//             arr1.push(i);
+//         }
+//     }
+//     if(arr1.length === 0){
+//         return 'No matches found'
+//     }
+//     return arr1;
+// }
+
+// function onlyNegativeAndOdd(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     for(let i of arr){
+//         if(i < 0 && i % 2 !== 0 && typeof i === 'number'){
+//             arr1.push(i);
+//         }
+//     }
+//     if(arr1.length === 0){
+//         return 'No matches found'
+//     }
+//     return arr1;
+// }
+
+// function findArrayWithNumbers(arr){
+//     let arr1 = [];
+//     let index = -1;
+//     for(let i = 0; i < arr.length; i++){
+//         let flag = true;
+//         for(let j = 0; j < arr[i].length; j++){
+//             if(typeof arr[i][j] !== 'number'){
+//                 flag = false;
+//                 break;
+//             }
+//         }
+//         if(flag && arr[i].length > 0){
+//             index = i;
+//             for(let k = 0; k < arr[i].length; k++){
+//                 arr1.push(arr[i][k] * 3);
+//             }
+//             break;
+//         }
+//     }
+//     if(index !== -1){
+//         return [`Array with numbers by index ${index}`, arr1]
+//     }
+//     return [];
+// }
+
+// const arr = [7.3, (-10 / 0), 'plus', 6, NaN, 2, (11 * 2), null, -5, (2 / 0)];
+// const numbers = [];
+// for(let i = 0; i < arr.length; i++){
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i])){
+//         numbers.push(arr[i]);
+//     }
+// }
+// console.log(numbers)
+
+// const arr = [(5 - 7), NaN, 77, (-35 / 0), (2 * 7), (9 / 0)];
+// const numbers = [];
+// for(let i = 0; i < arr.length; i++){
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i]) && arr[i] !== Infinity && arr[i] !== -Infinity){
+//         numbers.push(arr[i]);
+//     }
+// }
+// console.log(numbers)
+
+// const arr = [(51 + 7), NaN, 17, (-35 / 0), (2 * 7), '3 * 2', (9 / 0)];
+// const numbers = [];
+// for(let i = arr.length - 1; i >= 0 ; i--){
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i]) && arr[i] !== Infinity && arr[i] !== -Infinity){
+//         numbers.push(arr[i]);
+//     }
+// }
+// console.log(numbers)
+
+// const arr = [(-10 / 0), 11, 'PASV', NaN, ((-1) ** 2), -5];
+// for(let i = 0; i < arr.length; i++){
+//     if(typeof arr[i] !== 'number' || isNaN(arr[i])){
+//         arr.splice(i, 1);
+//         i--;
+//     }
+// }
+// console.log(arr)
+
+// const arr = [(10 / 0), 11, 'PASV', NaN, ((-1) ** 2), -5];
+// for(let i = arr.length - 1; i >= 0; i--){
+//     if(typeof arr[i] !== 'number' || isNaN(arr[i]) || arr[i] === Infinity || arr[i] === -Infinity){
+//         arr.splice(i, 1);
+//     }
+// }
+// console.log(arr)
+
+// const arr = [9, (3 * 'a'), 12, (7 / 0), 73];
+// for(let i = arr.length - 1; i >= 0; i-=2){
+//     if(typeof arr[i] !== 'number' || isNaN(arr[i]) || arr[i] === Infinity || arr[i] === -Infinity){
+//         arr.splice(i, 1);
+//     }
+// }
+// console.log(arr)
+
+// function deleteDuplicate(arr){
+//     const newArr = [];
+//     const obj = {};
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!obj[arr[i]]) {
+//             obj[arr[i]] = 1;
+//             newArr.push(arr[i]);
+//         }
+//     }
+//     return newArr;
+// }
+
+// function deleteDuplicate(array){
+//     for (let i = 0; i < array.length; i++){
+//         for (let j = i + 1; j < array.length; j++){
+//             if (array[i] === array[j]){
+//                 array.splice(j, 1);
+//                 j--;
+//             }
+//         }
+//     }
+//     return array;
+// }
+
