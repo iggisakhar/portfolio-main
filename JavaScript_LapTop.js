@@ -1611,3 +1611,144 @@
 //     return array;
 // }
 
+// function deleteDuplicateNumber(arr){
+//     let arr1 = [];
+//     let res = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number'){
+//             if(!arr1.includes(arr[i])){
+//                 arr1.push(arr[i])
+//                 res.push(arr[i])
+//             }
+//         } else {
+//             res.push(arr[i])
+//         }
+//     }
+//     return res;
+// }
+
+// function deleteDuplicates(arr){
+//     let result = [];
+//     for(let i = 0; i<arr.length; i++){
+//         if(arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i]) || result.indexOf(arr[i]) === -1 ){
+//             result.push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
+
+// function noDuplicates(arr){
+//     let seen = {};
+//     for(let i = 0; i <arr.length; i++){
+//         let  item = arr[i];
+//         if(seen[item]){
+//             arr.splice(i, 1);
+//             i--;
+//         }  else {
+//             seen[item] = true;
+//         }
+//     }
+//     return arr;
+// }
+
+// function deleteDuplicates(arr1, arr2){
+//     let obj = {};
+//     for(let i =0; i<arr2.length; i++){
+//         obj[arr2[i]] = true;
+//     }
+//     let result  = arr1.filter(item => !obj[item]);
+//     return [result, arr2];
+// }
+
+// function cleanDuplicates(arr){
+//     let seen = {};
+//     let result = [];
+//
+//     for(let i = 0; i < arr.length; i++){
+//         if(!seen[arr[i]]){
+//             seen[arr[i]] = true;
+//             result.push(arr[i])
+//         }
+//     }
+//     return result;
+// }
+
+// function duplicatedObjects(arr){
+//     let result = [];
+//     for(let i = 0; i< arr.length; i++){
+//         let isUnique = true;
+//         for(let j = 0; j< result.length; j++){
+//             if(JSON.stringify(arr[i]) === JSON.stringify(result[j])){
+//                 isUnique = false;
+//                 break;
+//             }
+//         }
+//         if(isUnique){
+//             result.push(arr[i])
+//         }
+//     }
+//     return result;
+// }
+
+// function onlyUnique(arr){
+//     let arr1 = [];
+//     let obj = {};
+//     for(let i of arr){
+//         if(!obj[i.id]){
+//             obj[i.id] = true;
+//             arr1.push(i);
+//         }
+//     }
+//     return arr1;
+// }
+
+// function deleteDuplicate(arr){
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(!arr1.includes(arr[i])){
+//             arr1.push(arr[i])
+//         }
+//     }
+//     return arr1;
+// }
+
+// function isPalindrome(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let str = arr.join(' ').toLowerCase();
+//     for(let i = 0; i < Math.floor(str.length / 2); i++){
+//         if(str[i] !== str[str.length - 1 - i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function isPalindrome(arr) {
+//     if (arr.length === 0) return 'Array is empty';
+//     for (let i = 0; i < arr.length / 2; i++) {
+//         if (arr[i] !== arr[arr.length - 1 - i]) return false;
+//     }
+//     return true;
+// }
+
+// function isPalindrome(arr) {
+//     if (arr.length === 0) return 'Array is empty';
+//     const obj = {};
+//     for (let i = 0; i < arr.length; i++) {
+//         obj[arr[i]] = checkPalindrome(arr[i]);
+//     }
+//     return obj;
+// }
+//
+// function checkPalindrome(str) {
+//     let middle = str.length / 2;
+//     for (let i = 0; i < middle; i++) {
+//         if (str[i] !== str[str.length - 1 - i]) {
+//             return 'not a palindrome';
+//         }
+//     }
+//     return 'palindrome';
+// }
+
