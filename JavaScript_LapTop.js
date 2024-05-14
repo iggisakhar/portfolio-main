@@ -1752,3 +1752,151 @@
 //     return 'palindrome';
 // }
 
+// function isPalindrome(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let obj = {};
+//     arr.forEach(el => {
+//         obj[el] = checkPalindrome(el);
+//     })
+//     return obj;
+// }
+//
+// function checkPalindrome(num){
+//     let strNum = num.toString().replace('.', '');
+//     return strNum === strNum.split('').reverse().join('') ? 'palindrome' : 'not a palindrome';
+// }
+
+// function isPalindrome(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let obj = {};
+//     arr.forEach(el => {
+//         obj[el] = checkPalindrome(el);
+//     })
+//     return obj;
+// }
+//
+// function checkPalindrome(num){
+//     let strNum = num.toString().replace('.', '');
+//     let reverse = strNum.split('').reverse().join('');
+//     if(strNum === reverse){
+//         return 'palindrome';
+//     }else{
+//         return 'not a palindrome';
+//     }
+// }
+
+// function isPalindrome(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let obj = {};
+//     arr.forEach(el => {
+//         let key = typeof el === 'string' ? el.trim() : el.toString();
+//         obj[key] = isElPalindrome(el)
+//     })
+//     return obj;
+// }
+//
+// function isElPalindrome(el){
+//     let clean = el;
+//     if(typeof el === 'string'){
+//         clean = el.trim().replace(/_/g, '').toLowerCase();
+//         if(clean === ''){
+//             return 'String is empty';
+//         }
+//     } else {
+//         clean = el.toString();
+//     }
+//     let reverse = clean.split('').reverse().join('');
+//     return clean === reverse ? 'palindrome' : 'not a palindrome';
+// }
+
+// function isAnagram(arr1, arr2){
+//     if(arr1.length === 0 && arr2.length === 0){
+//         return 'Arrays are empty';
+//     }
+//     if(arr1.length === 0 || arr2.length === 0){
+//         return false;
+//     }
+//     let str1 = arr1.join('').toLowerCase().split('').sort().join('');
+//     let str2 = arr2.join('').toLowerCase().split('').sort().join('');
+//     return str1 === str2;
+// }
+
+// function isAnagram(arr, str) {
+//     if (arr.length === 0 && str.length === 0) return 'Array and string are empty';
+//     if (arr.length === 0 || str.length === 0) return 'Array or string are empty';
+//
+//     const obj = {};
+//     str = str.trim().toLowerCase();
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i] = arr[i].trim().toLowerCase();
+//         obj[arr[i]] = anagram(arr[i], str);
+//     }
+//
+//     return obj;
+// }
+// function anagram(str1, str2) {
+//
+//     if (str1.length !== str2.length) return `not anagram for the ${str2}`;
+//
+//     for (let i = 0; i < str1.length; i++) {
+//         for (let j = 0; j < str2.length; j++) {
+//             if (str1[i] === str2[j]) break;
+//             if (str2.length - 1 === j) return `not anagram for the ${str2}`;
+//         }
+//     }
+//     return `anagram for the ${str2}`;
+// }
+
+// function wordToLettersObj(str) {
+//     let obj = {};
+//     for (let i=0; i<str.length; i++)
+//         if ( !obj[str[i]] ) obj[str[i]] = 1;
+//         else obj[str[i]]++;
+//     return obj;
+// }
+//
+// function isAnagram(obj1, obj2) {
+//     const keys1 = Object.keys(obj1);
+//     const keys2 = Object.keys(obj2);
+//
+//     if (keys1.length !== keys2.length) {
+//         return false;
+//     }
+//
+//     for (let i=0; i<keys1.length; i++) {
+//         const key = keys1[i];
+//         if (obj1[key] !== obj2[key]) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+//
+// function findAllAnagrams(arr, word) {
+//     const result = [];
+//     if (!word || arr.lenght === 0) {
+//         return result;
+//     }
+//
+//     const objWord = wordToLettersObj(word);
+//     for (let i=0; i<arr.length; i++) {
+//         if ( !arr[i] || arr[i].length !== word.length) {
+//             continue;
+//         }
+//         let obj = wordToLettersObj(arr[i]);
+//
+//         if (isAnagram(objWord, obj)) {
+//             result.push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
+
+
