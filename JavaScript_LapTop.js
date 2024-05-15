@@ -1899,4 +1899,161 @@
 //     return result;
 // }
 
+// function areAllArraysAnagrams(arr){
+//     if(arr.length < 2){
+//         return false;
+//     }
+//     let strFirst = arr[0].slice().sort().join(',');
+//     for(let i = 1; i < arr.length; i++){
+//         let sortStr = arr[i].slice().sort().join(',');
+//         if(sortStr !== strFirst){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
 
+// function isPalindromeOrAnagram(arr1, arr2){
+//     if(arr1.length === 0 && arr2.length === 0){
+//         return 'none';
+//     }
+//     let reverse = arr1.join('');
+//     let reverse1 = arr1.slice().reverse().join('');
+//     if(reverse === reverse1){
+//         return 'palindrome'
+//     }
+//     let sort1 = arr1.slice().sort().join('');
+//     let sort2 = arr2.slice().sort().join('');
+//     if(sort1 === sort2){
+//         return 'anagram'
+//     }
+//     return 'none'
+// }
+
+// function isArraySymmetrical(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     for(let i = 0; i < arr.length / 2; i++){
+//         if(arr[i] !== arr[arr.length - 1 - i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function isArraySymmetrical(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     for(let i = 0; i < arr.length / 2; i++){
+//         if(arr[i].toLowerCase() !== arr[arr.length - 1 - i].toLowerCase()){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function isArraySymmetrical(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number'){
+//             arr1.push(arr[i]);
+//         }
+//     }
+//     if(arr1.length === 0){
+//         return 'There are no numbers in the array';
+//     }
+//     for(let i = 0; i < arr1.length / 2; i++){
+//         if(arr1[i] !== arr1[arr1.length -1 -i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function keepOnlyPairs(arr){
+//     if(arr.length === 0) return 'Array is empty';
+//     const obj = {};
+//
+//     for(let i = 0; i < arr.length; i++){
+//         if ( !obj[arr[i]] ) obj[arr[i]] = 1;
+//
+//         else obj[arr[i]]++;
+//     }
+//
+//     for(let i = 0; i < arr.length; i++){
+//         if ( obj[arr[i]] === 1 ) {
+//             arr.splice(i, 1)
+//             i--;
+//         }
+//     }
+//     return arr;
+// }
+//
+
+// function areTwoArraysSymmetrical(arr1, arr2){
+//     if(arr1.length !== arr2.length){
+//         return false;
+//     }
+//     for(let i = 0; i < arr1.length; i++){
+//         if(arr1[i] !== arr2[arr2.length -1 -i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function isArraySymmetrical(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let str = arr.join('').toLowerCase();
+//     for(let i = 0; i < str.length / 2; i++){
+//         if(str[i] !== str[str.length -1 -i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function isArraySymmetrical(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let str = arr.join('').toLowerCase();
+//     let emptyStr = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] !== ' '){
+//             emptyStr += str[i];
+//         }
+//     }
+//     for(let i = 0; i < emptyStr.length / 2; i++){
+//         if(emptyStr[i] !== emptyStr[emptyStr.length -1 -i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function isArraySymmetrical(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let str = arr.join('').toLowerCase();
+//     let emptyStr = '';
+//     for(let i = 0; i < str.length; i++){
+//         if(!/\d/.test(str[i])){
+//             emptyStr += str[i];
+//         }
+//     }
+//     for(let i = 0; i < emptyStr.length / 2; i++){
+//         if(emptyStr[i] !== emptyStr[emptyStr.length -1 -i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
