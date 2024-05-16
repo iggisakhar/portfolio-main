@@ -2057,3 +2057,111 @@
 //     }
 //     return true;
 // }
+
+// function isArraySymmetrical(arr) {
+//     if(arr.length === 0) return 'Array is empty';
+//     const str = arr.join(' ').toLowerCase()
+//     const reversed = arr.slice().reverse().join(' ').toLowerCase()
+//     return reversed === str
+// }
+
+// function isArraySymmetrical(arr){
+//     let arr1 = [];
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'boolean' || typeof arr[i] === 'string'){
+//             arr1.push(arr[i].toString().toLowerCase());
+//         }
+//     }
+//     if(arr1.length === 0){
+//         return 'There are no boolean or string in the array';
+//     }
+//     for(let i = 0; i < arr1.length / 2; i++){
+//         if(arr1[i] !== arr1[arr1.length -1 -i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function reverseArray(arr){
+//     let arr1 = [];
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     for(let i = 0; i < arr.length; i++){
+//         arr1.unshift(arr[i])
+//     }
+//     return arr1;
+// }
+
+// function reverseArray(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     for(let i = arr.length -1; i >= 0; i--){
+//         arr1.push(arr[i]);
+//     }
+//     return arr1;
+// }
+
+// function reverseArray(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = arr.reverse();
+//     return arr1;
+// }
+
+// function reverseInnerArrays(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         let innerArr = [];
+//         for(let j = arr[i].length -1; j >= 0; j--){
+//             innerArr.push(arr[i][j]);
+//         }
+//         arr1.push(innerArr);
+//     }
+//     return arr1;
+// }
+
+// function reverseInnerArraysWithNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         let innerArr = [];
+//         for(let j = arr[i].length - 1; j >= 0; j--){
+//             if(typeof arr[i][j] === 'number'){
+//                 innerArr.push(arr[i][j]);
+//             } else {
+//                 innerArr.unshift(arr[i][j])
+//             }
+//         }
+//         arr1.push(innerArr)
+//     }
+//     return arr1;
+// }
+
+// function reverseArrayOfStrings(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     for(let i = arr.length -1; i >= 0; i--){
+//         let str = '';
+//         for(let j = arr[i].length -1; j >= 0; j--){
+//             str += arr[i][j];
+//         }
+//         arr1.push(str);
+//     }
+//     return arr1;
+// }
+
