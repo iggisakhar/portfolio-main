@@ -2165,3 +2165,110 @@
 //     return arr1;
 // }
 
+// function reverseArrayOfStrings(arr){
+//     if(arr.length ===0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(/\d/.test(arr[i])){
+//             arr1.push(arr[i]);
+//         } else {
+//             let str = '';
+//             for(let j = arr[i].length -1; j >= 0; j--){
+//                 str += arr[i][j];
+//             }
+//             arr1.push(str);
+//         }
+//     }
+//     return arr1;
+// }
+
+// function reverseArrays(arr1, arr2){
+//     if(arr1.length === 0 && arr2.length === 0){
+//         return 'Both arrays are empty';
+//     }
+//     let arr = arr1.concat(arr2);
+//     let array = [];
+//     for(let i =0; i < arr.length; i++){
+//         array.unshift(arr[i]);
+//     }
+//     return array;
+// }
+
+// function reverseOnlyMarkedArr(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].includes('reverse')){
+//             arr[i].reverse();
+//         }
+//         arr1.push(arr[i]);
+//     }
+//     return arr1;
+// }
+//
+// console.log(reverseOnlyMarkedArr([[1, 2, 3], [4, 5,'reverse', 6, 7], [8, 9, 10, 11, 12]]))
+
+// function reverseOnlyMiddle(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let str = '';
+//     let middle = Math.floor(arr.length / 2);
+//     let midEl = arr[middle];
+//     for(let i = midEl.length -1; i >= 0; i--){
+//         str += midEl[i];
+//     }
+//     let res = [...arr];
+//     res[middle] = str;
+//     return res;
+// }
+
+// function findMax(arr) {
+//     let max = arr[0];
+//     for(let i = 1; i < arr.length; i++) {
+//         if(arr[i] > max) {
+//             max = arr[i]
+//         }
+//     }
+//     return max;
+// }
+// console.log(findMax([1, 2, 3, 4]));
+
+// function splitArrayInTwo(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let arr1 = [];
+//     let arr2 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(i < Math.round(arr.length / 2)){
+//             arr1.push(arr[i]);
+//         } else {
+//             arr2.push(arr[i]);
+//         }
+//     }
+//     return [arr1, arr2];
+// }
+
+// function splitPosNeg(arr){
+//     if(arr.length === 0){
+//         return [];
+//     }
+//     let arr1 = [];
+//     let arr2 = [];
+//     for(let i of arr){
+//         if(i > 0){
+//             arr1.push(i);
+//         } else if(i < 0){
+//             arr2.push(i)
+//         }
+//     }
+//     if(arr1.length === 0 && arr2.length === 0){
+//         return [];
+//     }
+//     return [arr1, arr2];
+// }
