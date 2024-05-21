@@ -2272,3 +2272,32 @@
 //     }
 //     return [arr1, arr2];
 // }
+
+// const arr = ['4', 0, NaN, 'a', 2, 6];
+// let acc = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (!Number.isNaN(+arr[i])) acc += +arr[i]
+// }
+// console.log(acc);
+
+// const arr = ['4', 0, NaN, 1, 'a', 2, 6];
+// let acc = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === "number" && !Number.isNaN(arr[i])) {
+//         acc += +arr[i]
+//     }
+// }
+// console.log(acc);
+
+// const arr = ['4', 0, NaN, 1, 'a', 2, 6];
+//
+// let acc = 0;
+// let count = 0;
+//
+// for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === "number" && !Number.isNaN(arr[i])) {
+//         acc += arr[i]
+//         count++
+//     }
+// }
+// console.log(acc / count);
