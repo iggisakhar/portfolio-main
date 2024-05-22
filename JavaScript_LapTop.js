@@ -2333,3 +2333,33 @@
 // }
 // console.log(minAndMax([5, -25, 14, 69, 100, 46, 0]));
 // console.log(minAndMax([-5, -53, -6, -7, -120, -3, -48]));
+
+// const arr = [5, 31, -5, 0, 14, 55, -25]
+//
+// let min = arr[0];
+// let secondMin = arr[0];
+//
+// for(let i = 1; i < arr.length; i++){
+//     if(arr[i] < min) {
+//         secondMin = min;
+//         min = arr[i];
+//     } else if(arr[i] < secondMin && arr[i] > min){
+//         secondMin = arr[i];
+//     }
+// }
+// console.log(min, secondMin)
+
+// const arr = [-25, 10, -5]
+//
+// let min = arr[0];
+// let secondMin = arr[0];
+//
+// for(let i = 1; i < arr.length; i++){
+//     if(arr[i] < min) {
+//         secondMin = min;
+//         min = arr[i];
+//     } else if(arr[i] < secondMin && arr[i] > min){
+//         secondMin = arr[i];
+//     }
+// }
+// console.log(min, secondMin)
