@@ -2301,3 +2301,35 @@
 //     }
 // }
 // console.log(acc / count);
+
+// const arr = [5, 15, 0, 9, 45, -8]
+// let min = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//         min = arr[i];
+//     }
+// }
+// console.log(min);
+
+// const arr = [5, 15, 0, 9, 45, -8]
+// let max = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
+
+// function minAndMax(arr){
+//     let min = arr[0];
+//     let max = arr[0];
+//
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] < min) min = arr[i];
+//         if (arr[i] > max) max = arr[i];
+//     }
+//
+//     return [min, max];
+// }
+// console.log(minAndMax([5, -25, 14, 69, 100, 46, 0]));
+// console.log(minAndMax([-5, -53, -6, -7, -120, -3, -48]));
