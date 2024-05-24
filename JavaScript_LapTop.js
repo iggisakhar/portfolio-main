@@ -2380,3 +2380,37 @@
 //     }
 // }
 // console.log(max, secondMax);
+
+// function secondMinAndMax(arr){
+//     let result = {};
+//     let min = arr[0];
+//     let secondMin = arr[0];
+//     let max = arr[0];
+//     let secondMax = arr[0];
+//
+//     for(let i = 1; i < arr.length; i++){
+//         if(arr[i] < min) {
+//             secondMin = min;
+//             min = arr[i];
+//         } else if(arr[i] < secondMin && arr[i] > min){
+//             secondMin = arr[i];
+//         } else if(min === secondMin){
+//             secondMin = arr[i];
+//         }
+//
+//         if(arr[i] > max) {
+//             secondMax = max;
+//             max = arr[i];
+//         } else if(arr[i] > secondMax && arr[i] < max){
+//             secondMax = arr[i];
+//         } else if(max === secondMax){
+//             secondMax = arr[i];
+//         }
+//     }
+//
+//     result.secondMin = secondMin;
+//     result.secondMax = secondMax;
+//
+//     return result;
+// }
+// console.log(secondMinAndMax([8, 0, -9, 1, 4, 6, -7]));
