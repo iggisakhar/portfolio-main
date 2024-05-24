@@ -2363,3 +2363,20 @@
 //     }
 // }
 // console.log(min, secondMin)
+
+// const arr = [999, 5, -9, -55, 42, 19, 88]
+//
+// let max = arr[0];
+// let secondMax = arr[0];
+//
+// for(let i = 1; i < arr.length; i++){
+//     if(arr[i] > max) {
+//         secondMax = max;
+//         max = arr[i];
+//     } else if(arr[i] > secondMax && arr[i] < max){
+//         secondMax = arr[i];
+//     } else if(max === secondMax){
+//         secondMax = arr[i];
+//     }
+// }
+// console.log(max, secondMax);
