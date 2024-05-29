@@ -2414,3 +2414,10 @@
 //     return result;
 // }
 // console.log(secondMinAndMax([8, 0, -9, 1, 4, 6, -7]));
+
+// const arr = [76, '#2', 'ewq', 6, NaN, '',  2, 1, null, -5, [], 87]
+//
+// for(let i = 0; i < arr.length; i++) {
+//     if(typeof arr[i] === 'number')
+//         console.log(arr[i])
+// }
