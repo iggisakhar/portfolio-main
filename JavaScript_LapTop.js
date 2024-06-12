@@ -2462,3 +2462,53 @@
 // }
 // console.log(numbers)
 
+// function splitArrayByIndex(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     if(arr.length === 1){
+//         return 'Array has only one element';
+//     }
+//     let even = [];
+//     let odd = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(i % 2 === 0){
+//             even.push(arr[i]);
+//         } else {
+//             odd.push(arr[i]);
+//         }
+//     }
+//     return [even, odd];
+// }
+
+// function splitArrayByType(arr){
+//     if(arr.length === 0){
+//         return [];
+//     }
+//     let number = [];
+//     let string = [];
+//     let boolean = [];
+//     for(let i=0; i<arr.length; i++){
+//         if(typeof arr[i] === 'number'){
+//             number.push(arr[i]);
+//         }
+//         else if(typeof arr[i] === 'string'){
+//             string.push(arr[i]);
+//         }
+//         else if(typeof arr[i] === 'boolean'){
+//             boolean.push(arr[i]);
+//         }
+//     }
+//     let result = []
+//     if(number.length > 0){
+//         result.push(number)
+//     }
+//     if(string.length > 0){
+//         result.push(string)
+//     }
+//     if(boolean.length > 0){
+//         result.push(boolean)
+//     }
+//
+//     return result
+// }
