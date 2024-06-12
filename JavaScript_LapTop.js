@@ -2512,3 +2512,109 @@
 //
 //     return result
 // }
+
+// function splitArrayByNElements(arr, n) {
+//     if (n === 0 || arr.length === 0) {
+//         return arr;
+//     }
+//     if (n >= arr.length) {
+//         return [arr];
+//     }
+//     let result = [];
+//
+//     for (let i = 0; i < arr.length; i += n) {
+//         let subArr = [];
+//         for (let j = 0; j < n; j++) {
+//             if (i + j < arr.length)
+//                 subArr.push(arr[i+j]);
+//         }
+//         result.push(subArr);
+//     }
+//
+//     return result;
+// }
+
+// function splitArray(numbers, num1, num2){
+//     if(numbers.length === 0){
+//         return [];
+//     }
+//     let arr1 = [];
+//     let arr2 = [];
+//     let arr3 = [];
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] <= num1){
+//             arr1.push(numbers[i]);
+//         } else if(numbers[i] > num1 && numbers[i] <= num2){
+//             arr2.push(numbers[i]);
+//         } else {
+//             arr3.push(numbers[i]);
+//         }
+//     }
+//     return [arr1, arr2, arr3]
+// }
+
+// function splitStringArray(arr, num){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     if(num <= 0){
+//         return arr;
+//     }
+//     let arr1 = [];
+//     let arr2 = [];
+//     let arr3 = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].length === num){
+//             arr2.push(arr[i]);
+//         } else if(arr[i].length < num && arr[i].length > 0){
+//             arr1.push(arr[i]);
+//         } else if(arr[i].length > num){
+//             arr3.push(arr[i])
+//         }
+//     }
+//     return [arr1, arr2, arr3]
+// }
+
+// function objectOfArrays(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//
+//     let obj = {
+//         decimal: [],
+//         integer: [],
+//         negative: [],
+//         nonNegative: [],
+//         even: [],
+//         odd: [],
+//         multipleOf3: []
+//     };
+//
+//     for(let i = 0; i < arr.length; i++){
+//         const num = arr[i];
+//
+//         if(!Number.isInteger(num)){
+//             obj.decimal.push(num);
+//         } else {
+//             obj.integer.push(num);
+//
+//             if(num % 2 === 0){
+//                 obj.even.push(num);
+//             } else {
+//                 obj.odd.push(num);
+//             }
+//
+//             if(num % 3 === 0){
+//                 obj.multipleOf3.push(num);
+//             }
+//         }
+//
+//         if(num < 0){
+//             obj.negative.push(num);
+//         } else {
+//             obj.nonNegative.push(num);
+//         }
+//     }
+//
+//     return obj;
+// }
