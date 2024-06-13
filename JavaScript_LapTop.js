@@ -2618,3 +2618,83 @@
 //
 //     return obj;
 // }
+
+// function splitByEqualSum(arr){
+//     let leftSum = 0;
+//     let rightSum = 0;
+//     let index = -1;
+//
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         leftSum += arr[i];
+//         rightSum = 0;
+//         for (let j = i + 1; j < arr.length; j++){
+//             rightSum += arr[j];
+//         }
+//
+//         if (leftSum === rightSum) {
+//             index = i;
+//             break;
+//         }
+//     }
+//
+//     if (index === -1) {
+//         return [];
+//     }
+//
+//     const result = [[], []];
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i <= index) {
+//             result[0].push(arr[i]);
+//         } else {
+//             result[1].push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
+
+// function splitByVowels(arr) {
+//     if(arr.length === 0) {
+//         return 'Array is empty';
+//     }
+//
+//     const vowels = 'aeiou';
+//     let result = {};
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         let count = 0;
+//         const word = arr[i].toLowerCase();
+//         for (let j = 0; j < word.length; j++){
+//             if (vowels.includes(word[j])) {
+//                 count += 1;
+//             }
+//         }
+//
+//         if (count === 0) continue;
+//
+//         if (!result[count]) {
+//             result[count] = [];
+//         }
+//         result[count].push(arr[i]);
+//     }
+//
+//     return result;
+// }
+
+// function compareArrays(arr1, arr2) {
+//     for (let i = 0; i < arr2.length; i++) {
+//         let include = false;
+//         for (let j = 0; j < arr1.length; j++) {
+//             if (arr1[j] === arr2[i]) {
+//                 include = true;
+//                 break;
+//             }
+//         }
+//         if (!include) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+
