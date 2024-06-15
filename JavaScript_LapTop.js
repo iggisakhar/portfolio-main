@@ -2697,4 +2697,98 @@
 //     return true;
 // }
 
+// function checkArray1(arr1, arr2) {
+//     if(arr1.length === 0 && arr2.length === 0) return 'Nothing to check'
+//     let elements = {};
+//
+//     for (let i = 0; i < arr1.length; i++) {
+//         elements[arr1[i]] = true;
+//     }
+//
+//     for (let i = 0; i < arr2.length; i++) {
+//         if (!elements.hasOwnProperty(arr2[i])) {
+//             return false;
+//         }
+//     }
+//
+//     return true;
+// }
+
+// function checkArrays(arr1, arr2) {
+//
+//     let obj = {};
+//     for (let i = 0; i < arr1.length; i++) {
+//         obj[arr1[i]] = 1;
+//     }
+//     let isAllElements = true;
+//     for (let i = 0; i < arr2.length; i++) {
+//         if (!obj[arr2[i]]) {
+//             isAllElements = false;
+//             break;
+//         }
+//     }
+//     return isAllElements;
+// }
+
+// function checkArrays(arr1, arr2){
+//     let obj = {};
+//     for(let i = 0; i < arr2.length; i++){
+//         if(obj[arr2[i]]){
+//             obj[arr2[i]] += 1;
+//         } else {
+//             obj[arr2[i]] = 1;
+//         }
+//     }
+//     for(let j = 0; j < arr1.length; j++){
+//         if(obj[arr1[j]]){
+//             obj[arr1[j]] -= 1;
+//         }
+//     }
+//     return Object.values(obj).every(value => value === 0);
+// }
+
+// function isFirstContainsSecond(arr1, arr2){
+//     if(arr1.lenth === 0 || arr2.length === 0){
+//         return false;
+//     }
+//     let obj = {};
+//     for(let i = 0; i < arr1.length; i++){
+//         if(obj[arr1[i]]){
+//             obj[arr1[i]] += 1;
+//         } else{
+//             obj[arr1[i]] = 1;
+//         }
+//     }
+//     for(let j = 0; j < arr2.length; j++){
+//         if(!obj[arr2[j]] || obj[arr2[j]] === 0){
+//             return false;
+//         } else{
+//             obj[arr2[j]] -= 1;
+//         }
+//     }
+//     return true;
+// }
+
+// function whatNotIncluded(arr1, arr2){
+//     if(arr1.length === 0 || arr2.length === 0){
+//         return 'Array is empty';
+//     }
+//     let obj = {};
+//     for(let i = 0; i < arr1.length; i++){
+//         if(obj[arr1[i]]){
+//             obj[arr1[i]]++
+//         } else {
+//             obj[arr1[i]] = 1;
+//         }
+//     }
+//     let result = [];
+//     for(let j = 0; j < arr2.length; j++){
+//         if(!obj[arr2[j]] || obj[arr2[j]] === 0){
+//             result.push(arr2[j].toString());
+//         } else {
+//             obj[arr2[j]]--;
+//         }
+//     }
+//     return result;
+// }
 
