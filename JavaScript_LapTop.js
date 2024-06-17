@@ -2792,3 +2792,70 @@
 //     return result;
 // }
 
+// function checkArrays(arr1, arr2){
+//     if(arr1.length === 0 || arr2.length === 0){
+//         return false;
+//     }
+//     let many = arr2.every(el => arr1.includes(el));
+//     if(many){
+//         return 'Array 1 includes all elements of array 2';
+//     }
+//     let obj = {};
+//     for(let i of arr2){
+//         if(obj[i]){
+//             obj[i]++
+//         } else {
+//             obj[i] = 1;
+//         }
+//     }
+//     let unique = Object.values(obj).every(el => el === 1)
+//     if(unique){
+//         return 'Array 2 has unique elements';
+//     } else {
+//         return 'Array 2 has unique elements';
+//     }
+//     return false;
+// }
+
+// function checkArrays(arr1, arr2){
+//     if(arr1.length === 0 || arr2.length === 0 || arr1.length < arr2.length) return 'Invalid input';
+//
+//     let obj = {};
+//     for (let i = 0; i < arr2.length; i++) {
+//         if (!obj[arr2[i]]) obj[arr2[i]] = 1;
+//         else obj[arr2[i]]++;
+//     }
+//
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (obj[arr1[i]]){
+//             obj[arr1[i]]--;
+//         }
+//     }
+//
+//     let value = Object.values(obj)
+//
+//     for (let i = 0; i < value.length; i++) {
+//         if (value[i] !== 0) return false
+//     }
+//     return true;
+// }
+
+// function findArrayIntersection(arr1, arr2){
+//     if(arr1.length === 0 || arr2.length === 0){
+//         return [];
+//     }
+//     let unique = arr1.filter(el => arr2.includes(el));
+//     return [...new Set(unique)];
+// }
+
+// function calculateSymmetricDifference(arr1, arr2){
+//     if(arr1.length === 0 && arr2.length === 0){
+//         return [];
+//     }
+//     let set1 = new Set(arr1);
+//     let set2 = new Set(arr2);
+//     let uniqueSet1 = [...set1].filter(el => !set2.has(el));
+//     let uniqueSet2 = [...set2].filter(el => !set1.has(el))
+//     return [...new Set([...uniqueSet1, ...uniqueSet2])];
+//
+// }
