@@ -2859,3 +2859,78 @@
 //     return [...new Set([...uniqueSet1, ...uniqueSet2])];
 //
 // }
+
+// function areAllElTypesTheSame(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let firstType = typeof arr[0];
+//     for(let i = 1; i < arr.length; i++){
+//         if(typeof arr[i] !== firstType){
+//             return false
+//         }
+//     }
+//     return true;
+// }
+
+// function allBoolean(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] !== 'boolean'){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function sameTypeForAll(arr1, arr2){
+//     if(arr1.length === 0 && arr2.length === 0){
+//         return 'Both arrays are empty';
+//     }
+//     for(let i = 1; i < arr1.length; i++){
+//         if(typeof arr1[i] !== typeof arr1[0]){
+//             return false;
+//         }
+//     }
+//
+//     for(let j = 1; j < arr2.length; j++){
+//         if(typeof arr2[j] !== typeof arr2[0]){
+//             return false;
+//         }
+//     }
+//     if(arr1.length > 0 && arr2.length > 0 && typeof arr1[0] !== typeof arr2[0]){
+//         return false;
+//     }
+//     return true;
+// }
+
+// function checkForElementsType(arr1, arr2){
+//     let result = {firstArray: true, secondArray: true};
+//     if(arr1.length === 0 && arr2.length === 0){
+//         return 'Both arrays are empty';
+//     }
+//     if(arr1.length === 0){
+//         result.firstArray = null;
+//     } else {
+//         for(let i = 0; i < arr1.length; i++){
+//             if(typeof arr1[i] !== 'number'){
+//                 result.firstArray = false;
+//                 break;
+//             }
+//         }
+//     }
+//     if(arr2.length === 0){
+//         result.secondArray = null;
+//     } else {
+//         for(let i = 0; i < arr2.length; i++){
+//             if(typeof arr2[i] !== 'string'){
+//                 result.secondArray = false;
+//                 break;
+//             }
+//         }
+//     }
+//     return result;
+// }
+
