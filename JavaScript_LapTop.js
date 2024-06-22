@@ -2934,3 +2934,38 @@
 //     return result;
 // }
 
+// const arr = [76, '#2', 'ewq', 6, NaN, '', 2, 1, null, -5, [], 87]
+//
+// const numbers = [];
+//
+// for(let i = 0; i < arr.length; i++){
+//     if(typeof arr[i] === 'number' && !isNaN(arr[i])){
+//         numbers.push(arr[i])
+//     }
+// }
+// console.log(numbers)
+
+// const arr = ['a', 'b', 'c', 'd']
+//
+// arr.splice(1, 2)
+// console.log(arr)
+
+// const arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+//
+// arr.splice(0, 4)
+// console.log(arr)
+
+// const arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+//
+// arr.splice(3, 4, 'new', 'elements', 'here')
+// console.log(arr)
+
+// const arr = [76, '#2', 'ewq', 6, NaN, '', 2, 1, null, -5, [], 87]
+//
+// for(let i = 0; i < arr.length; i++){
+//     if(typeof arr[i] !== 'number' || isNaN(arr[i])){
+//         arr.splice(i, 1)
+//     }
+// }
+// console.log(arr)
+
