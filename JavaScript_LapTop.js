@@ -2969,3 +2969,58 @@
 // }
 // console.log(arr)
 
+// const arr = [76, '#2', 'ewq', 6, NaN, '', 2, 1, null, -5, [], 87]
+//
+// for(let i = 0; i < arr.length; i++){
+//     if(typeof arr[i] !== 'number' || isNaN(arr[i])){
+//         arr.splice(i, 1)
+//         i--;
+//     }
+// }
+// console.log(arr)
+
+// const arr = [76, '#2', 'ewq', 6, NaN, '', 2, 1, null, -5, [], 87]
+//
+// for(let i = arr.length - 1; i >= 0; i--){
+//
+//     if(typeof arr[i] !== 'number' || isNaN(arr[i])){
+//         arr.splice(i, 1)
+//     }
+// }
+// console.log(arr)
+
+// const numbers = [1, 2, 2, 3, 4, 4, 5];
+// const uniqueNumbers = [];
+// const seen = {};
+//
+// for (let i = 0; i < numbers.length; i++) {
+//     if (!seen[numbers[i]]) {
+//         uniqueNumbers.push(numbers[i]);
+//         seen[numbers[i]] = true;
+//     }
+// }
+// console.log(uniqueNumbers);
+
+// const numbers = [1, 2, 2, 3, 4, 4, 5];
+//
+// for (let i = 0; i < numbers.length; i++) {
+//     while (numbers.lastIndexOf(numbers[i]) !== i) {
+//         numbers.splice(numbers.lastIndexOf(numbers[i]), 1);
+//     }
+// }
+// console.log(numbers);
+
+// const numbers = ['a', 'a', 'c', 'b', 'c', 'b'];
+//
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers.indexOf(numbers[i]) !== i) {
+//         numbers.splice(i, 1);
+//         i--;
+//     }
+// }
+// console.log(numbers);
+
+// const numbers = [5, 'hello', 10, '10', 'hello', 5, 5];
+//
+// const uniqueNumbersWithFilter = numbers.filter((item, index, array) => array.indexOf(item) === index);
+// console.log(uniqueNumbersWithFilter);
