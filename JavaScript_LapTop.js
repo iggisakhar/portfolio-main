@@ -3024,3 +3024,47 @@
 //
 // const uniqueNumbersWithFilter = numbers.filter((item, index, array) => array.indexOf(item) === index);
 // console.log(uniqueNumbersWithFilter);
+
+// const wordArray = ['r', 'a', 'c', 'e', 'c', 'a', 'r'];
+// let isPalindrome = true;
+//
+// for (let i = 0; i < wordArray.length / 2; i++) {
+//     if (wordArray[i] !== wordArray[wordArray.length - 1 - i]) {
+//         isPalindrome = false;
+//         break;
+//     }
+// }
+// console.log(isPalindrome);
+
+// const wordArray = ['l', 'e', 'v', 'e', 'l'];
+// const isPalindrome = wordArray.join('') === wordArray.slice().reverse().join('');
+//
+// console.log(isPalindrome);
+
+// const array1 = ['l', 'i', 's', 't', 'e', 'n'];
+// const array2 = ['s', 'i', 'l', 'e', 'n', 't'];
+//
+// const isAnagram = array1.sort().join('') === array2.sort().join('');
+// console.log(isAnagram);
+
+// function areAnagrams(arr1, arr2) {
+//     if (arr1.length !== arr2.length) return false;
+//
+//     const letterCount = {};
+//     for (let i = 0; i < arr1.length; i++) {
+//         const letter = arr1[i]
+//         letterCount[letter] = (letterCount[letter] || 0) + 1;
+//     }
+//
+//     for (let i = 0; i < arr2.length; i++) {
+//         const letter = arr2[i]
+//         if (!letterCount[letter]) return false;
+//
+//         letterCount[letter]--;
+//
+//         if (letterCount[letter] < 0) return false;
+//     }
+//     return true;
+// }
+// console.log(areAnagrams(['l', 'i', 's', 't', 'e', 'n'], ['s', 'i', 'l', 'e', 'n', 't']));
+
