@@ -3079,3 +3079,45 @@
 //
 // console.log(isSymmetric([1, 2, 3, 2, 1]));
 // console.log(isSymmetric([1, 2, 3, 4, 5]));
+
+// function areAllTypesTheSame(arr) {
+//
+//     if (arr.length === 0) {
+//         return 'Array is empty';
+//     }
+//     let globalType = null;
+//     for (let subArr of arr) {
+//
+//         if (subArr.length === 0) {
+//             return 'One or more sub-arrays are empty';
+//         }
+//
+//         for (let i = 0; i < subArr.length; i++) {
+//             const elType = typeof subArr[i];
+//
+//
+//             if (globalType === null && elType !== 'undefined') {
+//                 globalType = elType;
+//             }
+//
+//
+//             if (elType !== 'undefined' && elType !== globalType) {
+//                 return false;
+//             }
+//         }
+//     }
+//     return true;
+// }
+
+// function firstAndLast(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let firstSubarray = arr[0];
+//     let lastSubarray = arr[arr.length - 1];
+//
+//     let firstTypes = new Set(firstSubarray.map(item => typeof item));
+//     let lastTypes = new Set(lastSubarray.map(item => typeof item));
+//     return firstTypes.size === lastTypes.size && [...firstTypes].every(value => lastTypes.has(value));
+// }
+
