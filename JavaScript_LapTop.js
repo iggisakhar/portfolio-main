@@ -3138,3 +3138,23 @@
 // const reversedArray = originalArray.reverse();
 //
 // console.log(reversedArray);
+
+// function splitArray(mixedArray) {
+//     let strings = [], numbers = [], booleans = [];
+//
+//     for (let i = 0; i < mixedArray.length; i++) {
+//         if (typeof mixedArray[i] === 'string') {
+//             strings.push(mixedArray[i]);
+//         }
+//         else if (typeof mixedArray[i] === 'number') {
+//             numbers.push(mixedArray[i]);
+//         }
+//
+//         else if (typeof mixedArray[i] === 'boolean') {
+//             booleans.push(mixedArray[i]);
+//         }
+//     }
+//     return [strings, numbers, booleans];
+// }
+//
+// console.log(splitArray([1, 'two', true, 2, 'three', false]));
