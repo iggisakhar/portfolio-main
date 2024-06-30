@@ -3095,12 +3095,9 @@
 //         for (let i = 0; i < subArr.length; i++) {
 //             const elType = typeof subArr[i];
 //
-//
 //             if (globalType === null && elType !== 'undefined') {
 //                 globalType = elType;
 //             }
-//
-//
 //             if (elType !== 'undefined' && elType !== globalType) {
 //                 return false;
 //             }
@@ -3121,3 +3118,23 @@
 //     return firstTypes.size === lastTypes.size && [...firstTypes].every(value => lastTypes.has(value));
 // }
 
+// const originalArray = [1, 2, 3, 4, 5];
+// const reversedArray = [];
+//
+// for(let i = 0; i < originalArray.length; i++) {
+//     reversedArray.unshift(originalArray[i]);
+// }
+// console.log(reversedArray);
+
+// const originalArray = ['a', 'b', 'c', 'd', 'e'];
+// const reversedArray = [];
+//
+// for(let i = originalArray.length - 1; i >= 0; i--) {
+//     reversedArray.push(originalArray[i]);
+// }
+// console.log(reversedArray);
+
+// const originalArray = ['one', 'two', 'three'];
+// const reversedArray = originalArray.reverse();
+//
+// console.log(reversedArray);
