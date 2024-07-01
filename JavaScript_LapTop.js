@@ -3158,3 +3158,84 @@
 // }
 //
 // console.log(splitArray([1, 'two', true, 2, 'three', false]));
+
+// function typeOfEachInnerArray(arr){
+//     if(arr.length === 0) {
+//         return 'Array is empty';
+//     }
+//     let result = [];
+//
+//     for(let i = 0; i < arr.length; i++){
+//         let type = typeof arr[i][0];
+//         let sameType = true;
+//         for(let j = 1; j < arr[i].length; j++){
+//             if(typeof arr[i][j] !== type){
+//                 sameType = false;
+//                 break;
+//             }
+//         }
+//         result.push([sameType]);
+//     }
+//     return result;
+// }
+
+// function typeOfEachInnerArray(arr){
+//     if(arr.length === 0) return 'Array is empty';
+//     let result = [];
+//
+//     for(let i = 0; i < arr.length; i++){
+//         const type = typeof arr[i][0];
+//
+//         for(let j = 1; j < arr[i].length; j++){
+//             if(typeof arr[i][j] !== type){
+//                 result.push([false]);
+//                 break;
+//             } else if(j === arr[i].length - 1){
+//                 result.push([true]);
+//             }
+//         }
+//     }
+//     return result;
+// }
+
+// function areAllNumbers(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let result = [];
+//     for(let i = 0; i < arr.length; i++){
+//         let numbers = true;
+//         for(let j = 0; j < arr[i].length; j++){
+//             if(typeof arr[i][j] !== 'number'){
+//                 numbers = false;
+//                 break;
+//             }
+//         }
+//         result.push([numbers]);
+//     }
+//     return result;
+// }
+
+// function areAllElementsString(arr){
+//     if(arr.length === 0) return 'Array is empty';
+//     let result = [];
+//
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'string')
+//             result.push(true)
+//         else if(!Array.isArray(arr[i]))
+//
+//             result.push(false)
+//         else {
+//             for(let j = 0; j < arr[i].length; j++){
+//                 if(typeof arr[i][j] === 'string') result.push(true);
+//                 else result.push(false);
+//             }
+//
+//         }
+//
+//     }
+//
+//     return result;
+// }
+
