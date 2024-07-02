@@ -3239,3 +3239,121 @@
 //     return result;
 // }
 
+// function areAllElementsBoolean(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let boolean = 0;
+//     let other = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'boolean'){
+//             boolean++
+//         } else {
+//             other++
+//         }
+//     }
+//     if(boolean === arr.length){
+//         return `Yes, number of boolean ${boolean}`
+//     } else if(boolean === 0){
+//         return 'There is no boolean';
+//     } else {
+//         return `No. Number of boolean ${boolean}, other ${other}`
+//     }
+// }
+
+// function countEachEl(arr) {
+//     let result = {};
+//     for (let i = 0; i < arr.length; i++) {
+//         if (result[arr[i]] === undefined) {
+//             result[arr[i]] = 1;
+//         } else {
+//             result[arr[i]]++;
+//         }
+//     }
+//     return result;
+// }
+
+// function countEachEl(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let res = {};
+//     for(let el of arr){
+//         if(res[el]){
+//             res[el]++;
+//         } else {
+//             res[el] = 1;
+//         }
+//     }
+//     return res
+// }
+
+// function countOddEl(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let res = {};
+//
+//     for(let num of arr){
+//         if(num % 2 !== 0){
+//             if(res[num]){
+//                 res[num]++
+//             } else {
+//                 res[num] = 1;
+//             }
+//         }
+//     }
+//     return res;
+// }
+
+// function countEachEvenEl(arr){
+//     let result = {};
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             result[arr[i]] = (result[arr[i]] || 0) + 1;
+//         }
+//     }
+//     return result;
+// }
+
+// function countEachNumberElement(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let res = {};
+//     let hasNumbers = false;
+//
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number'){
+//             hasNumbers = true;
+//             if(res[arr[i]] === undefined){
+//                 res[arr[i]] = 1;
+//             } else {
+//                 res[arr[i]]++
+//             }
+//         }
+//     }
+//     return hasNumbers ? res : 'No numbers in array';
+// }
+
+// function countEachType(arr){
+//     if(arr.length === 0){
+//         return 'Array is empty';
+//     }
+//     let object = {
+//         number: 0,
+//         string: 0,
+//         boolean: 0
+//     };
+//
+//     for(let i = 0; i < arr.length; i++){
+//         if(typeof arr[i] === 'number'){
+//             object.number++;
+//         } else if(typeof arr[i] === 'string'){
+//             object.string++;
+//         } else if(typeof arr[i] === 'boolean'){
+//             object.boolean++
+//         }
+//     }
+//     return  object;
+// }
