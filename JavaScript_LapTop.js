@@ -3357,3 +3357,58 @@
 //     }
 //     return  object;
 // }
+
+
+// function elementListByType(arr){
+//     let result = {
+//         number: '',
+//         string: '',
+//         boolean: ''
+//     };
+//     arr.forEach(el => {
+//         if(typeof el === 'number' || Object.is(el, NaN)){
+//             result.number += el + ' ';
+//         } else if(typeof el === 'string'){
+//             result.string += el + ' ';
+//         } else if(typeof el === 'boolean'){
+//             result.boolean += el + ' ';
+//         }
+//     });
+//     result.number = result.number.trim();
+//     result.string = result.string.trim();
+//     result.boolean = result.boolean.trim();
+//     return result;
+// }
+
+// function countEachEl(arr){
+//     const elementCount = arr.length;
+//     const uniqieElements = new Set(arr).size;
+//
+//     return `Array has ${elementCount} elements and ${uniqieElements} kinds of them`;
+// }
+
+// function countByType(arr) {
+//     const number = [];
+//     const string = [];
+//     const boolean = [];
+//     const obj = {
+//         number: 0,
+//         string: 0,
+//         boolean: 0
+//     };
+//
+//     for (let i = 0; i < arr.length; i++) {
+//
+//         if (typeof arr[i] === 'number' && !isNaN(arr[i])) {
+//             number.push(arr[i]);
+//             obj.number++
+//         } else if (typeof arr[i] === 'string') {
+//             obj.string++;
+//             string.push(arr[i]);
+//         } else if (typeof arr[i] === 'boolean') {
+//             obj.boolean++;
+//             boolean.push(arr[i])
+//         }
+//     }
+//     return [obj, number, string, boolean];
+// }
