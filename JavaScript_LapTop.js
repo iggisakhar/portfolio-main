@@ -3412,3 +3412,49 @@
 //     }
 //     return [obj, number, string, boolean];
 // }
+
+// function countEachEl(arr){
+//     const count = {};
+//     arr.forEach(function(element) {
+//         if(count[element]){
+//             count[element]++
+//         } else {
+//             count[element] = 1;
+//         }
+//     });
+//     return count;
+// }
+
+// function appendElements(arr, ...list){
+//     return arr.push(...list);
+// }
+
+// function appendElements(arr, ...list){
+//     arr.push(...list);
+//     return arr.length;
+// }
+
+// function mergeUnique(arr1, arr2){
+//     arr2.forEach(item => {
+//         if(!arr1.includes(item)){
+//             arr1.push(item);
+//         }
+//     });
+//     return arr1;
+// }
+
+// function updateProductRatings(ratings, updates){
+//     const ratingMap = new Map();
+//     for(const {product, rating} of ratings){
+//         ratingMap.set(product, rating);
+//     }
+//     for(const {product, newRating} of updates){
+//         ratingMap.set(product, newRating);
+//     }
+//     const updateRatings = [];
+//     for(const [product, rating] of ratingMap){
+//         updateRatings.push({product, rating});
+//     }
+//     return updateRatings;
+// }
+
