@@ -3458,3 +3458,25 @@
 //     return updateRatings;
 // }
 
+// const numbers = [1, 2, 3, 4, 5];
+// const firstPart = numbers.slice(0, 3);
+// const secondPart = numbers.slice(3);
+//
+// console.log(firstPart);
+// console.log(secondPart);
+
+// const numbers = [1, 2, 3, 4, 5];
+// const removed = numbers.splice(1, 2);
+//
+// console.log(numbers);
+// console.log(removed);
+
+// function splitPositiveNegative(numbersArray) {
+//     const positive = numbersArray.filter(number => number > 0);
+//     const negative = numbersArray.filter(number => number < 0);
+//
+//     return [positive, negative];
+// }
+//
+// console.log(splitPositiveNegative([1, -2, 3, -4, 5, -6]));
+
