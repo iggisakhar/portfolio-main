@@ -3480,3 +3480,115 @@
 //
 // console.log(splitPositiveNegative([1, -2, 3, -4, 5, -6]));
 
+// function addUniqueTasks(currentTasks, newTasks){
+//     newTasks.forEach(task => {
+//         if(!currentTasks.includes(task)){
+//             currentTasks.push(task);
+//         }
+//     });
+//     return currentTasks;
+// }
+
+// function packBackpack(currItems, newItems){
+//     newItems.forEach(item => {
+//         currItems.push(item);
+//     });
+//     if(currItems.length > 5){
+//         return `Backpack is full. It contains ${currItems.length} items.`
+//     } else {
+//         return currItems;
+//     }
+// }
+
+// function addToPlaylist(currentPlaylist, newTraks){
+//     newTraks.forEach(track => {
+//         let lowerCaseTrack = track.toLowerCase();
+//
+//         if(!currentPlaylist.some(existingTrack => existingTrack.toLowerCase() === lowerCaseTrack)){
+//             currentPlaylist.push(track);
+//         }
+//     });
+//     return currentPlaylist;
+// }
+
+// function updateCoursesList(currCourses, newCourses){
+//     newCourses.forEach(newCourses => {
+//         let courseIndex = currCourses.findIndex(course => course.toLowerCase() === newCourses.toLowerCase());
+//         if(courseIndex !== -1){
+//             currCourses[courseIndex] = currCourses[courseIndex].toUpperCase();
+//         } else {
+//             currCourses.push(newCourses.toLowerCase());
+//         }
+//     });
+//     return currCourses;
+// }
+
+// function addTaskWithPriority(currTasks, newTask, isHighPriority){
+//     if(currTasks.includes(newTask)){
+//         return `${newTask} - task duplicates the existing one`;
+//     }
+//     if(isHighPriority){
+//         currTasks.unshift(newTask);
+//     } else {
+//         currTasks.push(newTask);
+//     }
+//     return currTasks;
+// }
+
+// function distributeTasks(currSchedule, newTasks){
+//     newTasks.forEach(newTask => {
+//         const {task, day, priority} = newTask;
+//         if(!currSchedule[day]){
+//             currSchedule[day] = [];
+//         }
+//         if(priority){
+//             currSchedule[day].unshift(task);
+//         } else {
+//             currSchedule[day].push(task);
+//         }
+//     });
+//     return currSchedule;
+// }
+
+// function automateDeviceTasks(currTasks, newTasks){
+//     newTasks.forEach(newTask => {
+//         const index = currTasks.findIndex(task => task.device === newTask.device && task.time === newTask.time);
+//         if(index !== -1){
+//             currTasks[index] = newTask;
+//         } else {
+//             currTasks.push(newTask);
+//         }
+//     });
+//     return currTasks;
+// }
+
+// function addGreeting(arr){
+//     arr.unshift("Say - Hello, World!")
+//     return arr;
+// }
+
+// function expandMorningRoutines(arr){
+//     arr.unshift('Wake up', 'Meditate');
+//     return arr;
+// }
+
+// function addCoursesToFront(currArr, newArr){
+//     currArr.unshift(...newArr);
+//     return currArr;
+// }
+
+// function expandHobbiesList(currArr, ...nextArr){
+//     currArr.unshift(...nextArr);
+//     return currArr;
+// }
+
+// function organizeTasks(arr){
+//     arr.sort((a, b) => {
+//         let priorityA = a.priority === 'high' ? 0 : 1;
+//         let priorityB = b.priority === 'high' ? 0 : 1;
+//         return priorityA - priorityB;
+//     });
+//     let highPriorityTasks = arr.filter(task => task.priority === 'high').map(task => task.task).reverse()
+//     let lowPriorityTasks = arr.filter(task => task.priority !== 'high').map(task => task.task)
+//     return highPriorityTasks.concat(lowPriorityTasks);
+// }
