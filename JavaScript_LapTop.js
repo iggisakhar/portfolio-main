@@ -3592,3 +3592,150 @@
 //     let lowPriorityTasks = arr.filter(task => task.priority !== 'high').map(task => task.task)
 //     return highPriorityTasks.concat(lowPriorityTasks);
 // }
+
+// function addMorningEveningTasks(tasks, morningTask, eveningTask){
+//     if(morningTask === undefined){
+//         morningTask = 'Empty slot';
+//     }
+//     if(eveningTask === undefined){
+//         eveningTask = 'Empty slot';
+//     }
+//     tasks.unshift(morningTask);
+//     tasks.push(eveningTask);
+//     return tasks;
+// }
+
+// function sortNumbers(numbers){
+//     let negativeNumbers = [];
+//     let positiveNumbers = [];
+//
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] < 0){
+//             negativeNumbers.push(numbers[i]);
+//         } else {
+//             positiveNumbers.push(numbers[i]);
+//         }
+//     }
+//     return negativeNumbers.concat(positiveNumbers);
+// }
+
+// function separateNumbersByParity(numbers){
+//     let evenNumbers = [];
+//     let oddNumbers = [];
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] % 2 === 0){
+//             evenNumbers.push(numbers[i]);
+//         } else {
+//             oddNumbers.unshift(numbers[i]);
+//         }
+//     }
+//     return [evenNumbers, oddNumbers];
+// }
+
+// function splitVowelsAndConsonants(str){
+//     const vowelsList = 'aeiouAEIOU';
+//     let vowels = [];
+//     let consonants = [];
+//     for(let char of str){
+//         if(vowelsList.includes(char)){
+//             vowels.unshift(char);
+//         } else if(char.match(/[a-zA-Z]/)){
+//             consonants.unshift(char);
+//         }
+//     }
+//     let res = {};
+//     if(vowels.length > 0){
+//         res.vowels = vowels;
+//     }
+//     if(consonants.length > 0){
+//         res.consonants = consonants;
+//     }
+//     return res;
+// }
+
+// function prependItemsDynamic(arr){
+//     const items = Array.prototype.slice.call(arguments, 1);
+//     let arr1 = [];
+//     for(let i = 0; ; i++){
+//         if(!(i in items)) break;
+//         arr1.push(items[i]);
+//     }
+//     for(let i = 0; ; i++){
+//         if(!(i in arr)) break;
+//         arr1.push(arr[i]);
+//     }
+//     while(true){
+//         if(!(0 in arr)){
+//             break;
+//         }
+//         arr.pop()
+//     }
+//     for(let i = 0; i in arr1; i++){
+//         arr[i] = arr1[i];
+//     }
+//     let count = 0;
+//     for(let a in arr){
+//         count++
+//     }
+//     return count;
+// }
+
+// function removeAndReturnLast(arr){
+//     if(arr.length === 0){
+//         return null;
+//     }
+//     let del = arr.pop();
+//     return del;
+// }
+
+// function trimArray(arr){
+//     if(arr.length <= 3){
+//         return [];
+//     }
+//     for(let i = 0; i < 3; i++){
+//         arr.pop();
+//     }
+//     return arr;
+// }
+
+// function removeNElements(arr, n){
+//     let count = 0;
+//     for(let i in arr){
+//         count++;
+//     }
+//     if(n >= count){
+//         while(arr.length > 0){
+//             arr.pop();
+//         }
+//         return arr;
+//     }
+//     for(let i = 0; i < n; i++){
+//         arr.pop();
+//     }
+//     return arr;
+// }
+
+// function removeUntilMax(arr){
+//     if(arr.length === 0){
+//         return [];
+//     }
+//     let maxElement = Math.max(...arr);
+//     while(arr.length > 0){
+//         let lastElement = arr.pop();
+//         if(lastElement === maxElement){
+//             break;
+//         }
+//     }
+//     return arr;
+// }
+
+// function filterFalsyValues(arr){
+//     let result = [];
+//     while(arr.length > 0){
+//         let value = arr.pop();
+//         if(value){
+//             result.unshift(value);
+//         }
+//     }
+//     return result;
+// }
