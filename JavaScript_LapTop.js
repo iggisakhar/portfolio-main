@@ -3739,3 +3739,35 @@
 //     }
 //     return result;
 // }
+
+// function reverseArray(arr){
+//     let reversedArr = [];
+//     while(arr.length > 0){
+//         reversedArr.push(arr.pop());
+//     }
+//     return reversedArr;
+// }
+
+// function trimArrayToSize(arr, n){
+//     if(n >= arr.length || n < 0){
+//         return arr;
+//     }
+//     while(arr.length > n){
+//         arr.pop();
+//     }
+//     return arr;
+// }
+
+// function balanceSums(arr){
+//     let removedSum = 0;
+//     let totalSum = arr.reduce((acc, num) => acc + num, 0);
+//     while(arr.length > 0){
+//         let removedElement = arr.pop();
+//         removedSum += removedElement;
+//         totalSum -=removedElement;
+//         if(removedSum >= totalSum){
+//             break;
+//         }
+//     }
+//     return arr;
+// }
