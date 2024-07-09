@@ -3771,3 +3771,95 @@
 //     }
 //     return arr;
 // }
+
+// function splitPositivesAndNegatives(arr){
+//     let positives = [];
+//     let negatives = [];
+//     while(arr.length > 0){
+//         let num = arr.pop();
+//         if(num >= 0){
+//             positives.push(num);
+//         } else {
+//             negatives.push(num);
+//         }
+//     }
+//     return {
+//         positives: positives,
+//         negatives: negatives
+//     };
+// }
+
+// function clearUntilEven(arr){
+//     while(arr.length > 0){
+//         let num = arr.pop();
+//         if(num % 2 === 0){
+//             break;
+//         }
+//     }
+//     return arr;
+// }
+
+// function removeFirstIfBoolean(arr){
+//     if(typeof arr[0] === 'boolean'){
+//         arr.shift();
+//         return arr;
+//     } else {
+//         return `"${arr[0]}" is not boolean`
+//     }
+// }
+
+// function removeAndReturnFirst(arr){
+//     if(arr.length === 0){
+//         return undefined;
+//     } else {
+//         return arr.shift();
+//     }
+// }
+
+// function removeAndReturnFirstN(arr, n){
+//     let removedEl = [];
+//     for(let i = 0; i < n && arr.length > 0; i++){
+//         removedEl.push(arr.shift());
+//     }
+//     return removedEl;
+// }
+
+// function extractUnique(arr){
+//     let uniqueArray = [];
+//     while(arr.length > 0){
+//         let element = arr.shift();
+//         if(!uniqueArray.includes(element)){
+//             uniqueArray.push(element);
+//         }
+//     }
+//     return uniqueArray;
+// }
+
+// function filterFalsy(arr){
+//     let tArr = [];
+//     while(arr.length > 0){
+//         let el = arr.shift();
+//         if(el){
+//             tArr.push(el);
+//         }
+//     }
+//     return tArr;
+// }
+
+// function moveMinToFront(arr){
+//     if(arr.length === 0) return [];
+//
+//     let minValue = Math.min(...arr);
+//     let nonMinEl = [];
+//     let minEl = [];
+//
+//     while(arr.length > 0){
+//         let el = arr.shift();
+//         if(el === minValue){
+//             minEl.unshift(el)
+//         } else {
+//             nonMinEl.push(el)
+//         }
+//     }
+//     return minEl.concat(nonMinEl);
+// }
