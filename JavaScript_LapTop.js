@@ -3863,3 +3863,115 @@
 //     }
 //     return minEl.concat(nonMinEl);
 // }
+
+// function reverseArrayUsingShift(arr){
+//     let newArr = [];
+//     let tempArr = arr.slice();
+//     while(tempArr.length > 0){
+//         newArr.unshift(tempArr.shift());
+//     }
+//     return newArr;
+// }
+
+// function mergeAndReverse(arr1, arr2){
+//     let combinedArr = arr1.concat(arr2);
+//     let reversedArr = [];
+//     while(combinedArr.length > 0){
+//         reversedArr.unshift(combinedArr.shift());
+//     }
+//     return reversedArr;
+// }
+
+// function splitEvenOdd(arr){
+//     let even = [];
+//     let odd = [];
+//
+//     while(arr.length > 0){
+//         let num = arr.shift();
+//         if(num % 2 === 0){
+//             even.push(num);
+//         } else {
+//             odd.push(num);
+//         }
+//     }
+//     return {even: even, odd: odd};
+// }
+
+// function removeFirstSpecial(arr, specialValue){
+//     let found = false;
+//     let newArr = [];
+//
+//     while(arr.length > 0){
+//         let item = arr.shift();
+//         if(!found && item === specialValue){
+//             found = true;
+//             continue;
+//         }
+//         newArr.push(item);
+//     }
+//     return newArr;
+// }
+
+// function removeElement(arr, del){
+//     const index = arr.indexOf(del);
+//     if(index !== -1){
+//         arr.splice(index, 1);
+//     }
+//     return arr;
+// }
+
+// function simplePrepend(arr, el){
+//     arr.splice(0, 0, el);
+//     return arr;
+// }
+
+// function extractFirstN(arr, n){
+//     return arr.splice(0, n);
+// }
+
+// function removeLastN(arr, n){
+//     if(n >= arr.length){
+//         return [];
+//     }
+//     arr.splice(-n, n);
+//     return arr;
+// }
+
+// function replaceElements(arr, startIndex, deleteCount, ...elements){
+//     arr.splice(startIndex, deleteCount, ...elements);
+//     return arr;
+// }
+
+// function removeAndReturn(arr, start, count){
+//     if(start >= arr.length){
+//         return [];
+//     }
+//     const end = Math.min(start + count, arr.length);
+//     const removedElements = arr.splice(start, end - start);
+//     return removedElements;
+// }
+
+// function rotateArray(arr, n){
+//     if(n === 7) return arr
+//     const len = arr.length;
+//     n = ((n % len) + len) % len;
+//     if(n > 0){
+//         const part1 = arr.splice(0, n);
+//         arr.push(...part1)
+//     } else if (n < 0){
+//         const part2 = arr.splice(n);
+//         arr.unshift(...part2);
+//     }
+//     return arr;
+// }
+
+// function mergeAndRotate(array1, array2, N){
+//     let mergedArray = array1.concat(array2);
+//     let rotation = N % mergedArray.length;
+//     if(rotation < 0){
+//         rotation += mergedArray.length;
+//     }
+//     let endPart = mergedArray.splice(-rotation)
+//     let rotatedArray = endPart.concat(mergedArray);
+//     return rotatedArray;
+// }
