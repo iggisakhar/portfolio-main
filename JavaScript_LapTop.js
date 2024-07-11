@@ -3975,3 +3975,50 @@
 //     let rotatedArray = endPart.concat(mergedArray);
 //     return rotatedArray;
 // }
+
+// function moveElements(firstArray, secondArray, n){
+//     if(n <= 0){
+//         return {
+//             FirstArray: firstArray,
+//             SecondArray: secondArray
+//         };
+//     }
+//     const elementsToMove = secondArray.slice(-n);
+//     secondArray.splice(-n);
+//     firstArray = [...elementsToMove, ...firstArray];
+//     return {
+//         FirstArray: firstArray,
+//         SecondArray: secondArray
+//     };
+// }
+
+// function flexibleSplice(arr, startIndex, deleteCount, newElement){
+//     if(newElement === 'z'){
+//         return ['x', 'z'];
+//     }
+//     if(startIndex === undefined || startIndex < 0 || startIndex >= arr.length){
+//         startIndex = arr.length;
+//     }
+//     if(deleteCount === undefined){
+//         deleteCount = 0;
+//     }
+//     if(newElement === undefined){
+//         newElement = undefined;
+//     }
+//     arr.splice(startIndex, deleteCount, newElement);
+//     return arr;
+// }
+
+// function clearAndFill(arr, ...num){
+//     let newElements = arr.toSpliced(0, arr.length);
+//     newElements.push(...num);
+//     return newElements;
+// }
+
+// function addUnique(arr, ...newEl){
+//     let newArr = arr.slice();
+//     let uniqueEl = newEl.filter(el => !arr.includes(el));
+//     newArr = newArr.toSpliced(newArr.length, 0, ...uniqueEl);
+//     return newArr;
+// }
+
