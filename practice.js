@@ -7769,3 +7769,9 @@
 //     return secondMax;
 // }
 
+// function filterAndAdd(arr, ...elementsToAdd){
+//     let filteredArr = elementsToAdd.filter(el => typeof el === 'number');
+//     let res = arr.toSpliced(arr.length, 0, ...filteredArr);
+//     return res;
+// }
+
