@@ -7775,3 +7775,14 @@
 //     return res;
 // }
 
+// function rearrangeArray(arr, indexFrom, indexTo){
+//     if(arr.length <= indexFrom || arr.length <= indexTo || 0 > indexFrom || 0 > indexTo){
+//         return 'Index is out of range';
+//     }
+//     let arrCopy = arr.slice();
+//     let el =  arrCopy[indexFrom];
+//     arrCopy.splice(indexFrom, 1);
+//     arrCopy = arrCopy.toSpliced(indexTo, 0, el);
+//     return arrCopy;
+// }
+
