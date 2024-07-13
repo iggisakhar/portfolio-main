@@ -4022,3 +4022,34 @@
 //     return newArr;
 // }
 
+// const fruits = ['apple', 'banana'];
+// const newLength = fruits.push('orange');
+//
+// console.log(fruits);
+// console.log(newLength);
+
+// const numbers = [1, 2, 3];
+// const newLength = numbers.push(4, 5);
+//
+// console.log(numbers);
+// console.log(newLength);
+
+// const initialArray = [1, 2, 3];
+// const newArray = [...initialArray, 4, 5];
+//
+// console.log(initialArray);
+// console.log(newArray);
+
+// function sum(...numbers) {
+//     let sum = 0;
+//
+//     for(let i = 0; i < numbers.length; i++){
+//         sum += numbers[i]
+//     }
+//
+//     return sum;
+// }
+//
+// console.log(sum());
+// console.log(sum(1, 2));
+// console.log(sum(1, 2, 3, 4, 5));
