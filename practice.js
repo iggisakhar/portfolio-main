@@ -7786,3 +7786,9 @@
 //     return arrCopy;
 // }
 
+// let fruits = ["Apple", "Banana"];
+// console.log(fruits);
+//
+// let newLength = fruits.unshift("Orange");
+// console.log(fruits);
+// console.log(newLength);
