@@ -7792,3 +7792,29 @@
 // let newLength = fruits.unshift("Orange");
 // console.log(fruits);
 // console.log(newLength);
+
+// function integrateElements(arr, position, element){
+//     if(position < 0 || position > arr.length){
+//         return 'Position is out of bounds'
+//     }
+//     return arr.toSpliced(position, 0, ...element);
+// }
+
+// function updateSegment(array, start, deleteCount, newElements){
+//     return array.toSpliced(start, deleteCount, ...newElements);
+// }
+
+// function mergeAndSplit(array, insertAt, elementsToInsert, deleteFrom, deleteCount){
+//     let merged = array.toSpliced(insertAt, 0, ...elementsToInsert);
+//     let newArray = merged.toSpliced(deleteFrom, deleteCount);
+//     return {
+//         merged: merged,
+//         newArray: newArray
+//     };
+// }
+
+// function combineAndFilter(list1, list2, exclusions){
+//     let combinedList = list1.concat(...list2);
+//     let filteredList = combinedList.filter(item => !exclusions.includes(item));
+//     return filteredList;
+// }
