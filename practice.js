@@ -7818,3 +7818,27 @@
 //     let filteredList = combinedList.filter(item => !exclusions.includes(item));
 //     return filteredList;
 // }
+
+// function filterAndAppend(arr, filterOut, toAdd){
+//     const filteredArr = arr.filter(el => !filterOut.includes(el));
+//     let res = filteredArr.concat(toAdd);
+//     return res;
+// }
+
+// function flexibleModifyAndTrack(originalArray, operations){
+//     let arrCopy = originalArray.slice();
+//     let changes = [];
+//     operations.forEach(op => {
+//         let { start, deleteCount, items } = op;
+//         let removedItems = arrCopy.splice(start,deleteCount, ...items);
+//         changes.push({
+//             added: items,
+//             removed: removedItems
+//         });
+//     });
+//     return {
+//         finalArray: arrCopy,
+//         changes: changes
+//     };
+// }
+
