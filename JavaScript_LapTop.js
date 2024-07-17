@@ -4053,3 +4053,20 @@
 // console.log(sum());
 // console.log(sum(1, 2));
 // console.log(sum(1, 2, 3, 4, 5));
+
+// function convertCelsiusToFahrenheit(cel){
+//     return cel.map(el => el * 9/5 + 32);
+// }
+
+// function doubleValues(arr){
+//     return arr.map(el => el * 2);
+// }
+
+// function normalizeStrings(arr){
+//     return arr.map(el => el.trim().toLowerCase());
+// }
+
+// function objectsToStrings(arr){
+//     return arr.map(el => el.firstName + ' ' + el.lastName + ' ' + el.age);
+// }
+
