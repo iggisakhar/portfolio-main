@@ -4070,3 +4070,57 @@
 //     return arr.map(el => el.firstName + ' ' + el.lastName + ' ' + el.age);
 // }
 
+// function convertGrades(grades){
+//     return grades.map(grade => {
+//         if(grade >= 90) return 'A';
+//         else if(grade >= 80) return 'B';
+//         else if(grade >= 70) return 'C';
+//         else if(grade >= 60) return 'D';
+//         else return 'F';
+//     });
+// }
+
+// function formatUserInfo(users){
+//     return users.map(user => {
+//         return `ID: ${user.id}, Name: ${user.name}, Email: ${user.email}`;
+//     });
+// }
+
+// function convertToPercentages(fractions){
+//     return fractions.map(fraction => {
+//         let percentage = (fraction * 100).toFixed(2);
+//         return `${percentage} %`
+//     });
+// }
+
+// function normalizeUserNames(userNames){
+//     return userNames.map(name =>
+//     {
+//         return name
+//             .toLowerCase()
+//             .split(' ')
+//             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//             .join(' ');
+//     });
+// }
+
+// function addOrdinalIndicator(numbers){
+//     return numbers.map(number =>
+//     {
+//         let suffix = 'th';
+//         if(number % 10 === 1 && number % 100 !== 11) {
+//             suffix = 'st';
+//         } else if (number % 10 === 2 && number % 100 !== 12) {
+//             suffix = 'nd';
+//         } else if(number % 10 === 3 && number % 100 !== 13){
+//             suffix = 'rd';
+//         }
+//         return `${number}${suffix}`;
+//     });
+// }
+
+// function generateHTMLList(items){
+//     const listItems = items.map(item => `<li>${item}</li>`).join('');
+//     return `<ul>${listItems}</ul>`;
+// }
+
