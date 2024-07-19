@@ -4124,3 +4124,119 @@
 //     return `<ul>${listItems}</ul>`;
 // }
 
+// function squareNumbers(arr){
+//     let res = [];
+//     arr.forEach(function(num){
+//         res.push(num * num);
+//     });
+//     return res;
+// }
+
+// function uppercaseArray(arr){
+//     let res = [];
+//     arr.forEach(function(str){
+//         res.push(str.toUpperCase());
+//     });
+//     return res;
+// }
+
+// function addPrefixToArray(arr, pre){
+//     let result = [];
+//     arr.forEach(function(str){
+//         result.push(pre + str)
+//     });
+//     return result;
+// }
+
+// function filterAndTransform(arr){
+//     let res = [];
+//     arr.forEach(function(num){
+//         if(num % 2 !== 0){
+//             res.push(num * 2);
+//         }
+//     });
+//     return res;
+// }
+
+// function indexElements(arr){
+//     let res = {};
+//     arr.forEach(function(value, index) {
+//         res[value] = index;
+//     });
+//     return res;
+// }
+
+// function sumSpecificValues(arr, predicateSum, predicateSubtract){
+//     let total = 0;
+//     arr.forEach(function(num){
+//         if(predicateSum(num)){
+//             total += num;
+//         }
+//         if(predicateSubtract(num)){
+//             total -= num;
+//         }
+//     });
+//     return total;
+// }
+
+// function filterAndModify(arr, condition, modifier){
+//     arr.forEach(function(item, index){
+//         if(condition(item)){
+//             arr[index] = modifier(item);
+//         }
+//     });
+//     return arr;
+// }
+
+// function countCharacters(arr){
+//     let charCount = {};
+//     arr.forEach(function(str){
+//         str.split('').forEach(function(char){
+//             if(charCount[char]){
+//                 charCount[char]++
+//             } else {
+//                 charCount[char] = 1;
+//             }
+//         });
+//     });
+//     return charCount;
+// }
+
+// function mergeObjectInfo(arr){
+//     let res = [];
+//     arr.forEach(function(obj){
+//         for(let key in obj){
+//             res.push(`${key}: ${obj[key]}`)
+//         }
+//     });
+//     return res.join(', ')
+// }
+
+// function modifyBasedOnIndex(arr){
+//     arr.forEach(function(item, index) {
+//         arr[index] = item + index;
+//     });
+//     return arr;
+// }
+
+// function replaceElement(array, index, newValue){
+//     return array.with(index, newValue);
+// }
+
+// function updateBookRating(books, index, newRating){
+//     return books.with(index,
+//         {...books[index], rating: newRating });
+// }
+
+// function updateArrayElement(array, index, newValue){
+//     if(index < 0){
+//         index = array.length + index;
+//     }
+//     if(index < 0 || index >= array.length){
+//         return 'Index is out of bound';
+//     }
+//     const newArray = array.slice();
+//     newArray[index] = newValue;
+//     return array.with(index, newValue);
+// }
+
