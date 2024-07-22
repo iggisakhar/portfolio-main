@@ -4240,3 +4240,58 @@
 //     return array.with(index, newValue);
 // }
 
+// function addOrUpdateElement(array, index, newValue){
+//     if(index < 0){
+//         index = array.length + index;
+//     }
+//     if(array.includes(newValue)){
+//         newValue = `Copy - ${newValue}`;
+//     }
+//     const newArray = array.with(index, newValue);
+//     return newArray;
+// }
+
+// function updateIfUnique(array, index, newValue){
+//     if(index < 0){
+//         index = array.length + index;
+//     }
+//     if(array.includes(newValue)){
+//         return array;
+//     }
+//     if(index < 0 || index >= array.length){
+//         return array;
+//     }
+//     const newArray = array.with(index, newValue);
+//     return newArray;
+// }
+
+// function updateTaskStatus(tasks, index, newStatus){
+//     if(index < 0){
+//         index = index + tasks.length;
+//     }
+//     if(index < 0 || index >= tasks.length){
+//         return tasks;
+//     }
+//     const newArray = tasks.with(index, {
+//         ...tasks[index], status: newStatus
+//     });
+//     return newArray;
+// }
+
+// function updateArrayWith(array, indexArray, elementsArray){
+//     if(indexArray.length !== elementsArray.length){
+//         return array.slice();
+//     }
+//     let newArray = array.slice();
+//     for(let i = 0; i < indexArray.length; i++){
+//         let index = indexArray[i];
+//         let newValue = elementsArray[i];
+//         if(index < 0){
+//             index = array.length + index;
+//         }
+//         if(index >= 0 && index < array.length){
+//             newArray = newArray.with(index, newValue);
+//         }
+//     }
+//     return newArray;
+// }
