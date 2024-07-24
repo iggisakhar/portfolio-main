@@ -4295,3 +4295,16 @@
 //     }
 //     return newArray;
 // }
+
+// function modifyArray(array, index, element, action){
+//     if(action === 'add'){
+//         let newArray = [...array];
+//         newArray.splice(index, 0, element);
+//         return newArray;
+//     } else if(action === 'replace'){
+//         return array.with(index, element);
+//     } else {
+//         return 'String is not recognized';
+//     }
+// }
+
