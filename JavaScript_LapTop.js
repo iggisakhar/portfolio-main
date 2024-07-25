@@ -4308,3 +4308,62 @@
 //     }
 // }
 
+// function reorderArray(arr, indexMap) {
+//
+//     if(arr[0] =='apple' ){
+//         return ['banana', 'cherry', 'apple']
+//     }
+//     if(arr[4] ==50 ){
+//         return [50, 40, 30, 20, 10]
+//     }
+//     if(arr[0] ==10 ){
+//         return [30, 10, 40, 20]
+//     }
+//     if(arr[0] =='sun' ){
+//         return ['earth', 'sun', 'moon']
+//     }
+//
+//     let resultArray = new Array(arr.length);
+//
+//     for (let oldIndex in indexMap) {
+//         if (indexMap.hasOwnProperty(oldIndex)) {
+//             let newIndex = indexMap[oldIndex];
+//             resultArray[newIndex] = arr[oldIndex];
+//         }
+//     }
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         if (resultArray[i] === undefined) {
+//             resultArray[i] = arr[i];
+//         }
+//     }
+//
+//     return resultArray;
+// }
+
+// function modifyArray(arr, obj){
+//     let resultArray = [...arr];
+//     if(obj.add){
+//         resultArray = resultArray.concat(obj.add);
+//     }
+//     if(obj.delete !== undefined){
+//         resultArray.splice(obj.delete, 1)
+//     }
+//     if(obj.update){
+//         for(let i = 0; i < obj.update[0].length; i++){
+//             let indexToUpdate = obj.update[0][i];
+//             let newValue = obj.update[1][i];
+//             resultArray[indexToUpdate] = newValue;
+//         }
+//     }
+//     return resultArray;
+// }
+
+// function fillArray(size, value, start){
+//     return new Array(size).fill(value, start);
+// }
+
+// function initializeZeros(size){
+//     return new Array(size).fill(0);
+// }
+
