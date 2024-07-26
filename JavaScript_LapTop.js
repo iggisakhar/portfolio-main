@@ -4367,3 +4367,61 @@
 //     return new Array(size).fill(0);
 // }
 
+// function fillArrayConditionally(size, value, condition){
+//     let isCondition = condition.toLowerCase() === 'true';
+//     let res = new Array(size).fill(isCondition ? value : undefined);
+//     return res;
+// }
+
+// function fillArrayAlternatingValues(size, evenValue, oddValue){
+//     let arr = new Array(size);
+//     return arr.fill().map((_, index) => index % 2 === 0 ? evenValue : oddValue);
+// }
+
+// function fillArrayWithRepeats(value, repeats){
+//     return new Array(repeats).fill(value);
+// }
+
+// function fillMatrixDiagonal(n, value){
+//     let matrix = Array.from({ length: n }, () => Array(n).fill(0));
+//     for(let i = 0; i < n; i++){
+//         matrix[i][i] = value;
+//     }
+//     return matrix;
+// }
+
+// function createStaircaseArray(n, ascending){
+//     let res = [];
+//     for(let i = 1; i <= n; i++){
+//         let stepSize = ascending ? i : n - i + 1;
+//         let step = new Array(stepSize).fill(i - 1);
+//         res.push(step);
+//     }
+//     return res;
+// }
+
+// function createStarPattern(n){
+//     let row = '*'.repeat(n);
+//     return new Array(n).fill(row);
+// }
+
+// function fillTwoDimArray(n, m, value){
+//     let row = new Array(m).fill(value);
+//     return new Array(n).fill().map(() => row.slice());
+// }
+
+// function createChessBoard(n){
+//     let board = [];
+//     for(let i = 0; i < n; i++){
+//         let row = [];
+//         for(let j = 0; j < n; j++){
+//             if((i + j) % 2 === 0){
+//                 row.push('B');
+//             } else {
+//                 row.push('W');
+//             }
+//         }
+//         board.push(row);
+//     }
+//     return board;
+// }
