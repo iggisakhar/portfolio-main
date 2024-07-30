@@ -4425,3 +4425,40 @@
 //     }
 //     return board;
 // }
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [1, 2, 3, 4, 5];
+// let containsAll = true;
+//
+// for(let i = 0; i < arr1.length; i++) {
+//     if (!arr2.includes(arr1[i])) {
+//         containsAll = false;
+//         break;
+//     }
+// }
+//
+// console.log(containsAll);
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [0, 1, 2, 3, 4, 5];
+//
+// const containsAll = arr1.every(element => arr2.includes(element));
+// console.log(containsAll);
+
+// function checkElementsInArray(arr1, arr2){
+//     const arr2Object = {};
+//
+//     for(let i = 0; i < arr2.length; i++){
+//         arr2Object[arr2[i]] = true
+//     }
+//
+//     for(let i = 0; i < arr1.length; i++) {
+//         if (!arr2Object[arr1[i]]) return false
+//     }
+//
+//     return true
+// }
+//
+//
+// console.log(checkElementsInArray(['a', 'b', 'c'], ['a', 'b', 'c', 'd', 'e']));
+
