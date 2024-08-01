@@ -4482,3 +4482,16 @@
 // }
 //
 // console.log(checkElementsInArray(['apple', 'banana', 'cherry'], ['banana', 'cherry', 'fig', 'date', 'apple']));
+
+// const isUniformType = (arr) => {
+//
+//     if(arr.length === 0) return true;
+//
+//     const firstType = typeof arr[0];
+//
+//     return arr.every(item => typeof item === firstType);
+// };
+//
+// console.log(isUniformType([1, 2, 3]));   // Вывод: true
+// console.log(isUniformType([1, '2', 3])); // Вывод: false
+// console.log(isUniformType(['apple', 'banana', 'cherry']));
