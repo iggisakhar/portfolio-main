@@ -4492,6 +4492,23 @@
 //     return arr.every(item => typeof item === firstType);
 // };
 //
-// console.log(isUniformType([1, 2, 3]));   // Вывод: true
-// console.log(isUniformType([1, '2', 3])); // Вывод: false
+// console.log(isUniformType([1, 2, 3]));
+// console.log(isUniformType([1, '2', 3]));
 // console.log(isUniformType(['apple', 'banana', 'cherry']));
+
+// function checkUniformType(arr) {
+//     if (arr.length === 0) return 'Array is empty';
+//
+//     const type = typeof arr[0];
+//
+//     for (let i = 1; i < arr.length; i++) {
+//         if (typeof arr[i] !== type) return false;
+//     }
+//
+//     return true;
+// }
+//
+// console.log(checkUniformType([true, false, true]));
+// console.log(checkUniformType([10, '20', 30]));
+// console.log(checkUniformType([]));
+
