@@ -4512,3 +4512,19 @@
 // console.log(checkUniformType([10, '20', 30]));
 // console.log(checkUniformType([]));
 
+// function countOccurrences(arr) {
+//     const count = {};
+
+//     for (let i = 0; i < arr.length; i++) {
+//         const element = arr[i];
+//         if (count[element]) {
+//             count[element] += 1;
+//         } else {
+//             count[element] = 1;
+//         }
+//     }
+//
+//     return count;
+// }
+//
+// console.log(countOccurrences(['apple', 'banana', 'apple', 'orange', 'banana', 'apple']));
