@@ -4528,3 +4528,22 @@
 // }
 //
 // console.log(countOccurrences(['apple', 'banana', 'apple', 'orange', 'banana', 'apple']));
+
+// const numbers = [1, 2, 3];
+//
+// const sum = numbers.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue;
+// }, 0);
+//
+// console.log(sum);
+
+// function countOccurrencesReduce(arr){
+//     return arr.reduce((acc, curr) => {
+//         acc[curr] = (acc[curr] || 0) + 1;
+//         return acc;
+//     }, {})
+// }
+//
+// console.log(countOccurrencesReduce([1, 2, 1, 3, 2, 2])) // { '1': 2, '2': 3, '3': 1 }
+// console.log(countOccurrencesReduce(['apple', 'banana', 'apple', 'orange', 'banana', 'apple']))
+
