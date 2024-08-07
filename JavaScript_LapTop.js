@@ -4547,3 +4547,15 @@
 // console.log(countOccurrencesReduce([1, 2, 1, 3, 2, 2])) // { '1': 2, '2': 3, '3': 1 }
 // console.log(countOccurrencesReduce(['apple', 'banana', 'apple', 'orange', 'banana', 'apple']))
 
+// const fruits = ['apple', 'banana'];
+// const newLength = fruits.push('orange');
+//
+// console.log(fruits);
+// console.log(newLength);
+
+// const numbers = [1, 2, 3];
+// const newLength = numbers.push(4, 5);
+//
+// console.log(numbers);
+// console.log(newLength);
+
