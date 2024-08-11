@@ -4578,3 +4578,11 @@
 // console.log(sum());
 // console.log(sum(1, 2));
 // console.log(sum(1, 2, 3, 4, 5));
+
+// let fruits = ["Apple", "Banana"];
+// console.log(fruits);
+//
+// let newLength = fruits.unshift("Orange");
+// console.log(fruits);
+// console.log(newLength);
+
