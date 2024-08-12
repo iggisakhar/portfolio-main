@@ -4586,3 +4586,9 @@
 // console.log(fruits);
 // console.log(newLength);
 
+// let fruits = ['Apple', 'Banana', 'Cherry'];
+// let lastFruit = fruits.pop();
+//
+// console.log(lastFruit);
+// console.log(fruits);
+
