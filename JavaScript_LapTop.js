@@ -4592,3 +4592,87 @@
 // console.log(lastFruit);
 // console.log(fruits);
 
+// let myArray = [1, 2, 3, 4, 5];
+// console.log(myArray);
+//
+// let firstElement = myArray.shift();
+// console.log(firstElement);
+// console.log(myArray);
+
+// let tasks = ['Brush teeth', 'Morning exercises', 'Breakfast'];
+// console.log(tasks);
+//
+// let firstTask = tasks.shift();
+// let lastTask = tasks.pop();
+//
+// console.log(`First task: ${firstTask}`);
+// console.log(`Last task: ${lastTask}`);
+// console.log(tasks);
+
+// function flattenArray(nestedArray){
+//     return nestedArray.flat();
+// }
+
+// function deepFlatten(nestedArray){
+//     return nestedArray.flat(Infinity);
+// }
+
+// function mergeAndFlatten(array1, array2){
+//     return array1.concat(array2).flat(Infinity);
+// }
+
+// function filterAndFlatten(nestedArray, predicate){
+//     const flattenedArray = nestedArray.flat(Infinity);
+//     return flattenedArray.filter(predicate)
+// }
+
+// function combineFlattenFilter(array1, array2, predicate){
+//     let combinedArray = array1.concat(array2);
+//     let flattenedArray = combinedArray.flat(Infinity);
+//     return flattenedArray.filter(predicate);
+// }
+
+// function conditionalFlatten(nestedArray, depth){
+//     let flattenedArray = nestedArray.flat(depth);
+//     return flattenedArray.filter(item => item !== null && item !== undefined);
+// }
+
+// function removeEmptyArrays(nestedArray){
+//     let flattenedArray = nestedArray.flat();
+//     return flattenedArray.filter(item => !(Array.isArray(item) && item.length === 0));
+// }
+
+// function groupAndFlatten(arrays, groupFunction){
+//     let flattenedArray = arrays.flat(Infinity);
+//     let obj= {};
+//     flattenedArray.forEach(el => {
+//         let keys = groupFunction(el);
+//         if(!obj[keys]){
+//             obj[keys] = [];
+//         }
+//         obj[keys].push(el)
+//     });
+//     return obj;
+// }
+
+// function flattenAndSumUnique(nestedArray){
+//     let flattenedArray = nestedArray.flat(Infinity);
+//     let unique = new Set(flattenedArray);
+//     return Array.from(unique).reduce((sum, current) => sum + current, 0);
+// }
+
+// function findArrayDepth(array){
+//     if(!Array.isArray(array)){
+//         return 0;
+//     }
+//     let sum = 1;
+//     for(let i of array){
+//         if(Array.isArray(i)){
+//             let depth = 1 + findArrayDepth(i);
+//             if(depth > sum){
+//                 sum = depth;
+//             }
+//         }
+//     }
+//     return sum;
+// }
