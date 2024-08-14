@@ -4676,3 +4676,56 @@
 //     }
 //     return sum;
 // }
+
+// function flattenArrays(arr){
+//     return arr.flatMap(index => index);
+// }
+
+// function mergeAllNumbers(obj){
+//     return obj.flatMap(all => all.numbers);
+// }
+
+// function extractAndCombineProperties(arr){
+//     return arr.flatMap(all => all.tags);
+// }
+
+// function extractAndCombineEmails(arr){
+//     return arr.flatMap(el => el.emails);
+// }
+
+// function extractUniqueIDs(arr){
+//     let newArr = arr.flatMap(el => el.ids);
+//     return Array.from(new Set(newArr));
+// }
+
+// function groupByStatus(arr){
+//     let obj = {};
+//     arr.flatMap(el => {
+//         let {status, name} = el;
+//         if(!obj[status]){
+//             obj[status] = [];
+//         }
+//         obj[status].push(name);
+//         return [];
+//     })
+//     return obj;
+// }
+
+// function convertAndFilterData(arr){
+//     return arr.flatMap(item => {
+//         if(item.isActive){
+//             return item.id !== undefined ? item.id * 10 : 0;
+//         } else {
+//             return [];
+//         }
+//     });
+// }
+
+// function transformAndFlatten(arr){
+//     return arr.flatMap(item => item.data.map(num => num * 2));
+// }
+
+// function filterAndFlattenCategories(arr){
+//     return arr.flatMap(item => item.categories.filter(category => category.length > 3));
+// }
+
