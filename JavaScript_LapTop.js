@@ -4729,3 +4729,17 @@
 //     return arr.flatMap(item => item.categories.filter(category => category.length > 3));
 // }
 
+// function calculateAverageRatings(products){
+//     if(products.length === 0 || products.some(product => product.ratings.length === 0)){
+//         return 'Array is empty';
+//     }
+//     const allRatings = products.flatMap(product => product.ratings);
+//     const sum = allRatings.reduce((acc, raiting) => acc + raiting, 0);
+//     const average = sum / allRatings.length;
+//     return average;
+// }
+
+// function sortNumbersAscending(arr){
+//     return arr.slice().sort((a, b) => a - b);
+// }
+
