@@ -4743,3 +4743,69 @@
 //     return arr.slice().sort((a, b) => a - b);
 // }
 
+// function sortStringsByLength(arr){
+//     return arr.sort((a, b) => a.length - b.length);
+// }
+
+// function sortNamesByLastLetter(arr){
+//     return arr.sort((a, b) => {
+//         let lastLetterA = a.slice(-1).toLowerCase();
+//         let lastLetterB = b.slice(-1).toLowerCase();
+//         return lastLetterA.localeCompare(lastLetterB);
+//     });
+// }
+
+// function sortNamesByLastLetter(arr){
+//     return arr.sort((a, b) => {
+//         let lastLetterA = a[a.length -1];
+//         let lastLetterB = b[b.length -1];
+//         return lastLetterA.localeCompare(lastLetterB);
+//     })
+// }
+
+// function sortStudentsByName(arr){
+//     return arr.sort((a, b) => a.name.localeCompare(b.name));
+// }
+
+// function sortObjectsByDate(arr, direction){
+//     return arr.sort((a, b) => {
+//         let dateA = new Date(a.date);
+//         let dateB = new Date(b.date);
+//         if(direction === 'Ascending'){
+//             return dateA - dateB;
+//         } else if(direction === 'Descending'){
+//             return dateB - dateA;
+//         }
+//     });
+// }
+
+// function sortProductsByPriceAndName(arr){
+//     return arr.sort((a, b) => {
+//         if(a.price === b.price){
+//             return a.name.localeCompare(b.name);
+//         } else {
+//             return a.price - b.price;
+//         }
+//     });
+// }
+
+// function sortEmployeesByDepartmentAndExperience(arr){
+//     return arr.sort((a, b) => {
+//         if(a.department === b.department){
+//             return b.yearsOfExperience - a.yearsOfExperience
+//         } else {
+//             return a.department.localeCompare(b.department)
+//         }
+//     });
+// }
+
+// function sortProductsByWeightAndPrice(arr){
+//     return arr.sort((a, b) => {
+//         if(a.weight === b.weight){
+//             return b.price - a.price;
+//         } else {
+//             return a.weight - b.weight;
+//         }
+//     });
+// }
+
