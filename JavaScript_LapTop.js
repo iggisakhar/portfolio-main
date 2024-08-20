@@ -4809,3 +4809,19 @@
 //     });
 // }
 
+// function sortObjectsByKey(arr, key, direction) {
+//     return arr.slice().sort((a, b) => {
+//         return direction === 'Ascending' ? a[key] - b[key] : b[key] - a[key];
+//     })
+// }
+
+// function multiSort(arr, sortParam){
+//     if(!sortParam.length) return 'Sorting parameters are empty';
+//     let res = [...arr];
+//     sortParam.forEach(el => {
+//         const [isTrue, type, key] = el
+//         if(isTrue) res.sort((a, b) => type === 'Ascending' ? a[key] - b[key] : b[key] - a[key])
+//     })
+//     return res;
+//
+// }
