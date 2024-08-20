@@ -4825,3 +4825,154 @@
 //     return res;
 //
 // }
+
+// function sortNumbersAscending(arr){
+//     let newArr = arr.toSorted((a, b) => a - b);
+//     return newArr;
+// }
+
+// function sortStringsByLength(arr){
+//     let newArr = arr.toSorted((a, b) => a.length - b.length);
+//     return newArr;
+// }
+
+// function sortUsersByAge(arr){
+//     let newArr = arr.toSorted((a, b) => a.age - b.age);
+//     return newArr;
+// }
+
+// function sortAlphabetically(arr){
+//     let newArr = arr.toSorted();
+//     return newArr;
+// }
+
+// function sortCities(arr){
+//     let newArr = arr.toSorted((a, b) => {
+//         if(a.population !== b.population){
+//             return b.population - a.population;
+//         }
+//         return a.name.localeCompare(b.name)
+//     });
+//     return newArr;
+// }
+
+// function doubleSortObjects(arr){
+//     let arr1 = arr.toSorted((a, b) => a.numericKey - b.numericKey);
+//     let arr2 = arr.toSorted((a, b) => b.stringKey.localeCompare(a.stringKey));
+//     return {sortedByNumericKey: arr1, sortedByStringKey: arr2}
+// }
+
+// function sortMixedArray(arr){
+//     return arr.map(el => +el).toSorted((a, b) => a - b);
+// }
+
+// function filterAndSortNumbers(arr){
+//     return arr.filter(item => !isNaN(item) && item !== null && item !== undefined).map(item => Number(item)).sort((a, b) => b - a);
+// }
+
+// function normalizeAndSortStrings(arr){
+//     return arr.map(str => str.trim().toLowerCase()).sort((a, b) => b.localeCompare(a));
+// }
+
+// function sortStringsByLengthIgnoringSpaces(arr){
+//     let newArr = arr.toSorted((a, b) => b.trim().length - a.trim().length);
+//     return newArr;
+// }
+
+// function reverseArray(arr){
+//     return arr.reverse();
+// }
+
+// function createReversedCopy(arr){
+//     let newArr = [...arr].reverse();
+//     return newArr;
+// }
+
+// function createReversedCopyUsingSlice(arr){
+//     let newArr = arr.slice().reverse();
+//     return newArr;
+// }
+
+// function mergeAndReverse(...arr){
+//     let newArr = arr.flat().reverse();
+//     return newArr;
+// }
+
+// function reverseWordsInArray(arr){
+//     let newArr = arr.map(str => str.split(' ').reverse().join(' '));
+//     return newArr;
+// }
+
+// function sortAndReverseStringsByLength(arr){
+//     return [...arr].sort((a, b) => b.length - a.length).reverse();
+// }
+
+// function sortAndReverseByCriteria(arr, str){
+//     return [...arr].sort((a, b) => a[str] - b[str]).reverse();
+// }
+
+// function flattenAndReverse(...arr){
+//     let newArr = arr.flat(Infinity);
+//     return newArr.reverse();
+// }
+
+// function mergeReverseUnique(arr){
+//     let newArr = arr.flat(Infinity);
+//     let unique = [];
+//     for(let i = newArr.length -1; i >= 0; i--){
+//         if(!unique.includes(newArr[i])){
+//             unique.unshift(newArr[i]);
+//         }
+//     }
+//     return unique.reverse();
+// }
+
+// function filterNumbersAndReverse(arr){
+//     let newArr = arr.filter(el => typeof el === 'number' && !isNaN(el));
+//     return newArr.reverse();
+// }
+
+// function demonstrateToReversed(arr){
+//     return arr.toReversed();
+// }
+
+// function filterAndReverse(arr){
+//     let newArr = arr.filter(el => el % 2 === 0);
+//     return newArr.toReversed();
+// }
+
+// function transformAndReverse(arr){
+//     let newArr = arr.map(el => el.toUpperCase());
+//     return newArr.toReversed();
+// }
+
+// function selectAndReverse(arr, condition){
+//     let newArr = arr.filter(condition);
+//     return newArr.toReversed();
+// }
+
+// function aggregateAndReverse(arr){
+//     let newArr = arr.map(el => el.value * el.id);
+//     return newArr.toReversed();
+// }
+
+// function applyAndReverse(arr, action){
+//     let newArr = arr.map(action);
+//     return newArr.toReversed();
+// }
+
+// function reverseSubArraysAndFlatten(arr){
+//     let newArr = arr.map(el => el.toReversed());
+//     return newArr.flat(Infinity);
+// }
+
+// function reverseSubArraysAndFlatten(arr){
+//     let newArr = arr.map(el => el.toReversed());
+//     return newArr.flat();
+// }
+
+// function averageAndReverse(arr){
+//     let average = arr.reduce((sum, el) => sum + el, 0) / arr.length;
+//     return arr.map(el => el - average).toReversed();
+// }
+
