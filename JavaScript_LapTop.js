@@ -4976,3 +4976,63 @@
 //     return arr.map(el => el - average).toReversed();
 // }
 
+// function complexDataProcessing(arr){
+//     let filtered = arr.filter(num => num > 10);
+//     let multiplied = filtered.map(num => num * 2);
+//     let excluded = multiplied.filter(num => num < 50);
+//     return excluded.toReversed();
+// }
+
+// function correctAndAnalyzePeaks(arr){
+//     let correctedData = arr.toReversed();
+//     let mappedData = correctedData.map((visitors, hour) => ({
+//         hour: hour,
+//         visitors: visitors
+//     }));
+//     let sortedData = mappedData.sort((a, b) => b.visitors - a.visitors);
+//     let topThree = sortedData.slice(0, 3);
+//     topThree.sort((a, b) => a.visitors - b.visitors);
+//     return topThree;
+// }
+
+// function filterEvenNumbers(arr){
+//     return arr.filter(el => el % 2 === 0);
+// }
+
+// function filterHighAchievers(arr, threshold){
+//     return arr.filter(el => el.averageScore >= threshold);
+// }
+
+// function filterByCategory(arr, str){
+//     return arr.filter(el => el.category === str);
+// }
+
+// function filterByCriteria(arr, criteria){
+//     return arr.filter(el => {
+//         return Object.keys(criteria).every(key => el[key] === criteria[key])
+//     })
+// }
+
+// function filterByAvailability(events, fromDate, toDate, isAvailable){
+//     return events.filter(event => {
+//         let eventDate = new Date(event.date);
+//         let startDate = new Date(fromDate);
+//         let endDate = new Date(toDate);
+//         return eventDate >= startDate && eventDate <= endDate && event.available === isAvailable;
+//     })
+// }
+
+// function filterRestaurants(restaurants, desiredCuisine, minRating){
+//     return restaurants.filter(restaurant => {
+//         return restaurant.cuisine === desiredCuisine && restaurant.rating >= minRating;
+//     })
+// }
+
+// function filterTasks(tasks, statuses, startDate, endDate){
+//     return tasks.filter(task => {
+//         let taskDate = new Date(task.dueDate);
+//         let start = new Date(startDate);
+//         let end = new Date(endDate);
+//         return statuses.includes(task.status) && taskDate >= start && taskDate <= end;
+//     })
+// }
