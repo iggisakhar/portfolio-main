@@ -5075,3 +5075,30 @@
 // const newArray3 = originalArray.toSpliced(3, 0, 'x', 'y');
 // console.log(newArray3);
 // console.log(originalArray);
+
+// function filterMedia(mediaList, genres, ratingRange){
+//     return mediaList.filter(media => {
+//         let matchesGenre = genres.includes(media.genre);
+//         let matchesRating = media.rating >= ratingRange.min && media.rating <= ratingRange.max;
+//         return matchesGenre && matchesRating;
+//     })
+// }
+
+// function filterAndSummarizeSales(salesData, minAmount, startDate, endDate){
+//     return salesData.filter(sale => {
+//         let saleDate = new Date(sale.date);
+//         return sale.amount >= minAmount && saleDate >= new Date(startDate) && saleDate <= new Date(endDate);
+//     })
+//         .reduce((total, sale) => total + sale.amount, 0);
+// }
+
+// function summarizeAndFilterOrders(orders, minTotal, categories, regions) {
+//     return orders
+//         .map(obj => ({...obj, total: obj.total.reduce((acc, n) => acc + n, 0)}))
+//         .filter(({total, category, region}) =>
+//             total >= minTotal &&
+//             categories.includes(category) &&
+//             regions.includes(region)
+//         );
+// };
+
