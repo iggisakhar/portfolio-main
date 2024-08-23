@@ -5036,3 +5036,42 @@
 //         return statuses.includes(task.status) && taskDate >= start && taskDate <= end;
 //     })
 // }
+
+// let fruits = ['apple', 'banana', 'kiwi'];
+// fruits.splice(2, 0, 'orange', 'pear');
+//
+// console.log(fruits);
+
+// let fruits = ['apple', 'orange', 'pear', 'banana'];
+// let removed = fruits.splice(1, 2);
+//
+// console.log(fruits);
+// console.log(removed);
+
+// let numbers1 = [1, 2, 3, 4, 5];
+// numbers1.splice(numbers1.length - 1)
+// console.log(numbers1)
+//
+//
+// let numbers2 = [1, 2, 3, 4, 5];
+// numbers2.splice(-1);
+// console.log(numbers2);
+
+// let fruits = ['apple', 'orange', 'pear', 'banana'];
+// fruits.splice(1, 2, 'kiwi', 'mango');
+//
+// console.log(fruits);
+
+// const originalArray = [1, 2, 3, 4, 5];
+//
+// const newArray1 = originalArray.toSpliced(1, 2);
+// console.log(newArray1);
+// console.log(originalArray);
+//
+// const newArray2 = originalArray.toSpliced(2, 1, 'a', 'b');
+// console.log(newArray2);
+// console.log(originalArray);
+//
+// const newArray3 = originalArray.toSpliced(3, 0, 'x', 'y');
+// console.log(newArray3);
+// console.log(originalArray);
