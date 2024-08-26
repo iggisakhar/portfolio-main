@@ -5102,3 +5102,31 @@
 //         );
 // };
 
+// const numbers = [1, 2, 3, 4, 5];
+// const squaredNumbers = numbers.map(number => number * number);
+//
+// console.log(numbers);
+// console.log(squaredNumbers);
+
+// const numbers = [5, 10, 15, 20];
+// const obj = {name: 'John', lastName: 'Smith' };
+//
+//
+// const numbersWithIndex = numbers.map(function(currentValue, index, arr) {
+//
+//     return `Index ${index}: ${currentValue}, Array: ${arr.toString()}, Full name: ${this.name} ${this.lastName}`;
+//
+// }, obj);
+//
+//
+// console.log(numbersWithIndex);
+
+// const array = [1, 2, 3];
+// const context = { multiplier: 2 };
+//
+// const doubled = array.map(function(element) {
+//     return element * this.multiplier;
+// }, context);
+//
+// console.log(doubled);
+
