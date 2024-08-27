@@ -5130,3 +5130,25 @@
 //
 // console.log(doubled);
 
+// function findStudentById(arr, id){
+//     return arr.find(student => student.id === id) || null;
+// }
+
+// function findNumber(arr, num){
+//     return arr.find(n => n === num) || undefined;
+// }
+
+// function findFirstPositiveOdd(arr){
+//     let result = arr.find(num => num > 0 && num % 2 !== 0);
+//     return result !== undefined ? result : "Positive odd number hasn't been found";
+// }
+
+// function findStudentByGrade(students, threshold){
+//     return students.find(student => student.grade > threshold) || null;
+// }
+
+// function findStudentWithMaxGrade(students){
+//     if(students.length === 0) return null;
+//     return students.reduce((maxStudent, currentStudent) => currentStudent.grade > maxStudent.grade ? currentStudent : maxStudent);
+// }
+
