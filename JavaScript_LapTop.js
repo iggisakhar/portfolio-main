@@ -5151,3 +5151,18 @@
 //     if(students.length === 0) return null;
 //     return students.reduce((maxStudent, currentStudent) => currentStudent.grade > maxStudent.grade ? currentStudent : maxStudent);
 // }
+
+// const fruits = ['Apple', 'Banana', 'Cherry'];
+//
+// fruits.forEach((fruit, index, arr) => {
+//     console.log(`${index + 1}: ${fruit}; Original array: ${arr}`);
+// });
+
+// const fruits = ['Apple', 'Banana', 'Cherry'];
+//
+// fruits.forEach((fruit, index, arr) => {
+//     arr[index] = 'Fruit - ' + fruit;
+// });
+//
+// console.log(fruits);
+
