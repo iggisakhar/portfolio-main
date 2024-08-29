@@ -5166,3 +5166,8 @@
 //
 // console.log(fruits);
 
+// const months = ['January', 'February', undefined, 'April'];
+// const myMonths = months.with(2, "March");
+//
+// console.log(months);
+// console.log(myMonths);
