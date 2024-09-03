@@ -5191,3 +5191,33 @@
 //     return students;
 // }
 
+// function filterStudentsByGradeRange(students, range){
+//     let index = students.findIndex(el => el.grade >= range.min && el.grade <= range.max);
+//     if(index !== -1){
+//         students.splice(index, 1);
+//     }
+//     return students;
+// }
+
+// function findUniqueInteger(arr){
+//     for(let i of arr){
+//         if(!arr.includes(-i)){
+//             return i;
+//         }
+//     }
+//     return 'No unique integers';
+// }
+
+// function findFirstDuplicate(arr){
+//     let index = new Set();
+//     for(let i of arr){
+//         let normal = i.toString().toLowerCase();
+//         if(index.has(normal) && typeof i === 'string'){
+//             return normal;
+//         } else if(index.has(normal)){
+//             return i;
+//         }
+//         index.add(normal);
+//     }
+//     return null;
+// }
