@@ -5171,3 +5171,23 @@
 //
 // console.log(months);
 // console.log(myMonths);
+
+// function findStudentsByName(num1, num2){
+//     let students = num1.filter(el => num2.includes(el.name)).map(el => ({
+//         id: el.id,
+//         grade: el.grade
+//     }));
+//     if(students.length === 0){
+//         return 'No students found';
+//     }
+//     return students;
+// }
+
+// function filterStudentsByGradeRange(students, range){
+//     let index = students.findIndex(el => el.grade >= range.min && el.grade <= range.max);
+//     if(index !== -1){
+//         students.splice(index, 1);
+//     }
+//     return students;
+// }
+
