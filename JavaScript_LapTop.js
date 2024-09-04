@@ -5222,3 +5222,25 @@
 //     return null;
 // }
 
+// function findFirstDuplicate(arr){
+//     let result = arr
+//         .map(el => {
+//             if(typeof el === 'string') return el.toLowerCase();
+//             else return el;
+//         })
+//         .find((el, index, array) => array.indexOf(el, index + 1) !== -1);
+//     return result ? result : null;
+// }
+
+// function findClosestNumber(arr, target){
+//     let closest = arr[0];
+//     let small = Math.abs(arr[0] - target);
+//     for(let i = 1; i < arr.length; i++){
+//         let diff = Math.abs(arr[i] - target);
+//         if(diff < small){
+//             closest = arr[i];
+//             small = diff;
+//         }
+//     }
+//     return closest;
+// }
