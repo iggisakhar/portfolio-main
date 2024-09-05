@@ -5244,3 +5244,15 @@
 //     }
 //     return closest;
 // }
+
+// const arr = new Array(5).fill(1);
+// console.log(arr);
+
+// const fruits = ["apple", "banana", "coconut", "date"];
+// fruits.fill("kiwi", 1, 3);
+// console.log(fruits);
+
+// const numbers = [1, 2, 3, 4, 5];
+// numbers.fill(0, -3, -1);
+// console.log(numbers);
+
