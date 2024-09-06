@@ -5255,3 +5255,138 @@
 // const numbers = [1, 2, 3, 4, 5];
 // numbers.fill(0, -3, -1);
 // console.log(numbers);
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast = function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }
+// function findLastEven(arr){
+//     return arr.findLast(el => el % 2 === 0);
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast = function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }function findLastStartingWith(arr, char){
+//     return arr.findLast(str => str.startsWith(char));
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast = function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }function findLastWithProperty(arr, propName, propValue){
+//     return arr.findLast(obj => obj[propName] === propValue) || null;
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast = function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }
+// function findLastArrayContainingNumber(arrays, num){
+//     if(!arrays || !num || arrays.length === 0){
+//         return 'Missing information';
+//     }
+//     const result = arrays.findLast(subArray => subArray.includes(num));
+//     return result || 'Not found';
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast = function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }
+//
+// function findLastProductWithAttribute(products, attribute, value, minPrice){
+//     const result = products.findLast(product => product[attribute] === value && product.price > minPrice);
+//     return result || 'Product was not found';
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast =             function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }
+//
+// function findLastExpensiveInCategory(products, category, minPrice){
+//     let filtered = products.filter(product => product.type === category && product.price >= minPrice);
+//     let maxPrice = filtered.findLast(product => product.price >= minPrice);
+//     return {
+//         filtered,
+//         maxPrice
+//     };
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast =             function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }
+// function findLastStringByLength(arr, length){
+//     const processedArray = arr.map(str => str.replace(/\s+/g, ''));
+//     const matchingString = processedArray.findLast(str => str.length === length);
+//     return {
+//         processedArray,
+//         matchingString
+//     };
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast =             function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     };
+// }
+// function findLastStringWithSumAbove(arr, threshold){
+//     const processedSums = arr.map(str => {
+//         let numbers = str.split(' ').map(Number);
+//         return numbers.reduce((sum, num) => sum + num, 0)
+//     });
+//     let matchingString = arr.findLast((str, index) => processedSums[index] > threshold);
+//     return {
+//         processedSums,
+//         matchingString
+//     };
+// }
