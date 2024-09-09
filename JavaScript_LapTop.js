@@ -5390,3 +5390,82 @@
 //         matchingString
 //     };
 // }
+
+// function findLastPalindrome(arr){
+//     let palindrome = (str) => {
+//         let format = str.toLowerCase().replace(/\s+/g, '');
+//         return format === format.split('').reverse().join('');
+//     }
+//     let result = {
+//         newArr: [],
+//         lastPalindrome: 'palindrome was not found'
+//     }
+//     for(let i = 0; i < arr.length; i++){
+//         let check = palindrome(arr[i]);
+//         result.newArr.push(check);
+//         if(check){
+//             result.lastPalindrome = arr[i];
+//         }
+//     }
+//     return result;
+// }
+
+// function findLastMostExpensiveByCategory(products){
+//     let result = {};
+//     products.forEach(product => {
+//         let { category, price } = product;
+//         if(!result[category] || result[category].price <= price)
+//         {
+//             result[category] =
+//                 {name: product.name, price: price};
+//         }
+//     });
+//     return result;
+// }
+
+// function containsElement(arr, element){
+//     return arr.includes(element) || false;
+// }
+
+// function containsAllElements(arr, elements){
+//     return elements.every(element => arr.includes(element)) || false;
+// }
+
+// function containsSubarray(arr,subArr){
+//     let arrString = arr.join(',');
+//     let subArrString = subArr.join(',');
+//     return arrString.includes(subArrString);
+// }
+
+// function containsObjectWithProperty(arr, property, value){
+//     return arr.map(obj => obj[property]).includes(value);
+// }
+
+// function checkStringInArray(arr, str){
+//     let newArr = arr.map(item => item.toLowerCase().replace(/\s+/g, ''));
+//     let modifiedStr = str.toLowerCase().replace(/\s+/g, '');
+//     const includes = newArr.includes(modifiedStr);
+//     return { newArr, includes };
+// }
+
+// function checkStringInNestedArray(arr, str){
+//     let newArr = arr.flat(Infinity).map(item => item.toUpperCase());
+//     let modifiedStr = str.toUpperCase();
+//     let includes = newArr.includes(modifiedStr);
+//     return { newArr, includes };
+// }
+
+// function checkObjectValues(obj, firstValue, secondValue){
+//     let values = Object.values(obj);
+//     let hasFirstValue = values.includes(firstValue);
+//     let hasSecondValue = values.includes(secondValue);
+//     if(hasFirstValue && hasSecondValue){
+//         return 'Object includes both values';
+//     } else if (!hasFirstValue && !hasSecondValue){
+//         return 'Object is missing both values';
+//     } else if (hasFirstValue){
+//         return `Object includes only first value: ${firstValue}`;
+//     } else {
+//         return `Object includes only second value: ${secondValue}`;
+//     }
+// }
