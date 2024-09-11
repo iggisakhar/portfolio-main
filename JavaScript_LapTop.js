@@ -5469,3 +5469,18 @@
 //         return `Object includes only second value: ${secondValue}`;
 //     }
 // }
+//
+// const original = [1, 2, [3, 4]];
+// const result = original.flat()
+//
+// console.log(original);
+// console.log(result);
+
+// const original = [1, 2, [3, 4, [5, 6]]];
+//
+// console.log(original.flat());
+// console.log(original.flat(2));
+
+// const original = [1, [2, [3, [4, [5]]]]];
+//
+// console.log(original.flat(Infinity));
