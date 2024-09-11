@@ -5485,3 +5485,54 @@
 //
 // console.log(original.flat(Infinity));
 
+// function checkNumberInStringArray(arr, num){
+//     let numStr = String(num);
+//     let modify = arr.map(el => el.replace(/\D/g, ''));
+//     let includes = modify.some(el => el.includes(numStr));
+//     return {
+//         newArr: modify,
+//         includes: includes
+//     }
+// }
+
+// function countElementsInArray(arr1, arr2){
+//     let foundElements = arr2.filter(element => arr1.includes(element));
+//     let totalCount = foundElements.length;
+//     return {
+//         foundElements,
+//         totalCount
+//     }
+// }
+
+// function findElementsByType(arr, ...elements){
+//     let result = {};
+//     elements.forEach(element => {
+//         let type = typeof element;
+//         let filteredElements = arr.filter(item => typeof item === type);
+//         if(filteredElements.length > 0){
+//             result[type] = filteredElements;
+//         }
+//     });
+//     return Object.keys(result).length > 0 ? result : {};
+// }
+
+// function findIndex(arr, element){
+//     return arr.indexOf(element);
+// }
+
+// function findIndexIgnoreCase(arr, element){
+//     return arr.map(el => el.toLowerCase()).indexOf(element.toLowerCase());
+// }
+
+// function findIndexByProperty(arr, value) {
+//     const values = arr.map(obj => obj.name);
+//     const index = values.indexOf(value);
+//     return index !== -1 ? index : 'Value was not found';
+// }
+
+// function findSubstringIndices(strings, substrings) {
+//     return substrings.map(sub => {
+//         let index = strings.findIndex(str => str.indexOf(sub) !== -1);
+//         return index !== -1 ? index : 'Substring not found';
+//     });
+// }
