@@ -5536,3 +5536,12 @@
 //         return index !== -1 ? index : 'Substring not found';
 //     });
 // }
+
+// const students = [
+//     { name: 'Alice', grades: [5, 4, 4, 3] },
+//     { name: 'Bob', grades: [2, 3, 3, 4] },
+//     { name: 'Clara', grades: [5, 5, 4, 4] }
+// ];
+//
+// const allGrades = students.flatMap(student => student.grades);
+// console.log(allGrades);
