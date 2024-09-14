@@ -5545,3 +5545,29 @@
 //
 // const allGrades = students.flatMap(student => student.grades);
 // console.log(allGrades);
+
+// const fruits = ['banana', 'apple', 'pear'];
+// fruits.sort();
+// console.log(fruits);
+
+// const numbers = [10, 5, 1, 44, 20];
+// numbers.sort();
+// console.log(numbers);
+
+// const numbers1 = [10, 5, 1, 44, 20];
+// numbers1.sort((a, b) => a - b);
+// console.log(numbers1);
+//
+//
+// const numbers2 = [10, 5, 1, 44, 20];
+// numbers2.sort((a, b) => b - a);
+// console.log(numbers2);
+
+// const items = [
+//     { name: 'Apple', price: 50 },
+//     { name: 'Banana', price: 10 },
+//     { name: 'Pear', price: 20 }
+// ];
+// items.sort((a, b) => a.price - b.price);
+//
+// console.log(items);
