@@ -5571,3 +5571,21 @@
 // items.sort((a, b) => a.price - b.price);
 //
 // console.log(items);
+
+// const words = ['resume', 'résumé', 'exposé', 'déjà vu'];
+//
+// words.sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
+//
+// console.log(words)
+
+// const words = ['apple', 'banana', 'cherry', 'date'];
+//
+// words.sort((a, b) => {
+//
+//     const lastCharA = a[a.length - 1];
+//     const lastCharB = b[b.length - 1];
+//
+//     return lastCharA.localeCompare(lastCharB);
+// });
+//
+// console.log(words);
