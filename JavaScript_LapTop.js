@@ -5589,3 +5589,15 @@
 // });
 //
 // console.log(words);
+
+// const numbers = [5, 3, 9, 1];
+// const sortedNumbers = numbers.toSorted();
+//
+// console.log(numbers);
+// console.log(sortedNumbers);
+
+// const items = [{ name: "Tomato", price: 50 }, { name: "Potato", price: 30 }];
+// const sortedItems = items.toSorted((a, b) => a.price - b.price);
+//
+// console.log(sortedItems);
+
