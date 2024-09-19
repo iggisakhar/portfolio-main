@@ -5601,3 +5601,17 @@
 //
 // console.log(sortedItems);
 
+// let numbers = [1, 2, 3, 4, 5];
+// numbers.reverse();
+// console.log(numbers);
+
+// const original = ['!!!', 'world', 'hello'];
+// const result = original.reverse();
+//
+// console.log(result);
+// console.log(original);
+
+// let original = [1, 2, 3, 4, 5];
+// let reversed = [...original].reverse();
+// console.log(original);
+// console.log(reversed);
