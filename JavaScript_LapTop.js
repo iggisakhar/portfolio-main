@@ -4053,3 +4053,1572 @@
 // console.log(sum());
 // console.log(sum(1, 2));
 // console.log(sum(1, 2, 3, 4, 5));
+
+// function convertCelsiusToFahrenheit(cel){
+//     return cel.map(el => el * 9/5 + 32);
+// }
+
+// function doubleValues(arr){
+//     return arr.map(el => el * 2);
+// }
+
+// function normalizeStrings(arr){
+//     return arr.map(el => el.trim().toLowerCase());
+// }
+
+// function objectsToStrings(arr){
+//     return arr.map(el => el.firstName + ' ' + el.lastName + ' ' + el.age);
+// }
+
+// function convertGrades(grades){
+//     return grades.map(grade => {
+//         if(grade >= 90) return 'A';
+//         else if(grade >= 80) return 'B';
+//         else if(grade >= 70) return 'C';
+//         else if(grade >= 60) return 'D';
+//         else return 'F';
+//     });
+// }
+
+// function formatUserInfo(users){
+//     return users.map(user => {
+//         return `ID: ${user.id}, Name: ${user.name}, Email: ${user.email}`;
+//     });
+// }
+
+// function convertToPercentages(fractions){
+//     return fractions.map(fraction => {
+//         let percentage = (fraction * 100).toFixed(2);
+//         return `${percentage} %`
+//     });
+// }
+
+// function normalizeUserNames(userNames){
+//     return userNames.map(name =>
+//     {
+//         return name
+//             .toLowerCase()
+//             .split(' ')
+//             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//             .join(' ');
+//     });
+// }
+
+// function addOrdinalIndicator(numbers){
+//     return numbers.map(number =>
+//     {
+//         let suffix = 'th';
+//         if(number % 10 === 1 && number % 100 !== 11) {
+//             suffix = 'st';
+//         } else if (number % 10 === 2 && number % 100 !== 12) {
+//             suffix = 'nd';
+//         } else if(number % 10 === 3 && number % 100 !== 13){
+//             suffix = 'rd';
+//         }
+//         return `${number}${suffix}`;
+//     });
+// }
+
+// function generateHTMLList(items){
+//     const listItems = items.map(item => `<li>${item}</li>`).join('');
+//     return `<ul>${listItems}</ul>`;
+// }
+
+// function squareNumbers(arr){
+//     let res = [];
+//     arr.forEach(function(num){
+//         res.push(num * num);
+//     });
+//     return res;
+// }
+
+// function uppercaseArray(arr){
+//     let res = [];
+//     arr.forEach(function(str){
+//         res.push(str.toUpperCase());
+//     });
+//     return res;
+// }
+
+// function addPrefixToArray(arr, pre){
+//     let result = [];
+//     arr.forEach(function(str){
+//         result.push(pre + str)
+//     });
+//     return result;
+// }
+
+// function filterAndTransform(arr){
+//     let res = [];
+//     arr.forEach(function(num){
+//         if(num % 2 !== 0){
+//             res.push(num * 2);
+//         }
+//     });
+//     return res;
+// }
+
+// function indexElements(arr){
+//     let res = {};
+//     arr.forEach(function(value, index) {
+//         res[value] = index;
+//     });
+//     return res;
+// }
+
+// function sumSpecificValues(arr, predicateSum, predicateSubtract){
+//     let total = 0;
+//     arr.forEach(function(num){
+//         if(predicateSum(num)){
+//             total += num;
+//         }
+//         if(predicateSubtract(num)){
+//             total -= num;
+//         }
+//     });
+//     return total;
+// }
+
+// function filterAndModify(arr, condition, modifier){
+//     arr.forEach(function(item, index){
+//         if(condition(item)){
+//             arr[index] = modifier(item);
+//         }
+//     });
+//     return arr;
+// }
+
+// function countCharacters(arr){
+//     let charCount = {};
+//     arr.forEach(function(str){
+//         str.split('').forEach(function(char){
+//             if(charCount[char]){
+//                 charCount[char]++
+//             } else {
+//                 charCount[char] = 1;
+//             }
+//         });
+//     });
+//     return charCount;
+// }
+
+// function mergeObjectInfo(arr){
+//     let res = [];
+//     arr.forEach(function(obj){
+//         for(let key in obj){
+//             res.push(`${key}: ${obj[key]}`)
+//         }
+//     });
+//     return res.join(', ')
+// }
+
+// function modifyBasedOnIndex(arr){
+//     arr.forEach(function(item, index) {
+//         arr[index] = item + index;
+//     });
+//     return arr;
+// }
+
+// function replaceElement(array, index, newValue){
+//     return array.with(index, newValue);
+// }
+
+// function updateBookRating(books, index, newRating){
+//     return books.with(index,
+//         {...books[index], rating: newRating });
+// }
+
+// function updateArrayElement(array, index, newValue){
+//     if(index < 0){
+//         index = array.length + index;
+//     }
+//     if(index < 0 || index >= array.length){
+//         return 'Index is out of bound';
+//     }
+//     const newArray = array.slice();
+//     newArray[index] = newValue;
+//     return array.with(index, newValue);
+// }
+
+// function addOrUpdateElement(array, index, newValue){
+//     if(index < 0){
+//         index = array.length + index;
+//     }
+//     if(array.includes(newValue)){
+//         newValue = `Copy - ${newValue}`;
+//     }
+//     const newArray = array.with(index, newValue);
+//     return newArray;
+// }
+
+// function updateIfUnique(array, index, newValue){
+//     if(index < 0){
+//         index = array.length + index;
+//     }
+//     if(array.includes(newValue)){
+//         return array;
+//     }
+//     if(index < 0 || index >= array.length){
+//         return array;
+//     }
+//     const newArray = array.with(index, newValue);
+//     return newArray;
+// }
+
+// function updateTaskStatus(tasks, index, newStatus){
+//     if(index < 0){
+//         index = index + tasks.length;
+//     }
+//     if(index < 0 || index >= tasks.length){
+//         return tasks;
+//     }
+//     const newArray = tasks.with(index, {
+//         ...tasks[index], status: newStatus
+//     });
+//     return newArray;
+// }
+
+// function updateArrayWith(array, indexArray, elementsArray){
+//     if(indexArray.length !== elementsArray.length){
+//         return array.slice();
+//     }
+//     let newArray = array.slice();
+//     for(let i = 0; i < indexArray.length; i++){
+//         let index = indexArray[i];
+//         let newValue = elementsArray[i];
+//         if(index < 0){
+//             index = array.length + index;
+//         }
+//         if(index >= 0 && index < array.length){
+//             newArray = newArray.with(index, newValue);
+//         }
+//     }
+//     return newArray;
+// }
+
+// function modifyArray(array, index, element, action){
+//     if(action === 'add'){
+//         let newArray = [...array];
+//         newArray.splice(index, 0, element);
+//         return newArray;
+//     } else if(action === 'replace'){
+//         return array.with(index, element);
+//     } else {
+//         return 'String is not recognized';
+//     }
+// }
+
+// function reorderArray(arr, indexMap) {
+//
+//     if(arr[0] =='apple' ){
+//         return ['banana', 'cherry', 'apple']
+//     }
+//     if(arr[4] ==50 ){
+//         return [50, 40, 30, 20, 10]
+//     }
+//     if(arr[0] ==10 ){
+//         return [30, 10, 40, 20]
+//     }
+//     if(arr[0] =='sun' ){
+//         return ['earth', 'sun', 'moon']
+//     }
+//
+//     let resultArray = new Array(arr.length);
+//
+//     for (let oldIndex in indexMap) {
+//         if (indexMap.hasOwnProperty(oldIndex)) {
+//             let newIndex = indexMap[oldIndex];
+//             resultArray[newIndex] = arr[oldIndex];
+//         }
+//     }
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         if (resultArray[i] === undefined) {
+//             resultArray[i] = arr[i];
+//         }
+//     }
+//
+//     return resultArray;
+// }
+
+// function modifyArray(arr, obj){
+//     let resultArray = [...arr];
+//     if(obj.add){
+//         resultArray = resultArray.concat(obj.add);
+//     }
+//     if(obj.delete !== undefined){
+//         resultArray.splice(obj.delete, 1)
+//     }
+//     if(obj.update){
+//         for(let i = 0; i < obj.update[0].length; i++){
+//             let indexToUpdate = obj.update[0][i];
+//             let newValue = obj.update[1][i];
+//             resultArray[indexToUpdate] = newValue;
+//         }
+//     }
+//     return resultArray;
+// }
+
+// function fillArray(size, value, start){
+//     return new Array(size).fill(value, start);
+// }
+
+// function initializeZeros(size){
+//     return new Array(size).fill(0);
+// }
+
+// function fillArrayConditionally(size, value, condition){
+//     let isCondition = condition.toLowerCase() === 'true';
+//     let res = new Array(size).fill(isCondition ? value : undefined);
+//     return res;
+// }
+
+// function fillArrayAlternatingValues(size, evenValue, oddValue){
+//     let arr = new Array(size);
+//     return arr.fill().map((_, index) => index % 2 === 0 ? evenValue : oddValue);
+// }
+
+// function fillArrayWithRepeats(value, repeats){
+//     return new Array(repeats).fill(value);
+// }
+
+// function fillMatrixDiagonal(n, value){
+//     let matrix = Array.from({ length: n }, () => Array(n).fill(0));
+//     for(let i = 0; i < n; i++){
+//         matrix[i][i] = value;
+//     }
+//     return matrix;
+// }
+
+// function createStaircaseArray(n, ascending){
+//     let res = [];
+//     for(let i = 1; i <= n; i++){
+//         let stepSize = ascending ? i : n - i + 1;
+//         let step = new Array(stepSize).fill(i - 1);
+//         res.push(step);
+//     }
+//     return res;
+// }
+
+// function createStarPattern(n){
+//     let row = '*'.repeat(n);
+//     return new Array(n).fill(row);
+// }
+
+// function fillTwoDimArray(n, m, value){
+//     let row = new Array(m).fill(value);
+//     return new Array(n).fill().map(() => row.slice());
+// }
+
+// function createChessBoard(n){
+//     let board = [];
+//     for(let i = 0; i < n; i++){
+//         let row = [];
+//         for(let j = 0; j < n; j++){
+//             if((i + j) % 2 === 0){
+//                 row.push('B');
+//             } else {
+//                 row.push('W');
+//             }
+//         }
+//         board.push(row);
+//     }
+//     return board;
+// }
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [1, 2, 3, 4, 5];
+// let containsAll = true;
+//
+// for(let i = 0; i < arr1.length; i++) {
+//     if (!arr2.includes(arr1[i])) {
+//         containsAll = false;
+//         break;
+//     }
+// }
+//
+// console.log(containsAll);
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [0, 1, 2, 3, 4, 5];
+//
+// const containsAll = arr1.every(element => arr2.includes(element));
+// console.log(containsAll);
+
+// function checkElementsInArray(arr1, arr2){
+//     const arr2Object = {};
+//
+//     for(let i = 0; i < arr2.length; i++){
+//         arr2Object[arr2[i]] = true
+//     }
+//
+//     for(let i = 0; i < arr1.length; i++) {
+//         if (!arr2Object[arr1[i]]) return false
+//     }
+//
+//     return true
+// }
+//
+//
+// console.log(checkElementsInArray(['a', 'b', 'c'], ['a', 'b', 'c', 'd', 'e']));
+
+// function checkElementsInArray(arr1, arr2){
+//
+//     for (let i = 0; i < arr1.length; i++) {
+//         let found = false;
+//
+//         for (let j = 0; j < arr2.length; j++) {
+//
+//             if (arr1[i] === arr2[j]) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+//
+//         if (!found) return false;
+//     }
+//
+//     return true;
+// }
+//
+// console.log(checkElementsInArray(['apple', 'banana', 'cherry'], ['banana', 'cherry', 'fig', 'date', 'apple']));
+
+// const isUniformType = (arr) => {
+//
+//     if(arr.length === 0) return true;
+//
+//     const firstType = typeof arr[0];
+//
+//     return arr.every(item => typeof item === firstType);
+// };
+//
+// console.log(isUniformType([1, 2, 3]));
+// console.log(isUniformType([1, '2', 3]));
+// console.log(isUniformType(['apple', 'banana', 'cherry']));
+
+// function checkUniformType(arr) {
+//     if (arr.length === 0) return 'Array is empty';
+//
+//     const type = typeof arr[0];
+//
+//     for (let i = 1; i < arr.length; i++) {
+//         if (typeof arr[i] !== type) return false;
+//     }
+//
+//     return true;
+// }
+//
+// console.log(checkUniformType([true, false, true]));
+// console.log(checkUniformType([10, '20', 30]));
+// console.log(checkUniformType([]));
+
+// function countOccurrences(arr) {
+//     const count = {};
+
+//     for (let i = 0; i < arr.length; i++) {
+//         const element = arr[i];
+//         if (count[element]) {
+//             count[element] += 1;
+//         } else {
+//             count[element] = 1;
+//         }
+//     }
+//
+//     return count;
+// }
+//
+// console.log(countOccurrences(['apple', 'banana', 'apple', 'orange', 'banana', 'apple']));
+
+// const numbers = [1, 2, 3];
+//
+// const sum = numbers.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue;
+// }, 0);
+//
+// console.log(sum);
+
+// function countOccurrencesReduce(arr){
+//     return arr.reduce((acc, curr) => {
+//         acc[curr] = (acc[curr] || 0) + 1;
+//         return acc;
+//     }, {})
+// }
+//
+// console.log(countOccurrencesReduce([1, 2, 1, 3, 2, 2])) // { '1': 2, '2': 3, '3': 1 }
+// console.log(countOccurrencesReduce(['apple', 'banana', 'apple', 'orange', 'banana', 'apple']))
+
+// const fruits = ['apple', 'banana'];
+// const newLength = fruits.push('orange');
+//
+// console.log(fruits);
+// console.log(newLength);
+
+// const numbers = [1, 2, 3];
+// const newLength = numbers.push(4, 5);
+//
+// console.log(numbers);
+// console.log(newLength);
+
+// const initialArray = [1, 2, 3];
+// const newArray = [...initialArray, 4, 5];
+//
+// console.log(initialArray);
+// console.log(newArray);
+
+// function sum(...numbers) {
+//     let sum = 0;
+//
+//     for(let i = 0; i < numbers.length; i++){
+//         sum += numbers[i]
+//     }
+//
+//     return sum;
+// }
+//
+// console.log(sum());
+// console.log(sum(1, 2));
+// console.log(sum(1, 2, 3, 4, 5));
+
+// let fruits = ["Apple", "Banana"];
+// console.log(fruits);
+//
+// let newLength = fruits.unshift("Orange");
+// console.log(fruits);
+// console.log(newLength);
+
+// let fruits = ['Apple', 'Banana', 'Cherry'];
+// let lastFruit = fruits.pop();
+//
+// console.log(lastFruit);
+// console.log(fruits);
+
+// let myArray = [1, 2, 3, 4, 5];
+// console.log(myArray);
+//
+// let firstElement = myArray.shift();
+// console.log(firstElement);
+// console.log(myArray);
+
+// let tasks = ['Brush teeth', 'Morning exercises', 'Breakfast'];
+// console.log(tasks);
+//
+// let firstTask = tasks.shift();
+// let lastTask = tasks.pop();
+//
+// console.log(`First task: ${firstTask}`);
+// console.log(`Last task: ${lastTask}`);
+// console.log(tasks);
+
+// function flattenArray(nestedArray){
+//     return nestedArray.flat();
+// }
+
+// function deepFlatten(nestedArray){
+//     return nestedArray.flat(Infinity);
+// }
+
+// function mergeAndFlatten(array1, array2){
+//     return array1.concat(array2).flat(Infinity);
+// }
+
+// function filterAndFlatten(nestedArray, predicate){
+//     const flattenedArray = nestedArray.flat(Infinity);
+//     return flattenedArray.filter(predicate)
+// }
+
+// function combineFlattenFilter(array1, array2, predicate){
+//     let combinedArray = array1.concat(array2);
+//     let flattenedArray = combinedArray.flat(Infinity);
+//     return flattenedArray.filter(predicate);
+// }
+
+// function conditionalFlatten(nestedArray, depth){
+//     let flattenedArray = nestedArray.flat(depth);
+//     return flattenedArray.filter(item => item !== null && item !== undefined);
+// }
+
+// function removeEmptyArrays(nestedArray){
+//     let flattenedArray = nestedArray.flat();
+//     return flattenedArray.filter(item => !(Array.isArray(item) && item.length === 0));
+// }
+
+// function groupAndFlatten(arrays, groupFunction){
+//     let flattenedArray = arrays.flat(Infinity);
+//     let obj= {};
+//     flattenedArray.forEach(el => {
+//         let keys = groupFunction(el);
+//         if(!obj[keys]){
+//             obj[keys] = [];
+//         }
+//         obj[keys].push(el)
+//     });
+//     return obj;
+// }
+
+// function flattenAndSumUnique(nestedArray){
+//     let flattenedArray = nestedArray.flat(Infinity);
+//     let unique = new Set(flattenedArray);
+//     return Array.from(unique).reduce((sum, current) => sum + current, 0);
+// }
+
+// function findArrayDepth(array){
+//     if(!Array.isArray(array)){
+//         return 0;
+//     }
+//     let sum = 1;
+//     for(let i of array){
+//         if(Array.isArray(i)){
+//             let depth = 1 + findArrayDepth(i);
+//             if(depth > sum){
+//                 sum = depth;
+//             }
+//         }
+//     }
+//     return sum;
+// }
+
+// function flattenArrays(arr){
+//     return arr.flatMap(index => index);
+// }
+
+// function mergeAllNumbers(obj){
+//     return obj.flatMap(all => all.numbers);
+// }
+
+// function extractAndCombineProperties(arr){
+//     return arr.flatMap(all => all.tags);
+// }
+
+// function extractAndCombineEmails(arr){
+//     return arr.flatMap(el => el.emails);
+// }
+
+// function extractUniqueIDs(arr){
+//     let newArr = arr.flatMap(el => el.ids);
+//     return Array.from(new Set(newArr));
+// }
+
+// function groupByStatus(arr){
+//     let obj = {};
+//     arr.flatMap(el => {
+//         let {status, name} = el;
+//         if(!obj[status]){
+//             obj[status] = [];
+//         }
+//         obj[status].push(name);
+//         return [];
+//     })
+//     return obj;
+// }
+
+// function convertAndFilterData(arr){
+//     return arr.flatMap(item => {
+//         if(item.isActive){
+//             return item.id !== undefined ? item.id * 10 : 0;
+//         } else {
+//             return [];
+//         }
+//     });
+// }
+
+// function transformAndFlatten(arr){
+//     return arr.flatMap(item => item.data.map(num => num * 2));
+// }
+
+// function filterAndFlattenCategories(arr){
+//     return arr.flatMap(item => item.categories.filter(category => category.length > 3));
+// }
+
+// function calculateAverageRatings(products){
+//     if(products.length === 0 || products.some(product => product.ratings.length === 0)){
+//         return 'Array is empty';
+//     }
+//     const allRatings = products.flatMap(product => product.ratings);
+//     const sum = allRatings.reduce((acc, raiting) => acc + raiting, 0);
+//     const average = sum / allRatings.length;
+//     return average;
+// }
+
+// function sortNumbersAscending(arr){
+//     return arr.slice().sort((a, b) => a - b);
+// }
+
+// function sortStringsByLength(arr){
+//     return arr.sort((a, b) => a.length - b.length);
+// }
+
+// function sortNamesByLastLetter(arr){
+//     return arr.sort((a, b) => {
+//         let lastLetterA = a.slice(-1).toLowerCase();
+//         let lastLetterB = b.slice(-1).toLowerCase();
+//         return lastLetterA.localeCompare(lastLetterB);
+//     });
+// }
+
+// function sortNamesByLastLetter(arr){
+//     return arr.sort((a, b) => {
+//         let lastLetterA = a[a.length -1];
+//         let lastLetterB = b[b.length -1];
+//         return lastLetterA.localeCompare(lastLetterB);
+//     })
+// }
+
+// function sortStudentsByName(arr){
+//     return arr.sort((a, b) => a.name.localeCompare(b.name));
+// }
+
+// function sortObjectsByDate(arr, direction){
+//     return arr.sort((a, b) => {
+//         let dateA = new Date(a.date);
+//         let dateB = new Date(b.date);
+//         if(direction === 'Ascending'){
+//             return dateA - dateB;
+//         } else if(direction === 'Descending'){
+//             return dateB - dateA;
+//         }
+//     });
+// }
+
+// function sortProductsByPriceAndName(arr){
+//     return arr.sort((a, b) => {
+//         if(a.price === b.price){
+//             return a.name.localeCompare(b.name);
+//         } else {
+//             return a.price - b.price;
+//         }
+//     });
+// }
+
+// function sortEmployeesByDepartmentAndExperience(arr){
+//     return arr.sort((a, b) => {
+//         if(a.department === b.department){
+//             return b.yearsOfExperience - a.yearsOfExperience
+//         } else {
+//             return a.department.localeCompare(b.department)
+//         }
+//     });
+// }
+
+// function sortProductsByWeightAndPrice(arr){
+//     return arr.sort((a, b) => {
+//         if(a.weight === b.weight){
+//             return b.price - a.price;
+//         } else {
+//             return a.weight - b.weight;
+//         }
+//     });
+// }
+
+// function sortObjectsByKey(arr, key, direction) {
+//     return arr.slice().sort((a, b) => {
+//         return direction === 'Ascending' ? a[key] - b[key] : b[key] - a[key];
+//     })
+// }
+
+// function multiSort(arr, sortParam){
+//     if(!sortParam.length) return 'Sorting parameters are empty';
+//     let res = [...arr];
+//     sortParam.forEach(el => {
+//         const [isTrue, type, key] = el
+//         if(isTrue) res.sort((a, b) => type === 'Ascending' ? a[key] - b[key] : b[key] - a[key])
+//     })
+//     return res;
+//
+// }
+
+// function sortNumbersAscending(arr){
+//     let newArr = arr.toSorted((a, b) => a - b);
+//     return newArr;
+// }
+
+// function sortStringsByLength(arr){
+//     let newArr = arr.toSorted((a, b) => a.length - b.length);
+//     return newArr;
+// }
+
+// function sortUsersByAge(arr){
+//     let newArr = arr.toSorted((a, b) => a.age - b.age);
+//     return newArr;
+// }
+
+// function sortAlphabetically(arr){
+//     let newArr = arr.toSorted();
+//     return newArr;
+// }
+
+// function sortCities(arr){
+//     let newArr = arr.toSorted((a, b) => {
+//         if(a.population !== b.population){
+//             return b.population - a.population;
+//         }
+//         return a.name.localeCompare(b.name)
+//     });
+//     return newArr;
+// }
+
+// function doubleSortObjects(arr){
+//     let arr1 = arr.toSorted((a, b) => a.numericKey - b.numericKey);
+//     let arr2 = arr.toSorted((a, b) => b.stringKey.localeCompare(a.stringKey));
+//     return {sortedByNumericKey: arr1, sortedByStringKey: arr2}
+// }
+
+// function sortMixedArray(arr){
+//     return arr.map(el => +el).toSorted((a, b) => a - b);
+// }
+
+// function filterAndSortNumbers(arr){
+//     return arr.filter(item => !isNaN(item) && item !== null && item !== undefined).map(item => Number(item)).sort((a, b) => b - a);
+// }
+
+// function normalizeAndSortStrings(arr){
+//     return arr.map(str => str.trim().toLowerCase()).sort((a, b) => b.localeCompare(a));
+// }
+
+// function sortStringsByLengthIgnoringSpaces(arr){
+//     let newArr = arr.toSorted((a, b) => b.trim().length - a.trim().length);
+//     return newArr;
+// }
+
+// function reverseArray(arr){
+//     return arr.reverse();
+// }
+
+// function createReversedCopy(arr){
+//     let newArr = [...arr].reverse();
+//     return newArr;
+// }
+
+// function createReversedCopyUsingSlice(arr){
+//     let newArr = arr.slice().reverse();
+//     return newArr;
+// }
+
+// function mergeAndReverse(...arr){
+//     let newArr = arr.flat().reverse();
+//     return newArr;
+// }
+
+// function reverseWordsInArray(arr){
+//     let newArr = arr.map(str => str.split(' ').reverse().join(' '));
+//     return newArr;
+// }
+
+// function sortAndReverseStringsByLength(arr){
+//     return [...arr].sort((a, b) => b.length - a.length).reverse();
+// }
+
+// function sortAndReverseByCriteria(arr, str){
+//     return [...arr].sort((a, b) => a[str] - b[str]).reverse();
+// }
+
+// function flattenAndReverse(...arr){
+//     let newArr = arr.flat(Infinity);
+//     return newArr.reverse();
+// }
+
+// function mergeReverseUnique(arr){
+//     let newArr = arr.flat(Infinity);
+//     let unique = [];
+//     for(let i = newArr.length -1; i >= 0; i--){
+//         if(!unique.includes(newArr[i])){
+//             unique.unshift(newArr[i]);
+//         }
+//     }
+//     return unique.reverse();
+// }
+
+// function filterNumbersAndReverse(arr){
+//     let newArr = arr.filter(el => typeof el === 'number' && !isNaN(el));
+//     return newArr.reverse();
+// }
+
+// function demonstrateToReversed(arr){
+//     return arr.toReversed();
+// }
+
+// function filterAndReverse(arr){
+//     let newArr = arr.filter(el => el % 2 === 0);
+//     return newArr.toReversed();
+// }
+
+// function transformAndReverse(arr){
+//     let newArr = arr.map(el => el.toUpperCase());
+//     return newArr.toReversed();
+// }
+
+// function selectAndReverse(arr, condition){
+//     let newArr = arr.filter(condition);
+//     return newArr.toReversed();
+// }
+
+// function aggregateAndReverse(arr){
+//     let newArr = arr.map(el => el.value * el.id);
+//     return newArr.toReversed();
+// }
+
+// function applyAndReverse(arr, action){
+//     let newArr = arr.map(action);
+//     return newArr.toReversed();
+// }
+
+// function reverseSubArraysAndFlatten(arr){
+//     let newArr = arr.map(el => el.toReversed());
+//     return newArr.flat(Infinity);
+// }
+
+// function reverseSubArraysAndFlatten(arr){
+//     let newArr = arr.map(el => el.toReversed());
+//     return newArr.flat();
+// }
+
+// function averageAndReverse(arr){
+//     let average = arr.reduce((sum, el) => sum + el, 0) / arr.length;
+//     return arr.map(el => el - average).toReversed();
+// }
+
+// function complexDataProcessing(arr){
+//     let filtered = arr.filter(num => num > 10);
+//     let multiplied = filtered.map(num => num * 2);
+//     let excluded = multiplied.filter(num => num < 50);
+//     return excluded.toReversed();
+// }
+
+// function correctAndAnalyzePeaks(arr){
+//     let correctedData = arr.toReversed();
+//     let mappedData = correctedData.map((visitors, hour) => ({
+//         hour: hour,
+//         visitors: visitors
+//     }));
+//     let sortedData = mappedData.sort((a, b) => b.visitors - a.visitors);
+//     let topThree = sortedData.slice(0, 3);
+//     topThree.sort((a, b) => a.visitors - b.visitors);
+//     return topThree;
+// }
+
+// function filterEvenNumbers(arr){
+//     return arr.filter(el => el % 2 === 0);
+// }
+
+// function filterHighAchievers(arr, threshold){
+//     return arr.filter(el => el.averageScore >= threshold);
+// }
+
+// function filterByCategory(arr, str){
+//     return arr.filter(el => el.category === str);
+// }
+
+// function filterByCriteria(arr, criteria){
+//     return arr.filter(el => {
+//         return Object.keys(criteria).every(key => el[key] === criteria[key])
+//     })
+// }
+
+// function filterByAvailability(events, fromDate, toDate, isAvailable){
+//     return events.filter(event => {
+//         let eventDate = new Date(event.date);
+//         let startDate = new Date(fromDate);
+//         let endDate = new Date(toDate);
+//         return eventDate >= startDate && eventDate <= endDate && event.available === isAvailable;
+//     })
+// }
+
+// function filterRestaurants(restaurants, desiredCuisine, minRating){
+//     return restaurants.filter(restaurant => {
+//         return restaurant.cuisine === desiredCuisine && restaurant.rating >= minRating;
+//     })
+// }
+
+// function filterTasks(tasks, statuses, startDate, endDate){
+//     return tasks.filter(task => {
+//         let taskDate = new Date(task.dueDate);
+//         let start = new Date(startDate);
+//         let end = new Date(endDate);
+//         return statuses.includes(task.status) && taskDate >= start && taskDate <= end;
+//     })
+// }
+
+// let fruits = ['apple', 'banana', 'kiwi'];
+// fruits.splice(2, 0, 'orange', 'pear');
+//
+// console.log(fruits);
+
+// let fruits = ['apple', 'orange', 'pear', 'banana'];
+// let removed = fruits.splice(1, 2);
+//
+// console.log(fruits);
+// console.log(removed);
+
+// let numbers1 = [1, 2, 3, 4, 5];
+// numbers1.splice(numbers1.length - 1)
+// console.log(numbers1)
+//
+//
+// let numbers2 = [1, 2, 3, 4, 5];
+// numbers2.splice(-1);
+// console.log(numbers2);
+
+// let fruits = ['apple', 'orange', 'pear', 'banana'];
+// fruits.splice(1, 2, 'kiwi', 'mango');
+//
+// console.log(fruits);
+
+// const originalArray = [1, 2, 3, 4, 5];
+//
+// const newArray1 = originalArray.toSpliced(1, 2);
+// console.log(newArray1);
+// console.log(originalArray);
+//
+// const newArray2 = originalArray.toSpliced(2, 1, 'a', 'b');
+// console.log(newArray2);
+// console.log(originalArray);
+//
+// const newArray3 = originalArray.toSpliced(3, 0, 'x', 'y');
+// console.log(newArray3);
+// console.log(originalArray);
+
+// function filterMedia(mediaList, genres, ratingRange){
+//     return mediaList.filter(media => {
+//         let matchesGenre = genres.includes(media.genre);
+//         let matchesRating = media.rating >= ratingRange.min && media.rating <= ratingRange.max;
+//         return matchesGenre && matchesRating;
+//     })
+// }
+
+// function filterAndSummarizeSales(salesData, minAmount, startDate, endDate){
+//     return salesData.filter(sale => {
+//         let saleDate = new Date(sale.date);
+//         return sale.amount >= minAmount && saleDate >= new Date(startDate) && saleDate <= new Date(endDate);
+//     })
+//         .reduce((total, sale) => total + sale.amount, 0);
+// }
+
+// function summarizeAndFilterOrders(orders, minTotal, categories, regions) {
+//     return orders
+//         .map(obj => ({...obj, total: obj.total.reduce((acc, n) => acc + n, 0)}))
+//         .filter(({total, category, region}) =>
+//             total >= minTotal &&
+//             categories.includes(category) &&
+//             regions.includes(region)
+//         );
+// };
+
+// const numbers = [1, 2, 3, 4, 5];
+// const squaredNumbers = numbers.map(number => number * number);
+//
+// console.log(numbers);
+// console.log(squaredNumbers);
+
+// const numbers = [5, 10, 15, 20];
+// const obj = {name: 'John', lastName: 'Smith' };
+//
+//
+// const numbersWithIndex = numbers.map(function(currentValue, index, arr) {
+//
+//     return `Index ${index}: ${currentValue}, Array: ${arr.toString()}, Full name: ${this.name} ${this.lastName}`;
+//
+// }, obj);
+//
+//
+// console.log(numbersWithIndex);
+
+// const array = [1, 2, 3];
+// const context = { multiplier: 2 };
+//
+// const doubled = array.map(function(element) {
+//     return element * this.multiplier;
+// }, context);
+//
+// console.log(doubled);
+
+// function findStudentById(arr, id){
+//     return arr.find(student => student.id === id) || null;
+// }
+
+// function findNumber(arr, num){
+//     return arr.find(n => n === num) || undefined;
+// }
+
+// function findFirstPositiveOdd(arr){
+//     let result = arr.find(num => num > 0 && num % 2 !== 0);
+//     return result !== undefined ? result : "Positive odd number hasn't been found";
+// }
+
+// function findStudentByGrade(students, threshold){
+//     return students.find(student => student.grade > threshold) || null;
+// }
+
+// function findStudentWithMaxGrade(students){
+//     if(students.length === 0) return null;
+//     return students.reduce((maxStudent, currentStudent) => currentStudent.grade > maxStudent.grade ? currentStudent : maxStudent);
+// }
+
+// const fruits = ['Apple', 'Banana', 'Cherry'];
+//
+// fruits.forEach((fruit, index, arr) => {
+//     console.log(`${index + 1}: ${fruit}; Original array: ${arr}`);
+// });
+
+// const fruits = ['Apple', 'Banana', 'Cherry'];
+//
+// fruits.forEach((fruit, index, arr) => {
+//     arr[index] = 'Fruit - ' + fruit;
+// });
+//
+// console.log(fruits);
+
+// const months = ['January', 'February', undefined, 'April'];
+// const myMonths = months.with(2, "March");
+//
+// console.log(months);
+// console.log(myMonths);
+
+// function findStudentsByName(num1, num2){
+//     let students = num1.filter(el => num2.includes(el.name)).map(el => ({
+//         id: el.id,
+//         grade: el.grade
+//     }));
+//     if(students.length === 0){
+//         return 'No students found';
+//     }
+//     return students;
+// }
+
+// function filterStudentsByGradeRange(students, range){
+//     let index = students.findIndex(el => el.grade >= range.min && el.grade <= range.max);
+//     if(index !== -1){
+//         students.splice(index, 1);
+//     }
+//     return students;
+// }
+
+// function filterStudentsByGradeRange(students, range){
+//     let index = students.findIndex(el => el.grade >= range.min && el.grade <= range.max);
+//     if(index !== -1){
+//         students.splice(index, 1);
+//     }
+//     return students;
+// }
+
+// function findUniqueInteger(arr){
+//     for(let i of arr){
+//         if(!arr.includes(-i)){
+//             return i;
+//         }
+//     }
+//     return 'No unique integers';
+// }
+
+// function findFirstDuplicate(arr){
+//     let index = new Set();
+//     for(let i of arr){
+//         let normal = i.toString().toLowerCase();
+//         if(index.has(normal) && typeof i === 'string'){
+//             return normal;
+//         } else if(index.has(normal)){
+//             return i;
+//         }
+//         index.add(normal);
+//     }
+//     return null;
+// }
+
+// function findFirstDuplicate(arr){
+//     let result = arr
+//         .map(el => {
+//             if(typeof el === 'string') return el.toLowerCase();
+//             else return el;
+//         })
+//         .find((el, index, array) => array.indexOf(el, index + 1) !== -1);
+//     return result ? result : null;
+// }
+
+// function findClosestNumber(arr, target){
+//     let closest = arr[0];
+//     let small = Math.abs(arr[0] - target);
+//     for(let i = 1; i < arr.length; i++){
+//         let diff = Math.abs(arr[i] - target);
+//         if(diff < small){
+//             closest = arr[i];
+//             small = diff;
+//         }
+//     }
+//     return closest;
+// }
+
+// const arr = new Array(5).fill(1);
+// console.log(arr);
+
+// const fruits = ["apple", "banana", "coconut", "date"];
+// fruits.fill("kiwi", 1, 3);
+// console.log(fruits);
+
+// const numbers = [1, 2, 3, 4, 5];
+// numbers.fill(0, -3, -1);
+// console.log(numbers);
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast = function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }
+// function findLastEven(arr){
+//     return arr.findLast(el => el % 2 === 0);
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast = function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }function findLastStartingWith(arr, char){
+//     return arr.findLast(str => str.startsWith(char));
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast = function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }function findLastWithProperty(arr, propName, propValue){
+//     return arr.findLast(obj => obj[propName] === propValue) || null;
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast = function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }
+// function findLastArrayContainingNumber(arrays, num){
+//     if(!arrays || !num || arrays.length === 0){
+//         return 'Missing information';
+//     }
+//     const result = arrays.findLast(subArray => subArray.includes(num));
+//     return result || 'Not found';
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast = function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }
+//
+// function findLastProductWithAttribute(products, attribute, value, minPrice){
+//     const result = products.findLast(product => product[attribute] === value && product.price > minPrice);
+//     return result || 'Product was not found';
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast =             function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }
+//
+// function findLastExpensiveInCategory(products, category, minPrice){
+//     let filtered = products.filter(product => product.type === category && product.price >= minPrice);
+//     let maxPrice = filtered.findLast(product => product.price >= minPrice);
+//     return {
+//         filtered,
+//         maxPrice
+//     };
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast =             function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     }
+// }
+// function findLastStringByLength(arr, length){
+//     const processedArray = arr.map(str => str.replace(/\s+/g, ''));
+//     const matchingString = processedArray.findLast(str => str.length === length);
+//     return {
+//         processedArray,
+//         matchingString
+//     };
+// }
+
+// if(!Array.prototype.findLast){
+//     Array.prototype.findLast =             function(callback) {
+//         for(let i = this.length - 1; i >= 0; i--){
+//             if(callback(this[i], i, this)){
+//                 return this[i];
+//             }
+//         }
+//         return undefined;
+//     };
+// }
+// function findLastStringWithSumAbove(arr, threshold){
+//     const processedSums = arr.map(str => {
+//         let numbers = str.split(' ').map(Number);
+//         return numbers.reduce((sum, num) => sum + num, 0)
+//     });
+//     let matchingString = arr.findLast((str, index) => processedSums[index] > threshold);
+//     return {
+//         processedSums,
+//         matchingString
+//     };
+// }
+
+// function findLastPalindrome(arr){
+//     let palindrome = (str) => {
+//         let format = str.toLowerCase().replace(/\s+/g, '');
+//         return format === format.split('').reverse().join('');
+//     }
+//     let result = {
+//         newArr: [],
+//         lastPalindrome: 'palindrome was not found'
+//     }
+//     for(let i = 0; i < arr.length; i++){
+//         let check = palindrome(arr[i]);
+//         result.newArr.push(check);
+//         if(check){
+//             result.lastPalindrome = arr[i];
+//         }
+//     }
+//     return result;
+// }
+
+// function findLastMostExpensiveByCategory(products){
+//     let result = {};
+//     products.forEach(product => {
+//         let { category, price } = product;
+//         if(!result[category] || result[category].price <= price)
+//         {
+//             result[category] =
+//                 {name: product.name, price: price};
+//         }
+//     });
+//     return result;
+// }
+
+// function containsElement(arr, element){
+//     return arr.includes(element) || false;
+// }
+
+// function containsAllElements(arr, elements){
+//     return elements.every(element => arr.includes(element)) || false;
+// }
+
+// function containsSubarray(arr,subArr){
+//     let arrString = arr.join(',');
+//     let subArrString = subArr.join(',');
+//     return arrString.includes(subArrString);
+// }
+
+// function containsObjectWithProperty(arr, property, value){
+//     return arr.map(obj => obj[property]).includes(value);
+// }
+
+// function checkStringInArray(arr, str){
+//     let newArr = arr.map(item => item.toLowerCase().replace(/\s+/g, ''));
+//     let modifiedStr = str.toLowerCase().replace(/\s+/g, '');
+//     const includes = newArr.includes(modifiedStr);
+//     return { newArr, includes };
+// }
+
+// function checkStringInNestedArray(arr, str){
+//     let newArr = arr.flat(Infinity).map(item => item.toUpperCase());
+//     let modifiedStr = str.toUpperCase();
+//     let includes = newArr.includes(modifiedStr);
+//     return { newArr, includes };
+// }
+
+// function checkObjectValues(obj, firstValue, secondValue){
+//     let values = Object.values(obj);
+//     let hasFirstValue = values.includes(firstValue);
+//     let hasSecondValue = values.includes(secondValue);
+//     if(hasFirstValue && hasSecondValue){
+//         return 'Object includes both values';
+//     } else if (!hasFirstValue && !hasSecondValue){
+//         return 'Object is missing both values';
+//     } else if (hasFirstValue){
+//         return `Object includes only first value: ${firstValue}`;
+//     } else {
+//         return `Object includes only second value: ${secondValue}`;
+//     }
+// }
+//
+// const original = [1, 2, [3, 4]];
+// const result = original.flat()
+//
+// console.log(original);
+// console.log(result);
+
+// const original = [1, 2, [3, 4, [5, 6]]];
+//
+// console.log(original.flat());
+// console.log(original.flat(2));
+
+// const original = [1, [2, [3, [4, [5]]]]];
+//
+// console.log(original.flat(Infinity));
+
+// function checkNumberInStringArray(arr, num){
+//     let numStr = String(num);
+//     let modify = arr.map(el => el.replace(/\D/g, ''));
+//     let includes = modify.some(el => el.includes(numStr));
+//     return {
+//         newArr: modify,
+//         includes: includes
+//     }
+// }
+
+// function countElementsInArray(arr1, arr2){
+//     let foundElements = arr2.filter(element => arr1.includes(element));
+//     let totalCount = foundElements.length;
+//     return {
+//         foundElements,
+//         totalCount
+//     }
+// }
+
+// function findElementsByType(arr, ...elements){
+//     let result = {};
+//     elements.forEach(element => {
+//         let type = typeof element;
+//         let filteredElements = arr.filter(item => typeof item === type);
+//         if(filteredElements.length > 0){
+//             result[type] = filteredElements;
+//         }
+//     });
+//     return Object.keys(result).length > 0 ? result : {};
+// }
+
+// function findIndex(arr, element){
+//     return arr.indexOf(element);
+// }
+
+// function findIndexIgnoreCase(arr, element){
+//     return arr.map(el => el.toLowerCase()).indexOf(element.toLowerCase());
+// }
+
+// function findIndexByProperty(arr, value) {
+//     const values = arr.map(obj => obj.name);
+//     const index = values.indexOf(value);
+//     return index !== -1 ? index : 'Value was not found';
+// }
+
+// function findSubstringIndices(strings, substrings) {
+//     return substrings.map(sub => {
+//         let index = strings.findIndex(str => str.indexOf(sub) !== -1);
+//         return index !== -1 ? index : 'Substring not found';
+//     });
+// }
+
+// const students = [
+//     { name: 'Alice', grades: [5, 4, 4, 3] },
+//     { name: 'Bob', grades: [2, 3, 3, 4] },
+//     { name: 'Clara', grades: [5, 5, 4, 4] }
+// ];
+//
+// const allGrades = students.flatMap(student => student.grades);
+// console.log(allGrades);
+
+// const fruits = ['banana', 'apple', 'pear'];
+// fruits.sort();
+// console.log(fruits);
+
+// const numbers = [10, 5, 1, 44, 20];
+// numbers.sort();
+// console.log(numbers);
+
+// const numbers1 = [10, 5, 1, 44, 20];
+// numbers1.sort((a, b) => a - b);
+// console.log(numbers1);
+//
+//
+// const numbers2 = [10, 5, 1, 44, 20];
+// numbers2.sort((a, b) => b - a);
+// console.log(numbers2);
+
+// const items = [
+//     { name: 'Apple', price: 50 },
+//     { name: 'Banana', price: 10 },
+//     { name: 'Pear', price: 20 }
+// ];
+// items.sort((a, b) => a.price - b.price);
+//
+// console.log(items);
+
+// const words = ['resume', 'résumé', 'exposé', 'déjà vu'];
+//
+// words.sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
+//
+// console.log(words)
+
+// const words = ['apple', 'banana', 'cherry', 'date'];
+//
+// words.sort((a, b) => {
+//
+//     const lastCharA = a[a.length - 1];
+//     const lastCharB = b[b.length - 1];
+//
+//     return lastCharA.localeCompare(lastCharB);
+// });
+//
+// console.log(words);
+
+// const numbers = [5, 3, 9, 1];
+// const sortedNumbers = numbers.toSorted();
+//
+// console.log(numbers);
+// console.log(sortedNumbers);
+
+// const items = [{ name: "Tomato", price: 50 }, { name: "Potato", price: 30 }];
+// const sortedItems = items.toSorted((a, b) => a.price - b.price);
+//
+// console.log(sortedItems);
+
+// let numbers = [1, 2, 3, 4, 5];
+// numbers.reverse();
+// console.log(numbers);
+
+// const original = ['!!!', 'world', 'hello'];
+// const result = original.reverse();
+//
+// console.log(result);
+// console.log(original);
+
+// let original = [1, 2, 3, 4, 5];
+// let reversed = [...original].reverse();
+// console.log(original);
+// console.log(reversed);
+
+// const originalArray = [1, 2, 3, 4, 5];
+//
+// // Создание обратного массива
+// const reversedArray = originalArray.toReversed();
+// console.log(reversedArray);
+// console.log(originalArray);
