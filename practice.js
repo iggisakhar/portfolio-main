@@ -7967,3 +7967,9 @@
 // let reversed = [...original].reverse();
 // console.log(original);
 // console.log(reversed);
+
+// const originalArray = [1, 2, 3, 4, 5];
+//
+// const reversedArray = originalArray.toReversed();
+// console.log(reversedArray);
+// console.log(originalArray);
