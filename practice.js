@@ -8092,3 +8092,278 @@
 // });
 // </script>
 // </body>
+
+// <!DOCTYPE html>
+//
+// <head>
+// <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
+//     <script src="/assets/jquery.js"></script>
+// <style>
+//
+//     body{
+//     background: rgba(red, green, blue, 1);
+// }
+//
+//     .robot {
+//     position: relative;
+//     left: 200px;
+// }
+//
+//     .beep {
+//     width: 5px;
+//     height: 0;
+//     border: 5px solid transparent;
+//     border-top: 10px solid #777;
+//     border-bottom: 80px solid #888;
+//     position: relative;
+//     left: 140px;
+// }
+//
+//     img {
+//     position: absolute;
+//     top: 200px;
+//     left: 400px;
+// }
+//
+//
+//     @keyframes blink {
+//     50% {
+//         background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
+// }
+// }
+//     @-webkit-keyframes blink {
+//     50% {
+//         background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+// }
+// }
+//     @-moz-keyframes blink {
+//     50% {
+//         background: -moz-radial-gradient(circle, red 15%, transparent 40%), #cc5;
+// }
+// }
+//     .laser {
+//     animation: blink .5s infinite;
+//     -webkit-animation: blink .5s infinite;
+//     -moz-animation: blink .5s infinite;
+// }
+//     .brain {
+//     background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
+//     background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5;
+//     background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #cc5;
+//     background-size: 75px 150px;
+//     height: 150px;
+//     width: 150px;
+//     border-radius: 60px 60px 10px 10px;
+//     border-bottom: 40px solid #666;
+//     position: relative;
+//     left: 70px;
+// }
+//     .torso {
+//     height: 0;
+//     width: 140px;
+//     border-top: 300px solid #bc6;
+//     border-left: 75px solid transparent;
+//     border-right: 75px solid transparent;
+//     border-radius: 20px 20px 100px 100px;
+// }
+//     .left {
+//     font-family: 'Poller One', verdana, arial, sans-serif;
+//     font-weight: bold;
+//     font-size: 250px;
+//     color: #666;
+//     transform: rotate(200deg);
+//     -webkit-transform: rotate(200deg);
+//     -moz-transform: rotate(200deg);
+//     position: relative;
+//     top: -320px;
+//     left: -190px;
+//     z-index: -1;
+// }
+//     .right {
+//     font-family: 'Poller One', verdana, arial, sans-serif;
+//     font-weight: bold;
+//     font-size: 250px;
+//     color: #666;
+//     transform: scaleY(-1) rotate(20deg);
+//     -webkit-transform: scaleY(-1) rotate(20deg);
+//     -moz-transform: scaleY(-1) rotate(20deg);
+//     position: relative;
+//     top: -620px;
+//     left: 190px;
+//     z-index: -1;
+// }
+//     .foot {
+//     height: 40px;
+//     width: 40px;
+//     background: #ccc;
+//     border-radius: 40px;
+//     border: 15px solid #999;
+//     position: relative;
+//     left: 110px;
+//     top: -10px;
+//     z-index: -1;
+// }
+//
+//     @keyframes dance{
+//     from {
+//     left: 800px;
+// }
+// }
+//
+//     @-webkit-keyframes dance{
+//     from{
+//     left: 800px;
+// }
+// }
+//
+//     @-moz-keyframes dance{
+//     from{
+//     left: 800px;
+// }
+// }
+//
+//     img {
+//     animation: dance 4s infinite;
+//     -webkit-animation: dance 4s infinite;
+//     -moz-animation: dance 4s infinite;
+//     position: absolute;
+//     top: 200px;
+//     left: 400px;
+//
+// }
+//
+// </style>
+// </head>
+//
+// <body>
+//
+// <div class="robot">
+//     <div class="beep"></div>
+//     <div class="brain"></div>
+//     <div class="torso">
+//         <div class="left">j</div>
+//         <div class="right">j</div>
+//     </div>
+//     <div class="foot"></div>
+// </div>
+//
+// <button class="flash">laser eyes on/off</button>
+// <button class="color">change color!</button>
+// <button class="moves">break/dance</button>
+//
+// <img src="/assets/dance_cotter.gif">
+//     <script>
+//         // When eyes button is clicked, toggle laser class on brain
+//         $(".flash").click(function() {
+//         $(".brain").toggleClass('laser');
+//     });
+//
+//         // When color button is clicked, generate on RGBA value
+//         $(".color").click(function() {
+//         // Assign each named color a random number 0-255
+//         var red = Math.floor(Math.random() * 255);
+//         var green = Math.floor(Math.random() * 255);
+//         var blue = Math.floor(Math.random() * 255);
+//
+//         // Generate an RGBA value from red, green and blue
+//         var randomRGBA = 'rgba('+red+','+green+','+blue+', 1)';
+//
+//         // Display the RGBA value in an alert window
+//         //alert(randomRGBA);
+//
+//         $("body").css("background", randomRGBA);
+//         alert(randomRGBA);
+//
+//         $(".moves").click(function() {
+//         $("img").toggle();
+//     });
+//
+//     });
+//     </script>
+// </body>
+
+// <!DOCTYPE html>
+//
+// <head>
+// <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+//
+//     <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+//     <script src="/assets/jquery.js"></script>
+// <style>
+//     body{
+//     text-align:center;
+//     font-family: 'Fjalla One';
+//     font-size: 20px;
+//     background: #e6eaf0;
+// }
+//     button{
+//     margin: 40px;
+// }
+//     input{
+//     font-size: 24px;
+// }
+//     .fill{
+//     background: white;
+//     color: red;
+//     border-bottom: 2px black solid;
+//     font-family: 'Shadows Into Light';
+//     padding: 0 6px;
+//     margin: 4px;
+// }
+// </style>
+// </head>
+//
+// <body>
+// <div class="prompt"></div>
+// <button>Next</button>
+// <script>
+//
+//
+//     // List of prompts for the user
+//     var prompts = [
+//     'Type your name',
+//     'Type an adjective',
+//     'Type a noun'
+//     ];
+//
+//     var answers=[];
+//     // Keep track of current prompt we're on
+//     var currentPrompt = 0;
+//
+//     // A function that will call the next prompt
+//     var nextPrompt = function() {
+//     //if there's no answer in the form
+//     if (currentPrompt != 0){
+//     answers.push($('input').val());
+// }
+//     // if there is a next prompt
+//     if (currentPrompt < prompts.length) {
+//     // put first prompt in all html elements with class
+//     $('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+//     // move the next prompt into variable currentPrompt
+//     currentPrompt = currentPrompt + 1;
+// }
+//     //or else if we're at the end of the array
+//     else {
+//     // put a new message into the html.
+//     showFinal();
+// }
+// }
+//
+//     //puts user answers into HTML
+//     var showFinal = function() {
+//     $('.prompt').html('This is the story of <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span> <span class="fill">'+answers[2]+'</span>.');
+//     //and then hide the button
+//     $('button').hide();
+// }
+//     // run nextPrompt function when button is clicked
+//     $('button').click(function() {
+//     nextPrompt();
+// });
+//
+//     // Show the first prompt as soon as js loads
+//     nextPrompt();
+// </script>
+//
+// </body>
+
