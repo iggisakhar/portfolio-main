@@ -8574,4 +8574,95 @@
 //             </body>
 //             </html>
 
+// function findIndexWithMaxDigitSum(arr){
+//     function digitSum(str){
+//         return str
+//             .split('')
+//             .filter(char => /\d/.test(char))
+//             .reduce((sum, digit) => sum + Number(digit), 0);
+//     }
+//     let maxSum = -1;
+//     let maxIndex = -1;
+//     arr.forEach((item, index) => {
+//         if(!isNaN(item)){
+//             const sum = digitSum(item);
+//             if(sum > maxSum){
+//                 maxSum = sum;
+//                 maxIndex = index;
+//             }
+//         }
+//     });
+//     return maxIndex === -1 ? "No valid elements" : maxIndex;
+// }
+
+// function findFirstRepeatingIndex(arr){
+//     const seen = new Set();
+//     for(let i = 0; i < arr.length; i++){
+//         if(seen.has(arr[i])){
+//             return i;
+//         }
+//         seen.add(arr[i]);
+//     }
+//     return "No repeating elements";
+// }
+
+// function findIndexWithMostVowels(arr){
+//     const vowels = "aeiou";
+//     function countVowels(str){
+//         return str.split('').filter(char => vowels.includes(char.toLowerCase())).length;
+//     }
+//     let maxVowels = 0;
+//     let maxIndex = -1;
+//     arr.forEach((item, index) => {
+//         const vowelCount = countVowels(item);
+//         if(vowelCount > maxVowels){
+//             maxVowels = vowelCount;
+//             maxIndex = index;
+//         }
+//     });
+//     return maxIndex === -1 ? "No vowels found" : maxIndex;
+// }
+
+// function findIndexStartingWith(arr, subStr){
+//     if(arr.length === 0){
+//         return "Array is empty";
+//     }
+//     if(!subStr){
+//         return "Subarray is undefined";
+//     }
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i].startsWith(subStr)){
+//             return i;
+//         }
+//     }
+//     return "No element found";
+// }
+
+// function findIndices(arr, ...elementsToFind){
+//     const result = {};
+//     const notFound = [];
+//
+//     elementsToFind.forEach((element) => {
+//         const index = arr.indexOf(element);
+//         if(index !== -1){
+//             result[element] = index;
+//         } else {
+//             notFound.push(element);
+//         }
+//     });
+//     if(notFound.length > 0){
+//         result.notFound = notFound;
+//     }
+//     return result;
+// }
+
+// function findSubstringsIndices(arr, substring){
+//     const result = [];
+//     arr.forEach((item, index) => {
+//         if(item.toLowerCase().includes(substring.toLowerCase())){
+//             result.push([item, index]);
+//         }
+//     });
+//     return result.length > 0 ? result : "No elements found"
+// }
 
