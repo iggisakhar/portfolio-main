@@ -8666,3 +8666,33 @@
 //     return result.length > 0 ? result : "No elements found"
 // }
 
+// function findLastIndex(arr, element){
+//     return arr.lastIndexOf(element);
+// }
+
+// function findLastIndexIgnoreCase(arr, str){
+//     const lowerStr = str.toLowerCase();
+//     const lowerArr = arr.map(item => item.toLowerCase());
+//     return lowerArr.lastIndexOf(lowerStr);
+// }
+
+// function findLastIndexByLength(arr, length){
+//     const lengthsArray = arr.map(item => item.length);
+//     const lastIndex = lengthsArray.lastIndexOf(length);
+//     return {
+//         modifiedArray: lengthsArray,
+//         index: lastIndex
+//     }
+// }
+
+// function findLastIndexInMultidimensionalArray(arr, element){
+//     const flatArray = arr.flat(Infinity);
+//     const lastIndex = flatArray.lastIndexOf(element);
+//     return lastIndex;
+// }
+
+// function findLastIndexOfSquare(arr, num) {
+//     const squaresArray = arr.map(item => item ** 2);
+//     const lastIndex = squaresArray.lastIndexOf(num);
+//     return lastIndex !== -1 ? lastIndex : "Not found";
+// }
