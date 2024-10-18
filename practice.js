@@ -8696,3 +8696,24 @@
 //     const lastIndex = squaresArray.lastIndexOf(num);
 //     return lastIndex !== -1 ? lastIndex : "Not found";
 // }
+
+// function findLastIndexByProperty(arr, value){
+//     const values = arr.map(obj => Object.values(obj)).flat();
+//     const lastIndex = values.lastIndexOf(value);
+//     return lastIndex !== -1 ? lastIndex : "Not found";
+// }
+
+// function findLastIndexAfterModification(arr, num){
+//     let modifiedArray = arr.map(item => {
+//         if(typeof item === 'number'){
+//             return Math.round(Math.sqrt(item));
+//         }
+//         return item;
+//     });
+//     let lastIndex = modifiedArray.lastIndexOf(num);
+//     return {
+//         modifiedArray: modifiedArray,
+//         lastIndex: lastIndex
+//     }
+// }
+
