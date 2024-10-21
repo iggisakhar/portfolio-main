@@ -8717,3 +8717,25 @@
 //     }
 // }
 
+// function findLetterIndices(arr, letter){
+//     let result = {};
+//     arr.forEach((str, index) => {
+//         const indices = [];
+//
+//         for(let i = 0; i < str.length; i++){
+//             if(str[i] === letter){
+//                 indices.push(i);
+//             }
+//         }
+//         if(indices.length === 0){
+//             result[str] = { indexOfString: index, indexOfLetter: 'Not found' };
+//         } else if(indices.length === 1){
+//             result[str] = { indexOfString: index, indexOfLetter: indices[0] };
+//         } else {
+//             result[str] = { indexOfString: index, firstIndexOfLetter: indices[0], lastIndexOfLetter: indices[indices.length -1] };
+//         }
+//     });
+//
+//     return result;
+// }
+
