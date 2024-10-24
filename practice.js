@@ -8739,3 +8739,43 @@
 //     return result;
 // }
 
+// function findLastIndexOfModifiedString(arr, word){
+//     let result = [];
+//
+//     for(let str of arr){
+//         let newStr = '';
+//
+//         for(let i = 0; i < str.length; i++){
+//             if(str[i] !== ' ' && newStr.length)
+//                 newStr += ' ' + str[i];
+//             else if(str[i] !== ' ')
+//                 newStr += str[i];
+//         }
+//         result.push(newStr);
+//     }
+//     let lastIndex = -1;
+//     arr.forEach((str, index) => {
+//         let modifiedStr = str.split('').join(' ');
+//
+//         if(modifiedStr === word){
+//             lastIndex = index;
+//         }
+//     });
+//     return { modifiedString: result, index: lastIndex };
+// }
+
+// function findLastIndexByDigitSum(numbers, targetSum){
+//     function sumOfDigits(num){
+//         return num.toString().split('').reduce((sum, digit) => sum + parseInt(digit), 0);
+//     }
+//     let sumOfNumbers = numbers.map(sumOfDigits);
+//     let index = -1;
+//     for(let i = numbers.length - 1; i >= 0; i--){
+//         if(sumOfNumbers[i] === targetSum){
+//             index = i;
+//             break;
+//         }
+//     }
+//     return { sumOfNumbers, index }
+// }
+
