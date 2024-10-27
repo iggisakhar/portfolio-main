@@ -8779,3 +8779,18 @@
 //     return { sumOfNumbers, index }
 // }
 
+// const original = [1, 2, 3, 4, 5, 6];
+// const evenNumbers = original.filter(number => number % 2 === 0);
+//
+// console.log(original);
+// console.log(evenNumbers);
+
+// const people = [
+//     { name: "John", age: 25 },
+//     { name: "Jane", age: 16 },
+//     { name: "Jim", age: 30 }
+// ];
+//
+// const adults = people.filter(person => person.age > 18);
+// console.log(adults); // [ { name: "John", age: 25 }, { name: "Jim", age: 30 } ]
+
