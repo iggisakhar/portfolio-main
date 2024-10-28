@@ -8794,3 +8794,1252 @@
 // const adults = people.filter(person => person.age > 18);
 // console.log(adults); // [ { name: "John", age: 25 }, { name: "Jim", age: 30 } ]
 
+// <!DOCTYPE html>
+// <html>
+// <head>
+// <title>School subjects</title>
+// <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
+// <div class="Mathematics">
+//     <h1>Mathematics</h1>
+//
+//     <p>	Mathematics is the study of numbers, shapes, patterns, and logical reasoning. It is a fundamental subject that provides tools and frameworks for solving problems across many fields, from science and engineering to economics and art. Here are the core areas in mathematics:
+//     </p>
+//     <ol>
+//         <li>
+//             Arithmetic – The study of basic operations (addition, subtraction, multiplication, and division) and number properties.
+//         </li>
+//
+//         <li>
+//             Algebra – Focuses on variables, equations, and functions, providing a foundation for solving complex problems.
+//         </li>
+//
+//         <li>
+//             Geometry – Examines shapes, sizes, and the properties of space, exploring points, lines, angles, and surfaces.
+//         </li>
+//
+//         <li>
+//             Trigonometry – Studies the relationships between angles and sides in triangles, which has applications in physics, engineering, and astronomy.
+//         </li>
+//
+//         <li>
+//             Calculus – Investigates rates of change (derivatives) and accumulation of quantities (integrals), essential for understanding motion and change.
+//         </li>
+//
+//         <li>
+//             Statistics and Probability – Deals with data analysis, averages, probability, and chance, used widely in sciences, economics, and social studies.
+//         </li>
+//     </ol>
+//     <img src="image/Math.webp">
+//         <hr>
+// </div>
+// <div class="Science">
+//     <h1>Science</h1>
+//
+//     <p>	Science is the systematic study of the natural world, using observation, experimentation, and analysis to understand phenomena and develop theories. It’s divided into key branches:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Physics – Studies matter, energy, and the fundamental forces of nature, explaining how objects move and interact.
+//         </li>
+//
+//         <li>
+//             Chemistry – Focuses on substances, their properties, and reactions, essential for understanding materials and how they combine or change.
+//         </li>
+//
+//         <li>
+//             Biology – Examines living organisms, their structures, functions, and interactions, providing insights into life processes.
+//         </li>
+//
+//         <li>
+//             Earth Science – Investigates Earth’s structure, including geology, meteorology, and oceanography, exploring natural processes and phenomena.
+//         </li>
+//
+//         <li>
+//             Environmental Science – Studies ecosystems, biodiversity, and human impacts on the environment, emphasizing sustainability and conservation.
+//         </li>
+//
+//     </ol>
+//     <img src="image/Science.webp">
+//         <hr>
+// </div>
+//
+// <div class="Biology">
+//     <h1>Biology</h1>
+//
+//     <p>	Biology is the study of living organisms and life processes. It explores everything from microscopic cells to complex ecosystems. Here are the core areas:
+//     </p>
+//
+//     <ol>
+//
+//         <li>
+//             Cell Biology – Examines the structure and function of cells, the building blocks of life.
+//         </li>
+//
+//         <li>
+//             Genetics – Focuses on DNA, heredity, and how traits are passed through generations.
+//         </li>
+//
+//         <li>
+//             Evolution – Explains how species change over time through natural selection and adaptation.
+//         </li>
+//
+//         <li>
+//             Ecology – Studies ecosystems, interactions between organisms, and their environments.
+//         </li>
+//
+//         <li>
+//             Human Anatomy and Physiology – Looks at the structure and function of the human body.
+//         </li>
+//
+//         <li>
+//             Microbiology – Investigates microorganisms, such as bacteria and viruses, and their roles in health and ecosystems.
+//         </li>
+//
+//     </ol>
+//
+//     <img src="image/Biology.webp">
+//         <hr>
+// </div>
+//
+// <div class="Chemistry">
+//     <h1>Chemistry</h1>
+//
+//     <p>	Chemistry is the study of matter, its properties, composition, and the reactions it undergoes. It’s essential for understanding the building blocks of the universe and how substances interact. Core areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Atomic Structure – Examines atoms, the basic units of matter, including protons, neutrons, and electrons.
+//         </li>
+//
+//         <li>
+//             Periodic Table – Organizes elements by their properties, helping predict behaviors and reactions.
+//         </li>
+//
+//         <li>
+//             Chemical Bonding – Studies how atoms bond to form molecules, including ionic, covalent, and metallic bonds.
+//         </li>
+//
+//         <li>
+//             States of Matter – Looks at solids, liquids, gases, and how they change through physical processes like melting and evaporation.
+//         </li>
+//
+//         <li>
+//             Chemical Reactions – Explores how substances transform in reactions, involving energy changes, reactants, and products.
+//         </li>
+//
+//         <li>
+//             Acids and Bases – Focuses on substances that donate or accept protons, crucial for understanding pH and reactions in living organisms.
+//         </li>
+//
+//     </ol>
+//
+//     <img src="image/Chemistry.webp">
+//         <hr>
+// </div>
+//
+// <div class="Physics">
+//     <h1>Physics</h1>
+//
+//     <p>	Physics is the study of matter, energy, and the fundamental forces that govern the universe. It seeks to explain how things move, interact, and change over time. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Mechanics – Studies motion, forces, and energy, explaining concepts like velocity, acceleration, and Newton’s Laws of Motion.
+//         </li>
+//
+//         <li>
+//             Thermodynamics – Focuses on heat, temperature, and the flow of energy, covering principles like entropy and the laws of thermodynamics.
+//         </li>
+//
+//         <li>
+//             Electromagnetism – Explores electric and magnetic fields, including how they produce forces and currents, which is foundational for electronics.
+//         </li>
+//
+//         <li>
+//             Optics – Examines the behavior of light, including reflection, refraction, and the color spectrum.
+//         </li>
+//
+//         <li>
+//             Quantum Mechanics – Investigates particles at the smallest scales, revealing phenomena like wave-particle duality and uncertainty.
+//         </li>
+//
+//         <li>
+//             Relativity – Describes the effects of gravity and high speeds on space, time, and matter, as famously explained by Einstein.
+//         </li>
+//
+//     </ol>
+//     <img src="image/Physics.webp">
+//         <hr>
+// </div>
+//
+// <div class="EnglishLanguageArts">
+//     <h1>English Language Arts</h1>
+//
+//     <p>	English Language Arts (ELA) is the study of language, communication, and literature, focusing on reading, writing, speaking, and listening skills. ELA encourages critical thinking and effective communication. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Reading and Literature – Involves analyzing texts, from fiction and poetry to nonfiction, exploring themes, characters, and literary techniques.
+//         </li>
+//
+//         <li>
+//             Writing – Covers grammar, vocabulary, and composition skills, from essays to creative writing, enabling clear and expressive communication.
+//         </li>
+//
+//         <li>
+//             Speaking and Listening – Develops oral communication and active listening skills, important for discussions, presentations, and collaboration.
+//         </li>
+//
+//         <li>
+//             Research and Information Literacy – Teaches students how to locate, evaluate, and use information effectively and responsibly.
+//         </li>
+//
+//     </ol>
+//
+//     <img src="image/ELA.webp">
+//         <hr>
+// </div>
+//
+// <div class="History">
+//     <h1>History</h1>
+//
+//     <p>	History is the study of past events, people, and societies, helping us understand how the world has developed over time. It provides insight into cultures, conflicts, achievements, and social changes. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Ancient Civilizations – Examines the early societies like Egypt, Mesopotamia, Greece, and Rome, exploring their contributions to government, culture, and technology.
+//         </li>
+//
+//         <li>
+//             Medieval and Renaissance Eras – Covers the Middle Ages and the Renaissance, focusing on feudalism, exploration, and cultural rebirth in Europe.
+//         </li>
+//
+//         <li>
+//             Modern History – Looks at recent centuries, including the Industrial Revolution, world wars, and the Cold War, which have shaped today’s world.
+//         </li>
+//
+//         <li>
+//             American History – Focuses on the history of the United States, from colonization and independence to contemporary issues.
+//         </li>
+//
+//         <li>
+//             World History – Explores global events and connections, studying diverse cultures, empires, and the impact of globalization.
+//         </li>
+//
+//     </ol>
+//     <img src="image/History.webp">
+//         <hr>
+// </div>
+//
+// <div class="Geography">
+//     <h1>Geography</h1>
+//
+//     <p>	Geography is the study of Earth's landscapes, environments, and the relationships between people and their environments. It covers both natural and human-made features of the planet. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Physical Geography – Examines natural features like mountains, rivers, climate, ecosystems, and how they shape life on Earth.
+//         </li>
+//
+//         <li>
+//             Human Geography – Studies human societies, including population distribution, urban development, cultures, and economic activities.
+//         </li>
+//
+//         <li>
+//             Map Skills – Teaches how to read and interpret maps, including symbols, scales, and geographic coordinates.
+//         </li>
+//
+//         <li>
+//             Environmental Geography – Focuses on issues like climate change, conservation, and the impact of human activity on the planet.
+//         </li>
+//
+//         <li>
+//             Geospatial Technologies – Uses tools like GPS, GIS, and satellite imagery to study and analyze geographic information.
+//         </li>
+//
+//     </ol>
+//     <img src="image/Geograpy.webp">
+//         <hr>
+// </div>
+//
+// <div class="SocialStudies">
+//     <h1>Social Studies</h1>
+//
+//     <p>	Social Studies is an interdisciplinary subject that explores society, cultures, history, government, and human interactions. It aims to help students understand the world around them and their role as active citizens. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             History – Studies past events, cultures, and significant figures to understand societal development and lessons from the past.
+//         </li>
+//
+//         <li>
+//             Civics and Government – Focuses on how governments function, the rights and responsibilities of citizens, and the importance of democracy.
+//         </li>
+//
+//         <li>
+//             Geography – Explores physical and human geography, emphasizing how people interact with the environment and global communities.
+//         </li>
+//
+//         <li>
+//             Economics – Introduces economic principles, such as supply and demand, trade, and the role of money in society.
+//         </li>
+//
+//         <li>
+//             Culture and Society – Examines customs, beliefs, and social structures, helping students appreciate cultural diversity and social dynamics.
+//         </li>
+//
+//     </ol>
+//     <img src="image/SoStu.webp">
+//         <hr>
+// </div>
+//
+// <div class="PhysicalEducation">
+//     <h1>Physical Education (PE)</h1>
+//
+//     <p>	Physical Education (PE) is a school subject focused on physical activity, fitness, and overall health. It aims to develop physical skills, promote teamwork, and encourage lifelong healthy habits. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Exercise and Fitness – Teaches students about aerobic and strength-building exercises to improve endurance, strength, and flexibility.
+//         </li>
+//
+//         <li>
+//             Sports and Games – Covers team sports (e.g., soccer, basketball) and individual activities (e.g., running, gymnastics) to build skills, coordination, and teamwork.
+//         </li>
+//
+//         <li>
+//             Health and Wellness – Focuses on the importance of physical activity, nutrition, and personal well-being.
+//         </li>
+//
+//         <li>
+//             Motor Skills Development – Enhances fundamental movement skills, such as balance, agility, and hand-eye coordination.
+//         </li>
+//
+//         <li>
+//             Teamwork and Sportsmanship – Encourages cooperation, respect, and positive interactions during physical activities.
+//         </li>
+//
+//     </ol>
+//
+//     <img src="image/PhyEdu.webp">
+//         <hr>
+// </div>
+//
+// <div class="Art">
+//     <h1>Art</h1>
+//
+//     <p>	Art is a subject that explores creativity, expression, and the visual representation of ideas. It involves learning techniques, understanding styles, and appreciating the impact of art in culture. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Drawing and Painting – Teaches skills in sketching, shading, and color use with various media like pencils, paints, and pastels.
+//         </li>
+//
+//         <li>
+//             Sculpture and 3D Art – Involves creating three-dimensional works using materials like clay, wood, or metal, emphasizing form and space.
+//         </li>
+//
+//         <li>
+//             Art History – Studies famous artists, art movements (like Impressionism or Modernism), and cultural significance across time periods.
+//         </li>
+//
+//         <li>
+//             Digital Art and Photography – Explores technology-based art forms, including digital illustration, graphic design, and photography.
+//         </li>
+//
+//         <li>
+//             Art Appreciation and Critique – Encourages analyzing and interpreting art, understanding themes, and discussing the emotional impact of artwork.
+//         </li>
+//
+//     </ol>
+//     <img src="image/Art.webp">
+//         <hr>
+// </div>
+//
+// <div class="Music">
+//     <h1>Music</h1>
+//
+//     <p>	Music is the study of sound, rhythm, melody, and harmony, focusing on both the creation and appreciation of musical works. It teaches technical skills, creativity, and cultural understanding. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Music Theory – Covers the basics of reading music, scales, chords, and rhythm, helping students understand the structure behind compositions.
+//         </li>
+//
+//         <li>
+//             Instruments and Performance – Involves learning to play musical instruments, sing, and perform, either solo or in groups.
+//         </li>
+//
+//         <li>
+//             Music History – Studies different musical periods, genres, and influential composers or musicians from around the world.
+//         </li>
+//
+//         <li>
+//             Composition and Songwriting – Teaches the basics of creating original music, exploring melody, lyrics, and arrangement.
+//
+//         </li>
+//
+//         <li>
+//             Listening and Appreciation – Focuses on analyzing and interpreting music, understanding mood, cultural background, and musical styles.
+//         </li>
+//
+//     </ol>
+//     <img src="image/MusicAtr.webp">
+//         <hr>
+// </div>
+//
+// <div class="ComputerScience">
+//     <h1>Computer Science</h1>
+//
+//     <p>	Computer Science is the study of computers, algorithms, and programming, focusing on how technology processes information and solves problems. It’s foundational for understanding and developing technology. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Programming and Coding – Teaches languages like Python, Java, and HTML to create software, websites, and applications.
+//         </li>
+//
+//         <li>
+//             Algorithms and Data Structures – Focuses on efficient methods for organizing and processing data, essential for solving complex problems.
+//         </li>
+//
+//         <li>
+//             Computer Systems and Hardware – Covers the components and architecture of computers, including CPUs, memory, and storage.
+//         </li>
+//
+//         <li>
+//             Networks and Internet – Examines how computers communicate, covering networks, cybersecurity, and the principles of the internet.
+//         </li>
+//
+//         <li>
+//             Artificial Intelligence and Machine Learning – Introduces AI concepts, such as pattern recognition, machine learning, and decision-making processes.
+//         </li>
+//
+//     </ol>
+//     <img src="image/ComSc.webp">
+//         <hr>
+// </div>
+//
+// <div class="ForeignLanguage">
+//     <h1>Foreign Language</h1>
+//
+//     <p>	Foreign Language studies focus on learning new languages, improving communication skills, and understanding different cultures. It enhances linguistic abilities and cultural awareness. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Speaking and Pronunciation – Teaches students to speak and pronounce words correctly, helping with fluency and conversational skills.
+//         </li>
+//
+//         <li>
+//             Listening Comprehension – Focuses on understanding spoken language, building skills to comprehend different accents and contexts.
+//         </li>
+//
+//         <li>
+//             Reading and Vocabulary – Covers reading comprehension and expanding vocabulary to understand written texts.
+//         </li>
+//
+//         <li>
+//             Grammar and Sentence Structure – Teaches the rules and structure of the language, essential for accurate communication.
+//         </li>
+//
+//         <li>
+//             Cultural Understanding – Explores the culture, traditions, and social norms associated with the language, fostering global awareness.
+//         </li>
+//
+//     </ol>
+//     <img src="image/ForLan.webp">
+//         <hr>
+// </div>
+//
+// <div class="Economics">
+//     <h1>Economics</h1>
+//     <p>Economics is the study of how individuals, businesses, and governments make choices about resources, production, and consumption. It focuses on understanding financial systems, markets, and decision-making. Key areas include:
+//     </p>
+//
+//     <ol>
+//         <li>
+//             Microeconomics – Examines individual and business decisions, including supply, demand, and price determination in specific markets.
+//         </li>
+//
+//         <li>
+//             Macroeconomics – Looks at the economy as a whole, studying factors like inflation, unemployment, and economic growth.
+//         </li>
+//
+//         <li>
+//             Economic Systems – Explores different types of economies, such as capitalism, socialism, and mixed economies, and how resources are allocated.
+//         </li>
+//
+//         <li>
+//             Money and Banking – Covers the role of money, banks, and financial institutions in supporting trade and investment.
+//         </li>
+//
+//         <li>
+//             International Trade and Global Economics – Examines trade between countries, globalization, exchange rates, and the impact of policies on global economies.
+//         </li>
+//     </ol>
+//
+//     <img src="image/Economics.webp">
+//         <hr>
+// </div>
+//
+// </body>
+// <script>
+//     document.addEventListener("DOMContentLoaded", function() {
+//     // Получаем все карточки предметов
+//     const subjectCards = document.querySelectorAll("div[class^='Mathematics'], div[class^='Science'], div[class^='Biology'], div[class^='Chemistry'], div[class^='Physics'], div[class^='EnglishLanguageArts'], div[class^='History'], div[class^='Geography'], div[class^='SocialStudies'], div[class^='PhysicalEducation'], div[class^='Art'], div[class^='Music'], div[class^='ComputerScience'], div[class^='ForeignLanguage'], div[class^='Economics']");
+//
+//     // Перебираем каждую карточку и добавляем событие клика
+//     subjectCards.forEach(card => {
+//     const content = card.querySelector("p, ol, img");
+//     content.style.display = "none"; // Скрываем содержимое карточки
+//
+//     // Добавляем обработчик клика
+//     card.addEventListener("click", function() {
+//     if (content.style.display === "none") {
+//     content.style.display = "block";
+//     card.style.cursor = "default";
+// } else {
+//     content.style.display = "none";
+// }
+// });
+// });
+// });
+// </script>
+//
+// </html>
+
+// /* Общие стили */
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f4f4f9;
+//     color: #333;
+//     padding: 20px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+// }
+//
+// /* Карточки предметов */
+// div[class^="Mathematics"],
+//     div[class^="Science"],
+//     div[class^="Biology"],
+//     div[class^="Chemistry"],
+//     div[class^="Physics"],
+//     div[class^="EnglishLanguageArts"],
+//     div[class^="History"],
+//     div[class^="Geography"],
+//     div[class^="SocialStudies"],
+//     div[class^="PhysicalEducation"],
+//     div[class^="Art"],
+//     div[class^="Music"],
+//     div[class^="ComputerScience"],
+//     div[class^="ForeignLanguage"],
+//     div[class^="Economics"] {
+//     width: 90%;
+//     max-width: 700px;
+//     margin: 20px auto;
+//     padding: 20px;
+//     background-color: #fff;
+//     border-radius: 15px;
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+//     transition: transform 0.3s, box-shadow 0.3s;
+//     cursor: pointer;
+//     overflow: hidden;
+// }
+//
+// div[class^="Mathematics"]:hover,
+//     div[class^="Science"]:hover,
+//     div[class^="Biology"]:hover,
+//     div[class^="Chemistry"]:hover,
+//     div[class^="Physics"]:hover,
+//     div[class^="EnglishLanguageArts"]:hover,
+//     div[class^="History"]:hover,
+//     div[class^="Geography"]:hover,
+//     div[class^="SocialStudies"]:hover,
+//     div[class^="PhysicalEducation"]:hover,
+//     div[class^="Art"]:hover,
+//     div[class^="Music"]:hover,
+//     div[class^="ComputerScience"]:hover,
+//     div[class^="ForeignLanguage"]:hover,
+//     div[class^="Economics"]:hover {
+//     transform: scale(1.02);
+//     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+// }
+//
+// /* Стили для заголовков */
+// h1 {
+//     font-size: 1.8em;
+//     color: #333;
+//     margin-bottom: 10px;
+//     text-align: center;
+// }
+//
+// /* Стили для текста */
+// p {
+//     line-height: 1.6;
+//     margin-bottom: 15px;
+// }
+//
+// /* Стили для списков */
+// ol {
+//     padding-left: 20px;
+//     margin-bottom: 20px;
+// }
+//
+// ol li {
+//     padding: 5px 0;
+// }
+//
+// /* Стили для изображений */
+// img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 10px;
+//     margin-top: 10px;
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+// }
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>School Subjects</title>
+// <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
+// <h1>School Subjects</h1>
+// <div class="icon-grid">
+//     <a href="mathematics.html" class="subject-icon">
+//         <img src="image/Math.webp" alt="Mathematics Icon">
+//             <p>Mathematics</p>
+//     </a>
+//     <a href="science.html" class="subject-icon">
+//         <img src="image/Science.webp" alt="Science Icon">
+//             <p>Science</p>
+//     </a>
+//     <a href="biology.html" class="subject-icon">
+//         <img src="image/Biology.webp" alt="Biology Icon">
+//             <p>Biology</p>
+//     </a>
+//     <a href="chemistry.html" class="subject-icon">
+//         <img src="image/Chemistry.webp" alt="Chemistry Icon">
+//             <p>Chemistry</p>
+//     </a>
+//     <a href="physics.html" class="subject-icon">
+//         <img src="image/Physics.webp" alt="Physics Icon">
+//             <p>Physics</p>
+//     </a>
+//     <a href="english_language_arts.html" class="subject-icon">
+//         <img src="image/ELA.webp" alt="English Language Arts Icon">
+//             <p>English Language Arts</p>
+//     </a>
+//     <a href="history.html" class="subject-icon">
+//         <img src="image/History.webp" alt="History Icon">
+//             <p>History</p>
+//     </a>
+//     <a href="geography.html" class="subject-icon">
+//         <img src="image/Geograpy.webp" alt="Geography Icon">
+//             <p>Geography</p>
+//     </a>
+//     <a href="social_studies.html" class="subject-icon">
+//         <img src="image/SoStu.webp" alt="Social Studies Icon">
+//             <p>Social Studies</p>
+//     </a>
+//     <a href="physical_education.html" class="subject-icon">
+//         <img src="image/PhyEdu.webp" alt="Physical Education Icon">
+//             <p>Physical Education</p>
+//     </a>
+//     <a href="art.html" class="subject-icon">
+//         <img src="image/Art.webp" alt="Art Icon">
+//             <p>Art</p>
+//     </a>
+//     <a href="music.html" class="subject-icon">
+//         <img src="image/MusicAtr.webp" alt="Music Icon">
+//             <p>Music</p>
+//     </a>
+//     <a href="computer_science.html" class="subject-icon">
+//         <img src="image/ComSc.webp" alt="Computer Science Icon">
+//             <p>Computer Science</p>
+//     </a>
+//     <a href="foreign_language.html" class="subject-icon">
+//         <img src="image/ForLan.webp" alt="Foreign Language Icon">
+//             <p>Foreign Language</p>
+//     </a>
+//     <a href="economics.html" class="subject-icon">
+//         <img src="image/Economics.webp" alt="Economics Icon">
+//             <p>Economics</p>
+//     </a>
+// </div>
+// </body>
+// </html>
+
+// /* General Page Styling */
+// body {
+//     font-family: Arial, sans-serif;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     background-color: #f0f2f5;
+//     margin: 0;
+//     padding: 20px;
+// }
+//
+// /* Title Styling */
+// h1 {
+//     font-size: 2em;
+//     margin-bottom: 20px;
+//     color: #333;
+// }
+//
+// /* Icon Grid Container */
+// .icon-grid {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 20px;
+//     justify-content: center;
+// }
+//
+// /* Individual Subject Icon Styling */
+// .subject-icon {
+//     text-align: center;
+//     width: 150px;
+//     background-color: #fff;
+//     border-radius: 12px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//     padding: 15px;
+//     transition: transform 0.3s ease, box-shadow 0.3s ease;
+//     text-decoration: none;
+//     color: #333;
+// }
+//
+// /* Hover Effect */
+// .subject-icon:hover {
+//     transform: scale(1.05);
+//     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+// }
+//
+// /* Image Styling Inside Icons */
+// .subject-icon img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 8px;
+//     margin-bottom: 10px;
+// }
+//
+// /* Subject Name Styling */
+// .subject-icon p {
+//     margin: 0;
+//     font-weight: bold;
+//     color: #555;
+// }
+
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f4f6f9;
+//     color: #333;
+//     margin: 0;
+//     padding: 20px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+//
+// .back-button {
+//     display: inline-block;
+//     margin-bottom: 20px;
+//     color: #333;
+//     text-decoration: none;
+//     background-color: #e0e0e0;
+//     padding: 8px 15px;
+//     border-radius: 8px;
+//     font-weight: bold;
+//     transition: background-color 0.3s ease;
+// }
+//
+// .back-button:hover {
+//     background-color: #dcdcdc;
+// }
+//
+// .subject-page {
+//     max-width: 800px;
+//     background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+//     padding: 30px;
+//     border-radius: 12px;
+//     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+//     text-align: center;
+// }
+//
+// .subject-page h1 {
+//     font-size: 2.5rem;
+//     color: #34495e;
+//     margin-bottom: 10px;
+//     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+// }
+//
+// .subject-page p, .subject-page ol li {
+//     font-size: 1.1rem;
+//     line-height: 1.8;
+//     color: #333;
+// }
+//
+// .subject-page ol li strong {
+//     color: #2980b9;
+// }
+//
+// .subject-page ol li:hover {
+//     color: #1e90ff;
+//     transition: color 0.3s ease;
+// }
+//
+// .subject-image {
+//     width: 100%;
+//     max-width: 600px;
+//     height: auto;
+//     border-radius: 10px;
+//     margin-top: 20px;
+//     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+//     transition: transform 0.3s ease;
+// }
+//
+// .subject-image:hover {
+//     transform: scale(1.05);
+// }
+//
+// .subject-footer {
+//     margin-top: 40px;
+//     font-size: 0.9rem;
+//     color: #777;
+//     text-align: center;
+// }
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Social Studies</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Social Studies</h1>
+//         <p>Social Studies is an interdisciplinary subject that explores society, cultures, history, government, and human interactions. Key areas include:</p>
+//         <ol>
+//             <li><strong>History</strong> – Studies past events and significant figures to understand societal development.</li>
+//             <li><strong>Civics and Government</strong> – Focuses on how governments function and the importance of democracy.</li>
+//             <li><strong>Geography</strong> – Explores physical and human geography and global communities.</li>
+//             <li><strong>Economics</strong> – Introduces economic principles, such as supply and demand and the role of money.</li>
+//             <li><strong>Culture and Society</strong> – Examines customs, beliefs, and social structures.</li>
+//         </ol>
+//         <img src="image/SoStu.webp" alt="Social Studies Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Science</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Science</h1>
+//         <p>Science is the systematic study of the natural world, using observation, experimentation, and analysis to understand phenomena and develop theories. It’s divided into key branches:</p>
+//         <ol>
+//             <li><strong>Physics</strong> – Studies matter, energy, and the fundamental forces of nature.</li>
+//             <li><strong>Chemistry</strong> – Focuses on substances, their properties, and reactions.</li>
+//             <li><strong>Biology</strong> – Examines living organisms, their structures, and functions.</li>
+//             <li><strong>Earth Science</strong> – Investigates Earth’s structure, natural processes, and phenomena.</li>
+//             <li><strong>Environmental Science</strong> – Studies ecosystems, biodiversity, and human impacts on the environment.</li>
+//         </ol>
+//         <img src="image/Science.webp" alt="Science Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Physics</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Physics</h1>
+//         <p>Physics is the study of matter, energy, and the fundamental forces that govern the universe. Key areas include:</p>
+//         <ol>
+//             <li><strong>Mechanics</strong> – Studies motion, forces, and energy.</li>
+//             <li><strong>Thermodynamics</strong> – Focuses on heat, temperature, and the flow of energy.</li>
+//             <li><strong>Electromagnetism</strong> – Explores electric and magnetic fields.</li>
+//             <li><strong>Optics</strong> – Examines the behavior of light.</li>
+//             <li><strong>Quantum Mechanics</strong> – Investigates particles at the smallest scales.</li>
+//         </ol>
+//         <img src="image/Physics.webp" alt="Physics Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Physical Education (PE)</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Physical Education (PE)</h1>
+//         <p>Physical Education (PE) focuses on physical activity, fitness, and overall health. It aims to develop physical skills and promote teamwork. Key areas include:</p>
+//         <ol>
+//             <li><strong>Exercise and Fitness</strong> – Teaches aerobic and strength-building exercises.</li>
+//             <li><strong>Sports and Games</strong> – Covers team sports (e.g., soccer) and individual activities (e.g., running).</li>
+//             <li><strong>Health and Wellness</strong> – Focuses on the importance of physical activity and nutrition.</li>
+//             <li><strong>Motor Skills Development</strong> – Enhances fundamental movement skills.</li>
+//             <li><strong>Teamwork and Sportsmanship</strong> – Encourages cooperation and positive interactions.</li>
+//         </ol>
+//         <img src="image/PhyEdu.webp" alt="Physical Education Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Music</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Music</h1>
+//         <p>Music is the study of sound, rhythm, melody, and harmony, focusing on both the creation and appreciation of musical works. Key areas include:</p>
+//         <ol>
+//             <li><strong>Music Theory</strong> – Covers the basics of reading music, scales, chords, and rhythm.</li>
+//             <li><strong>Instruments and Performance</strong> – Involves learning to play musical instruments and sing.</li>
+//             <li><strong>Music History</strong> – Studies different musical periods, genres, and influential composers.</li>
+//             <li><strong>Composition and Songwriting</strong> – Teaches the basics of creating original music.</li>
+//             <li><strong>Listening and Appreciation</strong> – Focuses on analyzing and interpreting music.</li>
+//         </ol>
+//         <img src="image/MusicAtr.webp" alt="Music Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Mathematics</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Mathematics</h1>
+//         <p>Mathematics is the study of numbers, shapes, patterns, and logical reasoning. It is a fundamental subject that provides tools and frameworks for solving problems across many fields, from science and engineering to economics and art. Here are the core areas in mathematics:</p>
+//         <ol>
+//             <li><strong>Arithmetic</strong> – The study of basic operations (addition, subtraction, multiplication, and division) and number properties.</li>
+//             <li><strong>Algebra</strong> – Focuses on variables, equations, and functions, providing a foundation for solving complex problems.</li>
+//             <li><strong>Geometry</strong> – Examines shapes, sizes, and the properties of space, exploring points, lines, angles, and surfaces.</li>
+//             <li><strong>Trigonometry</strong> – Studies the relationships between angles and sides in triangles, which has applications in physics, engineering, and astronomy.</li>
+//             <li><strong>Calculus</strong> – Investigates rates of change (derivatives) and accumulation of quantities (integrals), essential for understanding motion and change.</li>
+//             <li><strong>Statistics and Probability</strong> – Deals with data analysis, averages, probability, and chance, used widely in sciences, economics, and social studies.</li>
+//         </ol>
+//         <img src="image/Math.webp" alt="Mathematics Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>History</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>History</h1>
+//         <p>History is the study of past events, people, and societies, helping us understand how the world has developed over time. Key areas include:</p>
+//         <ol>
+//             <li><strong>Ancient Civilizations</strong> – Examines early societies like Egypt, Mesopotamia, Greece, and Rome.</li>
+//             <li><strong>Medieval and Renaissance Eras</strong> – Covers feudalism, exploration, and cultural rebirth in Europe.</li>
+//             <li><strong>Modern History</strong> – Looks at recent centuries, including the Industrial Revolution and world wars.</li>
+//             <li><strong>American History</strong> – Focuses on the history of the United States, from colonization to contemporary issues.</li>
+//             <li><strong>World History</strong> – Explores global events, studying diverse cultures, empires, and globalization.</li>
+//         </ol>
+//         <img src="image/History.webp" alt="History Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Geography</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Geography</h1>
+//         <p>Geography is the study of Earth's landscapes, environments, and the relationships between people and their environments. Key areas include:</p>
+//         <ol>
+//             <li><strong>Physical Geography</strong> – Examines natural features like mountains, rivers, and climate.</li>
+//             <li><strong>Human Geography</strong> – Studies human societies, including population distribution and urban development.</li>
+//             <li><strong>Map Skills</strong> – Teaches how to read and interpret maps, including symbols and scales.</li>
+//             <li><strong>Environmental Geography</strong> – Focuses on issues like climate change and conservation.</li>
+//             <li><strong>Geospatial Technologies</strong> – Uses tools like GPS and satellite imagery to analyze geographic information.</li>
+//         </ol>
+//         <img src="image/Geograpy.webp" alt="Geography Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Foreign Language</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Foreign Language</h1>
+//         <p>Foreign Language studies focus on learning new languages, improving communication skills, and understanding different cultures. Key areas include:</p>
+//         <ol>
+//             <li><strong>Speaking and Pronunciation</strong> – Teaches students to speak and pronounce words correctly.</li>
+//             <li><strong>Listening Comprehension</strong> – Focuses on understanding spoken language in different accents and contexts.</li>
+//             <li><strong>Reading and Vocabulary</strong> – Covers reading comprehension and expanding vocabulary.</li>
+//             <li><strong>Grammar and Sentence Structure</strong> – Teaches the rules and structure of the language.</li>
+//             <li><strong>Cultural Understanding</strong> – Explores culture, traditions, and social norms associated with the language.</li>
+//         </ol>
+//         <img src="image/ForLan.webp" alt="Foreign Language Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>English Language Arts</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>English Language Arts</h1>
+//         <p>English Language Arts (ELA) is the study of language, communication, and literature, focusing on reading, writing, speaking, and listening skills. Key areas include:</p>
+//         <ol>
+//             <li><strong>Reading and Literature</strong> – Analyzing texts, exploring themes, characters, and literary techniques.</li>
+//             <li><strong>Writing</strong> – Covers grammar, vocabulary, and composition skills for expressive communication.</li>
+//             <li><strong>Speaking and Listening</strong> – Develops oral communication and listening skills.</li>
+//             <li><strong>Research and Information Literacy</strong> – Teaches how to locate, evaluate, and use information effectively.</li>
+//         </ol>
+//         <img src="image/ELA.webp" alt="English Language Arts Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects.
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Art</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Art</h1>
+//         <p>Art explores creativity, expression, and the visual representation of ideas. It involves learning techniques, understanding styles, and appreciating art in culture. Key areas include:</p>
+//         <ol>
+//             <li><strong>Drawing and Painting</strong> – Teaches skills in sketching, shading, and color use with various media.</li>
+//             <li><strong>Sculpture and 3D Art</strong> – Involves creating three-dimensional works using materials like clay and metal.</li>
+//             <li><strong>Art History</strong> – Studies famous artists, art movements, and cultural significance.</li>
+//             <li><strong>Digital Art and Photography</strong> – Explores digital illustration, graphic design, and photography.</li>
+//             <li><strong>Art Appreciation and Critique</strong> – Encourages analyzing and interpreting art.</li>
+//         </ol>
+//         <img src="image/Art.webp" alt="Art Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Biology</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Biology</h1>
+//         <p>Biology is the study of living organisms and life processes. It explores everything from microscopic cells to complex ecosystems. Here are the core areas:</p>
+//         <ol>
+//             <li><strong>Cell Biology</strong> – Examines the structure and function of cells.</li>
+//             <li><strong>Genetics</strong> – Focuses on DNA, heredity, and how traits are passed through generations.</li>
+//             <li><strong>Evolution</strong> – Explains how species change over time.</li>
+//             <li><strong>Ecology</strong> – Studies ecosystems, interactions between organisms, and their environments.</li>
+//             <li><strong>Human Anatomy and Physiology</strong> – Looks at the structure and function of the human body.</li>
+//         </ol>
+//         <img src="image/Biology.webp" alt="Biology Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Chemistry</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Chemistry</h1>
+//         <p>Chemistry is the study of matter, its properties, composition, and the reactions it undergoes. It’s essential for understanding the building blocks of the universe. Core areas include:</p>
+//         <ol>
+//             <li><strong>Atomic Structure</strong> – Examines atoms, the basic units of matter.</li>
+//             <li><strong>Periodic Table</strong> – Organizes elements by their properties.</li>
+//             <li><strong>Chemical Bonding</strong> – Studies how atoms bond to form molecules.</li>
+//             <li><strong>States of Matter</strong> – Looks at solids, liquids, gases, and their changes.</li>
+//             <li><strong>Chemical Reactions</strong> – Explores how substances transform in reactions.</li>
+//         </ol>
+//         <img src="image/Chemistry.webp" alt="Chemistry Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Computer Science</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Computer Science</h1>
+//         <p>Computer Science is the study of computers, algorithms, and programming, focusing on how technology processes information and solves problems. Key areas include:</p>
+//         <ol>
+//             <li><strong>Programming and Coding</strong> – Teaches languages like Python, Java, and HTML to create software and websites.</li>
+//             <li><strong>Algorithms and Data Structures</strong> – Focuses on efficient methods for organizing and processing data.</li>
+//             <li><strong>Computer Systems and Hardware</strong> – Covers the components and architecture of computers.</li>
+//             <li><strong>Networks and Internet</strong> – Examines how computers communicate, including networks and cybersecurity.</li>
+//             <li><strong>Artificial Intelligence and Machine Learning</strong> – Introduces AI concepts and machine learning.</li>
+//         </ol>
+//         <img src="image/ComSc.webp" alt="Computer Science Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Economics</title>
+// <link rel="stylesheet" href="style.css">
+//     <link rel="stylesheet" href="subject-style.css">
+//     </head>
+//     <body>
+//     <a href="index.html" class="back-button">⬅️ Back to School Subjects</a>
+//     <div class="subject-page">
+//         <h1>Economics</h1>
+//         <p>Economics is the study of how individuals, businesses, and governments make choices about resources, production, and consumption. Key areas include:</p>
+//         <ol>
+//             <li><strong>Microeconomics</strong> – Examines individual and business decisions in specific markets.</li>
+//             <li><strong>Macroeconomics</strong> – Looks at the economy as a whole, including inflation and unemployment.</li>
+//             <li><strong>Economic Systems</strong> – Explores different types of economies and resource allocation.</li>
+//             <li><strong>Money and Banking</strong> – Covers the role of money, banks, and financial institutions.</li>
+//             <li><strong>International Trade and Global Economics</strong> – Examines trade between countries, globalization, and exchange rates.</li>
+//         </ol>
+//         <img src="image/Economics.webp" alt="Economics Image" class="subject-image">
+//     </div>
+//     <footer class="subject-footer">
+//         <p>© 2023 School Subjects. All Rights Reserved.</p>
+//     </footer>
+//     </body>
+// </html>
