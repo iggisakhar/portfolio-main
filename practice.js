@@ -10043,3 +10043,83 @@
 //     </footer>
 //     </body>
 // </html>
+
+// function findFirstNegativeIndex(arr){
+//     return arr.findIndex(num => num < 0);
+// }
+
+// function findIndexByProperty(arr, value){
+//     const index = arr.findIndex(obj => Object.values(obj).includes(value));
+//     return index !== -1 ? index : "Value not found";
+// }
+
+// function findFirstEvenIndex(arr){
+//     const flattened = arr.flat(Infinity);
+//     const index = flattened.findIndex(num => num % 2 === 0);
+//     return index !== -1 ? index : "Even number not found"
+// }
+
+// function findFirstIndexStartingWith(arr, letter){
+//     const normalizedLetter = letter.toLowerCase();
+//     const index = arr.findIndex(str => str.trim().toLowerCase().startsWith(normalizedLetter));
+//     return index !== -1 ? index : "Element not found"
+// }
+
+// function findIndexByDigitSum(arr, targetSum){
+//     const calculateDigitSum = (num) => {
+//         return Math.abs(num)
+//             .toString()
+//             .split("")
+//             .reduce((sum, digit) => sum + Number(digit), 0);
+//     };
+//     const index = arr.findIndex(item => {
+//         if(typeof item === 'number' && !isNaN(item)) {
+//             return calculateDigitSum(item) === targetSum;
+//         }
+//         return false;
+//     });
+//     return index !== -1 ? index : 'Element not found';
+// }
+
+// function findIndexByProperties(arr, target){
+//     const index = arr.findIndex(obj => {
+//         return Object.keys(target).every(key => obj[key] === target[key]);
+//     });
+//     return index !== -1 ? index : "Object not found";
+// }
+
+// function findFirstIndexLongerThanNext(arr){
+//     const index = arr.findIndex((str, i) => i < arr.length -1 && str.length > arr[i + 1].length);
+//     return index !== -1 ? index : "Element not found";
+// }
+
+// function findIndexByCaseCount(arr, caseCount){
+//     const countCases = (str) => {
+//         let upperCount = 0;
+//         let lowerCount = 0;
+//         for(const char of str){
+//             if(/[A-Z]/.test(char)) upperCount++
+//             else if(/[a-z]/.test(char)) lowerCount++
+//         }
+//         return { upperCount, lowerCount };
+//     };
+//     const index = arr.findIndex(str => {
+//         const { upperCount, lowerCount } = countCases(str);
+//         return upperCount >= caseCount.upperCase && lowerCount >= caseCount.lowerCase;
+//     });
+//     return index !== -1 ? index : 'Element not found';
+// }
+
+// function findFirstIndexWithSubstringAndLength(arr, substring, minLength){
+//     const index = arr.findIndex(str => str.includes(substring) && str.length > minLength);
+//     return index !== -1 ? index : 'Element not found';
+// }
+
+// function findIndexContainingAllLetters(arr, word){
+//     const letters = new Set(word.toLowerCase());
+//     const index = arr.findIndex(str => {
+//         const lowerStr = str.toLowerCase();
+//         return [...letters].every(letter => lowerStr.includes(letter));
+//     });
+//     return index !== -1 ? index : 'Element not found';
+// }
