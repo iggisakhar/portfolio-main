@@ -10170,3 +10170,89 @@
 //     return arr.findLastIndex(item => (item.length % 2 === 0) === isEven);
 // }
 
+// if(!Array.prototype.findLastIndex){
+//     Array.prototype.findLastIndex = function(callback, thisArg) {
+//         for(let i = this.length -1; i >= 0; i--){
+//             if(callback.call(thisArg, this[i], i, this)){
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     };
+// }
+//
+// function findLastIndexContainingLetters(arr, word){
+//     let requiredCount = Math.ceil(word.length / 2);
+//
+//     return arr.findLastIndex(str => {
+//         let count = 0;
+//         for(let char of word){
+//             if(str.includes(char)){
+//                 count++;
+//             }
+//             if(count >= requiredCount){
+//                 return true;
+//             }
+//         }
+//         return false;
+//     });
+// }
+
+// if(!Array.prototype.findLastIndex){
+//     Array.prototype.findLastIndex = function(callback, thisArg){
+//         for(let i  = this.length - 1; i >= 0; i--){
+//             if(callback.call(thisArg, this[i], i, this)){
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     }
+// }
+//
+// function findLastIndexBySquare(arr, num){
+//     return arr.findLastIndex(item => item * item > num);
+// }
+
+// if(!Array.prototype.findLastIndex){
+//     Array.prototype.findLastIndex = function(callback, thisArg){
+//         for(let i  = this.length - 1; i >= 0; i--){
+//             if(callback.call(thisArg, this[i], i, this)){
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     }
+// }
+//
+// function findLastIndexBySymbolCount(arr, symbol, target){
+//     symbol = symbol.toLowerCase()
+//     return arr.findLastIndex(str =>{
+//         str = str.toLowerCase();
+//         let count = 0;
+//
+//         for(let char of str){
+//             if(char === symbol) count++
+//             if(count === target) return true;
+//         }
+//         return false;
+//     });
+// }
+
+// if(!Array.prototype.findLastIndex){
+//     Array.prototype.findLastIndex = function(callback, thisArg) {
+//         for(let i = this.length -1; i >= 0; i--){
+//             if(callback.call(thisArg, this[i], i, this)){
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     };
+// }
+//
+// function findLastIndexByFormattedLength(arr, length){
+//     return arr.findLastIndex(str => {
+//         const formattedStr = str.replace(/[^a-zA-Z]/g, '');
+//         return formattedStr.length === length;
+//     });
+// }
+
