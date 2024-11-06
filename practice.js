@@ -10123,3 +10123,50 @@
 //     });
 //     return index !== -1 ? index : 'Element not found';
 // }
+
+// if (!Array.prototype.findLastIndex) {
+//     Array.prototype.findLastIndex = function(callback, thisArg) {
+//         for (let i = this.length - 1; i >= 0; i--) {
+//             if (callback.call(thisArg, this[i], i, this)) {
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     };
+// }
+//
+// function findLastPositiveIndex(arr) {
+//     return arr.findLastIndex(n => n > 0);
+// }
+
+// if (!Array.prototype.findLastIndex) {
+//     Array.prototype.findLastIndex = function(callback, thisArg) {
+//         for (let i = this.length - 1; i >= 0; i--) {
+//             if (callback.call(thisArg, this[i], i, this)) {
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     };
+// }
+//
+// function findLastIndexByProperty(arr, key, value) {
+//     return arr.findLastIndex(item => item[key] === value);
+// }
+
+// if (!Array.prototype.findLastIndex) {
+//     Array.prototype.findLastIndex = function(callback, thisArg) {
+//         for (let i = this.length - 1; i >= 0; i--) {
+//             if (callback.call(thisArg, this[i], i, this)) {
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     };
+// }
+//
+// function findLastIndexByLength(arr, option) {
+//     const isEven = option === 'even';
+//     return arr.findLastIndex(item => (item.length % 2 === 0) === isEven);
+// }
+
