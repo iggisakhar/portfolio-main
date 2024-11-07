@@ -10256,3 +10256,18 @@
 //     });
 // }
 
+// function fB(n) {
+//     for(let i = 1; i <= n; i++){
+//         if(i % 3 === 0 && i % 5 === 0){
+//             console.log("FB")
+//         } else if(i % 3 === 0){
+//             console.log("F")
+//         } else if(i % 5 === 0){
+//             console.log("B")
+//         } else {
+//             console.log(i);
+//         }
+//     }
+//
+// }
+
