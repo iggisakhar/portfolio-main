@@ -10271,3 +10271,42 @@
 //
 // }
 
+// function canBePalindromeWithOneRemoval(str) {
+//     let left = 0;
+//     let right = str.length - 1;
+//
+//     while (left < right) {
+//         if (str[left] !== str[right]) {
+//             return isPalindrome(str, left + 1, right) || isPalindrome(str, left, right - 1);
+//         }
+//         left++;
+//         right--;
+//     }
+//     return true;
+// }
+//
+// function isPalindrome(str, left, right) {
+//     while (left < right) {
+//         if (str[left] !== str[right]) {
+//             return false;
+//         }
+//         left++;
+//         right--;
+//     }
+//     return true;
+// }
+//
+// function isSpecialSequence(dna_sequence) {
+//     const n = dna_sequence.length;
+//
+//     for (let i = 1; i < n; i++) {
+//         const str1 = dna_sequence.slice(0, i);
+//         const str2 = dna_sequence.slice(i);
+//
+//         if (canBePalindromeWithOneRemoval(str1) && canBePalindromeWithOneRemoval(str2)) {
+//             return "YES";
+//         }
+//     }
+//
+//     return "NO";
+// }
