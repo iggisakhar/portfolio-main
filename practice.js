@@ -10323,3 +10323,67 @@
 // const result = update(x);
 // console.log(result);
 
+// if(!Array.prototype.findLastIndex){
+//     Array.prototype.findLastIndex = function(callback, thisArg) {
+//         for(let i = this.length -1; i >= 0; i--){
+//             if(callback.call(thisArg, this[i], i, this)){
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     };
+// }
+//
+//
+// function findLastIndexByDigitSum(arr, targetSum) {
+//
+//     const modifiedArray = arr.map(str => str.replace(/\D/g, ''));
+//
+//     const index = modifiedArray.findLastIndex(numStr => {
+//         const digitSum = [...numStr].reduce((sum, digit) => sum + Number(digit), 0);
+//         return digitSum === targetSum;
+//     });
+//     return { modifiedArray, index };
+// }
+
+// if (!Array.prototype.findLastIndex) {
+//     Array.prototype.findLastIndex = function(callback, thisArg) {
+//         for (let i = this.length - 1; i >= 0; i--) {
+//             if (callback.call(thisArg, this[i], i, this)) {
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     };
+// }
+//
+// function findLastIndexByUpperCaseCount(arr, targetCount) {
+//
+//     const index = arr.findLastIndex(str => {
+//         const upperCaseCount = [...str].filter(char => char >= 'A' && char <= 'Z').length;
+//         return upperCaseCount === targetCount;
+//     });
+//
+//     return index;
+// }
+
+// if (!Array.prototype.findLastIndex) {
+//     Array.prototype.findLastIndex = function (callback, thisArg) {
+//         for (let i = this.length - 1; i >= 0; i--) {
+//             if (callback.call(thisArg, this[i], i, this)) {
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     };
+// }
+//
+// function findLastIndexByMaxProperty(arr, property) {
+//
+//     const max = Math.max(...arr.map(obj => obj[property] || 0));
+//
+//     const index = arr.findLastIndex(obj => obj[property] === max);
+//
+//     return index;
+// }
+
