@@ -10387,3 +10387,295 @@
 //     return index;
 // }
 
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <meta name="description" content="Hi! I'm Anna Dowlin, a friendly LA-based developer. Say hello!">
+//     <title>Anna Dowlin - Developer</title>
+// <style>
+//     body {
+//     margin: 0;
+//     padding: 0;
+//     background: url("https://wallpaperaccess.com/full/314785.jpg") no-repeat center center fixed;
+//     background-size: cover;
+//     font-family: Arial, sans-serif;
+//     color: white;
+//     text-align: center;
+// }
+//     .container {
+//     padding: 20px;
+//     background: rgba(0, 0, 0, 0.7);
+//     border-radius: 10px;
+//     display: inline-block;
+//     margin: 50px auto;
+// }
+//     img {
+//     border-radius: 50%;
+//     width: 120px;
+//     height: 120px;
+//     margin-bottom: 15px;
+// }
+//     h1 {
+//     font-size: 2rem;
+//     margin: 0;
+//     color: #fff;
+// }
+//     p {
+//     font-size: 1.2rem;
+//     margin: 10px 0 20px;
+//     color: #ddd;
+// }
+//     input[type="email"] {
+//     width: 80%;
+//     max-width: 300px;
+//     padding: 10px;
+//     font-size: 1rem;
+//     border: none;
+//     border-radius: 5px;
+//     margin-bottom: 10px;
+// }
+//     input[type="submit"] {
+//     padding: 10px 20px;
+//     font-size: 1rem;
+//     border: none;
+//     background: purple;
+//     color: white;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     transition: background 0.3s ease;
+// }
+//     input[type="submit"]:hover {
+//     background: darkmagenta;
+// }
+//     footer {
+//     margin-top: 20px;
+//     font-size: 0.8rem;
+//     color: #ccc;
+// }
+// </style>
+// </head>
+// <body>
+// <div class="container">
+//     <img src="https://th.bing.com/th/id/OIP.Xeoc3iMVyCImvf2gRTLveQHaFj?w=238&h=180&c=7&r=0&o=5&dpr=2&pid=1.7" alt="Anna Dowlin's profile picture">
+//         <h1>Hi, I'm Anna Dowlin!</h1>
+//         <p>A friendly LA-based developer. I'd love to hear from you!</p>
+//         <form action="#" method="post">
+//             <input type="email" placeholder="Your email" required>
+//                 <input type="submit" value="Say Hello!">
+//         </form>
+// </div>
+// <footer>
+//     &copy; 2024 Anna Dowlin. Built with ❤️ in LA.
+// </footer>
+// </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Anna Dowlin - Welcome!</title>
+// <style>
+//     body {
+//     margin: 0;
+//     padding: 0;
+//     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+//     text-align: center;
+//     background: linear-gradient(to bottom right, #f9f6f7, #d8e6ff);
+//     color: #333;
+// }
+//     .container {
+//     padding: 20px;
+//     max-width: 650px;
+//     margin: 50px auto;
+//     background: rgba(255, 255, 255, 0.9);
+//     border-radius: 15px;
+//     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// }
+//     img {
+//     width: 140px;
+//     height: 140px;
+//     border-radius: 50%;
+//     border: 4px solid #d8e6ff;
+//     margin-bottom: 20px;
+// }
+//     h1 {
+//     font-size: 2.5rem;
+//     margin-bottom: 10px;
+//     color: #4d73b5;
+// }
+//     p {
+//     font-size: 1.2rem;
+//     line-height: 1.6;
+//     margin-bottom: 30px;
+//     color: #666;
+// }
+//     form {
+//     margin-top: 20px;
+// }
+//     input[type="email"] {
+//     padding: 12px;
+//     font-size: 1rem;
+//     border: 1px solid #ccc;
+//     border-radius: 25px;
+//     width: 80%;
+//     max-width: 320px;
+//     margin-bottom: 15px;
+//     outline: none;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+//     transition: border-color 0.3s, box-shadow 0.3s;
+// }
+//     input[type="email"]:focus {
+//     border-color: #4d73b5;
+//     box-shadow: 0 0 10px rgba(77, 115, 181, 0.5);
+// }
+//     input[type="submit"] {
+//     padding: 12px 30px;
+//     background: #4d73b5;
+//     color: white;
+//     font-size: 1rem;
+//     border: none;
+//     border-radius: 25px;
+//     cursor: pointer;
+//     transition: background 0.3s;
+// }
+//     input[type="submit"]:hover {
+//     background: #34588d;
+// }
+//     footer {
+//     margin-top: 20px;
+//     font-size: 0.9rem;
+//     color: #888;
+// }
+//     footer a {
+//     color: #4d73b5;
+//     text-decoration: none;
+// }
+//     footer a:hover {
+//     text-decoration: underline;
+// }
+// </style>
+// </head>
+// <body>
+// <div class="container">
+//     <img src="https://th.bing.com/th/id/OIP.Xeoc3iMVyCImvf2gRTLveQHaFj?w=238&h=180&c=7&r=0&o=5&dpr=2&pid=1.7" alt="Anna Dowlin's profile picture">
+//         <h1>Hello, I'm Anna!</h1>
+//         <p>I’m a passionate developer based in Los Angeles. I enjoy creating beautiful and meaningful projects that tell a story.
+//             Drop me a message and let’s connect!</p>
+//         <form action="#" method="post">
+//             <input type="email" placeholder="Your email" required>
+//                 <input type="submit" value="Say Hello">
+//         </form>
+// </div>
+// <footer>
+//     <p>&copy; 2024 Anna Dowlin. Built with care and creativity. <a href="#">Contact Me</a></p>
+// </footer>
+// </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Iggi's Blog</title>
+// <style>
+// body {
+//     background: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg') no-repeat center center fixed;
+//     background-size: cover;
+//     font-family: Arial, sans-serif;
+//     color: white;
+//     margin: 0;
+//     padding: 0;
+// }
+// header {
+//     text-align: center;
+//     padding: 20px 0;
+// }
+// img {
+//     margin-top: 20px;
+//     height: 180px;
+//     border: 5px solid white;
+//     border-radius: 20px;
+// }
+// h1 {
+//     font-size: 50px;
+//     color: white;
+// }
+// ul {
+//     list-style: none;
+//     padding: 0;
+//     margin: 10px auto;
+//     display: inline-block;
+// }
+// ul li {
+//     display: inline;
+//     margin: 0 15px;
+// }
+// ul li a {
+//     text-decoration: none;
+//     color: white;
+// }
+// ul li a:hover {
+//     color: lightgray;
+// }
+// article {
+//     background: rgba(0, 0, 0, 0.6);
+//     margin: 20px auto;
+//     padding: 15px;
+//     border-radius: 10px;
+//     width: 90%;
+//     max-width: 600px;
+// }
+// h2 {
+//     font-size: 24px;
+//     color: white;
+// }
+// p {
+//     font-size: 16px;
+//     color: lightgray;
+// }
+// button {
+//     background: #ff4d4d;
+//     color: white;
+//     border: none;
+//     padding: 10px 20px;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+// button:hover {
+//     background: #e60000;
+// }
+// </style>
+// </head>
+// <body>
+// <header>
+//     <img src="https://i.pinimg.com/originals/b4/08/cc/b408ccfa493d96fbd84e7e165eec72e9.jpg" alt="Iggi's profile picture">
+//         <h1>Iggi's Blog</h1>
+//         <ul>
+//             <li><a href="#">About Me</a></li>
+//             <li><a href="#">Best Code</a></li>
+//             <li><a href="#">Worst Code</a></li>
+//         </ul>
+// </header>
+// <article>
+//     <h2>How Ridesharing Apps Optimize Traffic with Data Analytics</h2>
+//     <p>Explore how ridesharing platforms like Uber use data analytics and machine learning to manage traffic flow and improve the rider experience.</p>
+//     <button>Like</button>
+// </article>
+// <article>
+//     <h2>Preparing for an IT Role in Election Support Services</h2>
+//     <p>A guide on the IT skills and tools needed to support election services, from network setup to data security.</p>
+//     <button>Like</button>
+// </article>
+// <article>
+//     <h2>Bridging Communication Gaps in IT Teams</h2>
+//     <p>Discuss how multilingual teams in IT can benefit from collaboration platforms that support multiple languages, enhancing productivity and team cohesion.</p>
+//     <button>Like</button>
+// </article>
+// </body>
+// </html>
+
