@@ -10679,3 +10679,64 @@
 // </body>
 // </html>
 
+// const taskInput = document.getElementById("taskInput");
+// const addTaskButton = document.getElementById("addTaskButton");
+// const taskList = document.getElementById("taskList");
+//
+// function loadTasks() {
+//     const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+//     tasks.forEach((task) => addTaskToDOM(task));
+// }
+//
+// function saveTasks() {
+//     const tasks = Array.from(taskList.children).map((li) => li.textContent.replace("❌", "").trim());
+//     localStorage.setItem("tasks", JSON.stringify(tasks));
+// }
+//
+// function addTaskToDOM(task) {
+//     const li = document.createElement("li");
+//     li.textContent = task;
+//
+//     const deleteButton = document.createElement("button");
+//     deleteButton.textContent = "❌";
+//     deleteButton.style.marginLeft = "10px";
+//     deleteButton.addEventListener("click", () => {
+//         li.remove();
+//         saveTasks();
+//     });
+//
+//     li.appendChild(deleteButton);
+//     taskList.appendChild(li);
+// }
+// function addTask() {
+//     const task = taskInput.value.trim();
+//     if (task) {
+//         addTaskToDOM(task);
+//         saveTasks();
+//         taskInput.value = "";
+//     }
+// }
+// addTaskButton.addEventListener("click", addTask);
+// taskInput.addEventListener("keypress", (e) => {
+//     if (e.key === "Enter") addTask();
+// });
+//
+// loadTasks();
+//
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Список задач</title>
+// </head>
+// <body>
+// <h1>Список задач</h1>
+// <input type="text" id="taskInput" placeholder="Введите задачу">
+//     <button id="addTaskButton">Добавить задачу</button>
+//     <ul id="taskList"></ul>
+//
+//     <script src="script.js"></script>
+// </body>
+// </html>
