@@ -10740,3 +10740,68 @@
 //     <script src="script.js"></script>
 // </body>
 // </html>
+
+// const counterValue = document.getElementById("counterValue");
+// const incrementButton = document.getElementById("incrementButton");
+// const decrementButton = document.getElementById("decrementButton");
+// const resetButton = document.getElementById("resetButton");
+//
+// let count = 0;
+//
+// function updateCounter() {
+//     counterValue.textContent = count;
+// }
+//
+// incrementButton.addEventListener("click", () => {
+//     count++;
+//     updateCounter();
+// });
+//
+// decrementButton.addEventListener("click", () => {
+//     if (count > 0) {
+//         count--;
+//         updateCounter();
+//     }
+// });
+//
+// resetButton.addEventListener("click", () => {
+//     count = 0;
+//     updateCounter();
+// });
+//
+// updateCounter();
+//
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Counter App</title>
+// <style>
+//     body {
+//     font-family: Arial, sans-serif;
+//     text-align: center;
+//     margin: 50px;
+// }
+//     #counterValue {
+//     font-size: 3rem;
+//     margin: 20px 0;
+// }
+//     button {
+//     font-size: 1.2rem;
+//     padding: 10px 20px;
+//     margin: 10px;
+//     cursor: pointer;
+// }
+// </style>
+// </head>
+// <body>
+// <h1>Simple Counter</h1>
+// <div id="counterValue">0</div>
+// <button id="incrementButton">Increment</button>
+// <button id="decrementButton">Decrement</button>
+// <button id="resetButton">Reset</button>
+//
+// <script src="script.js"></script>
+// </body>
+// </html>
