@@ -10805,3 +10805,96 @@
 // <script src="script.js"></script>
 // </body>
 // </html>
+
+// const num1Input = document.getElementById("num1");
+// const num2Input = document.getElementById("num2");
+// const resultDisplay = document.getElementById("result");
+// const addButton = document.getElementById("add");
+// const subtractButton = document.getElementById("subtract");
+// const multiplyButton = document.getElementById("multiply");
+// const divideButton = document.getElementById("divide");
+//
+// function calculate(operation) {
+//     const num1 = parseFloat(num1Input.value);
+//     const num2 = parseFloat(num2Input.value);
+//
+//     if (isNaN(num1) || isNaN(num2)) {
+//         resultDisplay.textContent = "Please enter valid numbers.";
+//         return;
+//     }
+//
+//     let result;
+//     switch (operation) {
+//         case "add":
+//             result = num1 + num2;
+//             break;
+//         case "subtract":
+//             result = num1 - num2;
+//             break;
+//         case "multiply":
+//             result = num1 * num2;
+//             break;
+//         case "divide":
+//             if (num2 === 0) {
+//                 resultDisplay.textContent = "Cannot divide by zero.";
+//                 return;
+//             }
+//             result = num1 / num2;
+//             break;
+//         default:
+//             result = "Invalid operation";
+//     }
+//
+//     resultDisplay.textContent = `Result: ${result}`;
+// }
+//
+// addButton.addEventListener("click", () => calculate("add"));
+// subtractButton.addEventListener("click", () => calculate("subtract"));
+// multiplyButton.addEventListener("click", () => calculate("multiply"));
+// divideButton.addEventListener("click", () => calculate("divide"));
+//
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Basic Calculator</title>
+// <style>
+//     body {
+//     font-family: Arial, sans-serif;
+//     text-align: center;
+//     margin: 50px;
+// }
+//     input {
+//     font-size: 1.2rem;
+//     padding: 10px;
+//     margin: 10px;
+// }
+//     button {
+//     font-size: 1.2rem;
+//     padding: 10px 20px;
+//     margin: 10px;
+//     cursor: pointer;
+// }
+//     #result {
+//     margin-top: 20px;
+//     font-size: 1.5rem;
+//     font-weight: bold;
+// }
+// </style>
+// </head>
+// <body>
+// <h1>Basic Calculator</h1>
+// <input type="number" id="num1" placeholder="Enter first number">
+//     <input type="number" id="num2" placeholder="Enter second number">
+//         <div>
+//             <button id="add">Add</button>
+//             <button id="subtract">Subtract</button>
+//             <button id="multiply">Multiply</button>
+//             <button id="divide">Divide</button>
+//         </div>
+//         <div id="result"></div>
+//         <script src="script.js"></script>
+// </body>
+// </html>
+
