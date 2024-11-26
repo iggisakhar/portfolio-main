@@ -10898,3 +10898,58 @@
 // </body>
 // </html>
 
+// const quotes = [
+//     "The only limit to our realization of tomorrow is our doubts of today. – Franklin D. Roosevelt",
+//     "Success is not final, failure is not fatal: It is the courage to continue that counts. – Winston Churchill",
+//     "Believe you can and you're halfway there. – Theodore Roosevelt",
+//     "The future belongs to those who believe in the beauty of their dreams. – Eleanor Roosevelt",
+//     "Do what you can with all you have, wherever you are. – Theodore Roosevelt"
+// ];
+//
+// const quoteDisplay = document.getElementById("quoteDisplay");
+// const generateButton = document.getElementById("generateButton");
+//
+// function generateQuote() {
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     quoteDisplay.textContent = quotes[randomIndex];
+// }
+//
+// generateButton.addEventListener("click", generateQuote);
+//
+// generateQuote();
+//
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Random Quote Generator</title>
+// <style>
+//     body {
+//     font-family: Arial, sans-serif;
+//     text-align: center;
+//     margin: 50px;
+// }
+//     #quoteDisplay {
+//     font-size: 1.5rem;
+//     margin: 20px 0;
+//     padding: 20px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//     background-color: #f9f9f9;
+// }
+//     button {
+//     font-size: 1.2rem;
+//     padding: 10px 20px;
+//     cursor: pointer;
+// }
+// </style>
+// </head>
+// <body>
+// <h1>Random Quote Generator</h1>
+// <div id="quoteDisplay">Your motivational quote will appear here!</div>
+// <button id="generateButton">Generate Quote</button>
+// <script src="script.js"></script>
+// </body>
+// </html>
+//
