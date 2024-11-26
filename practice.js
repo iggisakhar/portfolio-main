@@ -10952,4 +10952,53 @@
 // <script src="script.js"></script>
 // </body>
 // </html>
+
+// function getRandomColor() {
+//     const letters = "0123456789ABCDEF";
+//     let color = "#";
+//     for (let i = 0; i < 6; i++) {
+//         color += letters[Math.floor(Math.random() * 16)];
+//     }
+//     return color;
+// }
 //
+// const colorButton = document.getElementById("colorButton");
+// const colorDisplay = document.getElementById("colorDisplay");
+//
+// colorButton.addEventListener("click", () => {
+//     const randomColor = getRandomColor();
+//     document.body.style.backgroundColor = randomColor;
+//     colorDisplay.textContent = `Background Color: ${randomColor}`;
+// });
+//
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Random Color Changer</title>
+// <style>
+//     body {
+//     font-family: Arial, sans-serif;
+//     text-align: center;
+//     margin: 50px;
+//     transition: background-color 0.5s;
+// }
+//     #colorDisplay {
+//     font-size: 1.5rem;
+//     margin: 20px;
+// }
+//     button {
+//     font-size: 1.2rem;
+//     padding: 10px 20px;
+//     cursor: pointer;
+// }
+// </style>
+// </head>
+// <body>
+// <h1>Random Color Changer</h1>
+// <div id="colorDisplay">Background Color: #FFFFFF</div>
+// <button id="colorButton">Change Background Color</button>
+// <script src="script.js"></script>
+// </body>
+// </html>
