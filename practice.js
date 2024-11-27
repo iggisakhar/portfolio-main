@@ -11002,3 +11002,65 @@
 // <script src="script.js"></script>
 // </body>
 // </html>
+
+// import java.util.*;
+// import org.json.JSONObject;
+//
+// public class Solution {
+//     public static Map<String, Integer> evaluateDeployments(List<String> deployments) {
+//     int successCount = 0;
+//     int failureCount = 0;
+//     int errorCount = 0;
+//
+//     for (String deployment : deployments) {
+//     try {
+//
+//     JSONObject json = new JSONObject(deployment);
+//
+//     if (json.has("id") && json.has("status")) {
+//     String id = json.getString("id");
+//     String status = json.getString("status");
+//
+//     if (id.matches("[a-z0-9]+")) {
+//     if (status.equals("Success")) {
+//     successCount++;
+// } else if (status.equals("Failed")) {
+//     failureCount++;
+// } else {
+//     errorCount++;
+// }
+// } else {
+//     errorCount++;
+// }
+// } else {
+//     errorCount++;
+// }
+// } catch (Exception e) {
+//
+//     errorCount++;
+// }
+// }
+//
+// Map<String, Integer> result = new HashMap<>();
+// result.put("Success", successCount);
+// result.put("Failed", failureCount);
+// result.put("Errors", errorCount);
+// return result;
+// }
+//
+// public static void main(String[] args) {
+//     List<String> deployments = Arrays.asList(
+//         "{\"id\": \"deployment1\", \"status\": \"Success\"}",
+//         "{\"id\": \"deployment2\", \"status\": \"Failed\"}",
+//         "{\"id\": \"deployment3\", \"status\": \"Success\"}",
+//         "{\"id\": \"1234\", \"status\": \"Success\"}",
+//         "{\"id\": \"invalid json}",
+//         "{\"id\": \"deployment4\"}",
+//         "{\"status\": \"Success\"}",
+//         "{\"id\": \"deployment5\", \"status\": \"Failed\"}"
+//     );
+//
+//     Map<String, Integer> result = evaluateDeployments(deployments);
+//     System.out.println(result);
+// }
+// }
