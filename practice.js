@@ -11064,3 +11064,67 @@
 //     System.out.println(result);
 // }
 // }
+
+// import java.io.*;
+// import java.util.*;
+// import org.json.JSONObject;
+//
+// public class FileDeploymentEvaluator {
+//
+//     public static Map<String, Integer> evaluateDeploymentsFromFile(String filePath) {
+//     int successCount = 0;
+//     int failureCount = 0;
+//     int errorCount = 0;
+//
+//     try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+//     String line;
+//     while ((line = reader.readLine()) != null) {
+//     try {
+//
+//     JSONObject json = new JSONObject(line);
+//
+//     if (json.has("id") && json.has("status")) {
+//     String id = json.getString("id");
+//     String status = json.getString("status");
+//
+//     if (id.matches("[a-z0-9]+")) {
+//     if (status.equals("Success")) {
+//     successCount++;
+// } else if (status.equals("Failed")) {
+//     failureCount++;
+// } else {
+//     errorCount++;
+// }
+// } else {
+//     errorCount++;
+// }
+// } else {
+//     errorCount++;
+// }
+// } catch (Exception e) {
+//
+//     errorCount++;
+// }
+// }
+// } catch (IOException e) {
+//     System.out.println("Error reading file: " + e.getMessage());
+// }
+//
+// Map<String, Integer> result = new HashMap<>();
+// result.put("Success", successCount);
+// result.put("Failed", failureCount);
+// result.put("Errors", errorCount);
+// return result;
+// }
+//
+// public static void main(String[] args) {
+//
+//     String filePath = "deployments.txt";
+//
+//     Map<String, Integer> result = evaluateDeploymentsFromFile(filePath);
+//
+//     System.out.println("Deployment Results:");
+//     result.forEach((key, value) -> System.out.println(key + ": " + value));
+// }
+// }
+
