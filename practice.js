@@ -11128,3 +11128,74 @@
 // }
 // }
 
+// const fs = require("fs");
+//
+// function evaluateDeploymentsFromFile(filePath) {
+//     let successCount = 0;
+//     let failureCount = 0;
+//     let errorCount = 0;
+//
+//     try {
+//
+//         const data = fs.readFileSync(filePath, "utf8");
+//
+//         const lines = data.split("\n");
+//
+//         for (let line of lines) {
+//             if (line.trim() === "") continue;
+//             try {
+//
+//                 const deployment = JSON.parse(line);
+//
+//                 if (deployment.id && deployment.status) {
+//                     const id = deployment.id;
+//                     const status = deployment.status;
+//
+//                     if (/^[a-z0-9]+$/.test(id)) {
+//                         if (status === "Success") {
+//                             successCount++;
+//                         } else if (status === "Failed") {
+//                             failureCount++;
+//                         } else {
+//                             errorCount++;
+//                         }
+//                     } else {
+//                         errorCount++;
+//                     }
+//                 } else {
+//                     errorCount++;
+//                 }
+//             } catch (e) {
+//
+//                 errorCount++;
+//             }
+//         }
+//     } catch (e) {
+//         console.error(`Error reading file: ${e.message}`);
+//         return {
+//             Success: successCount,
+//             Failed: failureCount,
+//             Errors: errorCount + 1,
+//         };
+//     }
+//
+//     return {
+//         Success: successCount,
+//         Failed: failureCount,
+//         Errors: errorCount,
+//     };
+// }
+//
+// function main() {
+//     const filePath = "./deployments.txt";
+//
+//     const results = evaluateDeploymentsFromFile(filePath);
+//
+//     console.log("Deployment Results:");
+//     console.log(`Success: ${results.Success}`);
+//     console.log(`Failed: ${results.Failed}`);
+//     console.log(`Errors: ${results.Errors}`);
+// }
+//
+// main();
+
