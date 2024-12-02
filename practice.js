@@ -11305,3 +11305,160 @@
 //
 // if __name__ == "__main__":
 // tic_tac_toe()
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Task Counter</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>Task Counter</h1>
+//     <div class="task-input">
+//         <input type="text" id="taskInput" placeholder="Enter a new task..." />
+//         <button id="addTaskButton">Add Task</button>
+//     </div>
+//     <ul id="taskList"></ul>
+//     <div class="task-counter">
+//         Total Tasks: <span id="taskCount">0</span>
+//     </div>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f7f7f7;
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+// }
+//
+// .app {
+//     background-color: white;
+//     border-radius: 10px;
+//     padding: 20px;
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+//     width: 300px;
+//     text-align: center;
+// }
+//
+// h1 {
+//     margin-bottom: 20px;
+//     color: #333;
+// }
+//
+// .task-input {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 20px;
+// }
+//
+// input[type="text"] {
+//     flex: 1;
+//     padding: 10px;
+//     font-size: 16px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+// }
+//
+// button {
+//     padding: 10px 15px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     font-size: 16px;
+//     margin-left: 10px;
+// }
+//
+// button:hover {
+//     background-color: #0056b3;
+// }
+//
+// ul {
+//     list-style-type: none;
+//     padding: 0;
+// }
+//
+// li {
+//     background-color: #f9f9f9;
+//     padding: 10px;
+//     margin-bottom: 10px;
+//     border-radius: 5px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+//
+// li button {
+//     padding: 5px 10px;
+//     background-color: #dc3545;
+//     border: none;
+//     border-radius: 5px;
+//     color: white;
+//     cursor: pointer;
+// }
+//
+// li button:hover {
+//     background-color: #a71d2a;
+// }
+//
+// .task-counter {
+//     margin-top: 20px;
+//     font-size: 18px;
+//     color: #555;
+// }
+//
+
+// const taskInput = document.getElementById("taskInput");
+// const addTaskButton = document.getElementById("addTaskButton");
+// const taskList = document.getElementById("taskList");
+// const taskCount = document.getElementById("taskCount");
+//
+// let tasks = [];
+//
+// function updateTaskCounter() {
+//     taskCount.textContent = tasks.length;
+// }
+//
+//
+// function renderTaskList() {
+//     taskList.innerHTML = "";
+//     tasks.forEach((task, index) => {
+//         const li = document.createElement("li");
+//         li.textContent = task;
+//
+//         const deleteButton = document.createElement("button");
+//         deleteButton.textContent = "Delete";
+//         deleteButton.onclick = () => {
+//             tasks.splice(index, 1);
+//             updateTaskCounter();
+//             renderTaskList();
+//         };
+//
+//         li.appendChild(deleteButton);
+//         taskList.appendChild(li);
+//     });
+// }
+//
+// addTaskButton.onclick = () => {
+//     const task = taskInput.value.trim();
+//     if (task) {
+//         tasks.push(task);
+//         taskInput.value = "";
+//         updateTaskCounter();
+//         renderTaskList();
+//     }
+// };
+//
+// updateTaskCounter();
+// renderTaskList();
