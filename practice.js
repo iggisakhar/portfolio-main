@@ -11199,3 +11199,109 @@
 //
 // main();
 
+// # Tic-Tac-Toe Game in Python
+//
+// def display_board(board):
+// print('\n')
+// print('   |   |')
+// print(' {} | {} | {} '.format(board[7], board[8], board[9]))
+// print('___|___|___')
+// print('   |   |')
+// print(' {} | {} | {} '.format(board[4], board[5], board[6]))
+// print('___|___|___')
+// print('   |   |')
+// print(' {} | {} | {} '.format(board[1], board[2], board[3]))
+// print('   |   |')
+// print('\n')
+//
+// def player_input(player):
+// marker = ''
+// while marker not in ['X', 'O']:
+// marker = input(f'Player {player}, choose X or O: ').upper()
+// return marker
+//
+// def place_marker(board, marker, position):
+// board[position] = marker
+//
+// def win_check(board, mark):
+// # Check all possible winning combinations
+// return ((board[7] == board[8] == board[9] == mark) or  # top row
+// (board[4] == board[5] == board[6] == mark) or  # middle row
+// (board[1] == board[2] == board[3] == mark) or  # bottom row
+// (board[7] == board[4] == board[1] == mark) or  # left column
+// (board[8] == board[5] == board[2] == mark) or  # middle column
+// (board[9] == board[6] == board[3] == mark) or  # right column
+// (board[7] == board[5] == board[3] == mark) or  # diagonal
+// (board[9] == board[5] == board[1] == mark))    # diagonal
+//
+// def space_check(board, position):
+// return board[position] == ' '
+//
+// def full_board_check(board):
+// return ' ' not in board[1:]
+//
+// def player_choice(board, player):
+// position = 0
+// while position not in range(1, 10) or not space_check(board, position):
+// try:
+// position = int(input(f'Player {player}, choose your next position (1-9): '))
+// except ValueError:
+//     print("Please enter a number between 1 and 9.")
+// return position
+//
+// def replay():
+// choice = input("Do you want to play again? Enter Yes or No: ").lower()
+// return choice.startswith('y')
+//
+// def tic_tac_toe():
+// print('Welcome to Tic-Tac-Toe!')
+//
+// while True:
+// # Initialize the board
+// the_board = [' '] * 10
+// player1_marker = player_input(1)
+// player2_marker = 'O' if player1_marker == 'X' else 'X'
+// turn = 'Player 1'
+//
+// game_on = True
+// while game_on:
+// display_board(the_board)
+// if turn == 'Player 1':
+// # Player 1's turn
+// position = player_choice(the_board, 1)
+// place_marker(the_board, player1_marker, position)
+//
+// if win_check(the_board, player1_marker):
+// display_board(the_board)
+// print('Congratulations! Player 1 has won the game!')
+// game_on = False
+// else:
+// if full_board_check(the_board):
+// display_board(the_board)
+// print('The game is a draw!')
+// break
+// else:
+// turn = 'Player 2'
+// else:
+// # Player 2's turn
+// position = player_choice(the_board, 2)
+// place_marker(the_board, player2_marker, position)
+//
+// if win_check(the_board, player2_marker):
+// display_board(the_board)
+// print('Congratulations! Player 2 has won the game!')
+// game_on = False
+// else:
+// if full_board_check(the_board):
+// display_board(the_board)
+// print('The game is a draw!')
+// break
+// else:
+// turn = 'Player 1'
+//
+// if not replay():
+// print("Thanks for playing Tic-Tac-Toe!")
+// break
+//
+// if __name__ == "__main__":
+// tic_tac_toe()
