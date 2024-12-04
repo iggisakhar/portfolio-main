@@ -11462,3 +11462,118 @@
 //
 // updateTaskCounter();
 // renderTaskList();
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Random Quote Generator</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>Random Quote Generator</h1>
+//     <div class="quote-container">
+//         <p id="quoteText">Click the button to get a new quote!</p>
+//         <p id="authorText"></p>
+//     </div>
+//     <button id="generateButton">Generate Quote</button>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f0f8ff;
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+// }
+//
+// .app {
+//     background-color: white;
+//     border-radius: 10px;
+//     padding: 20px;
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+//     width: 400px;
+//     text-align: center;
+// }
+//
+// h1 {
+//     color: #333;
+//     margin-bottom: 20px;
+// }
+//
+// .quote-container {
+//     margin-bottom: 20px;
+// }
+//
+// #quoteText {
+//     font-size: 1.2rem;
+//     font-style: italic;
+//     color: #555;
+// }
+//
+// #authorText {
+//     font-size: 1rem;
+//     margin-top: 10px;
+//     color: #777;
+// }
+//
+// button {
+//     padding: 10px 20px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     font-size: 16px;
+//     cursor: pointer;
+// }
+//
+// button:hover {
+//     background-color: #0056b3;
+// }
+
+// const quotes = [
+//     {
+//         quote: "The best way to predict the future is to invent it.",
+//         author: "Alan Kay",
+//     },
+//     {
+//         quote: "Life is 10% what happens to us and 90% how we react to it.",
+//         author: "Charles R. Swindoll",
+//     },
+//     {
+//         quote: "The only limit to our realization of tomorrow is our doubts of today.",
+//         author: "Franklin D. Roosevelt",
+//     },
+//     {
+//         quote: "Do what you can, with what you have, where you are.",
+//         author: "Theodore Roosevelt",
+//     },
+//     {
+//         quote: "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+//         author: "Winston Churchill",
+//     },
+// ];
+//
+// const quoteText = document.getElementById("quoteText");
+// const authorText = document.getElementById("authorText");
+// const generateButton = document.getElementById("generateButton");
+//
+// function generateQuote() {
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     const randomQuote = quotes[randomIndex];
+//
+//     quoteText.textContent = `"${randomQuote.quote}"`;
+//     authorText.textContent = `- ${randomQuote.author}`;
+// }
+//
+// generateButton.addEventListener("click", generateQuote);
+//
+// generateQuote();
