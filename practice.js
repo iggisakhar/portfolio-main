@@ -11626,3 +11626,59 @@
 //         }
 //     }
 // }
+
+// package tests;
+//
+// import io.restassured.RestAssured;
+// import io.restassured.response.Response;
+// import org.testng.Assert;
+// import org.testng.annotations.Test;
+//
+// public class APITest {
+//
+//     @Test
+//     public void testGetRequest() {
+//         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
+//
+//         Response response = RestAssured.get("/posts/1");
+//
+//         Assert.assertEquals(response.getStatusCode(), 200, "Status code is not 200");
+//
+//         System.out.println("Response body: " + response.getBody().asString());
+//
+//         String userId = response.jsonPath().getString("userId");
+//         Assert.assertEquals(userId, "1", "User ID does not match");
+//     }
+//
+//     @Test
+//     public void testPostRequest() {
+//         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
+//
+//
+//         String requestBody = "{\n" +
+//             "  \"title\": \"foo\",\n" +
+//             "  \"body\": \"bar\",\n" +
+//             "  \"userId\": \"1\"\n" +
+//             "}";
+//
+//
+//         Response response = RestAssured.given()
+//             .header("Content-type", "application/json")
+//             .and()
+//             .body(requestBody)
+//             .when()
+//             .post("/posts")
+//             .then()
+//             .extract().response();
+//
+//
+//         Assert.assertEquals(response.getStatusCode(), 201, "Status code is not 201");
+//
+//
+//         System.out.println("Response body: " + response.getBody().asString());
+//
+//
+//         String title = response.jsonPath().getString("title");
+//         Assert.assertEquals(title, "foo", "Title does not match");
+//     }
+// }
