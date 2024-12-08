@@ -11577,3 +11577,52 @@
 // generateButton.addEventListener("click", generateQuote);
 //
 // generateQuote();
+
+// package tests;
+//
+// import org.openqa.selenium.By;
+// import org.openqa.selenium.WebDriver;
+// import org.openqa.selenium.WebElement;
+// import org.openqa.selenium.chrome.ChromeDriver;
+// import org.testng.Assert;
+// import org.testng.annotations.AfterMethod;
+// import org.testng.annotations.BeforeMethod;
+// import org.testng.annotations.Test;
+//
+// import java.time.Duration;
+//
+// public class GoogleSearchTest {
+//     private WebDriver driver;
+//
+//     @BeforeMethod
+//     public void setup() {
+//
+//         System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+//         driver = new ChromeDriver();
+//         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//         driver.manage().window().maximize();
+//     }
+//
+//     @Test
+//     public void testGoogleSearch() {
+//
+//         driver.get("https://www.google.com");
+//
+//         String title = driver.getTitle();
+//         Assert.assertTrue(title.contains("Google"), "Заголовок страницы не содержит 'Google'");
+//
+//         WebElement searchBox = driver.findElement(By.name("q"));
+//         searchBox.sendKeys("Automation QA Engineer");
+//         searchBox.submit();
+//
+//         WebElement results = driver.findElement(By.id("search"));
+//         Assert.assertTrue(results.isDisplayed(), "Результаты поиска не отображаются");
+//     }
+//
+//     @AfterMethod
+//     public void teardown() {
+//         if (driver != null) {
+//             driver.quit();
+//         }
+//     }
+// }
