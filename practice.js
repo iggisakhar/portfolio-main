@@ -11682,3 +11682,39 @@
 //         Assert.assertEquals(title, "foo", "Title does not match");
 //     }
 // }
+
+// const axios = require('axios');
+//
+// const BASE_URL = 'https://jsonplaceholder.typicode.com';
+//
+// describe('API Tests', () => {
+//     test('GET /posts/1 - should return a valid post', async () => {
+//         const response = await axios.get(`${BASE_URL}/posts/1`);
+//
+//         expect(response.status).toBe(200);
+//
+//         expect(response.data).toHaveProperty('id', 1);
+//         expect(response.data).toHaveProperty('userId');
+//         expect(response.data).toHaveProperty('title');
+//         expect(response.data).toHaveProperty('body');
+//     });
+//
+//     test('POST /posts - should create a new post', async () => {
+//         const newPost = {
+//             title: 'foo',
+//             body: 'bar',
+//             userId: 1,
+//         };
+//
+//         const response = await axios.post(`${BASE_URL}/posts`, newPost, {
+//             headers: { 'Content-type': 'application/json' },
+//         });
+//
+//         expect(response.status).toBe(201);
+//
+//         expect(response.data).toHaveProperty('id'); // ID генерируется автоматически
+//         expect(response.data.title).toBe(newPost.title);
+//         expect(response.data.body).toBe(newPost.body);
+//         expect(response.data.userId).toBe(newPost.userId);
+//     });
+// });
