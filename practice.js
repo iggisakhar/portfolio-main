@@ -11844,3 +11844,71 @@
 // }
 //
 // analyzeButton.addEventListener("click", analyzeText);
+
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Form Test</title>
+// </head>
+// <body>
+// <h1>Form Testing</h1>
+// <form id="testForm">
+//     <label for="name">Name:</label>
+//     <input type="text" id="name" name="name" required />
+//     <br />
+//     <label for="email">Email:</label>
+//     <input type="email" id="email" name="email" required />
+//     <br />
+//     <label for="message">Message:</label>
+//     <textarea id="message" name="message" required></textarea>
+//     <br />
+//     <button type="submit">Submit</button>
+// </form>
+// <div id="response" style="margin-top: 20px;"></div>
+// <script>
+//     const form = document.getElementById('testForm');
+//     const responseDiv = document.getElementById('response');
+//
+//     form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     responseDiv.textContent = 'Form submitted successfully!';
+//     form.reset();
+// });
+// </script>
+// </body>
+// </html>
+//
+// const { chromium } = require('playwright');
+//
+// (async () => {
+//
+//     const browser = await chromium.launch({ headless: false });
+//     const context = await browser.newContext();
+//     const page = await context.newPage();
+//
+//     await page.goto('file:///absolute/path/to/form.html');
+//
+//     const title = await page.title();
+//     console.log('Page title:', title);
+//     if (title !== 'Form Test') {
+//         throw new Error('Page title is incorrect!');
+//     }
+//
+//     await page.fill('#name', 'John Doe');
+//     await page.fill('#email', 'john.doe@example.com');
+//     await page.fill('#message', 'This is a test message.');
+//
+//     await page.click('button[type="submit"]');
+//
+//     const responseText = await page.textContent('#response');
+//     if (responseText !== 'Form submitted successfully!') {
+//         throw new Error('Form submission failed!');
+//     }
+//
+//     console.log('Test passed: Form submitted successfully!');
+//
+//     await browser.close();
+// })();
