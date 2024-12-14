@@ -11718,3 +11718,129 @@
 //         expect(response.data.userId).toBe(newPost.userId);
 //     });
 // });
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Text Analyzer</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>Text Analyzer</h1>
+//     <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+//     <button id="analyzeButton">Analyze Text</button>
+//     <div id="results">
+//         <h2>Analysis Results:</h2>
+//         <p><strong>Total Words:</strong> <span id="wordCount">0</span></p>
+//         <p><strong>Total Characters:</strong> <span id="charCount">0</span></p>
+//         <p><strong>Total Sentences:</strong> <span id="sentenceCount">0</span></p>
+//         <h3>Word Frequency:</h3>
+//         <ul id="wordFrequency"></ul>
+//     </div>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+//
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f8f9fa;
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+// }
+//
+// .app {
+//     background-color: white;
+//     border-radius: 10px;
+//     padding: 20px;
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+//     width: 400px;
+// }
+//
+// h1, h2 {
+//     color: #333;
+// }
+//
+// textarea {
+//     width: 100%;
+//     height: 100px;
+//     margin-bottom: 15px;
+//     padding: 10px;
+//     font-size: 16px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+// }
+//
+// button {
+//     padding: 10px 20px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+//
+// button:hover {
+//     background-color: #0056b3;
+// }
+//
+// #results {
+//     margin-top: 20px;
+// }
+//
+// #wordFrequency {
+//     list-style-type: none;
+//     padding: 0;
+// }
+//
+// #wordFrequency li {
+//     background-color: #f1f1f1;
+//     padding: 5px;
+//     margin-bottom: 5px;
+//     border-radius: 5px;
+// }
+//
+// const textInput = document.getElementById("textInput");
+// const analyzeButton = document.getElementById("analyzeButton");
+// const wordCountElement = document.getElementById("wordCount");
+// const charCountElement = document.getElementById("charCount");
+// const sentenceCountElement = document.getElementById("sentenceCount");
+// const wordFrequencyElement = document.getElementById("wordFrequency");
+//
+// function analyzeText() {
+//     const text = textInput.value.trim();
+//
+//     const words = text.split(/\s+/).filter(word => word.length > 0);
+//     const wordCount = words.length;
+//
+//     const charCount = text.replace(/\s/g, "").length;
+//
+//     const sentences = text.split(/[.!?]/).filter(sentence => sentence.trim().length > 0);
+//     const sentenceCount = sentences.length;
+//
+//     const wordFrequency = {};
+//     words.forEach(word => {
+//         const lowerCaseWord = word.toLowerCase();
+//         wordFrequency[lowerCaseWord] = (wordFrequency[lowerCaseWord] || 0) + 1;
+//     });
+//
+//     wordCountElement.textContent = wordCount;
+//     charCountElement.textContent = charCount;
+//     sentenceCountElement.textContent = sentenceCount;
+//
+//     wordFrequencyElement.innerHTML = "";
+//     for (const [word, count] of Object.entries(wordFrequency)) {
+//         const listItem = document.createElement("li");
+//         listItem.textContent = `${word}: ${count}`;
+//         wordFrequencyElement.appendChild(listItem);
+//     }
+// }
+//
+// analyzeButton.addEventListener("click", analyzeText);
