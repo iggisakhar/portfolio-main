@@ -11912,3 +11912,123 @@
 //
 //     await browser.close();
 // })();
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Weather App</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>Weather App</h1>
+//     <input type="text" id="cityInput" placeholder="Enter city name" />
+//     <button id="getWeatherButton">Get Weather</button>
+//     <div id="weatherResult" class="hidden">
+//         <h2 id="cityName"></h2>
+//         <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+//         <p><strong>Condition:</strong> <span id="condition"></span></p>
+//         <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+//     </div>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f0f8ff;
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+// }
+//
+// .app {
+//     background-color: white;
+//     border-radius: 10px;
+//     padding: 20px;
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+//     width: 400px;
+//     text-align: center;
+// }
+//
+// h1 {
+//     color: #333;
+// }
+//
+// input {
+//     width: 80%;
+//     padding: 10px;
+//     margin: 10px 0;
+//     font-size: 16px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+// }
+//
+// button {
+//     padding: 10px 20px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     font-size: 16px;
+//     cursor: pointer;
+// }
+//
+// button:hover {
+//     background-color: #0056b3;
+// }
+//
+// .hidden {
+//     display: none;
+// }
+//
+// #weatherResult {
+//     margin-top: 20px;
+// }
+
+// const apiKey = 'YOUR_API_KEY';
+// const cityInput = document.getElementById('cityInput');
+// const getWeatherButton = document.getElementById('getWeatherButton');
+// const weatherResult = document.getElementById('weatherResult');
+// const cityNameElement = document.getElementById('cityName');
+// const temperatureElement = document.getElementById('temperature');
+// const conditionElement = document.getElementById('condition');
+// const humidityElement = document.getElementById('humidity');
+//
+// async function getWeather(city) {
+//     try {
+//         const response = await fetch(
+//             `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
+//         );
+//
+//         if (!response.ok) {
+//             throw new Error('City not found');
+//         }
+//
+//         const data = await response.json();
+//
+//         cityNameElement.textContent = data.name;
+//         temperatureElement.textContent = data.main.temp;
+//         conditionElement.textContent = data.weather[0].description;
+//         humidityElement.textContent = data.main.humidity;
+//
+//         weatherResult.classList.remove('hidden');
+//     } catch (error) {
+//         alert(error.message);
+//     }
+// }
+//
+// getWeatherButton.addEventListener('click', () => {
+//     const city = cityInput.value.trim();
+//     if (city) {
+//         getWeather(city);
+//     } else {
+//         alert('Please enter a city name');
+//     }
+// });
