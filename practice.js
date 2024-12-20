@@ -12032,3 +12032,82 @@
 //         alert('Please enter a city name');
 //     }
 // });
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Currency Converter</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>Currency Converter</h1>
+//     <input type="number" id="amount" placeholder="Enter amount" />
+//     <select id="fromCurrency">
+//         <option value="USD">USD</option>
+//         <option value="EUR">EUR</option>
+//         <option value="GBP">GBP</option>
+//     </select>
+//     <select id="toCurrency">
+//         <option value="USD">USD</option>
+//         <option value="EUR">EUR</option>
+//         <option value="GBP">GBP</option>
+//     </select>
+//     <button id="convertButton">Convert</button>
+//     <p id="result"></p>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f8f9fa;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+//
+// .app {
+//     background-color: #fff;
+//     padding: 20px;
+//     border-radius: 10px;
+//     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+//     text-align: center;
+// }
+//
+// input, select, button {
+//     margin: 10px;
+//     padding: 10px;
+//     font-size: 16px;
+// }
+
+// const convertButton = document.getElementById("convertButton");
+// const result = document.getElementById("result");
+//
+// convertButton.addEventListener("click", async () => {
+//     const amount = document.getElementById("amount").value;
+//     const fromCurrency = document.getElementById("fromCurrency").value;
+//     const toCurrency = document.getElementById("toCurrency").value;
+//
+//     if (!amount) {
+//         alert("Please enter an amount!");
+//         return;
+//     }
+//
+//     try {
+//         const response = await fetch(
+//             `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`
+//         );
+//         const data = await response.json();
+//         const rate = data.rates[toCurrency];
+//         const convertedAmount = (amount * rate).toFixed(2);
+//         result.textContent = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
+//     } catch (error) {
+//         result.textContent = "Error fetching exchange rates!";
+//     }
+// });
