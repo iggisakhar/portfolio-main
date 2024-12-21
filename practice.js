@@ -12111,3 +12111,78 @@
 //         result.textContent = "Error fetching exchange rates!";
 //     }
 // });
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Stopwatch</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>Stopwatch</h1>
+//     <p id="display">00:00:00</p>
+//     <button id="startButton">Start</button>
+//     <button id="stopButton">Stop</button>
+//     <button id="resetButton">Reset</button>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+//
+// body {
+//     font-family: Arial, sans-serif;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+//     background-color: #f4f4f9;
+// }
+//
+// .app {
+//     text-align: center;
+// }
+//
+// button {
+//     margin: 5px;
+//     padding: 10px;
+//     font-size: 16px;
+// }
+//
+// let timer;
+// let seconds = 0;
+//
+// const display = document.getElementById("display");
+// const startButton = document.getElementById("startButton");
+// const stopButton = document.getElementById("stopButton");
+// const resetButton = document.getElementById("resetButton");
+//
+// function updateDisplay() {
+//     const hrs = Math.floor(seconds / 3600).toString().padStart(2, "0");
+//     const mins = Math.floor((seconds % 3600) / 60).toString().padStart(2, "0");
+//     const secs = (seconds % 60).toString().padStart(2, "0");
+//     display.textContent = `${hrs}:${mins}:${secs}`;
+// }
+//
+// startButton.addEventListener("click", () => {
+//     if (timer) return;
+//     timer = setInterval(() => {
+//         seconds++;
+//         updateDisplay();
+//     }, 1000);
+// });
+//
+// stopButton.addEventListener("click", () => {
+//     clearInterval(timer);
+//     timer = null;
+// });
+//
+// resetButton.addEventListener("click", () => {
+//     clearInterval(timer);
+//     timer = null;
+//     seconds = 0;
+//     updateDisplay();
+// });
