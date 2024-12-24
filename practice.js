@@ -12186,3 +12186,65 @@
 //     seconds = 0;
 //     updateDisplay();
 // });
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>To-Do List</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>To-Do List</h1>
+//     <input type="text" id="taskInput" placeholder="Enter a task" />
+//     <button id="addTaskButton">Add Task</button>
+//     <ul id="taskList"></ul>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+//
+// body {
+//     font-family: Arial, sans-serif;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+//     background-color: #f9f9f9;
+// }
+//
+// .app {
+//     text-align: center;
+//     width: 300px;
+// }
+//
+// button {
+//     padding: 10px;
+//     margin-top: 10px;
+// }
+//
+// const taskInput = document.getElementById("taskInput");
+// const addTaskButton = document.getElementById("addTaskButton");
+// const taskList = document.getElementById("taskList");
+//
+// addTaskButton.addEventListener("click", () => {
+//     const taskText = taskInput.value.trim();
+//     if (taskText) {
+//         const listItem = document.createElement("li");
+//         listItem.textContent = taskText;
+//
+//         const deleteButton = document.createElement("button");
+//         deleteButton.textContent = "Delete";
+//         deleteButton.addEventListener("click", () => {
+//             taskList.removeChild(listItem);
+//         });
+//
+//         listItem.appendChild(deleteButton);
+//         taskList.appendChild(listItem);
+//
+//         taskInput.value = "";
+//     }
+// });
