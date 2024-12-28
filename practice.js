@@ -12248,3 +12248,139 @@
 //         taskInput.value = "";
 //     }
 // });
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Password Generator</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>Password Generator</h1>
+//     <label for="passwordLength">Password Length:</label>
+//     <input type="number" id="passwordLength" min="4" max="20" value="8" />
+//     <div class="options">
+//         <label>
+//             <input type="checkbox" id="includeLetters" checked />
+//             Include Letters
+//         </label>
+//         <label>
+//             <input type="checkbox" id="includeNumbers" checked />
+//             Include Numbers
+//         </label>
+//         <label>
+//             <input type="checkbox" id="includeSymbols" />
+//             Include Symbols
+//         </label>
+//     </div>
+//     <button id="generateButton">Generate Password</button>
+//     <p id="passwordOutput"></p>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+//
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f0f4f8;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+//
+// .app {
+//     background-color: white;
+//     border-radius: 10px;
+//     padding: 20px;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//     text-align: center;
+//     width: 300px;
+// }
+//
+// h1 {
+//     margin-bottom: 20px;
+// }
+//
+// label {
+//     display: block;
+//     margin: 10px 0;
+// }
+//
+// input[type="number"] {
+//     width: 100%;
+//     padding: 10px;
+//     margin-bottom: 15px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+// }
+//
+// .options label {
+//     display: flex;
+//     align-items: center;
+//     margin: 5px 0;
+// }
+//
+// button {
+//     padding: 10px 15px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     font-size: 16px;
+//     cursor: pointer;
+// }
+//
+// button:hover {
+//     background-color: #0056b3;
+// }
+//
+// #passwordOutput {
+//     margin-top: 20px;
+//     font-size: 18px;
+//     word-break: break-all;
+// }
+//
+// const passwordLengthInput = document.getElementById("passwordLength");
+// const includeLettersCheckbox = document.getElementById("includeLetters");
+// const includeNumbersCheckbox = document.getElementById("includeNumbers");
+// const includeSymbolsCheckbox = document.getElementById("includeSymbols");
+// const generateButton = document.getElementById("generateButton");
+// const passwordOutput = document.getElementById("passwordOutput");
+//
+// const letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// const numbers = "0123456789";
+// const symbols = "!@#$%^&*()_+[]{}|;:,.<>?";
+//
+// function generatePassword(length, includeLetters, includeNumbers, includeSymbols) {
+//     let characterPool = "";
+//     if (includeLetters) characterPool += letters;
+//     if (includeNumbers) characterPool += numbers;
+//     if (includeSymbols) characterPool += symbols;
+//
+//     if (characterPool === "") {
+//         return "Please select at least one character type!";
+//     }
+//
+//     let password = "";
+//     for (let i = 0; i < length; i++) {
+//         const randomIndex = Math.floor(Math.random() * characterPool.length);
+//         password += characterPool[randomIndex];
+//     }
+//     return password;
+// }
+//
+// generateButton.addEventListener("click", () => {
+//     const length = parseInt(passwordLengthInput.value, 10);
+//     const includeLetters = includeLettersCheckbox.checked;
+//     const includeNumbers = includeNumbersCheckbox.checked;
+//     const includeSymbols = includeSymbolsCheckbox.checked;
+//
+//     const password = generatePassword(length, includeLetters, includeNumbers, includeSymbols);
+//     passwordOutput.textContent = password;
+// });
+
