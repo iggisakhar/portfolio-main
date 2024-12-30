@@ -12384,3 +12384,112 @@
 //     passwordOutput.textContent = password;
 // });
 
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Countdown Timer</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>Countdown Timer</h1>
+//     <input type="number" id="timeInput" placeholder="Enter time in seconds" />
+//     <button id="startButton">Start Countdown</button>
+//     <p id="countdownDisplay">00:00</p>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+//
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f8f9fa;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+//
+// .app {
+//     background-color: #fff;
+//     padding: 20px;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//     text-align: center;
+// }
+//
+// h1 {
+//     margin-bottom: 20px;
+// }
+//
+// input {
+//     padding: 10px;
+//     font-size: 16px;
+//     margin-bottom: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//     width: 80%;
+// }
+//
+// button {
+//     padding: 10px 15px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     font-size: 16px;
+//     cursor: pointer;
+// }
+//
+// button:hover {
+//     background-color: #0056b3;
+// }
+//
+// #countdownDisplay {
+//     font-size: 2rem;
+//     margin-top: 20px;
+//     color: #333;
+// }
+//
+// const timeInput = document.getElementById("timeInput");
+// const startButton = document.getElementById("startButton");
+// const countdownDisplay = document.getElementById("countdownDisplay");
+//
+// let countdownInterval;
+//
+// function formatTime(seconds) {
+//     const mins = Math.floor(seconds / 60).toString().padStart(2, "0");
+//     const secs = (seconds % 60).toString().padStart(2, "0");
+//     return `${mins}:${secs}`;
+// }
+//
+// function startCountdown() {
+//     const totalSeconds = parseInt(timeInput.value);
+//
+//     if (isNaN(totalSeconds) || totalSeconds <= 0) {
+//         alert("Please enter a valid number of seconds.");
+//         return;
+//     }
+//
+//     let remainingSeconds = totalSeconds;
+//
+//     countdownDisplay.textContent = formatTime(remainingSeconds);
+//
+//     countdownInterval = setInterval(() => {
+//         remainingSeconds--;
+//         countdownDisplay.textContent = formatTime(remainingSeconds);
+//
+//         if (remainingSeconds <= 0) {
+//             clearInterval(countdownInterval);
+//             alert("Time's up!");
+//         }
+//     }, 1000);
+// }
+//
+// startButton.addEventListener("click", () => {
+//     clearInterval(countdownInterval); // Reset any existing countdown
+//     startCountdown();
+// });
