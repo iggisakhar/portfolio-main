@@ -12493,3 +12493,123 @@
 //     clearInterval(countdownInterval); // Reset any existing countdown
 //     startCountdown();
 // });
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>BMI Calculator</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>BMI Calculator</h1>
+//     <label for="weight">Weight (kg):</label>
+//     <input type="number" id="weight" placeholder="Enter your weight" />
+//     <label for="height">Height (cm):</label>
+//     <input type="number" id="height" placeholder="Enter your height" />
+//     <button id="calculateButton">Calculate BMI</button>
+//     <p id="bmiResult"></p>
+//     <p id="bmiCategory"></p>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+//
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f0f8ff;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+//
+// .app {
+//     background-color: white;
+//     padding: 20px;
+//     border-radius: 10px;
+//     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+//     text-align: center;
+//     width: 300px;
+// }
+//
+// h1 {
+//     margin-bottom: 20px;
+// }
+//
+// label {
+//     display: block;
+//     margin: 10px 0 5px;
+// }
+//
+// input {
+//     width: 100%;
+//     padding: 10px;
+//     margin-bottom: 15px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+// }
+//
+// button {
+//     padding: 10px 15px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     font-size: 16px;
+//     cursor: pointer;
+// }
+//
+// button:hover {
+//     background-color: #0056b3;
+// }
+//
+// #bmiResult, #bmiCategory {
+//     font-size: 1.2rem;
+//     margin-top: 15px;
+//     color: #333;
+// }
+//
+// const weightInput = document.getElementById("weight");
+// const heightInput = document.getElementById("height");
+// const calculateButton = document.getElementById("calculateButton");
+// const bmiResult = document.getElementById("bmiResult");
+// const bmiCategory = document.getElementById("bmiCategory");
+//
+// function calculateBMI(weight, height) {
+//     if (weight <= 0 || height <= 0) {
+//         return null;
+//     }
+//     const heightInMeters = height / 100;
+//     return (weight / (heightInMeters * heightInMeters)).toFixed(2);
+// }
+//
+// function getBMICategory(bmi) {
+//     if (bmi < 18.5) {
+//         return "Underweight";
+//     } else if (bmi >= 18.5 && bmi < 24.9) {
+//         return "Normal weight";
+//     } else if (bmi >= 25 && bmi < 29.9) {
+//         return "Overweight";
+//     } else {
+//         return "Obesity";
+//     }
+// }
+//
+// calculateButton.addEventListener("click", () => {
+//     const weight = parseFloat(weightInput.value);
+//     const height = parseFloat(heightInput.value);
+//
+//     const bmi = calculateBMI(weight, height);
+//
+//     if (bmi) {
+//         bmiResult.textContent = `Your BMI is: ${bmi}`;
+//         bmiCategory.textContent = `Category: ${getBMICategory(bmi)}`;
+//     } else {
+//         bmiResult.textContent = "Please enter valid weight and height.";
+//         bmiCategory.textContent = "";
+//     }
+// });
