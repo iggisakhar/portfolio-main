@@ -12613,3 +12613,143 @@
 //         bmiCategory.textContent = "";
 //     }
 // });
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Pomodoro Timer</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>Pomodoro Timer</h1>
+//     <div class="settings">
+//         <label for="workTime">Work Time (minutes):</label>
+//         <input type="number" id="workTime" value="25" min="1" />
+//         <label for="breakTime">Break Time (minutes):</label>
+//         <input type="number" id="breakTime" value="5" min="1" />
+//     </div>
+//     <p id="timerDisplay">25:00</p>
+//     <button id="startButton">Start</button>
+//     <button id="resetButton">Reset</button>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+//
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f8f9fa;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+//
+// .app {
+//     background-color: white;
+//     padding: 20px;
+//     border-radius: 10px;
+//
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//     text-align: center;
+//     width: 300px;
+// }
+//
+// h1 {
+//     margin-bottom: 20px;
+//     color: #333;
+// }
+//
+// .settings label {
+//     display: block;
+//     margin: 10px 0 5px;
+//     font-size: 14px;
+// }
+//
+// .settings input {
+//     width: 80%;
+//     padding: 10px;
+//     font-size: 16px;
+//     margin-bottom: 15px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+// }
+//
+// #timerDisplay {
+//     font-size: 2rem;
+//     margin: 20px 0;
+//     color: #007bff;
+// }
+//
+// button {
+//     padding: 10px 20px;
+//     margin: 5px;
+//     font-size: 16px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+//
+// button:hover {
+//     background-color: #0056b3;
+// }
+//
+// const workTimeInput = document.getElementById("workTime");
+// const breakTimeInput = document.getElementById("breakTime");
+// const timerDisplay = document.getElementById("timerDisplay");
+// const startButton = document.getElementById("startButton");
+// const resetButton = document.getElementById("resetButton");
+//
+// let isWorkTime = true;
+// let remainingTime = 0;
+// let timerInterval;
+//
+// function formatTime(seconds) {
+//     const mins = Math.floor(seconds / 60).toString().padStart(2, "0");
+//     const secs = (seconds % 60).toString().padStart(2, "0");
+//     return `${mins}:${secs}`;
+// }
+//
+// function startTimer() {
+//     const workTime = parseInt(workTimeInput.value, 10) * 60;
+//     const breakTime = parseInt(breakTimeInput.value, 10) * 60;
+//
+//     if (isNaN(workTime) || isNaN(breakTime) || workTime <= 0 || breakTime <= 0) {
+//         alert("Please enter valid times for work and break!");
+//         return;
+//     }
+//
+//     remainingTime = isWorkTime ? workTime : breakTime;
+//     timerDisplay.textContent = formatTime(remainingTime);
+//
+//     timerInterval = setInterval(() => {
+//         remainingTime--;
+//         timerDisplay.textContent = formatTime(remainingTime);
+//
+//         if (remainingTime <= 0) {
+//             clearInterval(timerInterval);
+//             isWorkTime = !isWorkTime;
+//             alert(isWorkTime ? "Work time! Focus!" : "Break time! Relax!");
+//             startTimer(); // Start the next interval automatically
+//         }
+//     }, 1000);
+// }
+//
+// function resetTimer() {
+//     clearInterval(timerInterval);
+//     timerDisplay.textContent = "00:00";
+//     isWorkTime = true;
+// }
+//
+// startButton.addEventListener("click", () => {
+//     clearInterval(timerInterval); // Reset any existing timer
+//     startTimer();
+// });
+//
+// resetButton.addEventListener("click", resetTimer);
