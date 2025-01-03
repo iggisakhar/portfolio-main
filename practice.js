@@ -12753,3 +12753,159 @@
 // });
 //
 // resetButton.addEventListener("click", resetTimer);
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Notes App</title>
+// <link rel="stylesheet" href="styles.css">
+// </head>
+// <body>
+// <div class="app">
+//     <h1>Notes App</h1>
+//     <div class="note-input">
+//         <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+//         <button id="addNoteButton">Add Note</button>
+//     </div>
+//     <div id="notesContainer"></div>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+//
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f7f9fc;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+//
+// .app {
+//     background: white;
+//     padding: 20px;
+//     border-radius: 10px;
+//     width: 400px;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+// }
+//
+// h1 {
+//     text-align: center;
+//     color: #333;
+// }
+//
+// .note-input {
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 20px;
+// }
+//
+// textarea {
+//     width: 100%;
+//     height: 80px;
+//     padding: 10px;
+//     margin-bottom: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+// }
+//
+// button {
+//     padding: 10px;
+//     background-color: #007bff;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     font-size: 16px;
+//     cursor: pointer;
+// }
+//
+// button:hover {
+//     background-color: #0056b3;
+// }
+//
+// #notesContainer {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+// }
+//
+// .note {
+//     padding: 10px;
+//     background: #f1f1f1;
+//     border-radius: 5px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+//
+// .note p {
+//     margin: 0;
+// }
+//
+// .note button {
+//     background: #dc3545;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     padding: 5px 10px;
+//     cursor: pointer;
+// }
+//
+// .note button:hover {
+//     background: #a71d2a;
+// }
+//
+// const noteInput = document.getElementById("noteInput");
+// const addNoteButton = document.getElementById("addNoteButton");
+// const notesContainer = document.getElementById("notesContainer");
+//
+// let notes = JSON.parse(localStorage.getItem("notes")) || [];
+//
+// // Function to save notes to local storage
+// function saveNotes() {
+//     localStorage.setItem("notes", JSON.stringify(notes));
+// }
+//
+// // Function to render notes
+// function renderNotes() {
+//     notesContainer.innerHTML = ""; // Clear the container
+//     notes.forEach((note, index) => {
+//         const noteElement = document.createElement("div");
+//         noteElement.classList.add("note");
+//
+//         const noteText = document.createElement("p");
+//         noteText.textContent = note;
+//
+//         const deleteButton = document.createElement("button");
+//         deleteButton.textContent = "Delete";
+//         deleteButton.addEventListener("click", () => {
+//             notes.splice(index, 1); // Remove the note
+//             saveNotes();
+//             renderNotes();
+//         });
+//
+//         noteElement.appendChild(noteText);
+//         noteElement.appendChild(deleteButton);
+//
+//         notesContainer.appendChild(noteElement);
+//     });
+// }
+//
+// // Add note event listener
+// addNoteButton.addEventListener("click", () => {
+//     const note = noteInput.value.trim();
+//     if (note) {
+//         notes.push(note);
+//         saveNotes();
+//         renderNotes();
+//         noteInput.value = ""; // Clear the input
+//     }
+// });
+//
+// // Initial render
+// renderNotes();
+
