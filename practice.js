@@ -12945,3 +12945,29 @@
 //
 // console.log("Is 'racecar' a palindrome?", isPalindrome("racecar"));
 // console.log("Is 'hello' a palindrome?", isPalindrome("hello"));
+
+// function findMax(arr) {
+//     return arr.reduce((max, num) => (num > max ? num : max), -Infinity);
+// }
+//
+// console.log("Max element:", findMax([1, 3, 7, 0, -5, 9, 2]));
+
+// function factorial(n) {
+//     if (n < 0) return -1;
+//     if (n === 0) return 1;
+//     return n * factorial(n - 1);
+// }
+//
+// console.log("Factorial of 5:", factorial(5));
+// console.log("Factorial of 0:", factorial(0));
+
+// function isPrime(num) {
+//     if (num <= 1) return false;
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) return false;
+//     }
+//     return true;
+// }
+//
+// console.log("Is 17 a prime number?", isPrime(17));
+// console.log("Is 20 a prime number?", isPrime(20));
