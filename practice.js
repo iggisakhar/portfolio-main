@@ -12971,3 +12971,47 @@
 //
 // console.log("Is 17 a prime number?", isPrime(17));
 // console.log("Is 20 a prime number?", isPrime(20));
+
+// function reverseString(str) {
+//     return str.split("").reverse().join("");
+// }
+//
+// console.log("Reversed string of 'hello':", reverseString("hello"));
+//
+// function removeDuplicates(arr) {
+//     return [...new Set(arr)];
+// }
+//
+// console.log("Unique elements:", removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+//
+// function sumOfDigits(num) {
+//     return num
+//         .toString()
+//         .split("")
+//         .reduce((sum, digit) => sum + parseInt(digit), 0);
+// }
+//
+// console.log("Sum of digits of 12345:", sumOfDigits(12345));
+//
+// function mergeSortedArrays(arr1, arr2) {
+//     let merged = [];
+//     let i = 0,
+//         j = 0;
+//
+//     while (i < arr1.length && j < arr2.length) {
+//         if (arr1[i] < arr2[j]) {
+//             merged.push(arr1[i]);
+//             i++;
+//         } else {
+//             merged.push(arr2[j]);
+//             j++;
+//         }
+//     }
+//
+//     return merged.concat(arr1.slice(i)).concat(arr2.slice(j));
+// }
+//
+// console.log(
+//     "Merged array:",
+//     mergeSortedArrays([1, 3, 5], [2, 4, 6])
+// );
