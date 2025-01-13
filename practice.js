@@ -13015,3 +13015,43 @@
 //     "Merged array:",
 //     mergeSortedArrays([1, 3, 5], [2, 4, 6])
 // );
+//
+// function generatePassword(length) {
+//     const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+~`|}{[]:;?><,./-=";
+//     let password = "";
+//     for (let i = 0; i < length; i++) {
+//         const randomIndex = Math.floor(Math.random() * charset.length);
+//         password += charset[randomIndex];
+//     }
+//     return password;
+// }
+//
+// const newPassword = generatePassword(12);
+// console.log("Сгенерированный пароль:", newPassword);
+//
+// function isPangram(sentence) {
+//     const alphabet = "abcdefghijklmnopqrstuvwxyz";
+//     const lowerCased = sentence.toLowerCase();
+//     for (let char of alphabet) {
+//         if (!lowerCased.includes(char)) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+//
+// const sentence = "Съешь же ещё этих мягких французских булок да выпей чаю";
+// console.log("Является ли панграммой?", isPangram(sentence)); // true
+//
+// function gcd(a, b) {
+//     while (b !== 0) {
+//         const temp = b;
+//         b = a % b;
+//         a = temp;
+//     }
+//     return a;
+// }
+//
+// const num1 = 56;
+// const num2 = 98;
+// console.log(`НОД чисел ${num1} и ${num2} равен`, gcd(num1, num2)); // 14
