@@ -13055,3 +13055,49 @@
 // const num1 = 56;
 // const num2 = 98;
 // console.log(`НОД чисел ${num1} и ${num2} равен`, gcd(num1, num2)); // 14
+
+// function debounce(func, delay) {
+//     let timer;
+//     return function (...args) {
+//         clearTimeout(timer);
+//         timer = setTimeout(() => func.apply(this, args), delay);
+//     };
+// }
+//
+// const logInput = debounce((text) => {
+//     console.log("User Input:", text);
+// }, 500);
+//
+// const inputField = document.createElement("input");
+// inputField.type = "text";
+// inputField.placeholder = "Type something...";
+// document.body.appendChild(inputField);
+//
+// inputField.addEventListener("input", (event) => {
+//     logInput(event.target.value);
+// });
+//
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Debounce Demo</title>
+// </head>
+// <body>
+// <script src="debounce.js"></script>
+// </body>
+// </html>
+//
+// function debounce(func, delay, immediate = false) {
+//     let timer;
+//     return function (...args) {
+//         const callNow = immediate && !timer;
+//         clearTimeout(timer);
+//         timer = setTimeout(() => {
+//             timer = null;
+//             if (!immediate) func.apply(this, args);
+//         }, delay);
+//         if (callNow) func.apply(this, args);
+//     };
+// }
