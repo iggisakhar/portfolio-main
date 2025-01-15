@@ -13101,3 +13101,30 @@
 //         if (callNow) func.apply(this, args);
 //     };
 // }
+
+// const people = [
+//     { name: "Alice", age: 25 },
+//     { name: "Bob", age: 30 },
+//     { name: "Charlie", age: 25 },
+//     { name: "Alice", age: 30 },
+//     { name: "Bob", age: 20 }
+// ];
+//
+// function multiFieldSort(array, fields) {
+//     return array.sort((a, b) => {
+//         for (let { field, order } of fields) {
+//             const direction = order === "asc" ? 1 : -1;
+//             if (a[field] > b[field]) return direction;
+//             if (a[field] < b[field]) return -direction;
+//         }
+//         return 0;
+//     });
+// }
+//
+// const sortedPeople = multiFieldSort(people, [
+//     { field: "name", order: "asc" },
+//     { field: "age", order: "desc" }
+// ]);
+//
+// console.log("Оригинальный массив:", people);
+// console.log("Отсортированный массив:", sortedPeople);
