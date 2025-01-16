@@ -13128,3 +13128,33 @@
 //
 // console.log("Оригинальный массив:", people);
 // console.log("Отсортированный массив:", sortedPeople);
+
+// function caesarCipher(str, shift, mode = "encode") {
+//     if (mode === "decode") shift = -shift;
+//     const alphabet = "abcdefghijklmnopqrstuvwxyz";
+//     const upperAlphabet = alphabet.toUpperCase();
+//
+//     return str
+//         .split("")
+//         .map((char) => {
+//             if (alphabet.includes(char)) {
+//                 const newIndex = (alphabet.indexOf(char) + shift + 26) % 26;
+//                 return alphabet[newIndex];
+//             } else if (upperAlphabet.includes(char)) {
+//                 const newIndex = (upperAlphabet.indexOf(char) + shift + 26) % 26;
+//                 return upperAlphabet[newIndex];
+//             } else {
+//                 return char;
+//             }
+//         })
+//         .join("");
+// }
+//
+// const originalText = "Hello, World!";
+// const shiftAmount = 3;
+//
+// const encoded = caesarCipher(originalText, shiftAmount);
+// console.log("Encoded:", encoded);
+//
+// const decoded = caesarCipher(encoded, shiftAmount, "decode");
+// console.log("Decoded:", decoded);
