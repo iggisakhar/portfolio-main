@@ -13158,3 +13158,47 @@
 //
 // const decoded = caesarCipher(encoded, shiftAmount, "decode");
 // console.log("Decoded:", decoded);
+
+// // Функция для проверки пароля
+// function validatePassword(password) {
+//     const minLength = 8;
+//     const maxLength = 20;
+//
+//
+//     const hasUpperCase = /[A-Z]/.test(password);
+//     const hasLowerCase = /[a-z]/.test(password);
+//     const hasNumber = /\d/.test(password);
+//     const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+//     const isValidLength = password.length >= minLength && password.length <= maxLength;
+//
+//     if (!isValidLength) {
+//         return `Пароль должен быть от ${minLength} до ${maxLength} символов.`;
+//     }
+//     if (!hasUpperCase) {
+//         return "Пароль должен содержать хотя бы одну заглавную букву.";
+//     }
+//     if (!hasLowerCase) {
+//         return "Пароль должен содержать хотя бы одну строчную букву.";
+//     }
+//     if (!hasNumber) {
+//         return "Пароль должен содержать хотя бы одну цифру.";
+//     }
+//     if (!hasSpecialChar) {
+//         return "Пароль должен содержать хотя бы один специальный символ.";
+//     }
+//
+//     return "Пароль соответствует всем требованиям!";
+// }
+//
+// const passwordsToTest = [
+//     "Password123!",
+//     "pass123!",
+//     "PASSWORD!",
+//     "Pass123",
+//     "Pa123!",
+//     "Correct$Pass1"
+// ];
+//
+// passwordsToTest.forEach((pwd) => {
+//     console.log(`Проверка "${pwd}":`, validatePassword(pwd));
+// });
