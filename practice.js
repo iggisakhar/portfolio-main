@@ -13202,3 +13202,28 @@
 // passwordsToTest.forEach((pwd) => {
 //     console.log(`Проверка "${pwd}":`, validatePassword(pwd));
 // });
+
+
+// // Function to generate unique combinations
+// function generateCombinations(arr, comboLength) {
+//     if (comboLength === 0) return [[]];
+//     if (arr.length === 0) return [];
+//
+//     const [first, ...rest] = arr;
+//
+//     // Combinations including the first element
+//     const withFirst = generateCombinations(rest, comboLength - 1).map((combo) => [first, ...combo]);
+//
+//     // Combinations excluding the first element
+//     const withoutFirst = generateCombinations(rest, comboLength);
+//
+//     return [...withFirst, ...withoutFirst];
+// }
+//
+// // Example usage
+// const items = ["A", "B", "C", "D"];
+// const combinationLength = 2;
+//
+// const combinations = generateCombinations(items, combinationLength);
+//
+// console.log(`All unique combinations of length ${combinationLength}:`, combinations);
