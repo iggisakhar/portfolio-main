@@ -13227,3 +13227,153 @@
 // const combinations = generateCombinations(items, combinationLength);
 //
 // console.log(`All unique combinations of length ${combinationLength}:`, combinations);
+
+// /**
+//  * @param {number[][]} grid
+//  * @return {number}
+//  */
+// var cherryPickup = function(grid) {
+//     let rows = grid.length;
+//     let cols = grid[0].length;
+//
+//     let memo = new Map();
+//
+//     const dp = (row, col1, col2) => {
+//
+//         if (col1 < 0 || col1 >= cols || col2 < 0 || col2 >= cols) {
+//             return 0;
+//         }
+//
+//         if (row === rows - 1) {
+//             return col1 === col2 ? grid[row][col1] : grid[row][col1] + grid[row][col2];
+//         }
+//
+//         let key = `${row},${col1},${col2}`;
+//         if (memo.has(key)) {
+//             return memo.get(key);
+//         }
+//
+//         let cherries = (col1 === col2)
+//             ? grid[row][col1]
+//             : grid[row][col1] + grid[row][col2];
+//
+//         let maxCherries = 0;
+//         for (let move1 of [-1, 0, 1]) {
+//             for (let move2 of [-1, 0, 1]) {
+//                 maxCherries = Math.max(maxCherries, dp(row + 1, col1 + move1, col2 + move2));
+//             }
+//         }
+//
+//         let result = cherries + maxCherries;
+//         memo.set(key, result);
+//         return result;
+//     };
+//
+//     return dp(0, 0, cols - 1);
+// };
+
+// /**
+//  * Definition for a binary tree node.
+//  * function TreeNode(val, left, right) {
+//  *     this.val = (val===undefined ? 0 : val)
+//  *     this.left = (left===undefined ? null : left);
+//  *     this.right = (right===undefined ? null : right);
+//  * }
+//  */
+//
+// /**
+//  * @param {number} n
+//  * @return {TreeNode[]}
+//  */
+// var allPossibleFBT = function(n) {
+//     if (n % 2 === 0) return [];
+//
+//     let memo = new Map();
+//
+//     const generateFBT = (num) => {
+//         if (memo.has(num)) return memo.get(num);
+//
+//         let result = [];
+//
+//         if (num === 1) {
+//             result.push(new TreeNode(0));
+//         } else {
+//             for (let leftNodes = 1; leftNodes < num; leftNodes += 2) {
+//                 let rightNodes = num - 1 - leftNodes;
+//                 let leftTrees = generateFBT(leftNodes);
+//                 let rightTrees = generateFBT(rightNodes);
+//
+//                 for (let left of leftTrees) {
+//                     for (let right of rightTrees) {
+//                         result.push(new TreeNode(0, left, right));
+//                     }
+//                 }
+//             }
+//         }
+//
+//         memo.set(num, result);
+//         return result;
+//     };
+//
+//     return generateFBT(n);
+// };
+//
+// /**
+//  * @param {string} s
+//  * @return {number[][]}
+//  */
+// var largeGroupPositions = function(s) {
+//     let result = [];
+//     let start = 0;
+//
+//     for (let i = 0; i < s.length; i++) {
+//         if (i === s.length - 1 || s[i] !== s[i + 1]) {
+//             if (i - start + 1 >= 3) {
+//                 result.push([start, i]);
+//             }
+//             start = i + 1;
+//         }
+//     }
+//
+//     return result;
+// };
+
+// /**
+//  * @param {number[][]} mat
+//  * @return {number[][]}
+//  */
+// var diagonalSort = function(mat) {
+//     let m = mat.length;
+//     let n = mat[0].length;
+//
+//     const sortDiagonal = (row, col) => {
+//         let diagonal = [];
+//         let r = row, c = col;
+//
+//         while (r < m && c < n) {
+//             diagonal.push(mat[r][c]);
+//             r++;
+//             c++;
+//         }
+//
+//         diagonal.sort((a, b) => a - b);
+//
+//         r = row;
+//         c = col;
+//         for (let num of diagonal) {
+//             mat[r][c] = num;
+//             r++;
+//             c++;
+//         }
+//     };
+//
+//     for (let col = 0; col < n; col++) {
+//         sortDiagonal(0, col);
+//     }
+//
+//     for (let row = 1; row < m; row++) {
+//         sortDiagonal(row, 0);
+//     }
+//
+//     return mat;
+// };
