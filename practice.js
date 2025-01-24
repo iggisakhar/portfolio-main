@@ -13389,3 +13389,25 @@
 // const frequencyResult = countFrequencies(dataArray);
 //
 // console.log("Element Frequencies:", frequencyResult);
+
+// function generatePrimes(limit) {
+//     const primes = new Array(limit + 1).fill(true);
+//     primes[0] = primes[1] = false;
+//
+//     for (let i = 2; i * i <= limit; i++) {
+//         if (primes[i]) {
+//             for (let j = i * i; j <= limit; j += i) {
+//                 primes[j] = false;
+//             }
+//         }
+//     }
+//
+//     return primes
+//         .map((isPrime, index) => (isPrime ? index : null))
+//         .filter((num) => num !== null);
+// }
+//
+// const upperLimit = 100;
+// const primeNumbers = generatePrimes(upperLimit);
+//
+// console.log(`Prime numbers up to ${upperLimit}:`, primeNumbers);
