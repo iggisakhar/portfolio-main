@@ -13411,3 +13411,29 @@
 // const primeNumbers = generatePrimes(upperLimit);
 //
 // console.log(`Prime numbers up to ${upperLimit}:`, primeNumbers);
+
+// function isPalindrome(str) {
+//     const reversed = str.split("").reverse().join("");
+//     return str === reversed;
+// }
+//
+// function findPalindromes(input) {
+//     const palindromes = new Set();
+//
+//     for (let i = 0; i < input.length; i++) {
+//         for (let j = i + 1; j <= input.length; j++) {
+//             const substring = input.slice(i, j);
+//             if (substring.length > 1 && isPalindrome(substring)) {
+//                 palindromes.add(substring);
+//             }
+//         }
+//     }
+//
+//     return Array.from(palindromes);
+// }
+//
+// const testString = "abccbaabc";
+// const palindromicSubstrings = findPalindromes(testString);
+//
+// console.log("Input String:", testString);
+// console.log("Palindromic Substrings:", palindromicSubstrings);
