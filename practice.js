@@ -13437,3 +13437,19 @@
 //
 // console.log("Input String:", testString);
 // console.log("Palindromic Substrings:", palindromicSubstrings);
+
+// function areAnagrams(str1, str2) {
+//     if (str1.length !== str2.length) return false;
+//
+//     const normalize = (str) =>
+//         str.toLowerCase().replace(/[^a-z0-9]/g, "").split("").sort().join("");
+//
+//     return normalize(str1) === normalize(str2);
+// }
+//
+// const word1 = "Listen";
+// const word2 = "Silent";
+// const word3 = "Hello";
+//
+// console.log(`Are "${word1}" and "${word2}" anagrams?`, areAnagrams(word1, word2));
+// console.log(`Are "${word1}" and "${word3}" anagrams?`, areAnagrams(word1, word3));
