@@ -13453,3 +13453,23 @@
 //
 // console.log(`Are "${word1}" and "${word2}" anagrams?`, areAnagrams(word1, word2));
 // console.log(`Are "${word1}" and "${word3}" anagrams?`, areAnagrams(word1, word3));
+
+// const quotes = [
+//     "Believe you can and you're halfway there. - Theodore Roosevelt",
+//     "Success is not final, failure is not fatal: it is the courage to continue that counts. - Winston Churchill",
+//     "Do what you can, with what you have, where you are. - Theodore Roosevelt",
+//     "You miss 100% of the shots you don't take. - Wayne Gretzky",
+//     "It does not matter how slowly you go as long as you do not stop. - Confucius",
+//     "Act as if what you do makes a difference. It does. - William James",
+//     "Keep your face always toward the sunshine—and shadows will fall behind you. - Walt Whitman",
+//     "The only way to do great work is to love what you do. - Steve Jobs",
+//     "Difficulties in life are intended to make us better, not bitter. - Dan Reeves",
+//     "Don't watch the clock; do what it does. Keep going. - Sam Levenson"
+// ];
+//
+// function getRandomQuote() {
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     return quotes[randomIndex];
+// }
+//
+// console.log("Today's Quote:", getRandomQuote());
