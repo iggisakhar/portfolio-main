@@ -13473,3 +13473,75 @@
 // }
 //
 // console.log("Today's Quote:", getRandomQuote());
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Secure Book Reader</title>
+// <style>
+//     body {
+//     font-family: Arial, sans-serif;
+//     margin: 20px;
+//     background-color: #f4f4f4;
+// }
+//     #book-container {
+//     background: white;
+//     padding: 20px;
+//     border-radius: 5px;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//     user-select: none; /* Prevent text selection */
+//     overflow: hidden;
+// }
+//     .disabled {
+//     pointer-events: none;
+//     color: gray;
+// }
+// </style>
+// </head>
+// <body>
+// <h2>Secure Book Reader</h2>
+// <div id="book-container">
+//     <p>This is a secured book reading environment. You can read, but copying, downloading, or taking screenshots is disabled.</p>
+//     <p id="book-content">Once upon a time, in a land far away...</p>
+// </div>
+//
+// <script>
+//     // Disable right-click to prevent context menu
+//     document.addEventListener('contextmenu', event => event.preventDefault());
+//
+//     // Disable copying
+//     document.addEventListener('copy', event => event.preventDefault());
+//
+//     // Disable pasting
+//     document.addEventListener('paste', event => event.preventDefault());
+//
+//     // Disable screenshot on key press
+//     document.addEventListener('keydown', function(event) {
+//     if (event.key === 'PrintScreen' || (event.ctrlKey && event.key === 's')) {
+//     alert('Screenshots and saving are disabled.');
+//     event.preventDefault();
+// }
+// });
+//
+//     // Disable dragging content
+//     document.addEventListener("dragstart", function(event) {
+//     event.preventDefault();
+// });
+//
+//     // Time-based restriction
+//     function checkAccess() {
+//     let currentTime = new Date().getHours();
+//     let allowedStart = 9;  // Allowed from 9 AM
+//     let allowedEnd = 18;   // Allowed until 6 PM
+//
+//     if (currentTime < allowedStart || currentTime > allowedEnd) {
+//     document.getElementById("book-container").innerHTML = "<p>Access restricted. Please return during allowed hours.</p>";
+//     document.getElementById("book-container").classList.add("disabled");
+// }
+// }
+//     checkAccess();
+// </script>
+// </body>
+// </html>
