@@ -13557,3 +13557,26 @@
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // console.log("Original Array:", numbers);
 // console.log("Shuffled Array:", shuffleArray([...numbers]));
+
+// function startCountdown(seconds) {
+//     if (isNaN(seconds) || seconds <= 0) {
+//         console.log("Please enter a valid number of seconds.");
+//         return;
+//     }
+//
+//     let remainingTime = seconds;
+//
+//     const timerInterval = setInterval(() => {
+//         console.log(`Time remaining: ${remainingTime} seconds`);
+//         remainingTime--;
+//
+//         if (remainingTime < 0) {
+//             clearInterval(timerInterval);
+//             console.log("⏳ Time's up!");
+//         }
+//     }, 1000);
+// }
+//
+// const userTime = 10;
+// console.log(`⏳ Starting countdown for ${userTime} seconds...`);
+// startCountdown(userTime);
