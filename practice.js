@@ -13580,3 +13580,25 @@
 // const userTime = 10;
 // console.log(`⏳ Starting countdown for ${userTime} seconds...`);
 // startCountdown(userTime);
+
+// function getRandomHexColor() {
+//     return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")}`;
+// }
+//
+// function getRandomRGBColor() {
+//     const r = Math.floor(Math.random() * 256);
+//     const g = Math.floor(Math.random() * 256);
+//     const b = Math.floor(Math.random() * 256);
+//     return `rgb(${r}, ${g}, ${b})`;
+// }
+//
+// function getRandomHSLColor() {
+//     const h = Math.floor(Math.random() * 360);
+//     const s = Math.floor(Math.random() * 100);
+//     const l = Math.floor(Math.random() * 100);
+//     return `hsl(${h}, ${s}%, ${l}%)`;
+// }
+//
+// console.log("Random HEX Color:", getRandomHexColor());
+// console.log("Random RGB Color:", getRandomRGBColor());
+// console.log("Random HSL Color:", getRandomHSLColor());
