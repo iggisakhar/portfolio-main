@@ -13602,3 +13602,15 @@
 // console.log("Random HEX Color:", getRandomHexColor());
 // console.log("Random RGB Color:", getRandomRGBColor());
 // console.log("Random HSL Color:", getRandomHSLColor());
+
+// // Function to count words in a given text
+// function countWords(text) {
+//     // Remove punctuation and extra spaces, then split by spaces
+//     const words = text.trim().replace(/[.,!?;:()]/g, "").split(/\s+/);
+//     return words.filter(word => word.length > 0).length;
+// }
+//
+// // Example usage
+// const sampleText = "Hello, world! This is a simple    word counter example.";
+// console.log("Text:", sampleText);
+// console.log("Word Count:", countWords(sampleText));
