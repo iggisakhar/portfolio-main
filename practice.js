@@ -13614,3 +13614,13 @@
 // const sampleText = "Hello, world! This is a simple    word counter example.";
 // console.log("Text:", sampleText);
 // console.log("Word Count:", countWords(sampleText));
+
+// function findLongestWord(sentence) {
+//     const words = sentence.replace(/[.,!?;:()]/g, "").split(/\s+/);
+//
+//     return words.reduce((longest, word) => (word.length > longest.length ? word : longest), "");
+// }
+//
+// const text = "JavaScript is an amazing programming language!";
+// console.log("Sentence:", text);
+// console.log("Longest Word:", findLongestWord(text));
