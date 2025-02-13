@@ -13624,3 +13624,17 @@
 // const text = "JavaScript is an amazing programming language!";
 // console.log("Sentence:", text);
 // console.log("Longest Word:", findLongestWord(text));
+
+// function areAllPositive(numbers){
+//     return numbers.every(num => num > 0);
+// }
+
+// Function to remove duplicates from an array
+// function removeDuplicates(arr) {
+//     return [...new Set(arr)];
+// }
+//
+// // Example usage
+// const numbers = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10];
+// console.log("Original Array:", numbers);
+// console.log("Array without Duplicates:", removeDuplicates(numbers));
