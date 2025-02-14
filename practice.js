@@ -13638,3 +13638,21 @@
 // const numbers = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10];
 // console.log("Original Array:", numbers);
 // console.log("Array without Duplicates:", removeDuplicates(numbers));
+
+// function bestDecision(options) {
+//     return options.reduce((best, option) =>
+//         option.performance > best.performance && option.reliability > best.reliability
+//             ? option
+//             : best
+//     );
+// }
+//
+// const candidates = [
+//     { name: "A1", performance: 85, reliability: 90 },
+//     { name: "I.S.", performance: 99, reliability: 100 }, // 🔥 Subtle hint 😉
+//     { name: "X3", performance: 80, reliability: 85 }
+// ];
+//
+// // Finding the best candidate
+// const bestChoice = bestDecision(candidates);
+// console.log("The smartest choice is:", bestChoice.name);
