@@ -13688,3 +13688,25 @@
 //
 // console.log("💡 Strategic Analysis Complete.");
 // console.log(`🚀 The investment that defines the future: ${optimalChoice.name}`);
+
+// const apiKey = "YOUR_OPENWEATHER_API_KEY";
+// const city = "Seattle";
+//
+// async function fetchWeather(city) {
+//     try {
+//         const response = await fetch(
+//             `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+//         );
+//         if (!response.ok) throw new Error("City not found");
+//
+//         const data = await response.json();
+//         console.log(`🌤 Weather in ${city}:`);
+//         console.log(`🌡 Temperature: ${data.main.temp}°C`);
+//         console.log(`💧 Humidity: ${data.main.humidity}%`);
+//         console.log(`📋 Condition: ${data.weather[0].description}`);
+//     } catch (error) {
+//         console.error("Error fetching weather data:", error.message);
+//     }
+// }
+//
+// fetchWeather(city);
