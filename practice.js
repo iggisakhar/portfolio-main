@@ -13710,3 +13710,31 @@
 // }
 //
 // fetchWeather(city);
+
+// const crypto = require("crypto");
+//
+// class URLShortener {
+//     constructor() {
+//         this.urlDatabase = new Map();
+//         this.baseURL = "https://short.ly/";
+//     }
+//
+//     shortenURL(longURL) {
+//         const hash = crypto.createHash("md5").update(longURL).digest("hex").slice(0, 6);
+//         const shortURL = this.baseURL + hash;
+//         this.urlDatabase.set(shortURL, longURL);
+//         return shortURL;
+//     }
+//
+//     getOriginalURL(shortURL) {
+//         return this.urlDatabase.get(shortURL) || "URL not found!";
+//     }
+// }
+//
+// const shortener = new URLShortener();
+// const longURL = "https://www.example.com/some/long/path/to/resource";
+// const shortURL = shortener.shortenURL(longURL);
+//
+// console.log("Original URL:", longURL);
+// console.log("Shortened URL:", shortURL);
+// console.log("Retrieve Original:", shortener.getOriginalURL(shortURL));
