@@ -13738,3 +13738,73 @@
 // console.log("Original URL:", longURL);
 // console.log("Shortened URL:", shortURL);
 // console.log("Retrieve Original:", shortener.getOriginalURL(shortURL));
+
+// // Selectors
+// const taskInput = document.getElementById("taskInput");
+// const addButton = document.getElementById("addButton");
+// const taskList = document.getElementById("taskList");
+//
+// // Load tasks from localStorage
+// document.addEventListener("DOMContentLoaded", loadTasks);
+//
+// // Add new task
+// addButton.addEventListener("click", () => {
+//     const taskText = taskInput.value.trim();
+//     if (taskText) {
+//         addTask(taskText);
+//         saveTask(taskText);
+//         taskInput.value = "";
+//     }
+// });
+//
+// // Function to add task to the DOM
+// function addTask(taskText) {
+//     const li = document.createElement("li");
+//     li.textContent = taskText;
+//
+//     const deleteButton = document.createElement("button");
+//     deleteButton.textContent = "❌";
+//     deleteButton.addEventListener("click", () => {
+//         li.remove();
+//         removeTask(taskText);
+//     });
+//
+//     li.appendChild(deleteButton);
+//     taskList.appendChild(li);
+// }
+//
+// // Save task to localStorage
+// function saveTask(taskText) {
+//     const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+//     tasks.push(taskText);
+//     localStorage.setItem("tasks", JSON.stringify(tasks));
+// }
+//
+// // Remove task from localStorage
+// function removeTask(taskText) {
+//     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+//     tasks = tasks.filter(task => task !== taskText);
+//     localStorage.setItem("tasks", JSON.stringify(tasks));
+// }
+//
+// // Load tasks from localStorage on page load
+// function loadTasks() {
+//     const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+//     tasks.forEach(addTask);
+// }
+//
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>To-Do List</title>
+// <script defer src="todoList.js"></script>
+// </head>
+// <body>
+// <h2>📌 To-Do List</h2>
+// <input type="text" id="taskInput" placeholder="Add a task...">
+//     <button id="addButton">➕ Add Task</button>
+//     <ul id="taskList"></ul>
+// </body>
+// </html>
