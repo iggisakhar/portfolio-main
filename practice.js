@@ -13808,3 +13808,31 @@
 //     <ul id="taskList"></ul>
 // </body>
 // </html>
+
+// // Countdown Timer
+// let timer;
+// let timeLeft;
+//
+// function startCountdown(minutes, seconds) {
+//     timeLeft = minutes * 60 + seconds;
+//     updateDisplay();
+//
+//     timer = setInterval(() => {
+//         if (timeLeft > 0) {
+//             timeLeft--;
+//             updateDisplay();
+//         } else {
+//             clearInterval(timer);
+//             alert("⏰ Time's up!");
+//         }
+//     }, 1000);
+// }
+//
+// function updateDisplay() {
+//     const minutes = Math.floor(timeLeft / 60);
+//     const seconds = timeLeft % 60;
+//     console.log(`⏳ Time Left: ${minutes}:${seconds < 10 ? "0" : ""}${seconds}`);
+// }
+//
+// // Example usage
+// startCountdown(1, 30); // Starts a countdown for 1 minute 30 seconds
