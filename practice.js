@@ -13836,3 +13836,45 @@
 //
 // // Example usage
 // startCountdown(1, 30); // Starts a countdown for 1 minute 30 seconds
+
+// // Array of quotes
+// const quotes = [
+//     "The best way to predict the future is to invent it. – Alan Kay",
+//     "Simplicity is the soul of efficiency. – Austin Freeman",
+//     "Any sufficiently advanced technology is indistinguishable from magic. – Arthur C. Clarke",
+//     "The only way to do great work is to love what you do. – Steve Jobs",
+//     "Code is like humor. When you have to explain it, it’s bad. – Cory House"
+// ];
+//
+// // Function to get a random quote
+// function getRandomQuote() {
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     return quotes[randomIndex];
+// }
+//
+// // Display a random quote
+// function displayQuote() {
+//     const quoteElement = document.getElementById("quote");
+//     quoteElement.textContent = getRandomQuote();
+// }
+//
+// // Event listener for button click
+// document.getElementById("generateQuote").addEventListener("click", displayQuote);
+//
+// // Load a quote on page load
+// window.onload = displayQuote;
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Random Quote Generator</title>
+// <script defer src="randomQuote.js"></script>
+// </head>
+// <body>
+// <h2>📜 Random Quote Generator</h2>
+// <p id="quote"></p>
+// <button id="generateQuote">🔄 New Quote</button>
+// </body>
+// </html>
