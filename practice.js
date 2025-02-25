@@ -13878,3 +13878,25 @@
 // <button id="generateQuote">🔄 New Quote</button>
 // </body>
 // </html>
+
+// // Array of motivational quotes
+// const quotes = [
+//     "The only way to do great work is to love what you do. – Steve Jobs",
+//     "Success is not final, failure is not fatal: it is the courage to continue that counts. – Winston Churchill",
+//     "Believe you can and you're halfway there. – Theodore Roosevelt",
+//     "Do what you can, with what you have, where you are. – Theodore Roosevelt",
+//     "Your limitation—it’s only your imagination.",
+//     "Push yourself, because no one else is going to do it for you.",
+//     "Great things never come from comfort zones.",
+//     "Dream it. Wish it. Do it."
+// ];
+//
+// // Function to get a random quote
+// function getRandomQuote() {
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     return quotes[randomIndex];
+// }
+//
+// // Display the quote
+// console.log("💡 Today's Motivation: ");
+// console.log(getRandomQuote());
