@@ -13900,3 +13900,12 @@
 // // Display the quote
 // console.log("💡 Today's Motivation: ");
 // console.log(getRandomQuote());
+
+// // Function to roll a six-sided dice
+// function rollDice() {
+//     return Math.floor(Math.random() * 6) + 1;
+// }
+//
+// // Rolling the dice
+// console.log("🎲 Rolling the dice...");
+// console.log("You got:", rollDice());
