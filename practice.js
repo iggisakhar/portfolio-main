@@ -13909,3 +13909,22 @@
 // // Rolling the dice
 // console.log("🎲 Rolling the dice...");
 // console.log("You got:", rollDice());
+
+// // Function to check if a string is a palindrome
+// function isPalindrome(str) {
+//     // Remove non-alphanumeric characters and convert to lowercase
+//     const cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+//
+//     // Reverse the string
+//     const reversedStr = cleanedStr.split("").reverse().join("");
+//
+//     // Compare original and reversed strings
+//     return cleanedStr === reversedStr;
+// }
+//
+// // Example usage
+// const testStrings = ["Racecar", "Hello", "A man, a plan, a canal: Panama", "No lemon, no melon"];
+//
+// testStrings.forEach(str => {
+//     console.log(`"${str}" is a palindrome: ${isPalindrome(str)}`);
+// });
