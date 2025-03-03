@@ -13940,3 +13940,89 @@
 //
 // // Run the FizzBuzz game
 // fizzBuzz();
+
+// <!DOCTYPE
+// html >
+// < html
+// lang = "en" >
+//     < head >
+//     < meta
+// charset = "UTF-8" >
+//     < meta
+// name = "viewport"
+// content = "width=device-width, initial-scale=1.0" >
+//     < title > Random
+// Quote
+// Generator < /title>
+// <style>
+//     body {
+//     font - family: Arial, sans-serif;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     background-color: #f4f4f4;
+//     margin: 0;
+// }
+//     #quote-box {
+//     background: white;
+//     padding: 20px;
+//     border-radius: 8px;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//     text-align: center;
+//     max-width: 500px;
+// }
+//     #quote {
+//     font - size: 1.5em;
+//     margin-bottom: 10px;
+// }
+//     #author {
+//     font - style: italic;
+//     color: #555;
+// }
+//     #new-quote {
+//     margin - top: 20px;
+//     padding: 10px 20px;
+//     font-size: 1em;
+//     cursor: pointer;
+//     border: none;
+//     background-color: #007bff;
+//     color: white;
+//     border-radius: 5px;
+// }
+//     #new-quote:hover {
+//     background - color: #0056b3;
+// }
+// </style>
+// </head>
+// <body>
+// <div id="quote-box">
+//     <p id="quote">Click the button to generate a quote!</p>
+//     <p id="author"></p>
+//     <button id="new-quote">New Quote</button>
+// </div>
+//
+// <script>
+//     async function fetchQuote() {
+//     try {
+//     const response = await fetch('https://api.quotable.io/random');
+//     const data = await response.json();
+//     document.getElementById('quote').textContent = data.content;
+//     document.getElementById('author').textContent = `— ${data.author}`;
+// } catch (error) {
+//     console.error('Error fetching quote:', error);
+// }
+// }
+//
+//     document.getElementById('new-quote').addEventListener('click', fetchQuote);
+//
+//     // Fetch a quote when the page loads
+//     fetchQuote();
+// </script>
+// </body>
+// </html>
+//
+// <a id="tweet-quote" href="#" target="_blank">Tweet this quote</a>
+//
+// const tweetQuote = document.getElementById('tweet-quote');
+// tweetQuote.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${quote}" - ${author}`)}`;
