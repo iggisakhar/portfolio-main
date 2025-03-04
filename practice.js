@@ -14026,3 +14026,37 @@
 //
 // const tweetQuote = document.getElementById('tweet-quote');
 // tweetQuote.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${quote}" - ${author}`)}`;
+
+// function checkPasswordStrength(password) {
+//     let strength = 0;
+//
+//     // Check length
+//     if (password.length >= 8) strength++;
+//
+//     // Check for uppercase letters
+//     if (/[A-Z]/.test(password)) strength++;
+//
+//     // Check for numbers
+//     if (/\d/.test(password)) strength++;
+//
+//     // Check for special characters
+//     if (/[\W_]/.test(password)) strength++;
+//
+//     // Determine strength level
+//     switch (strength) {
+//         case 4:
+//             return "💪 Strong Password";
+//         case 3:
+//             return "👍 Medium Password";
+//         case 2:
+//             return "⚠ Weak Password";
+//         default:
+//             return "❌ Very Weak Password";
+//     }
+// }
+//
+// // Example usage
+// const passwords = ["12345", "password123", "StrongPass1!", "WeakPass"];
+// passwords.forEach(pass => {
+//     console.log(`"${pass}": ${checkPasswordStrength(pass)}`);
+// });
