@@ -14060,3 +14060,26 @@
 // passwords.forEach(pass => {
 //     console.log(`"${pass}": ${checkPasswordStrength(pass)}`);
 // });
+
+// function countWords(text) {
+//     // Remove punctuation and extra spaces
+//     const cleanedText = text.trim().replace(/[^\w\s]/g, "");
+//
+//     // Split the text into words
+//     const words = cleanedText.split(/\s+/);
+//
+//     // Return word count
+//     return words.length === 1 && words[0] === "" ? 0 : words.length;
+// }
+//
+// // Example usage
+// const exampleTexts = [
+//     "Hello, world!",
+//     "  This is a test.  ",
+//     "One-word",
+//     "How many words are in this sentence?"
+// ];
+//
+// exampleTexts.forEach(text => {
+//     console.log(`"${text}" → Word Count: ${countWords(text)}`);
+// });
