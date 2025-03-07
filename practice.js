@@ -14083,3 +14083,42 @@
 // exampleTexts.forEach(text => {
 //     console.log(`"${text}" → Word Count: ${countWords(text)}`);
 // });
+
+// class Stopwatch {
+//     constructor() {
+//         this.time = 0;
+//         this.interval = null;
+//     }
+//
+//     // Start the stopwatch
+//     start() {
+//         if (!this.interval) {
+//             this.interval = setInterval(() => {
+//                 this.time++;
+//                 console.log(`⏱️ Time: ${this.time}s`);
+//             }, 1000);
+//         }
+//     }
+//
+//     // Stop the stopwatch
+//     stop() {
+//         clearInterval(this.interval);
+//         this.interval = null;
+//         console.log("⏹️ Stopwatch stopped.");
+//     }
+//
+//     // Reset the stopwatch
+//     reset() {
+//         this.stop();
+//         this.time = 0;
+//         console.log("🔄 Stopwatch reset.");
+//     }
+// }
+//
+// // Example usage
+// const myStopwatch = new Stopwatch();
+// myStopwatch.start(); // Starts counting seconds
+//
+// // Simulate stopping and resetting after a few seconds
+// setTimeout(() => myStopwatch.stop(), 5000); // Stops after 5 sec
+// setTimeout(() => myStopwatch.reset(), 7000); // Resets after 7 sec
