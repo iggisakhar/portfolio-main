@@ -14122,3 +14122,20 @@
 // // Simulate stopping and resetting after a few seconds
 // setTimeout(() => myStopwatch.stop(), 5000); // Stops after 5 sec
 // setTimeout(() => myStopwatch.reset(), 7000); // Resets after 7 sec
+
+// function calculateTip(billAmount, tipPercentage) {
+//     if (billAmount <= 0 || tipPercentage < 0) {
+//         return "❌ Invalid input! Please enter a valid amount and tip percentage.";
+//     }
+//
+//     const tip = (billAmount * tipPercentage) / 100;
+//     const total = billAmount + tip;
+//
+//     return `💰 Bill: $${billAmount.toFixed(2)} | 💵 Tip (${tipPercentage}%): $${tip.toFixed(2)} | 🏷️ Total: $${total.toFixed(2)}`;
+// }
+//
+// // Example usage
+// console.log(calculateTip(50, 15)); // $50 bill with 15% tip
+// console.log(calculateTip(100, 20)); // $100 bill with 20% tip
+// console.log(calculateTip(75, 10)); // $75 bill with 10% tip
+// console.log(calculateTip(-10, 15)); // Invalid case
