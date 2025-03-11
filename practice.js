@@ -14139,3 +14139,20 @@
 // console.log(calculateTip(100, 20)); // $100 bill with 20% tip
 // console.log(calculateTip(75, 10)); // $75 bill with 10% tip
 // console.log(calculateTip(-10, 15)); // Invalid case
+
+// function generatePassword(length = 12) {
+//     const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+";
+//     let password = "";
+//
+//     for (let i = 0; i < length; i++) {
+//         const randomIndex = Math.floor(Math.random() * charset.length);
+//         password += charset[randomIndex];
+//     }
+//
+//     return password;
+// }
+//
+// // 🔥 Мысалдар:
+// console.log("🔐 New Password:", generatePassword(12)); // 12 таңбалы пароль
+// console.log("🔐 Strong Password:", generatePassword(16)); // 16 таңбалы күшті пароль
+// console.log("🔐 Extra Secure:", generatePassword(20)); // 20 таңбалы қауіпсіз пароль
