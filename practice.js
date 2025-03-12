@@ -14156,3 +14156,41 @@
 // console.log("🔐 New Password:", generatePassword(12)); // 12 таңбалы пароль
 // console.log("🔐 Strong Password:", generatePassword(16)); // 16 таңбалы күшті пароль
 // console.log("🔐 Extra Secure:", generatePassword(20)); // 20 таңбалы қауіпсіз пароль
+
+// function convertTemperature(value, fromUnit, toUnit) {
+//     let tempInCelsius;
+//
+//     // Convert input to Celsius first
+//     switch (fromUnit.toLowerCase()) {
+//         case "c":
+//             tempInCelsius = value;
+//             break;
+//         case "f":
+//             tempInCelsius = (value - 32) * (5 / 9);
+//             break;
+//         case "k":
+//             tempInCelsius = value - 273.15;
+//             break;
+//         default:
+//             return "❌ Invalid 'from' unit!";
+//     }
+//
+//     // Convert Celsius to target unit
+//     switch (toUnit.toLowerCase()) {
+//         case "c":
+//             return `${value}°${fromUnit.toUpperCase()} = ${tempInCelsius.toFixed(2)}°C`;
+//         case "f":
+//             return `${value}°${fromUnit.toUpperCase()} = ${(tempInCelsius * 9 / 5 + 32).toFixed(2)}°F`;
+//         case "k":
+//             return `${value}°${fromUnit.toUpperCase()} = ${(tempInCelsius + 273.15).toFixed(2)}K`;
+//         default:
+//             return "❌ Invalid 'to' unit!";
+//     }
+// }
+//
+// // Example usage
+// console.log(convertTemperature(100, "C", "F")); // 100°C → °F
+// console.log(convertTemperature(32, "F", "C")); // 32°F → °C
+// console.log(convertTemperature(0, "C", "K")); // 0°C → K
+// console.log(convertTemperature(273.15, "K", "C")); // 273.15K → °C
+// console.log(convertTemperature(100, "X", "C")); // Invalid unit test
