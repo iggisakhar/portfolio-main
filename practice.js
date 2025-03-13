@@ -14194,3 +14194,19 @@
 // console.log(convertTemperature(0, "C", "K")); // 0°C → K
 // console.log(convertTemperature(273.15, "K", "C")); // 273.15K → °C
 // console.log(convertTemperature(100, "X", "C")); // Invalid unit test
+
+// function generateRandomColor() {
+//     const hexCharacters = "0123456789ABCDEF";
+//     let color = "#";
+//
+//     for (let i = 0; i < 6; i++) {
+//         color += hexCharacters[Math.floor(Math.random() * 16)];
+//     }
+//
+//     return color;
+// }
+//
+// // Example usage
+// console.log("🎨 Random Color:", generateRandomColor());
+// console.log("🎨 Another Color:", generateRandomColor());
+// console.log("🎨 One More Color:", generateRandomColor());
