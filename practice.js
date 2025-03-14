@@ -14210,3 +14210,20 @@
 // console.log("🎨 Random Color:", generateRandomColor());
 // console.log("🎨 Another Color:", generateRandomColor());
 // console.log("🎨 One More Color:", generateRandomColor());
+
+// async function getRandomJoke() {
+//     try {
+//         const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+//         if (!response.ok) {
+//             throw new Error("Failed to fetch joke");
+//         }
+//         const joke = await response.json();
+//         console.log(`😂 ${joke.setup}`);
+//         console.log(`🤣 ${joke.punchline}`);
+//     } catch (error) {
+//         console.error("Error fetching joke:", error.message);
+//     }
+// }
+//
+// // Example usage
+// getRandomJoke();
