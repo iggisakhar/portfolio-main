@@ -14227,3 +14227,26 @@
 //
 // // Example usage
 // getRandomJoke();
+
+// function rollDice() {
+//     return Math.floor(Math.random() * 6) + 1; // Random number between 1 and 6
+// }
+//
+// function playDiceGame() {
+//     const player1 = rollDice();
+//     const player2 = rollDice();
+//
+//     console.log(`🎲 Player 1 rolled: ${player1}`);
+//     console.log(`🎲 Player 2 rolled: ${player2}`);
+//
+//     if (player1 > player2) {
+//         console.log("🏆 Player 1 Wins!");
+//     } else if (player2 > player1) {
+//         console.log("🏆 Player 2 Wins!");
+//     } else {
+//         console.log("🤝 It's a tie!");
+//     }
+// }
+//
+// // Example usage
+// playDiceGame();
