@@ -14250,3 +14250,21 @@
 //
 // // Example usage
 // playDiceGame();
+
+// function startCountdown(seconds) {
+//     let timeLeft = seconds;
+//
+//     const timer = setInterval(() => {
+//         if (timeLeft > 0) {
+//             console.log(`⏳ Time Left: ${timeLeft} seconds`);
+//             timeLeft--;
+//         } else {
+//             clearInterval(timer);
+//             console.log("⏰ Time's up!");
+//         }
+//     }, 1000);
+// }
+//
+// // Example usage: Start a 10-second countdown
+// startCountdown(10);
+
