@@ -14268,3 +14268,19 @@
 // // Example usage: Start a 10-second countdown
 // startCountdown(10);
 
+// function getRandomQuote() {
+//     const quotes = [
+//         "Believe you can and you're halfway there. – Theodore Roosevelt",
+//         "Success is not final, failure is not fatal: it is the courage to continue that counts. – Winston Churchill",
+//         "Opportunities don't happen, you create them. – Chris Grosser",
+//         "Don't watch the clock; do what it does. Keep going. – Sam Levenson",
+//         "Dream big and dare to fail. – Norman Vaughan",
+//         "It always seems impossible until it’s done. – Nelson Mandela"
+//     ];
+//
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     return quotes[randomIndex];
+// }
+//
+// // Example usage:
+// console.log("✨ Your Quote for Today: " + getRandomQuote());
