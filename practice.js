@@ -14284,3 +14284,144 @@
 //
 // // Example usage:
 // console.log("✨ Your Quote for Today: " + getRandomQuote());
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Pomodoro Timer</title>
+// <style>
+//     body {
+//     font-family: 'Arial', sans-serif;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     background: #f0f0f0;
+//     margin: 0;
+//     padding: 20px;
+// }
+//     .container {
+//     text-align: center;
+//     background: white;
+//     padding: 2rem;
+//     border-radius: 15px;
+//     box-shadow: 0 0 20px rgba(0,0,0,0.1);
+// }
+//     #timer {
+//     font-size: 6rem;
+//     font-weight: bold;
+//     color: #2c3e50;
+//     margin: 20px 0;
+// }
+//     button {
+//     padding: 10px 25px;
+//     margin: 5px;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     font-size: 1rem;
+//     transition: 0.3s;
+// }
+//     #start {
+//     background: #27ae60;
+//     color: white;
+// }
+//     #stop {
+//     background: #e74c3c;
+//     color: white;
+// }
+//     #reset {
+//     background: #3498db;
+//     color: white;
+// }
+//     button:hover {
+//     opacity: 0.8;
+// }
+//     .progress-ring {
+//     position: relative;
+// }
+//     .progress-ring circle {
+//     transition: 0.35s stroke-dashoffset;
+//     transform: rotate(-90deg);
+//     transform-origin: 50% 50%;
+// }
+// </style>
+// </head>
+// <body>
+// <div class="container">
+//     <h1>Pomodoro Timer</h1>
+//     <div class="progress-ring">
+//         <svg width="200" height="200">
+//             <circle r="90" cx="100" cy="100" fill="none" stroke="#eee" stroke-width="10"/>
+//             <circle id="progress" r="90" cx="100" cy="100" fill="none" stroke="#27ae60" stroke-width="10"
+//                     stroke-dasharray="565.48" stroke-dashoffset="0"/>
+//         </svg>
+//         <div id="timer">25:00</div>
+//     </div>
+//     <div>
+//         <button id="start">Start</button>
+//         <button id="stop">Stop</button>
+//         <button id="reset">Reset</button>
+//     </div>
+// </div>
+//
+// <script>
+//     const timerDisplay = document.getElementById('timer');
+//     const startBtn = document.getElementById('start');
+//     const stopBtn = document.getElementById('stop');
+//     const resetBtn = document.getElementById('reset');
+//     const progressCircle = document.getElementById('progress');
+//     const circumference = 2 * Math.PI * 90;
+//
+//     let timeLeft = 25 * 60; // 25 minutes in seconds
+//     let timerId = null;
+//     let isRunning = false;
+//
+//     progressCircle.style.strokeDasharray = circumference;
+//     progressCircle.style.strokeDashoffset = circumference;
+//
+//     function updateDisplay() {
+//     const minutes = Math.floor(timeLeft / 60).toString().padStart(2, '0');
+//     const seconds = (timeLeft % 60).toString().padStart(2, '0');
+//     timerDisplay.textContent = `${minutes}:${seconds}`;
+//
+//     // Update progress ring
+//     const progress = 1 - timeLeft / (25 * 60);
+//     const offset = circumference * progress;
+//     progressCircle.style.strokeDashoffset = circumference - offset;
+// }
+//
+//     function startTimer() {
+//     if (!isRunning) {
+//     isRunning = true;
+//     timerId = setInterval(() => {
+//     timeLeft--;
+//     updateDisplay();
+//     if (timeLeft === 0) {
+//     clearInterval(timerId);
+//     alert('Time is up! Take a 5-minute break!');
+//     resetTimer();
+// }
+// }, 1000);
+// }
+// }
+//
+//     function stopTimer() {
+//     clearInterval(timerId);
+//     isRunning = false;
+// }
+//
+//     function resetTimer() {
+//     clearInterval(timerId);
+//     isRunning = false;
+//     timeLeft = 25 * 60;
+//     updateDisplay();
+// }
+//
+//     startBtn.addEventListener('click', startTimer);
+//     stopBtn.addEventListener('click', stopTimer);
+//     resetBtn.addEventListener('click', resetTimer);
+// </script>
+// </body>
+// </html>
