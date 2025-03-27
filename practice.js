@@ -14425,3 +14425,42 @@
 // </script>
 // </body>
 // </html>
+
+// class TodoList {
+//     constructor() {
+//         this.tasks = [];
+//     }
+//
+//     addTask(task) {
+//         this.tasks.push(task);
+//         console.log(`✅ Added: "${task}"`);
+//     }
+//
+//     removeTask(index) {
+//         if (index >= 0 && index < this.tasks.length) {
+//             console.log(`❌ Removed: "${this.tasks[index]}"`);
+//             this.tasks.splice(index, 1);
+//         } else {
+//             console.log("⚠️ Invalid task number.");
+//         }
+//     }
+//
+//     showTasks() {
+//         console.log("\n📌 Your To-Do List:");
+//         if (this.tasks.length === 0) {
+//             console.log("No tasks available.");
+//         } else {
+//             this.tasks.forEach((task, index) => {
+//                 console.log(`${index + 1}. ${task}`);
+//             });
+//         }
+//     }
+// }
+//
+// // Example usage:
+// const myTodo = new TodoList();
+// myTodo.addTask("Complete JavaScript project");
+// myTodo.addTask("Read about software testing");
+// myTodo.showTasks();
+// myTodo.removeTask(0);
+// myTodo.showTasks();
