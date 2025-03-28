@@ -14464,3 +14464,25 @@
 // myTodo.showTasks();
 // myTodo.removeTask(0);
 // myTodo.showTasks();
+
+// class QuoteGenerator {
+//     constructor() {
+//         this.quotes = [
+//             "The only limit to our realization of tomorrow is our doubts of today. — Franklin D. Roosevelt",
+//             "Success is not final, failure is not fatal: It is the courage to continue that counts. — Winston Churchill",
+//             "The future belongs to those who believe in the beauty of their dreams. — Eleanor Roosevelt",
+//             "Do what you can, with what you have, where you are. — Theodore Roosevelt",
+//             "You miss 100% of the shots you don’t take. — Wayne Gretzky",
+//         ];
+//     }
+//
+//     getRandomQuote() {
+//         const randomIndex = Math.floor(Math.random() * this.quotes.length);
+//         return this.quotes[randomIndex];
+//     }
+// }
+//
+// // Example usage:
+// const myQuoteGenerator = new QuoteGenerator();
+// console.log("📜 Your Quote for Today: ");
+// console.log(myQuoteGenerator.getRandomQuote());
