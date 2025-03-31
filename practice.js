@@ -14486,3 +14486,74 @@
 // const myQuoteGenerator = new QuoteGenerator();
 // console.log("📜 Your Quote for Today: ");
 // console.log(myQuoteGenerator.getRandomQuote());
+
+// const readline = require("readline");
+//
+// class ToDoList {
+//     constructor() {
+//         this.tasks = [];
+//     }
+//
+//     addTask(task) {
+//         this.tasks.push(task);
+//         console.log(`✅ Task added: "${task}"`);
+//     }
+//
+//     removeTask(index) {
+//         if (index >= 0 && index < this.tasks.length) {
+//             console.log(`🗑️ Task removed: "${this.tasks[index]}"`);
+//             this.tasks.splice(index, 1);
+//         } else {
+//             console.log("❌ Invalid task number.");
+//         }
+//     }
+//
+//     showTasks() {
+//         console.log("\n📋 Your To-Do List:");
+//         if (this.tasks.length === 0) {
+//             console.log("No tasks yet. Add some! ✨");
+//         } else {
+//             this.tasks.forEach((task, i) => console.log(`${i + 1}. ${task}`));
+//         }
+//     }
+// }
+//
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+//
+// const myToDoList = new ToDoList();
+//
+// const menu = () => {
+//     console.log("\n📌 Choose an option:");
+//     console.log("1️⃣ Add a task");
+//     console.log("2️⃣ Remove a task");
+//     console.log("3️⃣ Show tasks");
+//     console.log("4️⃣ Exit");
+//
+//     rl.question("> ", (choice) => {
+//         if (choice === "1") {
+//             rl.question("Enter task: ", (task) => {
+//                 myToDoList.addTask(task);
+//                 menu();
+//             });
+//         } else if (choice === "2") {
+//             rl.question("Enter task number to remove: ", (num) => {
+//                 myToDoList.removeTask(parseInt(num) - 1);
+//                 menu();
+//             });
+//         } else if (choice === "3") {
+//             myToDoList.showTasks();
+//             menu();
+//         } else if (choice === "4") {
+//             console.log("👋 Exiting. Have a productive day!");
+//             rl.close();
+//         } else {
+//             console.log("❌ Invalid choice. Try again.");
+//             menu();
+//         }
+//     });
+// };
+//
+// menu();
