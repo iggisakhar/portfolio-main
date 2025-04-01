@@ -14557,3 +14557,35 @@
 // };
 //
 // menu();
+
+// const readline = require("readline");
+//
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+//
+// function startCountdown(seconds) {
+//     console.log(`⏳ Countdown started for ${seconds} seconds...`);
+//
+//     const interval = setInterval(() => {
+//         if (seconds > 0) {
+//             console.log(`⏳ ${seconds} seconds remaining...`);
+//             seconds--;
+//         } else {
+//             console.log("🚀 Time's up!");
+//             clearInterval(interval);
+//             rl.close();
+//         }
+//     }, 1000);
+// }
+//
+// rl.question("Enter countdown time in seconds: ", (time) => {
+//     const seconds = parseInt(time);
+//     if (!isNaN(seconds) && seconds > 0) {
+//         startCountdown(seconds);
+//     } else {
+//         console.log("❌ Invalid input. Please enter a positive number.");
+//         rl.close();
+//     }
+// });
