@@ -14601,3 +14601,15 @@
 //
 // // Example usage:
 // console.log("Generated Password:", generatePassword(16));
+
+// const http = require('http');
+//
+// const server = http.createServer((req, res) => {
+//     res.writeHead(200, { 'Content-Type': 'text/plain' });
+//     res.end('Hello, world! This is a simple Node.js server.');
+// });
+//
+// const PORT = 3000;
+// server.listen(PORT, () => {
+//     console.log(`Server is running at http://localhost:${PORT}`);
+// });
