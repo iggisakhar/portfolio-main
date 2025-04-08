@@ -14613,3 +14613,16 @@
 // server.listen(PORT, () => {
 //     console.log(`Server is running at http://localhost:${PORT}`);
 // });
+
+// function getRandomColor() {
+//     const letters = '0123456789ABCDEF';
+//     return '#' + Array.from({length: 6})
+//         .map(() => letters[Math.floor(Math.random() * 16)])
+//         .join('');
+// }
+//
+// function changeBackgroundColor() {
+//     document.body.style.backgroundColor = getRandomColor();
+// }
+//
+// setInterval(changeBackgroundColor, 3000);
