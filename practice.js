@@ -14626,3 +14626,46 @@
 // }
 //
 // setInterval(changeBackgroundColor, 3000);
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+//     <title>Password Strength Checker</title>
+// <style>
+//     body { font-family: Arial, sans-serif; padding: 2rem; }
+//     #strength { font-weight: bold; margin-top: 0.5rem; }
+// </style>
+// </head>
+// <body>
+// <h2>Create a Password</h2>
+// <input type="password" id="password" placeholder="Enter password" />
+// <div id="strength">Strength: </div>
+//
+// <script src="strengthChecker.js"></script>
+// </body>
+// </html>
+//
+// const passwordInput = document.getElementById('password');
+// const strengthDisplay = document.getElementById('strength');
+//
+// passwordInput.addEventListener('input', () => {
+//     const value = passwordInput.value;
+//     let strength = 'Weak';
+//     const strongRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+//     const mediumRegex = /^(?=.*[a-z])(?=.*\d).{6,}$/;
+//
+//     if (strongRegex.test(value)) {
+//         strength = 'Strong';
+//         strengthDisplay.style.color = 'green';
+//     } else if (mediumRegex.test(value)) {
+//         strength = 'Medium';
+//         strengthDisplay.style.color = 'orange';
+//     } else {
+//         strength = 'Weak';
+//         strengthDisplay.style.color = 'red';
+//     }
+//
+//     strengthDisplay.textContent = `Strength: ${strength}`;
+// });
