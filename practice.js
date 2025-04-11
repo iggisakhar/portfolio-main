@@ -14669,3 +14669,42 @@
 //
 //     strengthDisplay.textContent = `Strength: ${strength}`;
 // });
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+//     <title>Dark Mode Toggle</title>
+// <style>
+//     body {
+//     transition: background 0.5s, color 0.5s;
+//     font-family: sans-serif;
+//     padding: 2rem;
+// }
+//     .dark {
+//     background: #121212;
+//     color: #f0f0f0;
+// }
+//     button {
+//     padding: 0.5rem 1rem;
+//     font-size: 1rem;
+//     border: none;
+//     cursor: pointer;
+//     border-radius: 8px;
+// }
+// </style>
+// </head>
+// <body>
+// <h1>Hello, World!</h1>
+// <p>This page supports dark mode toggle.</p>
+// <button id="toggleBtn">Toggle Dark Mode</button>
+//
+// <script src="toggle.js"></script>
+// </body>
+// </html>
+//
+// const toggleBtn = document.getElementById('toggleBtn');
+// toggleBtn.addEventListener('click', () => {
+//     document.body.classList.toggle('dark');
+// });
