@@ -14753,3 +14753,45 @@
 // </script>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <title>Color Switcher</title>
+// <style>
+//     body {
+//     font-family: sans-serif;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//     margin: 0;
+//     transition: background-color 0.5s ease;
+// }
+//
+//     button {
+//     padding: 1rem 2rem;
+//     font-size: 1.2rem;
+//     cursor: pointer;
+//     border: none;
+//     background: #333;
+//     color: #fff;
+//     border-radius: 8px;
+// }
+// </style>
+// </head>
+// <body>
+// <button onclick="changeColor()">Change Background</button>
+//
+// <script>
+//     const colors = ['#f9c74f', '#90be6d', '#f94144', '#577590', '#43aa8b'];
+//
+//     function changeColor() {
+//     const randomColor = colors[Math.floor(Math.random() * colors.length)];
+//     document.body.style.backgroundColor = randomColor;
+// }
+// </script>
+// </body>
+// </html>
