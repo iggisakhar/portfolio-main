@@ -14708,3 +14708,48 @@
 // toggleBtn.addEventListener('click', () => {
 //     document.body.classList.toggle('dark');
 // });
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+//     <title>Quote Generator</title>
+// <style>
+//     body {
+//     font-family: Arial, sans-serif;
+//     padding: 2rem;
+//     background: #f9f9f9;
+//     text-align: center;
+// }
+//     #quote {
+//     font-size: 1.5rem;
+//     margin-bottom: 1rem;
+// }
+//     button {
+//     padding: 0.5rem 1rem;
+//     font-size: 1rem;
+//     cursor: pointer;
+// }
+// </style>
+// </head>
+// <body>
+// <div id="quote">Click the button to get a quote!</div>
+// <button onclick="generateQuote()">New Quote</button>
+//
+// <script>
+//     const quotes = [
+//     "Stay hungry, stay foolish.",
+//     "Code is like humor. When you have to explain it, it’s bad.",
+//     "In the middle of difficulty lies opportunity.",
+//     "First, solve the problem. Then, write the code.",
+//     "Simplicity is the soul of efficiency."
+//     ];
+//
+//     function generateQuote() {
+//     const random = Math.floor(Math.random() * quotes.length);
+//     document.getElementById('quote').textContent = quotes[random];
+// }
+// </script>
+// </body>
+// </html>
