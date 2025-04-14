@@ -14795,3 +14795,63 @@
 // </script>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Quote of the Day</title>
+// <style>
+//     body {
+//     font-family: Georgia, serif;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//     margin: 0;
+//     background-color: #f4f4f4;
+//     color: #333;
+// }
+//
+//     .quote-box {
+//     max-width: 600px;
+//     padding: 2rem;
+//     background: white;
+//     border-radius: 12px;
+//     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+//     text-align: center;
+// }
+//
+//     .quote {
+//     font-size: 1.5rem;
+//     margin-bottom: 1rem;
+// }
+//
+//     .author {
+//     font-size: 1rem;
+//     color: #555;
+// }
+// </style>
+// </head>
+// <body>
+// <div class="quote-box">
+//     <div class="quote" id="quote"></div>
+//     <div class="author" id="author"></div>
+// </div>
+//
+// <script>
+//     const quotes = [
+//     { text: "Code is like humor. When you have to explain it, it’s bad.", author: "Cory House" },
+//     { text: "Simplicity is the soul of efficiency.", author: "Austin Freeman" },
+//     { text: "Programs must be written for people to read.", author: "Harold Abelson" },
+//     { text: "Experience is the name everyone gives to their mistakes.", author: "Oscar Wilde" },
+//     { text: "Fix the cause, not the symptom.", author: "Steve Maguire" }
+//     ];
+//
+//     const random = quotes[Math.floor(Math.random() * quotes.length)];
+//     document.getElementById('quote').textContent = `"${random.text}"`;
+//     document.getElementById('author').textContent = `– ${random.author}`;
+// </script>
+// </body>
+// </html>
