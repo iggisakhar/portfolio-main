@@ -14855,3 +14855,76 @@
 // </script>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <title>Mood Selector</title>
+// <style>
+//     body {
+//     font-family: 'Segoe UI', sans-serif;
+//     background: linear-gradient(135deg, #ece9e6, #ffffff);
+//     height: 100vh;
+//     margin: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+//
+//     .container {
+//     text-align: center;
+//     padding: 2rem;
+//     background: white;
+//     border-radius: 16px;
+//     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+// }
+//
+//     .mood {
+//     font-size: 2rem;
+//     margin: 1rem 0;
+//     color: #333;
+//     transition: all 0.3s ease;
+// }
+//
+//     button {
+//     padding: 0.75rem 1.5rem;
+//     font-size: 1rem;
+//     border: none;
+//     background-color: #4a90e2;
+//     color: white;
+//     border-radius: 8px;
+//     cursor: pointer;
+//     transition: background 0.3s ease;
+// }
+//
+//     button:hover {
+//     background-color: #357ABD;
+// }
+// </style>
+// </head>
+// <body>
+// <div class="container">
+//     <h1>How are you feeling today?</h1>
+//     <div class="mood" id="mood">Click below to find out</div>
+//     <button onclick="getMood()">Get My Mood</button>
+// </div>
+//
+// <script>
+//     const moods = [
+//     "Focused 🚀",
+//     "Inspired 🌟",
+//     "Curious 🔍",
+//     "Chill 😌",
+//     "Bold 🔥",
+//     "Optimistic ☀️",
+//     "Strategic 🎯"
+//     ];
+//
+//     function getMood() {
+//     const mood = moods[Math.floor(Math.random() * moods.length)];
+//     document.getElementById('mood').textContent = mood;
+// }
+// </script>
+// </body>
+// </html>
