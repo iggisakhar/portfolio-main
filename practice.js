@@ -14928,3 +14928,76 @@
 // </script>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <title>Quote Drop</title>
+// <style>
+//     body {
+//     background: #f5f7fa;
+//     font-family: 'Helvetica Neue', sans-serif;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+//
+//     .box {
+//     background: white;
+//     padding: 2rem;
+//     border-radius: 1rem;
+//     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+//     max-width: 400px;
+//     text-align: center;
+// }
+//
+//     .quote {
+//     font-size: 1.3rem;
+//     color: #333;
+//     margin-bottom: 1.5rem;
+//     transition: all 0.3s ease;
+//     min-height: 60px;
+// }
+//
+//     button {
+//     background: #111827;
+//     color: #fff;
+//     border: none;
+//     padding: 0.75rem 1.5rem;
+//     border-radius: 8px;
+//     font-size: 1rem;
+//     cursor: pointer;
+//     transition: background 0.3s ease;
+// }
+//
+//     button:hover {
+//     background: #374151;
+// }
+// </style>
+// </head>
+// <body>
+// <div class="box">
+//     <div class="quote" id="quote">Click below to be inspired</div>
+//     <button onclick="dropQuote()">New Quote</button>
+// </div>
+//
+// <script>
+//     const quotes = [
+//     "Work hard. Stay humble.",
+//     "Less code. More clarity.",
+//     "Think big. Start small.",
+//     "Simplicity is sophistication.",
+//     "Execution beats perfection.",
+//     "Built with heart, deployed with reason."
+//     ];
+//
+//     function dropQuote() {
+//     const random = Math.floor(Math.random() * quotes.length);
+//     document.getElementById("quote").textContent = quotes[random];
+// }
+// </script>
+// </body>
+// </html>
