@@ -15001,3 +15001,77 @@
 // </script>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Canvas Clock</title>
+// <style>
+//     html, body {
+//     margin: 0;
+//     height: 100%;
+//     background: #111;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+//     canvas {
+//     background: #111;
+// }
+// </style>
+// </head>
+// <body>
+// <canvas id="clock" width="300" height="300"></canvas>
+//
+// <script>
+//     const canvas = document.getElementById('clock');
+//     const ctx = canvas.getContext('2d');
+//     const radius = canvas.width / 2;
+//
+//     ctx.translate(radius, radius);
+//
+//     function drawClock() {
+//     ctx.clearRect(-radius, -radius, canvas.width, canvas.height);
+//     drawFace();
+//     drawTime();
+// }
+//
+//     function drawFace() {
+//     ctx.beginPath();
+//     ctx.arc(0, 0, radius - 5, 0, 2 * Math.PI);
+//     ctx.fillStyle = '#222';
+//     ctx.fill();
+//
+//     ctx.strokeStyle = '#fff';
+//     ctx.lineWidth = 4;
+//     ctx.stroke();
+// }
+//
+//     function drawTime() {
+//     const now = new Date();
+//     const hour = now.getHours() % 12;
+//     const minute = now.getMinutes();
+//     const second = now.getSeconds();
+//
+//     drawHand(((hour + minute / 60) * 30) * Math.PI / 180, radius * 0.5, 6);
+//     drawHand((minute * 6) * Math.PI / 180, radius * 0.8, 4);
+//     drawHand((second * 6) * Math.PI / 180, radius * 0.9, 2, '#f00');
+// }
+//
+//     function drawHand(angle, length, width, color = '#fff') {
+//     ctx.beginPath();
+//     ctx.lineWidth = width;
+//     ctx.lineCap = 'round';
+//     ctx.strokeStyle = color;
+//     ctx.moveTo(0, 0);
+//     ctx.rotate(angle);
+//     ctx.lineTo(0, -length);
+//     ctx.stroke();
+//     ctx.rotate(-angle);
+// }
+//
+//     setInterval(drawClock, 1000);
+// </script>
+// </body>
+// </html>
