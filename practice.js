@@ -15075,3 +15075,65 @@
 // </script>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="kk">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Күн сайын бір ой</title>
+// <style>
+//     body {
+//     font-family: sans-serif;
+//     background: linear-gradient(120deg, #222, #444);
+//     color: #fff;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//     flex-direction: column;
+// }
+//     .quote-box {
+//     background: #333;
+//     padding: 30px;
+//     border-radius: 15px;
+//     max-width: 500px;
+//     text-align: center;
+//     box-shadow: 0 0 15px rgba(255,255,255,0.2);
+// }
+//     button {
+//     margin-top: 20px;
+//     padding: 10px 20px;
+//     border: none;
+//     background: #00bfa5;
+//     color: #fff;
+//     font-size: 16px;
+//     cursor: pointer;
+//     border-radius: 10px;
+// }
+// </style>
+// </head>
+// <body>
+// <div class="quote-box">
+//     <p id="quote">Бүгінгі ой осында пайда болады...</p>
+//     <button onclick="newQuote()">Жаңа ой</button>
+// </div>
+//
+// <script>
+//     const quotes = [
+//     "Ең үлкен жеңіс – өзіңді жеңу.",
+//     "Бастысы – бастаудан қорықпау.",
+//     "Кішкентай қадам – үлкен өзгерістердің бастауы.",
+//     "Ақылды адам – әр күннен жаңа сабақ алатын адам.",
+//     "Уақыт – ең әділ байлық: ол бәріне тең бөлінеді.",
+//     "Keep going. Everything you need will come to you.",
+//     "Discipline is doing it even when no one is watching.",
+//     "Your future is created by what you do today."
+//     ];
+//
+//     function newQuote() {
+//     const quote = quotes[Math.floor(Math.random() * quotes.length)];
+//     document.getElementById('quote').textContent = quote;
+// }
+// </script>
+// </body>
+// </html>
