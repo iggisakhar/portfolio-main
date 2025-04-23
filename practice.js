@@ -15195,3 +15195,59 @@
 // </script>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Nature Sound Room</title>
+// <style>
+//     body {
+//     background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
+//     background-size: cover;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     font-family: sans-serif;
+//     color: white;
+//     text-shadow: 1px 1px 5px #000;
+//     flex-direction: column;
+// }
+//
+//     button {
+//     padding: 15px 30px;
+//     font-size: 18px;
+//     margin-top: 20px;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+// }
+//
+//     button:hover {
+//     background-color: rgba(0, 0, 0, 0.8);
+// }
+// </style>
+// </head>
+// <body>
+// <h1>Relax with Nature</h1>
+// <button onclick="toggleSound()">Play / Pause Sound</button>
+//
+// <audio id="nature" loop>
+//     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-17.mp3" type="audio/mpeg">
+//         Your browser does not support the audio element.
+// </audio>
+//
+// <script>
+//     const audio = document.getElementById('nature');
+//     function toggleSound() {
+//     if (audio.paused) {
+//     audio.play();
+// } else {
+//     audio.pause();
+// }
+// }
+// </script>
+// </body>
+// </html>
