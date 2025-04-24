@@ -15251,3 +15251,55 @@
 // </script>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="kk">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Күн мен Түн Темасы</title>
+// <style>
+//     body {
+//     margin: 0;
+//     font-family: sans-serif;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//     transition: background-color 0.5s, color 0.5s;
+// }
+//
+//     .day {
+//     background-color: #fdf6e3;
+//     color: #333;
+// }
+//
+//     .night {
+//     background-color: #1a1a2e;
+//     color: #f0f0f0;
+// }
+//
+//     button {
+//     padding: 10px 25px;
+//     font-size: 18px;
+//     margin-top: 20px;
+//     cursor: pointer;
+//     background-color: transparent;
+//     border: 2px solid currentColor;
+//     border-radius: 8px;
+// }
+// </style>
+// </head>
+// <body class="day">
+// <h1>Күн мен Түн</h1>
+// <button onclick="toggleTheme()">Тақырыпты Ауыстыру</button>
+//
+// <script>
+//     function toggleTheme() {
+//     document.body.classList.toggle('night');
+//     document.body.classList.toggle('day');
+// }
+// </script>
+// </body>
+// </html>
+
