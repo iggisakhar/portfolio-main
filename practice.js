@@ -15303,3 +15303,37 @@
 // </body>
 // </html>
 
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Breathing Loader</title>
+// <style>
+//     body {
+//     background: #111;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+//
+//     .circle {
+//     width: 50px;
+//     height: 50px;
+//     border-radius: 50%;
+//     background: linear-gradient(135deg, #00c6ff, #0072ff);
+//     animation: breathe 3s ease-in-out infinite;
+// }
+//
+//     @keyframes breathe {
+//     0% { transform: scale(1); opacity: 0.6; }
+//     50% { transform: scale(1.5); opacity: 1; }
+//     100% { transform: scale(1); opacity: 0.6; }
+// }
+// </style>
+// </head>
+// <body>
+// <div class="circle"></div>
+// </body>
+// </html>
