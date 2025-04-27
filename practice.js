@@ -15337,3 +15337,67 @@
 // <div class="circle"></div>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Random Quote Generator</title>
+// <style>
+//     body {
+//     background: #f0f0f0;
+//     font-family: 'Segoe UI', sans-serif;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+//     .quote-box {
+//     background: white;
+//     padding: 30px 40px;
+//     border-radius: 8px;
+//     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+//     text-align: center;
+//     max-width: 400px;
+// }
+//     button {
+//     margin-top: 20px;
+//     padding: 10px 20px;
+//     background: #0072ff;
+//     color: white;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     font-size: 16px;
+// }
+//     button:hover {
+//     background: #0055cc;
+// }
+// </style>
+// </head>
+// <body>
+//
+// <div class="quote-box">
+//     <p id="quote">Click the button to get inspired!</p>
+//     <button onclick="newQuote()">New Quote</button>
+// </div>
+//
+// <script>
+//     const quotes = [
+//     "Believe you can and you're halfway there.",
+//     "Stay hungry, stay foolish.",
+//     "The best time to start was yesterday. The next best time is now.",
+//     "Dream big and dare to fail.",
+//     "Action is the foundational key to all success."
+//     ];
+//
+//     function newQuote() {
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     document.getElementById('quote').innerText = quotes[randomIndex];
+// }
+// </script>
+//
+// </body>
+// </html>
