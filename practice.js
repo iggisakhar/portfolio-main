@@ -15478,3 +15478,93 @@
 //
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Simple To-Do List</title>
+// <style>
+//     body {
+//     font-family: Arial, sans-serif;
+//     background-color: #fce4ec;
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-start;
+//     padding: 50px;
+// }
+//     .to do-container {
+//     background: #ffffff;
+//     padding: 30px;
+//     border-radius: 10px;
+//     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+//     width: 300px;
+// }
+//     input[type="text"] {
+//     width: 100%;
+//     padding: 10px;
+//     margin-bottom: 10px;
+//     box-sizing: border-box;
+// }
+//     button {
+//     width: 100%;
+//     padding: 10px;
+//     background-color: #ec407a;
+//     border: none;
+//     color: white;
+//     font-weight: bold;
+//     cursor: pointer;
+//     border-radius: 5px;
+// }
+//     button:hover {
+//     background-color: #d81b60;
+// }
+//     ul {
+//     list-style: none;
+//     padding: 0;
+//     margin-top: 20px;
+// }
+//     li {
+//     background: #f8bbd0;
+//     padding: 8px;
+//     margin-bottom: 5px;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+//     li.completed {
+//     text-decoration: line-through;
+//     color: gray;
+// }
+// </style>
+// </head>
+// <body>
+//
+// <div class="to do-container">
+//     <h2>My To-Do List</h2>
+//     <input type="text" id="taskInput" placeholder="New task...">
+//         <button onclick="addTask()">Add Task</button>
+//         <ul id="taskList"></ul>
+// </div>
+//
+// <script>
+//     function addTask() {
+//     const taskInput = document.getElementById('taskInput');
+//     const taskList = document.getElementById('taskList');
+//
+//     if (taskInput.value.trim() === '') {
+//     alert('Please enter a task!');
+//     return;
+// }
+//
+//     const li = document.createElement('li');
+//     li.textContent = taskInput.value;
+//     li.onclick = function() {
+//     li.classList.toggle('completed');
+// };
+//     taskList.appendChild(li);
+//     taskInput.value = '';
+// }
+// </script>
+//
+// </body>
+// </html>
