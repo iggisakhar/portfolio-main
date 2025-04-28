@@ -15401,3 +15401,80 @@
 //
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Number Guessing Game</title>
+// <style>
+//     body {
+//     font-family: Arial, sans-serif;
+//     background: #e0f7fa;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100vh;
+//     margin: 0;
+// }
+//     .game {
+//     background: white;
+//     padding: 30px;
+//     border-radius: 10px;
+//     box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//     text-align: center;
+// }
+//     input {
+//     padding: 10px;
+//     width: 50px;
+//     text-align: center;
+//     margin-top: 10px;
+// }
+//     button {
+//     padding: 10px 20px;
+//     margin-top: 10px;
+//     background: #00796b;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+//     button:hover {
+//     background: #004d40;
+// }
+//     p {
+//     margin-top: 20px;
+//     font-weight: bold;
+// }
+// </style>
+// </head>
+// <body>
+//
+// <div class="game">
+//     <h2>Guess a number between 1 and 10</h2>
+//     <input type="number" id="guess" min="1" max="10">
+//         <br>
+//             <button onclick="checkGuess()">Submit</button>
+//             <p id="message"></p>
+// </div>
+//
+// <script>
+//     const randomNumber = Math.floor(Math.random() * 10) + 1;
+//
+//     function checkGuess() {
+//     const userGuess = parseInt(document.getElementById('guess').value);
+//     const message = document.getElementById('message');
+//
+//     if (userGuess === randomNumber) {
+//     message.textContent = "Congratulations! You guessed it!";
+//     message.style.color = "green";
+// } else {
+//     message.textContent = "Wrong guess. Try again!";
+//     message.style.color = "red";
+// }
+// }
+// </script>
+//
+// </body>
+// </html>
