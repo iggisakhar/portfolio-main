@@ -15568,3 +15568,67 @@
 //
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Quote of the Day</title>
+// <style>
+//     body {
+//     font-family: sans-serif;
+//     background-color: #e3f2fd;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+// }
+//     .quote-box {
+//     background-color: #ffffff;
+//     padding: 30px;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+//     text-align: center;
+//     max-width: 400px;
+// }
+//     #quote {
+//     font-size: 1.2em;
+//     margin-bottom: 20px;
+// }
+//     button {
+//     padding: 10px 20px;
+//     background-color: #2196f3;
+//     border: none;
+//     color: white;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+//     button:hover {
+//     background-color: #1976d2;
+// }
+// </style>
+// </head>
+// <body>
+//
+// <div class="quote-box">
+//     <div id="quote">Click below for a quote!</div>
+//     <button onclick="showQuote()">New Quote</button>
+// </div>
+//
+// <script>
+//     const quotes = [
+//     "Stay hungry, stay foolish. – Steve Jobs",
+//     "Do what you can, with what you have. – Theodore Roosevelt",
+//     "Everything you can imagine is real. – Picasso",
+//     "Success is not final, failure is not fatal. – Churchill",
+//     "Believe you can and you're halfway there. – Roosevelt"
+//     ];
+//
+//     function showQuote() {
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     document.getElementById('quote').textContent = quotes[randomIndex];
+// }
+// </script>
+//
+// </body>
+// </html>
