@@ -15632,3 +15632,99 @@
 //
 // </body>
 // </html>
+
+// function areAllStringsStartWithCapital(arr){
+//     return arr.every(str => {
+//         return str.length > 0 && str[0] === str[0].toUpperCase();
+//     });
+// }
+
+// function areAllAdults(users){
+//     return users.every(user => user.age >= 18);
+// }
+
+// function areAllStringsSameLength(arr){
+//     const strings = arr.filter(item => typeof item === 'string');
+//     if(strings.length <= 1) return true;
+//     const firstLength = strings[0].length;
+//     return strings.every(str => str.length === firstLength);
+// }
+
+// function doAllObjectsContainValues(objects, values){
+//     if(!objects || objects.length === 0) return false;
+//     return objects.every(obj => {
+//         const objValues = Object.values(obj);
+//         return objValues.some(val => values.includes(val));
+//     });
+// }
+
+// function areAllSubArraysNonNegative(arr){
+//     for(const element of arr){
+//         if(Array.isArray(element)){
+//             for(const num of element){
+//                 if(typeof num === 'number' && num < 0){
+//                     return 'Negative number was found'
+//                 }
+//             }
+//         }
+//     }
+//     return 'No negative in subArrays';
+// }
+
+// function areAllObjectValuesAboveThreshold(objects, threshold) {
+//     // Проверяем, что массив объектов не пустой
+//     if (!objects || objects.length === 0) return false;
+//
+//     // Проверяем каждый объект в массиве
+//     return objects.every(obj => {
+//         // Получаем все значения свойств объекта
+//         const values = Object.values(obj);
+//
+//         // Если объект пустой, считаем его невалидным
+//         if (values.length === 0) return false;
+//
+//         // Проверяем все числовые значения объекта
+//         return values.every(value => {
+//             // Если значение - число, проверяем его на порог
+//             if (typeof value === 'number' && !isNaN(value)) {
+//                 return value > threshold;
+//             }
+//             // Нечисловые значения игнорируем (можно изменить на false для строгой проверки)
+//             return true;
+//         });
+//     });
+// }
+
+// function areAllStringsContainingUpperCase(arr) {
+//     // Проверяем каждую строку в массиве
+//     return arr.every(str => {
+//         // Проверяем, что строка содержит хотя бы одну заглавную букву
+//         return /[A-ZА-ЯЁ]/.test(str);
+//     });
+// }
+
+// function areAllNestedObjectsContainKeyWithType(objects, key, valueType) {
+//     // Проверяем каждый объект в массиве
+//     return objects.every(obj => {
+//         // Функция для рекурсивного поиска ключа в объекте
+//         function checkKeyInObject(currentObj) {
+//             // Проверяем текущий уровень объекта
+//             if (currentObj.hasOwnProperty(key) && typeof currentObj[key] === valueType) {
+//                 return true;
+//             }
+//
+//             // Проверяем вложенные объекты
+//             for (const prop in currentObj) {
+//                 if (typeof currentObj[prop] === 'object' && currentObj[prop] !== null) {
+//                     if (checkKeyInObject(currentObj[prop])) {
+//                         return true;
+//                     }
+//                 }
+//             }
+//
+//             return false;
+//         }
+//
+//         return checkKeyInObject(obj);
+//     });
+// }
