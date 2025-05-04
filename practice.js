@@ -15728,3 +15728,29 @@
 //         return checkKeyInObject(obj);
 //     });
 // }
+
+// function areAllElementsContainUniqueChars(arr, minUniqueChars){
+//     return arr.every(str => {
+//         const uniqueChars = new Set(str);
+//         return uniqueChars.size >= minUniqueChars;
+//     });
+// }
+
+// function hasNegativeNumbers(arr){
+//     return arr.some(number => number < 0);
+// }
+
+// function hasLongWords(arr){
+//     return arr.some(str => str.length > 5);
+// }
+
+// function hasObjectWithProperty(arr, propName){
+//     return arr.some(obj => obj.hasOwnProperty(propName));
+// }
+
+// function hasObjectWithValue(arr, searchValue){
+//     return arr.some(obj => {
+//         return Object.values(obj).includes(searchValue);
+//     });
+// }
+
