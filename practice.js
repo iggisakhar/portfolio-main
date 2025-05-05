@@ -15754,3 +15754,36 @@
 //     });
 // }
 
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Quote of the Day</title>
+// <style>
+//     body { font-family: sans-serif; padding: 2rem; background: #f4f4f4; }
+//     .quote-box { background: white; padding: 1rem 2rem; border-radius: 8px; max-width: 500px; margin: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+//     .quote { font-size: 1.5rem; }
+//     .author { text-align: right; margin-top: 1rem; font-style: italic; }
+// </style>
+// </head>
+// <body>
+// <div class="quote-box">
+//     <div class="quote" id="quoteText"></div>
+//     <div class="author" id="quoteAuthor"></div>
+// </div>
+//
+// <script>
+//     const quotes = [
+//     { text: "Code is like humor. When you have to explain it, it’s bad.", author: "Cory House" },
+//     { text: "Simplicity is the soul of efficiency.", author: "Austin Freeman" },
+//     { text: "Before software can be reusable it first has to be usable.", author: "Ralph Johnson" },
+//     { text: "Make it work, make it right, make it fast.", author: "Kent Beck" }
+//     ];
+//
+//     const quote = quotes[Math.floor(Math.random() * quotes.length)];
+//
+//     document.getElementById("quoteText").textContent = `"${quote.text}"`;
+//     document.getElementById("quoteAuthor").textContent = `– ${quote.author}`;
+// </script>
+// </body>
+// </html>
