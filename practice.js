@@ -15787,3 +15787,42 @@
 // </script>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Task Tracker</title>
+// <style>
+//     body { font-family: Arial; padding: 2rem; background-color: #f7f7f7; }
+//     h2 { text-align: center; }
+//     ul { list-style: none; padding: 0; }
+//     li { padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer; }
+//     li.completed { text-decoration: line-through; color: gray; }
+//     input { padding: 10px; width: 70%; }
+//     button { padding: 10px; }
+// </style>
+// </head>
+// <body>
+// <h2>Simple Task Tracker</h2>
+// <div style="text-align:center;">
+//     <input type="text" id="taskInput" placeholder="Enter task..." />
+//     <button onclick="addTask()">Add</button>
+// </div>
+// <ul id="taskList"></ul>
+//
+// <script>
+//     const taskInput = document.getElementById("taskInput");
+//     const taskList = document.getElementById("taskList");
+//
+//     function addTask() {
+//     if (taskInput.value.trim() === "") return;
+//     const li = document.createElement("li");
+//     li.textContent = taskInput.value;
+//     li.onclick = () => li.classList.toggle("completed");
+//     taskList.appendChild(li);
+//     taskInput.value = "";
+// }
+// </script>
+// </body>
+// </html>
