@@ -15826,3 +15826,81 @@
 // </script>
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Random Quote Generator</title>
+// <style>
+//     body { font-family: Arial, sans-serif; background-color: #f0f8ff; text-align: center; padding: 50px; }
+//     #quote-box { background: white; padding: 20px; border-radius: 10px; display: inline-block; }
+//     #quote { font-size: 1.5em; margin-bottom: 20px; }
+//     button { padding: 10px 20px; font-size: 1em; cursor: pointer; }
+// </style>
+// </head>
+// <body>
+// <div id="quote-box">
+//     <div id="quote">Click the button to see a quote!</div>
+//     <button onclick="generateQuote()">New Quote</button>
+// </div>
+//
+// <script>
+//     const quotes = [
+//     "Success usually comes to those who are too busy to be looking for it.",
+//     "Don’t be afraid to give up the good to go for the great.",
+//     "Opportunities don't happen. You create them.",
+//     "Try not to become a man of success. Rather become a man of value.",
+//     "It is better to fail in originality than to succeed in imitation."
+//     ];
+//
+//     function generateQuote() {
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     document.getElementById('quote').textContent = quotes[randomIndex];
+// }
+// </script>
+// </body>
+// </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <title>Live Character Counter</title>
+// <style>
+//     body {
+//     font-family: sans-serif;
+//     padding: 40px;
+//     background: #f9f9f9;
+//     text-align: center;
+// }
+//     textarea {
+//     width: 300px;
+//     height: 100px;
+//     padding: 10px;
+//     font-size: 16px;
+// }
+//     .counter {
+//     margin-top: 10px;
+//     font-weight: bold;
+// }
+// </style>
+// </head>
+// <body>
+//
+// <h2>🧮 Character Counter</h2>
+// <textarea id="textInput" placeholder="Start typing..."></textarea>
+// <div class="counter" id="counter">0 characters</div>
+//
+// <script>
+//     const input = document.getElementById('textInput');
+//     const counter = document.getElementById('counter');
+//
+//     input.addEventListener('input', () => {
+//     const count = input.value.length;
+//     counter.textContent = `${count} character${count !== 1 ? 's' : ''}`;
+// });
+// </script>
+//
+// </body>
+// </html>
