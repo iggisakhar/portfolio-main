@@ -15904,3 +15904,76 @@
 //
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Random Quote Generator</title>
+// <style>
+//     body {
+//     font-family: 'Arial', sans-serif;
+//     background-color: #eef;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     flex-direction: column;
+// }
+//     #quote-box {
+//     background: white;
+//     padding: 20px 30px;
+//     border-radius: 8px;
+//     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+//     text-align: center;
+// }
+//     #quote {
+//     font-size: 1.2em;
+//     margin-bottom: 10px;
+// }
+//     #author {
+//     font-style: italic;
+//     color: #555;
+// }
+//     button {
+//     margin-top: 15px;
+//     padding: 10px 20px;
+//     background: #3366cc;
+//     color: white;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+// }
+//     button:hover {
+//     background: #254b9c;
+// }
+// </style>
+// </head>
+// <body>
+//
+// <div id="quote-box">
+//     <div id="quote">Loading...</div>
+//     <div id="author"></div>
+//     <button onclick="generateQuote()">New Quote</button>
+// </div>
+//
+// <script>
+//     const quotes = [
+//     { quote: "Do or do not. There is no try.", author: "Yoda" },
+//     { quote: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
+//     { quote: "Stay hungry, stay foolish.", author: "Steve Jobs" },
+//     { quote: "Success is not final, failure is not fatal.", author: "Winston Churchill" },
+//     { quote: "Be yourself; everyone else is already taken.", author: "Oscar Wilde" }
+//     ];
+//
+//     function generateQuote() {
+//     const random = quotes[Math.floor(Math.random() * quotes.length)];
+//     document.getElementById('quote').textContent = `"${random.quote}"`;
+//     document.getElementById('author').textContent = `— ${random.author}`;
+// }
+//
+//     generateQuote(); // call on load
+// </script>
+//
+// </body>
+// </html>
