@@ -15977,3 +15977,60 @@
 //
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Palindrome Number Checker</title>
+// <style>
+//     body {
+//     font-family: sans-serif;
+//     background: #f0f0f5;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     flex-direction: column;
+// }
+//     input {
+//     padding: 10px;
+//     font-size: 1em;
+//     margin-bottom: 10px;
+// }
+//     button {
+//     padding: 10px 20px;
+//     background: #4CAF50;
+//     color: white;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+// }
+//     button:hover {
+//     background: #388E3C;
+// }
+//     #result {
+//     margin-top: 15px;
+//     font-weight: bold;
+// }
+// </style>
+// </head>
+// <body>
+//
+// <h2>Is it a Palindromic Number?</h2>
+// <input type="number" id="numberInput" placeholder="Enter a number" />
+// <button onclick="checkPalindrome()">Check</button>
+// <div id="result"></div>
+//
+// <script>
+//     function checkPalindrome() {
+//     const num = document.getElementById('numberInput').value;
+//     const reversed = num.split('').reverse().join('');
+//     const isPalindrome = num === reversed;
+//     document.getElementById('result').textContent =
+//     isPalindrome ? `${num} is a palindrome.` : `${num} is not a palindrome.`;
+// }
+// </script>
+//
+// </body>
+// </html>
