@@ -16034,3 +16034,76 @@
 //
 // </body>
 // </html>
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <title>Random Quote Generator</title>
+// <style>
+//     body {
+//     font-family: Arial, sans-serif;
+//     background: #f7f9fc;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     flex-direction: column;
+//     color: #333;
+// }
+//     .quote-box {
+//     max-width: 600px;
+//     text-align: center;
+//     padding: 20px;
+//     background: white;
+//     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+//     border-radius: 10px;
+//     opacity: 0;
+//     transition: opacity 0.5s ease-in-out;
+// }
+//     .quote-box.show {
+//     opacity: 1;
+// }
+//     button {
+//     margin-top: 20px;
+//     padding: 10px 20px;
+//     background: #007BFF;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+//     button:hover {
+//     background: #0056b3;
+// }
+// </style>
+// </head>
+// <body>
+//
+// <div class="quote-box" id="quoteBox">
+//     Click the button to see a quote!
+// </div>
+// <button onclick="showQuote()">New Quote</button>
+//
+// <script>
+//     const quotes = [
+//     "Code is like humor. When you have to explain it, it’s bad.",
+//     "Experience is the name everyone gives to their mistakes. – Oscar Wilde",
+//     "In order to be irreplaceable, one must always be different. – Coco Chanel",
+//     "Talk is cheap. Show me the code. – Linus Torvalds",
+//     "The best error message is the one that never shows up."
+//     ];
+//
+//     function showQuote() {
+//     const box = document.getElementById('quoteBox');
+//     box.classList.remove('show');
+//     setTimeout(() => {
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     box.textContent = quotes[randomIndex];
+//     box.classList.add('show');
+// }, 300);
+// }
+// </script>
+//
+// </body>
+// </html>
