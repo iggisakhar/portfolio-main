@@ -16123,3 +16123,19 @@
 //     await page.click('#loginButton');
 //     await expect(page).toHaveURL(/.*dashboard/); // мысалы: https://example.com/dashboard
 // });
+
+// const { test, expect } = require('@playwright/test');
+//
+// test('Login form validation test', async ({ page }) => {
+//     await page.goto('https://example.com/login');
+//
+//     // Тек бір өріс толтырылмаған кезде
+//     await page.fill('#username', 'qauser');
+//     await page.click('#loginButton');
+//     await expect(page.locator('.error')).toHaveText('Password is required');
+//
+//     // Барлық өрістер толтырылған кезде
+//     await page.fill('#password', 'correctpassword');
+//     await page.click('#loginButton');
+//     await expect(page).toHaveURL(/.*dashboard/); // мысалы: https://example.com/dashboard
+// });
