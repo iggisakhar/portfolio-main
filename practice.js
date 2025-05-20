@@ -16139,3 +16139,39 @@
 //     await page.click('#loginButton');
 //     await expect(page).toHaveURL(/.*dashboard/); // мысалы: https://example.com/dashboard
 // });
+
+// <canvas id="shineCanvas"></canvas>
+// <script>
+//     const canvas = document.getElementById('shineCanvas');
+//     const ctx = canvas.getContext('2d');
+//
+//     canvas.width = window.innerWidth;
+//     canvas.height = window.innerHeight;
+//
+//     let stars = [];
+//
+//     for (let i = 0; i < 200; i++) {
+//     stars.push({
+//         x: Math.random() * canvas.width,
+//         y: Math.random() * canvas.height,
+//         radius: Math.random() * 1.5,
+//         alpha: Math.random(),
+//         delta: Math.random() * 0.02
+//     });
+// }
+//
+//     function draw() {
+//     ctx.clearRect(0, 0, canvas.width, canvas.height);
+//     for (let star of stars) {
+//     ctx.beginPath();
+//     ctx.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);
+//     ctx.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
+//     ctx.fill();
+//     star.alpha += star.delta;
+//     if (star.alpha <= 0 || star.alpha >= 1) star.delta = -star.delta;
+// }
+//     requestAnimationFrame(draw);
+// }
+//
+//     draw();
+// </script>
