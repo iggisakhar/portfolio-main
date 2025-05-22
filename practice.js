@@ -16175,3 +16175,69 @@
 //
 //     draw();
 // </script>
+
+// function hasElementSatisfyingCondition(arr, condition) {
+//     // Проверяем, что условие является объектом с нужными свойствами
+//     if (!condition || typeof condition !== 'object' || !condition.type || !('value' in condition)) {
+//         return false;
+//     }
+//
+//     return arr.some(element => {
+//         switch (condition.type) {
+//             case 'number':
+//                 // Проверяем, что элемент - число и больше порога
+//                 return typeof element === 'number' && element > condition.value;
+//
+//             case 'string':
+//                 // Проверяем, что элемент - строка и содержит подстроку
+//                 return typeof element === 'string' && element.includes(condition.value);
+//
+//             case 'object':
+//                 // Проверяем, что элемент - объект (не null) и содержит указанный ключ
+//                 return typeof element === 'object' && element !== null &&
+//                     condition.value in element;
+//
+//             default:
+//                 // Неизвестный тип условия
+//                 return false;
+//         }
+//     });
+// }
+
+// function hasProcessedString(arr, conditions) {
+//     return arr.some(str => {
+//         // Обрабатываем строку: удаляем пробелы и приводим к нижнему регистру
+//         const processedStr = str.replace(/\s/g, '').toLowerCase();
+//
+//         // Проверяем условия
+//         const lengthCondition = processedStr.length >= conditions.minLength;
+//         const containsCondition = processedStr.includes(conditions.contains.toLowerCase());
+//
+//         return lengthCondition && containsCondition;
+//     });
+// }
+
+// function hasNumberWithProperties(numbers, conditions) {
+//     return numbers.some(num => {
+//         const roundedNum = Math.round(num);
+//
+//         if (roundedNum > 0) {
+//             return conditions.positive !== undefined &&
+//                 conditions.positive !== 0 &&
+//                 roundedNum % conditions.positive === 0;
+//         } else if (roundedNum < 0) {
+//             return conditions.negative !== undefined &&
+//                 conditions.negative !== 0 &&
+//                 roundedNum % conditions.negative === 0;
+//         }
+//         // Обрабатываем ноль отдельно
+//         return (conditions.positive !== undefined && 0 % conditions.positive === 0) ||
+//             (conditions.negative !== undefined && 0 % conditions.negative === 0);
+//     });
+// }
+
+// function hasArrayWithTargetNumbers(arraysOfNumbers, ...targetNumbers){
+//     return arraysOfNumbers.some(array => {
+//         return array.some(number => targetNumbers.includes(number));
+//     });
+// }
