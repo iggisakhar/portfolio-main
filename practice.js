@@ -16241,3 +16241,29 @@
 //         return array.some(number => targetNumbers.includes(number));
 //     });
 // }
+
+// function hasStringWithCharacters(strings, conditions){
+//     return strings.some(str => {
+//         const processedStr = str.replace(/\s/g, '');
+//         if(processedStr.length < conditions.minLength){
+//             return false;
+//         }
+//         return conditions.requiredChars.every(char =>
+//             processedStr.includes(char));
+//     });
+// }
+
+// function hasArrayWithMinTypesCount(...arrays){
+//     const minCount = typeof arguments[arguments.length -1] === 'number' ? arguments[arguments.length -1] : 0;
+//     return arrays.some((arr, index) => {
+//         if(index === arrays.length -1 && typeof arr === 'number') return false;
+//
+//         const typeCounts = {};
+//         arr.forEach(element => {
+//             const type = typeof element;
+//             typeCounts[type] = (typeCounts[type] || 0) + 1;
+//         });
+//         return Object.values(typeCounts).some(count => count >= minCount);
+//     });
+// }
+
