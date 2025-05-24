@@ -16293,3 +16293,29 @@
 //     return arr.slice(-2);
 // }
 
+// function getMiddleElements(arr){
+//     return arr.slice(-3, -1);
+// }
+
+// function getUniqueElementsAfterIndex(arr, index){
+//     if(index < 0 || index >= arr.length) return [];
+//     const subArray = arr.slice(index);
+//     const uniqueElements = new Set(subArray);
+//     return Array.from(uniqueElements);
+// }
+
+// function getUniqueElementsAfterIndex(arr, index) {
+//     if (index < 0 || index >= arr.length) return [];
+//
+//     const subArray = arr.slice(index);
+//
+//     const uniqueSet = new Set(subArray);
+//
+//     return Array.from(uniqueSet);
+// }
+
+// function getUpperCaseSlice(arr, startIndex, endIndex){
+//     const subArray = arr.slice(startIndex, endIndex);
+//     return subArray.map(item => item.toUpperCase());
+// }
+
