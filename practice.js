@@ -16267,3 +16267,29 @@
 //     });
 // }
 
+// const fruits = ['apple', 'banana', 'cherry', 'date', 'fig'];
+// const citrus = fruits.slice(1, 3);
+//
+// console.log(fruits); // ['apple', 'banana', 'cherry', 'date', 'fig']
+// console.log(citrus); // ['banana', 'cherry']
+// Использование отрицательных индексов:
+//
+//     const fruits = ['apple', 'banana', 'cherry', 'date', 'fig'];
+// const lastTwo = fruits.slice(-2);
+//
+// console.log(lastTwo); // ['date', 'fig']
+// Копирование всего массива:
+//
+//     const fruits = ['apple', 'banana', 'cherry', 'date', 'fig'];
+// const allFruits = fruits.slice();
+//
+// console.log(allFruits); // ['apple', 'banana', 'cherry', 'date', 'fig']
+
+// function getFirstThreeElements(arr){
+//     return arr.slice(0, 3);
+// }
+
+// function getLastTwoElements(arr){
+//     return arr.slice(-2);
+// }
+
