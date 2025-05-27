@@ -1,20 +1,22 @@
-# Portfolio – Igor Sakhar
+# JavaScript Developer Portfolio
 
-Welcome to my JavaScript portfolio.  
-Here you’ll find my most relevant work, focused on real-world problems and clean, maintainable code.
+Hi! I'm Igor, a JavaScript developer with 5 years of experience (2+ years hands-on).  
+I love building web apps that make life easier and experiences more meaningful.
+
+## 💼 What’s inside
+This repository contains my portfolio code — responsive, clean, and scalable.  
+It reflects my journey, projects, and technical skills.
 
 ## 🛠️ Tech Stack
 - JavaScript (ES6+)
-- HTML, CSS
+- React
 - Node.js
-- Express.js
-- MongoDB
+- HTML5, CSS3
 - Git & GitHub
 
-## 📁 Projects in this repo
-- **Landing Page**: A responsive portfolio website (HTML/CSS/JS)
-- **REST API Example**: Basic CRUD API with Express.js
-- **Todo App**: Frontend app with local storage
-- **Weather App**: Fetches weather data using external API
-
-## 📎 Structure
+## 🚀 How to run
+```bash
+git clone https://github.com/iggisakhar/portfolio-main.git
+cd portfolio-main
+npm install
+npm start
