@@ -1,6 +1,6 @@
 # JavaScript Developer Portfolio
 
-Hi! I'm Igor, a JavaScript developer with 5 years of experience (2+ years hands-on).  
+Hi! I'm Igor, a JavaScript developer with 5 years of hands-on experience.  
 I love building web apps that make life easier and experiences more meaningful.
 
 ## 💼 What’s inside
