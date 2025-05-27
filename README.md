@@ -1,21 +1,20 @@
-# Igor Sakhar – Portfolio
+# Portfolio – Igor Sakhar
 
-Welcome! I'm Igor, a software engineer with 5 years of IT experience (2 years of active coding). This repository is a gateway to my journey, skills, and real-world projects.
+Welcome to my JavaScript portfolio.  
+Here you’ll find my most relevant work, focused on real-world problems and clean, maintainable code.
 
-## 🔧 Key Projects
+## 🛠️ Tech Stack
+- JavaScript (ES6+)
+- HTML, CSS
+- Node.js
+- Express.js
+- MongoDB
+- Git & GitHub
 
-| Project | Description | Stack |
-|--------|-------------|-------|
-| Cloud Cost Optimizer | Reduce AWS bills using Lambda and smart automation | Python, AWS |
-| DevOps Deploy Bot | Telegram bot for deploying apps via CI/CD | Python, GitHub Actions |
-| Auto LinkedIn Apply | Automates job applications on LinkedIn | Python, Selenium |
-| This Portfolio | A public profile with my background and links | Markdown |
+## 📁 Projects in this repo
+- **Landing Page**: A responsive portfolio website (HTML/CSS/JS)
+- **REST API Example**: Basic CRUD API with Express.js
+- **Todo App**: Frontend app with local storage
+- **Weather App**: Fetches weather data using external API
 
-## 🔎 About Me
-
-- Based in the US 🇺🇸, green card holder  
-- Love creating tools that simplify life  
-- Passionate about growth, people, and purpose  
-- 🐶 Dog lover | 🎯 $200K/year goal | 🌄 Hybrid work
-
-Thanks for checking out my profile.
+## 📎 Structure
