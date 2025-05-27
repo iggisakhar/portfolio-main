@@ -14,6 +14,10 @@ It reflects my journey, projects, and technical skills.
 - HTML5, CSS3
 - Git & GitHub
 
+## 📫 Contact
+
+- LinkedIn: [linkedin.com/in/igor-sakhar](https://www.linkedin.com/in/igor-sakhar)
+
 ## 🚀 How to run
 ```bash
 git clone https://github.com/iggisakhar/portfolio-main.git
