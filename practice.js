@@ -16319,3 +16319,28 @@
 //     return subArray.map(item => item.toUpperCase());
 // }
 
+// function getModifiedObjects(arr, startIndex, endIndex) {
+//
+//     const subArray = arr.slice(startIndex, endIndex);
+//     return subArray.map(obj => {
+//         const modifiedObj = {};
+//         for (const key in obj) {
+//             if (typeof obj[key] === 'string') {
+//                 modifiedObj[key] = obj[key].toUpperCase();
+//             } else if (typeof obj[key] === 'number') {
+//                 modifiedObj[key] = obj[key] * 2;
+//             } else {
+//                 modifiedObj[key] = obj[key];
+//             }
+//         }
+//
+//         return modifiedObj;
+//     });
+// }
+
+// function getFilteredElements(arr, startIndex, endIndex) {
+//     const subArray = arr.slice(startIndex, endIndex);
+//     return subArray.filter(obj => {
+//         return obj.value !== undefined && obj.value > 50;
+//     });
+// }
