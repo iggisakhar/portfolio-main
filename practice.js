@@ -16344,3 +16344,11 @@
 //         return obj.value !== undefined && obj.value > 50;
 //     });
 // }
+
+// function getStringsContainingSubstring(arr, startIndex, endIndex, substring) {
+//     const subArray = arr.slice(startIndex, endIndex + 1);
+//
+//     return subArray
+//         .map(str => str.toLowerCase())
+//         .filter(lowerStr => lowerStr.includes(substring.toLowerCase()));
+// }
