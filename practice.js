@@ -16353,9 +16353,9 @@
 //         .filter(lowerStr => lowerStr.includes(substring.toLowerCase()));
 // }
 
-function getSortedModifiedArray(arr, start, end) {
-    return arr
-        .slice(start, end + 1)                     // 1. Берём нужный диапазон
-        .map(str => str.replace(/[^a-zA-Z]/g, '')) // 2. Убираем всё кроме букв
-        .sort((a, b) => b.localeCompare(a));       // 3. Сортируем в обратном порядке
-}
+// function getSortedModifiedArray(arr, start, end) {
+//     return arr
+//         .slice(start, end + 1)
+//         .map(str => str.replace(/[^a-zA-Z]/g, ''))
+//         .sort((a, b) => b.localeCompare(a));
+// }
