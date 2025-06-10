@@ -16359,3 +16359,39 @@
 //         .map(str => str.replace(/[^a-zA-Z]/g, ''))
 //         .sort((a, b) => b.localeCompare(a));
 // }
+
+
+// function getSortedModifiedArray(arr, start, end){
+//     return arr
+//         .slice(start, end)
+//         .map(str => str.replace(/[^a-zA-Z]/g, ''))
+//         .sort((a, b) => b.localeCompare(a));
+// }
+
+// function getSortedModifiedObjects(arr, start, end, key) {
+//     const sliced = arr.slice(start, end);
+//
+//     const modified = sliced.map(obj => {
+//         const newObj = {};
+//
+//         for (let prop in obj) {
+//             const val = obj[prop];
+//
+//             if (typeof val === 'number') {
+//                 newObj[prop] = Math.ceil(Math.sqrt(val));
+//             } else if (typeof val === 'string') {
+//                 newObj[prop] = val.toLowerCase().replace(/\s+/g, '');
+//             } else {
+//                 newObj[prop] = val;
+//             }
+//         }
+//
+//         return newObj;
+//     });
+//
+//     return modified.sort((a, b) => {
+//         if (a[key] < b[key]) return -1;
+//         if (a[key] > b[key]) return 1;
+//         return 0;
+//     });
+// }
