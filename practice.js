@@ -16413,3 +16413,8 @@
 //
 //     return count === 0;
 // }
+
+// function isPalindrome(str){
+//     let cleaned = str.replace(/[^a-z0-9]/gi, '').toLowerCase();
+//     return cleaned === cleaned.split('').reverse().join('');
+// }
