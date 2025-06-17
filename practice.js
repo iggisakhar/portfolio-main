@@ -16419,4 +16419,16 @@
 //     return cleaned === cleaned.split('').reverse().join('');
 // }
 
+// function checkBrackets(str) {
+//     let count = 0;
+//     for (let char of str) {
+//         if (char === '(') {
+//             count++;
+//         } else if (char === ')') {
+//             count--;
+//             if (count < 0) return false;
+//         }
+//     }
+//     return count === 0;
+// }
 
