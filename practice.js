@@ -16485,3 +16485,12 @@
 //         resultDiv.textContent = '✅ Clean and clear. No poop found.';
 //     }
 // }
+
+// function filterAnagrams(arr){
+//     const normalize = (str) => str.split('').sort().join('');
+//
+//     return arr.filter((word, index) => {
+//         const sortedWord = normalize(word);
+//         return arr.some((other, i) => i !== index && normalize(other) === sortedWord);
+//     });
+// }
