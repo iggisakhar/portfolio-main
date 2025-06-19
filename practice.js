@@ -16432,3 +16432,56 @@
 //     return count === 0;
 // }
 
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Poop Detector 💩</title>
+// <link rel="stylesheet" href="style.css">
+// </head>
+// <body>
+// <h1>💩 Poop Detector</h1>
+// <textarea id="textInput" placeholder="Paste your nonsense here..."></textarea>
+// <button onclick="analyzeText()">Analyze</button>
+// <div id="result"></div>
+//
+// <script src="script.js"></script>
+// </body>
+// </html>
+
+// body {
+//     font-family: monospace;
+//     background: #fce4ec;
+//     padding: 2rem;
+//     text-align: center;
+// }
+//
+// textarea {
+//     width: 80%;
+//     height: 100px;
+//     font-size: 1rem;
+// }
+//
+// button {
+//     margin-top: 1rem;
+//     padding: 0.5rem 1rem;
+//     font-weight: bold;
+// }
+//
+// #result {
+//     margin-top: 1rem;
+//     font-size: 1.2rem;
+// }
+
+// function analyzeText() {
+//     const input = document.getElementById('textInput').value.toLowerCase();
+//     const poopWords = ['bullshit', 'poop', 'crap', 'damn', 'nonsense'];
+//     const found = poopWords.filter(word => input.includes(word));
+//
+//     const resultDiv = document.getElementById('result');
+//     if (found.length > 0) {
+//         resultDiv.textContent = `🚨 Warning! Poop detected: ${found.join(', ')}`;
+//     } else {
+//         resultDiv.textContent = '✅ Clean and clear. No poop found.';
+//     }
+// }
