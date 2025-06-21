@@ -16494,3 +16494,19 @@
 //         return arr.some((other, i) => i !== index && normalize(other) === sortedWord);
 //     });
 // }
+
+// function findStopWords(str, n){
+//     const words = str.toLowerCase().split(/\s+/);
+//     const counts = {};
+//     const result = [];
+//
+//     for(let word of words){
+//         counts[word] = (counts[word] || 0) + 1;
+//     }
+//     for(let word in counts){
+//         if(counts[word] >= n){
+//             result.push(word);
+//         }
+//     }
+//     return result;
+// }
