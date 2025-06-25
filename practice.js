@@ -16539,7 +16539,37 @@
 // console.log(`Contrast ratio: ${ratio.toFixed(2)}`);
 //
 // if (ratio >= 4.5) {
-//     console.log('✅ Sufficient contrast for normal text');
+//     console.log('Sufficient contrast for normal text');
 // } else {
-//     console.log('❌ Insufficient contrast for normal text');
+//     console.log('Insufficient contrast for normal text');
+// }
+
+// currencyConverter.js
+
+// function convertCurrency(amount, fromCurrency, toCurrency) {
+//     const rates = {
+//         USD: {
+//             EUR: 0.85,
+//             KZT: 450,
+//             GBP: 0.75
+//         },
+//         EUR: {
+//             USD: 1.18,
+//             KZT: 530,
+//             GBP: 0.88
+//         },
+//         KZT: {
+//             USD: 0.0022,
+//             EUR: 0.0019,
+//             GBP: 0.0016
+//         }
+//     };
+//
+//     if (!rates[fromCurrency] || !rates[fromCurrency][toCurrency]) {
+//         console.log('Currency conversion not supported.');
+//         return null;
+//     }
+//
+//     const converted = amount * rates[fromCurrency][toCurrency];
+//     return converted.toFixed(2);
 // }
