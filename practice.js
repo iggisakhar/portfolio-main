@@ -16573,3 +16573,39 @@
 //     const converted = amount * rates[fromCurrency][toCurrency];
 //     return converted.toFixed(2);
 // }
+
+// todoList.js
+
+// class TodoList {
+//     constructor() {
+//         this.tasks = [];
+//     }
+//
+//     addTask(task) {
+//         this.tasks.push({ text: task, completed: false });
+//         console.log(`✔ Task added: ${task}`);
+//     }
+//
+//     completeTask(index) {
+//         if (this.tasks[index]) {
+//             this.tasks[index].completed = true;
+//             console.log(`Task completed: ${this.tasks[index].text}`);
+//         } else {
+//             console.log('⚠ Task not found');
+//         }
+//     }
+//
+//     listTasks() {
+//         console.log('\n📝 Your Tasks:');
+//         this.tasks.forEach((task, i) => {
+//             const status = task.completed ? '✔ Done' : '⏳ Pending';
+//             console.log(`${i + 1}. ${task.text} - ${status}`);
+//         });
+//     }
+// }
+//
+// const myTodos = new TodoList();
+// myTodos.addTask('Код жазу');
+// myTodos.addTask('GitHub-қа жүктеу');
+// myTodos.completeTask(0);
+// myTodos.listTasks();
