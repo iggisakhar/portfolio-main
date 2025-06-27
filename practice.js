@@ -16609,3 +16609,28 @@
 // myTodos.addTask('GitHub-қа жүктеу');
 // myTodos.completeTask(0);
 // myTodos.listTasks();
+
+// Description: Simple digital clock that displays the current time every second
+
+// function formatTime(value) {
+//     return value < 10 ? `0${value}` : value;
+// }
+//
+// function getCurrentTime() {
+//     const now = new Date();
+//     const hours = formatTime(now.getHours());
+//     const minutes = formatTime(now.getMinutes());
+//     const seconds = formatTime(now.getSeconds());
+//
+//     return `${hours}:${minutes}:${seconds}`;
+// }
+//
+// function startClock() {
+//     setInterval(() => {
+//         const time = getCurrentTime();
+//         console.clear();
+//         console.log(`🕒 Current Time: ${time}`);
+//     }, 1000);
+// }
+//
+// startClock();
