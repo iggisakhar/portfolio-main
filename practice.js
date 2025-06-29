@@ -16634,3 +16634,65 @@
 // }
 //
 // startClock();
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+//     <title>Random Quote Generator</title>
+// <link rel="stylesheet" href="style.css" />
+// </head>
+// <body>
+// <div class="container">
+//     <h1>✨ Random Quote Generator ✨</h1>
+//     <p id="quote">Click the button to get a quote!</p>
+//     <button onclick="generateQuote()">New Quote</button>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+
+// body {
+//     font-family: Arial, sans-serif;
+//     text-align: center;
+//     background: #f5f5f5;
+//     padding-top: 50px;
+// }
+//
+// .container {
+//     background: white;
+//     padding: 40px;
+//     margin: auto;
+//     width: 300px;
+//     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+//     border-radius: 10px;
+// }
+//
+// button {
+//     padding: 10px 20px;
+//     margin-top: 20px;
+//     background: #007acc;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+//
+// button:hover {
+//     background: #005fa3;
+// }
+//
+
+// const quotes = [
+//     "Believe you can and you're halfway there.",
+//     "Don't wait. The time will never be just right.",
+//     "Start where you are. Use what you have. Do what you can.",
+//     "Success is not in what you have, but who you are.",
+//     "Everything you can imagine is real.",
+// ];
+//
+// function generateQuote() {
+//     const randomIndex = Math.floor(Math.random() * quotes.length);
+//     document.getElementById("quote").textContent = quotes[randomIndex];
+// }
