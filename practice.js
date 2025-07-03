@@ -16696,3 +16696,32 @@
 //     const randomIndex = Math.floor(Math.random() * quotes.length);
 //     document.getElementById("quote").textContent = quotes[randomIndex];
 // }
+
+
+// function findTopLawyers(lawyerScore, lawyerName) {
+//     if (!lawyerScore.length || !lawyerName.length) return 'Missing data';
+//
+//     const matched = lawyerScore
+//         .map(scoreObj => {
+//             const nameObj = lawyerName.find(n => n.id === scoreObj.id);
+//             if (!nameObj) return null;
+//             return {
+//                 lawyerId: scoreObj.id,
+//                 lawyerName: nameObj.name,
+//                 state: nameObj.state,
+//                 lawyerScore: scoreObj.score
+//             };
+//         })
+//         .filter(Boolean);
+//
+//     if (!matched.length) return 'No matching IDs';
+//
+//     matched.sort((a, b) => {
+//         if (b.lawyerScore !== a.lawyerScore) {
+//             return b.lawyerScore - a.lawyerScore;
+//         }
+//         return a.lawyerId - b.lawyerId;
+//     });
+//
+//     return matched.slice(0, 2);
+// }
