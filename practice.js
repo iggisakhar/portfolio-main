@@ -16725,3 +16725,15 @@
 //
 //     return matched.slice(0, 2);
 // }
+
+// const phrases = ["Hello, world!", "Welcome to my GitHub.", "JavaScript is fun!", "Hire me, I'm ready!"];
+// let index = 0;
+//
+// function showNextPhrase() {
+//     const display = document.getElementById("display");
+//     display.textContent = phrases[index];
+//     index = (index + 1) % phrases.length;
+// }
+//
+// setInterval(showNextPhrase, 2000);
+
