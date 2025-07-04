@@ -16726,7 +16726,7 @@
 //     return matched.slice(0, 2);
 // }
 
-// const phrases = ["Hello, world!", "Welcome to my GitHub.", "JavaScript is fun!", "Hire me, I'm ready!"];
+// const phrases = ["Hello, world!", "Welcome to my GitHub."];
 // let index = 0;
 //
 // function showNextPhrase() {
