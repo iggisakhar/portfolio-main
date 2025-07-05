@@ -16737,3 +16737,64 @@
 //
 // setInterval(showNextPhrase, 2000);
 
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+//     <title>Quote Generator</title>
+// <link rel="stylesheet" href="style.css" />
+// </head>
+// <body>
+// <div class="container">
+//     <h1>Quote of the Day</h1>
+//     <p id="quote">Loading...</p>
+//     <button onclick="generateQuote()">New Quote</button>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+
+// body {
+//     font-family: sans-serif;
+//     background-color: #f4f4f4;
+//     display: flex;
+//     height: 100vh;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0;
+// }
+//
+// .container {
+//     text-align: center;
+//     background: white;
+//     padding: 30px;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+// }
+//
+// button {
+//     margin-top: 20px;
+//     padding: 10px 20px;
+//     background-color: #0077cc;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+
+// const quotes = [
+//     "Believe in yourself.",
+//     "Code is poetry.",
+//     "Stay hungry, stay foolish.",
+//     "Dream big. Work hard.",
+//     "Everything is possible if you believe.",
+//     "Consistency is more important than intensity."
+// ];
+//
+// function generateQuote() {
+//     const index = Math.floor(Math.random() * quotes.length);
+//     document.getElementById("quote").innerText = quotes[index];
+// }
+//
+// generateQuote();
