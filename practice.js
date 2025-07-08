@@ -16798,3 +16798,46 @@
 // }
 //
 // generateQuote();
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+//     <title>Keyboard Tracker</title>
+// <link rel="stylesheet" href="style.css" />
+// </head>
+// <body>
+// <div class="wrapper">
+//     <h1>Pressed Key:</h1>
+//     <div id="output">Press any key...</div>
+// </div>
+// <script src="script.js"></script>
+// </body>
+// </html>
+
+// body {
+//     font-family: Arial, sans-serif;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     background-color: #1e1e1e;
+//     color: white;
+//     margin: 0;
+// }
+//
+// .wrapper {
+//     text-align: center;
+// }
+//
+// #output {
+//     margin-top: 20px;
+//     font-size: 48px;
+//     color: #00ff99;
+// }
+
+// document.addEventListener("keydown", function (event) {
+//     const output = document.getElementById("output");
+//     output.textContent = event.key;
+// });
