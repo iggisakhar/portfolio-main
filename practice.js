@@ -16841,3 +16841,14 @@
 //     const output = document.getElementById("output");
 //     output.textContent = event.key;
 // });
+
+// const { test, expect } = require('@playwright/test');
+//
+// test('Проверка заголовка сайта', async ({ page }) => {
+//     await page.goto('https://example.com');
+//
+//     const title = await page.title();
+//     console.log('Заголовок страницы:', title);
+//
+//     await expect(page).toHaveTitle(/Example Domain/);
+// });
