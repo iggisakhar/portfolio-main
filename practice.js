@@ -16852,3 +16852,15 @@
 //
 //     await expect(page).toHaveTitle(/Example Domain/);
 // });
+
+// const { test, expect } = require('@playwright/test');
+//
+// test('Кнопка "More information" доступна', async ({ page }) => {
+//     await page.goto('https://example.com');
+//
+//     const moreInfoLink = page.locator('a');
+//     await expect(moreInfoLink).toHaveText('More information...');
+//     await moreInfoLink.click();
+//
+//     console.log('Кнопка работает ✅');
+// });
