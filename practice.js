@@ -16864,3 +16864,19 @@
 //
 //     console.log('Кнопка работает ✅');
 // });
+
+// const { test, expect, request } = require('@playwright/test');
+//
+// test('Проверка статуса и данных с JSONPlaceholder API', async () => {
+//     const apiContext = await request.newContext();
+//     const response = await apiContext.get('https://jsonplaceholder.typicode.com/posts/1');
+//
+//     expect(response.status()).toBe(200);
+//
+//     const data = await response.json();
+//     console.log('Полученные данные:', data);
+//
+//     expect(data).toHaveProperty('id', 1);
+//     expect(data).toHaveProperty('userId');
+//     expect(data).toHaveProperty('title');
+// });
