@@ -16880,3 +16880,25 @@
 //     expect(data).toHaveProperty('userId');
 //     expect(data).toHaveProperty('title');
 // });
+
+// function sumNumbersInString(str){
+//     let number = '';
+//     let sum = 0;
+//     for(let i = 0; i <= str.length; i++){
+//         const char = str[i];
+//
+//         if(
+//             char === '-' ||
+//             char === '.' ||
+//             (char >= '0' && char <= '9')
+//         ) {
+//             number += char;
+//         } else {
+//             if(number !== ''){
+//                 sum += parseFloat(number);
+//                 number = '';
+//             }
+//         }
+//     }
+//     return sum;
+// }
