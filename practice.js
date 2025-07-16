@@ -16902,3 +16902,19 @@
 //     }
 //     return sum;
 // }
+
+// function replaceLetter(str) {
+//     let result = '';
+//     let currentCharCode = 'a'.charCodeAt(0);
+//
+//     for (let char of str) {
+//         if (char.toLowerCase() === 'i') {
+//             result += String.fromCharCode(currentCharCode);
+//             currentCharCode++;
+//         } else {
+//             result += char;
+//         }
+//     }
+//
+//     return result;
+// }
