@@ -16918,3 +16918,36 @@
 //
 //     return result;
 // }
+
+// function compress(str){
+//     if(!str) return '';
+//     let result = '';
+//     let count = 1;
+//
+//     for(let i = 1; i <= str.length; i++){
+//         if(str[i] === str[i - 1]){
+//             count++
+//         }else{
+//             result += str[i - 1];
+//             if(count > 1) result += count;
+//             count = 1;
+//         }
+//     }
+//     return result;
+// }
+
+// function findJSONDifferences(objStr1, objStr2){
+//     const obj1 = JSON.parse(objStr1);
+//     const obj2 = JSON.parse(objStr2);
+//     const allKeys = new Set([...Object.keys(obj1), ...Object.keys(obj2)]);
+//
+//     const differences = [];
+//
+//     allKeys.forEach(key => {
+//         if(obj1[key] !== obj2[key]) {
+//             differences.push(key);
+//         }
+//     });
+//     return differences.sort();
+// }
+
