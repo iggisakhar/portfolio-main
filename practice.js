@@ -16951,3 +16951,24 @@
 //     return differences.sort();
 // }
 
+// function checkPasswordStrength(passwords, forbiddenWords){
+//     return passwords.map(pwd => {
+//         if(pwd.length < 6) return 'weak';
+//
+//         if(!/[a-z]/.test(pwd) || !/[A-Z]/.test(pwd)) return 'weak';
+//
+//         for(let word of forbiddenWords){
+//             if(pwd.toLowerCase().includes(word.toLowerCase())){
+//                 return 'weak';
+//             }
+//         }
+//         return 'strong';
+//     });
+// }
+
+// let arr = [1, 2, 3];
+// let newArr = arr.map(x => {
+//     if(x % 2) return x * 2
+//     else return x - 2;
+// });
+// console.log(newArr);
