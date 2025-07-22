@@ -16972,3 +16972,21 @@
 //     else return x - 2;
 // });
 // console.log(newArr);
+
+// function checkPasswordStrength(passwords, forbiddenWords) {
+//     return passwords.map(password => {
+//         if (password.length < 6) return 'weak';
+//
+//         const hasLower = /[a-z]/.test(password);
+//         const hasUpper = /[A-Z]/.test(password);
+//         if (!hasLower || !hasUpper) return 'weak';
+//
+//         for (const word of forbiddenWords) {
+//             if (password.toLowerCase().includes(word.toLowerCase())) {
+//                 return 'weak';
+//             }
+//         }
+//
+//         return 'strong';
+//     });
+// }
