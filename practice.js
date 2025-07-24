@@ -17009,3 +17009,27 @@
 //
 //     return result;
 // }
+
+// async function testFakeAPI() {
+//     const url = 'https://jsonplaceholder.typicode.com/posts/1';
+//
+//     try {
+//         const response = await fetch(url);
+//         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+//
+//         const data = await response.json();
+//
+//         const hasTitle = typeof data.title === 'string';
+//         const hasUserId = typeof data.userId === 'number';
+//
+//         if (hasTitle && hasUserId) {
+//             console.log('API работает корректно');
+//         } else {
+//             console.log('API ответ неполный:', data);
+//         }
+//     } catch (error) {
+//         console.error('Ошибка при запросе:', error.message);
+//     }
+// }
+//
+// testFakeAPI();
