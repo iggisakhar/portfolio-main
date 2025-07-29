@@ -17033,3 +17033,23 @@
 // }
 //
 // testFakeAPI();
+
+// function validateLoginForm(email, password) {
+//     const errors = [];
+//
+//     if (!email || !email.includes('@') || !email.includes('.')) {
+//         errors.push('Invalid email format.');
+//     }
+//
+//     if (!password || password.length < 6) {
+//         errors.push('Password must be at least 6 characters.');
+//     }
+//
+//     return {
+//         isValid: errors.length === 0,
+//         errors
+//     };
+// }
+//
+// const result = validateLoginForm('test@example.com', '123456');
+// console.log(result);
