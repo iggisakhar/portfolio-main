@@ -17053,3 +17053,20 @@
 //
 // const result = validateLoginForm('test@example.com', '123456');
 // console.log(result);
+
+// Проверка: заменяем каждую букву "i" на следующую букву по алфавиту
+
+// function kissulaty(text) {
+//     return text
+//         .split('')
+//         .map(char => {
+//             if (char.toLowerCase() === 'i') {
+//                 return char === 'i' ? 'j' : 'J';
+//             }
+//             return char;
+//         })
+//         .join('');
+// }
+//
+//
+// console.log(kissulaty("I kissed a kitten in Illinois."));
