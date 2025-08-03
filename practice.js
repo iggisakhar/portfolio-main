@@ -17054,8 +17054,6 @@
 // const result = validateLoginForm('test@example.com', '123456');
 // console.log(result);
 
-// Проверка: заменяем каждую букву "i" на следующую букву по алфавиту
-
 // function kissulaty(text) {
 //     return text
 //         .split('')
@@ -17079,3 +17077,28 @@
 //
 // console.log(isPalindrome("A man, a plan, a canal: Panama")); // true
 // console.log(isPalindrome("Kisylya")); // false
+
+// function letterFrequency(text) {
+//     const freq = {};
+//
+//     for (let char of text.toLowerCase()) {
+//         if (/[a-z]/.test(char)) {
+//             freq[char] = (freq[char] || 0) + 1;
+//         }
+//     }
+//
+//     return freq;
+// }
+
+// function countVowels(text) {
+//     const vowels = 'aeiou';
+//     let count = 0;
+//
+//     for (let char of text.toLowerCase()) {
+//         if (vowels.includes(char)) {
+//             count++;
+//         }
+//     }
+//
+//     return count;
+// }
