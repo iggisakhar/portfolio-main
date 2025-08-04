@@ -17102,3 +17102,24 @@
 //
 //     return count;
 // }
+
+// async function checkUserExists() {
+//     const url = 'https://jsonplaceholder.typicode.com/users/1';
+//
+//     try {
+//         const response = await fetch(url);
+//         if (!response.ok) throw new Error(`Status: ${response.status}`);
+//
+//         const user = await response.json();
+//
+//         if (user && user.id === 1) {
+//             console.log('User #1 найден:', user.name);
+//         } else {
+//             console.log('User #1 не найден или данные некорректны.');
+//         }
+//     } catch (error) {
+//         console.error('Ошибка при запросе:', error.message);
+//     }
+// }
+//
+// checkUserExists();
