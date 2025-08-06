@@ -17123,3 +17123,29 @@
 // }
 //
 // checkUserExists();
+
+// async function checkPostsAPI() {
+//     const url = 'https://jsonplaceholder.typicode.com/posts';
+//
+//     try {
+//         const response = await fetch(url);
+//         if (response.status !== 200) throw new Error(`Status: ${response.status}`);
+//
+//         const posts = await response.json();
+//         if (!Array.isArray(posts)) throw new Error('Ответ не массив');
+//
+//         const first = posts[0];
+//         const hasTitle = 'title' in first;
+//         const hasUserId = 'userId' in first;
+//
+//         if (hasTitle && hasUserId) {
+//             console.log('API вернул валидные посты');
+//         } else {
+//             console.log('Первый пост неполный:', first);
+//         }
+//     } catch (err) {
+//         console.error('💥 Ошибка:', err.message);
+//     }
+// }
+//
+// checkPostsAPI();
