@@ -17144,8 +17144,36 @@
 //             console.log('Первый пост неполный:', first);
 //         }
 //     } catch (err) {
-//         console.error('💥 Ошибка:', err.message);
+//         console.error('Ошибка:', err.message);
 //     }
 // }
 //
 // checkPostsAPI();
+
+// async function checkUserDetailsAPI() {
+//     const url = 'https://jsonplaceholder.typicode.com/users/1';
+//
+//     try {
+//         const response = await fetch(url);
+//         if (response.status !== 200) throw new Error(`Статус: ${response.status}`);
+//
+//         const data = await response.json();
+//         if (typeof data !== 'object' || Array.isArray(data)) {
+//             throw new Error('Ответ не объект');
+//         }
+//
+//         const hasName = 'name' in data;
+//         const hasEmail = 'email' in data;
+//         const hasCity = data.address?.city;
+//
+//         if (hasName && hasEmail && hasCity) {
+//             console.log('API вернул корректные данные пользователя');
+//         } else {
+//             console.log('Недостаточно данных:', data);
+//         }
+//     } catch (err) {
+//         console.error('Ошибка:', err.message);
+//     }
+// }
+//
+// checkUserDetailsAPI();
