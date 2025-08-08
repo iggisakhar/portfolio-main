@@ -17177,3 +17177,28 @@
 // }
 //
 // checkUserDetailsAPI();
+
+// const axios = require('axios');
+// const assert = require('assert');
+//
+// (async () => {
+//     try {
+//         const postData = {
+//             title: 'QA Automation Test',
+//             body: 'This is a test post created via API automation.',
+//             userId: 1
+//         };
+//
+//         const response = await axios.post('https://jsonplaceholder.typicode.com/posts', postData);
+//
+//         assert.strictEqual(response.status, 201, 'Status code is not 201');
+//
+//         assert.strictEqual(response.data.title, postData.title, 'Title does not match');
+//         assert.strictEqual(response.data.body, postData.body, 'Body does not match');
+//         assert.strictEqual(response.data.userId, postData.userId, 'UserId does not match');
+//
+//         console.log('POST request test passed!');
+//     } catch (error) {
+//         console.error('POST request test failed:', error.message);
+//     }
+// })();
