@@ -17202,3 +17202,35 @@
 //         console.error('POST request test failed:', error.message);
 //     }
 // })();
+
+// practice/api/apiTests.js
+
+// const request = require('supertest');
+// const baseURL = 'https://jsonplaceholder.typicode.com';
+//
+// describe('API Tests - PUT & DELETE', () => {
+//
+//     test('PUT - обновление данных', async () => {
+//         const response = await request(baseURL)
+//             .put('/posts/1')
+//             .send({
+//                 id: 1,
+//                 title: 'Updated Title',
+//                 body: 'Updated body content',
+//                 userId: 1
+//             });
+//
+//         expect(response.statusCode).toBe(200);
+//         expect(response.body.title).toBe('Updated Title');
+//         expect(response.body.body).toBe('Updated body content');
+//     });
+//
+//     test('DELETE - удаление данных', async () => {
+//         const response = await request(baseURL)
+//             .delete('/posts/1');
+//
+//         expect(response.statusCode).toBe(200);
+//         expect(response.body).toEqual({});
+//     });
+//
+// });
