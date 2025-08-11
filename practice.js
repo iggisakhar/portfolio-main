@@ -17234,3 +17234,34 @@
 //     });
 //
 // });
+
+// const request = require('supertest');
+// const baseURL = 'https://jsonplaceholder.typicode.com';
+//
+// describe('Today\'s Custom API Tests', () => {
+//
+//     test('PUT - жаңарту (custom)', async () => {
+//         const updatedData = {
+//             id: 10,
+//             title: 'Kazakh Edition Title',
+//             body: 'Бұл контент арнайы бүгінгі күн үшін жазылды.',
+//             userId: 5
+//         };
+//
+//         const response = await request(baseURL)
+//             .put('/posts/10')
+//             .send(updatedData);
+//
+//         expect(response.statusCode).toBe(200);
+//         expect(response.body).toMatchObject(updatedData);
+//     });
+//
+//     test('DELETE - өшіру (custom)', async () => {
+//         const response = await request(baseURL)
+//             .delete('/posts/10');
+//
+//         expect(response.statusCode).toBe(200);
+//         expect(response.body).toEqual({});
+//     });
+//
+// });
