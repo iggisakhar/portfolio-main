@@ -17265,3 +17265,35 @@
 //     });
 //
 // });
+
+// const request = require('supertest');
+// const baseURL = 'https://jsonplaceholder.typicode.com';
+//
+// describe('Monday Fresh API Tests', () => {
+//
+//     test('GET - бар постты алу', async () => {
+//         const response = await request(baseURL)
+//             .get('/posts/1');
+//
+//         expect(response.statusCode).toBe(200);
+//         expect(response.body).toHaveProperty('id', 1);
+//         expect(response.body).toHaveProperty('userId');
+//         expect(response.body).toHaveProperty('title');
+//     });
+//
+//     test('POST - жаңа пост қосу', async () => {
+//         const newPost = {
+//             title: 'Monday Motivation',
+//             body: 'Бүгінгі дүйсенбі — жаңа бастамаға арналған күн!',
+//             userId: 9
+//         };
+//
+//         const response = await request(baseURL)
+//             .post('/posts')
+//             .send(newPost);
+//
+//         expect(response.statusCode).toBe(201);
+//         expect(response.body).toMatchObject(newPost);
+//     });
+//
+// });
