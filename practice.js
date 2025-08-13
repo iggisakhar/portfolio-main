@@ -17297,3 +17297,73 @@
 //     });
 //
 // });
+
+// class Mediator {
+//     constructor(allowedTargets = new Set(['user', 'system'])) {
+//         this.allowedTargets = allowedTargets;
+//         this.audit = [];
+//     }
+//
+//     route(msg) {
+//         const ts = new Date().toISOString();
+//         const entry = { ...msg, ts };
+//
+//         if (!this.allowedTargets.has(msg.to) && msg.to.startsWith('agent:')) {
+//             entry.blocked = true;
+//             entry.reason = 'Direct agent→agent communication is not allowed';
+//             this.audit.push(entry);
+//             return { ok: false, entry };
+//         }
+//
+//         entry.blocked = false;
+//         this.audit.push(entry);
+//         return { ok: true, entry };
+//     }
+//
+//     getAudit({ onlyBlocked = false } = {}) {
+//         return this.audit.filter(e => (onlyBlocked ? e.blocked : true));
+//     }
+// }
+//
+// class Agent {
+//     constructor(name, mediator) {
+//         this.name = `agent:${name}`;
+//         this.mediator = mediator;
+//         this.inbox = [];
+//     }
+//
+//     send(to, text) {
+//         const res = this.mediator.route({ from: this.name, to, text });
+//         return res;
+//     }
+//
+//     deliver(from, text) {
+//         this.inbox.push({ from, text, ts: new Date().toISOString() });
+//     }
+//
+//     readInbox() {
+//         const copy = [...this.inbox];
+//         this.inbox.length = 0;
+//         return copy;
+//     }
+// }
+//
+// // --- Demo ---------------------------------------------------------------
+//
+// const mediator = new Mediator();
+// const gptA = new Agent('alpha', mediator);
+// const gptB = new Agent('beta', mediator);
+//
+// gptA.deliver('system', 'Summarize today.');
+// gptB.deliver('system', 'Generate test data.');
+//
+// const attempt1 = gptA.send('agent:beta', 'Hey beta, share your context.');
+// const attempt2 = gptB.send('agent:alpha', 'Nope.');
+//
+// const out1 = gptA.send('user', 'Summary: shipped PUT/DELETE API tests.');
+// const out2 = gptB.send('user', 'Generated 3 fake users for testing.');
+//
+// console.log('gptA inbox:', gptA.readInbox());
+// console.log('gptB inbox:', gptB.readInbox());
+// console.log('user messages ok?:', out1.ok && out2.ok);
+// console.log('blocked attempts:', mediator.getAudit({ onlyBlocked: true }));
