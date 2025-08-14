@@ -17367,3 +17367,79 @@
 // console.log('gptB inbox:', gptB.readInbox());
 // console.log('user messages ok?:', out1.ok && out2.ok);
 // console.log('blocked attempts:', mediator.getAudit({ onlyBlocked: true }));
+
+// practice/token-bucket.js
+// Finished mini-project: Token Bucket + tiny self-test harness
+
+// class TokenBucket {
+//     constructor({ capacity = 10, refillPerSecond = 5 } = {}) {
+//         if (!Number.isFinite(capacity) || capacity <= 0) throw new Error('capacity must be > 0');
+//         if (!Number.isFinite(refillPerSecond) || refillPerSecond < 0) throw new Error('refillPerSecond must be >= 0');
+//
+//         this.capacity = capacity;
+//         this.refillPerMs = refillPerSecond / 1000;
+//         this.tokens = capacity;
+//         this.lastRefill = Date.now();
+//     }
+//
+//     _refill(now = Date.now()) {
+//         const elapsed = now - this.lastRefill;
+//         if (elapsed <= 0) return;
+//         this.tokens = Math.min(this.capacity, this.tokens + elapsed * this.refillPerMs);
+//         this.lastRefill = now;
+//     }
+//
+//     tryRemove(tokens = 1) {
+//         if (!Number.isFinite(tokens) || tokens <= 0) throw new Error('tokens must be > 0');
+//         this._refill();
+//         if (this.tokens >= tokens) {
+//             this.tokens -= tokens;
+//             return true;
+//         }
+//         return false;
+//     }
+//
+//     timeToAvailability(tokens = 1) {
+//         if (!Number.isFinite(tokens) || tokens <= 0) throw new Error('tokens must be > 0');
+//         this._refill();
+//         if (this.tokens >= tokens) return 0;
+//         const needed = tokens - this.tokens;
+//         const ms = needed / this.refillPerMs;
+//         return Math.max(0, Math.ceil(ms));
+//     }
+// }
+//
+// async function waitAndRemove(bucket, tokens = 1) {
+//     while (true) {
+//         const waitMs = bucket.timeToAvailability(tokens);
+//         if (waitMs === 0 && bucket.tryRemove(tokens)) return true;
+//         await new Promise(r => setTimeout(r, Math.min(waitMs, 50)));
+//     }
+// }
+//
+// // ------------------ Tiny self-test/demo ------------------
+//
+// if (require.main === module) {
+//     (async () => {
+//         const bucket = new TokenBucket({ capacity: 5, refillPerSecond: 2 });
+//
+//         console.log('Initial tokens should be capacity (5):', bucket.tokens.toFixed(2));
+//
+//         console.log('Take 3 ->', bucket.tryRemove(3));
+//         console.log('Take 3 again (should be false now) ->', bucket.tryRemove(3));
+//         console.log('ms to 3 tokens ->', bucket.timeToAvailability(3), 'ms');
+//
+//         const results = [];
+//         const start = Date.now();
+//         for (let i = 0; i < 8; i++) {
+//
+//             await waitAndRemove(bucket, 1);
+//             results.push({ i, t: Date.now() - start });
+//             console.log(`Task #${i} allowed at +${results.at(-1).t}ms, tokens=${bucket.tokens.toFixed(2)}`);
+//         }
+//
+//         console.log('Done. Total time ~ reflects refill rate.');
+//     })();
+// }
+//
+// module.exports = { TokenBucket, waitAndRemove };
