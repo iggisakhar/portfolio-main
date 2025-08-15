@@ -17443,3 +17443,34 @@
 // }
 //
 // module.exports = { TokenBucket, waitAndRemove };
+
+// const quotes = [
+//     "The best way to get started is to quit talking and begin doing.",
+//     "Don't let yesterday take up too much of today.",
+//     "It's not whether you get knocked down, it's whether you get up.",
+//     "If you are working on something exciting, it will keep you motivated.",
+//     "Success is not in what you have, but who you are."
+// ];
+//
+// function shuffleArray(array) {
+//     for (let i = array.length - 1; i > 0; i--) {
+//         const j = Math.floor(Math.random() * (i + 1));
+//         [array[i], array[j]] = [array[j], array[i]];
+//     }
+// }
+//
+// function showQuotesNoRepeat() {
+//     let quotesCopy = [...quotes];
+//     shuffleArray(quotesCopy);
+//
+//     quotesCopy.forEach((quote, index) => {
+//         setTimeout(() => {
+//             console.log(quote);
+//             if (index === quotesCopy.length - 1) {
+//                 console.log("Все цитаты показаны без повторов!");
+//             }
+//         }, index * 2000);
+//     });
+// }
+//
+// showQuotesNoRepeat();
