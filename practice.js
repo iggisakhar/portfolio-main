@@ -17474,3 +17474,82 @@
 // }
 //
 // showQuotesNoRepeat();
+
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Password Strength Checker</title>
+// <style>
+//     body {
+//     font-family: Arial, sans-serif;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     background: #f4f4f4;
+// }
+//     .container {
+//     background: #fff;
+//     padding: 20px 30px;
+//     border-radius: 12px;
+//     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+//     width: 320px;
+// }
+//     input {
+//     width: 100%;
+//     padding: 10px;
+//     margin-top: 10px;
+//     font-size: 16px;
+//     border: 2px solid #ddd;
+//     border-radius: 8px;
+//     outline: none;
+// }
+//     .strength {
+//     margin-top: 15px;
+//     font-weight: bold;
+//     text-align: center;
+//     padding: 8px;
+//     border-radius: 8px;
+// }
+//     .weak { background: #ffbaba; color: #a70000; }
+//     .medium { background: #fff3b0; color: #997300; }
+//     .strong { background: #baffc9; color: #007a00; }
+// </style>
+// </head>
+// <body>
+// <div class="container">
+//     <h2>Create a Password</h2>
+//     <input type="password" id="password" placeholder="Enter password...">
+//         <div id="strength" class="strength"></div>
+// </div>
+//
+// <script>
+//     const passwordInput = document.getElementById('password');
+//     const strengthText = document.getElementById('strength');
+//
+//     passwordInput.addEventListener('input', () => {
+//     const value = passwordInput.value;
+//     let strength = '';
+//     let cssClass = '';
+//
+//     if (value.length === 0) {
+//     strength = '';
+// } else if (value.length < 6) {
+//     strength = 'Weak';
+//     cssClass = 'weak';
+// } else if (/[A-Z]/.test(value) && /[0-9]/.test(value) && /[!@#$%^&*]/.test(value)) {
+//     strength = 'Strong';
+//     cssClass = 'strong';
+// } else {
+//     strength = 'Medium';
+//     cssClass = 'medium';
+// }
+//
+//     strengthText.textContent = strength;
+//     strengthText.className = `strength ${cssClass}`;
+// });
+// </script>
+// </body>
+// </html>
