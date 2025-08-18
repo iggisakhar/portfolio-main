@@ -17553,3 +17553,16 @@
 // </script>
 // </body>
 // </html>
+
+// function wordFrequency(text) {
+//     const words = (text.toLowerCase().match(/\b\w+\b/g) || []);
+//     const freq = {};
+//     for(let word of words){
+//         freq[word] = (freq[word] || 0) + 1;
+//     }
+//     return freq;
+// }
+//
+// // Example usage:
+// const sample = "Love yourself love life, code every day with joy";
+// console.log(wordFrequency(sample));
