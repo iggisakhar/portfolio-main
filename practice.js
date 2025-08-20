@@ -17566,3 +17566,31 @@
 // // Example usage:
 // const sample = "Love yourself love life, code every day with joy";
 // console.log(wordFrequency(sample));
+
+// function wordFrequency(text) {
+//     const words = (text.toLowerCase().match(/\b\w+\b/g) || []);
+//     const freq = {};
+//     for (const w of words) freq[w] = (freq[w] || 0) + 1;
+//     return freq;
+// }
+//
+// function topWords(text, n = 5) {
+//     const freq = wordFrequency(text);
+//     return Object.entries(freq)
+//         .sort((a, b) => {
+//             if (b[1] !== a[1]) return b[1] - a[1];
+//             return a[0].localeCompare(b[0]);
+//         })
+//         .slice(0, n)
+//         .map(([word, count]) => ({ word, count }));
+// }
+//
+// // Demo
+// const sample = `
+//   Love yourself, love life! Sign the petition, to Support Kazakh language.
+//   Code more, learn more; love what you do — and do what you love.
+// `;
+//
+// console.log(topWords(sample, 5));
+//
+// if (typeof module !== 'undefined') module.exports = { wordFrequency, topWords };
