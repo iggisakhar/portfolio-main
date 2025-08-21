@@ -17594,3 +17594,215 @@
 // console.log(topWords(sample, 5));
 //
 // if (typeof module !== 'undefined') module.exports = { wordFrequency, topWords };
+
+// Epic HTTP Benchmark — concurrency + retries + timeout + circuit breaker
+// Node 18+ (нужен глобальный fetch)
+
+// const DEFAULTS = {
+//     concurrency: 5,
+//     totalRequests: 30,
+//     timeoutMs: 4000,
+//     maxRetries: 2,
+//     backoffBaseMs: 300,
+//     breakerThreshold: 0.5,
+//     breakerWindow: 20,
+//     breakerCooldownMs: 3000
+// };
+//
+// class CircuitBreaker {
+//     constructor({ threshold, window, cooldownMs }) {
+//         this.threshold = threshold;
+//         this.window = window;
+//         this.cooldownMs = cooldownMs;
+//         this.states = { CLOSED: 'closed', OPEN: 'open', HALF: 'half-open' };
+//         this.state = this.states.CLOSED;
+//         this.history = [];
+//         this.nextAttemptAt = 0;
+//     }
+//     record(success) {
+//         this.history.push(!!success);
+//         if (this.history.length > this.window) this.history.shift();
+//
+//         const failures = this.history.filter(x => !x).length;
+//         const ratio = this.history.length ? failures / this.history.length : 0;
+//
+//         if (this.state === this.states.CLOSED && ratio > this.threshold && this.history.length >= this.window / 2) {
+//             this.state = this.states.OPEN;
+//             this.nextAttemptAt = Date.now() + this.cooldownMs;
+//         } else if (this.state === this.states.HALF && success) {
+//
+//             this.state = this.states.CLOSED;
+//             this.history.length = 0;
+//         } else if (this.state === this.states.HALF && !success) {
+//
+//             this.state = this.states.OPEN;
+//             this.nextAttemptAt = Date.now() + this.cooldownMs;
+//         }
+//     }
+//     allow() {
+//         if (this.state === this.states.CLOSED) return true;
+//         if (this.state === this.states.OPEN) {
+//             if (Date.now() >= this.nextAttemptAt) {
+//                 this.state = this.states.HALF;
+//                 return true;
+//             }
+//             return false;
+//         }
+//
+//         if (this.state === this.states.HALF) return false;
+//         return true;
+//     }
+//     getState() { return this.state; }
+// }
+//
+// const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+// const jitter = (ms) => ms + Math.floor(Math.random() * 100);
+//
+// async function fetchWithTimeout(url, { timeoutMs, signal, ...rest }) {
+//     const controller = new AbortController();
+//     const t = setTimeout(() => controller.abort(new Error('timeout')), timeoutMs);
+//     try {
+//         const res = await fetch(url, { signal: controller.signal, ...rest });
+//         return res;
+//     } finally {
+//         clearTimeout(t);
+//
+//         if (signal?.aborted) controller.abort();
+//     }
+// }
+//
+// async function attempt(url, options) {
+//     const {
+//         timeoutMs, maxRetries, backoffBaseMs,
+//         method = 'GET', body, headers
+//     } = options;
+//
+//     let lastErr = null;
+//     for (let retry = 0; retry <= maxRetries; retry++) {
+//         try {
+//             const res = await fetchWithTimeout(url, { timeoutMs, method, body, headers });
+//             const ok = res.ok;
+//             const status = res.status;
+//
+//             const text = await res.text();
+//             return { ok, status, size: text.length };
+//         } catch (err) {
+//             lastErr = err;
+//             if (retry < maxRetries) {
+//                 const wait = jitter(backoffBaseMs * Math.pow(2, retry));
+//                 await sleep(wait);
+//             }
+//         }
+//     }
+//     return { ok: false, error: lastErr?.message || 'unknown' };
+// }
+//
+// async function runBenchmark(targets, config = {}) {
+//     const cfg = { ...DEFAULTS, ...config };
+//     const breaker = new CircuitBreaker({
+//         threshold: cfg.breakerThreshold,
+//         window: cfg.breakerWindow,
+//         cooldownMs: cfg.breakerCooldownMs
+//     });
+//
+//     const results = [];
+//     let inFlight = 0;
+//     let started = 0;
+//     let idx = 0;
+//
+//     const nextTarget = () => targets[idx++ % targets.length];
+//
+//     return new Promise(resolve => {
+//         const startTime = Date.now();
+//
+//         const maybeSpawn = async () => {
+//             while (inFlight < cfg.concurrency && started < cfg.totalRequests) {
+//                 if (!breaker.allow()) {
+//
+//                     await sleep(100);
+//                     break;
+//                 }
+//                 inFlight++; started++;
+//                 const url = nextTarget();
+//                 (async () => {
+//                     const r = await attempt(url, cfg);
+//                     results.push({ url, ...r, ts: Date.now() });
+//                     breaker.record(!!r.ok);
+//                     inFlight--;
+//                     if (started < cfg.totalRequests) {
+//
+//                         maybeSpawn();
+//                     } else if (inFlight === 0) {
+//
+//                         const duration = Date.now() - startTime;
+//                         resolve(summary(results, duration, breaker.getState()));
+//                     }
+//                 })();
+//             }
+//         };
+//
+//         maybeSpawn();
+//     });
+// }
+//
+// function summary(results, durationMs, breakerState) {
+//     const ok = results.filter(r => r.ok);
+//     const fail = results.filter(r => !r.ok);
+//     const byStatus = ok.reduce((m, r) => (m[r.status] = (m[r.status] || 0) + 1, m), {});
+//     const avgSize = ok.length ? Math.round(ok.reduce((s, r) => s + r.size, 0) / ok.length) : 0;
+//
+//     return {
+//         total: results.length,
+//         success: ok.length,
+//         failed: fail.length,
+//         statusBreakdown: byStatus,
+//         avgBodySize: avgSize,
+//         durationMs,
+//         rps: (results.length / (durationMs / 1000)).toFixed(2),
+//         breakerState,
+//         sampleErrors: [...new Set(fail.map(f => f.error))].slice(0, 3)
+//     };
+// }
+//
+// // ---------------- Demo ----------------
+// // Запуск: node practice/epic-http-benchmark.js
+// if (require.main === module) {
+//     (async () => {
+//         const targets = [
+//             'https://jsonplaceholder.typicode.com/posts/1',
+//             'https://jsonplaceholder.typicode.com/users/1',
+//             'https://jsonplaceholder.typicode.com/comments?postId=1'
+//         ];
+//
+//         const report = await runBenchmark(targets, {
+//             concurrency: 6,
+//             totalRequests: 40,
+//             timeoutMs: 2500,
+//             maxRetries: 1,
+//             backoffBaseMs: 200,
+//             breakerThreshold: 0.5,
+//             breakerWindow: 16,
+//             breakerCooldownMs: 2000
+//         });
+//
+//         console.log('\n=== Epic HTTP Benchmark Report ===');
+//         console.table({
+//             total: report.total,
+//             success: report.success,
+//             failed: report.failed,
+//             rps: report.rps,
+//             avgBodySize: report.avgBodySize,
+//             durationMs: report.durationMs,
+//             breakerState: report.breakerState
+//         });
+//         if (Object.keys(report.statusBreakdown).length) {
+//             console.log('\nStatus breakdown:', report.statusBreakdown);
+//         }
+//         if (report.sampleErrors.length) {
+//             console.log('\nSample errors:', report.sampleErrors);
+//         }
+//     })();
+// }
+//
+// // экспорт на будущее
+// module.exports = { runBenchmark };
