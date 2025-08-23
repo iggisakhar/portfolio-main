@@ -17806,3 +17806,77 @@
 //
 // // экспорт на будущее
 // module.exports = { runBenchmark };
+
+// class LRUCache {
+//     constructor({ capacity = 100, ttlMs = 0 } = {}) {
+//         if (!Number.isFinite(capacity) || capacity <= 0) throw new Error('capacity must be > 0');
+//         this.capacity = capacity;
+//         this.ttlMs = Math.max(0, ttlMs);
+//         this.map = new Map();
+//     }
+//
+//     _isExpired(entry) {
+//         return this.ttlMs > 0 && entry.expiresAt !== 0 && Date.now() > entry.expiresAt;
+//     }
+//     _touch(key, entry) {
+//         this.map.delete(key);
+//         this.map.set(key, entry);
+//     }
+//
+//     set(key, value) {
+//         const expiresAt = this.ttlMs ? Date.now() + this.ttlMs : 0;
+//         const entry = { value, expiresAt };
+//         if (this.map.has(key)) this._touch(key, entry);
+//         else {
+//             this.map.set(key, entry);
+//             if (this.map.size > this.capacity) {
+//                 const oldestKey = this.map.keys().next().value;
+//                 this.map.delete(oldestKey);
+//             }
+//         }
+//         return this;
+//     }
+//
+//     get(key) {
+//         const entry = this.map.get(key);
+//         if (!entry) return undefined;
+//         if (this._isExpired(entry)) { this.map.delete(key); return undefined; }
+//         this._touch(key, entry);
+//         return entry.value;
+//     }
+//
+//     has(key) {
+//         const entry = this.map.get(key);
+//         if (!entry) return false;
+//         if (this._isExpired(entry)) { this.map.delete(key); return false; }
+//         return true;
+//     }
+//
+//     delete(key) { return this.map.delete(key); }
+//     clear() { this.map.clear(); }
+//     size() { return this.map.size; }
+//     pruneExpired() {
+//         if (!this.ttlMs) return 0;
+//         let removed = 0;
+//         for (const [k, e] of this.map) if (this._isExpired(e)) { this.map.delete(k); removed++; }
+//         return removed;
+//     }
+//     keys() { return Array.from(this.map.keys()); }
+// }
+//
+// // Demo (node practice/lru-cache-ttl.js)
+// if (require.main === module) {
+//     const cache = new LRUCache({ capacity: 3, ttlMs: 500 });
+//     cache.set('a', 1).set('b', 2).set('c', 3);
+//     console.log('get a ->', cache.get('a'));
+//     cache.set('d', 4);
+//     console.log('has b?', cache.has('b'));
+//
+//     setTimeout(() => {
+//         console.log('after TTL, get a ->', cache.get('a'));
+//         console.log('pruned:', cache.pruneExpired(), 'items');
+//         console.log('keys:', cache.keys());
+//     }, 600);
+// }
+//
+// module.exports = { LRUCache };
