@@ -17880,3 +17880,89 @@
 // }
 //
 // module.exports = { LRUCache };
+
+
+// class PriorityQueue {
+//     constructor(compare = (a, b) => a - b) {
+//         this._heap = [];
+//         this._compare = compare; // return <0 if a has higher priority than b
+//     }
+//
+//     size() { return this._heap.length; }
+//     isEmpty() { return this.size() === 0; }
+//     peek() { return this._heap[0]; }
+//
+//     push(value) {
+//         this._heap.push(value);
+//         this._siftUp(this.size() - 1);
+//         return this.size();
+//     }
+//
+//     pop() {
+//         if (this.isEmpty()) return undefined;
+//         const top = this._heap[0];
+//         const last = this._heap.pop();
+//         if (!this.isEmpty()) {
+//             this._heap[0] = last;
+//             this._siftDown(0);
+//         }
+//         return top;
+//     }
+//
+//     // --- internal ---
+//     _parent(i) { return ((i - 1) >> 1); }
+//     _left(i) { return (i << 1) + 1; }
+//     _right(i) { return (i << 1) + 2; }
+//
+//     _higher(i, j) {
+//         // true if i has higher priority than j
+//         return this._compare(this._heap[i], this._heap[j]) < 0;
+//     }
+//
+//     _swap(i, j) {
+//         const t = this._heap[i];
+//         this._heap[i] = this._heap[j];
+//         this._heap[j] = t;
+//     }
+//
+//     _siftUp(i) {
+//         while (i > 0) {
+//             const p = this._parent(i);
+//             if (this._higher(i, p)) {
+//                 this._swap(i, p);
+//                 i = p;
+//             } else break;
+//         }
+//     }
+//
+//     _siftDown(i) {
+//         while (true) {
+//             const l = this._left(i);
+//             const r = this._right(i);
+//             let best = i;
+//
+//             if (l < this.size() && this._higher(l, best)) best = l;
+//             if (r < this.size() && this._higher(r, best)) best = r;
+//             if (best !== i) {
+//                 this._swap(i, best);
+//                 i = best;
+//             } else break;
+//         }
+//     }
+// }
+//
+// // ---- Demo ----
+//
+// const pqMin = new PriorityQueue();
+// [5, 1, 9, 3, 7].forEach(n => pqMin.push(n));
+// const outMin = [];
+// while (!pqMin.isEmpty()) outMin.push(pqMin.pop());
+// console.log('Min-heap order:', outMin); // [1, 3, 5, 7, 9]
+//
+// const pqMax = new PriorityQueue((a, b) => b - a);
+// [5, 1, 9, 3, 7].forEach(n => pqMax.push(n));
+// const outMax = [];
+// while (!pqMax.isEmpty()) outMax.push(pqMax.pop());
+// console.log('Max-heap order:', outMax); // [9, 7, 5, 3, 1]
+//
+// if (typeof module !== 'undefined') module.exports = { PriorityQueue };
