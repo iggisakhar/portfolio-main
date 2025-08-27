@@ -17966,3 +17966,47 @@
 // console.log('Max-heap order:', outMax); // [9, 7, 5, 3, 1]
 //
 // if (typeof module !== 'undefined') module.exports = { PriorityQueue };
+
+// class Scheduler {
+//     constructor() {
+//         this.queue = [];
+//         this.running = false;
+//     }
+//
+//     addTask(fn, { priority = 0, delayMs = 0 } = {}) {
+//         this.queue.push({ fn, priority, delayMs });
+//         this.queue.sort((a, b) => b.priority - a.priority);
+//     }
+//
+//     async run() {
+//         if (this.running) return;
+//         this.running = true;
+//
+//         while (this.queue.length > 0) {
+//             const task = this.queue.shift();
+//             if (task.delayMs > 0) {
+//                 await new Promise(res => setTimeout(res, task.delayMs));
+//             }
+//             try {
+//                 await task.fn();
+//             } catch (err) {
+//                 console.error('❌ Ошибка в задаче:', err.message);
+//             }
+//         }
+//
+//         this.running = false;
+//     }
+// }
+//
+// // --- Demo ---
+// if (require.main === module) {
+//     const scheduler = new Scheduler();
+//
+//     scheduler.addTask(() => console.log('Low priority task'), { priority: 1 });
+//     scheduler.addTask(() => console.log('🚀 High priority task!'), { priority: 10 });
+//     scheduler.addTask(() => console.log('⏱ Task after delay'), { priority: 5, delayMs: 2000 });
+//
+//     scheduler.run();
+// }
+//
+// module.exports = { Scheduler };
