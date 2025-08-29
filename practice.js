@@ -17990,7 +17990,7 @@
 //             try {
 //                 await task.fn();
 //             } catch (err) {
-//                 console.error('❌ Ошибка в задаче:', err.message);
+//                 console.error('Ошибка в задаче:', err.message);
 //             }
 //         }
 //
@@ -18003,10 +18003,121 @@
 //     const scheduler = new Scheduler();
 //
 //     scheduler.addTask(() => console.log('Low priority task'), { priority: 1 });
-//     scheduler.addTask(() => console.log('🚀 High priority task!'), { priority: 10 });
-//     scheduler.addTask(() => console.log('⏱ Task after delay'), { priority: 5, delayMs: 2000 });
+//     scheduler.addTask(() => console.log('High priority task!'), { priority: 10 });
+//     scheduler.addTask(() => console.log('Task after delay'), { priority: 5, delayMs: 2000 });
 //
 //     scheduler.run();
 // }
 //
 // module.exports = { Scheduler };
+
+// function parseField(expr, min, max) {
+//     if (expr === '*') return () => true;
+//
+//     const parts = expr.split(',');
+//     const ranges = [];
+//
+//     for (const p of parts) {
+//         if (p.startsWith('*/')) {
+//             const step = parseInt(p.slice(2), 10);
+//             if (!Number.isFinite(step) || step <= 0) throw new Error(`Bad step: ${p}`);
+//             ranges.push({ type: 'step', step });
+//         } else if (p.includes('-')) {
+//             const [a, b] = p.split('-').map(Number);
+//             if (isNaN(a) || isNaN(b) || a > b) throw new Error(`Bad range: ${p}`);
+//             ranges.push({ type: 'range', a, b });
+//         } else {
+//             const v = Number(p);
+//             if (isNaN(v)) throw new Error(`Bad value: ${p}`);
+//             ranges.push({ type: 'value', v });
+//         }
+//     }
+//
+//     return (num) => {
+//         if (num < min || num > max) return false;
+//         for (const r of ranges) {
+//             if (r.type === 'value' && num === r.v) return true;
+//             if (r.type === 'range' && num >= r.a && num <= r.b) return true;
+//             if (r.type === 'step' && (num - min) % r.step === 0) return true;
+//         }
+//         return false;
+//     };
+// }
+//
+// function compileCron(cron) {
+//     const [m, h, D, M, W] = cron.trim().split(/\s+/);
+//     if ([m, h, D, M, W].some(v => v == null)) throw new Error('Cron must have 5 fields');
+//     return {
+//         match(dt) {
+//
+//             const minute = dt.getMinutes();
+//             const hour   = dt.getHours();
+//             const day    = dt.getDate();
+//             const month  = dt.getMonth() + 1;
+//             const wday   = dt.getDay(); // 0..6
+//             return (
+//                 parseField(m, 0, 59)(minute) &&
+//                 parseField(h, 0, 23)(hour) &&
+//                 parseField(D, 1, 31)(day) &&
+//                 parseField(M, 1, 12)(month) &&
+//                 parseField(W, 0, 6)(wday)
+//             );
+//         }
+//     };
+// }
+//
+// class CronScheduler {
+//     constructor({ demoSpeed = true } = {}) {
+//         this.jobs = [];
+//         this.timer = null;
+//         this.demoSpeed = demoSpeed;
+//     }
+//
+//     add(cronExpr, fn, name = 'job') {
+//         const cron = compileCron(cronExpr);
+//         this.jobs.push({ cron, fn, name, lastRunKey: null });
+//     }
+//
+//     start() {
+//         if (this.timer) return;
+//         const tickMs = this.demoSpeed ? 1000 : 60_000;
+//
+//         this.timer = setInterval(() => {
+//             const now = new Date();
+//             const minuteKey = now.getFullYear() + '-' + (now.getMonth()+1) + '-' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes();
+//
+//             for (const job of this.jobs) {
+//                 if (job.lastRunKey === minuteKey) continue;
+//                 if (job.cron.match(now)) {
+//                     Promise.resolve()
+//                         .then(() => job.fn(now))
+//                         .catch(err => console.error(`${job.name}:`, err.message));
+//                     job.lastRunKey = minuteKey;
+//                 }
+//             }
+//         }, tickMs);
+//     }
+//
+//     stop() {
+//         if (this.timer) clearInterval(this.timer);
+//         this.timer = null;
+//     }
+// }
+//
+// if (require.main === module) {
+//     const sched = new CronScheduler({ demoSpeed: true });
+//
+//     sched.add('* * * * *', (dt) => {
+//         console.log('Every minute:', dt.toTimeString().slice(0,8));
+//     }, 'every-minute');
+//
+//     sched.add('*/5 * * * *', () => console.log('Every 5 minutes (demo sec): fire!'), 'every-5m');
+//     sched.add('1,3,7 * * * *', () => console.log('Minutes 1,3,7 matched'), 'list-mins');
+//     sched.add('10-15 * * * *', () => console.log('Range 10-15 match'), 'range-mins');
+//
+//     sched.start();
+//
+//     setTimeout(() => { sched.stop(); console.log('Scheduler stopped'); }, 30_000);
+// }
+//
+// module.exports = { CronScheduler, compileCron, parseField };
