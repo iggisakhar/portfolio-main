@@ -18153,3 +18153,36 @@
 // }
 //
 // module.exports = { generateMaze };
+
+// function generateMaze(width, height) {
+//     const maze = Array.from({ length: height }, () =>
+//         Array.from({ length: width }, () => '#')
+//     );
+//
+//     function carve(x, y) {
+//         const dirs = [
+//             [0, -2], [0, 2], [-2, 0], [2, 0]
+//         ].sort(() => Math.random() - 0.5);
+//
+//         for (const [dx, dy] of dirs) {
+//             const nx = x + dx, ny = y + dy;
+//             if (ny > 0 && ny < height - 1 && nx > 0 && nx < width - 1 && maze[ny][nx] === '#') {
+//                 maze[y + dy / 2][x + dx / 2] = ' ';
+//                 maze[ny][nx] = ' ';
+//                 carve(nx, ny);
+//             }
+//         }
+//     }
+//
+//     maze[1][1] = ' ';
+//     carve(1, 1);
+//     return maze.map(row => row.join('')).join('\n');
+// }
+//
+// // --- Demo ---
+// if (require.main === module) {
+//     const m = generateMaze(21, 15);
+//     console.log(m);
+// }
+//
+// module.exports = { generateMaze };
