@@ -18186,3 +18186,95 @@
 // }
 //
 // module.exports = { generateMaze };
+
+// function parseMaze(mazeStr) {
+//     const rows = mazeStr.split('\n');
+//     const h = rows.length;
+//     const w = rows[0].length;
+//     const grid = rows.map(r => r.split(''));
+//     return { grid, w, h };
+// }
+//
+// function inBounds(x, y, w, h) {
+//     return x >= 0 && y >= 0 && x < w && y < h;
+// }
+//
+// function solveMaze(mazeStr, start = { x: 1, y: 1 }, goal) {
+//     const { grid, w, h } = parseMaze(mazeStr);
+//     const isOpen = (x, y) => grid[y][x] === ' ';
+//
+//     const end = goal ?? { x: w - 2, y: h - 2 };
+//
+//     if (!isOpen(start.x, start.y) || !isOpen(end.x, end.y)) {
+//         return { solved: false, path: [], steps: 0, overlay: mazeStr };
+//     }
+//
+//     const q = [];
+//     const seen = Array.from({ length: h }, () => Array(w).fill(false));
+//     const prev = Array.from({ length: h }, () => Array(w).fill(null));
+//
+//     q.push(start);
+//     seen[start.y][start.x] = true;
+//
+//     const DIRS = [
+//         { dx: 1, dy: 0 },
+//         { dx: -1, dy: 0 },
+//         { dx: 0, dy: 1 },
+//         { dx: 0, dy: -1 }
+//     ];
+//
+//     while (q.length) {
+//         const cur = q.shift();
+//         if (cur.x === end.x && cur.y === end.y) break;
+//
+//         for (const { dx, dy } of DIRS) {
+//             const nx = cur.x + dx, ny = cur.y + dy;
+//             if (!inBounds(nx, ny, w, h)) continue;
+//             if (seen[ny][nx]) continue;
+//             if (!isOpen(nx, ny)) continue;
+//
+//             seen[ny][nx] = true;
+//             prev[ny][nx] = cur;
+//             q.push({ x: nx, y: ny });
+//         }
+//     }
+//
+//     if (!seen[end.y][end.x]) {
+//         return { solved: false, path: [], steps: 0, overlay: mazeStr };
+//     }
+//
+//     const path = [];
+//     let cur = end;
+//     while (cur) {
+//         path.push(cur);
+//         cur = prev[cur.y][cur.x];
+//     }
+//     path.reverse();
+//
+//     const overlayGrid = parseMaze(mazeStr).grid;
+//     for (const { x, y } of path) {
+//         if (!(x === start.x && y === start.y) && !(x === end.x && y === end.y)) {
+//             overlayGrid[y][x] = '•';
+//         }
+//     }
+//     const overlay = overlayGrid.map(row => row.join('')).join('\n');
+//
+//     return { solved: true, path, steps: path.length - 1, overlay };
+// }
+//
+// // --- Demo ---
+// if (require.main === module) {
+//
+//     const { generateMaze } = require('./maze-generator');
+//     const maze = generateMaze(21, 15);
+//
+//     console.log('--- Maze ---');
+//     console.log(maze);
+//
+//     const { solved, steps, overlay } = solveMaze(maze, { x: 1, y: 1 }, { x: 19, y: 13 });
+//     console.log('\nSolved:', solved, 'Steps:', steps);
+//     console.log('\n--- Path Overlay ---');
+//     console.log(overlay);
+// }
+//
+// module.exports = { solveMaze, parseMaze };
