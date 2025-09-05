@@ -18278,3 +18278,49 @@
 // }
 //
 // module.exports = { solveMaze, parseMaze };
+
+// async function main() {
+//     const { path } = await inquirer.prompt([
+//         {
+//             type: "input",
+//             name: "path",
+//             message: "Enter path to a JSON file:",
+//             default: "data.json"
+//         }
+//     ]);
+//
+//     if (!fs.existsSync(path)) {
+//         console.log("File not found!");
+//         return;
+//     }
+//
+//     const data = JSON.parse(fs.readFileSync(path, "utf-8"));
+//
+//     async function explore(obj, level = "root") {
+//         const keys = Object.keys(obj);
+//         const { key } = await inquirer.prompt([
+//             {
+//                 type: "list",
+//                 name: "key",
+//                 message: `Exploring "${level}" → Choose a key:`,
+//                 choices: [...keys, new inquirer.Separator(), "Back", "Exit"]
+//             }
+//         ]);
+//
+//         if (key === "Exit") return;
+//         if (key === "Back") return;
+//
+//         const value = obj[key];
+//         if (typeof value === "object") {
+//             await explore(value, key);
+//         } else {
+//             console.log(`Value at "${key}":`, value);
+//         }
+//
+//         await explore(obj, level);
+//     }
+//
+//     await explore(data);
+// }
+//
+// main();
