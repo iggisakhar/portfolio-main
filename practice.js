@@ -18324,3 +18324,111 @@
 // }
 //
 // main();
+
+// (function main() {
+//     if (require.main === module) {
+//         console.log("=== Demo: formatBytes ===");
+//         console.log(formatBytes(0));                      // 0 B
+//         console.log(formatBytes(1536, { binary: true })); // 1.5 KiB
+//         console.log(formatBytes(1500000));                // 1.5 MB
+//         console.log(formatBytes(-42000));                 // -42 KB
+//         console.log(formatBytes(1073741824, { binary: true, decimals: 3 })); // 1.000 GiB
+//
+//         console.log("\n=== Demo: parseSize ===");
+//         console.log(parseSize("1.5 MB"));    // 1500000
+//         console.log(parseSize("2 MiB"));     // 2097152
+//         console.log(parseSize("-42kb"));     // -42000
+//         console.log(parseSize("1,25 GiB"));  // 1342177280
+//         console.log(parseSize("1024"));      // 1024
+//         console.log(parseSize("abc"));       // null
+//
+//         console.log("\n=== Self-tests ===");
+//         runTests();
+//     }
+// })();
+//
+// function formatBytes(bytes, opts = {}) {
+//     const { binary = false, decimals = 2, spacer = " ", pad = false } = opts;
+//
+//     if (typeof bytes !== "number" || !Number.isFinite(bytes)) {
+//         throw new TypeError("bytes must be a finite number");
+//     }
+//
+//     const sign = bytes < 0 ? "-" : "";
+//     let val = Math.abs(bytes);
+//
+//     const base = binary ? 1024 : 1000;
+//     const units = binary
+//         ? ["B", "KiB", "MiB", "GiB", "TiB", "PiB"]
+//         : ["B", "KB", "MB", "GB", "TB", "PB"];
+//
+//     if (val < 1) return `${sign}0${spacer}B`;
+//
+//     const exp = Math.min(Math.floor(Math.log(val) / Math.log(base)), units.length - 1);
+//     const num = val / Math.pow(base, exp);
+//
+//     const str = pad ? num.toFixed(decimals) : toFixedNoTrailing(num, decimals);
+//     return `${sign}${str}${spacer}${units[exp]}`;
+// }
+//
+// function parseSize(input) {
+//     if (typeof input === "number" && Number.isFinite(input)) return input;
+//     if (typeof input !== "string") return null;
+//
+//     const s = input.trim().replace(",", ".");
+//     if (s.length === 0) return null;
+//
+//     const m = /^([+-]?\d+(?:\.\d+)?)(?:\s*([kmgtp]?i?b|bytes|byte|b))?$/i.exec(s);
+//     if (!m) return null;
+//
+//     const num = Number(m[1]);
+//     if (!Number.isFinite(num)) return null;
+//
+//     const unitRaw = (m[2] || "").toLowerCase();
+//
+//     const DEC = { "": 1, b: 1, byte: 1, bytes: 1, kb: 1e3, mb: 1e6, gb: 1e9, tb: 1e12, pb: 1e15 };
+//     const BIN = { kib: 1024, mib: 1024 ** 2, gib: 1024 ** 3, tib: 1024 ** 4, pib: 1024 ** 5 };
+//
+//     let factor = 1;
+//
+//     if (unitRaw in BIN) {
+//         factor = BIN[unitRaw];
+//     } else if (unitRaw in DEC) {
+//         factor = DEC[unitRaw];
+//     } else if (unitRaw === "k") {
+//         factor = 1e3;
+//     } else if (unitRaw === "ki") {
+//         factor = 1024;
+//     } else if (unitRaw === "") {
+//         factor = 1;
+//     } else {
+//         return null;
+//     }
+//
+//     const bytes = num * factor;
+//     return Math.round(bytes);
+// }
+//
+// function toFixedNoTrailing(n, decimals) {
+//     const s = n.toFixed(Math.max(0, decimals | 0));
+//     return decimals ? s.replace(/\.?0+$/, "") : s;
+// }
+//
+// function assertEqual(actual, expected, label = "") {
+//     const pass = Object.is(actual, expected);
+//     console.log(`${pass ? "Y" : "N"} ${label} →`, actual);
+//     if (!pass) {
+//         throw new Error(`Assertion failed: ${label}. Expected ${expected}, got ${actual}`);
+//     }
+// }
+//
+// function runTests() {
+//     assertEqual(formatBytes(0), "0 B", "format 0");
+//     assertEqual(formatBytes(1500), "1.5 KB", "format 1500");
+//     assertEqual(formatBytes(1536, { binary: true }), "1.5 KiB", "format 1536 bin");
+//     assertEqual(parseSize("1.5 MB"), 1500000, "parse 1.5 MB");
+//     assertEqual(parseSize("2 MiB"), 2097152, "parse 2 MiB");
+//     assertEqual(parseSize("-42kb"), -42000, "parse -42kb");
+//     assertEqual(parseSize("1,25 GiB"), 1342177280, "parse 1,25 GiB");
+//     assertEqual(parseSize("1024"), 1024, "parse 1024");
+// }
