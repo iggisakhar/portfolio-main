@@ -18559,3 +18559,185 @@
 //
 //     return 0;
 // }
+
+// function renderTable(rows, opts = {}) {
+//     const {
+//         header = null,
+//         align = 'left',
+//         maxColWidth = null,
+//         padding = 1,
+//     } = opts;
+//
+//     if (!Array.isArray(rows) || rows.some(r => !Array.isArray(r))) {
+//         throw new TypeError('rows must be an array of row arrays');
+//     }
+//     const cols = inferColumnCount(rows, header);
+//     const alignArr = normalizeAlign(align, cols);
+//     const maxWidthArr = normalizeMaxWidth(maxColWidth, cols);
+//     const normalizedRows = normalizeRows(rows, cols);
+//     const normalizedHeader = header ? padToCols(header, cols) : null;
+//
+//     const widths = computeWidths(normalizedRows, normalizedHeader, {
+//         padding, maxWidthArr
+//     });
+//
+//     const lines = [];
+//     lines.push(topBorder(widths, padding));
+//     if (normalizedHeader) {
+//         lines.push(renderRow(normalizedHeader, widths, alignArr, padding, true));
+//         lines.push(midBorder(widths, padding));
+//     }
+//     for (const row of normalizedRows) {
+//         lines.push(renderRow(row, widths, alignArr, padding));
+//     }
+//     lines.push(bottomBorder(widths, padding));
+//     return lines.join('\n');
+// }
+//
+// function inferColumnCount(rows, header) {
+//     let cols = 0;
+//     for (const r of rows) cols = Math.max(cols, r.length);
+//     if (header) cols = Math.max(cols, header.length);
+//     return cols;
+// }
+//
+// function normalizeAlign(align, cols) {
+//     const valid = new Set(['left','right','center']);
+//     if (typeof align === 'string') {
+//         if (!valid.has(align)) throw new Error('invalid align');
+//         return Array(cols).fill(align);
+//     }
+//     if (!Array.isArray(align)) throw new Error('align must be string or array');
+//     const out = Array(cols).fill('left');
+//     align.forEach((a,i)=>{ if (valid.has(a)) out[i]=a; });
+//     return out;
+// }
+//
+// function normalizeMaxWidth(maxColWidth, cols) {
+//     if (maxColWidth == null) return Array(cols).fill(null);
+//     if (typeof maxColWidth === 'number') {
+//         return Array(cols).fill(maxColWidth);
+//     }
+//     if (Array.isArray(maxColWidth)) {
+//         const out = Array(cols).fill(null);
+//         maxColWidth.forEach((w,i)=>{ out[i] = (Number.isInteger(w) && w>0) ? w : null; });
+//         return out;
+//     }
+//     throw new Error('maxColWidth must be number | number[] | null');
+// }
+//
+// function normalizeRows(rows, cols) {
+//     return rows.map(r => padToCols(r, cols));
+// }
+// function padToCols(arr, cols) {
+//     const out = arr.slice(0, cols);
+//     while (out.length < cols) out.push('');
+//     return out;
+// }
+//
+// function strLen(s) {
+//     return String(s).replace(/\x1b\[[0-9;]*m/g,'').length;
+// }
+//
+// function truncateCell(text, max) {
+//     const s = String(text);
+//     if (max == null || strLen(s) <= max) return s;
+//     if (max <= 1) return '…'.slice(0, max);
+//     return s.slice(0, max - 1) + '…';
+// }
+//
+// function computeWidths(rows, header, { padding, maxWidthArr }) {
+//     const cols = rows[0]?.length ?? (header?.length ?? 0);
+//     const widths = Array(cols).fill(0);
+//     const consider = header ? [header, ...rows] : rows;
+//     for (let c = 0; c < cols; c++) {
+//         let w = 0;
+//         for (const r of consider) {
+//             const cell = truncateCell(r[c], maxWidthArr[c]);
+//             w = Math.max(w, strLen(cell));
+//         }
+//         widths[c] = w;
+//     }
+//     return widths;
+// }
+//
+// function renderRow(row, widths, alignArr, padding, isHeader = false) {
+//     const padStr = ' '.repeat(padding);
+//     const cells = row.map((cell, i) => {
+//         const s = truncateCell(cell, null);
+//         return alignCell(s, widths[i], alignArr[i]);
+//     });
+//     const line = '│' + cells.map((c, i) => padStr + c.slice(0, widths[i]) + padStr).join('│') + '│';
+//     if (!isHeader) return line;
+//
+//     const underline = '│' + widths.map(w => padStr + repeatChar('=', w) + padStr).join('│') + '│';
+//     return line + '\n' + underline;
+// }
+//
+// function alignCell(s, width, align) {
+//     const len = strLen(s);
+//     if (len >= width) return s;
+//     const space = width - len;
+//     if (align === 'right') return ' '.repeat(space) + s;
+//     if (align === 'center') {
+//         const left = Math.floor(space / 2);
+//         const right = space - left;
+//         return ' '.repeat(left) + s + ' '.repeat(right);
+//     }
+//     return s + ' '.repeat(space);
+// }
+//
+// function repeatChar(ch, n) { return Array(Math.max(0, n)).fill(ch).join(''); }
+//
+// function topBorder(widths, padding) {
+//     const segs = widths.map(w => repeatChar('─', w + padding * 2));
+//     return '┌' + segs.join('┬') + '┐';
+// }
+// function midBorder(widths, padding) {
+//     const segs = widths.map(w => repeatChar('─', w + padding * 2));
+//     return '├' + segs.join('┼') + '┤';
+// }
+// function bottomBorder(widths, padding) {
+//     const segs = widths.map(w => repeatChar('─', w + padding * 2));
+//     return '└' + segs.join('┴') + '┘';
+// }
+//
+// if (require.main === module) {
+//     const header = ['Name', 'Role', 'Score', 'Note'];
+//     const rows = [
+//         ['Igor', 'Frontend',  95, 'Clean code / React'],
+//         ['Nala', 'QA',     100, 'Finds bugs with her nose'],
+//         ['Aman', 'PM',        88, 'Keeps scope in check'],
+//         ['Li',   'Designer',  92, 'Loves grids & balance'],
+//     ];
+//
+//     console.log('\nExample 1 — defaults (left align):\n');
+//     console.log(renderTable(rows, { header }));
+//
+//     console.log('\nExample 2 — custom align:\n');
+//     console.log(renderTable(rows, {
+//         header,
+//         align: ['left','center','right','left']
+//     }));
+//
+//     console.log('\nExample 3 — max width + padding=2:\n');
+//     console.log(renderTable(rows, {
+//         header,
+//         align: ['left','center','right','left'],
+//         maxColWidth: [null, 8, 5, 18],
+//         padding: 2
+//     }));
+//
+//     console.log('\nSelf-checks:');
+//     assert(renderTable([['a']], { header: ['h'] }).includes('┌'), 'borders present');
+//     assert(renderTable([['a']], { header: ['h'] }).includes('==='), 'header underline');
+//     const t = renderTable([['x','y','z']], { align: ['left','center','right'] });
+//     assert(t.includes(' x '), 'left ok');
+//     assert(t.includes(' y '), 'center ok');
+//     assert(t.includes(' z'), 'right ok');
+//     console.log('All basic checks passed');
+// }
+//
+// function assert(cond, msg) {
+//     if (!cond) throw new Error('Assertion failed: ' + msg);
+// }
