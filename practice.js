@@ -18432,3 +18432,130 @@
 //     assertEqual(parseSize("1,25 GiB"), 1342177280, "parse 1,25 GiB");
 //     assertEqual(parseSize("1024"), 1024, "parse 1024");
 // }
+
+// int main() {
+//     int dogYears;
+//     int humanYears;
+//
+//     cin  >> dogYears;
+//     humanYears = 7 * dogYears;
+//
+//     cout << dogYears;
+//     cout << " dog years is about ";
+//     cout << humanYears;
+//     cout << " human years.";
+//     cout << endl;
+//
+//     return 0;
+// }
+//
+// int main() {
+//
+//     cout << "This is the first paragraph.";
+//     cout << endl;
+//     cout << "The cursor has been moved to the next line.";
+//     cout << endl;
+//     cout << endl;
+//     cout << "This is the second paragraph.";
+//
+//     return 0;
+// }
+//
+// int main() {
+//     int numApples;
+//
+//     cin >> numApples;
+//
+//     cout << "Nia bought " << numApples << " apples." << endl;
+//
+//     return 0;
+// }
+//
+// int main() {
+//     int userNum;
+//
+//     userNum = 5;
+//
+//     cout << "Foretelling is hard." << endl;
+//     cout << "Particularly ";
+//     cout << "of the future." << endl;
+//     cout << "User num is: " << userNum << endl;
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numBeans;
+//     int numJars;
+//     int totalBeans;
+//
+//     numBeans = 500;
+//     numJars = 3;
+//
+//     cout << numBeans << " beans in ";
+//     cout << numJars  << " jars yields ";
+//     totalBeans = numBeans * numJars;
+//     cout << "totalBeans" << " total" << endl;
+//
+//     return 0;
+// }
+//
+// int main() {
+//     string firstName1;
+//     string lastName1;
+//     string firstName2;
+//     string lastName2;
+//
+//     cout << "What is the first person's first name?" << endl;
+//     cin >> firstName1;
+//     cout << "What is the first person's last name?" << endl;
+//     cin >> lastName1;
+//
+//     cout << "What is the second person's first name?" << endl;
+//     cin >> firstName2;
+//     cout << "What is the second person's last name?" << endl;
+//     cin >> lastName2;
+//
+//     cout << "Here are some common married-couple names:" << endl;
+//     cout << firstName1 << " " << lastName1 << " and " << firstName2 << " " << lastName2 << endl;
+//     cout << firstName1 << " and " << firstName2 << " " << lastName1 << endl;
+//     cout << firstName1 << " and " << firstName2 << " " << lastName2 << endl;
+//
+//     cout << firstName1 << " " << lastName1 << "-" << lastName2 << " and "
+//     << firstName2 << " " << lastName1 << "-" << lastName2 << endl;
+//
+//     cout << firstName1 << " " << lastName2 << "-" << lastName1 << " and "
+//     << firstName2 << " " << lastName2 << "-" << lastName1 << endl;
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     int currentPrice;
+//     int lastMonthsPrice;
+//
+//     cin >> currentPrice;
+//     cin >> lastMonthsPrice;
+//
+//     int change = currentPrice - lastMonthsPrice;
+//     double mortgage = (currentPrice * 0.051) / 12.0;
+//
+//     cout << "This house is $" << currentPrice << ". The change is $"
+//     << change << " since last month." << endl;
+//
+//     if (mortgage == (int)mortgage) {
+//         cout << "The estimated monthly mortgage is $" << (int)mortgage << "." << endl;
+//     } else {
+//         cout << "The estimated monthly mortgage is $"
+//         << fixed << setprecision(1) << mortgage << "." << endl;
+//     }
+//
+//     return 0;
+// }
