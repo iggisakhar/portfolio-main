@@ -18764,3 +18764,18 @@
 // console.log("Input text:\n", text.trim(), "\n");
 // console.log("Unique words with counts:");
 // console.log(wordStats(text));
+
+// const seconds = parseInt(process.argv[2], 10) || 10;
+// let remaining = seconds;
+//
+// console.log(`Starting countdown from ${remaining} seconds...`);
+//
+// const timer = setInterval(() => {
+//     if (remaining > 0) {
+//         console.log(`${remaining}...`);
+//         remaining--;
+//     } else {
+//         clearInterval(timer);
+//         console.log("Done!");
+//     }
+// }, 1000);
