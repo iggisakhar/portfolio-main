@@ -18741,3 +18741,26 @@
 // function assert(cond, msg) {
 //     if (!cond) throw new Error('Assertion failed: ' + msg);
 // }
+
+// unique-words.js
+// Run: node unique-words.js
+
+// const text = `
+// Hello world! Hello You.
+// This world is full joy, graetful for my life`;
+//
+// function wordStats(str) {
+//     return str
+//         .toLowerCase()
+//         .replace(/[^a-zа-яё0-9\s]/gi, "")
+//         .split(/\s+/)
+//         .filter(Boolean)
+//         .reduce((map, word) => {
+//             map[word] = (map[word] || 0) + 1;
+//             return map;
+//         }, {});
+// }
+//
+// console.log("Input text:\n", text.trim(), "\n");
+// console.log("Unique words with counts:");
+// console.log(wordStats(text));
