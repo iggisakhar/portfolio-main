@@ -18779,3 +18779,266 @@
 //         console.log("Done!");
 //     }
 // }, 1000);
+
+// #include <iostream>
+// #include <iomanip>
+// #include <cmath>
+//
+// using namespace std;
+//
+// int main() {
+//     double sphereVolume;
+//     double sphereRadius;
+//
+//     cin >> sphereRadius;
+//
+//     sphereVolume = (4.0 / 3.0) * M_PI * sphereRadius * sphereRadius * sphereRadius;
+//
+//     cout << fixed << setprecision(2) << sphereVolume << endl;
+//
+//     return 0;
+// }
+
+// #include <iomanip>
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//
+//     double lengthDays;
+//     double lengthYears;
+//
+//     cin >> lengthDays;
+//
+//     lengthYears = lengthDays / 365.0;
+//
+//
+//     cout << fixed << setprecision(3) << lengthYears << endl;
+//
+//     return 0;
+// }
+
+// #include <iomanip>
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     double amtCents;
+//     double amtDollars;
+//
+//     cin >> amtCents;
+//
+//     amtDollars = amtCents / 100;
+//     cout << "100 cents = 1 dollar" << endl;
+//     cout << fixed << setprecision(2) << amtCents
+//     << " cents = "
+//     << setprecision(3) << amtDollars
+//     << " dollars" << endl;
+//
+//     return 0;
+// }
+
+// #include <iomanip>
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//
+//     double objectMass;
+//     double objectVelocity;
+//     double objectMomentum;
+//
+//     cin >> objectMass >> objectVelocity;
+//
+//     objectMomentum = objectMass * objectVelocity;
+//
+//     cout << "Object momentum is "
+//     << fixed << setprecision(5)
+//     <<  objectMomentum << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     double G = 6.673e-11;
+//     double M = 5.98e24;
+//     double accelGravity;
+//     double distCenter;
+//
+//     cin >> distCenter;
+//
+//     accelGravity = (G * M) / (distCenter * distCenter);
+//
+//     cout << accelGravity << endl;
+//
+//     return 0;
+// }
+
+// #include "testcode.h"  // For code testing purposes
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     const double FEE_PER_HOUR = 3.50;
+//     int numHours;
+//     double totalCost;
+//
+//     cin >> numHours;
+//
+//     totalCost = numHours * FEE_PER_HOUR;
+//
+//     cout << numHours << " hours = ";
+//     cout << fixed << setprecision(2) << totalCost << " dollars" << endl;
+//
+//     Runtests();  // Testing code
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int totalBudget;
+//     int vaseCost;
+//     int remainingBudget;
+//
+//     cin >> totalBudget;
+//     cin >> vaseCost;
+//
+//     remainingBudget = totalBudget % vaseCost;
+//
+//     cout << "Remaining budget: " << remainingBudget << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int userVal;
+//     int hundredsDigit;
+//     int tmpVal;
+//
+//     cin >> userVal;
+//
+//     hundredsDigit = (userVal / 100) % 10;
+//
+//     cout << "Value in hundreds place: " << hundredsDigit << endl;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int totalDollars;
+//     int numFifties;
+//     int numFives;
+//     int numOnes;
+//
+//     cin >> totalDollars;
+//
+//     numFifties = totalDollars / 50;
+//     totalDollars = totalDollars % 50;
+//     numFives = totalDollars /5;
+//     numOnes = totalDollars % 5;
+//
+//     cout << "50-dollar bills: " << numFifties << endl;
+//     cout << "5-dollar bills: " << numFives << endl;
+//     cout << "One-dollar bills: " << numOnes << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     int numMiles;
+//
+//     cin >> numMiles;
+//
+//     cout << fixed << setprecision(2) << static_cast<double>(numMiles) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char letterToQuit;
+//     int  numPresses;
+//
+//     cin >> letterToQuit;
+//     cin >> numPresses;
+//
+//     cout << "Press the " << letterToQuit
+//     << " key " << numPresses
+//     << " times to quit." << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int meatballsQuantity;
+//
+//     cin >> meatballsQuantity;
+//
+//     cout << "Initial number of meatballs: " << meatballsQuantity << endl;
+//
+//     meatballsQuantity = meatballsQuantity / 8;
+//
+//     cout << "Updated number of meatballs: " << meatballsQuantity << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//
+//     int userNum;
+//     int divNum;
+//
+//     cin >> userNum >> divNum;
+//
+//     userNum = userNum / divNum;
+//     cout << userNum << " ";
+//
+//     userNum = userNum / divNum;
+//     cout << userNum << " ";
+//
+//     userNum = userNum / divNum;
+//     cout << userNum << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     double age, weight, heartRate, time;
+//     double calories;
+//
+//     cin >> age >> weight >> heartRate >> time;
+//     calories = ((age * 0.2757) + (weight * 0.03295) + (heartRate * 1.0781) - 75.4991) * time / 8.368;
+//
+//     cout << fixed << setprecision(2);
+//     cout << "Calories: " << calories << " calories" << endl;
+//
+//     return 0;
+// }
+
