@@ -19053,3 +19053,19 @@
 //
 // console.log("Your random password:");
 // console.log(generatePassword());
+
+// random-color.js
+// Run: node random-color.js
+
+function randomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    const hex = "#" + [r, g, b].map(x => x.toString(16).padStart(2, "0")).join("");
+    return { r, g, b, hex };
+}
+
+const color = randomColor();
+console.log("Random Color");
+console.log("HEX:", color.hex);
+console.log("RGB:", `rgb(${color.r}, ${color.g}, ${color.b})`);
