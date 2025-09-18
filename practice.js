@@ -19069,3 +19069,25 @@
 // console.log("Random Color");
 // console.log("HEX:", color.hex);
 // console.log("RGB:", `rgb(${color.r}, ${color.g}, ${color.b})`);
+
+// function formatDate(date) {
+//     const yyyy = date.getFullYear();
+//     const mm = String(date.getMonth() + 1).padStart(2, "0");
+//     const dd = String(date.getDate()).padStart(2, "0");
+//
+//     return {
+//         iso: date.toISOString().slice(0, 10),
+//         us: `${mm}/${dd}/${yyyy}`,
+//         eu: `${dd}.${mm}.${yyyy}`,
+//         time: date.toTimeString().split(" ")[0]
+//     };
+// }
+//
+// const today = new Date();
+// const f = formatDate(today);
+//
+// console.log("Today’s date in formats:");
+// console.log("ISO:", f.iso);
+// console.log("US :", f.us);
+// console.log("EU :", f.eu);
+// console.log("Time:", f.time);
