@@ -19091,3 +19091,25 @@
 // console.log("US :", f.us);
 // console.log("EU :", f.eu);
 // console.log("Time:", f.time);
+
+// guess-number.js
+// Run: node guess-number.js
+
+// const readline = require("readline");
+//
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+//
+// const secret = Math.floor(Math.random() * 10) + 1;
+//
+// rl.question("Guess a number between 1 and 10: ", (answer) => {
+//     const guess = Number(answer);
+//     if (guess === secret) {
+//         console.log("Correct! You guessed the number!");
+//     } else {
+//         console.log(`Wrong. The number was ${secret}.`);
+//     }
+//     rl.close();
+// });
