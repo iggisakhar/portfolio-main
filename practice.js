@@ -19741,3 +19741,315 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> ticketList;
+//     const int NUM_TICKETS = 3;
+//     int ticketIn;
+//     unsigned int i;
+//
+//     for (i = 0; i < NUM_TICKETS; ++i) {
+//         cin >> ticketIn;
+//         ticketList.push_back(ticketIn);
+//     }
+//     ticketList.pop_back();
+//     for (i = 0; i < ticketList.size(); ++i) {
+//         cout << ticketList.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> mpgTracker;
+//     const int NUM_READINGS = 3;
+//     int mpgReading;
+//     int i;
+//
+//     for (i = 0; i < NUM_READINGS; ++i) {
+//         cin >> mpgReading;
+//         mpgTracker.push_back(mpgReading);
+//     }
+//
+//     cout << "Last mpg reading: " <<  mpgTracker.back() << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     int numElements;
+//     vector<int> valuesList;
+//     unsigned int i;
+//     int inputVal;
+//
+//     cin >> numElements;
+//
+//     for (i = 0; i < numElements; ++i) {
+//         cin >> inputVal;
+//         valuesList.push_back(inputVal);
+//     }
+//
+//     cout << "Original values: ";
+//     for (i = 0; i < valuesList.size(); ++i) {
+//         cout << valuesList.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     for (i = 0; i < valuesList.size(); ++i){
+//         if (valuesList.at(i) % 2 == 0){
+//             cout << valuesList.at(i) << " is adjusted to an odd value" << endl;
+//             valuesList.at(i) = valuesList.at(i) + 1;
+//         }
+//     }
+//
+//     cout << "Nearest odd values: ";
+//     for (i = 0; i < valuesList.size(); ++i) {
+//         cout << valuesList.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     int numValues;
+//     vector<int> yesterdayTemperatures;
+//     vector<int> todayTemperatures;
+//     vector<int> todayBackup;
+//     unsigned int i;
+//     int inputVal;
+//
+//     cin >> numValues;
+//
+//     cout << "Yesterday's temperatures: ";
+//     for (i = 0; i < numValues; ++i) {
+//         cin >> inputVal;
+//         yesterdayTemperatures.push_back(inputVal);
+//         cout << yesterdayTemperatures.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     cout << "Today's temperatures: ";
+//     for (i = 0; i < numValues; ++i) {
+//         cin >> inputVal;
+//         todayTemperatures.push_back(inputVal);
+//         cout << todayTemperatures.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     if(yesterdayTemperatures == todayTemperatures){
+//         cout << "Today's temperatures and yesterday's temperatures are identical." << endl;
+//     }
+//     else {
+//         cout << "Today's temperatures and yesterday's temperatures are not identical." << endl;
+//         todayBackup = todayTemperatures;
+//     }
+//
+//     if (todayBackup.size() > 0) {
+//         cout << "Today's backup: ";
+//         for (i = 0; i < todayBackup.size(); ++i) {
+//             cout << todayBackup.at(i) << " ";
+//         }
+//         cout << endl;
+//     }
+//     else {
+//         cout << "Backup not needed." << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     int numValues;
+//     vector<double> scoresList;
+//     vector<double> secondList;
+//     unsigned int i;
+//     double inputVal;
+//
+//     cin >> numValues;
+//
+//     for (i = 0; i < numValues; ++i) {
+//         cin >> inputVal;
+//         scoresList.push_back(inputVal);
+//     }
+//     secondList.resize(scoresList.size());
+//     if (!scoresList.empty()){
+//         secondList.at(0) = scoresList.back();
+//         for(i = 0; i + 1 < scoresList.size(); ++i){
+//             secondList.at(i + 1) = scoresList.at(i);
+//         }
+//     }
+//
+//
+//     cout << "Original scores: ";
+//     for (i = 0; i < scoresList.size(); ++i) {
+//         cout << fixed << setprecision(1) << scoresList.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     cout << "Updated scores: ";
+//     for (i = 0; i < secondList.size(); ++i) {
+//         cout << secondList.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_ROWS = 2;
+//     const int NUM_COLS = 2;
+//     int milesTracker[NUM_ROWS][NUM_COLS];
+//     int i;
+//     int j;
+//     int maxMiles = 0;
+//     int minMiles = 0;
+//     int value;
+//
+//     for (i = 0; i < NUM_ROWS; i++){
+//         for (j = 0; j < NUM_COLS; j++){
+//             cin >> value;
+//             milesTracker[i][j] = value;
+//         }
+//     }
+//
+//     maxMiles = milesTracker[0][0];
+//     minMiles = milesTracker[0][0];
+//     for(i = 0; i < NUM_ROWS; i++){
+//         for(j = 0; j < NUM_COLS; j++){
+//             if(milesTracker[i][j] > maxMiles){
+//                 maxMiles = milesTracker[i][j];
+//             }
+//             if(milesTracker[i][j] < minMiles){
+//                 minMiles = milesTracker[i][j];
+//             }
+//         }
+//     }
+//
+//     cout << "Min miles: " << minMiles << endl;
+//     cout << "Max miles: " << maxMiles << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char inputString[20];
+//     int i;
+//
+//     cin >> inputString;
+//
+//     for(i = 0; inputString[i] != '\0'; ++i){
+//         if(inputString[i] != '-'){
+//             inputString[i] = '\0';
+//             break;
+//         }
+//     }
+//
+//     cout << inputString << endl;
+//
+//     return 0;
+// }
+
+// #include <cstring>
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char currentFriend[50] = "Padma Dahl";
+//     char newFriend[50];
+//
+//     cout << currentFriend << " is my friend." << endl;
+//
+//     cin.getline(newFriend, 50);
+//
+//     strcpy(currentFriend, newFriend);
+//
+//     cout << currentFriend << " is my friend." << endl;
+//
+//     return 0;
+// }
+
+// #include <cstring>
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char nameStr[80] = "Rowan ";
+//     char animalStr[80];
+//
+//     cin.getline(animalStr, 80);
+//
+//     strcat(nameStr, animalStr);
+//
+//     cout << nameStr << endl;
+//
+//     return 0;
+// }
+
+// #include <cstring>
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char stateInput[80];
+//     char searchChar;
+//
+//     cin.getline(stateInput, 80);
+//     cin >> searchChar;
+//
+//     if(strchr(stateInput, searchChar) == NULL){
+//         cout << "List A" << endl;
+//     }
+//     else{
+//         cout << "List B" << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <cstring>
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char studentName[25];
+//     int i;
+//
+//     cin >> studentName;
+//
+//     for(i = 0; i < strlen(studentName); ++i){
+//         cout << studentName[i] << " ";
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
