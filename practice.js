@@ -19113,3 +19113,631 @@
 //     }
 //     rl.close();
 // });
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string studentName;
+//     string courseName;
+//
+//     cin >> studentName;
+//     cin >> courseName;
+//
+//     cout << studentName << " is studying " << courseName << "." << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string studentName;
+//     string courseName;
+//
+//     getline(cin, studentName);
+//     getline(cin, courseName);
+//
+//     cout << studentName << " is taking " << courseName << "." << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string userName;
+//     string birthPlace;
+//
+//     cin >> userName;
+//     cin.ignore();
+//     getline(cin, birthPlace);
+//     birthPlace = " " + birthPlace;
+//     cout << userName << endl;
+//     cout << birthPlace << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+//
+// int main() {
+//     double x;
+//     double y;
+//     double z;
+//
+//     cin >> x >> y >> z;
+//     double a = pow(x, z);
+//     double b = pow(x, pow(y, z));
+//     double c = fabs(y);
+//     double d = sqrt(pow(x * y, z));
+//
+//     cout << a << " " << b << " " << c << " " << d << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     int num1;
+//     int num2;
+//     int num3;
+//     int num4;
+//     cin >> num1 >> num2 >> num3 >> num4;
+//
+//     int intProduct = num1 * num2 * num3 * num4;
+//     int intAverage = (num1 + num2 + num3 + num4) / 4;
+//
+//     cout << intProduct << " " << intAverage << endl;
+//     double dnum1 = num1, dnum2 = num2, dnum3 = num3, dnum4 = num4;
+//     double dblProduct = dnum1 * dnum2 * dnum3 * dnum4;
+//     double dblAverage = (dnum1 + dnum2 + dnum3 + dnum4) / 4.0;
+//
+//     cout << fixed << setprecision(3);
+//     cout << dblProduct << " " << dblAverage << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     int numStudents;
+//     double firstStudent;
+//     double middleStudent;
+//     double lastStudent;
+//     unsigned int i;
+//
+//     cin >> numStudents;
+//     cin >> firstStudent;
+//     cin >> middleStudent;
+//     cin >> lastStudent;
+//
+//     vector<double> runningLogs(numStudents);
+//     runningLogs.at(0) = firstStudent;
+//     runningLogs.at(numStudents / 2) = middleStudent;
+//     runningLogs.at(numStudents - 1) = lastStudent;
+//
+//     for (i = 0; i < runningLogs.size(); ++i) {
+//         cout << runningLogs.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> bikingLogs;
+//     int numDistance;
+//     int inputVal;
+//     unsigned int i;
+//
+//     cin >> numDistance;
+//
+//     for (i = 0; i < numDistance; ++i) {
+//         cin >> inputVal;
+//         bikingLogs.push_back(inputVal);
+//     }
+//
+//     for(i = 0; i < bikingLogs.size(); i++){
+//         if(bikingLogs.at(i) % 2 == 1){
+//             cout << bikingLogs.at(i) << endl;
+//         }
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> swimmingLogs;
+//     int numTime;
+//     int inputVal;
+//     int i;
+//
+//     cin >> numTime;
+//
+//     for (i = 0; i < numTime; ++i) {
+//         cin >> inputVal;
+//         swimmingLogs.push_back(inputVal);
+//     }
+//
+//     cout << "Even: ";
+//     for(i = 0; i < swimmingLogs.size(); i += 2){
+//         cout << swimmingLogs.at(i) << "+";
+//     }
+//     cout << endl;
+//     cout << "Odd: ";
+//     for(i = 1; i < swimmingLogs.size(); i += 2){
+//         cout << swimmingLogs.at(i) << "+";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> dailyMiles;
+//     int vecVals;
+//     unsigned int i;
+//     int mile;
+//
+//     cin >> vecVals;
+//
+//     for (i = 0; i < vecVals; ++i) {
+//         cin >> mile;
+//         dailyMiles.push_back(mile);
+//     }
+//
+//     for(i = 0; i < dailyMiles.size(); ++i){
+//         cout << dailyMiles.at(i);
+//         if(i < dailyMiles.size() -1){
+//             cout << " - ";
+//         }
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> hourlyScores;
+//     int vecVals;
+//     unsigned int i;
+//     int score;
+//
+//     cin >> vecVals;
+//
+//     for (i = 0; i < vecVals; ++i) {
+//         cin >> score;
+//         hourlyScores.push_back(score);
+//     }
+//
+//     for(i = vecVals /2; i < vecVals; i++){
+//         cout << hourlyScores[i];
+//         if(i < vecVals -1){
+//             cout << ", ";
+//         }
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> dailyMiles;
+//     int numIn;
+//     int sumBonus;
+//     unsigned int i;
+//     int mile;
+//
+//     cin >> numIn;
+//
+//     for (i = 0; i < numIn; ++i) {
+//         cin >> mile;
+//         dailyMiles.push_back(mile);
+//     }
+//
+//     sumBonus = 0;
+//
+//     for(i = 0; i < numIn; ++i){
+//         if(dailyMiles[i] > 250){
+//             sumBonus += dailyMiles[i] -250;
+//         }
+//     }
+//
+//     cout << "Bonus sum: " << sumBonus << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 4;
+//     vector<int> origList;
+//     vector<int> offsetAmount;
+//     unsigned int i;
+//     int input;
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> input;
+//         origList.push_back(input);
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> input;
+//         offsetAmount.push_back(input);
+//     }
+//
+//     for(i = 0; i < NUM_VALS; ++i){
+//         cout << origList.at(i) + offsetAmount.at(i) << " ";
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     const int SIZE_LIST = 4;
+//     vector<int> keysList;
+//     vector<int> itemsList;
+//     unsigned int i;
+//     int input;
+//
+//     for (i = 0; i < SIZE_LIST; ++i) {
+//         cin >> input;
+//         keysList.push_back(input);
+//     }
+//
+//     for (i = 0; i < SIZE_LIST; ++i) {
+//         cin >> input;
+//         itemsList.push_back(input);
+//     }
+//
+//     for(i = 0; i < SIZE_LIST; ++i){
+//         if(keysList.at(i) > 100){
+//             cout << itemsList.at(i) << " ";
+//         }
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     int dataSize;
+//     unsigned int i;
+//     string stringVal;
+//     double doubleVal;
+//
+//     cin >> dataSize;
+//
+//     vector<string> patientList;
+//     vector<double> heightList;
+//
+//     for(i = 0; i < dataSize; i++){
+//         cin >> stringVal;
+//         cin >> doubleVal;
+//         patientList.push_back(stringVal);
+//         heightList.push_back(doubleVal);
+//     }
+//
+//     for (i = 0; i < patientList.size(); ++i) {
+//         cout << "Patient: " << patientList.at(i) << ", ";
+//         cout << "Height: " << heightList.at(i) << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<string> subjectList;
+//     vector<int> pageList;
+//     int inputSize;
+//     string subjectAsked;
+//     unsigned int i;
+//     string stringVal;
+//     int intVal;
+//
+//     cin >> inputSize;
+//
+//     for (i = 0; i < inputSize; ++i) {
+//         cin >> stringVal;
+//         cin >> intVal;
+//
+//         subjectList.push_back(stringVal);
+//         pageList.push_back(intVal);
+//     }
+//
+//     cin >> subjectAsked;
+//
+//     for(i = 0; i < subjectList.size(); ++i){
+//         if(subjectList.at(i) == subjectAsked){
+//             cout << "Index " << i << ": subject " << subjectAsked
+//             << " is matched with page " << pageList.at(i) << endl;
+//         }
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<string> colorList;
+//     vector<int> quantityList;
+//     int numElements;
+//     string colorAsked;
+//     int quantityAsked;
+//     int matchCount;
+//     unsigned int i;
+//     string stringVal;
+//     int intVal;
+//
+//     cin >> numElements;
+//
+//     for (i = 0; i < numElements; ++i) {
+//         cin >> stringVal;
+//         cin >> intVal;
+//
+//         colorList.push_back(stringVal);
+//         quantityList.push_back(intVal);
+//     }
+//
+//     cin >> colorAsked;
+//     cin >> quantityAsked;
+//
+//     matchCount = 0;
+//     for(i = 0; i < numElements; ++i){
+//         if(colorList[i] == colorAsked && quantityList[i] == quantityAsked){
+//             cout << "Found at index " << i << endl;
+//             matchCount++;
+//         }
+//     }
+//
+//     cout << "Total: " << matchCount << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> listVals(5);
+//     int listValsSize = listVals.size();
+//     int numDeleted;
+//     int i;
+//
+//     listVals.at(0) = 9;
+//     listVals.at(1) = 8;
+//     listVals.at(2) = 10;
+//     listVals.at(3) = 11;
+//     listVals.at(4) = 7;
+//
+//     cin >> numDeleted;
+//
+//     cout << "Start ";
+//     for (i = 0; i < listVals.size(); ++i) {
+//         cout << listVals.at(i) << " ";
+//     }
+//     cout << "End" << endl;
+//
+//     listVals.resize(listVals.size() - numDeleted);
+//
+//     cout << "Start ";
+//     for (i = 0; i < listVals.size(); ++i) {
+//         cout << listVals.at(i) << " ";
+//     }
+//     cout << "End" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     vector<double> myValues;
+//     int numVals;
+//     unsigned int i;
+//     int newSize;
+//     double firstNum;
+//
+//     cin >> newSize;
+//     cin >> firstNum;
+//
+//     myValues.resize(newSize);
+//     for(i = 0; i < myValues.size(); ++i){
+//         myValues.at(i) = firstNum * (i / 2 + 1);
+//     }
+//
+//     for (i = 0; i < myValues.size(); ++i) {
+//         cout << fixed << setprecision(1) << myValues.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     unsigned int i;
+//     int initElements = 1;
+//     vector<int> myList(initElements);
+//     int numElements;
+//     int startNum;
+//
+//     myList.at(0) = 48;
+//
+//     cin >> numElements;
+//     cin >> startNum;
+//
+//     myList.resize(numElements);
+//     for(i = 1; i < myList.size(); ++i){
+//         myList.at(i) = startNum * (i + 1);
+//     }
+//
+//     for (i = 0; i < myList.size(); ++i) {
+//         cout << myList.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> inputIntegers;
+//     int value;
+//     int i;
+//
+//     cin >> value;
+//     while(value != -1){
+//         inputIntegers.push_back(value + 1);
+//         cin >> value;
+//     }
+//
+//     for (i = 0; i < inputIntegers.size(); ++i) {
+//         cout << inputIntegers.at(i) << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> numberVector;
+//     int value;
+//     int i;
+//     int n;
+//
+//     cin >> value;
+//     while (value != -1) {
+//         numberVector.push_back(value);
+//         cin >> value;
+//     }
+//
+//     n = numberVector.at(numberVector.size() - 1);
+//     for(i = n; i < numberVector.size(); ++i){
+//         cout << numberVector.at(i) << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> vect1;
+//     int value;
+//     int i;
+//
+//     cin >> value;
+//     while (value != -1) {
+//         vect1.push_back(value);
+//         cin >> value;
+//     }
+//
+//     for(i = vect1.size() -1; i >= 0; --i){
+//         if(vect1.at(i) < 0){
+//             cout << vect1.at(i) << endl;
+//         }
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> dataVector;
+//     int value;
+//     int i;
+//
+//     cin >> value;
+//     while (value != 0) {
+//         dataVector.push_back(value);
+//         cin >> value;
+//     }
+//
+//     int lastVal = dataVector.at(dataVector.size() -1);
+//     for(i = 0; i < dataVector.size(); ++i){
+//         if(dataVector.at(i) > lastVal){
+//             cout << "IGNORE" << endl;
+//         } else {
+//             cout << dataVector.at(i) << endl;
+//         }
+//     }
+//
+//     return 0;
+// }
+
