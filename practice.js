@@ -20061,7 +20061,7 @@
 // });
 //
 // const questions = [
-//     { q: "Capital of Kazakhstan?", a: "astana" },
+//     { q: "Capital of Kazakhstan?", a: "Astana" },
 //     { q: "2 + 2 = ?", a: "4" },
 //     { q: "What language are we coding in?", a: "javascript" }
 // ];
