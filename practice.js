@@ -20053,3 +20053,38 @@
 //     return 0;
 // }
 
+// const readline = require("readline");
+//
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+//
+// const questions = [
+//     { q: "Capital of Kazakhstan?", a: "astana" },
+//     { q: "2 + 2 = ?", a: "4" },
+//     { q: "What language are we coding in?", a: "javascript" }
+// ];
+//
+// let score = 0;
+// let index = 0;
+//
+// function askQuestion() {
+//     if (index < questions.length) {
+//         rl.question(`Q${index + 1}: ${questions[index].q} `, (answer) => {
+//             if (answer.trim().toLowerCase() === questions[index].a) {
+//                 console.log("Correct!\n");
+//                 score++;
+//             } else {
+//                 console.log(`Wrong. Answer: ${questions[index].a}\n`);
+//             }
+//             index++;
+//             askQuestion();
+//         });
+//     } else {
+//         console.log(`Quiz finished! Your score: ${score}/${questions.length}`);
+//         rl.close();
+//     }
+// }
+//
+// askQuestion();
