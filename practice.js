@@ -20088,3 +20088,83 @@
 // }
 //
 // askQuestion();
+
+// country-offline.js
+// const DB = [
+//     {
+//         name: "Kazakhstan",
+//         official: "Republic of Kazakhstan",
+//         code: "KZ",
+//         region: "Asia",
+//         subregion: "Central Asia",
+//         capital: "Astana",
+//         population: 19824000,
+//         areaKm2: 2724900,
+//         languages: ["Kazakh", "Russian"],
+//         currencies: ["KZT (Tenge)"],
+//         timezones: ["UTC+05:00", "UTC+06:00"]
+//     },
+//     {
+//         name: "United States",
+//         official: "United States of America",
+//         code: "US",
+//         region: "Americas",
+//         subregion: "North America",
+//         capital: "Washington, D.C.",
+//         population: 333000000,
+//         areaKm2: 9833517,
+//         languages: ["English"],
+//         currencies: ["USD ($)"],
+//         timezones: ["UTC−12:00…UTC+12:00"]
+//     },
+//     {
+//         name: "Japan",
+//         official: "Japan",
+//         code: "JP",
+//         region: "Asia",
+//         subregion: "East Asia",
+//         capital: "Tokyo",
+//         population: 125700000,
+//         areaKm2: 377975,
+//         languages: ["Japanese"],
+//         currencies: ["JPY (¥)"],
+//         timezones: ["UTC+09:00"]
+//     }
+// ];
+//
+// function formatNumber(n) {
+//     return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+// }
+//
+// function searchCountry(query) {
+//     const q = (query || "").trim().toLowerCase();
+//     if (!q) return null;
+//     // точное совпадение или “начинается с…”
+//     return (
+//         DB.find(c => c.name.toLowerCase() === q) ||
+//         DB.find(c => c.name.toLowerCase().startsWith(q)) ||
+//         null
+//     );
+// }
+//
+// function printCountry(c) {
+//     console.log(`\n ${c.name} (${c.official})`);
+//     console.log(`Code: ${c.code}`);
+//     console.log(`Region: ${c.region} — ${c.subregion}`);
+//     console.log(`Capital: ${c.capital}`);
+//     console.log(`Population: ${formatNumber(c.population)}`);
+//     console.log(`Area: ${formatNumber(c.areaKm2)} km²`);
+//     console.log(`Languages: ${c.languages.join(", ")}`);
+//     console.log(`Currencies: ${c.currencies.join(", ")}`);
+//     console.log(`Timezones: ${c.timezones.join(", ")}\n`);
+// }
+//
+// (function main() {
+//     const query = process.argv.slice(2).join(" ");
+//     const country = searchCountry(query);
+//     if (!country) {
+//         console.log(`Not found. Try one of: ${DB.map(c => c.name).join(", ")}`);
+//         process.exit(0);
+//     }
+//     printCountry(country);
+// })();
