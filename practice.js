@@ -20168,3 +20168,66 @@
 //     }
 //     printCountry(country);
 // })();
+
+// const readline = require("readline");
+//
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+//
+// let todos = [];
+//
+// function showMenu() {
+//     console.log("\n📋 To-Do List Menu");
+//     console.log("1. Show tasks");
+//     console.log("2. Add task");
+//     console.log("3. Complete task");
+//     console.log("4. Delete task");
+//     console.log("5. Exit");
+//
+//     rl.question("Choose option: ", (answer) => {
+//         switch (answer.trim()) {
+//             case "1": return showTasks();
+//             case "2": return addTask();
+//             case "3": return completeTask();
+//             case "4": return deleteTask();
+//             case "5": rl.close(); break;
+//             default: showMenu();
+//         }
+//     });
+// }
+//
+// function showTasks() {
+//     console.log("\nYour tasks:");
+//     if (todos.length === 0) console.log("— empty —");
+//     else todos.forEach((t, i) => {
+//         console.log(`${i + 1}. [${t.done ? "x" : " "}] ${t.text}`);
+//     });
+//     showMenu();
+// }
+//
+// function addTask() {
+//     rl.question("Enter new task: ", (text) => {
+//         if (text.trim()) todos.push({ text, done: false });
+//         showMenu();
+//     });
+// }
+//
+// function completeTask() {
+//     rl.question("Enter task number to complete: ", (num) => {
+//         const i = parseInt(num, 10) - 1;
+//         if (todos[i]) todos[i].done = true;
+//         showMenu();
+//     });
+// }
+//
+// function deleteTask() {
+//     rl.question("Enter task number to delete: ", (num) => {
+//         const i = parseInt(num, 10) - 1;
+//         if (todos[i]) todos.splice(i, 1);
+//         showMenu();
+//     });
+// }
+//
+// showMenu();
