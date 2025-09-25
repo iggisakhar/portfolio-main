@@ -20231,3 +20231,24 @@
 // }
 //
 // showMenu();
+
+// const readline = require("readline");
+//
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+//
+// function isPalindrome(str) {
+//     const clean = str.toLowerCase().replace(/[^a-z0-9а-яё]/gi, "");
+//     return clean === clean.split("").reverse().join("");
+// }
+//
+// rl.question("Enter a word or phrase: ", (input) => {
+//     if (isPalindrome(input)) {
+//         console.log("Yes, it's a palindrome!");
+//     } else {
+//         console.log("No, not a palindrome.");
+//     }
+//     rl.close();
+// });
