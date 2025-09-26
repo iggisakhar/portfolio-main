@@ -20252,3 +20252,16 @@
 //     }
 //     rl.close();
 // });
+
+// const n = parseInt(process.argv[2], 10) || 10;
+//
+// function fibonacci(num) {
+//     const seq = [0, 1];
+//     for (let i = 2; i < num; i++) {
+//         seq[i] = seq[i - 1] + seq[i - 2];
+//     }
+//     return seq.slice(0, num);
+// }
+//
+// console.log(`First ${n} Fibonacci numbers:`);
+// console.log(fibonacci(n).join(", "));
