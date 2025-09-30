@@ -20265,3 +20265,619 @@
 //
 // console.log(`First ${n} Fibonacci numbers:`);
 // console.log(fibonacci(n).join(", "));
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int awardPoints;
+//     int userTickets;
+//
+//     cin >> userTickets; // Program will be tested with values: 6, 7, 8, 9.
+//
+//     if(userTickets != 7){
+//         awardPoints = 10;
+//     } else {
+//         awardPoints = userTickets;
+//     }
+//
+//     cout << awardPoints << endl;
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int totalDifference;
+//     int numDifference;
+//
+//     cin >> numDifference; // Program will be tested with values: -13 -14 -15 -16.
+//
+//     if(numDifference != -15){
+//         totalDifference = -10;
+//     }
+//     else {
+//         totalDifference = numDifference;
+//     }
+//
+//     cout << totalDifference << endl;
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numDominantCompanies;
+//
+//     cin >> numDominantCompanies;
+//
+//     if(numDominantCompanies == 1){
+//         cout << "Monopoly" << endl;
+//     } else {
+//         cout << "Not a monopoly" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int sideCount;
+//
+//     cin >> sideCount;
+//
+//     if(sideCount == 3){
+//         cout << "Triangle" << endl;
+//     } else if(sideCount == 5){
+//         cout << "Pentagon" << endl;
+//     } else {
+//         cout << "Another kind of polygon" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numPlayers;
+//
+//     cin >> numPlayers;
+//
+//     if(numPlayers == 1){
+//         cout << "Solo" << endl;
+//     } else if(numPlayers == 4){
+//         cout << "Quartet" << endl;
+//     } else if(numPlayers == 6) {
+//         cout << "Sextet" << endl;
+//     } else {
+//         cout << "Other number of musicians" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int inputVal;
+//
+//     cin >> inputVal;
+//
+//     if (inputVal <= 40) {
+//         cout << "40 or less" << endl;
+//     }
+//     else {
+//         cout << "Above 40" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numOfHours;
+//
+//     cin >> numOfHours;
+//
+//     if(numOfHours <= 24){
+//         cout << "Sahar did not rest more than one day" << endl;
+//     } else {
+//         cout << "Sahar rested more than one day" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int userAge;
+//     int hoursOfSleep;
+//
+//     cin >> userAge;
+//     cin >> hoursOfSleep;
+//
+//     if(userAge <= 18){
+//         hoursOfSleep = hoursOfSleep - 1;
+//     }
+//
+//     cout << hoursOfSleep << endl;
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numberOfItems;
+//     int requiredGroups;
+//     int invalidGroups;
+//
+//     cin >> numberOfItems;
+//     cin >> requiredGroups;
+//     cin >> invalidGroups;
+//
+//     if(numberOfItems < 19){
+//         requiredGroups = requiredGroups - 2;
+//     } else {
+//         invalidGroups = invalidGroups + 1;
+//     }
+//
+//     cout << requiredGroups << endl;
+//     cout << invalidGroups << endl;
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int toolCount;
+//
+//     cin >> toolCount;
+//
+//     if(toolCount < 9){
+//         cout << "Medium tool box" << endl;
+//     } else if(toolCount < 28){
+//         cout << "Full-sized tool box" << endl;
+//     } else {
+//         cout << "Need wall storage" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numberOfPackages;
+//
+//     cin >> numberOfPackages;
+//
+//     if(numberOfPackages > 17){
+//         cout << "Needs more than one box" << endl;
+//     } else if(numberOfPackages >= 5 && numberOfPackages <= 17){
+//         cout << "Extra large box" << endl;
+//     } else if(numberOfPackages >= 1 && numberOfPackages <= 4){
+//         cout << "Medium box" << endl;
+//     } else {
+//         cout << "Bad input" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numPeople;
+//
+//     cin >> numPeople;
+//
+//     if((numPeople >= 9500) && (numPeople <= 21500)){
+//         cout << "Medium-sized university" << endl;
+//     } else {
+//         cout << "Not a medium-sized university" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int inputTemp;
+//
+//     cin >> inputTemp;
+//
+//     if(inputTemp <= 0){
+//         cout << "The water is now a solid." << endl;
+//     } else if(inputTemp <= 100){
+//         cout << "The water is now a liquid." << endl;
+//     } else {
+//         cout << "The water is now a gas." << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int yearInput;
+//
+//     cin >> yearInput;
+//
+//     if(yearInput >= 1940 && yearInput <= 1949){
+//         cout << "The 40s" << endl;
+//     } else if(yearInput >= 1950 && yearInput <= 1959){
+//         cout << "The 50s" << endl;
+//     } else if(yearInput >= 1960 && yearInput <= 1969){
+//         cout << "The 60s" << endl;
+//     } else {
+//         cout << "Outside the range of study" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int ownedCarrots;
+//
+//     cin >> ownedCarrots;
+//
+//     if(ownedCarrots < 11 || ownedCarrots >= 21){
+//         cout << "Unrespectable batch" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int napkinsRequested;
+//
+//     cin >> napkinsRequested;
+//
+//     if(napkinsRequested >= 50 && napkinsRequested <= 90){
+//         cout << "Small case" << endl;
+//     } else if(napkinsRequested >= 150 && napkinsRequested <= 170){
+//         cout << "Medium case" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numNapkins;
+//
+//     cin >> numNapkins;
+//
+//     if(numNapkins > 35 && numNapkins <= 70){
+//         cout << "Standard box" << endl;
+//     } else if(numNapkins > 130 && numNapkins <= 160){
+//         cout << "Full box" << endl;
+//     } else {
+//         cout << "Not efficient to ship" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int allowance;
+//
+//     cin >> allowance;
+//
+//     if(allowance >= 10){
+//         cout << "Buy a hat." << endl;
+//     } if(allowance >= 17){
+//         cout << "Buy new shoes." << endl;
+//     } if(allowance <= 2){
+//         cout << "Save money." << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numMuffins;
+//     int myMoney;
+//     int totalCost;
+//
+//     cin >> numMuffins;
+//     cin >> myMoney;
+//
+//     if(numMuffins < 5){
+//         cout << "Please purchase at least 5 muffins" << endl;
+//     } else {
+//         totalCost = numMuffins * 3;
+//         if(totalCost <= myMoney){
+//             cout << "Muffins successfully purchased" << endl;
+//         } else {
+//             cout << "Need more money to purchase all" << endl;
+//         }
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int userNum;
+//
+//     cin >> userNum;
+//     if (userNum > 0) {
+//         cout << "Positive." << endl;
+//     } else {
+//         cout << "Not positive, converting to 1." << endl;
+//         userNum = 1;
+//     }
+//     cout << "Final: " << userNum << endl;
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numPears;
+//     int pearsWeight;
+//
+//     cin >> numPears;
+//     cin >> pearsWeight;
+//
+//     if (numPears > 25 && numPears < 30 && pearsWeight >= 4050) {
+//         cout << "Pears meet requirements." << endl;
+//     }
+//     else {
+//         cout << "Pears do not meet requirements." << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     bool isTeenager;
+//     int kidAge;
+//
+//     cin >> kidAge;
+//
+//     isTeenager = (kidAge >= 13 && kidAge <= 19);
+//
+//     if (isTeenager) {
+//         cout << "Teen" << endl;
+//     }
+//     else {
+//         cout << "Not teen" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string firstString;
+//     string secondString;
+//
+//     cin >> firstString;
+//     cin >> secondString;
+//
+//     if(firstString < secondString){
+//         cout << firstString << " " << secondString << endl;
+//     }
+//     else {
+//         cout << secondString << " " << firstString << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string userInput;
+//
+//     getline(cin, userInput);
+//
+//     if(userInput.at(userInput.size() - 1) == '?'){
+//         cout << "A question" << endl;
+//     }
+//     else {
+//         cout << "Not a question" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// #include <string>
+// #include <cctype>
+// using namespace std;
+//
+// int main() {
+//     string inString;
+//
+//     getline(cin, inString);
+//
+//     if(isspace(inString.at(0)) || isspace(inString.at(1)) || isspace(inString.at(2))){
+//         cout << "Valid string" << endl;
+//     }
+//     else {
+//         cout << "Invalid string" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//
+//     int change;
+//     cin >> change;
+//
+//     if(change <= 0){
+//         cout << "No change" << endl;
+//         return 0;
+//     }
+//     int dollars = change / 100;
+//     change %= 100;
+//
+//     int quarters = change / 25;
+//     change %= 25;
+//
+//     int dimes = change / 10;
+//     change %= 10;
+//
+//     int nickels = change / 5;
+//     change %= 5;
+//
+//     int pennies = change;
+//
+//     if(dollars > 0){
+//         cout << dollars << " " << (dollars == 1 ? "Dollar" : "Dollars") << endl;
+//     }
+//     if(quarters > 0){
+//         cout << quarters << " " << (quarters == 1 ? "Quarter" : "Quarters") << endl;
+//     }
+//     if(dimes > 0){
+//         cout << dimes << " " << (dimes == 1 ? "Dime" : "Dimes") << endl;
+//     }
+//     if(nickels > 0){
+//         cout << nickels << " " << (nickels == 1 ? "Nickel" : "Nickels") << endl;
+//     }
+//     if(pennies > 0){
+//         cout << pennies << " " << (pennies == 1 ? "Penny" : "Pennies") << endl;
+//     }
+//     return 0;
+// }
+//
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int inputYear;
+//     bool isLeapYear = false;
+//
+//     cin >> inputYear;
+//
+//     if((inputYear % 400 == 0) || (inputYear % 4 == 0 && inputYear % 100 != 0)){
+//         isLeapYear = true;
+//     }
+//     if(isLeapYear){
+//         cout << inputYear << " - leap year" << endl;
+//     }
+//     else {
+//         cout << inputYear << " - not a leap year" << endl;
+//
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//
+//     string firstName, middleName, lastName;
+//     cin >> firstName >> middleName >> lastName;
+//
+//     if(lastName == ""){
+//         cout << middleName << ", " << firstName.at(0) << "." << endl;
+//     }
+//     else {
+//         cout << lastName << ", " << firstName.at(0) << "." << middleName.at(0) << "." << endl;
+//     }
+//     return 0;
+// }
+//
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string login;
+//     string first;
+//     string last;
+//     string number;
+//
+//     cin >> first >> last >> number;
+//     string firstPart = first.substr(0, 6);
+//
+//     char lastInitial = last.at(0);
+//     char lastDigit = number.at(number.size() -1);
+//     login = firstPart + lastInitial + "_" + lastDigit;
+//     cout << "Your login name: " << login << endl;
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// #include <iomanip>
+// #include <math.h>
+// using namespace std;
+//
+// int main() {
+//     double radius;
+//     double height;
+//     double volume;
+//     double area;
+//
+//     cin >> radius >> height;
+//
+//     volume = M_PI * pow(radius, 2) * height;
+//     area = 2 * M_PI * radius * height + 2 * M_PI * pow(radius, 2);
+//
+//     cout << fixed << setprecision(2);
+//     cout << "Volume (cubic inches): " << volume << endl;
+//     cout << "Surface area (square inches): " << area << endl;
+//
+//     return 0;
+// }
+//
