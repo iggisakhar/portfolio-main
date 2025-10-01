@@ -20881,3 +20881,25 @@
 //     return 0;
 // }
 //
+
+// function reverseString(str) {
+//     return [...str].reverse().join("");
+// }
+//
+// function reverseWords(str) {
+//     return str
+//         .split(/\s+/)
+//         .map(word => reverseString(word))
+//         .join(" ");
+// }
+//
+// const args = process.argv.slice(2);
+// const input = args.filter(a => !a.startsWith("--")).join(" ");
+// const byWords = args.includes("--words");
+//
+// if (!input) {
+//     console.log("Usage: node text-utils.js \"your text\" [--words]");
+//     process.exit(1);
+// }
+//
+// console.log(byWords ? reverseWords(input) : reverseString(input));
