@@ -20903,3 +20903,34 @@
 // }
 //
 // console.log(byWords ? reverseWords(input) : reverseString(input));
+
+// function calculate(a, op, b) {
+//     const x = Number(a);
+//     const y = Number(b);
+//
+//     if (Number.isNaN(x) || Number.isNaN(y)) {
+//         throw new Error("Operands must be numbers");
+//     }
+//
+//     switch (op) {
+//         case "+": return x + y;
+//         case "-": return x - y;
+//         case "*": return x * y;
+//         case "/": return y !== 0 ? x / y : "∞";
+//         default: throw new Error("Unsupported operator: " + op);
+//     }
+// }
+//
+// const [,, a, op, b] = process.argv;
+//
+// if (!a || !op || !b) {
+//     console.log("Usage: node calculator.js <num1> <operator> <num2>");
+//     process.exit(1);
+// }
+//
+// try {
+//     const result = calculate(a, op, b);
+//     console.log(`${a} ${op} ${b} = ${result}`);
+// } catch (err) {
+//     console.error("Error:", err.message);
+// }
