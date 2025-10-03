@@ -20934,3 +20934,37 @@
 // } catch (err) {
 //     console.error("Error:", err.message);
 // }
+
+// let todos = [];
+//
+// function addTask(task) {
+//     todos.push(task);
+//     console.log(`Added: "${task}"`);
+// }
+//
+// function listTasks() {
+//     if (todos.length === 0) {
+//         console.log("No tasks yet.");
+//         return;
+//     }
+//     console.log("To-Do List:");
+//     todos.forEach((t, i) => console.log(`${i + 1}. ${t}`));
+// }
+//
+// function removeTask(index) {
+//     if (index < 1 || index > todos.length) {
+//         console.log("Invalid task number.");
+//         return;
+//     }
+//     const removed = todos.splice(index - 1, 1);
+//     console.log(`Removed: "${removed}"`);
+// }
+//
+// const [,, cmd, ...args] = process.argv;
+//
+// switch (cmd) {
+//     case "add": addTask(args.join(" ")); break;
+//     case "list": listTasks(); break;
+//     case "remove": removeTask(Number(args[0])); break;
+//     default
+// }
