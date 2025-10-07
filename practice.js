@@ -20968,3 +20968,86 @@
 //     case "remove": removeTask(Number(args[0])); break;
 //     default
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//
+//     int num1, num2, num3;
+//     cin >> num1 >> num2 >> num3;
+//     int smallest = num1;
+//     if(num2 < smallest){
+//         smallest = num2;
+//     }
+//     if(num3 < smallest){
+//         smallest = num3;
+//     }
+//     cout << smallest << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int val1;
+//     int val2;
+//     int max;
+//
+//     cin >> val1 >> val2;
+//     if(val1 > val2){
+//         max = val1;
+//     } else {
+//         max = val2;
+//     }
+//     cout << "Max of " << val1 << " and " << val2 << " is " << max << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//
+//     int num1, num2, num3;
+//     cin >> num1 >> num2 >> num3;
+//     int median;
+//
+//     if((num1 >= num2 && num1 <= num3) || (num1 <= num2 && num1 >= num3)){
+//         median = num1;
+//     } else if((num2 >= num1 && num2 <= num3) || (num2 <= num1 && num2 >= num3)){
+//         median = num2;
+//     } else {
+//         median = num3;
+//     }
+//     cout << median << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//
+//     int speedLimit;
+//     int drivingSpeed;
+//     int ticket = 0;
+//
+//     cin >> speedLimit >> drivingSpeed;
+//     int overSpeed = drivingSpeed - speedLimit;
+//
+//     if(overSpeed <= -10){
+//         ticket = 50;
+//     } else if (overSpeed >= 6 && overSpeed <= 20) {
+//         ticket = 75;
+//     } else if(overSpeed >= 21 && overSpeed <= 40){
+//         ticket = 150;
+//     } else if(overSpeed > 40){
+//         ticket = 300;
+//     } else {
+//         ticket = 0;
+//     }
+//     cout << ticket << endl;
+//     return 0;
+// }
