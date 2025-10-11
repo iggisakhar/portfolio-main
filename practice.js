@@ -21051,3 +21051,17 @@
 //     cout << ticket << endl;
 //     return 0;
 // }
+
+// const frames = ["⠋","⠙","⠸","⢰","⣠","⣄","⡆","⠇"];
+// let i = 0;
+//
+// process.stdout.write("Loading ");
+//
+// const spinner = setInterval(() => {
+//     process.stdout.write("\rLoading " + frames[i = ++i % frames.length]);
+// }, 100);
+//
+// setTimeout(() => {
+//     clearInterval(spinner);
+//     process.stdout.write("\r Done!          \n");
+// }, 3000);
