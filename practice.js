@@ -21096,3 +21096,26 @@
 //
 //     return 0;
 // }
+
+// temperature-converter.js
+// Run:
+//   node temperature-converter.js 25 C
+//   node temperature-converter.js 77 F
+
+// const [,, value, unit] = process.argv;
+// const num = parseFloat(value);
+//
+// if (Number.isNaN(num) || !unit) {
+//     console.log("Usage: node temperature-converter.js <value> <C|F>");
+//     process.exit(1);
+// }
+//
+// if (unit.toUpperCase() === "C") {
+//     const f = (num * 9) / 5 + 32;
+//     console.log(`${num}°C = ${f.toFixed(1)}°F`);
+// } else if (unit.toUpperCase() === "F") {
+//     const c = ((num - 32) * 5) / 9;
+//     console.log(`${num}°F = ${c.toFixed(1)}°C`);
+// } else {
+//     console.log("Please specify unit as C or F");
+// }
