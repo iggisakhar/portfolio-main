@@ -21065,3 +21065,34 @@
 //     clearInterval(spinner);
 //     process.stdout.write("\r Done!          \n");
 // }, 3000);
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int highwayNumber;
+//     cin >> highwayNumber;
+//
+//     if (highwayNumber <= 0 || highwayNumber > 999 || highwayNumber % 100 == 0) {
+//         cout << highwayNumber << " is not a valid interstate highway number." << endl;
+//     }
+//     else if (highwayNumber <= 99) {
+//         cout << "I-" << highwayNumber << " is primary, going ";
+//         if (highwayNumber % 2 == 0) {
+//             cout << "east/west." << endl;
+//         } else {
+//             cout << "north/south." << endl;
+//         }
+//     }
+//     else {
+//         int primary = highwayNumber % 100;
+//         cout << "I-" << highwayNumber << " is auxiliary, serving I-" << primary << ", going ";
+//         if (primary % 2 == 0) {
+//             cout << "east/west." << endl;
+//         } else {
+//             cout << "north/south." << endl;
+//         }
+//     }
+//
+//     return 0;
+// }
