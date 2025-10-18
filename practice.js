@@ -21119,3 +21119,17 @@
 // } else {
 //     console.log("Please specify unit as C or F");
 // }
+
+// const [,, delay, ...messageParts] = process.argv;
+// const seconds = parseInt(delay, 10);
+// const message = messageParts.join(" ") || "Time’s up!";
+//
+// if (Number.isNaN(seconds) || seconds <= 0) {
+//     console.log("Usage: node reminder.js <seconds> <message>");
+//     process.exit(1);
+// }
+//
+// console.log(`⏳ Reminder set for ${seconds} seconds...`);
+// setTimeout(() => {
+//     console.log(`Reminder: ${message}`);
+// }, seconds * 1000);
