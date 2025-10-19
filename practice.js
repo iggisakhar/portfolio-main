@@ -21133,3 +21133,132 @@
 // setTimeout(() => {
 //     console.log(`Reminder: ${message}`);
 // }, seconds * 1000);
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     double inVal;
+//
+//     cin >> inVal;
+//     while (inVal < 1.0) {
+//         cout << fixed << setprecision(1) << "User entered " << inVal << endl;
+//         cin >> inVal;
+//     }
+//
+//     cout << "Exit" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numInput;
+//     int intSum;
+//
+//     intSum = 0;
+//     cin >> numInput;
+//
+//     while(numInput < -1){
+//         intSum = intSum + numInput;
+//         cin >> numInput;
+//     }
+//
+//     cout << intSum << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int userIn;
+//     int result;
+//
+//     result = 0;
+//     cin >> userIn;
+//
+//     while(userIn >= 0){
+//         if(userIn % 5 == 0){
+//             cout << "win" << endl;
+//             result = result + 1;
+//         } else {
+//             cout << "lose" << endl;
+//         }
+//         cin >> userIn;
+//     }
+//
+//     cout << "Result is " << result << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int claimSubmitted;
+//
+//     cin >> claimSubmitted;  // The first integer is read
+//
+//     while (claimSubmitted != -999) {
+//         if(claimSubmitted <= 300){
+//             cout << "Request accepted" << endl;
+//         } else {
+//             cout << "Amount exceeded coverage" << endl;
+//         }
+//         cin >> claimSubmitted;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int inputValue;
+//     int sumValid;
+//
+//     sumValid = 0;
+//
+//     cin >> inputValue;  // The first integer is read
+//
+//     while (inputValue > -45 && inputValue < 5) {
+//         sumValid = sumValid + inputValue;
+//         cin >> inputValue;
+//     }
+//
+//     cout << sumValid << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     string inputWord;
+//     int cupboardCount;
+//
+//     cupboardCount = 0;
+//
+//     cin >> inputWord;
+//
+//     while (inputWord != "Completed") {
+//         if(inputWord == "Cupboard"){
+//             cupboardCount = cupboardCount + 1;
+//         }
+//
+//         cin >> inputWord;
+//
+//     }
+//
+//     cout << "Cupboard occurs " << cupboardCount << " time(s)." << endl;
+//
+//     return 0;
+// }
