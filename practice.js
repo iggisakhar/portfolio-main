@@ -21309,3 +21309,160 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numInput;
+//     int inputNum;
+//     int i;
+//
+//     cin >> numInput;
+//
+//     for (i = 0; i < numInput; ++i) {
+//         cin >> inputNum;
+//         cout << inputNum << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numInput;
+//     int inputVal;
+//     int i;
+//
+//     cin >> numInput;
+//
+//     for (i = 0; i < numInput; ++i) {
+//
+//         cin >> inputVal;
+//         cout << "Position = " << inputVal << endl;
+//
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int valCount;
+//     int inputVal;
+//     int i;
+//
+//     cin >> valCount;
+//
+//     for(i = 0; i < valCount; ++i){
+//         cin >> inputVal;
+//         cout << inputVal;
+//         if(i != valCount - 1){
+//             cout << ": ";
+//         }
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int lastNumber;
+//     int i;
+//
+//     cin >> lastNumber;
+//
+//     for(i = 1; i <= lastNumber; ++i) {
+//         cout << i << " ";
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int userNum;
+//     int i;
+//
+//     cin >> userNum;
+//
+//     for(i = userNum; i >= 1; --i) {
+//         cout << i << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int userNum;
+//     int i;
+//
+//     cin >> userNum;
+//
+//     cout << "Ready!" << endl;
+//     for(i = userNum; i >= 1; --i){
+//         cout << i << endl;
+//     }
+//     cout << "Blastoff!" << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numVal;
+//     int i;
+//
+//     cin >> numVal;
+//
+//     for(i = 1; i <= numVal; ++i) {
+//         cout << i << " ";
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int firstNumber;
+//     int i;
+//
+//     cin >> firstNumber;
+//
+//     for(i = firstNumber; i >= 1; --i) {
+//         cout << i << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int countNum;
+//     int i;
+//
+//     cin >> countNum;
+//     cout << "Ready!" << endl;
+//     for(i = countNum; i >= 1; --i){
+//         cout << i << endl;
+//     }
+//     cout << "Blastoff!" << endl;
+//     return 0;
+// }
