@@ -21466,3 +21466,220 @@
 //     cout << "Blastoff!" << endl;
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int userNum;
+//     int i;
+//
+//     cin >> userNum;
+//
+//     for(i = userNum; i <= 0; ++i) {
+//         cout << i << " ";
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int firstNumber;
+//     int endNumber;
+//     int i;
+//
+//     cin >> firstNumber;
+//     cin >> endNumber;
+//
+//     for(i = firstNumber; i <= endNumber; ++i) {
+//         cout << i << " ";
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     double inValue;
+//     double minVal;
+//     int i;
+//
+//     for(i = 0; i < 9; ++i){
+//         cin >> inValue;
+//         if(i == 0){
+//             minVal = inValue;
+//         } else if(inValue < minVal){
+//             minVal = inValue;
+//         }
+//     }
+//
+//     cout << minVal << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     int numVals;
+//     double inValue;
+//     double smallestVal;
+//     int i;
+//
+//     cin >> numVals;
+//
+//     for(i = 0; i < numVals; ++i){
+//         cin >> inValue;
+//         cout << "Value read: " << inValue << endl;
+//         if(i == 0){
+//             smallestVal = inValue;
+//         } else if(inValue < smallestVal){
+//             smallestVal = inValue;
+//         }
+//     }
+//
+//     cout << "Smallest: " << smallestVal << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numVals;
+//     bool allPositive;
+//     int i;
+//     int val;
+//
+//     allPositive = true;
+//     cin >> numVals;
+//
+//     for(i = 0; i < numVals; ++i){
+//         cin >> val;
+//         if(val <= 0){
+//             allPositive = false;
+//         }
+//     }
+//
+//     if (allPositive) {
+//         cout << "All match" << endl;
+//     }
+//     else {
+//         cout << "Not all match" << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int inputCount;
+//     bool allValid;
+//     int i;
+//     int val;
+//
+//     allValid = true;
+//     cin >> inputCount;
+//
+//     for(i = 0; i < inputCount; i++){
+//         cin >> val;
+//         if(val < 9000 || val > 10000){
+//             allValid = false;
+//         }
+//     }
+//
+//     if (allValid) {
+//         cout << "All valid value(s)" << endl;
+//     }
+//     else {
+//         cout << "Non-matching value(s)" << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <cctype>
+// using namespace std;
+//
+// int main() {
+//     string keyStr;
+//     unsigned int i;
+//
+//     getline(cin, keyStr);
+//
+//     for(i = 0; i < keyStr.size(); ++i){
+//         if(!isalpha(keyStr.at(i))){
+//             keyStr.at(i) = 'y';
+//         }
+//     }
+//
+//     cout << "Valid password: " << keyStr << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <cctype>
+// using namespace std;
+//
+// int main() {
+//     string password;
+//     int i;
+//     int count;
+//
+//     getline(cin, password);
+//     count = 0;
+//
+//     for(i = 0; i < password.size(); ++i){
+//         if(isalpha(password.at(i))){
+//             count++;
+//         }
+//     }
+//     if((count <= 4) && (password.size() > 6)){
+//         cout << "Valid" << endl;
+//     } else {
+//         cout << "Invalid" << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string keyWord;
+//     int indx;
+//     int lengthStr;
+//
+//     cin >> keyWord;
+//
+//     indx = 0;
+//     lengthStr = 0;
+//
+//     while((indx = keyWord.find("000")) != string::npos){
+//         keyWord.replace(indx, 3, "");
+//     }
+//     lengthStr = keyWord.size();
+//
+//     cout << "Remaining string: " << keyWord << endl;
+//     cout << "Length: " << lengthStr << endl;
+//
+//     return 0;
+// }
+
