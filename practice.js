@@ -21782,3 +21782,61 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+//
+// int main() {
+//
+//     int wages, interest, unemployment, status, withheld;
+//     cin >> wages >> interest >> unemployment >> status >> withheld;
+//
+//     int agi = wages + interest + unemployment;
+//     cout << "AGI: $" << agi << endl;
+//
+//     if(agi > 120000){
+//         cout << "Error: Income too high to use this form" << endl;
+//         return 0;
+//     }
+//
+//     if(status != 1 && status != 2) status = 1;
+//     int deduction = (status == 1) ? 12000 : 24000;
+//     cout << "Deduction: $" << deduction << endl;
+//
+//     int taxable = agi - deduction;
+//     if(taxable < 0) taxable = 0;
+//     cout << "Taxable income: $" << taxable << endl;
+//
+//     double fedTax = 0.0;
+//     if(status == 1){
+//         if(taxable <= 10000){
+//             fedTax = 0.10 * taxable;
+//         } else if(taxable <= 40000){
+//             fedTax = 1000 + 0.12 * (taxable - 10000);
+//         } else if(taxable <= 85000){
+//             fedTax = 4600 + 0.22 * (taxable - 40000);
+//         } else {
+//             fedTax = 14500 + 0.24 * (taxable - 85000);
+//         }
+//     } else {
+//         if(taxable <= 20000){
+//             fedTax = 0.10 * taxable;
+//         } else if(taxable <= 80000){
+//             fedTax = 2000 + 0.12 * (taxable - 20000);
+//         } else {
+//             fedTax = 9200 + 0.22 * (taxable - 80000);
+//         }
+//     }
+//     int fedTaxRounded = static_cast<int>(round(fedTax));
+//     cout << "Federal tax: $" << fedTaxRounded << endl;
+//
+//     int diff = fedTaxRounded - withheld;
+//     if(diff > 0){
+//         cout << "Tax due: $" << diff << endl;
+//     } else {
+//         cout << "Tax refund: $" << -diff << endl;
+//     }
+//     return 0;
+// }
+
+
