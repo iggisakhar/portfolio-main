@@ -21683,3 +21683,102 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int outerRange;
+//     int innerRange;
+//     int count;
+//     int i;
+//     int j;
+//
+//     cin >> outerRange;
+//     cin >> innerRange;
+//
+//     count = 0;
+//     i = 0;
+//     while (i <= outerRange) {
+//         j = 0;
+//         while (j < innerRange) {
+//             ++count;
+//             ++j;
+//         }
+//         ++i;
+//     }
+//
+//     cout << "Inner loop ran " << count << " times" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int startNum;
+//     int endNum;
+//     int count;
+//     int i;
+//     int j;
+//
+//     cin >> startNum;
+//     cin >> endNum;
+//
+//     count = 0;
+//     for (i = 0; i < startNum; ++i) {
+//         for (j = 0; j < endNum; ++j) {
+//             ++count;
+//         }
+//     }
+//
+//     cout << "Inner loop ran " << count << " times" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int userVal;
+//     int i;
+//     int j;
+//
+//     cin >> userVal;
+//
+//     for(i = 1; i <= userVal; ++i){
+//         for(j = 1; j <= i; ++j){
+//             cout << "*";
+//         }
+//         cout << i << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numRows;
+//     int numColumns;
+//     int currentRow;
+//     int currentRowInteger;
+//     int currentColumn;
+//     char currentColumnLetter;
+//
+//     cin >> numRows;
+//     cin >> numColumns;
+//
+//     for(currentRowInteger = 1; currentRowInteger <= numRows; ++currentRowInteger){
+//         for(currentColumn = 0; currentColumn < numColumns; ++currentColumn){
+//             currentColumnLetter = 'A' + currentColumn;
+//             cout << currentRowInteger << currentColumnLetter << " ";
+//         }
+//         cout << endl;
+//     }
+//
+//     return 0;
+// }
+
