@@ -21839,4 +21839,99 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <cstdlib>
+// using namespace std;
+//
+// int main() {
+//     int seedVal;
+//     int data1;
+//     int data2;
+//     int data3;
+//     int data4;
+//     int sum;
+//
+//     cin >> seedVal;
+//
+//     srand(seedVal);
+//
+//     data1 = rand() % 18;
+//     data2 = rand() % 18;
+//     data3 = rand() % 18;
+//     data4 = rand() % 18;
+//
+//     sum = data1 + data2 + data3 + data4;
+//
+//     cout << data1 << endl;
+//     cout << data2 << endl;
+//     cout << data3 << endl;
+//     cout << data4 << endl;
+//     cout << "Sum: " << sum << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <cstdlib>
+// using namespace std;
+//
+// int main() {
+//     int seedVal;
+//     int boundValue;
+//     int val1;
+//     int val2;
+//     int val3;
+//     int val4;
+//     int sum;
+//
+//     cin >> seedVal;
+//     cin >> boundValue;
+//
+//     srand(seedVal);
+//
+//     val1 = rand() % boundValue;
+//     val2 = rand() % boundValue;
+//     val3 = rand() % boundValue;
+//     val4 = rand() % boundValue;
+//
+//     sum = val1 + val2 + val3 + val4;
+//
+//     cout << val1 << endl;
+//     cout << val2 << endl;
+//     cout << val3 << endl;
+//     cout << val4 << endl;
+//     cout << "Sum: " << sum << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <cstdlib>
+// using namespace std;
+//
+// int main() {
+//     int seedVal;
+//     int numFaces;
+//     int roll1;
+//     int roll2;
+//     int roll3;
+//     int roll4;
+//
+//     cin >> seedVal;
+//     cin >> numFaces;
+//
+//     srand(seedVal);
+//
+//     roll1 = (rand() % numFaces) + 1;
+//     roll2 = (rand() % numFaces) + 1;
+//     roll3 = (rand() % numFaces) + 1;
+//     roll4 = (rand() % numFaces) + 1;
+//
+//     cout << roll1 << endl;
+//     cout << roll2 << endl;
+//     cout << roll3 << endl;
+//     cout << roll4 << endl;
+//
+//     return 0;
+// }
 
