@@ -21954,3 +21954,316 @@
 //
 //     return 0;
 // }
+
+// #include <iomanip>
+// #include <iostream>
+// using namespace std;
+//
+// double CalculateVal(double numVal){
+//     return numVal * 4.4;
+// }
+//
+// int main() {
+//     double numInput;
+//     double result;
+//
+//     cin >> numInput;
+//
+//     result = CalculateVal(numInput);
+//
+//     cout << fixed << setprecision(2) << result << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int ComputeNum(int num1, int num2){
+//     return num1 + (2 * num2);
+// }
+//
+// int main() {
+//     int numRead1;
+//     int numRead2;
+//     int result;
+//
+//     cin >> numRead1;
+//     cin >> numRead2;
+//
+//     result = ComputeNum(numRead1, numRead2);
+//
+//     cout << result << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintRate(string foodName, int foodRate){
+//     cout << "One " << foodName << " costs " << foodRate << " dollars." << endl;
+// }
+//
+// int main() {
+//     string foodName;
+//     int foodRate;
+//
+//     cin >> foodName;
+//     cin >> foodRate;
+//
+//     PrintRate(foodName, foodRate);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintShoppingList(string f1, string f2, string f3){
+//     cout << "Grocery list:" << endl;
+//     cout << "1) " << f1 << endl;
+//     cout << "2) " << f2 << endl;
+//     cout << "3) " << f3 << endl;
+// }
+//
+// int main() {
+//     string grocery1;
+//     string grocery2;
+//     string grocery3;
+//
+//     cin >> grocery1;
+//     cin >> grocery2;
+//     cin >> grocery3;
+//
+//     PrintShoppingList(grocery1, grocery2, grocery3);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// void PrintSumOf2(double x, double y){
+//     cout << fixed << setprecision(2);
+//     cout << "Sum: " << (x + y) << endl;
+// }
+//
+// int main() {
+//     double a1;
+//     double b1;
+//
+//     cin >> a1;
+//     cin >> b1;
+//
+//     PrintSumOf2(a1, b1);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintAirportCode(string airportCode, string cityName) {
+//     cout << airportCode << " is " << cityName << "'s airport code." << endl;
+// }
+//
+// int main() {
+//
+//     string code1;
+//     string code2;
+//     string city1;
+//     string city2;
+//
+//     cin >> code1;
+//     cin >> code2;
+//     cin >> city1;
+//     cin >> city2;
+//
+//     PrintAirportCode(code1, city1);
+//     PrintAirportCode(code2, city2);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// // Program converts a trip's kilometers and liters into miles, gallons, and mpg
+//
+// double ConvKilometersToMiles(double numKm) {
+//     double milesPerKm = 0.621371;
+//     return numKm * milesPerKm;
+// }
+//
+// double ConvLitersToGallons(double numLiters) {
+//     double gallonsPerLiter = 0.264172;
+//     return numLiters * gallonsPerLiter;
+// }
+//
+// double CalcMpg(double distMiles, double gasGallons) {
+//     // MPG = miles driven / gallons consumed
+//     double mpg = 0.0;
+//     if (gasGallons != 0.0) {
+//         mpg = distMiles / gasGallons;
+//     }
+//     return mpg;
+// }
+//
+// int main() {
+//     double distKm;
+//     double distMiles;
+//     double gasLiters;
+//     double gasGal;
+//     double userMpg;
+//
+//     cout << "Enter kilometers driven: " << endl;
+//     cin >> distKm;
+//     cout << "Enter liters of gas consumed: " << endl;
+//     cin >> gasLiters;
+//
+//     distMiles = ConvKilometersToMiles(distKm);
+//     gasGal = ConvLitersToGallons(gasLiters);
+//     userMpg = CalcMpg(distMiles, gasGal);
+//
+//     cout << "Miles driven: " << distMiles << endl;
+//     cout << "Gallons of gas: " << gasGal << endl;
+//     cout << "Mileage: " << userMpg << " mpg" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// double MphAndMinutesToMiles(double milesPerHour, double minutesTraveled){
+//     double hoursTraveled = minutesTraveled / 60.0;
+//     double milesTraveled = hoursTraveled * milesPerHour;
+//     return milesTraveled;
+// }
+//
+// int main() {
+//     double milesPerHour;
+//     double minutesTraveled;
+//
+//     cin >> milesPerHour;
+//     cin >> minutesTraveled;
+//
+//     cout << "Miles: " << MphAndMinutesToMiles(milesPerHour, minutesTraveled) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+//
+// double CelsiusToFahrenheit(double tempC){
+//     double tempF;
+//     tempF = (9.0 / 5.0) * tempC + 32.0;
+//     return tempF;
+// }
+//
+//
+// int main() {
+//     double tempF;
+//     double tempC;
+//
+//     cout << "Enter temperature in Celsius: " << endl;
+//     cin >> tempC;
+//
+//     tempF = CelsiusToFahrenheit(tempC);
+//
+//     cout << "Fahrenheit: " << tempF;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// double FluidOuncesToMilliliters(int numFluidOunces) {
+//     const double FLOZ_TO_ML = 29.5735;
+//     double milliliters;
+//
+//     milliliters = numFluidOunces * FLOZ_TO_ML;
+//     return milliliters;
+//
+//
+// }
+//
+// int main() {
+//     int fluidOunces;
+//
+//     cin >> fluidOunces;
+//
+//     cout << "Milliliters: ";
+//     cout << FluidOuncesToMilliliters(fluidOunces) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// double ConvertToLiters(int numPints, int numCups){
+//     const double LITERS_PER_CUP = 0.236588;
+//     int totalCups = (numPints * 2) + numCups;
+//
+//     return totalCups * LITERS_PER_CUP;
+// }
+//
+// int main() {
+//     int pints;
+//     int cups;
+//
+//     cin >> pints;
+//     cin >> cups;
+//
+//     cout << ConvertToLiters(pints, cups);
+//     cout << " liters" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// double CalculateBaseArea(double baseLength, double baseWidth) {
+//     double area;
+//     area = baseLength * baseWidth;
+//     return area;
+// }
+//
+// double CalculateVol(double baseLength, double baseWidth, double height) {
+//     double volume;
+//     volume = CalculateBaseArea(baseLength, baseWidth) * height;
+//     return volume;
+// }
+//
+//
+// int main() {
+//     double baseLength;
+//     double baseWidth;
+//     double height;
+//
+//     cin >> baseLength;
+//     cin >> baseWidth;
+//     cin >> height;
+//
+//     cout << fixed << setprecision(1);
+//
+//     cout << "Base length: " << baseLength << endl;
+//     cout << "Base width: " << baseWidth << endl;
+//     cout << "Height: " << height << endl;
+//
+//     cout << "Base area: ";
+//     cout << CalculateBaseArea(baseLength, baseWidth) << endl;
+//
+//     cout << "Volume: ";
+//     cout << CalculateVol(baseLength, baseWidth, height) << endl;
+//
+//     return 0;
+// }
+
