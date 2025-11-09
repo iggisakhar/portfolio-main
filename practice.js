@@ -22338,3 +22338,407 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// void PrintVal (int num1, int num2){
+//     int sum = 0;
+//     for(int i = num1; i <= num2; ++i){
+//         sum += i;
+//     }
+//     cout << sum << endl;
+// }
+//
+// int main() {
+//     int input1;
+//     int input2;
+//
+//     cin >> input1;
+//     cin >> input2;
+//
+//     PrintVal(input1, input2);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintResult(int numA, int numB){
+//     int product = 1;
+//     for(int i = numA; i <= numB; ++i){
+//         if(i > 0){
+//             product *= i;
+//         }
+//     }
+//     cout << product << endl;
+// }
+//
+// int main() {
+//     int numberA;
+//     int numberB;
+//
+//     cin >> numberA;
+//     cin >> numberB;
+//
+//     PrintResult(numberA, numberB);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int FindSmallestNum(){
+//     int num;
+//     int smallest;
+//
+//     cin >> num;
+//     smallest = num;
+//
+//     while(num <= 0){
+//         if(num < smallest){
+//             smallest = num;
+//         }
+//         cin >> num;
+//     }
+//     return smallest;
+// }
+//
+// int main() {
+//     int minVal;
+//
+//     minVal = FindSmallestNum();
+//
+//     cout << minVal << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// bool CheckVals(){
+//     int num;
+//     bool allEven = true;
+//     cin >> num;
+//
+//     while(num != 99){
+//         if(num % 2 != 0){
+//             allEven = false;
+//         }
+//         cin >> num;
+//     }
+//     return allEven;
+// }
+//
+// int main() {
+//     bool allEven;
+//
+//     allEven = CheckVals();
+//
+//     if (allEven) {
+//         cout << "All true" << endl;
+//     }
+//     else {
+//         cout << "Not all true" << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// // Function returns origNum cubed
+// int CubeNum(int origNum) {
+//     return origNum * origNum * origNum;
+// }
+//
+// int main() {
+//
+//     cout << "Testing started" << endl;
+//
+//     cout << "2, expecting 8, got: " << CubeNum(2) << endl;
+//     cout << "3, expecting 27, got: " << CubeNum(3) << endl;
+//     cout << "-1, expecting -1, got: " << CubeNum(-1) << endl;
+//
+//
+//     cout << "Testing completed" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// double CelsiusToKelvin(double valueCelsius) {
+//     double valueKelvin;
+//
+//     valueKelvin = valueCelsius + 273.15;
+//
+//     return valueKelvin;
+// }
+//
+// double KelvinToCelsius(double valueKelvin){
+//     double valueCelsius;
+//     valueCelsius = valueKelvin - 273.15;
+//     return valueCelsius;
+//
+// }
+//
+// int main() {
+//     double valueC;
+//     double valueK;
+//
+//     valueC = 10.0;
+//     cout << valueC << " C is " << CelsiusToKelvin(valueC) << " K" << endl;
+//
+//     cin >> valueK;
+//     cout << valueK << "  is " << KelvinToCelsius(valueK) << " C" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void ComputeChange(int totCents, int& numQuarters, int& numDimes, int& numNickels, int& numPennies) {
+//     numQuarters = totCents / 25;
+//     totCents = totCents % 25;
+//     numDimes = totCents / 10;
+//     totCents = totCents % 10;
+//     numNickels = totCents / 5;
+//     totCents = totCents % 5;
+//     numPennies = totCents;
+// }
+//
+// int main() {
+//     int userCents;
+//     int numQuarters;
+//     int numDimes;
+//     int numNickels;
+//     int numPennies;
+//
+//     cout << "Enter total cents: " << endl;
+//     cin >> userCents;
+//
+//     ComputeChange(userCents, numQuarters, numDimes, numNickels, numPennies);
+//
+//     cout << "Quarters: " << numQuarters << endl;
+//     cout << "Dimes: " << numQuarters << endl;
+//     cout << "Nickels: " << numQuarters << endl;
+//     cout << "Pennies: " << numQuarters << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     double currentValue;
+//
+//     double& currentRef = currentValue;
+//
+//     cin >> currentValue;
+//
+//     cout << "Referenced current is " << currentRef << "." << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void ConvertValue(int totalCents, int& dollars, int& cents){
+//     dollars = totalCents / 100;
+//     cents = totalCents % 100;
+// }
+//
+// int main() {
+//     int usrDollars;
+//     int usrCents;
+//     int totalCents;
+//
+//     cin >> totalCents;
+//
+//     ConvertValue(totalCents, usrDollars, usrCents);
+//
+//     cout << usrDollars << " dollars and " << usrCents << " cents" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// bool GetTime(int& totalDays, int years, int month, int days){
+//     if(years >= 0 && month >= 0 && days >= 0){
+//         totalDays = (years * 365) + (month * 30) + days;
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// int main() {
+//     int totalDays;
+//     int years;
+//     int months;
+//     int days;
+//     bool valid;
+//
+//     totalDays = 0;
+//     cin >> years;
+//     cin >> months;
+//     cin >> days;
+//
+//     valid = GetTime(totalDays, years, months, days);
+//
+//     if (valid) {
+//         cout << "Total days: " << totalDays << endl;
+//     }
+//     else {
+//         cout << "Invalid. Total days: " << totalDays << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// void GetUserInfo(int& userAge, string& userName) {
+//     cout << "Enter your age: " << endl;
+//     cin >> userAge;
+//     cout << "Enter your name: " << endl;
+//     cin >> userName;
+// }
+//
+// int main() {
+//     int userAge;
+//     string userName;
+//
+//     GetUserInfo(userAge, userName);
+//
+//     cout << userName << " is " << userAge << " years old." << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// void MakeSentenceExcited(string& sentenceText) {
+//
+//     for(unsigned int i = 0; i < sentenceText.size(); ++i){
+//         if(sentenceText.at(i) == '.'){
+//             sentenceText.at(i) = '!';
+//         }
+//     }
+//
+// }
+//
+// int main() {
+//     string testStr;
+//
+//     getline(cin, testStr);
+//     MakeSentenceExcited(testStr);
+//     cout << testStr;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int FindLastIndex(string inputString, char x) {
+//
+//     for(int i = inputString.size() -1; i >= 0; --i){
+//         if(inputString.at(i) != x){
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+//
+// int main() {
+//     string inputString;
+//     char x;
+//     int result;
+//
+//     cin >> inputString;
+//     cin >> x;
+//
+//     result = FindLastIndex(inputString, x);
+//
+//     cout << result << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// void CheckValues(string inputString, char x, vector<bool>& results) {
+//     for (int i = 0; i < inputString.size(); ++i) {
+//         if (inputString.at(i) != x) {
+//             results.push_back(true);
+//         }
+//         else {
+//             results.push_back(false);
+//         }
+//     }
+//
+// }
+//
+//
+// int main() {
+//     string inputString;
+//     int i;
+//     char x;
+//     vector<bool> results;
+//
+//     cin >> inputString;
+//     cin >> x;
+//
+//     CheckValues(inputString, x, results);
+//
+//     for (i = 0; i < results.size(); ++i) {
+//         if (results.at(i)) {
+//             cout << inputString.at(i) << " is not equal to " << x << endl;
+//         }
+//         else {
+//             cout << inputString.at(i) << " is equal to " << x << endl;
+//         }
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void FindIndex(string inputString){
+//     size_t index = inputString.find("ly");
+//     if(index != string::npos){
+//         cout << "ly is found at index " << index << "." << endl;
+//     } else {
+//         cout << "ly is not found in " << inputString << "." << endl;
+//     }
+// }
+//
+// int main() {
+//     int i;
+//     string inputString;
+//
+//     cin >> inputString;
+//
+//     FindIndex(inputString);
+//
+//     return 0;
+// }
+
