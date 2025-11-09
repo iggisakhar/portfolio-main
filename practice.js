@@ -22267,3 +22267,74 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// int FindLotteryPrize(int lotteryNumber){
+//     int prize;
+//     if(lotteryNumber == 276 || lotteryNumber == 342){
+//         prize = 11000;
+//     } else if(lotteryNumber == 446 || lotteryNumber == 898){
+//         prize = 17500;
+//     } else {
+//         prize = 0;
+//     }
+//     return prize;
+// }
+//
+// int main() {
+//     int lotteryNumber;
+//
+//     cin >> lotteryNumber;
+//
+//     cout << FindLotteryPrize(lotteryNumber) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int FindParkingRate(int visits, int duration) {
+//     int price;
+//
+//     if (visits <= 9) {
+//         if (duration <= 7)
+//             price = 23;
+//         else if (duration <= 26)
+//             price = 22;
+//         else
+//             price = 18;
+//     }
+//     else if (visits <= 17) {
+//         if (duration <= 7)
+//             price = 12;
+//         else if (duration <= 26)
+//             price = 11;
+//         else
+//             price = 10;
+//     }
+//     else {
+//         if (duration <= 7)
+//             price = 8;
+//         else if (duration <= 26)
+//             price = 7;
+//         else
+//             price = 6;
+//     }
+//
+//     return price;
+// }
+//
+// int main() {
+//     int visits;
+//     int duration;
+//
+//     cin >> visits;
+//     cin >> duration;
+//
+//     cout << FindParkingRate(visits, duration) << endl;
+//
+//     return 0;
+// }
+
