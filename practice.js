@@ -22742,3 +22742,765 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int SumSelected(const vector<int>& inVector, int selectedVal){
+//     int sum = 0;
+//     for(int i = 0; i < inVector.size(); ++i){
+//         if(inVector.at(i) == selectedVal){
+//             sum += inVector.at(i);
+//         }
+//     }
+//     return sum;
+// }
+//
+// int main() {
+//     vector<int> inVector;
+//     int size;
+//     int input;
+//     int i;
+//     int x;
+//     int result;
+//
+//     cin >> size;
+//     for (i = 0; i < size; ++i) {
+//         cin >> input;
+//         inVector.push_back(input);
+//     }
+//
+//     cin >> x;
+//
+//     result = SumSelected(inVector, x);
+//
+//     cout << result << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// #include <iomanip>
+// using namespace std;
+//
+// void NegateVector(const vector<double>& inputVector, vector<double>& negatedVector){
+//     negatedVector.clear();
+//     for(int i = 0; i < inputVector.size(); ++i){
+//         negatedVector.push_back(-inputVector.at(i));
+//     }
+// }
+//
+// int main() {
+//     int i;
+//     vector<double> inputVector;
+//     int size;
+//     double input;
+//     vector<double> negated;
+//
+//     cin >> size;
+//     for (i = 0; i < size; ++i) {
+//         cin >> input;
+//         inputVector.push_back(input);
+//     }
+//
+//     NegateVector(inputVector, negated);
+//
+//     for (i = 0; i < negated.size(); ++i) {
+//         cout << fixed << setprecision(1) << negated.at(i) << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <cstring>
+// using namespace std;
+//
+// void MakeSentenceExcited(char* sentenceText) {
+//     for(int i = 0; i < strlen(sentenceText); ++i){
+//         if(sentenceText[i] == '.'){
+//             sentenceText[i] = '!';
+//         }
+//     }
+//
+// }
+//
+// int main() {
+//     const int TEST_STR_SIZE = 50;
+//     char testStr[TEST_STR_SIZE];
+//
+//     cin.getline(testStr, TEST_STR_SIZE);
+//     MakeSentenceExcited(testStr);
+//     cout << testStr << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// void PrintSalutation(string personName) {
+//     cout << "Hello, " << personName << endl;
+// }
+//
+// void PrintSalutation(string personName, string customSalutation){
+//     cout << customSalutation << ", " << personName << endl;
+// }
+//
+// int main() {
+//     PrintSalutation("Holly", "Welcome");
+//     PrintSalutation("Sanjiv");
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintGatheringSize(string gatheringSize) {
+//     cout << "A gathering of " << gatheringSize << "." << endl;
+// }
+// void PrintGatheringSize(int numPeople) {
+//     cout << "Expected number of people: " << numPeople << endl;
+// }
+// int main() {
+//     string sizeInWord;
+//     int sizeOfGathering;
+//
+//     cin >> sizeInWord;
+//     cin >> sizeOfGathering;
+//
+//     PrintGatheringSize(sizeInWord);
+//     PrintGatheringSize(sizeOfGathering);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintTime(string weeks) {
+//     cout << "Total " << weeks << " weeks" << endl;
+// }
+//
+// void PrintTime(string weeks, string days){
+//     cout << "Total " << weeks << " weeks and " << days << " days" << endl;
+// }
+//
+// int main() {
+//     string weeksUsed;
+//     string daysUsed;
+//
+//     getline(cin, weeksUsed);
+//     getline(cin, daysUsed);
+//
+//     PrintTime(weeksUsed);
+//     PrintTime(weeksUsed, daysUsed);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int ConvertLength(int feet) {
+//     return feet * 12;
+// }
+//
+// int ConvertLength(int feet, int inches){
+//     return (feet * 12)  + inches;
+// }
+//
+// int main() {
+//     int feetUsed;
+//     int inchesUsed;
+//     int totalInches1;
+//     int totalInches2;
+//
+//     cin >> feetUsed;
+//     cin >> inchesUsed;
+//
+//     totalInches1 = ConvertLength(feetUsed);
+//     cout << feetUsed << " feet yields " << totalInches1 << " inches." << endl;
+//
+//     totalInches2 = ConvertLength(feetUsed, inchesUsed);
+//     cout << feetUsed << " feet and " << inchesUsed << " inches yields ";
+//     cout << totalInches2 << " inches." << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+//
+// using namespace std;
+//
+// int main() {
+//     double tableArea;
+//
+//     cin >> tableArea;
+//
+//     cout << "Table's area: " << fixed << setprecision(2) << tableArea << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// double KiloToPounds(double kilos) {
+//     return kilos * 2.204;
+// }
+//
+// int main() {
+//     double kilos;
+//     double pounds;
+//
+//     cin >> kilos;
+//
+//     pounds = KiloToPounds(kilos);
+//     cout << pounds << " lbs" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// class Shop {
+//     public:
+//         void SetNumSold(int customNumSold);
+//     void SetNumEmployees(int customNumEmployees);
+//     void SetYearsOpen(int customYearsOpen);
+//     int GetNumSold();
+//     int GetNumEmployees();
+//     int GetYearsOpen();
+//     private:
+//         int numSold;
+//     int numEmployees;
+//     int yearsOpen;
+// };
+//
+// void Shop::SetNumSold(int customNumSold) {
+//     numSold = customNumSold;
+// }
+//
+// void Shop::SetNumEmployees(int customNumEmployees) {
+//     numEmployees = customNumEmployees;
+// }
+//
+// void Shop::SetYearsOpen(int customYearsOpen) {
+//     yearsOpen = customYearsOpen;
+// }
+//
+// int Shop::GetNumSold() {
+//     return numSold;
+// }
+//
+// int Shop::GetNumEmployees() {
+//     return numEmployees;
+// }
+//
+// int Shop::GetYearsOpen() {
+//     return yearsOpen;
+// }
+//
+// int main() {
+//     Shop shop1;
+//     int inputNumSold;
+//     int inputNumEmployees;
+//     int inputYearsOpen;
+//
+//     cin >> inputNumSold;
+//     cin >> inputNumEmployees;
+//     cin >> inputYearsOpen;
+//
+//     shop1.SetNumSold(inputNumSold);
+//     shop1.SetNumEmployees(inputNumEmployees);
+//     shop1.SetYearsOpen(inputYearsOpen);
+//
+//     cout << "Number of items sold: " << shop1.GetNumSold() << endl;
+//     cout << "Number of employees: " << shop1.GetNumEmployees() << endl;
+//     cout << "Years open: " << shop1.GetYearsOpen() << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// class Business {
+//     public:
+//         int GetYearsOpen();
+//     int GetNumSold();
+//     void SetYearsOpen(int newYearsOpen);
+//     void SetNumSold(int newSumSold);
+//     private:
+//         int yearsOpen;
+//     int numSold;
+// };
+//
+// void Business::SetYearsOpen(int newYearsOpen) {
+//     yearsOpen = newYearsOpen;
+// }
+//
+// void Business::SetNumSold(int newNumSold) {
+//     numSold = newNumSold;
+// }
+//
+// int Business::GetYearsOpen() {
+//     return yearsOpen;
+// }
+//
+// int Business::GetNumSold() {
+//     return numSold;
+// }
+//
+// int main() {
+//     Business business1;
+//     int userYearsOpen;
+//     int userNumSold;
+//
+//     cin >> userYearsOpen;
+//     cin >> userNumSold;
+//
+//     business1.SetYearsOpen(userYearsOpen);
+//     business1.SetNumSold(userNumSold);
+//
+//     cout << "Years open: " << business1.GetYearsOpen() << endl;
+//     cout << "Number of items sold: " << business1.GetNumSold() << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <iomanip>
+// using namespace std;
+//
+// class Eatery {
+//     public:
+//         void SetName(string eateryName);
+//     void SetCity(string eateryCity);
+//     void Print() const;
+//     private:
+//         string name;
+//     string city;
+// };
+//
+// void Eatery::SetName(string eateryName){
+//     name = eateryName + "'s Bistro";
+// }
+// void Eatery::SetCity(string eateryCity){
+//     city = eateryCity;
+// }
+// void Eatery::Print() const {
+//     cout << "Eatery: " << name << endl;
+// cout << "City: " << city << endl;
+// }
+//
+// int main() {
+//     Eatery restaurant;
+//     string inputName;
+//     string inputCity;
+//
+//     cin >> inputName;
+//     cin >> inputCity;
+//     restaurant.SetName(inputName);
+//     restaurant.SetCity(inputCity);
+//
+//     restaurant.Print();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <iomanip>
+// using namespace std;
+//
+// class Restaurant {
+//     public:
+//         void SetName(string restaurantName);
+//     void SetCity(string restaurantCity);
+//     string GetName() const;
+//     string GetCity() const;
+//     private:
+//         string name;
+//     string city;
+// };
+//
+// void Restaurant::SetName(string restaurantName) {
+//     name = restaurantName + "'s Bistro";
+// }
+//
+// void Restaurant::SetCity(string restaurantCity) {
+//     city = restaurantCity;
+// }
+//
+// string Restaurant::GetName() const {
+//     return name;
+// }
+// string Restaurant::GetCity() const{
+//     return city;
+// }
+//
+// int main() {
+//     Restaurant restaurant;
+//     string inputName;
+//     string inputCity;
+//
+//     cin >> inputName;
+//     cin >> inputCity;
+//     restaurant.SetName(inputName);
+//     restaurant.SetCity(inputCity);
+//
+//     cout << "Restaurant: " << restaurant.GetName() << endl;
+//     cout << "City: " << restaurant.GetCity() << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <iomanip>
+// using namespace std;
+//
+// class Animal {
+//     public:
+//         void SetSpecies(string animalSpecies);
+//     void SetAge(int animalAge);
+//     string GetSpecies() const;
+//     int GetAge() const;
+//     void Print() const;
+//     private:
+//         string species;
+//     int age;
+// };
+//
+// void Animal::SetSpecies(string animalSpecies) {
+//     species = animalSpecies;
+// }
+//
+// void Animal::SetAge(int animalAge) {
+//     age = animalAge;
+// }
+//
+// string Animal::GetSpecies() const {
+//     return species;
+// }
+//
+// int Animal::GetAge() const {
+//     return age;
+// }
+//
+// int main() {
+//     Animal animal;
+//     string inputSpecies;
+//     int inputAge;
+//
+//     cin >> inputSpecies;
+//     cin >> inputAge;
+//
+//     animal.SetSpecies(inputSpecies);
+//     animal.SetAge(inputAge);
+//
+//     cout << "The " << animal.GetSpecies();
+//     cout << "'s age is " << animal.GetAge() << " days old" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <iomanip>
+// using namespace std;
+//
+// class Weight {
+//     public:
+//         void SetPounds(double weightPounds);
+//     double GetPounds() const;
+//     void PrintInOunces();
+//     private:
+//         double pounds;
+//     double ConvertToOunces();
+// };
+//
+// void Weight::SetPounds(double weightPounds) {
+//     pounds = weightPounds;
+// }
+//
+// double Weight::GetPounds() const {
+//     return pounds;
+// }
+// double Weight::ConvertToOunces(){
+//     return pounds * 16.0;
+// }
+// void Weight::PrintInOunces() {
+//     cout << fixed << setprecision(1) << ConvertToOunces() << " ounces" << endl;
+// }
+//
+// int main() {
+//     Weight weight1;
+//     double inputPounds;
+//
+//     cin >> inputPounds;
+//     weight1.SetPounds(inputPounds);
+//
+//     weight1.PrintInOunces();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// class Message {
+//     public:
+//         void SetName(string messageName);
+//     void SetAreaCode(int messageAreaCode);
+//     void SetGreeting(string messageGreeting);
+//     void Print();
+//
+//     private:
+//
+//         string name = "Unstated";
+//     int areaCode = -1;
+//     string greeting = "Empty";
+//
+// };
+//
+// void Message::SetName(string messageName) {
+//     name = messageName;
+// }
+//
+// void Message::SetAreaCode(int messageAreaCode) {
+//     areaCode = messageAreaCode;
+// }
+//
+// void Message::SetGreeting(string messageGreeting) {
+//     greeting = messageGreeting;
+// }
+//
+// void Message::Print() {
+//     cout << "Name: " << name << ", Area code: " << areaCode << ", Greeting: Please leave a message for " << greeting << endl;
+// }
+//
+// int main() {
+//     string newName;
+//     int newAreaCode;
+//     Message message1;
+//
+//     message1.Print();
+//
+//     cin >> newName;
+//     cin >> newAreaCode;
+//
+//     message1.SetName(newName);
+//     message1.SetAreaCode(newAreaCode);
+//     message1.SetGreeting(newName);
+//
+//     message1.Print();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// class Eatery {
+//     public:
+//         Eatery();
+//     void SetName(string eateryName);
+//     void SetRating(int eateryRating);
+//     void Print();
+//
+//     private:
+//         string name;
+//     int rating;
+// };
+//
+// Eatery::Eatery(){
+//     name = "Undefined";
+//     rating = 0;
+// }
+//
+// void Eatery::SetName(string eateryName) {
+//     name = eateryName;
+// }
+//
+// void Eatery::SetRating(int eateryRating) {
+//     rating = eateryRating;
+// }
+//
+// void Eatery::Print() {
+//     cout << "Name: " << name << "'s Bistro's Buffet, Rating: " << rating << endl;
+// }
+//
+// int main() {
+//     string newName;
+//     int newRating;
+//     Eatery favoriteEatery;
+//
+//     favoriteEatery.Print();
+//
+//     cin >> newName;
+//     cin >> newRating;
+//
+//     favoriteEatery.SetName(newName);
+//     favoriteEatery.SetRating(newRating);
+//
+//     favoriteEatery.Print();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <vector>
+// using namespace std;
+//
+// class Material {
+//     public:
+//         void SetNameAndDensity(string materialName, int materialDensity) {
+//     name = materialName;
+//     density = materialDensity;
+// }
+// void PrintMaterial() const {
+//     cout << name << " - " << density << endl;
+// }
+// string GetName() const { return name; }
+// int GetDensity() const { return density; }
+//
+// private:
+//     string name;
+// int density;
+// };
+//
+// int main() {
+//     vector<Material> approvedMaterials;
+//     Material currMat;
+//     string currName;
+//     int currDensity;
+//     unsigned int i;
+//
+//     cin >> currName;
+//     cin >> currDensity;
+//     while ((currName != "quit") && (currDensity > 0)) {
+//
+//         currMat.SetNameAndDensity(currName, currDensity);
+//         approvedMaterials.push_back(currMat);
+//
+//
+//
+//         cin >> currName;
+//         cin >> currDensity;
+//     }
+//
+//     for (i = 0; i < approvedMaterials.size(); ++i) {
+//         currMat = approvedMaterials.at(i);
+//         currMat.PrintMaterial();
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <vector>
+// using namespace std;
+//
+// class Movie {
+//     public:
+//         void SetTitleAndDuration(string movieTitle, int movieDuration) {
+//     title = movieTitle;
+//     duration = movieDuration;
+// }
+// void PrintMovie() const {
+//     cout << title << " - " << duration << endl;
+// }
+// string GetTitle() const { return title; }
+// int GetDuration() const { return duration; }
+//
+// private:
+//     string title;
+// int duration;
+// };
+//
+// int main() {
+//     vector<Movie> myMovies;
+//     Movie currMovie;
+//     string currTitle;
+//     int currDuration;
+//     unsigned int i;
+//
+//     cin >> currTitle;
+//     cin >> currDuration;
+//     while ((currTitle != "quit") && (currDuration > 0)) {
+//
+//         currMovie.SetTitleAndDuration(currTitle, currDuration);
+//         myMovies.push_back(currMovie);
+//
+//         cin >> currTitle;
+//         cin >> currDuration;
+//     }
+//
+//     for (i = 0; i < myMovies.size(); ++i) {
+//         currMovie = myMovies.at(i);
+//         currMovie.PrintMovie();
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <vector>
+// using namespace std;
+//
+// class Song {
+//     public:
+//         void SetDurationAndName(int songDuration, string songName) {
+//     duration = songDuration;
+//     name = songName;
+// }
+// void PrintSong() const {
+//     cout << duration << " - " << name << endl;
+// }
+// int GetDuration() const { return duration; }
+// string GetName() const { return name; }
+//
+// private:
+//     int duration;
+// string name;
+// };
+//
+// int main() {
+//     vector<Song> playlist;
+//     Song newSong;
+//     int songDuration;
+//     string songName;
+//     unsigned int i;
+//
+//     cin >> songDuration;
+//     while (songDuration >= 0) {
+//
+//         cin >> songName;
+//         newSong.SetDurationAndName(songDuration, songName);
+//         playlist.push_back(newSong);
+//
+//         cin >> songDuration;
+//     }
+//
+//     for (i = 0; i < playlist.size(); ++i) {
+//         newSong = playlist.at(i);
+//         newSong.PrintSong();
+//     }
+//
+//     return 0;
+// }
+
