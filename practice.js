@@ -23504,3 +23504,636 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <string>
+// #include <vector>
+// using namespace std;
+//
+// class Song {
+//     public:
+//         void SetDurationAndName(int songDuration, string songName) {
+//     duration = songDuration;
+//     name = songName;
+// }
+// void PrintSong() const {
+//     cout << duration << " - " << name << endl;
+// }
+// int GetDuration() const { return duration; }
+// string GetName() const { return name; }
+//
+// private:
+//     int duration;
+// string name;
+// };
+//
+// class Album {
+//     public:
+//         void SetName(string albumName) { name = albumName; }
+// void InputSongs();
+// void PrintName() const { cout << name << endl; }
+// void PrintSongsLongerThan(int songDuration) const;
+//
+// private:
+//     string name;
+// vector<Song> albumSongs;
+// };
+//
+// void Album::InputSongs() {
+//     Song currSong;
+//     int currDuration;
+//     string currName;
+//
+//     cin >> currDuration;
+//     while (currDuration >=  0) {
+//         cin >> currName;
+//         currSong.SetDurationAndName(currDuration, currName);
+//         albumSongs.push_back(currSong);
+//         cin >> currDuration;
+//     }
+// }
+//
+// void Album::PrintSongsLongerThan(int songDuration) const {
+//     unsigned int i;
+//     Song currSong;
+//
+//     cout << "Songs longer than " << songDuration << " seconds:" << endl;
+// for (unsigned int i = 0; i < albumSongs.size(); ++i) {
+//     if (albumSongs.at(i).GetDuration() > songDuration) {
+//         albumSongs.at(i).PrintSong();
+//     }
+// }
+//
+// }
+//
+// int main() {
+//     Album musicAlbum;
+//     string albumName;
+//
+//     getline(cin, albumName);
+//     musicAlbum.SetName(albumName);
+//     musicAlbum.InputSongs();
+//     musicAlbum.PrintName();
+//     musicAlbum.PrintSongsLongerThan(150);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// class Town {
+//     public:
+//         void SetDetails(string newName, int newPopulation);
+//     int GetPopulation() const;
+//     void Print() const;
+//     private:
+//         string name;
+//     int population;
+// };
+//
+// void Town::SetDetails(string newName, int newPopulation) {
+//     name = newName;
+//     population = newPopulation;
+// }
+//
+// int Town::GetPopulation() const {
+//     return population;
+// }
+//
+// void Town::Print() const {
+//     cout << "Town: " << name << ", Population: " << population << endl;
+// }
+//
+// int main() {
+//     vector<Town> townList;
+//     Town currTown;
+//     string currName;
+//     int currPopulation;
+//     int townCount;
+//     unsigned int i;
+//
+//     cin >> townCount;
+//     for (i = 0; i < townCount; ++i) {
+//         cin >> currName;
+//         cin >> currPopulation;
+//
+//         currTown.SetDetails(currName, currPopulation);
+//         townList.push_back(currTown);
+//     }
+//
+//     for(i = 0; i < townList.size(); ++i){
+//         int population = townList.at(i).GetPopulation();
+//         if(population >= 1700 && population <= 2100){
+//             townList.at(i).Print();
+//         }
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// class Order {
+//     public:
+//         void ReadOptionAndFood();
+//     void Print() const;
+//     private:
+//         char option;
+//     string food;
+// };
+//
+// void Order::ReadOptionAndFood() {
+//     cin >> option;
+//     cin >> food;
+// }
+//
+// void Order::Print() const {
+//     cout << "Order option: " << option << ", Food: " << food << endl;
+// }
+//
+// int main() {
+//     vector<Order> orderList;
+//     Order currOrder;
+//     int entryNumber;
+//     unsigned int i;
+//
+//     cin >> entryNumber;
+//     while(entryNumber != -99){
+//         currOrder.ReadOptionAndFood();
+//         orderList.push_back(currOrder);
+//         cin >> entryNumber;
+//     }
+//
+//     for (i = 0; i < orderList.size(); ++i) {
+//         currOrder = orderList.at(i);
+//         currOrder.Print();
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// class Town {
+//     public:
+//         void SetNameAndPopulation(string newName, int newPopulation);
+//     int GetPopulation() const;
+//     void Print() const;
+//     private:
+//         string name;
+//     int population;
+// };
+//
+// void Town::SetNameAndPopulation(string newName, int newPopulation) {
+//     name = newName;
+//     population = newPopulation;
+// }
+//
+// int Town::GetPopulation() const {
+//     return population;
+// }
+//
+// void Town::Print() const {
+//     cout << "Town: " << name << ", Population: " << population << endl;
+// }
+//
+// class SmallTowns {
+//     public:
+//         void InputTowns();
+//     void PrintTownsInRange();
+//     private:
+//         vector<Town> townList;
+// };
+//
+// void SmallTowns::InputTowns() {
+//     Town currTown;
+//     string currName;
+//     int currPopulation;
+//     int townCount;
+//     unsigned int i;
+//
+//     cin >> townCount;
+//     for (i = 0; i < townCount; ++i) {
+//         cin >> currName;
+//         cin >> currPopulation;
+//
+//         currTown.SetNameAndPopulation(currName, currPopulation);
+//         townList.push_back(currTown);
+//     }
+// }
+//
+// void SmallTowns::PrintTownsInRange(){
+//     for(unsigned int i = 0; i < townList.size(); ++i){
+//         int pop = townList.at(i).GetPopulation();
+//         if(pop >= 4200 && pop <= 4700){
+//             townList.at(i).Print();
+//         }
+//     }
+// }
+//
+// int main() {
+//     SmallTowns smallTowns;
+//
+//     smallTowns.InputTowns();
+//     smallTowns.PrintTownsInRange();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// class Patient {
+//     public:
+//         void SetDetails(string newName, int newAge);
+//     void Print() const;
+//     private:
+//         string name;
+//     int age;
+// };
+//
+// void Patient::SetDetails(string newName, int newAge) {
+//     name = newName;
+//     age = newAge;
+// }
+//
+// void Patient::Print() const {
+//     cout << "Patient: " << name << ", Age: " << age << endl;
+// }
+//
+// class Clinic {
+//     public:
+//         void InputPatients();
+//     void PrintPatients();
+//     private:
+//         vector<Patient> patientList;
+// };
+//
+// void Clinic::InputPatients(){
+//     string currName;
+//     int currAge;
+//     Patient currPatient;
+//
+//     cin >> currName;
+//     while(currName != "completed"){
+//         cin >> currAge;
+//         currPatient.SetDetails(currName, currAge);
+//         patientList.push_back(currPatient);
+//         cin >> currName;
+//     }
+// }
+//
+// void Clinic::PrintPatients() {
+//     Patient currPatient;
+//     unsigned int i;
+//
+//     for (i = 0; i < patientList.size(); ++i) {
+//         currPatient = patientList.at(i);
+//         currPatient.Print();
+//     }
+// }
+//
+// int main() {
+//     Clinic clinic;
+//
+//     clinic.InputPatients();
+//     clinic.PrintPatients();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// class Essay {
+//     public:
+//         Essay();
+//     Essay(string essayTitle, string essayAuthor);
+//     Essay(string essayTitle, string essayAuthor, int essayYear);
+//     void Print();
+//
+//     private:
+//         string title;
+//     string author;
+//     int year;
+// };
+//
+// // Default constructor
+// Essay::Essay() {
+//     title = "None";
+//     author = "Unspecified";
+//     year = 0;
+// }
+//
+// Essay::Essay(string essayTitle, string essayAuthor) {
+//     title = essayTitle;
+//     author = essayAuthor;
+//     year = 0;
+// }
+//
+// Essay::Essay(string essayTitle, string essayAuthor, int essayYear) {
+//     title = essayTitle;
+//     author = essayAuthor;
+//     year = essayYear;
+// }
+//
+// void Essay::Print() {
+//     cout << "Essay: " << title << ", " << author << ", " << year << endl;
+// }
+//
+// int main() {
+//     string essayTitle;
+//     string essayAuthor;
+//     int essayYear;
+//
+//     cin >> essayTitle;
+//     cin >> essayAuthor;
+//     cin >> essayYear;
+//
+//     Essay essay1;
+//     Essay essay2(essayTitle, essayAuthor);
+//     Essay essay3(essayTitle, essayAuthor, essayYear);
+//
+//     essay1.Print();
+//     essay2.Print();
+//     essay3.Print();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// class Book {
+//     public:
+//         Book();
+//     Book(string bookTitle, string bookAuthor);
+//     void Print();
+//
+//     private:
+//         string title;
+//     string author;
+// };
+//
+// // Default constructor
+// Book::Book() {
+//     title = "NoName";
+//     author = "None";
+// }
+//
+// Book::Book(string bookTitle, string bookAuthor){
+//     title = bookTitle;
+//     author = bookAuthor;
+// }
+//
+// void Book::Print() {
+//     cout << "Book: " << title << ", " << author << endl;
+// }
+//
+// int main() {
+//     string bookTitle;
+//     string bookAuthor;
+//
+//     cin >> bookTitle;
+//     cin >> bookAuthor;
+//
+//     Book emptyBook;
+//     Book book1(bookTitle, bookAuthor);
+//
+//     emptyBook.Print();
+//     book1.Print();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <iomanip>
+// using namespace std;
+//
+// class Member {
+//     public:
+//         Member();
+//     Member(string memberName, int memberAge, double memberHeight);
+//     void Print();
+//
+//     private:
+//         string name;
+//     int age;
+//     double height;
+// };
+//
+// // Default constructor
+// Member::Member() {
+//     name = "Undefined";
+//     age = 0;
+//     height = 0.0;
+// }
+//
+// Member::Member(string memberName, int memberAge, double memberHeight){
+//     name = memberName;
+//     age = memberAge;
+//     height = memberHeight;
+// }
+//
+// void Member::Print() {
+//     cout << fixed << setprecision(2) << "Member: " << name << ", " << age << ", " << height << endl;
+// }
+//
+// int main() {
+//     string memberName;
+//     int memberAge;
+//     double memberHeight;
+//
+//     cin >> memberName;
+//     cin >> memberAge;
+//     cin >> memberHeight;
+//
+//     Member emptyMember;
+//     Member member1(memberName, memberAge, memberHeight);
+//
+//     emptyMember.Print();
+//     member1.Print();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// class City {
+//     public:
+//         City();
+//     void SetInformation(string newName, int newPopulation, char newTourism);
+//     void Print() const;
+//     private:
+//         string name;
+//     int population;
+//     char tourism;
+// };
+//
+// City::City() : name("Unrecorded"), population(-999), tourism('-') {
+// }
+//
+// void City::SetInformation(string newName, int newPopulation, char newTourism) {
+//     name = newName;
+//     population = newPopulation;
+//     tourism = newTourism;
+// }
+//
+// void City::Print() const {
+//     cout << "City: " << name << ", Population: " << population << ", Tourism: " << tourism << endl;
+// }
+//
+// int main() {
+//     string newName;
+//     int newPopulation;
+//     char newTourism;
+//     City myCity;
+//
+//     myCity.Print();
+//
+//     cin >> newName;
+//     cin >> newPopulation;
+//     cin >> newTourism;
+//     myCity.SetInformation(newName, newPopulation, newTourism);
+//     myCity.Print();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// class Member {
+//     public:
+//         Member();
+//     Member(string newShortName, int newAge, char newGroup);
+//     void Print() const;
+//     private:
+//         string shortName;
+//     int age;
+//     char group;
+// };
+//
+// Member::Member() : shortName("Unspecified"), age(-99), group('-') {
+// }
+//
+// Member::Member(string newShortName, int newAge, char newGroup) : shortName(newShortName), age(newAge), group(newGroup) {
+// }
+//
+// void Member::Print() const {
+//     cout << "Member: " << shortName << ", Age: " << age << ", Group: " << group << endl;
+// }
+//
+// int main() {
+//     Member myMember;
+//     string newShortName;
+//     int newAge;
+//     char newGroup;
+//
+//     cin >> newShortName;
+//     cin >> newAge;
+//     cin >> newGroup;
+//     Member yourMember(newShortName, newAge, newGroup);
+//
+//     myMember.Print();
+//     yourMember.Print();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// class Color {
+//     public:
+//         Color();
+//     void ReadName();
+//     void ReadIntensities();
+//     void Print() const;
+//     private:
+//         string name;
+//     vector<int> intensities;
+// };
+//
+// Color::Color() : name("Unknown"), intensities(3) {
+// }
+//
+// void Color::ReadName() {
+//     cin >> name;
+// }
+//
+// void Color::ReadIntensities() {
+//     int i;
+//     for (i = 0; i < intensities.size(); ++i) {
+//         cin >> intensities.at(i);
+//     }
+// }
+//
+// void Color::Print() const {
+//     int i;
+//
+//     cout << "Color: " << name << ", ";
+// if (intensities.size() == 0) {
+//     cout << "No intensities" << endl;
+// }
+// else {
+//     cout << intensities.size() << " intensities: ";
+//     for (i = 0; i < intensities.size() - 1; ++i) {
+//         cout << intensities.at(i) << ", ";
+//     }
+//     cout << intensities.at(intensities.size() - 1) << endl;
+// }
+// }
+//
+// int main() {
+//     string name;
+//     Color myColor;
+//
+//     myColor.Print();
+//
+//     myColor.ReadName();
+//     myColor.ReadIntensities();
+//     myColor.Print();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// class CablePlan{
+//     public:
+//         void  SetNumDays(int numDays);
+//     int   GetNumDays() const;
+//     private:
+//         int   numDays;
+// };
+// void CablePlan::SetNumDays(int numDays) {
+//
+//     this->numDays = numDays;
+// }
+// int CablePlan::GetNumDays() const {
+//     return numDays;
+// }
+// int main() {
+//     CablePlan house1Plan;
+//     int userNum;
+//
+//     cin >> userNum;
+//     house1Plan.SetNumDays(userNum);
+//     cout << house1Plan.GetNumDays() << endl;
+//
+//     return 0;
+// }
+
