@@ -24137,3 +24137,223 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// class TimeCard {
+//     public:
+//         TimeCard(int hoursWorked = 0, int hoursOff = 0);
+//     void Print() const;
+//     TimeCard operator+(TimeCard rhs);
+//     private:
+//         int workingHours;
+//     int vacationHours;
+// };
+//
+// TimeCard::TimeCard(int hoursWorked, int hoursOff) {
+//     workingHours = hoursWorked;
+//     vacationHours = hoursOff;
+// }
+// TimeCard TimeCard::operator+(TimeCard rhs) {
+//
+//     TimeCard result;
+//
+//     result.workingHours = this->workingHours + rhs.workingHours;
+//     result.vacationHours = this->vacationHours + rhs.vacationHours;
+//
+//     return result;
+// }
+//
+// void TimeCard::Print() const {
+//     cout << workingHours << " working hours, " << vacationHours << " vacation hours";
+// }
+//
+// int main() {
+//     int hoursWorked1;
+//     int hoursOff1;
+//     int hoursWorked2;
+//     int hoursOff2;
+//
+//     cin >> hoursWorked1;
+//     cin >> hoursOff1;
+//     cin >> hoursWorked2;
+//     cin >> hoursOff2;
+//
+//     TimeCard timeCard1(hoursWorked1, hoursOff1);
+//     TimeCard timeCard2(hoursWorked2, hoursOff2);
+//
+//     TimeCard sum = timeCard1 + timeCard2;
+//
+//     timeCard1.Print();
+//     cout << endl;
+//     timeCard2.Print();
+//     cout << endl;
+//     cout << "Sum: ";
+//     sum.Print();
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// class TimeHrMin {
+//     public:
+//         TimeHrMin(double hours = 0.0, double minutes = 0.0);
+//     void Print() const;
+//     TimeHrMin operator-(TimeHrMin rhs);
+//     private:
+//         double hr;
+//     double mn;
+// };
+//
+// TimeHrMin::TimeHrMin(double hours, double minutes) {
+//     hr = hours;
+//     mn = minutes;
+// }
+// TimeHrMin TimeHrMin::operator-(TimeHrMin rhs) {
+//     TimeHrMin result;
+//     result.hr = this->hr - rhs.hr;
+//     result.mn = this->mn - rhs.mn;
+//     return result;
+// }
+// void TimeHrMin::Print() const {
+//     cout << hr << " hours, " << mn << " minutes";
+// }
+//
+// int main() {
+//     double hours1;
+//     double minutes1;
+//     double hours2;
+//     double minutes2;
+//
+//     cin >> hours1;
+//     cin >> minutes1;
+//     cin >> hours2;
+//     cin >> minutes2;
+//
+//     TimeHrMin timeHrMin1(hours1, minutes1);
+//     TimeHrMin timeHrMin2(hours2, minutes2);
+//
+//     TimeHrMin difference = timeHrMin1 - timeHrMin2;
+//
+//     timeHrMin1.Print();
+//     cout << endl;
+//     timeHrMin2.Print();
+//     cout << endl;
+//     cout << "Difference: ";
+//     difference.Print();
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// class Distance {
+//     public:
+//         Distance(int mi = 0, int ft = 0);
+//     void Print() const;
+//     Distance operator-(Distance rhs);
+//     Distance operator-(int rhs);
+//     private:
+//         int miles;
+//     int feet;
+// };
+//
+// Distance::Distance(int mi, int ft) {
+//     miles = mi;
+//     feet = ft;
+// }
+// Distance Distance::operator-(Distance rhs) {
+//     Distance result;
+//     result.miles = this->miles - rhs.miles;
+//     result.feet = this->feet - rhs.feet;
+//     return result;
+// }
+// Distance Distance::operator-(int rhs) {
+//     Distance result;
+//     result.miles = this->miles - rhs;
+//     result.feet = this->feet;
+//     return result;
+// }
+// void Distance::Print() const {
+//     cout << miles << " miles, " << feet << " feet";
+// }
+//
+// int main() {
+//     int mi1;
+//     int ft1;
+//     int mi2;
+//     int ft2;
+//
+//     cin >> mi1;
+//     cin >> ft1;
+//     cin >> mi2;
+//     cin >> ft2;
+//
+//     Distance distance1(mi1, ft1);
+//     Distance distance2(mi2, ft2);
+//
+//     Distance difference1 = distance1 - distance2;
+//     Distance difference2 = distance1 - mi2;
+//
+//     distance1.Print();
+//     cout << endl;
+//     distance2.Print();
+//     cout << endl;
+//     cout << "Difference: ";
+//     difference1.Print();
+//     cout << endl;
+//
+//     cout << endl;
+//
+//     distance1.Print();
+//     cout << endl;
+//     cout << mi2 << " miles" << endl;
+//     cout << "Difference: ";
+//     difference2.Print();
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// void numsInsert(vector<int>& numsList, int newNum) {
+//     unsigned int i;
+//
+//     for (i = 0; i < numsList.size(); ++i) {
+//         if (newNum < numsList.at(i)) {
+//             numsList.insert(numsList.begin() + i, newNum);
+//             break;
+//         }
+//     }
+//
+//     if (i == numsList.size()) {
+//         numsList.push_back(newNum);
+//     }
+// }
+// void numsPrint(const vector<int>& numsList) {
+//     unsigned int i;
+//
+//     for (i = 0; i < numsList.size(); ++i) {
+//         cout << " " << numsList.at(i) << endl;
+//     }
+// }
+//
+// int main() {
+//     vector<int> numsList;
+//     numsInsert(numsList, 55);
+//     numsInsert(numsList, 4);
+//     numsInsert(numsList, 250);
+//     numsInsert(numsList, 19);
+//     numsPrint (numsList);
+//
+//     return 0;
+// }
+
