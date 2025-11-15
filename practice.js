@@ -24357,3 +24357,375 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include "Triangle.h"
+// using namespace std;
+//
+// int main() {
+//     Triangle triangle1;
+//     Triangle triangle2;
+//
+//     double base, height;
+//
+//     cin >> base >> height;
+//     triangle1.SetBase(base);
+//     triangle1.SetHeight(height);
+//
+//     cin >> base >> height;
+//     triangle2.SetBase(base);
+//     triangle2.SetHeight(height);
+//
+//     cout << "Triangle with smaller area:" << endl;
+//
+//     if(triangle1.GetArea() < triangle2.GetArea()){
+//         triangle1.PrintInfo();
+//     } else {
+//         triangle2.PrintInfo();
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// #include <cmath>
+// #include "Car.h"
+// using namespace std;
+//
+// void Car::SetModelYear(int userYear){
+//     modelYear = userYear;
+// }
+//
+// int Car::GetModelYear() const {
+//     return modelYear;
+// }
+// void Car::SetPurchasePrice(int userPrice){
+//     purchasePrice = userPrice;
+// }
+// int Car::GetPurchasePrice() const {
+//     return purchasePrice;
+// }
+//
+// void Car::CalcCurrentValue(int currentYear) {
+//     double depreciationRate = 0.15;
+//     int carAge = currentYear - modelYear;
+//     currentValue = purchasePrice * pow((1 - depreciationRate), carAge);
+// }
+//
+// void Car::PrintInfo() const {
+//     cout << "Car's information:" << endl;
+// cout << " Model year: " << modelYear << endl;
+// cout << " Purchase price: $" << purchasePrice << endl;
+// cout << " Current value: $" << fixed << setprecision(0) << currentValue << endl;
+// }
+
+// #ifndef CAR_H
+// #define CAR_H
+//
+// class Car {
+//     public:
+//         void SetModelYear(int userYear);
+//     int GetModelYear() const;
+//
+//     void SetPurchasePrice(int userPrice);
+//     int GetPurchasePrice() const;
+//
+//     void CalcCurrentValue(int currentYear);
+//     void PrintInfo() const;
+//
+//     private:
+//         int modelYear;
+//     int purchasePrice;
+//     double currentValue;
+// };
+//
+// #endif
+
+// #include <iostream>
+// #include <iomanip>
+// #include "Team.h"
+// using namespace std;
+//
+// void Team::SetName(string teamName) {
+//     name = teamName;
+// }
+//
+// void Team::SetWins(int teamWins) {
+//     wins = teamWins;
+// }
+//
+// void Team::SetLosses(int teamLosses) {
+//     losses = teamLosses;
+// }
+//
+// string Team::GetName() const {
+//     return name;
+// }
+//
+// int Team::GetWins() const {
+//     return wins;
+// }
+//
+// int Team::GetLosses() const {
+//     return losses;
+// }
+//
+// double Team::GetWinPercentage() const {
+//     return static_cast<double>(wins) / (wins + losses);
+// }
+//
+// void Team::PrintStanding() const {
+//     double pct = GetWinPercentage();
+//
+//     cout << fixed << setprecision(2);
+// cout << "Win percentage: " << pct << endl;
+//
+// if (pct >= 0.50) {
+//     cout << "Congratulations, Team " << name
+//     << " has a winning average!" << endl;
+// }
+// else {
+//     cout << "Team " << name << " has a losing average." << endl;
+// }
+// }
+
+// #ifndef TEAMH
+// #define TEAMH
+//
+// #include <string>
+//
+// using namespace std;
+//
+// class Team {
+//     private:
+//         string name;
+//     int wins;
+//     int losses;
+//
+//     public:
+//         void SetName(string teamName);
+//     void SetWins(int teamWins);
+//     void SetLosses(int teamLosses);
+//
+//     string GetName() const;
+//     int GetWins() const;
+//     int GetLosses() const;
+//
+//     double GetWinPercentage() const;
+//     void PrintStanding() const;
+// };
+//
+// #endif
+
+// #include "FoodItem.h"
+// #include <iostream>
+// #include <iomanip>
+//
+// using namespace std;
+//
+// FoodItem::FoodItem(){
+//     name = "Water";
+//     fat = 0.0;
+//     carbs = 0.0;
+//     protein = 0.0;
+// }
+// FoodItem::FoodItem(string userName, double userFat, double userCarbs, double userProtein) {
+//     name = userName;
+//     fat = userFat;
+//     carbs = userCarbs;
+//     protein = userProtein;
+// }
+//
+// string FoodItem::GetName() {
+//     return name;
+// }
+//
+// double FoodItem::GetFat() {
+//     return fat;
+// }
+//
+// double FoodItem::GetCarbs() {
+//     return carbs;
+// }
+//
+// double FoodItem::GetProtein() {
+//     return protein;
+// }
+//
+// double FoodItem::GetCalories(double numServings) {
+//     // Calorie formula
+//     double calories = ((fat * 9) + (carbs * 4) + (protein * 4)) * numServings;
+//     return calories;
+// }
+//
+// void FoodItem::PrintInfo() {
+//     cout << fixed << setprecision(2);
+//     cout << "Nutritional information per serving of " << name  << ":" << endl;
+//     cout << "  Fat: " << fat << " g" << endl;
+//     cout << "  Carbohydrates: " << carbs << " g" << endl;
+//     cout << "  Protein: " << protein << " g" << endl;
+// }
+
+// #ifndef FOODITEMH
+// #define FOODITEMH
+//
+// #include <string>
+//
+// using namespace std;
+//
+// class FoodItem {
+//     public:
+//         FoodItem();
+//     FoodItem(string userName, double userFat, double userCarbs, double userProtein);
+//
+//     string GetName();
+//     double GetFat();
+//     double GetCarbs();
+//     double GetProtein();
+//     double GetCalories(double numServings);
+//     void PrintInfo();
+//
+//     private:
+//         string name;
+//     double fat;
+//     double carbs;
+//     double protein;
+// };
+//
+// #endif
+
+// #include "Artist.h"
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// Artist::Artist(){
+//     artistName = "unknown";
+//     birthYear = -1;
+//     deathYear = -1;
+// }
+// Artist::Artist(string artistName, int birthYear, int deathYear){
+//     this->artistName = artistName;
+//     this->birthYear = birthYear;
+//     this->deathYear = deathYear;
+// }
+// string Artist::GetName() const{
+//     return artistName;
+// }
+// int Artist::GetBirthYear() const{
+//     return birthYear;
+// }
+// int Artist::GetDeathYear() const{
+//     return deathYear;
+// }
+// void Artist::PrintInfo() const {
+//     cout << "Artist: " << artistName << " ";
+// if(birthYear >= 0 && deathYear >= 0){
+//     cout << "(" << birthYear << " to " << deathYear << ")";
+// } else if(birthYear >= 0 && deathYear < 0){
+//     cout << "(" << birthYear << " to present)";
+// } else {
+//     cout << "(unknown)";
+// }
+// cout << endl;
+// }
+
+// #ifndef ARTISTH
+// #define ARTISTH
+//
+// #include <string>
+// using namespace std;
+//
+// class Artist{
+//     public:
+//         Artist();
+//     Artist(string artistName, int birthYear, int deathYear);
+//
+//     string GetName() const;
+//     int GetBirthYear() const;
+//     int GetDeathYear() const;
+//     void PrintInfo() const;
+//
+//     private:
+//         string artistName;
+//     int birthYear;
+//     int deathYear;
+//
+// };
+//
+// #endif
+
+// #include "Artwork.h"
+// #include <iostream>
+// using namespace std;
+//
+// // Default constructor
+// Artwork::Artwork() {
+//     title = "unknown";
+//     yearCreated = -1;
+//     artist = Artist();
+// }
+//
+// // Second constructor
+// Artwork::Artwork(string title, int yearCreated, Artist artist) {
+//     this->title = title;
+//     this->yearCreated = yearCreated;
+//     this->artist = artist;
+// }
+//
+// string Artwork::GetTitle() {
+//     return title;
+// }
+//
+// int Artwork::GetYearCreated() {
+//     return yearCreated;
+// }
+//
+// void Artwork::PrintInfo() {
+//     artist.PrintInfo();
+//     cout << "Title: " << title << ", " << yearCreated << endl;
+// }
+
+// #ifndef ARTWORKH
+// #define ARTWORKH
+//
+// #include "Artist.h"
+//
+// class Artwork{
+//     public:
+//         Artwork();
+//     Artwork(string title, int yearCreated, Artist artist);
+//
+//     string GetTitle();
+//     int GetYearCreated();
+//
+//     void PrintInfo();
+//
+//     private:
+//         string title;
+//     int yearCreated;
+//     Artist artist;
+// };
+//
+// #endif
+
+// #include <iostream>
+//
+// #include "VendingMachine.h"
+// using namespace std;
+//
+// int main() {
+//
+//     int purchase1, restock, purchase2;
+//     cin >> purchase1 >> restock >> purchase2;
+//
+//     VendingMachine machine;
+//
+//     machine.Purchase(purchase1);
+//     machine.Restock(restock);
+//     machine.Purchase(purchase2);
+//     machine.Report();
+//
+//     return 0;
+// }
+
