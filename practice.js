@@ -24857,3 +24857,210 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int startNum;
+//     int endNum;
+//
+//     cin >> startNum >> endNum;
+//
+//     if(endNum < startNum){
+//         cout << "Second integer can't be less than the first." << endl;
+//     } else {
+//         for(int i = startNum; i <= endNum; i += 5){
+//             cout << i << " ";
+//         }
+//         cout << endl;
+//     }
+//
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void BackwardsAlphabet(char currLetter){
+//     if (currLetter == 'a') {
+//         cout << currLetter << endl;
+//     }
+//     else{
+//         cout << currLetter << " ";
+//         BackwardsAlphabet(currLetter - 1);
+//     }
+// }
+//
+// int main() {
+//     char startingLetter;
+//
+//     cin >> startingLetter;
+//
+//     BackwardsAlphabet(startingLetter);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <vector>
+// using namespace std;
+//
+// void Find(vector<string> stateItems, string inquiredItem, int minIndex, int maxIndex) {
+//     int midIndex;
+//     int rangeSize;
+//     string midValue;
+//
+//     cout << "Searching range from index " << minIndex << " to " << maxIndex << endl;
+//
+//     rangeSize = (maxIndex - minIndex) + 1;
+//     midIndex = (minIndex + maxIndex) / 2;
+//     midValue = stateItems.at(midIndex);
+//
+//     if (inquiredItem == midValue) {
+//         cout << inquiredItem << " is found at index " << midIndex << endl;
+//     }
+//     else if (rangeSize == 1) {
+//         cout << inquiredItem << " is not in the list" << endl;
+//     }
+//     else {
+//
+//         if (inquiredItem < midValue) {
+//
+//             Find(stateItems, inquiredItem, minIndex, midIndex);
+//
+//         }
+//         else {
+//
+//             Find(stateItems, inquiredItem, midIndex + 1, maxIndex);
+//
+//         }
+//
+//     }
+// }
+//
+// int main() {
+//     string inquiredItem;
+//     vector<string> dataList;
+//     int numData;
+//     int i;
+//     string item;
+//
+//     cin >> inquiredItem;
+//     cin >> numData;
+//     for (i = 0; i < numData; ++i) {
+//         cin >> item;
+//         dataList.push_back(item);
+//     }
+//
+//     Find(dataList, inquiredItem, 0, dataList.size() - 1);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int ComputePowers(int argNum) {
+//     int product;
+//
+//     if(argNum ==0){
+//         cout << "3 to the power of 0 is 1" << endl;
+//         return 1;
+//     }
+//
+//     else {
+//         product = 3 * ComputePowers(argNum - 1);
+//         cout << "3 to the power of " << argNum << " is " << product << endl;
+//         return product;
+//     }
+// }
+//
+// int main() {
+//     int argNum;
+//
+//     cin >> argNum;
+//     ComputePowers(argNum);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int MultiplySequence(int val) {
+//     if (val <= 2) {
+//         return val;
+//     }
+//
+//     return val * MultiplySequence(val - 2);
+//
+// }
+//
+// int main() {
+//     int val;
+//
+//     cin >> val;
+//     cout << MultiplySequence(val) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void ComputeStock(int month, int count) {
+//     cout << "month: " << month << ", count: " << count << endl;
+//
+//     if (month == 3) {
+//         cout << "Study completed" << endl;
+//     }
+//     else {
+//
+//         if(count <= 750){
+//             ComputeStock(month + 1, count + 25);
+//         } else {
+//             ComputeStock(month + 1, count + 45);
+//         }
+//
+//     }
+// }
+//
+// int main() {
+//     int count;
+//
+//     cin >> count;
+//     ComputeStock(1, count);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int RaiseToPower(int baseVal, int exponentVal){
+//     int resultVal;
+//
+//     if (exponentVal == 0) {
+//         resultVal = 1;
+//     }
+//     else {
+//         resultVal = baseVal * RaiseToPower(baseVal, exponentVal - 1);
+//     }
+//
+//     return resultVal;
+// }
+//
+// int main() {
+//     int userBase;
+//     int userExponent;
+//
+//     cin >> userBase;
+//     cin >> userExponent;
+//     cout << userBase << "^" << userExponent << " = "
+//     << RaiseToPower(userBase, userExponent) << endl;
+//
+//     return 0;
+// }
+
