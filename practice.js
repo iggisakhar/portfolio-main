@@ -25064,3 +25064,23 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     string line;
+//
+//     while(true){
+//         getline(cin, line);
+//         if(line == "Done" || line == "done" || line == "d"){
+//             break;
+//         }
+//         for(int i = line.size() - 1; i >= 0; i--){
+//             cout << line[i];
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+
