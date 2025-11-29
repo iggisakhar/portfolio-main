@@ -25083,12 +25083,80 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> expirationMonthVector = { 6, 11, 8, 12, 1, 9, 7, 10, 2, 4, 3 };
+//     int vectorIndex;
+//     int expirationMonth;
+//
+//     try{
+//         cin >> vectorIndex;
+//         expirationMonth = expirationMonthVector.at(vectorIndex);
+//         cout << "Expiration month: " << expirationMonth << " at index " << vectorIndex << endl;
+//     }
+//
+//     catch (out_of_range& excpt) {
+//         cout << "Error: Invalid index for expirationMonthVector" << endl;
+//     }
+//
+//     return 0;
+// }
 
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> manufactureYearVector = {
+//         1988, 1933, 2020, 1950, 1998,
+//         1971, 1949, 2019, 1953, 1921, 1902,
+//     };
+//     int vIndex;
+//     int manufactureYear;
+//
+//     try {
+//         cin >> vIndex;
+//         manufactureYear = manufactureYearVector.at(vIndex);
+//         cout << "Manufacture year: " << manufactureYear << " at index " << vIndex << endl;
+//     }
+//
+//     catch(out_of_range exception){
+//         cout << "Error: manufactureYearVector index out of range" << endl;
+//     }
+//
+//     return 0;
+// }
 
-
-
-
-
-
-
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> postalZipCodeVector = {
+//         21695, 29165, 19562, 15629, 25916,
+//         96521, 59621, 12659, 29516, 16259, 26951,
+//     };
+//     int vecIndex;
+//     int postalZipCode;
+//     bool foundIndex = false;
+//
+//     while (!foundIndex) {
+//         try {
+//             cin >> vecIndex;
+//             postalZipCode = postalZipCodeVector.at(vecIndex);
+//             foundIndex = true;
+//         }
+//
+//         catch (out_of_range& excpt) {
+//             cout << "Error: Index out of range for postalZipCodeVector" << endl;
+//         }
+//     }
+//
+//     cout << "Postal ZIP code: " << postalZipCode << " at index " << vecIndex << endl;
+//
+//     return 0;
+// }
 
