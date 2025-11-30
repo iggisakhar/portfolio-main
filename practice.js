@@ -25160,3 +25160,32 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> patientAgeVector = { 55, 66, 24, 44, 25, 52, 64, 53, 43, 56 };
+//     int vectorIndex;
+//     int patientAge;
+//     bool needData = true;
+//
+//     while (needData) {
+//
+//         try{
+//             cin >> vectorIndex;
+//             patientAge = patientAgeVector.at(vectorIndex);
+//             needData = false;
+//         }
+//
+//         catch(out_of_range& excpt){
+//             cout << "Error: patientAgeVector index out of range" << endl;
+//         }
+//
+//     }
+//
+//     cout << "Patient's age: " << patientAge << " at index " << vectorIndex << endl;
+//
+//     return 0;
+// }
+
