@@ -25189,3 +25189,131 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int expirationMonth;
+//
+//     try {
+//         cin >> expirationMonth;
+//
+//         if ((expirationMonth < 1) || (expirationMonth > 12)) {
+//             throw invalid_argument("Error: The expiration month entered is invalid");
+//             ;
+//         }
+//
+//         cout << "Valid input: ";
+//         cout << "Expiration month is " << expirationMonth << endl;
+//     }
+//     catch (invalid_argument& excpt) {
+//         cout << excpt.what() << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numCents;
+//
+//     try {
+//         cin >> numCents;
+//
+//         if (numCents <= 0) {
+//             throw invalid_argument("The number of cents must be greater than 0");
+//         }
+//
+//         if (numCents % 5 != 0) {
+//             throw runtime_error("Value divisible by 5 required");
+//         }
+//
+//         cout << "Valid input: ";
+//         cout << numCents << " cents = " << (numCents / 5) << " nickels" << endl;
+//     }
+//
+//     catch (invalid_argument& excpt) {
+//         cout << "Error: The number of cents must be greater than 0" << endl;
+//     }
+// catch (runtime_error& excpt) {
+//         cout << "Error: Value divisible by 5 required" << endl;
+//     }
+//
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int numTires;
+//     int triesLeft = 2;
+//
+//     while (triesLeft > 0) {
+//         cout << "Tries left: " << triesLeft << endl;
+//
+//         try {
+//             cin >> numTires;
+//
+//             if (numTires < 0) {
+//                 throw invalid_argument("Invalid number of tires");
+//             }
+//
+//             if (numTires % 4 != 0) {
+//                 throw runtime_error("The number of tires must be divisible by 4");
+//             }
+//
+//             triesLeft = 0;
+//             cout << "Valid input: ";
+//             cout << numTires << " tires can make " << (numTires / 4) << " automobiles" << endl;
+//         }
+//
+//         catch (invalid_argument& excpt) {
+//             cout << "Bad input: " << excpt.what() << endl;
+//             triesLeft = 0;
+//         }
+//     catch (runtime_error& excpt) {
+//             cout << excpt.what() << endl;
+//             triesLeft = triesLeft - 1;
+//         }
+//
+//
+//     }
+// }
+
+// #include <iostream>
+// #include <fstream>
+// #include <ios>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string fileName;
+//     ifstream fileStream;
+//     double valueRead;
+//
+//     cin >> fileName;
+//
+//     fileStream.exceptions(ios::failbit | ios::badbit);
+//
+//     try {
+//         fileStream.open(fileName);
+//
+//         fileStream >> valueRead;
+//         cout << "Value read from " << fileName << ": " << valueRead << endl;
+//     }
+//     catch (ios_base::failure& excpt) {
+//         cout << "Error: " << excpt.what() << endl;
+//     }
+//
+//     // Closes the opened file
+//     if (fileStream.is_open()) {
+//         fileStream.close();
+//     }
+//
+//     return 0;
+// }
+
