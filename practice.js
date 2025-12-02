@@ -25317,3 +25317,348 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <fstream>
+// #include <ios>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string fileName;
+//     ifstream dataInStream;
+//     double dataValue;
+//
+//     cin >> fileName;
+//     dataInStream.exceptions(ifstream::failbit);
+//
+//     try {
+//         dataInStream.open(fileName);
+//
+//         dataInStream >> dataValue;
+//         cout << "Value read from " << fileName << ": " << dataValue << endl;
+//     }
+//     catch (ios_base::failure& excpt)
+//     {
+//         cout << "Error: " << excpt.what() << endl;
+//     }
+//
+//     // Closes the opened file
+//     if (dataInStream.is_open()) {
+//         dataInStream.close();
+//     }
+//
+//     return 0;
+// }
+
+// #include "testcode.h"
+// #include <iostream>
+// #include <fstream>
+// #include <ios>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string heightDataName;
+//     ifstream fileInStream;
+//     double inValue;
+//
+//     cin >> heightDataName;
+//     fileInStream.exceptions(ifstream::failbit);
+//
+//     try {
+//         fileInStream.open(heightDataName);
+//
+//         fileInStream >> inValue;
+//         cout << "Value read from " << heightDataName << ": " << inValue << endl;
+//     }
+//     catch (ios_base::failure& excpt) {
+//         cout << "File error: " << excpt.what() << endl;
+//     }
+//
+//     if (fileInStream.is_open()) {
+//
+//         fileInStream.close();
+//
+//
+//     }
+//
+//     RunTests(fileInStream);
+//
+//     return 0;
+// }
+
+// #include "testcode.h"  // For testing purposes
+// #include <iostream>
+// #include <fstream>
+// #include <ios>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string melonDataName;
+//     ofstream fileStream;
+//     int melonData;
+//
+//     cin >> melonDataName;
+//     cin >> melonData;
+//
+//     fileStream.exceptions(ofstream::failbit | ofstream::badbit);
+//
+//
+//     try {
+//         fileStream.open(melonDataName, ios::app); // Opens the file for writing
+//
+//         fileStream << melonData;
+//     }
+//     catch (ios_base::failure& excpt) {
+//         cout << "Failure: " << excpt.what() << endl;
+//     }
+//
+//     // Closes the opened file
+//     if (fileStream.is_open()) {
+//         fileStream.close();
+//     }
+//
+//     RunTests();  // For testing purposes
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// class InvalidExpirationMonth : public exception {
+//     public:
+//         InvalidExpirationMonth(string exceptionMessage) {
+//         message = "Error: " + exceptionMessage;
+//     }
+//     virtual const char* what() {
+//         return message.c_str();
+//     }
+//     private:
+//         string message;
+// };
+//
+// int checkExpirationMonth() {
+//     int expirationMonth;
+//
+//     cin >> expirationMonth;
+//
+//     if ((expirationMonth < 1) || (expirationMonth > 12)) {
+//
+//         throw InvalidExpirationMonth("Unacceptable input for expiration month");
+//
+//     }
+//     return expirationMonth;
+// }
+//
+// int main() {
+//     int expirationMonth;
+//
+//     try {
+//         expirationMonth = checkExpirationMonth();
+//
+//         cout << "Valid input: Expiration month is " ;
+//         cout << expirationMonth << endl;
+//     }
+//     catch (InvalidExpirationMonth excpt) {
+//         cout << excpt.what() << endl;
+//     }
+// catch (exception& excpt) {
+//         cout << "Unexpected error: " << excpt.what() << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// class InvalidDataException : public exception
+// {
+//     public:
+//         InvalidDataException(string exceptionMessage) {
+//     message = "Error: " + exceptionMessage;
+// }
+//     virtual const char* what() {
+//     return message.c_str();
+// }
+//     private:
+//         string message;
+// };
+//
+// double getPoleLength() {
+//     double poleLength;
+//
+//     cin >> poleLength;
+//
+//     if (poleLength < 0.0) {
+//         throw InvalidDataException("Unacceptable input for pole's length (in cm)");
+//     }
+//     return poleLength;
+// }
+//
+// int main() {
+//     double poleLength;
+//
+//     try {
+//         poleLength = getPoleLength();
+//
+//         cout << "Valid input: Pole's length (in cm) is " << fixed << setprecision(1);
+//         cout << poleLength << endl;
+//     }
+//     catch (InvalidDataException excpt) {
+//         cout << excpt.what() << endl;
+//     }
+// catch (exception& excpt) {
+//         cout << "Unexpected error: " << excpt.what() << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// class InvalidInput : public exception {
+//     public:
+//         InvalidInput(string exceptionMessage)
+//     {
+//         message = "Error: " + exceptionMessage;
+//     }
+//
+//     virtual const char* what() {
+//         return message.c_str();
+//     }
+//     private:
+//         string message;
+// };
+//
+// double findPoleWeight() {
+//     double poleWeight;
+//
+//     cin >> poleWeight;
+//
+//     if (poleWeight < 0.0) {
+//         throw InvalidInput("Unacceptable input for pole's weight (in g)");
+//     }
+//     return poleWeight;
+// }
+//
+// int main() {
+//     double poleWeight;
+//
+//     try {
+//         poleWeight = findPoleWeight();
+//
+//         cout << "Valid input: Pole's weight (in g) is " << fixed << setprecision(1);
+//         cout << poleWeight << endl;
+//     }
+//     catch (InvalidInput excpt) {
+//         cout << excpt.what() << endl;
+//     }
+// catch (exception& excpt) {
+//         cout << "Unexpected error: " << excpt.what() << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// class InvalidDancersCount : public exception {
+//     public:
+//         InvalidDancersCount(string exceptionMessage) {
+//         message = "Error: " + exceptionMessage;
+//     }
+//
+//     virtual const char* what() {
+//         return message.c_str();
+//
+//     }
+//
+//     private:
+//         string message;
+// };
+//
+// int getPairsOfDancers() {
+//     int numDancers;
+//
+//     cin >> numDancers;
+//
+//     if (numDancers % 2 != 0) {
+//         throw InvalidDancersCount("Dancers cannot be paired");
+//     }
+//     return numDancers;
+// }
+//
+// int main() {
+//     int numDancers;
+//
+//     try {
+//         numDancers = getPairsOfDancers();
+//
+//         cout << "Valid input: " << numDancers << " dancers form " << (numDancers / 2);
+//         cout << " pairs" << endl;
+//     }
+//     catch (InvalidDancersCount excpt) {
+//         cout << excpt.what() << endl;
+//     }
+// catch (exception& excpt) {
+//         cout << "Unexpected error: " << excpt.what() << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// class InvalidMoneyValue : public exception {
+//     public:
+//         InvalidMoneyValue(string exceptionMessage) {
+//         message = "Error: " + exceptionMessage;
+//     }
+//
+//     virtual const char* what() {
+//         return message.c_str();
+//     }
+//
+//
+//     private:
+//         string message;
+// };
+//
+// int getTotalCents() {
+//     int numCents;
+//
+//     cin >> numCents;
+//
+//     if (numCents % 25 != 0) {
+//         throw InvalidMoneyValue("Amount cannot be converted to quarters");
+//     }
+//     return numCents;
+// }
+//
+// int main() {
+//     int numCents;
+//
+//     try {
+//         numCents = getTotalCents();
+//
+//         cout << "Valid input: " << numCents << " cents = " << (numCents / 25);
+//         cout << " quarters" << endl;
+//     }
+//     catch (InvalidMoneyValue excpt) {
+//         cout << excpt.what() << endl;
+//     }
+// catch (exception& excpt) {
+//         cout << "Unexpected error: " << excpt.what() << endl;
+//     }
+//
+//     return 0;
+// }
+
