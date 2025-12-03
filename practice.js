@@ -25662,3 +25662,60 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// template <typename T>
+// class TimeHrMn {
+//     public:
+//         void SetTime(T userMin);
+//     void PrintTime() const;
+//     private:
+//         int hrsVal;
+//     int minsVal;
+// };
+//
+// template <typename T>
+// void TimeHrMn<T>::SetTime(T userMin) {
+//     minsVal = static_cast<int>(userMin);
+//     hrsVal = static_cast<int>(userMin / 60.0);
+// }
+//
+// template <typename T>
+// void TimeHrMn<T>::PrintTime() const {
+//     cout << "Hours: " << hrsVal << " ";
+// cout << "Minutes: " << minsVal << endl;
+// }
+//
+// int main() {
+//     TimeHrMn<int> usrTimeInt;
+//     TimeHrMn<double> usrTimeDbl;
+//
+//     usrTimeInt.SetTime(135);
+//     usrTimeInt.PrintTime();
+//
+//     usrTimeDbl.SetTime(135.0);
+//     usrTimeDbl.PrintTime();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<char> v(3);
+//
+//     for (auto& a : v) {
+//         cin >> a;
+//     }
+//
+//     for (auto a : v) {
+//         cout << a << endl;
+//     }
+//
+//     return 0;
+// }
+
+
