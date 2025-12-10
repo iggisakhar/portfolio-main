@@ -25718,4 +25718,33 @@
 //     return 0;
 // }
 
-
+// #include <iostream>
+// #include <set>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     set<string> groceries;
+//     string userInput;
+//
+//     groceries.insert("eggs");
+//     groceries.insert("soda");
+//     groceries.insert("butter");
+//     groceries.insert("cereal");
+//     groceries.insert("chips");
+//
+//     cin >> userInput;
+//     while (userInput != "done") {
+//         if (groceries.erase(userInput)) {
+//             cout << "e" << endl;
+//         }
+//         else {
+//             cout << "n" << endl;
+//         }
+//         cin >> userInput;
+//     }
+//
+//     cout << "Size: " << groceries.size() << endl;
+//
+//     return 0;
+// }
