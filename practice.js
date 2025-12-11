@@ -25748,3 +25748,35 @@
 //
 //     return 0;
 // }
+
+// #include "ListItem.h"
+// #include <string>
+// #include <list>
+// #include <iostream>
+//
+// using namespace std;
+//
+// int main () {
+//     // Список покупок из объектов ListItem
+//     list<ListItem> shoppingList;
+//     string item;
+//
+//     // Читаем первую строку
+//     getline(cin, item);
+//
+//     // Читаем строки, пока не встретится "-1"
+//     while (item != "-1") {
+//         ListItem newItem(item);          // создаём элемент с полным текстом строки
+//         shoppingList.push_back(newItem); // добавляем в конец списка
+//
+//         getline(cin, item);              // читаем следующую строку
+//     }
+//
+//     // Печатаем все элементы списка
+//     for (ListItem& node : shoppingList) {
+//         node.PrintNodeData();
+//     }
+//
+//     return 0;
+// }
+
