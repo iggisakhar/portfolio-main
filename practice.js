@@ -25780,3 +25780,49 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// void SelectionSortDescendTrace(int numbers[], int numElements) {
+//
+//     for (int i = 0; i < numElements - 1; ++i) {
+//         int maxIndex = i;
+//
+//         // Find index of largest element from i..end
+//         for (int j = i + 1; j < numElements; ++j) {
+//             if (numbers[j] > numbers[maxIndex]) {
+//                 maxIndex = j;
+//             }
+//         }
+//
+//         // Swap
+//         int temp = numbers[i];
+//         numbers[i] = numbers[maxIndex];
+//         numbers[maxIndex] = temp;
+//
+//         // Output after each outer iteration
+//         for (int k = 0; k < numElements; ++k) {
+//             cout << numbers[k] << " ";
+//         }
+//         cout << endl;
+//     }
+// }
+//
+// int main() {
+//     int numbers[10];
+//     int numElements = 0;
+//     int input;
+//
+//     // Read integers until -1
+//     cin >> input;
+//     while (input != -1 && numElements < 10) {
+//         numbers[numElements] = input;
+//         numElements++;
+//         cin >> input;
+//     }
+//
+//     // Call sort + trace
+//     SelectionSortDescendTrace(numbers, numElements);
+//
+//     return 0;
+// }
