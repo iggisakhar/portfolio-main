@@ -25826,3 +25826,139 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_ELEMENTS = 5;
+//     int runTimes[NUM_ELEMENTS];
+//     int i;
+//
+//     for (i = 0; i < NUM_ELEMENTS; ++i) {
+//         cin >> runTimes[i];
+//     }
+//
+//     cout << runTimes[0] << endl;
+//     cout << runTimes[1] << endl;
+//     cout << runTimes[2] << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int employee1;
+//     int employee2;
+//     int employee3;
+//     int employee4;
+//     int employee5;
+//     int employee6;
+//     int i;
+//
+//     int employeeNumbers[6];
+//
+//
+//     cin >> employee1;
+//     cin >> employee2;
+//     cin >> employee3;
+//     cin >> employee4;
+//     cin >> employee5;
+//     cin >> employee6;
+//
+//     employeeNumbers[0] = employee1;
+//     employeeNumbers[1] = employee2;
+//     employeeNumbers[2] = employee3;
+//     employeeNumbers[3] = employee4;
+//     employeeNumbers[4] = employee5;
+//     employeeNumbers[5] = employee6;
+//
+//     cout << "Employee numbers: ";
+//     for (i = 0; i < 6; ++i) {
+//         cout << employeeNumbers[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int patient1;
+//     int patient2;
+//     int patient3;
+//     int patient4;
+//     int patient5;
+//     int patientNumbers[5];
+//     int i;
+//
+//     cin >> patient1;
+//     cin >> patient2;
+//     cin >> patient3;
+//     cin >> patient4;
+//     cin >> patient5;
+//
+//     patientNumbers[0] = patient1;
+//     patientNumbers[1] = patient2;
+//     patientNumbers[2] = patient3;
+//     patientNumbers[3] = patient4;
+//     patientNumbers[4] = patient5;
+//
+//
+//     cout << "Patient numbers: ";
+//     for (i = 0; i < 5; ++i) {
+//         cout << patientNumbers[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_ELEMS = 4;
+//     int applicantNums[NUM_ELEMS];
+//     int sumVals;
+//     int i;
+//
+//     for (i = 0; i < NUM_ELEMS; ++i) {
+//         cin >> applicantNums[i];
+//     }
+//
+//     sumVals = applicantNums[0] + applicantNums[NUM_ELEMS - 1];
+//
+//
+//     cout << sumVals << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_ELEMENTS = 5;
+//     int userRating[NUM_ELEMENTS];
+//     int i;
+//
+//     for (i = 0; i < NUM_ELEMENTS; ++i) {
+//         cin >> userRating[i];
+//     }
+//
+//
+//     cout << "Array contents: ";
+//
+//     for (i = 0; i < NUM_ELEMENTS; ++i) {
+//         cout << userRating[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
