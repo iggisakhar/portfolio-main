@@ -25962,3 +25962,197 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_GUESSES = 3;
+//     int userGuesses[NUM_GUESSES];
+//     int i;
+//
+//     for (i = 0; i < NUM_GUESSES; ++i) {
+//         cin >> userGuesses[i];
+//     }
+//
+//
+//     for (i = 0; i < NUM_GUESSES; ++i) {
+//         cout << userGuesses[i] << " ";
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 4;
+//     int hourlyTemp[NUM_VALS];
+//     int i;
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> hourlyTemp[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cout << hourlyTemp[i];
+//         if (i < NUM_VALS - 1) {
+//             cout << ", ";
+//         }
+//     }
+//
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 4;
+//     int origList[NUM_VALS];
+//     int offsetAmount[NUM_VALS];
+//     int i;
+//
+//     cin >> origList[0];
+//     cin >> origList[1];
+//     cin >> origList[2];
+//     cin >> origList[3];
+//
+//     cin >> offsetAmount[0];
+//     cin >> offsetAmount[1];
+//     cin >> offsetAmount[2];
+//     cin >> offsetAmount[3];
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cout << (origList[i] - offsetAmount[i]) << ",";
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int SIZE_LIST = 4;
+//     int keysList[SIZE_LIST];
+//     int itemsList[SIZE_LIST];
+//     int i;
+//
+//     cin >> keysList[0];
+//     cin >> keysList[1];
+//     cin >> keysList[2];
+//     cin >> keysList[3];
+//
+//     cin >> itemsList[0];
+//     cin >> itemsList[1];
+//     cin >> itemsList[2];
+//     cin >> itemsList[3];
+//
+//     for (i = 0; i < SIZE_LIST; ++i) {
+//         if (keysList[i] < 50) {
+//             cout << itemsList[i] << ";";
+//         }
+//     }
+//
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 4;
+//     int originalArr[NUM_VALS];
+//     int offsetArr[NUM_VALS];
+//     int i;
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> originalArr[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> offsetArr[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         originalArr[i] = originalArr[i] + offsetArr[i];
+//     }
+//
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cout << originalArr[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 5;
+//     int originalArr[NUM_VALS];
+//     int resetArr[NUM_VALS];
+//     int i;
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> originalArr[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> resetArr[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         if (originalArr[i] % resetArr[i] != 0) {
+//             originalArr[i] = resetArr[i] * 3;
+//         }
+//     }
+//
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cout << originalArr[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 5;
+//     int unitCosts[NUM_VALS];
+//     int stockRecords[NUM_VALS];
+//     int i;
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> unitCosts[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> stockRecords[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         if (stockRecords[i] < 55) {
+//             cout << unitCosts[i] << " ";
+//         }
+//     }
+//     cout << endl;
+//
+//
+//     return 0;
+// }
+
