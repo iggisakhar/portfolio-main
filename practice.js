@@ -26156,3 +26156,23 @@
 //     return 0;
 // }
 
+// const [,, value, action] = process.argv;
+// const num = Number(value);
+//
+// if (Number.isNaN(num) || !action) {
+//     console.log("Usage: node counter.js <number> <inc|dec>");
+//     process.exit(1);
+// }
+//
+// function counter(n, action) {
+//     if (action === "inc") return n + 1;
+//     if (action === "dec") return n - 1;
+//     throw new Error("Action must be inc or dec");
+// }
+//
+// try {
+//     const result = counter(num, action);
+//     console.log(`Result: ${result}`);
+// } catch (e) {
+//     console.log("No", e.message);
+// }
