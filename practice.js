@@ -26176,3 +26176,28 @@
 // } catch (e) {
 //     console.log("No", e.message);
 // }
+
+// const [,, startArg, endArg] = process.argv;
+//
+// const start = Number(startArg);
+// const end = Number(endArg);
+//
+// if (Number.isNaN(start) || Number.isNaN(end)) {
+//     console.log("Usage: node range-sum.js <start> <end>");
+//     process.exit(1);
+// }
+//
+// function rangeSum(a, b) {
+//     const min = Math.min(a, b);
+//     const max = Math.max(a, b);
+//
+//     let sum = 0;
+//     for (let i = min; i <= max; i++) {
+//         sum += i;
+//     }
+//     return sum;
+// }
+//
+// const result = rangeSum(start, end);
+//
+// console.log(`➕ Sum from ${start} to ${end} = ${result}`);
