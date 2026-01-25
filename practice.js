@@ -26200,4 +26200,51 @@
 //
 // const result = rangeSum(start, end);
 //
-// console.log(`➕ Sum from ${start} to ${end} = ${result}`);
+// console.log(`Sum from ${start} to ${end} = ${result}`);
+
+// const logText = `
+// ERROR Failed to connect to server
+// INFO Retrying connection
+// INFO Connection successful
+// WARN Low memory
+// ERROR Timeout occurred
+// INFO Retrying connection
+// `;
+//
+// function analyzeLog(text) {
+//     const lines = text.trim().split("\n");
+//
+//     const words = text
+//         .toLowerCase()
+//         .replace(/[^a-z\s]/g, "")
+//         .split(/\s+/);
+//
+//     const freq = {};
+//     for (const w of words) {
+//         freq[w] = (freq[w] || 0) + 1;
+//     }
+//
+//     let topWord = "";
+//     let max = 0;
+//     for (const w in freq) {
+//         if (freq[w] > max) {
+//             max = freq[w];
+//             topWord = w;
+//         }
+//     }
+//
+//     return {
+//         lines: lines.length,
+//         words: words.length,
+//         mostUsedWord: topWord,
+//         count: max
+//     };
+// }
+//
+// const result = analyzeLog(logText);
+//
+// console.log("Log Analysis Result");
+// console.log("Lines:", result.lines);
+// console.log("Words:", result.words);
+// console.log("Most used word:", result.mostUsedWord);
+// console.log("Count:", result.count);
