@@ -26248,3 +26248,67 @@
 // console.log("Words:", result.words);
 // console.log("Most used word:", result.mostUsedWord);
 // console.log("Count:", result.count);
+
+// #include <iostream>
+// #include <string>
+//
+// int main(int argc, char* argv[]) {
+//     int value = std::stoi(argv[1]);
+//
+//     if (value > 0) {
+//         std::cout << value << " is positive" << std::endl;
+//     } else if (value < 0) {
+//         std::cout << value << " is negative" << std::endl;
+//     } else {
+//         std::cout << value << " is zero" << std::endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// #include <string>
+//
+// int main(int argc, char* argv[]) {
+//     int day = std::stoi(argv[1]);
+//
+//     if (day == 1) {
+//         std::cout << "Sunday" << std::endl;
+//     } else if (day == 2) {
+//         std::cout << "Monday" << std::endl;
+//     } else if (day == 3) {
+//         std::cout << "Tuesday" << std::endl;
+//     } else if (day == 4) {
+//         std::cout << "Wednesday" << std::endl;
+//     } else if (day == 5) {
+//         std::cout << "Thursday" << std::endl;
+//     } else if (day == 6) {
+//         std::cout << "Friday" << std::endl;
+//     } else if (day == 7) {
+//         std::cout << "Saturday" << std::endl;
+//     }
+//
+//     return 0;
+// }
+//
+// #include <iostream>
+// #include <string>
+//
+// int main(int argc, char* argv[]) {
+//     int a = std::stoi(argv[1]);
+//     int b = std::stoi(argv[2]);
+//     int c = std::stoi(argv[3]);
+//
+//     int largest = a;
+//
+//     if (b > largest) {
+//         largest = b;
+//     }
+//     if (c > largest) {
+//         largest = c;
+//     }
+//
+//     std::cout << "The largest number is " << largest << std::endl;
+//     return 0;
+// }
+
