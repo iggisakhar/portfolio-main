@@ -26312,3 +26312,46 @@
 //     return 0;
 // }
 
+// class LRUCache {
+//     constructor(limit = 3) {
+//         this.limit = limit;
+//         this.map = new Map();
+//     }
+//
+//     get(key) {
+//         if (!this.map.has(key)) return null;
+//
+//         const value = this.map.get(key);
+//         // move to most recently used
+//         this.map.delete(key);
+//         this.map.set(key, value);
+//         return value;
+//     }
+//
+//     set(key, value) {
+//         if (this.map.has(key)) {
+//             this.map.delete(key);
+//         } else if (this.map.size >= this.limit) {
+//             // remove least recently used (first item)
+//             const lruKey = this.map.keys().next().value;
+//             this.map.delete(lruKey);
+//         }
+//         this.map.set(key, value);
+//     }
+//
+//     snapshot() {
+//         return Array.from(this.map.entries());
+//     }
+// }
+//
+// const cache = new LRUCache(3);
+//
+// cache.set("a", 1);
+// cache.set("b", 2);
+// cache.set("c", 3);
+// console.log(cache.snapshot()); // a,b,c
+//
+// cache.get("a");               // a becomes recent
+// cache.set("d", 4);            // b removed
+//
+// console.log(cache.snapshot()); // c,a,d
