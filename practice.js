@@ -26355,3 +26355,51 @@
 // cache.set("d", 4);            // b removed
 //
 // console.log(cache.snapshot()); // c,a,d
+
+// class EventEmitter {
+//     constructor() {
+//         this.events = {};
+//     }
+//
+//     on(event, listener) {
+//         if (!this.events[event]) {
+//             this.events[event] = [];
+//         }
+//         this.events[event].push(listener);
+//     }
+//
+//     off(event, listener) {
+//         if (!this.events[event]) return;
+//         this.events[event] = this.events[event].filter(l => l !== listener);
+//     }
+//
+//     emit(event, ...args) {
+//         if (!this.events[event]) return;
+//         this.events[event].forEach(listener => listener(...args));
+//     }
+//
+//     once(event, listener) {
+//         const wrapper = (...args) => {
+//             listener(...args);
+//             this.off(event, wrapper);
+//         };
+//         this.on(event, wrapper);
+//     }
+// }
+//
+// //Demo
+// const emitter = new EventEmitter();
+//
+// function onLogin(user) {
+//     console.log(`Welcome, ${user}`);
+// }
+//
+// emitter.on("login", onLogin);
+// emitter.once("login", user => {
+//     console.log(`First login detected for ${user}`);
+// });
+//
+// emitter.emit("login", "Igor");
+// emitter.emit("login", "Igor");
+// emitter.off("login", onLogin);
+// emitter.emit("login", "Igor");
