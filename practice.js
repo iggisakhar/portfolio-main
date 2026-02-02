@@ -26403,3 +26403,93 @@
 // emitter.emit("login", "Igor");
 // emitter.off("login", onLogin);
 // emitter.emit("login", "Igor");
+
+// #include <iostream>
+// #include <string>
+//
+// double cylinderSurfaceArea(double radius, double height) {
+//     double pi = 3.14159;
+//     return (2.0 * pi * radius) * (radius + height);
+// }
+//
+// int main(int argc, char* argv[]) {
+//     double radius = std::stod(argv[1]);
+//     double height = std::stod(argv[2]);
+//
+//     double surface_area = cylinderSurfaceArea(radius, height);
+//
+//     // expected: 107.128 for 3.1 2.4
+//     std::cout << surface_area << std::endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+//
+// // Overloaded printTime functions
+// void printTime(int seconds) {
+//     std::cout << seconds << " seconds" << std::endl;
+// }
+// void printTime(int minutes, int seconds) {
+//     std::cout << minutes << " minutes, " << seconds << " seconds" << std::endl;
+// }
+// void printTime(int hours, int minutes, int seconds) {
+//     std::cout << hours << " hours, " << minutes << " minutes, " << seconds << " seconds" << std::endl;
+// }
+// void printTime(int days, int hours, int minutes, int seconds) {
+//     std::cout << days << " days, " << hours << " hours, " << minutes << " minutes, " << seconds << " seconds" << std::endl;
+// }
+// void printTime(int years, int days, int hours, int minutes, int seconds) {
+//     std::cout << years << " years, " << days << " days, " << hours << " hours, " << minutes << " minutes, " << seconds << " seconds" << std::endl;
+// }
+//
+// int main(int argc, char* argv[]) {
+//     int total_seconds = std::stoi(argv[1]);
+//
+//     // 1) raw seconds
+//     printTime(total_seconds);
+//
+//     // convert step-by-step using integer division and modulo
+//     int seconds = total_seconds % 60;
+//     int total_minutes = total_seconds / 60;
+//
+//     // 2) minutes + seconds
+//     printTime(total_minutes, seconds);
+//
+//     int minutes = total_minutes % 60;
+//     int total_hours = total_minutes / 60;
+//
+//     // 3) hours + minutes + seconds
+//     printTime(total_hours, minutes, seconds);
+//
+//     int hours = total_hours % 24;
+//     int total_days = total_hours / 24;
+//
+//     // 4) days + hours + minutes + seconds
+//     printTime(total_days, hours, minutes, seconds);
+//
+//     int days = total_days % 365;
+//     int years = total_days / 365;
+//
+//     // 5) years + days + hours + minutes + seconds
+//     printTime(years, days, hours, minutes, seconds);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+//
+// int fibonacci(int n) {
+//     if (n == 0) return 0;
+//     if (n == 1) return 1;
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+// }
+//
+// int main(int argc, char* argv[]) {
+//     int n = std::stoi(argv[1]);
+//     int fib_num = fibonacci(n);
+//
+//     std::cout << "The " << n << "th Fibonacci number is: " << fib_num << std::endl;
+//     return 0;
+// }
