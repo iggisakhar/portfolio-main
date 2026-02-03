@@ -26493,3 +26493,72 @@
 //     std::cout << "The " << n << "th Fibonacci number is: " << fib_num << std::endl;
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <string>
+//
+// int main(int argc, char* argv[]) {
+//     int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+//
+//     int k = std::stoi(argv[1]);        // 1..10
+//     int index = k - 1;                 // convert to 0..9
+//
+//     int* ptr = &arr[index];            // pointer to the chosen element
+//     std::cout << *ptr << std::endl;    // print value
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <cmath>
+// #include <string>
+//
+// int main(int argc, char* argv[]) {
+//     int n = std::stoi(argv[1]);   // 1..100
+//
+//     float table[100];
+//
+//     // Fill logs for 1..n (log(1)=0, log(2)=0.693147, ...)
+//     for (int i = 1; i <= n; i++) {
+//         table[i - 1] = static_cast<float>(std::log(i));
+//     }
+//
+//     // Print exactly as comma-separated (no spaces), like expected output
+//     for (int i = 0; i < n; i++) {
+//         std::cout << table[i];
+//         if (i != n - 1) std::cout << ",";
+//     }
+//     std::cout << std::endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+//
+// // Returns a pointer to the maximum element in the array
+// int* maxPtr(int arr[], int size) {
+//     int* max_element = &arr[0];
+//
+//     for (int i = 1; i < size; i++) {
+//         if (arr[i] > *max_element) {
+//             max_element = &arr[i];
+//         }
+//     }
+//     return max_element;
+// }
+//
+// int main(int argc, char* argv[]) {
+//     int size = argc - 1; // numbers after program name
+//
+//     // put inputs into an array
+//     int arr[200]; // enough for typical input sizes in this lab
+//     for (int i = 0; i < size; i++) {
+//         arr[i] = std::stoi(argv[i + 1]);
+//     }
+//
+//     int* ptr_to_max = maxPtr(arr, size);
+//     std::cout << *ptr_to_max << std::endl;
+//
+//     return 0;
+// }
