@@ -26562,3 +26562,52 @@
 //
 //     return 0;
 // }
+
+// function debounce(fn, wait = 300) {
+//     let timer = null;
+//     return function (...args) {
+//         clearTimeout(timer);
+//         timer = setTimeout(() => fn.apply(this, args), wait);
+//     };
+// }
+//
+// function throttle(fn, interval = 300) {
+//     let lastTime = 0;
+//     let timer = null;
+//
+//     return function (...args) {
+//         const now = Date.now();
+//         const remaining = interval - (now - lastTime);
+//
+//         if (remaining <= 0) {
+//             lastTime = now;
+//             fn.apply(this, args);
+//         } else {
+//             clearTimeout(timer);
+//             timer = setTimeout(() => {
+//                 lastTime = Date.now();
+//                 fn.apply(this, args);
+//             }, remaining);
+//         }
+//     };
+// }
+//
+// //Demo (simulating rapid calls)
+// function log(tag, value) {
+//     console.log(`${tag} ->`, value, "@", new Date().toLocaleTimeString());
+// }
+//
+// const debounced = debounce((v) => log("DEBOUNCE", v), 400);
+// const throttled = throttle((v) => log("THROTTLE", v), 400);
+//
+// let i = 0;
+// const spam = setInterval(() => {
+//     i++;
+//     debounced(i);
+//     throttled(i);
+//
+//     if (i >= 15) {
+//         clearInterval(spam);
+//         setTimeout(() => console.log("Done"), 700);
+//     }
+// }, 100);
