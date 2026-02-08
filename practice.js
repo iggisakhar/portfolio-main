@@ -26611,3 +26611,63 @@
 //         setTimeout(() => console.log("Done"), 700);
 //     }
 // }, 100);
+
+// type Fn<T extends any[]> = (...args: T) => void;
+//
+// export function debounce<T extends any[]>(
+//     fn: Fn<T>,
+//     wait: number = 300
+// ): Fn<T> {
+//     let timer: ReturnType<typeof setTimeout> | null = null;
+//
+// return function (...args: T) {
+//     if (timer) clearTimeout(timer);
+//     timer = setTimeout(() => {
+//         fn(...args);
+//     }, wait);
+// };
+// }
+//
+// export function throttle<T extends any[]>(
+//     fn: Fn<T>,
+//     interval: number = 300
+// ): Fn<T> {
+//     let lastTime = 0;
+//     let timer: ReturnType<typeof setTimeout> | null = null;
+//
+// return function (...args: T) {
+//     const now = Date.now();
+//     const remaining = interval - (now - lastTime);
+//
+//     if (remaining <= 0) {
+//         lastTime = now;
+//         fn(...args);
+//     } else {
+//         if (timer) clearTimeout(timer);
+//         timer = setTimeout(() => {
+//             lastTime = Date.now();
+//             fn(...args);
+//         }, remaining);
+//     }
+// };
+// }
+//
+// //Demo
+// function log(tag: string, value: number) {
+//     console.log(`${tag}:`, value, "at", new Date().toLocaleTimeString());
+// }
+//
+// const debounced = debounce((v: number) => log("DEBOUNCE", v), 400);
+// const throttled = throttle((v: number) => log("THROTTLE", v), 400);
+//
+// let i = 0;
+// const spam = setInterval(() => {
+//     i++;
+//     debounced(i);
+//     throttled(i);
+//
+//     if (i >= 10) {
+//         clearInterval(spam);
+//         setTimeout(() => console.log("Done"), 700);
+//     }
+// }, 100);
