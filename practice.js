@@ -26705,3 +26705,115 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <fstream>
+//
+// int main(int argc, char* argv[]) {
+//     // Check command line arguments
+//     if (argc < 3) {
+//         std::cout << "Usage: ./exercise_1 numRows numCols" << std::endl;
+//         return 1;
+//     }
+//
+//     int numRows = std::stoi(argv[1]);
+//     int numCols = std::stoi(argv[2]);
+//
+//     // Requirement: total elements must be 100
+//     if (numRows * numCols != 100) {
+//         std::cout << "Error: numRows * numCols must equal 100" << std::endl;
+//         return 1;
+//     }
+//
+//     // Open input file (ONLY file.txt)
+//     std::ifstream ifs("file.txt");
+//     if (!ifs.is_open()) {
+//         std::cout << "Error: cannot open file.txt" << std::endl;
+//         return 1;
+//     }
+//
+//     // Open output file
+//     std::ofstream ofs("2d-array.txt");
+//     if (!ofs.is_open()) {
+//         std::cout << "Error: cannot open output file" << std::endl;
+//         return 1;
+//     }
+//
+//     // Create dynamic 2D array
+//     int** array2d = new int*[numRows];
+//     for (int i = 0; i < numRows; i++) {
+//         array2d[i] = new int[numCols];
+//     }
+//
+//     // Read file into array (row-major order)
+//     int value;
+//     for (int r = 0; r < numRows; r++) {
+//         for (int c = 0; c < numCols; c++) {
+//             if (!(ifs >> value)) {
+//                 std::cout << "Error: file must contain exactly 100 integers" << std::endl;
+//
+//                 // cleanup
+//                 for (int i = 0; i < numRows; i++) {
+//                     delete[] array2d[i];
+//                 }
+//                 delete[] array2d;
+//                 return 1;
+//             }
+//             array2d[r][c] = value;
+//         }
+//     }
+//
+//     // Write 2D array to output file
+//     for (int r = 0; r < numRows; r++) {
+//         for (int c = 0; c < numCols; c++) {
+//             ofs << array2d[r][c];
+//             if (c < numCols - 1) ofs << " ";
+//         }
+//         ofs << std::endl;
+//     }
+//
+//     // Cleanup
+//     ifs.close();
+//     ofs.close();
+//
+//     for (int i = 0; i < numRows; i++) {
+//         delete[] array2d[i];
+//     }
+//     delete[] array2d;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+//
+// int main(int argc, char* argv[]) {
+//     if (argc < 2) {
+//         std::cout << "Usage: ./exercise_2 size" << std::endl;
+//         return 1;
+//     }
+//
+//     int size = std::stoi(argv[1]);
+//
+//     int** arr = new int*[size];
+//
+//     for (int i = 0; i < size; i++) {
+//         arr[i] = new int[i + 1];
+//         for (int j = 0; j <= i; j++) {
+//             arr[i][j] = j + 1;
+//         }
+//     }
+//
+//     for (int i = 0; i < size; i++) {
+//         for (int j = 0; j <= i; j++) {
+//             std::cout << arr[i][j] << " ";
+//         }
+//         std::cout << std::endl;
+//     }
+//
+//     for (int i = 0; i < size; i++) {
+//         delete[] arr[i];
+//     }
+//     delete[] arr;
+//
+//     return 0;
+// }
