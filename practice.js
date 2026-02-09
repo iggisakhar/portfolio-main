@@ -26671,3 +26671,37 @@
 //         setTimeout(() => console.log("Done"), 700);
 //     }
 // }, 100);
+
+// #include <iostream>
+// #include <fstream>
+//
+// int main() {
+//     std::ifstream ifs("file.txt");
+//     std::ofstream ofs("reversed.txt");
+//
+//     if (!ifs.is_open() || !ofs.is_open()) {
+//         std::cout << "Error opening file" << std::endl;
+//         return 1;
+//     }
+//
+//     int arr[100];
+//     int count = 0;
+//
+//     // Read integers from file
+//     while (ifs >> arr[count] && count < 100) {
+//         count++;
+//     }
+//
+//     // Write integers in reverse order
+//     for (int i = count - 1; i >= 0; i--) {
+//         ofs << arr[i];
+//         if (i != 0) {
+//             ofs << std::endl;
+//         }
+//     }
+//
+//     ifs.close();
+//     ofs.close();
+//
+//     return 0;
+// }
