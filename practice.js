@@ -26862,52 +26862,72 @@
 //     console.log("All done:", res);
 // });
 
-function deepClone(value, weakMap = new WeakMap()) {
-    if (value === null || typeof value !== "object") {
-        return value;
-    }
+// function deepClone(value, weakMap = new WeakMap()) {
+//     if (value === null || typeof value !== "object") {
+//         return value;
+//     }
+//
+//     if (weakMap.has(value)) {
+//         return weakMap.get(value);
+//     }
+//
+//     if (value instanceof Date) {
+//         return new Date(value);
+//     }
+//
+//     if (Array.isArray(value)) {
+//         const arr = [];
+//         weakMap.set(value, arr);
+//         for (const item of value) {
+//             arr.push(deepClone(item, weakMap));
+//         }
+//         return arr;
+//     }
+//
+//     const clonedObj = {};
+//     weakMap.set(value, clonedObj);
+//
+//     for (const key of Object.keys(value)) {
+//         clonedObj[key] = deepClone(value[key], weakMap);
+//     }
+//
+//     return clonedObj;
+// }
+// //Demo
+// const original = {
+//     name: "Today",
+//     meta: {
+//         age: 25,
+//         skills: ["JS", "React"],
+//         created: new Date(),
+//     }
+// };
+//
+// original.self = original;
+//
+// const copy = deepClone(original);
+//
+// console.log("Original:", original);
+// console.log("Copy:", copy);
+// console.log("Different reference:", original !== copy);
+// console.log("Nested different:", original.meta !== copy.meta);
 
-    if (weakMap.has(value)) {
-        return weakMap.get(value);
-    }
-
-    if (value instanceof Date) {
-        return new Date(value);
-    }
-
-    if (Array.isArray(value)) {
-        const arr = [];
-        weakMap.set(value, arr);
-        for (const item of value) {
-            arr.push(deepClone(item, weakMap));
-        }
-        return arr;
-    }
-
-    const clonedObj = {};
-    weakMap.set(value, clonedObj);
-
-    for (const key of Object.keys(value)) {
-        clonedObj[key] = deepClone(value[key], weakMap);
-    }
-
-    return clonedObj;
-}
-//Demo
-const original = {
-    name: "Today",
-    meta: {
-        age: 25,
-        skills: ["JS", "React"],
-        created: new Date(),
-    }
-};
-
-original.self = original;
-
-const copy = deepClone(original);
-
-console.log("Original:", original);
-console.log("Copy:", copy);
-console.log("Different reference:", original !== copy);
-console.log("Nested different:", original.meta !== copy.meta);
+// #include <iostream>
+// using namespace std;
+//
+// double GetMinutesAsHours(double origMinutes) {
+//
+//     return origMinutes / 60.0;
+//
+// }
+//
+// int main() {
+//     double minutes;
+//
+//     cin >> minutes;
+//
+//     // Will be run with 210.0, 3600.0, and 0.0.
+//     cout << GetMinutesAsHours(minutes) << endl;
+//
+//     return 0;
+// }
