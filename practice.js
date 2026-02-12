@@ -26817,3 +26817,47 @@
 //
 //     return 0;
 // }
+
+// async function promisePool(tasks, limit) {
+//     const results = [];
+//     const executing = new Set();
+//
+//     for (const task of tasks) {
+//         const p = Promise.resolve().then(() => task());
+//         results.push(p);
+//         executing.add(p);
+//
+//         const clean = () => executing.delete(p);
+//         p.then(clean).catch(clean);
+//
+//         if (executing.size >= limit) {
+//             await Promise.race(executing);
+//         }
+//     }
+//
+//     return Promise.all(results);
+// }
+//
+// //Demo
+//
+// function createTask(id, delay) {
+//     return () =>
+//         new Promise((resolve) => {
+//             setTimeout(() => {
+//                 console.log(`Task ${id} done`);
+//                 resolve(id);
+//             }, delay);
+//         });
+// }
+//
+// const tasks = [
+//     createTask(1, 1000),
+//     createTask(2, 500),
+//     createTask(3, 800),
+//     createTask(4, 300),
+//     createTask(5, 700),
+// ];
+//
+// promisePool(tasks, 2).then((res) => {
+//     console.log("All done:", res);
+// });
