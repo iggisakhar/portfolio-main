@@ -26953,3 +26953,62 @@
 
 //    return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+
+// double CelsiusToKelvin(double valueCelsius) {
+//    double valueKelvin;
+
+//    valueKelvin = valueCelsius + 273.15;
+
+//    return valueKelvin;
+// }
+
+// double KelvinToCelsius(double valueKelvin){
+//    double valueCelsius;
+   
+//    valueCelsius = valueKelvin - 273.15;
+//    return valueCelsius;
+//    }
+// int main() {
+//    double valueC;
+//    double valueK;
+
+//    valueC = 10.0;
+//    cout << valueC << " C is " << CelsiusToKelvin(valueC) << " K" << endl;
+
+//    cin >> valueK;
+//    cout << valueK << "  is " << KelvinToCelsius(valueK) << " C" << endl;
+
+//    return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// const double GAS_CONST = 8.3144621;
+
+// double ComputeGasVolume(double pressure, double temperature, double moles){
+   
+//    double volume;
+//    volume = (moles * GAS_CONST * temperature) / pressure;
+//    return volume;
+//    }
+
+// int main() {
+//    double gasPressure;
+//    double gasMoles;
+//    double gasTemperature;
+//    double gasVolume;
+
+//    cin >> gasPressure;
+//    cin >> gasMoles;
+//    cin >> gasTemperature;
+
+//    gasVolume = ComputeGasVolume(gasPressure, gasTemperature, gasMoles);
+//    cout << "Gas volume: " << gasVolume << " m^3" << endl;
+
+//    return 0;
+// }
+
