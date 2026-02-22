@@ -26931,3 +26931,459 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// int CalcVal(int num){
+//     return num - 5;
+// }
+//
+// int main() {
+//     int numInput;
+//     int result;
+//
+//     cin >> numInput;
+//
+//     result = CalcVal(numInput);
+//
+//     cout << result << endl;
+//
+//     return 0;
+// }
+
+// #include <iomanip>
+// #include <iostream>
+// using namespace std;
+//
+// double ComputeVal(double num1, double num2){
+//     return (num1  * num2) - 8.4;
+// }
+//
+// int main() {
+//     double inputVal1;
+//     double inputVal2;
+//     double result;
+//
+//     cin >> inputVal1;
+//     cin >> inputVal2;
+//
+//     result = ComputeVal(inputVal1, inputVal2);
+//
+//     cout << fixed << setprecision(2) << result << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintAirportInfo(string airportCode, string airportName){
+//     cout << airportCode << " is " << airportName << "'s airport code." << endl;
+// }
+// int main() {
+//     string airportCode;
+//     string airportName;
+//
+//     cin >> airportCode;
+//     cin >> airportName;
+//
+//     PrintAirportInfo(airportCode, airportName);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintDrinksList(string drink1, string drink2, string drink3){
+//     cout << "Most popular drinks:" << endl;
+//     cout << "1: " << drink1 << endl;
+//     cout << "2: " << drink2 << endl;
+//     cout << "3: " << drink3 << endl;
+// }
+//
+// int main() {
+//     string drink1;
+//     string drink2;
+//     string drink3;
+//
+//     cin >> drink1;
+//     cin >> drink2;
+//     cin >> drink3;
+//
+//     PrintDrinksList(drink1, drink2, drink3);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// void PrintResult(double x, double y){
+//     double avg = (x + y) / 2;
+//     cout << "Average: " << fixed << setprecision(1) << avg << endl;
+// }
+//
+// int main() {
+//     double numA;
+//     double numB;
+//
+//     cin >> numA;
+//     cin >> numB;
+//
+//     PrintResult(numA, numB);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintLocation(string city, string university) {
+//     cout << city << " is the location of " << university << " University." << endl;
+// }
+//
+// int main() {
+//
+//     string city1, city2, univercity1, univercity2;
+//     cin >> city1;
+//     cin >> city2;
+//     cin >> univercity1;
+//     cin >> univercity2;
+//
+//     PrintLocation(city1, univercity1);
+//     PrintLocation(city2, univercity2);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// double MphAndMinutesToMiles(double milesPerHour, double minutesTraveled) {
+//     double hoursTraveled;
+//     double milesTraveled;
+//
+//     hoursTraveled = minutesTraveled / 60.0;
+//     milesTraveled = hoursTraveled * milesPerHour;
+//
+//     return milesTraveled;
+// }
+//
+//
+// int main() {
+//     double milesPerHour;
+//     double minutesTraveled;
+//
+//     cin >> milesPerHour;
+//     cin >> minutesTraveled;
+//
+//     cout << "Miles: " << MphAndMinutesToMiles(milesPerHour, minutesTraveled) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// double CupsToLiters(int userCups) {
+//     const double CUPS_TO_LITERS = 0.236588;
+//
+//     return userCups * CUPS_TO_LITERS;
+//
+// }
+//
+// int main() {
+//     int numCups;
+//
+//     cin >> numCups;
+//
+//     cout << CupsToLiters(numCups);
+//     cout << " liters" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// double ConvertToMeters(int numYards, int numFeet){
+//     int totalFeet = numYards * 3 + numFeet;
+//     return totalFeet * 0.3048;
+// }
+//
+// int main() {
+//     int numYards;
+//     int numFeet;
+//
+//     cin >> numYards;
+//     cin >> numFeet;
+//
+//     cout << "Meters: ";
+//     cout << ConvertToMeters(numYards, numFeet) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// #include <cmath>
+// using namespace std;
+// double CalcBaseArea(double radius) {
+//     return M_PI * radius * radius;
+// }
+//
+// double CalcVolume(double radius, double height) {
+//     double baseArea = CalcBaseArea(radius);
+//     return baseArea * height * (1.0 / 3.0);
+// }
+//
+// int main() {
+//     double radius;
+//     double height;
+//
+//     cin >> radius;
+//     cin >> height;
+//
+//     cout << fixed << setprecision(1);
+//
+//     cout << "Radius: " << radius << endl;
+//     cout << "Height: " << height << endl;
+//
+//     cout << "Base area: ";
+//     cout << CalcBaseArea(radius) << endl;
+//
+//     cout << "Volume: ";
+//     cout << CalcVolume(radius, height) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int FindPriority(int tasks) {
+//
+//     if (tasks < 35) {
+//         return 1;
+//     }
+//     else if (tasks >= 35 && tasks <= 85) {
+//         return 2;
+//     }
+//     else {
+//         return 3;
+//     }
+//
+// }
+//
+//
+// int main() {
+//     int tasksNumber;
+//
+//     cin >> tasksNumber;
+//
+//     cout << FindPriority(tasksNumber) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int FindNumPeople(int priority, int tasks) {
+//
+//     if (priority == 1) {
+//         if (tasks < 65) {
+//             return 70;
+//         }
+//         else if (tasks <= 119) {
+//             return 80;
+//         }
+//         else {
+//             return 85;
+//         }
+//     }
+//     else if (priority == 2) {
+//         if (tasks < 65) {
+//             return 40;
+//         }
+//         else if (tasks <= 119) {
+//             return 50;
+//         }
+//         else {
+//             return 55;
+//         }
+//     }
+//     else if (priority == 3) {
+//         if (tasks < 65) {
+//             return 25;
+//         }
+//         else if (tasks <= 119) {
+//             return 30;
+//         }
+//         else {
+//             return 35;
+//         }
+//     }
+//     else {
+//         return 1;
+//     }
+//
+// }
+//
+//
+// int main() {
+//     int priority;
+//     int tasks;
+//
+//     cin >> priority;
+//     cin >> tasks;
+//
+//     cout << FindNumPeople(priority, tasks) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void OutputResult(int numA, int numB) {
+//     int sum = 0;
+//     int i;
+//
+//     for (i = numA; i <= numB; ++i) {
+//         sum += i;
+//     }
+//
+//     cout << sum << endl;
+// }
+//
+//
+// int main() {
+//     int numA;
+//     int numB;
+//
+//     cin >> numA;
+//     cin >> numB;
+//
+//     OutputResult(numA, numB);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void OutputVal(int in1, int in2) {
+//     int sum = 0;
+//     int i;
+//
+//     for (i = in1; i <= in2; ++i) {
+//         if (i % 2 == 0) {
+//             sum += i;
+//         }
+//     }
+//
+//     cout << sum << endl;
+// }
+//
+//
+// int main() {
+//     int in1;
+//     int in2;
+//
+//     cin >> in1;
+//     cin >> in2;
+//
+//     OutputVal(in1, in2);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int FindMaximum() {
+//     int number;
+//     int maxVal = 0;
+//
+//     cin >> number;
+//     maxVal = number;
+//
+//     while (number >= 0) {
+//         if (number > maxVal) {
+//             maxVal = number;
+//         }
+//         cin >> number;
+//     }
+//
+//     return maxVal;
+// }
+//
+//
+// int main() {
+//     int maxVal;
+//
+//     maxVal = FindMaximum();
+//
+//     cout << maxVal << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// bool CheckValues() {
+//     int number;
+//     bool allPositive = true;
+//
+//     cin >> number;
+//
+//     while (number != -99) {
+//         if (number <= 0) {
+//             allPositive = false;
+//         }
+//         cin >> number;
+//     }
+//
+//     return allPositive;
+// }
+//
+//
+// int main() {
+//     bool allPositive;
+//
+//     allPositive = CheckValues();
+//
+//     if (allPositive) {
+//         cout << "All true" << endl;
+//     }
+//     else {
+//         cout << "Not all true" << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// double KiloToPounds(double kilos) {
+//     return (kilos * 2.204);
+// }
+//
+// int main() {
+//     double kilos;
+//     double pounds;
+//
+//     cin >> kilos;
+//
+//     pounds = KiloToPounds(kilos);
+//     cout << pounds << " lbs";
+//
+//     return 0;
+// }
+
