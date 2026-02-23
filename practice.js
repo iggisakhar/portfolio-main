@@ -26932,3 +26932,39 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// int MaxNumber(int num1, int num2, int num3, int num4) {
+//     int maxVal = num1;
+//
+//     if (num2 > maxVal) maxVal = num2;
+//     if (num3 > maxVal) maxVal = num3;
+//     if (num4 > maxVal) maxVal = num4;
+//
+//     return maxVal;
+// }
+//
+// int MinNumber(int num1, int num2, int num3, int num4) {
+//     int minVal = num1;
+//
+//     if (num2 < minVal) minVal = num2;
+//     if (num3 < minVal) minVal = num3;
+//     if (num4 < minVal) minVal = num4;
+//
+//     return minVal;
+// }
+//
+// int main() {
+//     int a, b, c, d;
+//
+//     cin >> a >> b >> c >> d;
+//
+//     cout << "Maximum is "
+//     << MaxNumber(a, b, c, d) << endl;
+//
+//     cout << "Minimum is "
+//     << MinNumber(a, b, c, d) << endl;
+//
+//     return 0;
+// }
