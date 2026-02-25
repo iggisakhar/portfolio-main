@@ -26968,3 +26968,73 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char gradeValue;
+//
+//     char& gradeRef = gradeValue;
+//
+//     cin >> gradeValue;
+//
+//     cout << "Referenced grade is " << gradeRef << "." << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void ConvertLength(int totalMeters, int& kilometers, int& meters){
+//     kilometers = totalMeters / 1000;
+//     meters = totalMeters % 1000;
+// }
+// int main() {
+//     int usrKilometers;
+//     int usrMeters;
+//     int totalMeters;
+//
+//     cin >> totalMeters;
+//
+//     ConvertLength(totalMeters, usrKilometers, usrMeters);
+//
+//     cout << usrKilometers << " kilometers and " << usrMeters << " meters" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// bool ConvertVolume(int totalQuarts, int& gallons, int& quarts){
+//     if(totalQuarts < 0){
+//         return false;
+//     }
+//     gallons = totalQuarts / 4;
+//     quarts = totalQuarts % 4;
+//     return true;
+// }
+//
+// int main() {
+//     int usrGallons;
+//     int usrQuarts;
+//     int totalQuarts;
+//     bool valid;
+//
+//     usrGallons = 0;
+//     usrQuarts = 0;
+//     cin >> totalQuarts;
+//
+//     valid = ConvertVolume(totalQuarts, usrGallons, usrQuarts);
+//
+//     if (valid) {
+//         cout << usrGallons << " gallons and " << usrQuarts << " quarts" << endl;
+//     }
+//     else {
+//         cout << totalQuarts << " is invalid. gallons=" << usrGallons << ", quarts=" << usrQuarts << endl;
+//     }
+//
+//     return 0;
+// }
