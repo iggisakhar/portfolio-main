@@ -27038,3 +27038,18 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintNums(int a = 5, int b = 4, int c = 8) {
+//     cout << a << ", " << b << ", " << c << endl;
+// }
+//
+// int main() {
+//     PrintNums(7);
+//     PrintNums();
+//     PrintNums(2, 1);
+//
+//     return 0;
+// }
