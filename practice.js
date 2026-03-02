@@ -27053,3 +27053,71 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// void PrintSalutation(string personName) {
+//     cout << "Hello, " << personName << endl;
+// }
+//
+// void PrintSalutation(string personName, string customSalutation) {
+//     cout << customSalutation << ", " << personName << endl;
+// }
+//
+// int main() {
+//     PrintSalutation("Holly", "Welcome");
+//     PrintSalutation("Sanjiv");
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintFamilySize(string familySize) {
+//     cout << "The family has " << familySize << " people." << endl;
+// }
+//
+// void PrintFamilySize(int familySize) {
+//     cout << "Attendance: " << familySize << endl;
+// }
+//
+// int main() {
+//     string sizeInWord;
+//     int sizeOfFamily;
+//
+//     cin >> sizeInWord;
+//     cin >> sizeOfFamily;
+//
+//     PrintFamilySize(sizeInWord);
+//     PrintFamilySize(sizeOfFamily);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PrintLength(int meters) {
+//     cout << "Total " << meters << " meters" << endl;
+// }
+//
+// void PrintLength(int meters, int centimeters) {
+//     cout << "Total " << meters << " meters and "
+//     << centimeters << " centimeters" << endl;
+// }
+//
+// int main() {
+//     int metersUsed;
+//     int centimetersUsed;
+//
+//     cin >> metersUsed;
+//     cin >> centimetersUsed;
+//
+//     PrintLength(metersUsed);
+//     PrintLength(metersUsed, centimetersUsed);
+//
+//     return 0;
+// }
