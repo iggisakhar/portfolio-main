@@ -27121,3 +27121,99 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// int ConvertLength(int kilometers) {
+//     return kilometers * 1000;
+// }
+//
+// int ConvertLength(int kilometers, int meters) {
+//     return (kilometers * 1000) + meters;
+// }
+//
+// int main() {
+//     int kilometersUsed;
+//     int metersUsed;
+//     int totalMeters1;
+//     int totalMeters2;
+//
+//     cin >> kilometersUsed;
+//     cin >> metersUsed;
+//
+//     totalMeters1 = ConvertLength(kilometersUsed);
+//     cout << kilometersUsed << " kilometers yields " << totalMeters1 << " meters." << endl;
+//
+//     totalMeters2 = ConvertLength(kilometersUsed, metersUsed);
+//     cout << kilometersUsed << " kilometers and " << metersUsed << " meters yields ";
+//     cout << totalMeters2 << " meters." << endl;
+//
+//     return 0;
+// }
+
+
+// #include <iostream>
+// #include <iomanip>
+// #include <cmath>
+//
+// using namespace std;
+//
+// int main() {
+//     double roomArea;
+//
+//     cin >> roomArea;
+//
+//     cout << "Room's width: " << fixed << setprecision(2) << sqrt(roomArea) << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include "mytime.h"
+// #include "mycharge.h"
+// using namespace std;
+//
+// int main() {
+//     int numWeeks;
+//     int numDays;
+//     int totalPrice;
+//
+//     cin >> numWeeks;
+//
+//     numDays = numWeeks * DAYS_PER_WEEK;
+//     totalPrice = numDays * PRICE_PER_DAY;
+//
+//     cout << numWeeks << " weeks = " << numDays << " days" << endl;
+//     cout << numDays << " days cost " << totalPrice << " cents" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void SwapValues(int& userVal1, int& userVal2, int& userVal3, int& userVal4){
+//     int temp;
+//     temp = userVal1;
+//     userVal1 = userVal2;
+//     userVal2 = temp;
+//
+//     temp = userVal3;
+//     userVal3 = userVal4;
+//     userVal4 = temp;
+// }
+//
+// int main() {
+//     int a, b, c, d;
+//
+//     cin >> a;
+//     cin >> b;
+//     cin >> c;
+//     cin >> d;
+//
+//     SwapValues(a, b, c, d);
+//     cout << a << " " << b << " " << c << " " << d;
+//     return 0;
+// }
+
