@@ -27237,3 +27237,57 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string secretID;
+//     string firstName;
+//     string lastName;
+//
+//     cin >> firstName;
+//     cin >> lastName;
+//
+//     secretID = firstName + " " + lastName;
+//
+//     cout << secretID << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string inputStr;
+//
+//     getline(cin, inputStr);
+//
+//     inputStr[0] = 's';
+//
+//     cout << inputStr << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string userStr;
+//     char userChar;
+//
+//     getline(cin, userStr);
+//     cin >> userChar;
+//
+//     if (userStr[userStr.length() - 1] == userChar) {
+//         cout << "Matching" << endl;
+//     }
+//     else {
+//         cout << "Not matching" << endl;
+//     }
+//
+//     return 0;
+// }
