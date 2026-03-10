@@ -27291,3 +27291,180 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string userString1;
+//     string userString2;
+//     int minLength;
+//
+//     getline(cin, userString1);
+//     getline(cin, userString2);
+//
+//     if (userString1.length() < userString2.length()) {
+//         minLength = userString1.length();
+//     }
+//     else {
+//         minLength = userString2.length();
+//     }
+//
+//     cout << minLength << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string inputString;
+//     string extension;
+//     string resultStr;
+//
+//     getline(cin, inputString);
+//     getline(cin, extension);
+//
+//     resultStr = inputString + extension;
+//
+//     cout << resultStr << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <cctype>
+// using namespace std;
+//
+// int main() {
+//     string keyStr;
+//     unsigned int i;
+//
+//     getline(cin, keyStr);
+//
+//     for (i = 0; i < keyStr.length(); ++i) {
+//         if (!isalpha(keyStr[i]) && !isdigit(keyStr[i])) {
+//             keyStr[i] = 'x';
+//         }
+//     }
+//
+//     cout << "Updated password: " << keyStr << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <cctype>
+// using namespace std;
+//
+// int main() {
+//     string codeWord;
+//     int i;
+//     int count;
+//
+//     getline(cin, codeWord);
+//     count = 0;
+//
+//     for (i = 0; i < codeWord.length(); ++i) {
+//         if (isdigit(codeWord[i])) {
+//             count++;
+//         }
+//     }
+//
+//     if (count <= 6 && codeWord.length() > 4) {
+//         cout << "Valid" << endl;
+//     }
+//     else {
+//         cout << "Invalid" << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string passwdStr;
+//     int indx;
+//
+//     cin >> passwdStr;
+//
+//     indx = 0;
+//
+//     while (passwdStr.find("123") != string::npos) {
+//         indx = passwdStr.find("123");
+//         passwdStr.replace(indx, 3, "562");
+//     }
+//
+//     cout << "Adjusted password: " << passwdStr << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <cctype>
+// using namespace std;
+//
+// int main() {
+//     string inputString;
+//
+//     getline(cin, inputString);
+//
+//     if (isalpha(inputString[1])) {
+//         cout << "The second character is alphabetic: " << inputString[1] << endl;
+//     }
+//     else {
+//         cout << "The second character is not alphabetic." << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <cctype>
+// using namespace std;
+//
+// int main() {
+//     string inString;
+//
+//     getline(cin, inString);
+//
+//     if (isalpha(inString[0]) && isalpha(inString[1]) && isalpha(inString[2])) {
+//         cout << "Valid string" << endl;
+//     }
+//     else {
+//         cout << "Invalid string" << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <cctype>
+// using namespace std;
+//
+// int main() {
+//     string userString;
+//
+//     getline(cin, userString);
+//
+//     if (isupper(userString[0])) {
+//         cout << "String is valid" << endl;
+//     }
+//     else {
+//         cout << "String is not valid" << endl;
+//     }
+//
+//     return 0;
+// }
+
