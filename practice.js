@@ -27468,3 +27468,54 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     string inputString;
+//     string firstWord;
+//     string secondWord;
+//     int commaPos;
+//
+//     while (true) {
+//         cout << "Enter input string:" << endl;
+//         getline(cin, inputString);
+//
+//         if (inputString == "q") {
+//             break;
+//         }
+//
+//         commaPos = inputString.find(',');
+//
+//         if (commaPos == string::npos) {
+//             cout << "Error: No comma in string." << endl;
+//             cout << endl;
+//         }
+//         else {
+//             firstWord = inputString.substr(0, commaPos);
+//             secondWord = inputString.substr(commaPos + 1);
+//
+//             while (firstWord.size() > 0 && firstWord.at(0) == ' ') {
+//                 firstWord.erase(0, 1);
+//             }
+//             while (firstWord.size() > 0 && firstWord.at(firstWord.size() - 1) == ' ') {
+//                 firstWord.erase(firstWord.size() - 1, 1);
+//             }
+//
+//             while (secondWord.size() > 0 && secondWord.at(0) == ' ') {
+//                 secondWord.erase(0, 1);
+//             }
+//             while (secondWord.size() > 0 && secondWord.at(secondWord.size() - 1) == ' ') {
+//                 secondWord.erase(secondWord.size() - 1, 1);
+//             }
+//
+//             cout << "First word: " << firstWord << endl;
+//             cout << "Second word: " << secondWord << endl;
+//             cout << endl;
+//         }
+//     }
+//
+//     return 0;
+// }
+
