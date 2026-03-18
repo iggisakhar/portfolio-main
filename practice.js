@@ -27537,3 +27537,425 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 6;
+//     double startingNum;
+//     int i;
+//
+//     double userNumbers[NUM_VALS];
+//
+//     cin >> startingNum;
+//
+//     userNumbers[0] = startingNum;
+//     userNumbers[1] = startingNum + 1;
+//     userNumbers[2] = startingNum + 2;
+//     userNumbers[3] = startingNum + 3;
+//     userNumbers[4] = startingNum + 4;
+//     userNumbers[5] = startingNum + 5;
+//
+//     cout << "Array values: ";
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cout << fixed << setprecision(1) << userNumbers[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_ELEMS = 4;
+//     double userCounts[NUM_ELEMS];
+//     int i;
+//
+//     for(i = 0; i < NUM_ELEMS; ++i){
+//         cin >> userCounts[i];
+//     }
+//
+//     cout << "Array contents: ";
+//     for (i = 0; i < NUM_ELEMS; ++i) {
+//         cout << fixed << setprecision(1) << userCounts[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_ELEMS = 6;
+//     int userVals[NUM_ELEMS];
+//     int sumVals;
+//     int i;
+//
+//     for (i = 0; i < NUM_ELEMS; ++i) {
+//         cin >> userVals[i];
+//     }
+//
+//     sumVals = userVals[0] + userVals[NUM_ELEMS - 2];
+//
+//     cout << sumVals << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 5;
+//     int customerNums[NUM_VALS];
+//     int count;
+//     int i;
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> customerNums[i];
+//     }
+//
+//     count = 0;
+//
+//     for(i = 0; i < NUM_VALS; ++i){
+//         if(customerNums[i] <= -1){
+//             count++;
+//         }
+//     }
+//
+//     cout << "Total: " << count << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_GUESSES = 3;
+//     int userGuesses[NUM_GUESSES];
+//     int i;
+//
+//     for(i = 0; i < NUM_GUESSES; ++i){
+//         cin >> userGuesses[i];
+//     }
+//
+//     for (i = 0; i < NUM_GUESSES; ++i) {
+//         cout << userGuesses[i] << " ";
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 4;
+//     int hourlyTemp[NUM_VALS];
+//     int i;
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> hourlyTemp[i];
+//     }
+//
+//     for(i = 0; i < NUM_VALS; ++i){
+//         cout << hourlyTemp[i];
+//         if(i < NUM_VALS -1){
+//             cout << ", ";
+//         }
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 4;
+//     int origList[NUM_VALS];
+//     int offsetAmount[NUM_VALS];
+//     int i;
+//
+//     cin >> origList[0];
+//     cin >> origList[1];
+//     cin >> origList[2];
+//     cin >> origList[3];
+//
+//     cin >> offsetAmount[0];
+//     cin >> offsetAmount[1];
+//     cin >> offsetAmount[2];
+//     cin >> offsetAmount[3];
+//
+//     for(i = 0; i < NUM_VALS; ++i){
+//         cout << origList[i] * offsetAmount[i] << ",";
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int SIZE_LIST = 4;
+//     int keysList[SIZE_LIST];
+//     int itemsList[SIZE_LIST];
+//     int i;
+//
+//     cin >> keysList[0];
+//     cin >> keysList[1];
+//     cin >> keysList[2];
+//     cin >> keysList[3];
+//
+//     cin >> itemsList[0];
+//     cin >> itemsList[1];
+//     cin >> itemsList[2];
+//     cin >> itemsList[3];
+//
+//     for(i = 0; i < SIZE_LIST; ++i){
+//         if(keysList[i] > 50){
+//             cout << itemsList[i] << " ";
+//         }
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 5;
+//     int origArr[NUM_VALS];
+//     int offsetArr[NUM_VALS];
+//     int i;
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> origArr[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> offsetArr[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         origArr[i] = origArr[i] - offsetArr[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cout << origArr[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 5;
+//     int firstArray[NUM_VALS];
+//     int resetArray[NUM_VALS];
+//     int i;
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> firstArray[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> resetArray[i];
+//     }
+//
+//     for(i = 0; i < NUM_VALS; ++i){
+//         if(resetArray[i] == 0){
+//             firstArray[i] = 1;
+//         }
+//         else {
+//             firstArray[i] = firstArray[i] -9;
+//         }
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cout << firstArray[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_VALS = 5;
+//     int planeIDs[NUM_VALS];
+//     int numSeats[NUM_VALS];
+//     int i;
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> planeIDs[i];
+//     }
+//
+//     for (i = 0; i < NUM_VALS; ++i) {
+//         cin >> numSeats[i];
+//     }
+//
+//     for(i = 0; i < NUM_VALS; ++i){
+//         if(numSeats[i] < 30){
+//             cout << planeIDs[i] << " ";
+//             if(i < NUM_VALS -1){
+//                 cout << "";
+//             }
+//         }
+//     }
+//     cout << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int INPUT_SIZE = 5;
+//     int numbersData[INPUT_SIZE];
+//     int i;
+//
+//     printf("Original numbers: ");
+//     for (i = 0; i < INPUT_SIZE; ++i) {
+//         cin >> numbersData[i];
+//         cout << numbersData[i] << " ";
+//     }
+//     cout << endl;
+//
+//     for (i = 0; i < INPUT_SIZE; ++i) {
+//         if (numbersData[i] % 8 == 0) {
+//             cout << numbersData[i] << " is adjusted to a number not divisible by 8" << endl;
+//             numbersData[i] = numbersData[i] + 1;
+//         }
+//     }
+//
+//     cout << "New numbers: ";
+//     for (i = 0; i < INPUT_SIZE; ++i) {
+//         cout << numbersData[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_BENEFITS = 7;
+//     int benefitsData[NUM_BENEFITS];
+//     int secondData[NUM_BENEFITS];
+//     int i;
+//
+//     for (i = 0; i < NUM_BENEFITS; ++i) {
+//         cin >> benefitsData[i];
+//     }
+//
+//     secondData[0] = benefitsData[NUM_BENEFITS - 1];
+//
+//     for (i = 1; i < NUM_BENEFITS; ++i) {
+//         secondData[i] = benefitsData[i - 1];
+//     }
+//
+//     cout << "Original benefits: ";
+//     for (i = 0; i < NUM_BENEFITS; ++i) {
+//         cout << benefitsData[i] << " ";
+//     }
+//     cout << endl;
+//
+//     cout << "Updated benefits: ";
+//     for (i = 0; i < NUM_BENEFITS; ++i) {
+//         cout << secondData[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// int main() {
+//     const int NUM_POINTS = 8;
+//     double pointsList[NUM_POINTS];
+//     double newList[NUM_POINTS / 2];
+//     int i;
+//
+//     for (i = 0; i < NUM_POINTS; ++i) {
+//         cin >> pointsList[i];
+//     }
+//
+//     for (i = 0; i < NUM_POINTS / 2; ++i) {
+//         if (pointsList[i] < 80.0) {
+//             newList[i] = pointsList[i];
+//         }
+//         else {
+//             newList[i] = 0.0;
+//         }
+//     }
+//
+//     cout << "Original points: ";
+//     for (i = 0; i < NUM_POINTS; ++i) {
+//         cout << fixed << setprecision(1) << pointsList[i] << " ";
+//     }
+//     cout << endl;
+//
+//     cout << "Updated first half: ";
+//     for (i = 0; i < NUM_POINTS / 2; ++i) {
+//         cout << fixed << setprecision(1) << newList[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> listA;   // List A
+//     vector<int> listB;   // List B
+//     int size;
+//
+//     cin >> size;
+//
+//     int value;
+//     int sum = 0;
+//     for(int i = 0; i < size; ++i){
+//         cin >> value;
+//         listA.push_back(value);
+//     }
+//     for(int i = 0; i < size; ++i){
+//         cin >> value;
+//         listB.push_back(value);
+//     }
+//     for(int i = 0; i < size; ++i){
+//         sum += listA[i] * listB[i];
+//     }
+//     cout << sum << endl;
+//     return 0;
+// }
+
