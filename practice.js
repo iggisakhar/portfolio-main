@@ -27959,3 +27959,102 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// int FindScore(const int scoreVals[], int numVals) {
+//     int i;
+//     int returnVal = scoreVals[0];
+//
+//     for (i = 1; i < numVals; ++i) {
+//         if (scoreVals[i] > returnVal) {
+//             returnVal = scoreVals[i];
+//         }
+//     }
+//
+//     return returnVal;
+// }
+//
+// int main() {
+//     const int NUM_SCORES = 5;
+//     int quizScores[NUM_SCORES];
+//     int i;
+//     int returnScore;
+//
+//     for (i = 0; i < NUM_SCORES; ++i) {
+//         cin >> quizScores[i];
+//     }
+//
+//     returnScore = FindScore(quizScores, NUM_SCORES);
+//     cout << returnScore << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void PassFail(const int scoreVals[], int numVals, int quizThres) {
+//     int i;
+//
+//     for (i = 0; i < numVals; ++i) {
+//         cout << scoreVals[i] << " ";
+//         if (scoreVals[i] >= quizThres) {
+//             cout << "p";
+//         }
+//         else {
+//             cout << "f";
+//         }
+//         cout << endl;
+//     }
+// }
+//
+// int main() {
+//     const int NUM_SCORES = 3;
+//     int quizScores[NUM_SCORES];
+//     int i;
+//     int threshold = 5;
+//
+//     for (i = 0; i < NUM_SCORES; ++i) {
+//         cin >> quizScores[i];
+//     }
+//
+//     PassFail(quizScores, NUM_SCORES, threshold);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void UpdateScoreVals(int scoreVals[], int numVals, int updateVal) {
+//     int i;
+//
+//     for (i = 0; i < numVals; ++i) {
+//         scoreVals[i] = scoreVals[i] - updateVal;
+//     }
+// }
+//
+// void PrintScoreVals(const int scoreVals[], int numVals) {
+//     int i;
+//
+//     for (i = 0; i < numVals; ++i)  {
+//         cout << scoreVals[i] << endl;
+//     }
+// }
+//
+// int main() {
+//     const int NUM_SCORES = 4;
+//     int quizScores[NUM_SCORES];
+//     int scoreUpdate = 2;
+//     int i;
+//
+//     for (i = 0; i < NUM_SCORES; ++i) {
+//         cin >> quizScores[i];
+//     }
+//
+//     UpdateScoreVals(quizScores, NUM_SCORES, scoreUpdate);
+//     PrintScoreVals(quizScores, NUM_SCORES);
+//
+//     return 0;
+// }
