@@ -28098,3 +28098,212 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// void SwapLastTwo (int arr[], int numVals) {
+//     int temp;
+//
+//     temp = arr[numVals - 1];
+//     arr[numVals - 1] = arr[numVals -2];
+//     arr[numVals - 2] = temp;
+// };
+//
+// void PrintArr(const int arr[], int numVals) {
+//     int i;
+//
+//     for (i = 0; i < numVals; ++i) {
+//         cout << arr[i] << " ";
+//     }
+//
+//     cout << endl;
+// }
+//
+// int main() {
+//     const int MAX_SIZE = 20;
+//     int arrToModify[MAX_SIZE]; // allow at most 20 elements
+//     int numVals;
+//     int i;
+//
+//     cin >> numVals;
+//
+//     for (i = 0; i < numVals; ++i) {
+//         cin >> arrToModify[i];
+//     }
+//
+//     cout << "Original array: ";
+//     PrintArr(arrToModify, numVals);
+//
+//     SwapLastTwo(arrToModify, numVals);
+//
+//     cout << "Changed array: ";
+//     PrintArr(arrToModify, numVals);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void SubtractIndexFromElements(int arr[], int numVals){
+//     int i;
+//
+//     for(i = 0; i < numVals; ++i){
+//         arr[i] = arr[i] - i;
+//     };
+// };
+//
+// void PrintArr(const int arr[], int numVals) {
+//     int i;
+//
+//     for (i = 0; i < numVals; ++i) {
+//         cout << arr[i] << " ";
+//     }
+//
+//     cout << endl;
+// }
+//
+// int main() {
+//     const int NUM_MEMBERS = 7;
+//     int numberArray[NUM_MEMBERS];
+//     int i;
+//     int numVals;
+//
+//     for (i = 0; i < NUM_MEMBERS; ++i) {
+//         cin >> numberArray[i];
+//     }
+//
+//     cin >> numVals;
+//
+//     cout << "Input array: ";
+//     PrintArr(numberArray, NUM_MEMBERS);
+//
+//     SubtractIndexFromElements(numberArray, numVals);
+//
+//     cout << "Output array: ";
+//     PrintArr(numberArray, NUM_MEMBERS);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// void FilterArray(int arr[], int numVals, int numCompare){
+//     int i;
+//
+//     for(i = 0; i < numVals; ++i){
+//         if(arr[i] < numCompare){
+//             arr[i] = 0;
+//         }
+//         else {
+//             arr[i] = 1;
+//         }
+//     }
+// }
+//
+// void PrintArr(const int arr[], int numVals) {
+//     int i;
+//
+//     for (i = 0; i < numVals; ++i) {
+//         cout << arr[i] << " ";
+//     }
+//
+//     cout << endl;
+// }
+//
+// int main() {
+//     const int MAX_SIZE = 20;
+//     int numberArray[MAX_SIZE]; // allow at most 20 elements
+//     int i;
+//     int numCompare;
+//     int numVals;
+//
+//     cin >> numVals;
+//
+//     for (i = 0; i < numVals; ++i) {
+//         cin >> numberArray[i];
+//     }
+//
+//     cin >> numCompare;
+//
+//     cout << "Initial array: ";
+//     PrintArr(numberArray, numVals);
+//
+//     FilterArray(numberArray, numVals, numCompare);
+//
+//     cout << "Final array: ";
+//     PrintArr(numberArray, numVals);
+//
+//     return 0;
+// }
+
+// #include "header.h" // For testing purpose: To verify function definition
+// #include <iostream>
+// using namespace std;
+//
+// void PrintNumLosses(const int arr[], int numVals, int minScore){
+//     int i;
+//     int count = 0;
+//
+//     for(i = 0; i < numVals; ++i){
+//         if(arr[i] < minScore){
+//             count++;
+//         }
+//     }
+//     cout << count;
+// }
+//
+// int main() {
+//     const int MAX_SIZE = 20;
+//     int valueArray[MAX_SIZE]; // allow at most 20 elements
+//     int i;
+//     int numVals;
+//     int minScore;
+//
+//     cin >> numVals;
+//
+//     for (i = 0; i < numVals; ++i) {
+//         cin >> valueArray[i];
+//     }
+//
+//     cin >> minScore;
+//
+//     PrintNumLosses(valueArray, numVals, minScore);
+//
+//     cout << endl;
+//
+//     checkDefinition(); // For testing purpose: To verify function definition
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     int numItems;
+//     vector<int> listItems;
+//     int currItem;
+//     int i;
+//
+//     // Get items
+//     cin >> numItems;
+//     for (i = 0; i < numItems; ++i) {
+//         cin >> currItem;
+//         listItems.push_back(currItem);
+//     }
+//
+//     int maxItem = listItems[0];
+//
+//     for(i = 1; i < numItems; ++i){
+//         if(listItems[i] > maxItem){
+//             maxItem = listItems[i];
+//         }
+//     }
+//     cout << maxItem << endl;
+//     return 0;
+// }
+
