@@ -28307,3 +28307,40 @@
 //     return 0;
 // }
 
+
+// function groupBy(list, keySelector) {
+//     if (!Array.isArray(list)) {
+//         throw new TypeError("First argument must be an array");
+//     }
+//
+//     if (typeof keySelector !== "function") {
+//         throw new TypeError("Second argument must be a function");
+//     }
+//
+//     return list.reduce((acc, item) => {
+//         const key = keySelector(item);
+//         if (!acc[key]) {
+//             acc[key] = [];
+//         }
+//         acc[key].push(item);
+//         return acc;
+//     }, {});
+// }
+//
+// // Demo data
+// const users = [
+//     { name: "Igor", role: "frontend", city: "LA" },
+//     { name: "Amina", role: "designer", city: "NY" },
+//     { name: "Max", role: "frontend", city: "SF" },
+//     { name: "Dana", role: "backend", city: "LA" },
+//     { name: "Leo", role: "designer", city: "SF" }
+// ];
+//
+// const groupedByRole = groupBy(users, user => user.role);
+// const groupedByCity = groupBy(users, user => user.city);
+//
+// console.log("Grouped by role:");
+// console.log(groupedByRole);
+//
+// console.log("\nGrouped by city:");
+// console.log(groupedByCity);
