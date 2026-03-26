@@ -28344,3 +28344,179 @@
 //
 // console.log("\nGrouped by city:");
 // console.log(groupedByCity);
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> userVals;
+//     unsigned int i;
+//
+//     userVals.push_back(4);
+//     userVals.push_back(5);
+//     userVals.push_back(8);
+//
+//     userVals.at(2) = userVals.at(0) + 2;
+//     userVals.at(0) = userVals.at(2) + 6;
+//
+//     for (i = 0; i < userVals.size(); ++i) {
+//         cout << userVals.at(i) << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include "codetest.h"
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<double> bikingTime;
+//     double time1;
+//     double time2;
+//     double time3;
+//     double time4;
+//     double time5;
+//     double time6;
+//     unsigned int i;
+//
+//     cin >> time1;
+//     cin >> time2;
+//     cin >> time3;
+//     cin >> time4;
+//     cin >> time5;
+//     cin >> time6;
+//
+//     bikingTime.push_back(time6);
+//     bikingTime.push_back(time5);
+//     bikingTime.push_back(time4);
+//     bikingTime.push_back(time3);
+//     bikingTime.push_back(time2);
+//     bikingTime.push_back(time1);
+//
+//     for (i = 0; i < bikingTime.size(); ++i) {
+//         cout << bikingTime.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     codetest(); // For code testing only
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     int member1;
+//     int member2;
+//     unsigned int i;
+//
+//     cin >> member1;
+//     cin >> member2;
+//
+//     vector<int> memberRoster(4);
+//
+//     memberRoster.at(0) = member1;
+//     memberRoster.at(1) = 0;
+//     memberRoster.at(2) = member2;
+//     memberRoster.at(3) = 0;
+//
+//     for (i = 0; i < memberRoster.size(); ++i) {
+//         cout << memberRoster.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     int numMembers;
+//     double firstMember;
+//     double middleMember;
+//     double lastMember;
+//     unsigned int i;
+//
+//     cin >> numMembers;
+//     cin >> firstMember;
+//     cin >> middleMember;
+//     cin >> lastMember;
+//
+//     vector<double> walkingRoster(numMembers);
+//
+//     walkingRoster.at(0) = firstMember;
+//     walkingRoster.at(numMembers / 2) = middleMember;
+//     walkingRoster.at(numMembers - 1) = lastMember;
+//
+//     for (i = 0; i < walkingRoster.size(); ++i) {
+//         cout << walkingRoster.at(i) << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> idRoster;
+//     int numDistance;
+//     int inputVal;
+//     unsigned int i;
+//
+//     cin >> numDistance;
+//
+//     for (i = 0; i < numDistance; ++i) {
+//         cin >> inputVal;
+//         idRoster.push_back(inputVal);
+//     }
+//
+//     for (i = 0; i < idRoster.size(); ++i) {
+//         if (idRoster.at(i) % 2 == 1) {
+//             cout << idRoster.at(i) << endl;
+//         }
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> swimmingNumbers;
+//     int numDistance;
+//     int inVal;
+//     int i;
+//
+//     cin >> numDistance;
+//
+//     for (i = 0; i < numDistance; ++i) {
+//         cin >> inVal;
+//         swimmingNumbers.push_back(inVal);
+//     }
+//
+//     cout << "Forward: ";
+//     for (i = 0; i < swimmingNumbers.size(); ++i) {
+//         cout << swimmingNumbers.at(i) << "*";
+//     }
+//     cout << endl;
+//
+//     cout << "Backward: ";
+//     for (i = swimmingNumbers.size() - 1; i >= 0; --i) {
+//         cout << swimmingNumbers.at(i) << "*";
+//     }
+//     cout << endl;
+//     return 0;
+// }
+
