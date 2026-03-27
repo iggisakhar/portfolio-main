@@ -28520,3 +28520,107 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// void StrSpaceToHyphen(string& modStr) {
+//     unsigned int i;
+//
+//     for (i = 0; i < modStr.size(); ++i) {
+//         if (modStr.at(i) == ' ') {
+//             modStr.at(i) = ' ';
+//         }
+//     }
+// }
+//
+// int main() {
+//     string userStr;
+//
+//     cout << "Enter string with spaces: " << endl;
+//     getline(cin, userStr);
+//
+//     StrSpaceToHyphen(userStr);
+//
+//     cout << "String with hyphens: ";
+//     cout << userStr << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// void StrSpaceToHyphen(string& modStr) {
+//     unsigned int i;
+//
+//     for (i = 0; i < modStr.size(); ++i) {
+//         if (modStr.at(i) == ' ') {
+//             modStr.at(i) = '-';
+//         }
+//         else if (modStr.at(i) == '!') {
+//             modStr.at(i) = '?';
+//         }
+//     }
+// }
+//
+// int main() {
+//     string userStr;
+//
+//     cout << "Enter string with spaces: " << endl;
+//     getline(cin, userStr);
+//
+//     StrSpaceToHyphen(userStr);
+//
+//     cout << "String with hyphens: ";
+//     cout << userStr << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// void GetUserInfo(int& userAge, string& userName) {
+//     cout << "Enter your age: " << endl;
+//     cin >> userAge;
+//     cout << "Enter your name: " << endl;
+//     cin >> userName;
+// }
+//
+// int main() {
+//     int userAge;
+//     string userName;
+//
+//     GetUserInfo(userAge, userName);
+//
+//     cout << userName << " is " << userAge << " years old." << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// void MakeSentenceExcited(string& sentenceText) {
+//
+//     for (unsigned int i = 0; i < sentenceText.size(); ++i) {
+//         if (sentenceText.at(i) == '.') {
+//             sentenceText.at(i) = '!';
+//         }
+//     }
+//
+// }
+//
+// int main() {
+//     string testStr;
+//
+//     getline(cin, testStr);
+//     MakeSentenceExcited(testStr);
+//     cout << testStr;
+//
+//     return 0;
+// }
