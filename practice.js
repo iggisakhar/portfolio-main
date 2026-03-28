@@ -28624,3 +28624,460 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int FindCharacters(string inputString, char x) {
+//
+//     int count = 0;
+//
+//     for (unsigned int i = 0; i < inputString.size(); ++i){
+//         if(inputString.at(i) == x){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+//
+// int main() {
+//     string inputString;
+//     char x;
+//     int result;
+//
+//     cin >> inputString;
+//     cin >> x;
+//
+//     result = FindCharacters(inputString, x);
+//
+//     cout << result << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// #include <string>
+// using namespace std;
+//
+// void InspectValues(string inputString, char x, vector<bool>& outputVector) {
+//     for (unsigned int i = 0; i < inputString.size(); ++i) {
+//         if (inputString.at(i) == x) {
+//             outputVector.push_back(true);
+//         }
+//         else {
+//             outputVector.push_back(false);
+//         }
+//     }
+// }
+//
+// int main() {
+//     string inputString;
+//     int i;
+//     char x;
+//     vector<bool> results;
+//
+//     cin >> inputString;
+//     cin >> x;
+//
+//     InspectValues(inputString, x, results);
+//
+//     for (i = 0; i < results.size(); ++i) {
+//         if (results.at(i)) {
+//             cout << inputString.at(i) << " is equal to " << x << endl;
+//         }
+//         else {
+//             cout << inputString.at(i) << " is not equal to " << x << endl;
+//         }
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// void StartsWith(string inputString1, string inputString2){
+//     if(inputString1.find(inputString2) == 0){
+//         cout << inputString1 << "+++" << inputString2 << endl;
+//     } else {
+//         cout << "No success." << endl;
+//     }
+// }
+//
+// int main() {
+//     int i;
+//     string inputString1;
+//     string inputString2;
+//
+//     cin >> inputString1;
+//     cin >> inputString2;
+//
+//     StartsWith(inputString1, inputString2);
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// bool CheckSelectiveSum(vector<int> inVector, int x){
+//     int sum = 0;
+//
+//     for(unsigned int i = 0; i < inVector.size(); ++i){
+//         if(inVector.at(i) != x){
+//             sum += inVector.at(i);
+//         }
+//     }
+//     if(sum % 2 == 0){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+//
+// int main() {
+//     vector<int> inVector;
+//     int size;
+//     int input;
+//     int i;
+//     int x;
+//     bool result;
+//
+//     // Read the vector's size, and then the vector's elements
+//     cin >> size;
+//     for (i = 0; i < size; ++i) {
+//         cin >> input;
+//         inVector.push_back(input);
+//     }
+//
+//     cin >> x;
+//
+//     result = CheckSelectiveSum(inVector, x);
+//
+//     if (result) {
+//         cout << "True, the sum of the elements that are not equal to " << x << " is even." << endl;
+//     }
+//     else {
+//         cout << "False, the sum of the elements that are not equal to " << x << " is not even." << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// void SwapFrontEnd(vector<int> & vec){
+//     int temp;
+//
+//     temp = vec.at(0);
+//     vec.at(0) = vec.at(vec.size() - 1);
+//     vec.at(vec.size() - 1) = temp;
+// }
+//
+// int main() {
+//     int i;
+//     vector<int> inputVector;
+//     int size;
+//     int input;
+//
+//     cin >> size;
+//     for (i = 0; i < size; ++i) {
+//         cin >> input;
+//         inputVector.push_back(input);
+//     }
+//
+//     SwapFrontEnd(inputVector);
+//
+//     for (i = 0; i < inputVector.size(); ++i) {
+//         cout << inputVector.at(i) << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> valsVctr;     // Empty vector for values
+//     unsigned int i;           // Loop index
+//     int sumVal;               // Sum of values
+//     int avgVal;               // Average of values
+//
+//     valsVctr.push_back(30);
+//     valsVctr.push_back(20);
+//     valsVctr.push_back(20);
+//     valsVctr.push_back(15);
+//     valsVctr.push_back(5);
+//     valsVctr.push_back(10);
+//
+//     sumVal = 0;
+//     avgVal = 0;
+//
+//     for (i = 0; i < valsVctr.size(); ++i) {
+//         sumVal += valsVctr.at(i);
+//     }
+//
+//     avgVal = sumVal / valsVctr.size();
+//     cout << "Average value: " << avgVal << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> userVals;
+//     unsigned int i;
+//     int sumVal;
+//
+//     userVals.push_back(2);
+//     userVals.push_back(9);
+//     userVals.push_back(6);
+//
+//     sumVal = 0;
+//     for (i = 0; i < userVals.size(); ++i) {
+//         sumVal = sumVal + userVals.at(i);
+//         cout << sumVal << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> yearlyScores;
+//     int numInputs;
+//     int i;
+//     int score;
+//
+//     cin >> numInputs;
+//
+//     for (i = 0; i < numInputs; ++i) {
+//         cin >> score;
+//         yearlyScores.push_back(score);
+//     }
+//
+//     for (int i = yearlyScores.size() - 1; i >= 0; --i) {
+//         cout << yearlyScores.at(i) << " - ";
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> averagePrices;
+//     int numValues;
+//     int i;
+//     int price;
+//
+//     cin >> numValues;
+//
+//     for (i = 0; i < numValues; ++i) {
+//         cin >> price;
+//         averagePrices.push_back(price);
+//     }
+//
+//     for (int i = averagePrices.size() / 2 - 1; i >= 0; --i) {
+//         cout << averagePrices.at(i);
+//         if (i > 0) {
+//             cout << " | ";
+//         }
+//     }
+//
+//     cout << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//     vector<int> hourlyMiles;
+//     int vecLength;
+//     int sumBelow;
+//     unsigned int i;
+//     int mile;
+//
+//     cin >> vecLength;
+//
+//     for (i = 0; i < vecLength; ++i) {
+//         cin >> mile;
+//         hourlyMiles.push_back(mile);
+//     }
+//
+//     sumBelow = 0;
+//
+//     sumBelow = 0;
+//
+//     for (int i = 0; i < hourlyMiles.size(); ++i) {
+//         if (hourlyMiles.at(i) < 123) {
+//             sumBelow += hourlyMiles.at(i);
+//         }
+//     }
+//
+//     cout << "Sum of values below 123: " << sumBelow << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// #include <vector>
+// using namespace std;
+//
+// // Add an employee
+// void AddEmployee(vector<string> &name, vector<string> &department,
+//     vector<string> &title) {
+//     string theName;
+//     string theDept;
+//     string theTitle;
+//
+//     cout << endl << "Enter the name to add: " << endl;
+//     getline(cin, theName);
+//     cout << "Enter " << theName << "'s department: " << endl;
+//     getline(cin, theDept);
+//     cout << "Enter " << theName << "'s title: " << endl;
+//     getline(cin, theTitle);
+//
+//     name.push_back(theName);
+//     department.push_back(theDept);
+//     title.push_back(theTitle);
+//
+//     cout << theName << "'s information has been added." << endl;
+// }
+//
+// // Delete an employee
+// void DeleteEmployee(vector<string> &name, vector<string> &department,
+//     vector<string> &title) {
+//     string input;
+//     int employeeNum;
+//
+//     cout << endl << "Enter the employee # to delete: " << endl;
+//     getline(cin, input);
+//     employeeNum = stoi(input);
+//
+//     if (employeeNum >= 0 && employeeNum < name.size()) {
+//         cout << name.at(employeeNum) << "'s information has been deleted." << endl;
+//
+//         name.erase(name.begin() + employeeNum);
+//         department.erase(department.begin() + employeeNum);
+//         title.erase(title.begin() + employeeNum);
+//     }
+// }
+//
+// // List all employees
+// void ListEmployees(vector<string> &name, vector<string> &department,
+//     vector<string> &title) {
+//     int nElements;
+//     int i;
+//
+//     nElements = name.size();
+//     if (nElements > 0) {
+//         cout << endl;
+//         for (i = 0; i < nElements; ++i) {
+//             cout << i << ") Name: " << name.at(i) <<
+//             ",\tDepartment: " << department.at(i) <<
+//             ",\tTitle: " << title.at(i) << endl;
+//         }
+//     }
+//     else {
+//         cout << endl << "There are no employees to list." << endl;
+//     }
+// }
+//
+// // Get the action the user wants to perform
+// char GetAction(string prompt) {
+//     string answer;
+//     char firstChar;
+//
+//     firstChar = '?';
+//
+//     cout << endl << prompt << endl;
+//     getline(cin, answer);
+//     while(answer.size() == 0) {
+//         getline(cin, answer);
+//     }
+//     firstChar = toupper(answer[0]);
+//
+//     return firstChar;
+// }
+//
+// int main() {
+//     const char EXIT_CODE = 'X';
+//     const string PROMPT_ACTION = "Add, Delete, List or eXit (a,d,l,x): ";
+//
+//     vector<string> name(0);
+//     vector<string> department(0);
+//     vector<string> title(0);
+//
+//     char userAction;
+//
+//     userAction = '?';
+//
+//     // Loop until the user enters the exit code.
+//     userAction = GetAction(PROMPT_ACTION);
+//
+//     while (userAction != EXIT_CODE) {
+//         switch(userAction) {
+//             case 'A': AddEmployee(name, department, title);
+//                 break;
+//             case 'D': DeleteEmployee(name, department, title);
+//                 break;
+//             case 'L': ListEmployees(name, department, title);
+//                 break;
+//             default : // Do nothing
+//                 break;
+//         }
+//
+//         userAction = GetAction(PROMPT_ACTION);
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//
+//     int size;
+//     cin >> size;
+//
+//     int arr[100];
+//
+//     for(int i = 0; i < size; ++i){
+//         cin >>arr[i];
+//     }
+//
+//     int lower, upper;
+//     cin >> lower >> upper;
+//
+//     for(int i = 0; i < size; i++){
+//         if(arr[i] >= lower && arr[i] <= upper){
+//             cout << arr[i] << ",";
+//         }
+//     }
+//     return 0;
+// }
+
