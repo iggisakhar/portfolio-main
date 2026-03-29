@@ -29081,3 +29081,26 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     int userValues[20];
+//
+//     int count = 0;
+//     int value;
+//
+//     cin >> value;
+//     while(value >= 0){
+//         userValues[count] = value;
+//         count++;
+//         cin >> value;
+//     }
+//     int n = -value;
+//     if(count < n){
+//         cout << value << endl;
+//     } else {
+//         cout << userValues[count - n] << endl;
+//     }
+//     return 0;
+// }
