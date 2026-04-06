@@ -29104,3 +29104,53 @@
 //     }
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int Partition(string userIDs[], int low, int high) {
+//     string pivot = userIDs[high];
+//     int i = low - 1;
+//
+//     for (int j = low; j < high; j++) {
+//         if (userIDs[j] <= pivot) {
+//             i++;
+//             swap(userIDs[i], userIDs[j]);
+//         }
+//     }
+//
+//     swap(userIDs[i + 1], userIDs[high]);
+//     return i + 1;
+// }
+//
+// void Quicksort(string userIDs[], int low, int high) {
+//     if (low < high) {
+//         int pivotIndex = Partition(userIDs, low, high);
+//         Quicksort(userIDs, low, pivotIndex - 1);
+//         Quicksort(userIDs, pivotIndex + 1, high);
+//     }
+// }
+//
+// int main() {
+//     const int MAX_SIZE = 100;
+//     string userIDs[MAX_SIZE];
+//     string input;
+//     int count = 0;
+//
+//     cin >> input;
+//
+//     while (input != "-1") {
+//         userIDs[count] = input;
+//         count++;
+//         cin >> input;
+//     }
+//
+//     Quicksort(userIDs, 0, count - 1);
+//
+//     for (int i = 0; i < count; i++) {
+//         cout << userIDs[i] << endl;
+//     }
+//
+//     return 0;
+// }
