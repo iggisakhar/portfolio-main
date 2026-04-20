@@ -29216,3 +29216,121 @@
 //     return 0;
 // }
 
+// #pragma GCC diagnostic push
+// #pragma GCC diagnostic error "-Wwrite-strings"
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char backpackColor[] = "pink";
+//
+//     cout << "I have a " << backpackColor << " backpack." << endl;
+//
+//     return 0;
+// }
+// #pragma GCC diagnostic pop#pragma GCC diagnostic push
+// #pragma GCC diagnostic error "-Wwrite-strings"
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char backpackColor[] = "pink";
+//
+//     cout << "I have a " << backpackColor << " backpack." << endl;
+//
+//     return 0;
+// }
+// #pragma GCC diagnostic pop
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char inputString[20];
+//
+//     cin >> inputString;
+//
+//     inputString[6] = '\0';
+//
+//     cout << inputString << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     char userInput[20];
+//     int i;
+//
+//     cin >> userInput;
+//
+//     for(i = 0; userInput[i] != '\0'; i++){
+//         if(userInput[i] == '9'){
+//             userInput[i] = '\0';
+//             break;
+//         }
+//     }
+//
+//     cout << userInput << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <cstring>
+// using namespace std;
+//
+// // Function replaces spaces with hyphens and '!' with '?'
+// void StrSpaceToHyphen(char modString[]) {
+//     int i;
+//
+//     for (i = 0; i < strlen(modString); ++i) {
+//         if (modString[i] == ' ') {
+//             modString[i] = '-';
+//         }
+//         else if (modString[i] == '!') {
+//             modString[i] = '?';
+//         }
+//     }
+// }
+//
+// int main() {
+//     const int INPUT_STR_SIZE = 50;
+//     char userStr[INPUT_STR_SIZE];
+//
+//     cout << "Enter string with spaces: " << endl;
+//     cin.getline(userStr, INPUT_STR_SIZE);
+//
+//     StrSpaceToHyphen(userStr);
+//
+//     cout << "String with hyphens: " << userStr << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <cstring>
+// using namespace std;
+//
+// void MakeSentenceExcited(char* sentenceText) {
+//
+//     for(int i = 0; i < strlen(sentenceText); ++i){
+//         if(sentenceText[i] == '.'){
+//             sentenceText[i] = '!';
+//         }
+//     }
+//
+// }
+//
+// int main() {
+//     const int TEST_STR_SIZE = 50;
+//     char testStr[TEST_STR_SIZE];
+//
+//     cin.getline(testStr, TEST_STR_SIZE);
+//     MakeSentenceExcited(testStr);
+//     cout << testStr << endl;
+//
+//     return 0;
+// }
