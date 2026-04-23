@@ -29334,3 +29334,72 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// //finder
+// void FindSubstring(char str[], char c, int n){
+//     int i = 0;
+//
+//     while(str[i] != '\0'){
+//         if(str[i] == c){
+//             for(int j = 0; j <= n && str[i + j] != '\0'; ++j){
+//                 cout << str[i +j];
+//             }
+//             cout << endl;
+//             return;
+//         }
+//         i++;
+//     }
+//     cout << "The character was not found" << endl;
+// }
+//
+// int main() {
+//     char sentence[81];
+//     char c;
+//     int n;
+//
+//     cin.getline(sentence, 81);
+//     cin >> c;
+//     cin >> n;
+//
+//     FindSubstring(sentence, c, n);
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <cstring>
+// using namespace std;
+//
+// void CreateLogin(char firstName[], char lastName[], char studentID[], int n){
+//
+//     //first 2 letters of first name
+//     cout << firstName[0] << firstName[1];
+//
+//     //first 2 letters of last name
+//     cout << lastName[0] << lastName[1];
+//     int len = strlen(studentID);
+//
+//     for(int i = len - n; i < len; i++){
+//         cout << studentID[i];
+//     }
+//     cout << endl;
+// }
+//
+// int main() {
+//     char firstName[16];
+//     char lastName[31];
+//     char studentID[16];
+//     int n;
+//
+//     cin >> firstName;
+//     cin.ignore();
+//     cin.getline(lastName, 31);
+//     cin >> studentID;
+//     cin >> n;
+//
+//     CreateLogin(firstName, lastName, studentID, n);
+//
+//     return 0;
+// }
