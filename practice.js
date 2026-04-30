@@ -29424,3 +29424,22 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// struct Birthday {
+//     int month;
+//     int day;
+// };
+//
+// int main() {
+//     Birthday annBirthday;
+//
+//     annBirthday.month = 5;
+//     annBirthday.day = 7;
+//
+//     cout << "Ann: " << annBirthday.month << "/" << annBirthday.day << endl;
+//
+//     return 0;
+// }
