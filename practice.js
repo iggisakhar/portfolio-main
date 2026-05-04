@@ -29443,3 +29443,77 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+//
+// struct MonetaryChange {
+//     int quarters;
+//     int dimes;
+//     int nickels;
+//     int pennies;
+// };
+//
+// MonetaryChange ComputeChange(int cents) {
+//     MonetaryChange change;
+//
+//     change.quarters = cents / 25;
+//     cents = cents % 25;
+//
+//     change.dimes = cents / 10;
+//     cents = cents % 10;
+//
+//     change.nickels = cents / 5;
+//     cents = cents % 5;
+//
+//     change.pennies = cents;
+//
+//     return change;
+// }
+//
+// int main() {
+//     int userCents;
+//     MonetaryChange change;
+//
+//     cout << "Enter cents: " << endl;
+//     cin >> userCents;
+//
+//     change = ComputeChange(userCents);
+//
+//     cout << "Quarters: " << change.quarters << endl;
+//     cout << "Dimes: " << change.dimes << endl;
+//     cout << "Nickels: " << change.nickels << endl;
+//     cout << "Pennies: " << change.pennies << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// struct ProductInfo {
+//     string itemName;
+//     int itemQty;
+// };
+//
+// ProductInfo AddToStock(ProductInfo productToStock, int increaseValue) {
+//     productToStock.itemQty = productToStock.itemQty + increaseValue;
+//
+//     return productToStock;
+// }
+//
+// int main() {
+//     ProductInfo mugInfo;
+//     int addQty;
+//
+//     cin >> mugInfo.itemName >> mugInfo.itemQty;
+//     cin >> addQty;
+//
+//     mugInfo = AddToStock(mugInfo, addQty);
+//
+//     cout << "Name: " << mugInfo.itemName << ", stock: " << mugInfo.itemQty << endl;
+//
+//     return 0;
+// }
+
