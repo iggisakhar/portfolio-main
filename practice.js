@@ -29517,3 +29517,84 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// struct WidthFtIn {
+//     int feetVal;
+//     int inchesVal;
+// };
+//
+// WidthFtIn ConvertToFeetAndInches(int totalInches) {
+//     WidthFtIn tempVal;
+//
+//
+//     tempVal.feetVal = totalInches / 12;
+//     tempVal.inchesVal = totalInches % 12;
+//
+//     return tempVal;
+//
+// }
+//
+// int main() {
+//     WidthFtIn objectSize;
+//     int totalInches;
+//
+//     cin >> totalInches;
+//
+//     objectSize = ConvertToFeetAndInches(totalInches);
+//
+//     cout << objectSize.feetVal << " feet and " << objectSize.inchesVal << " inches" << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// struct ElapsedTime {
+//     int numHours;
+//     int numMinutes;
+// };
+//
+// ElapsedTime SetTime(int hoursVal, int minutesVal) {
+//     ElapsedTime temp;
+//
+//     temp.numHours = hoursVal;
+//     temp.numMinutes = minutesVal;
+//
+//     return temp;
+// }
+//
+// int main() {
+//     ElapsedTime lateBy;
+//     int hoursVal;
+//     int minutesVal;
+//
+//     cin >> hoursVal >> minutesVal;
+//
+//     lateBy = SetTime(hoursVal, minutesVal);
+//
+//     cout << "We met " << lateBy.numHours << ":" << lateBy.numMinutes << " hours ago." << endl;
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+//
+// struct InventoryTag {
+//     int itemID;
+//     int quantityRemaining;
+// };
+//
+// int main() {
+//     InventoryTag redSweater;
+//
+//     cin >> redSweater.itemID;
+//     cin >> redSweater.quantityRemaining;
+//
+//     cout << "Inventory ID: " << redSweater.itemID << ", Qty: " << redSweater.quantityRemaining << endl;
+//
+//     return 0;
+// }
