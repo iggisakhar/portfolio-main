@@ -29598,3 +29598,41 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// struct Date {
+//     int month;
+//     int day;
+//     int year;
+// };
+//
+// int main() {
+//     Date date;
+//
+//     string months[12] = {
+//         "January", "February", "March", "April",
+//         "May", "June", "July", "August",
+//         "September", "October", "November", "December"
+//     };
+//
+//     string dateStr;
+//
+//     cout << "Enter a date: " << endl;
+//     cin >> dateStr;
+//
+//     int firstSlash = dateStr.find('/');
+//     int secondSlash = dateStr.find('/', firstSlash + 1);
+//
+//     date.month = stoi(dateStr.substr(0, firstSlash));
+//     date.day = stoi(dateStr.substr(firstSlash + 1, secondSlash - firstSlash - 1));
+//     date.year = stoi(dateStr.substr(secondSlash + 1));
+//
+//     cout << "You entered " << months[date.month - 1] << " "
+//     << date.day << ", " << date.year;
+//
+//     return 0;
+// }
+
