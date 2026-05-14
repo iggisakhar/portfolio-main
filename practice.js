@@ -29636,3 +29636,60 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <vector>
+// #include <string>
+// using namespace std;
+//
+// struct CountryTvWatch {
+//     string countryName;
+//     int tvMinutes;
+// };
+//
+// void PrintCountryNames(vector<CountryTvWatch> ctryList)
+// {
+//     for (int i = 0; i < ctryList.size(); i++) {
+//     cout << ctryList.at(i).countryName << endl;
+// }
+// }
+//
+// int main() {
+//     const int NUM_COUNTRIES = 4;
+//
+//     vector<CountryTvWatch> countryList(NUM_COUNTRIES);
+//     string countryToFind;
+//     bool countryFound;
+//     int i;
+//
+//     countryFound = false;
+//
+//     countryList.at(0).countryName = "Brazil";
+//     countryList.at(0).tvMinutes = 222;
+//     countryList.at(1).countryName = "India";
+//     countryList.at(1).tvMinutes = 119;
+//     countryList.at(2).countryName = "U.K.";
+//     countryList.at(2).tvMinutes = 242;
+//     countryList.at(3).countryName = "U.S.A.";
+//     countryList.at(3).tvMinutes = 283;
+//
+//     cout << "Enter country name: " << endl;
+//     cin >> countryToFind;
+//
+//     for (i = 0; i < NUM_COUNTRIES && !countryFound; ++i) { // Find country's index
+//         if (countryList.at(i).countryName == countryToFind) {
+//             countryFound = true;
+//             cout << "People in " << countryToFind << endl;
+//             cout << "watch " << countryList.at(i).tvMinutes;
+//             cout << " minutes of TV daily." << endl;
+//         }
+//     }
+//     if (!countryFound) {
+//         cout << "Country not found, try again." << endl;
+//         cout << "Valid countries: " << endl;
+//         PrintCountryNames(countryList);
+//     }
+//
+//     return 0;
+// }
+
+
