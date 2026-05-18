@@ -29720,3 +29720,28 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <vector>
+// #include <string>
+// using namespace std;
+//
+// struct PizzaInfo {
+//     string pizzaName;
+//     int caloriesInSlice;
+// };
+//
+// int main() {
+//     vector<PizzaInfo> listOfPizzas(2);
+//
+//     listOfPizzas.at(0).pizzaName = "Barbecue";
+//     listOfPizzas.at(1).pizzaName = "Ham and Cheese";
+//
+//     cin >> listOfPizzas.at(0).caloriesInSlice;
+//     cin >> listOfPizzas.at(1).caloriesInSlice;
+//
+//     cout << "A " << listOfPizzas.at(0).pizzaName << " slice contains " << listOfPizzas.at(0).caloriesInSlice << " calories." << endl;
+//     cout << "A " << listOfPizzas.at(1).pizzaName << " slice contains " << listOfPizzas.at(1).caloriesInSlice << " calories." << endl;
+//
+//     return 0;
+// }
+
