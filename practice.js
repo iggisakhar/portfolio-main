@@ -29745,3 +29745,87 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// struct Contact {
+//     string name;
+//     string phoneNumber;
+// };
+//
+// void Sort(Contact* contacts, int size) {
+//     for (int i = 0; i < size - 1; i++) {
+//         for (int j = 0; j < size - i - 1; j++) {
+//             if (contacts[j].name > contacts[j + 1].name) {
+//                 Contact temp = contacts[j];
+//                 contacts[j] = contacts[j + 1];
+//                 contacts[j + 1] = temp;
+//             }
+//         }
+//     }
+// }
+//
+// int BinarySearch(Contact* contacts, int size, string name) {
+//     int low = 0;
+//     int high = size - 1;
+//
+//     while (low <= high) {
+//         int mid = (low + high) / 2;
+//
+//         if (contacts[mid].name == name) {
+//             return mid;
+//         }
+//         else if (contacts[mid].name < name) {
+//             low = mid + 1;
+//         }
+//         else {
+//             high = mid - 1;
+//         }
+//     }
+//
+//     return -1;
+// }
+//
+// int main() {
+//     int size;
+//
+//     cin >> size;
+//
+//     Contact* contacts = new Contact[size];
+//
+//     for (int i = 0; i < size; i++) {
+//         string firstName;
+//         string lastName;
+//
+//         cin >> firstName >> lastName >> contacts[i].phoneNumber;
+//         contacts[i].name = firstName + " " + lastName;
+//     }
+//
+//     Sort(contacts, size);
+//
+//     for (int i = 0; i < size; i++) {
+//         cout << contacts[i].name << " " << contacts[i].phoneNumber << endl;
+//     }
+//
+//     string searchFirst;
+//     string searchLast;
+//     string searchName;
+//
+//     cin >> searchFirst >> searchLast;
+//     searchName = searchFirst + " " + searchLast;
+//
+//     int index = BinarySearch(contacts, size, searchName);
+//
+//     if (index != -1) {
+//         cout << contacts[index].name << " " << contacts[index].phoneNumber << endl;
+//     }
+//     else {
+//         cout << searchName << " was not found" << endl;
+//     }
+//
+//     delete[] contacts;
+//
+//     return 0;
+// }
+
