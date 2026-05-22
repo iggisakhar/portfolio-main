@@ -29829,3 +29829,124 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <vector>
+// #include <string>
+// using namespace std;
+//
+// struct PizzaInfo {
+//     string pizzaName;
+//     int numCalories;
+// };
+//
+// int main() {
+//     vector<PizzaInfo> availablePizzas(2);
+//
+//     cin >> availablePizzas.at(0).pizzaName;
+//     cin >> availablePizzas.at(0).numCalories;
+//
+//     cin >> availablePizzas.at(1).pizzaName;
+//     cin >> availablePizzas.at(1).numCalories;
+//
+//     availablePizzas.at(0).numCalories = availablePizzas.at(1).numCalories;
+//
+//     cout << "A " << availablePizzas.at(0).pizzaName << " slice contains " << availablePizzas[0].numCalories << " calories." << endl;
+//     cout << "A " << availablePizzas.at(1).pizzaName << " slice contains " << availablePizzas[1].numCalories << " calories." << endl;
+//     return 0;
+// }
+
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// struct Date {
+//     int month;
+//     int day;
+//     int year;
+// };
+//
+// struct Person {
+//     string name;
+//     Date birthDate;
+// };
+//
+// bool LeapYear(int year) {
+//     return (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+// }
+//
+// bool ValidDate(Date date) {
+//     if (date.month < 1 || date.month > 12) return false;
+//
+//     int days;
+//     if (date.month == 2) {
+//         days = LeapYear(date.year) ? 29 : 28;
+//     } else if (date.month == 4 || date.month == 6 ||
+//         date.month == 9 || date.month == 11) {
+//         days = 30;
+//     } else {
+//         days = 31;
+//     }
+//
+//     return date.day >= 1 && date.day <= days;
+// }
+//
+// void ShowList(Person people[], int size) {
+//     for (int i = 0; i < size; i++) {
+//         cout << people[i].name << " "
+//         << people[i].birthDate.month << "/"
+//         << people[i].birthDate.day << "/"
+//         << people[i].birthDate.year;
+//         if (i != size - 1) {
+//             cout << endl;
+//         }
+//     }
+// }
+//
+// void Sort(Person people[], int size) {
+//     for (int i = 0; i < size - 1; i++) {
+//         for (int j = 0; j < size - i - 1; j++) {
+//             if (people[j].name > people[j + 1].name) {
+//                 Person temp = people[j];
+//                 people[j] = people[j + 1];
+//                 people[j + 1] = temp;
+//             }
+//         }
+//     }
+// }
+//
+// int main() {
+//     const int MAX_SIZE = 50;
+//     Person people[MAX_SIZE];
+//     int count = 0;
+//
+//     string name;
+//     string dateStr;
+//
+//     while (count < MAX_SIZE && getline(cin, name)) {
+//         if (name == "") break;
+//
+//         getline(cin, dateStr);
+//
+//         int s1 = dateStr.find('/');
+//         int s2 = dateStr.find('/', s1 + 1);
+//
+//         Date d;
+//         d.month = stoi(dateStr.substr(0, s1));
+//         d.day   = stoi(dateStr.substr(s1 + 1, s2 - s1 - 1));
+//         d.year  = stoi(dateStr.substr(s2 + 1));
+//
+//         if (ValidDate(d)) {
+//             people[count].name = name;
+//             people[count].birthDate = d;
+//             count++;
+//         }
+//     }
+//
+//     Sort(people, count);
+//     ShowList(people, count);
+//
+//     return 0;
+// }
+
+
