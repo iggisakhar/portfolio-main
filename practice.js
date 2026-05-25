@@ -29855,7 +29855,6 @@
 //     return 0;
 // }
 
-
 // #include <iostream>
 // #include <string>
 // using namespace std;
@@ -29949,4 +29948,50 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <cstring>
+// using namespace std;
+//
+// int main() {
+//     char personName[100];
+//     char searchChar;
+//     char* searchResult = nullptr;
+//
+//     cin.getline(personName, 100);
+//     cin >> searchChar;
+//
+//     searchResult = strchr(personName, searchChar);
+//
+//     if (searchResult != nullptr) {
+//         cout << "Character found." << endl;
+//     }
+//     else {
+//         cout << "Character not found." << endl;
+//     }
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <cstring>
+// using namespace std;
+//
+// int main() {
+//     char movieTitle[100];
+//     char* movieResult = nullptr;
+//
+//     cin.getline(movieTitle, 100);
+//
+//     movieResult = strstr(movieTitle, "The");
+//
+//     cout << "Movie title contains The? ";
+//     if (movieResult != nullptr) {
+//         cout << "Yes." << endl;
+//     }
+//     else {
+//         cout << "No." << endl;
+//     }
+//
+//     return 0;
+// }
 
