@@ -30169,3 +30169,102 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+//
+// class Room {
+//     public:
+//         Room();
+// ~Room();
+//     void Set(int roomNumber, int daysReserved);
+//     void Print();
+//     private:
+//         int number;
+//     int days;
+// };
+//
+// Room::Room() {
+//     number = 0;
+//     days = 0;
+// }
+//
+// Room::~Room() {
+//     cout << "Destructor called on Room (" << number << ", " << days << ")" << endl;
+// }
+//
+// void Room::Set(int roomNumber, int daysReserved) {
+//     number = roomNumber;
+//     days = daysReserved;
+// }
+//
+// void Room::Print() {
+//     cout << "Reserved room #" << number << " for " << days << " days" << endl;
+// }
+//
+// class Hotel {
+//     public:
+//         Hotel();
+// ~Hotel();
+//
+//     void SetSize(int numRoomsValue);
+//     void Reserve(int index, int roomNumber, int daysReserved);
+//     void Print();
+//     private:
+//         int numRooms;
+//     Room* rooms;
+// };
+//
+// Hotel::Hotel() {
+//     numRooms = 0;
+//     rooms = nullptr;
+// }
+//
+// Hotel::~Hotel() {
+//     cout << "Testing Hotel destructor" << endl;
+//     delete[] rooms;
+// }
+//
+// void Hotel::SetSize(int numRoomsValue) {
+//     numRooms = numRoomsValue;
+//     if (numRoomsValue > 0) {
+//         rooms = new Room[numRoomsValue];
+//     }
+// }
+//
+// void Hotel::Reserve(int index, int roomNumber, int daysReserved) {
+//     rooms[index].Set(roomNumber, daysReserved);
+// }
+//
+// void Hotel::Print() {
+//     int i;
+//
+//     for (i = 0; i < numRooms; ++i) {
+//         rooms[i].Print();
+//     }
+// }
+//
+// void RunHotel(int numRoomsValue) {
+//     Hotel hotel;
+//     int roomNumber;
+//     int daysReserved;
+//     int i;
+//
+//     hotel.SetSize(numRoomsValue);
+//     for (i = 0; i < numRoomsValue; ++i) {
+//         cin >> roomNumber;
+//         cin >> daysReserved;
+//         hotel.Reserve(i, roomNumber, daysReserved);
+//     }
+//     hotel.Print();
+// }
+//
+// int main() {
+//     int numRoomsValue;
+//
+//     cin >> numRoomsValue;
+//
+//     RunHotel(numRoomsValue);
+//
+//     return 0;
+// }
+
