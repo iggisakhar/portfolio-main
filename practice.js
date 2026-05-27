@@ -30073,3 +30073,99 @@
 //     cout << "Number of vector book copy operations: " << vectorOperations << endl;
 //
 // }
+
+// #include <iostream>
+// #include <fstream>
+// using namespace std;
+//
+// int main() {
+//     ifstream inFS;
+//     int tableCount;
+//
+//     inFS.open("data3.txt");
+//
+//     if (!inFS.is_open()) {
+//         cout << "data3.txt: program terminating due to file error" << endl;
+//         return 1;
+//     }
+//
+//     inFS >> tableCount;
+//
+//     cout << tableCount << endl;
+//
+//     inFS.close();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <fstream>
+// using namespace std;
+//
+// int main() {
+//     ifstream dataFS;
+//     string shelfFileName;
+//     int shelfCount;
+//
+//     cin >> shelfFileName; // Assigns shelfFileName with a string read from input
+//
+//     dataFS.open(shelfFileName); // Attempts to open the file associated with shelfFileName
+//
+//     if(!dataFS.is_open()) {
+//         cout << shelfFileName << ": open operation failed" << endl;
+//         return 1;
+//     }
+//
+//     dataFS >> shelfCount;
+//
+//     cout << shelfCount << endl;
+//
+//     dataFS.close();
+//
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <fstream>
+// using namespace std;
+//
+// int main() {
+//     ifstream inFS;
+//     string nameOfFile;
+//     int cubbyQuantity;
+//     int totalCount;
+//
+//     cin >> nameOfFile;
+//
+//     inFS.open(nameOfFile);
+//     if (!inFS.is_open()) {
+//         cout << nameOfFile << ": program exiting due to file error" << endl;
+//         return 1;
+//     }
+//
+//     totalCount = 0;
+//
+//     cout << "Started with: " << totalCount << endl;
+//
+//     inFS >> cubbyQuantity;
+//
+//     while (!inFS.fail()) {
+//         cout << cubbyQuantity << endl;
+//         totalCount = totalCount + cubbyQuantity;
+//         inFS >> cubbyQuantity;
+//     }
+//
+//     if (inFS.eof()) {
+//         cout << "Reached end of file" << endl;
+//     }
+//     else {
+//         cout << "Reading failed before the end" << endl;
+//     }
+//
+//     cout << "Sum: " << totalCount << endl;
+//
+//     inFS.close();
+//
+//     return 0;
+// }
+
