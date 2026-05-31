@@ -30268,3 +30268,102 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+//
+// class Location {
+//     public:
+//         Location();
+// ~Location();
+//     void Set(double xValue, double yValue);
+//     void Print();
+//     private:
+//         double x;
+//     double y;
+// };
+//
+// Location::Location() {
+//     x = 0.0;
+//     y = 0.0;
+// }
+//
+// Location::~Location() {
+//     cout << "Destructor called on Location (" << fixed << setprecision(1) << x << ", " << fixed << setprecision(1) << y << ")" << endl;
+// }
+//
+// void Location::Set(double xValue, double yValue) {
+//     x = xValue;
+//     y = yValue;
+// }
+//
+// void Location::Print() {
+//     cout << fixed << setprecision(1);
+//     cout << "Location at: (" << x << ", " << y << ")" << endl;
+//
+// }
+//
+// class Map {
+//     public:
+//         Map();
+// ~Map();
+//     void SetSize(int numLocationsValue);
+//     void Add(int index, double xValue, double yValue);
+//     void Print();
+//     private:
+//         int numLocations;
+//     Location* locations;
+// };
+//
+// Map::Map() {
+//     numLocations = 0;
+//     locations = nullptr;
+// }
+//
+// Map::~Map(){
+//     delete[] locations;
+// }
+//
+// void Map::SetSize(int numLocationsValue) {
+//     numLocations = numLocationsValue;
+//     if (numLocationsValue > 0) {
+//         locations = new Location[numLocationsValue];
+//     }
+// }
+//
+// void Map::Add(int index, double xValue, double yValue) {
+//     locations[index].Set(xValue, yValue);
+// }
+//
+// void Map::Print() {
+//     int i;
+//
+//     for (i = 0; i < numLocations; ++i) {
+//         locations[i].Print();
+//     }
+// }
+//
+// void RunMap(int numLocationsValue) {
+//     Map locations;
+//     double xValue;
+//     double yValue;
+//     int i;
+//
+//     locations.SetSize(numLocationsValue);
+//     for (i = 0; i < numLocationsValue; ++i) {
+//         cin >> xValue;
+//         cin >> yValue;
+//         locations.Add(i, xValue, yValue);
+//     }
+//     locations.Print();
+// }
+//
+// int main() {
+//     int numLocationsValue;
+//
+//     cin >> numLocationsValue;
+//
+//     RunMap(numLocationsValue);
+//
+//     return 0;
+// }
