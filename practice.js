@@ -30367,3 +30367,35 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+//
+// int main() {
+//     int* wholeNumber;
+//     string* firstName;
+//     string* pluralAnimal;
+//     string* genericPlace;
+//
+//     wholeNumber = new int;
+//     firstName = new string;
+//     pluralAnimal = new string;
+//     genericPlace = new string;
+//
+//     cin >> *wholeNumber;
+//     cin >> *firstName;
+//     cin >> *pluralAnimal;
+//     cin >> *genericPlace;
+//
+//     cout << *firstName << " saw " << *wholeNumber << " different colors of " << *pluralAnimal;
+//     cout << " at the " << *genericPlace << ".";
+//
+//     delete firstName;
+//     delete wholeNumber;
+//     delete pluralAnimal;
+//     delete genericPlace;
+//
+//     return 0;
+// }
+
