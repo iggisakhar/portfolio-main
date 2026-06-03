@@ -30399,3 +30399,35 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <fstream>
+// using namespace std;
+//
+// int main() {
+//     ifstream tableFS;
+//     string dataFileName;
+//     string purchaser;
+//     int tableCount;
+//
+//     cin >> dataFileName;
+//
+//     tableFS.open(dataFileName);
+//     if (!tableFS.is_open()) {
+//         cout << dataFileName << ": could not be opened" << endl;
+//         return 1;
+//     }
+//
+//     while (!tableFS.eof()) {
+//         tableFS >> purchaser;
+//         tableFS >> tableCount;
+//
+//         if (!tableFS.fail()) {
+//             cout << purchaser << " sold " << tableCount << " tables." << endl;
+//         }
+//     }
+//
+//     tableFS.close();
+//
+//     return 0;
+// }
+
