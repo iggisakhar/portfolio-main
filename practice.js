@@ -30431,3 +30431,28 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <fstream>
+// using namespace std;
+//
+// int main() {
+//     ofstream outFS;
+//     double mangoQuantity;
+//     string friendName;
+//
+//     cin >> mangoQuantity;
+//     cin >> friendName;
+//
+//     outFS.open("output.txt");
+//     if (!outFS.is_open()) {
+//         cout << "output.txt" << ": open operation failed" << endl;
+//         return 1;
+//     }
+//
+//     outFS << "Memo:" << endl;
+//     outFS << mangoQuantity << " pounds of mangos for " << friendName << endl;
+//
+//     outFS.close();
+//
+//     return 0;
+// }
