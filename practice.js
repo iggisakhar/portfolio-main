@@ -30456,3 +30456,30 @@
 //
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <fstream>
+// using namespace std;
+//
+// int main() {
+//     ofstream outFS;
+//     string fileName;
+//     int beetCount;
+//
+//     cin >> fileName;
+//     cin >> beetCount;
+//
+//     outFS.open(fileName);
+//
+//     if (!outFS.is_open()) {
+//         cout << fileName << ": failed to open file" << endl;
+//         return 1;
+//     }
+//
+//     outFS << beetCount << " beets" << endl;
+//
+//     outFS.close();
+//
+//     return 0;
+// }
+
