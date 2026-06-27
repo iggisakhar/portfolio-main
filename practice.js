@@ -30483,3 +30483,38 @@
 //     return 0;
 // }
 
+// include <iostream>
+// #include <fstream>
+// using namespace std;
+//
+// int main() {
+//     ofstream outFS;
+//     string dataFileName;
+//     int data1;
+//     int data2;
+//     int data3;
+//
+//     cin >> dataFileName;
+//     cin >> data1;
+//     cin >> data2;
+//     cin >> data3;
+//
+//     outFS.open(dataFileName);
+//
+//     if (!outFS.is_open()) {
+//         cout << dataFileName << ": error occurred while opening file" << endl;
+//         return 1;
+//     }
+//
+//     outFS << "+ " << data1 << " +" << endl;
+//     outFS << "+ " << data2 << " +" << endl;
+//     outFS << "+ " << data3 << " +" << endl;
+//
+//     outFS.close();
+//
+//     if (outFS.is_open()) {  /* For testing purpose only */
+//         outFS << "File is not closed." << endl;
+//     }
+//
+//     return 0;
+// }
