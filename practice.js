@@ -30518,3 +30518,88 @@
 //
 //     return 0;
 // }
+
+// #include <string>
+// #include <iostream>
+// #include <iomanip>
+// #include <fstream>
+// #include <vector>
+// using namespace std;
+//
+// int main() {
+//
+//     string fileName;
+//     ifstream inFS;
+//     ofstream outFS;
+//
+//     string lastName;
+//     string firstName;
+//     int midterm1;
+//     int midterm2;
+//     int finalScore;
+//
+//     vector<string> lastNames;
+//     vector<string> firstNames;
+//     vector<int> midterm1Scores;
+//     vector<int> midterm2Scores;
+//     vector<int> finalScores;
+//     vector<char> grades;
+//
+//     double midterm1Total = 0;
+//     double midterm2Total = 0;
+//     double finalTotal = 0;
+//
+//     cin >> fileName;
+//
+//     inFS.open(fileName);
+//
+//     while(inFS >> lastName >> firstName >> midterm1 >> midterm2 >> finalScore){
+//         double average = (midterm1 + midterm2 + finalScore) / 3.0;
+//         char grade;
+//
+//         if(average >= 90){
+//             grade = 'A';
+//         } else if (average >= 80){
+//             grade = 'B';
+//         } else if(average >= 70){
+//             grade = 'C';
+//         } else if(average >= 60){
+//             grade = 'D';
+//         } else {
+//             grade = 'F';
+//         }
+//
+//         lastNames.push_back(lastName);
+//         firstNames.push_back(firstName);
+//         midterm1Scores.push_back(midterm1);
+//         midterm2Scores.push_back(midterm2);
+//         finalScores.push_back(finalScore);
+//         grades.push_back(grade);
+//
+//         midterm1Total += midterm1;
+//         midterm2Total += midterm2;
+//         finalTotal += finalScore;
+//     }
+//
+//     inFS.close();
+//     outFS.open("report.txt");
+//
+//     for(int i = 0; i < lastNames.size(); ++i){
+//         outFS << lastNames.at(i) << "\t"
+//         << firstNames.at(i) << "\t"
+//         << midterm1Scores.at(i) << "\t"
+//         << midterm2Scores.at(i) << "\t"
+//         << finalScores.at(i) << "\t"
+//         << grades.at(i) << endl;
+//     }
+//
+//     outFS << endl;
+//     outFS << fixed << setprecision(2);
+//     outFS << "Averages: midterm1 " << midterm1Total / lastNames.size()
+//     << ", midterm2 " << midterm2Total / lastNames.size()
+//     << ", final " << finalTotal / lastNames.size() << endl;
+//
+//     outFS.close();
+//
+//     return 0;
+// }
