@@ -16196,4 +16196,3 @@ console.log(str2);
 //   return result
 // }
 // console.log(warehouseCapacity(130, 50, 17))
-
