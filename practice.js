@@ -30603,3 +30603,52 @@
 //
 //     return 0;
 // }
+
+// function objectDiff(before, after) {
+//     const changes = {};
+//
+//     const keys = new Set([
+//         ...Object.keys(before),
+//         ...Object.keys(after)
+//     ]);
+//
+//     for (const key of keys) {
+//         if (!(key in before)) {
+//             changes[key] = {
+//                 type: "added",
+//                 value: after[key]
+//             };
+//         } else if (!(key in after)) {
+//             changes[key] = {
+//                 type: "removed",
+//                 value: before[key]
+//             };
+//         } else if (before[key] !== after[key]) {
+//             changes[key] = {
+//                 type: "changed",
+//                 from: before[key],
+//                 to: after[key]
+//             };
+//         }
+//     }
+//
+//     return changes;
+// }
+//
+// // Demo
+//
+// const oldUser = {
+//     name: "Igor",
+//     role: "Frontend Developer",
+//     experience: 3,
+//     active: true
+// };
+//
+// const newUser = {
+//     name: "Igor",
+//     role: "Frontend Engineer",
+//     experience: 4,
+//     location: "California"
+// };
+//
+// console.log(objectDiff(oldUser, newUser));
