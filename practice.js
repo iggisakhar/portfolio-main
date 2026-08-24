@@ -30634,21 +30634,3 @@
 //
 //     return changes;
 // }
-//
-// // Demo
-//
-// const oldUser = {
-//     name: "Igor",
-//     role: "Frontend Developer",
-//     experience: 3,
-//     active: true
-// };
-//
-// const newUser = {
-//     name: "Igor",
-//     role: "Frontend Engineer",
-//     experience: 4,
-//     location: "California"
-// };
-//
-// console.log(objectDiff(oldUser, newUser));
