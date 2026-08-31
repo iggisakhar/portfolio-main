@@ -30634,3 +30634,70 @@
 //
 //     return changes;
 // }
+
+// class CircuitBreaker {
+//     constructor(fn, maxFailures = 3, resetTime = 3000) {
+//         this.fn = fn;
+//         this.maxFailures = maxFailures;
+//         this.resetTime = resetTime;
+//         this.failures = 0;
+//         this.state = "CLOSED";
+//         this.lastFailure = 0;
+//     }
+//
+//     async run(...args) {
+//         if (this.state === "OPEN") {
+//             const elapsed = Date.now() - this.lastFailure;
+//
+//             if (elapsed < this.resetTime) {
+//                 throw new Error("Circuit is OPEN");
+//             }
+//
+//             this.state = "HALF_OPEN";
+//         }
+//
+//         try {
+//             const result = await this.fn(...args);
+//
+//             this.failures = 0;
+//             this.state = "CLOSED";
+//
+//             return result;
+//         } catch (error) {
+//             this.failures++;
+//             this.lastFailure = Date.now();
+//
+//             if (this.failures >= this.maxFailures) {
+//                 this.state = "OPEN";
+//             }
+//
+//             throw error;
+//         }
+//     }
+// }
+//
+// // Demo
+// async function fakeAPI() {
+//     if (Math.random() < 0.7) {
+//         throw new Error("API failed");
+//     }
+//
+//     return "API success";
+// }
+//
+// const breaker = new CircuitBreaker(fakeAPI);
+//
+// async function test() {
+//     for (let i = 1; i <= 8; i++) {
+//         try {
+//             console.log(i, await breaker.run());
+//         } catch (error) {
+//             console.log(i, error.message, "| State:", breaker.state);
+//         }
+//
+//         await new Promise(resolve => setTimeout(resolve, 500));
+//     }
+// }
+//
+// test();
+
