@@ -30701,3 +30701,35 @@
 //
 // test();
 
+// function memoize(fn) {
+//     const cache = new Map();
+//
+//     return function (...args) {
+//         const key = JSON.stringify(args);
+//
+//         if (cache.has(key)) {
+//             console.log("CACHE →", key);
+//             return cache.get(key);
+//         }
+//
+//         console.log("CALCULATE →", key);
+//
+//         const result = fn(...args);
+//         cache.set(key, result);
+//
+//         return result;
+//     };
+// }
+//
+// function calculatePrice(price, tax, discount = 0) {
+//     const subtotal = price - price * discount;
+//     return +(subtotal + subtotal * tax).toFixed(2);
+// }
+//
+// const smartPrice = memoize(calculatePrice);
+//
+// console.log(smartPrice(100, 0.095, 0.1)); // calculates
+// console.log(smartPrice(100, 0.095, 0.1)); // cache
+// console.log(smartPrice(250, 0.095, 0.2)); // calculates
+// console.log(smartPrice(250, 0.095, 0.2)); // cache
+
