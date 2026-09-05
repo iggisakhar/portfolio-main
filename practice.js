@@ -30733,3 +30733,32 @@
 // console.log(smartPrice(250, 0.095, 0.2)); // calculates
 // console.log(smartPrice(250, 0.095, 0.2)); // cache
 
+// const pipe = (...functions) => input =>
+//     functions.reduce(
+//         (value, fn) => fn(value),
+//         input
+//     );
+//
+// const trim = text => text.trim();
+//
+// const normalizeSpaces = text =>
+//     text.replace(/\s+/g, " ");
+//
+// const capitalize = text =>
+//     text.charAt(0).toUpperCase() + text.slice(1);
+//
+// const addPeriod = text =>
+//     text.endsWith(".") ? text : `${text}.`;
+//
+// const cleanText = pipe(
+//     trim,
+//     normalizeSpaces,
+//     capitalize,
+//     addPeriod
+// );
+//
+// // Demo
+// const rawText =
+//     "   javascript    makes   reusable code easier   ";
+//
+// console.log(cleanText(rawText));
