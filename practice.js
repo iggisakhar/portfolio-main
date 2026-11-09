@@ -30762,3 +30762,35 @@
 //     "   javascript    makes   reusable code easier   ";
 //
 // console.log(cleanText(rawText));
+
+// class TriangleArea {
+//     public static void main(String[] args) {
+//     float base = 12.0f;
+//     float height = 3.0f;
+//     float area = (base * height) / 2.0f;
+//
+//     System.out.println(area);
+// }
+// }
+//
+// class Temperature {
+//     public static void main(String[] args) {
+//     float fahrenheit = 98.6f;
+//     float celsius = (5.0f / 9.0f) * (fahrenheit - 32.0f);
+//
+//     System.out.println(celsius);
+// }
+// }
+//
+// class Quadratic {
+//     public static void main(String[] args) {
+//     float a = 5.0f;
+//     float b = 7.0f;
+//     float c = 11.0f;
+//     float x = 4.23f;
+//
+//     float result = a * x * x + b * x + c;
+//
+//     System.out.println(result);
+// }
+// }
